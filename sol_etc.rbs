@@ -1,0 +1,1452 @@
+startState: s32'Fafnircharge'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        Unknown454: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 3
+    Unknown450: s32'sol_fafnir_charge'
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'sol_smallfire', 100
+    Unknown94: 10000
+    Unknown99: 5000
+    sprite: s32'null', 3
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'sol_smallfire', 100
+    endState: 
+
+startState: s32'Fafnircharge_DI'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        Unknown454: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 3
+    Unknown450: s32'dsl_fafnir_charge'
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'dsl_smallfire', 100
+    Unknown94: 10000
+    Unknown99: 5000
+    sprite: s32'null', 3
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 3
+    Unknown448: s32'dsl_smallfire', 100
+    endState: 
+
+startState: s32'Bringercharge'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        Unknown454: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 2
+    Unknown450: s32'sol_bringer_charge'
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'sol_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'sol_smallfire', 100
+    Unknown94: 50000
+    Unknown99: 50000
+    sprite: s32'null', 2
+    Unknown448: s32'sol_smallfire', 100
+    endState: 
+
+startState: s32'Bringercharge_DI'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        Unknown454: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 2
+    Unknown450: s32'dsl_bringer_charge'
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'dsl_smallfire', 100
+    sprite: s32'null', 2
+    Unknown448: s32'dsl_smallfire', 100
+    Unknown94: 50000
+    Unknown99: 50000
+    sprite: s32'null', 2
+    Unknown448: s32'dsl_smallfire', 100
+    endState: 
+
+startState: s32'Dust_atk_sol'
+    upon: (IMMEDIATE)
+        Unknown94: 60000
+        Unknown458: 3
+        Unknown456: 3
+        Unknown450: s32'sol_dust_atk'
+        Unknown2024: 0
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'GunFlameStart'
+    sprite: s32'null', 1
+    Unknown2247: 0, 1, 0, 0
+    callEtcState: s32'GunFlameHibashira', 100
+    endState: 
+
+startState: s32'GunFlameHibashira'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        hitEffectFlame: 1
+        airHitEffect: (AIR_LAUNCH)
+        groundHitEffect: (AIR_LAUNCH)
+        attackLevel: 2
+        damage: 50
+        setAttachOpponent: 1
+        Unknown1112: 1
+        untechableTime: 28
+        Unknown1137: 32
+        setProration: 85
+        Unknown1602: 1
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 1
+            Unknown458: 3
+            attackLevel: 2
+            damage: 50
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 2
+            attackLevel: 2
+            damage: 42
+            storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 3
+            attackLevel: 1
+            damage: 30
+            storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 4
+            attackLevel: 1
+            damage: 30
+            storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+            endIf: 
+        Unknown450: s32'sol_gunflame'
+        upon: (HIT_OR_GUARD)
+            Unknown1771: s32'GunFlameHibashira', 23
+            Unknown1883: 
+            storeValue: (NEXT_ARG_IS_VAR), 46, 0, 1
+            Unknown19: 4
+            endUpon: 
+        upon: (ON_HIT_OR_BLOCK)
+            if: (NEXT_ARG_IS_VAR), 45
+                Unknown1883: 
+                storeValue: (NEXT_ARG_IS_VAR), 46, 0, 1
+                endIf: 
+            endUpon: 
+        upon: 66
+            Unknown51: 4
+            if: (NEXT_ARG_IS_VAR), 0
+                Unknown1766: 4, 24
+                endIf: 
+            endUpon: 
+        upon: 24
+            allowHitting: (SELF)
+            flipDirection: 
+            Unknown178: 2
+            Unknown94: 138000
+            Unknown51: 4
+            if: (NEXT_ARG_IS_VAR), 0
+                Unknown1766: 4, 24
+                endIf: 
+            endUpon: 
+        endUpon: 
+    sprite: s32'vrsol400_00', 3
+    grabOrRelease: 
+    sprite: s32'vrsol400_01', 3
+    sprite: s32'vrsol400_02', 3
+    sprite: s32'vrsol400_03', 1
+    sprite: s32'vrsol400_03', 2
+    ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 2
+        Unknown458: 0
+        endIf: 
+    ifNot: 2, 46
+        ifOperation: (IS_LESSER_OR_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 3
+            Unknown54: 0, 2, 115, 0, 1
+            Unknown2247: 2, 115, 0, 0
+            callEtcState: s32'GunFlameHibashira', 0
+            Unknown43: 4, 1
+            endIf: 
+        endIf: 
+    sprite: s32'vrsol400_04', 3
+    Unknown1603: 1
+    sprite: s32'vrsol400_05', 3
+    sprite: s32'vrsol400_06', 3
+    sprite: s32'vrsol400_07', 1
+    recoveryState: 
+    sprite: s32'vrsol400_07', 2
+    sprite: s32'vrsol400_08', 1
+    sprite: s32'vrsol400_08', 2
+    sprite: s32'vrsol400_09', 1
+    sprite: s32'vrsol400_09', 2
+    sprite: s32'null', 50
+    endState: 
+
+startState: s32'GunFlameHibashira_DI'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        hitEffectFlame: 1
+        groundHitEffect: (AIR_FACE_UP)
+        Unknown1110: 1
+        attackLevel: 2
+        Unknown1028: 2
+        damage: 50
+        riscPlus: 10
+        Unknown1137: 32
+        hitAirPushbackX: 17500
+        hitAirPushbackY: 43750
+        untechableTime: 40
+        Unknown450: s32'dsl_gunflame'
+        Unknown2271: 1
+        endUpon: 
+    sprite: s32'sleg_00', 1
+    Unknown94: 70000
+    sprite: s32'sleg_01', 1
+    sprite: s32'sleg_02', 2
+    playSFX: s32'SE_EXPLODE'
+    sprite: s32'sleg_03', 3
+    sprite: s32'sleg_04', 1
+    setObjectSize: 1000
+    hit: 
+    sprite: s32'sleg_04', 1
+    setObjectSize: 1100
+    sprite: s32'sleg_04', 1
+    setObjectSize: 1200
+    sprite: s32'sleg_05', 3
+    setObjectSize: 1300
+    sprite: s32'sleg_06', 2
+    recoveryState: 
+    sprite: s32'sleg_06', 2
+    sprite: s32'sleg_07', 2
+    sprite: s32'sleg_07', 2
+    sprite: s32'sleg_08', 2
+    sprite: s32'sleg_08', 2
+    sprite: s32'sleg_09', 2
+    sprite: s32'sleg_09', 2
+    sprite: s32'null', 20
+    endState: 
+
+startState: s32'GunFlameHibashira_Ichigeki'
+    upon: (IMMEDIATE)
+        Unknown246: 
+        Unknown1059: 3
+        hitEffectFlame: 1
+        groundHitEffect: (AIR_FACE_UP)
+        Unknown1110: 1
+        attackLevel: 2
+        Unknown1028: 2
+        damage: 60
+        stunValue: 120
+        hitAirPushbackX: 17500
+        hitAirPushbackY: 43750
+        untechableTime: 40
+        Unknown450: s32'sol_gunflame'
+        setObjectSize: 1400
+        setObjectWidth: 2300
+        endUpon: 
+    sprite: s32'vrsol400_04', 1
+    playCharacterSFX: s32'2'
+    sprite: s32'vrsol400_04', 1
+    sprite: s32'vrsol400_04', 2
+    playSFX: s32'SE_EXPLODE'
+    sprite: s32'vrsol400_04', 3
+    sprite: s32'vrsol400_04', 1
+    hit: 
+    sprite: s32'vrsol400_04', 1
+    sprite: s32'vrsol400_04', 1
+    sprite: s32'vrsol400_04', 3
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    recoveryState: 
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    endState: 
+
+startState: s32'BanditBringerPunch'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown456: 3
+        Unknown454: 3
+        Unknown450: s32'sol_banditbringer'
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'BanditBringerPunch_DI'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown456: 3
+        Unknown454: 3
+        Unknown450: s32'dsl_banditbringer'
+        setObjectSize: 1500
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'GroundViperDash'
+    upon: (IMMEDIATE)
+        Unknown450: s32'sol_dash_fire'
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'GroundViperDash_dsl'
+    upon: (IMMEDIATE)
+        Unknown450: s32'dsl_dash_fire'
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'FafnirPunch'
+    upon: (IMMEDIATE)
+        Unknown458: 3
+        Unknown456: 3
+        Unknown450: s32'sol_fafnir_main'
+        endUpon: 
+    sprite: s32'null', 200
+    Unknown94: -80000
+    Unknown99: -20000
+    endState: 
+
+startState: s32'FafnirPunch_DI'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown454: 3
+        Unknown450: s32'dsl_fafnir_main'
+        endUpon: 
+    sprite: s32'null', 200
+    endState: 
+
+startState: s32'TyrantRavePunch1'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown450: s32'sol_tyrantrave1'
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'TyrantRavePunch1_DI'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown450: s32'dsl_tyrantrave1'
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'TyrantRavePunch2'
+    upon: (IMMEDIATE)
+        Unknown245: 
+        hitEffectFlame: 1
+        groundHitEffect: (AIR_FACE_UP)
+        attackLevel: 3
+        Unknown1028: 2
+        damage: 70
+        stunValue: 0
+        Unknown1137: 32
+        if: (NEXT_ARG_IS_VAR), 115
+            damage: 87
+            Unknown1177: 1
+            Unknown1179: 1
+            Unknown1086: 50
+            Unknown1165: s32'TyrantRaveBurst'
+            endIf: 
+        riscPlus: 14
+        Unknown1112: 0
+        riscMinus: 27
+        hitAirPushbackX: 31500
+        hitAirPushbackY: 31500
+        untechableTime: 40
+        wallBounceCount: 1
+        wallBounceXVelocityPercent: 20
+        wallBounceInCornerOnly: 1
+        if: (NEXT_ARG_IS_VAR), 126
+            guardType: (NONE)
+            endIf: 
+        if: (NEXT_ARG_IS_VAR), 84
+            Unknown58: 1
+            endIf: 
+        upon: (HIT)
+            if: (NEXT_ARG_IS_VAR), 115
+                ifNot: 2, 116
+                    ifNot: 2, 45
+                        storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+                        Unknown2130: 5000
+                        endIf: 
+                    endIf: 
+                endIf: 
+            endUpon: 
+        endUpon: 
+    Unknown24: s32'Boss', 2, 84
+    sprite: s32'vrsol432_00', 5
+    physicsXImpulse: 7000
+    playCharacterSFX: s32'SOL_002'
+    Unknown450: s32'sol_tyrantrave2'
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    physicsXImpulse: 5250
+    sprite: s32'vrsol432_02', 5
+    physicsXImpulse: 3500
+    sprite: s32'vrsol432_03', 5
+    physicsXImpulse: 1750
+    sprite: s32'vrsol432_04', 5
+    physicsXImpulse: 0
+    sprite: s32'vrsol432_05', 5
+    recoveryState: 
+    sprite: s32'vrsol432_06', 5
+    Unknown243: 
+    recoveryState: 
+    sprite: s32'vrsol432_07', 5
+    sprite: s32'vrsol432_08', 5
+    sprite: s32'vrsol432_09', 5
+    sprite: s32'vrsol432_10', 5
+    sprite: s32'vrsol432_11', 5
+    sprite: s32'vrsol432_12', 5
+    sprite: s32'null', 100
+    Unknown3: 
+    Unknown18: 
+    setMarker: s32'Boss'
+    sprite: s32'vrsol432_00', 5
+    disableHitstop: 1
+    hitAirPushbackX: 50000
+    hitAirPushbackY: 10000
+    damage: 60
+    playCharacterSFX: s32'SOL_002'
+    Unknown450: s32'sol_tyrantrave2'
+    sprite: s32'vrsol432_01', 5
+    physicsXImpulse: 40000
+    hit: 
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    Unknown3: 
+    setMarker: s32'loop'
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    Unknown3: 
+    goToMarker: s32'loop'
+    endState: 
+
+startState: s32'TyrantRavePunch2_DI'
+    upon: (IMMEDIATE)
+        Unknown245: 
+        hitEffectFlame: 1
+        groundHitEffect: (AIR_FACE_UP)
+        attackLevel: 3
+        Unknown1028: 2
+        damage: 20
+        riscPlus: 14
+        Unknown1112: 0
+        setProration: 70
+        riscMinus: 4
+        hitAirPushbackX: 35000
+        hitAirPushbackY: 7000
+        stunValue: 0
+        Unknown1137: 40
+        disableHitstop: 1
+        untechableTime: 80
+        wallBounceCount: 1
+        wallstickDuration: 40
+        wallBounceInCornerOnly: 1
+        if: (NEXT_ARG_IS_VAR), 126
+            guardType: (NONE)
+            endIf: 
+        Unknown2271: 1
+        setObjectWidth: 3000
+        Unknown156: 600
+        Unknown454: 3
+        Unknown458: 3
+        upon: (AFTER_EXIT)
+            Unknown454: 0
+            endUpon: 
+        endUpon: 
+    sprite: s32'vrsol432_00', 5
+    playCharacterSFX: s32'SOL_002'
+    Unknown450: s32'dsl_tyrantrave2'
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 3
+    hit: 
+    sprite: s32'vrsol432_01', 4
+    hit: 
+    sprite: s32'vrsol432_04', 5
+    recoveryState: 
+    sprite: s32'vrsol432_05', 5
+    sprite: s32'vrsol432_06', 5
+    sprite: s32'vrsol432_07', 5
+    sprite: s32'vrsol432_08', 5
+    sprite: s32'vrsol432_09', 5
+    sprite: s32'vrsol432_10', 5
+    sprite: s32'vrsol432_11', 5
+    sprite: s32'vrsol432_12', 5
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'TyrantRavePunch2_death'
+    upon: (IMMEDIATE)
+        Unknown246: 
+        hitEffectFlame: 1
+        groundHitEffect: (AIR_FACE_UP)
+        attackLevel: 3
+        Unknown1028: 2
+        damage: 60
+        Unknown1112: 0
+        riscMinus: 27
+        hitAirPushbackX: 31500
+        hitAirPushbackY: 31500
+        untechableTime: 40
+        wallBounceCount: 1
+        stunValue: 0
+        Unknown1137: 32
+        Unknown1059: 1
+        endUpon: 
+    sprite: s32'vrsol432_00', 5
+    physicsXImpulse: 7000
+    playCharacterSFX: s32'SOL_002'
+    Unknown450: s32'sol_tyrantrave2'
+    sprite: s32'vrsol432_01', 1
+    hit: 
+    physicsXImpulse: 5250
+    sprite: s32'vrsol432_01', 1
+    hit: 
+    sprite: s32'vrsol432_01', 1
+    sprite: s32'vrsol432_01', 1
+    hit: 
+    sprite: s32'vrsol432_01', 1
+    sprite: s32'vrsol432_01', 1
+    Unknown1059: 3
+    hit: 
+    sprite: s32'vrsol432_02', 5
+    physicsXImpulse: 3500
+    sprite: s32'vrsol432_03', 5
+    physicsXImpulse: 1750
+    sprite: s32'vrsol432_04', 5
+    physicsXImpulse: 0
+    sprite: s32'vrsol432_05', 5
+    recoveryState: 
+    sprite: s32'vrsol432_06', 5
+    Unknown243: 
+    recoveryState: 
+    sprite: s32'vrsol432_07', 5
+    sprite: s32'vrsol432_08', 5
+    sprite: s32'vrsol432_09', 5
+    sprite: s32'vrsol432_10', 5
+    sprite: s32'vrsol432_11', 5
+    sprite: s32'vrsol432_12', 5
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'TyrantRavePunch2_core'
+    upon: (IMMEDIATE)
+        Unknown450: s32'sol_tyrantrave2_core'
+        Unknown294: 1
+        Unknown1769: 1
+        endUpon: 
+    sprite: s32'null', 150
+    endState: 
+
+startState: s32'TyrantRaveCharge'
+    upon: (IMMEDIATE)
+        Unknown294: 1
+        endUpon: 
+    sprite: s32'null', 150
+    Unknown450: s32'sol_tyrantcharge'
+    endState: 
+
+startState: s32'VV_Start'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vvstart'
+    endState: 
+
+startState: s32'VV_Start_jp'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vvstart_jp'
+    endState: 
+
+startState: s32'VV_Start2'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vvstart2'
+    endState: 
+
+startState: s32'VV_Start2_jp'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vvstart2_jp'
+    endState: 
+
+startState: s32'VV_floor_hs'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vv_hs_floor'
+    endState: 
+
+startState: s32'VV_Loop'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown450: s32'sol_vvloop'
+        Unknown35: 23, s32'1'
+        endUpon: 
+    sprite: s32'null', 100
+    Unknown3: 
+    setMarker: s32'1'
+    sprite: s32'null', 1
+    createObject2: s32'VV_End', 100
+    endState: 
+
+startState: s32'VV_Loop_hs'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown450: s32'sol_vvloop_hs'
+        Unknown35: 23, s32'1'
+        endUpon: 
+    sprite: s32'null', 100
+    Unknown3: 
+    setMarker: s32'1'
+    sprite: s32'null', 1
+    createObject2: s32'VV2_End', 100
+    endState: 
+
+startState: s32'VV_tail_under'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'sol_vv_tail_under'
+    endState: 
+
+startState: s32'VV_Smoke'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vv_smoke'
+    endState: 
+
+startState: s32'VV_Smoke_HS'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown456: 3
+    Unknown450: s32'sol_vv_smoke_hs'
+    endState: 
+
+startState: s32'VV_End'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'sol_vvend'
+    endState: 
+
+startState: s32'VV2_End'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'sol_vv2end'
+    endState: 
+
+startState: s32'TEST_MIGI'
+    upon: (IMMEDIATE)
+        Unknown450: s32'cmn_migi'
+        endUpon: 
+    sprite: s32'null', 500
+    endState: 
+
+startState: s32'VV_Start_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'dsl_vvtail'
+    endState: 
+
+startState: s32'VV_Start_jp_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'dsl_vvtail_jp'
+    endState: 
+
+startState: s32'VV_Start2_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'dsl_vvtail_hs'
+    endState: 
+
+startState: s32'VV_tail_under_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'dsl_vv_tail_under'
+    endState: 
+
+startState: s32'VV_Loop_DI'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown450: s32'dsl_vvcore'
+        Unknown35: 23, s32'1'
+        endUpon: 
+    sprite: s32'null', 100
+    Unknown3: 
+    setMarker: s32'1'
+    sprite: s32'null', 1
+    createObject2: s32'VV_End_DI', 100
+    endState: 
+
+startState: s32'VV_Loop_hs_DI'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown458: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown450: s32'dsl_vvcore_hs'
+        Unknown35: 23, s32'1'
+        endUpon: 
+    sprite: s32'null', 100
+    Unknown3: 
+    setMarker: s32'1'
+    sprite: s32'null', 1
+    createObject2: s32'VV2_End_DI', 100
+    endState: 
+
+startState: s32'VV_End_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'dsl_vvend'
+    endState: 
+
+startState: s32'VV2_End_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'dsl_vvend_hs'
+    endState: 
+
+startState: s32'VV_floor_hs_DI'
+    sprite: s32'null', 50
+    Unknown457: 3
+    Unknown458: 3
+    Unknown450: s32'dsl_vvfloor'
+    endState: 
+
+startState: s32'Dsl_startA'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 40
+    Unknown450: s32'dsl_startA'
+    endState: 
+
+startState: s32'Dsl_startB'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 100
+    Unknown450: s32'dsl_startB'
+    endState: 
+
+startState: s32'Dsl_startC'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 80
+    Unknown450: s32'dsl_startC'
+    endState: 
+
+startState: s32'Dsl_startD'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 40
+    Unknown450: s32'dsl_startD'
+    endState: 
+
+startState: s32'GroundViperDash_DI'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        hitEffectFlame: 1
+        disableHitstop: 1
+        attackLevel: 2
+        Unknown1028: 2
+        damage: 20
+        riscPlus: 10
+        hitAirPushbackX: 43750
+        hitAirPushbackY: 17500
+        untechableTime: 60
+        tensionGainOnConnect: 10
+        Unknown1051: 1
+        Unknown450: s32'dsl_grand_hibashira'
+        Unknown2271: 1
+        setObjectSize: 1500
+        setObjectWidth: 1000
+        endUpon: 
+    sprite: s32'vrsol400_04', 1
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    playSFX: s32'SE_EXPLODE'
+    sprite: s32'vrsol400_04', 3
+    sprite: s32'vrsol400_04', 2
+    hit: 
+    sprite: s32'vrsol400_04', 1
+    sprite: s32'vrsol400_04', 1
+    sprite: s32'vrsol400_04', 3
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'vrsol400_04', 2
+    sprite: s32'null', 30
+    recoveryState: 
+    endState: 
+
+startState: s32'RiotStamp_DI'
+    upon: (IMMEDIATE)
+        endUpon: 
+    sprite: s32'null', 10
+    createObject2: s32'RiotStamp_DI_Bomb', 133
+    sprite: s32'null', 10
+    createObject2: s32'RiotStamp_DI_Bomb', 133
+    sprite: s32'null', 4
+    createObject2: s32'RiotStamp_DI_Bomb', 133
+    sprite: s32'null', 4
+    createObject2: s32'RiotStamp_DI_Bomb', 133
+    sprite: s32'null', 4
+    createObject2: s32'RiotStamp_DI_Bomb', 133
+    endState: 
+
+startState: s32'RiotStamp_DI_Bomb'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        attackLevel: 2
+        damage: 20
+        riscPlus: 10
+        untechableTime: 40
+        hitAirPushbackX: 10000
+        hitAirPushbackY: 30000
+        hitEffectFlame: 1
+        SFX_0: s32'SE_EXPLODE'
+        Unknown1119: s32'SE_EXPLODE'
+        tensionGainOnConnect: 12
+        Unknown450: s32'dsl_riot_bomb'
+        setObjectSize: 1500
+        endUpon: 
+    sprite: s32'solef414_00', 10
+    hit: 
+    endState: 
+
+startState: s32'Bukkira_DI'
+    upon: (IMMEDIATE)
+        Unknown450: s32'cmn_impact_default'
+        setObjectSize: 1500
+        Unknown94: -100000
+        endUpon: 
+    sprite: s32'null', 100
+    endState: 
+
+startState: s32'KudakeroEF'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        Unknown450: s32'sol_kudakero_atk'
+        attackLevel: 1
+        damage: 20
+        riscPlus: 6
+        groundHitEffect: (AIR_FACE_UP)
+        hitAirPushbackX: 30000
+        hitAirPushbackY: 20000
+        untechableTime: 22
+        hitEffectFlame: 1
+        setObjectSize: 1500
+        Unknown156: 1700
+        endUpon: 
+    sprite: s32'null', 4
+    playSFX: s32'SE_EXPLODE'
+    sprite: s32'sol_kudakero', 10
+    hit: 
+    sprite: s32'null', 40
+    recoveryState: 
+    endState: 
+
+startState: s32'KudakeroEF_DI'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        Unknown450: s32'dsl_kudakero_atk'
+        Unknown2271: 1
+        attackLevel: 1
+        damage: 20
+        riscPlus: 6
+        groundHitEffect: (AIR_FACE_UP)
+        hitAirPushbackX: 20000
+        hitAirPushbackY: 30000
+        untechableTime: 40
+        hitEffectFlame: 1
+        setObjectSize: 3000
+        endUpon: 
+    sprite: s32'null', 4
+    playSFX: s32'SE_EXPLODE'
+    sprite: s32'solef414_00', 10
+    hit: 
+    sprite: s32'null', 60
+    recoveryState: 
+    endState: 
+
+startState: s32'Ichigeki_hit'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        endUpon: 
+    sprite: s32'null', 800
+    Unknown450: s32'sol_ichigeki_impact'
+    endState: 
+
+startState: s32'Ichigeki_hit_dsl'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        endUpon: 
+    sprite: s32'null', 800
+    Unknown450: s32'dsl_ichigeki_impact'
+    endState: 
+
+startState: s32'dsl_icigeki_screen'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        endUpon: 
+    sprite: s32'null', 800
+    Unknown450: s32'dsl_icigeki_screen'
+    endState: 
+
+startState: s32'Neoblitz_atk'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        Unknown454: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 10
+    Unknown450: s32'sol_neoblitz_atk'
+    Unknown1769: 1
+    sprite: s32'null', 80
+    Unknown1769: 0
+    endState: 
+
+startState: s32'BG_ichigeki'
+    upon: (IMMEDIATE)
+        Unknown450: s32'sol_ichigeki_bg'
+        endUpon: 
+    sprite: s32'null', 2147483647
+    endState: 
+
+startState: s32'BG_ichigeki_dsl'
+    upon: (IMMEDIATE)
+        Unknown450: s32'dsl_ichigeki_bg'
+        endUpon: 
+    sprite: s32'null', 2147483647
+    endState: 
+
+startState: s32'BG_dslwin'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown450: s32'dsl_win_bg'
+        endUpon: 
+    sprite: s32'null', 2000
+    endState: 
+
+startState: s32'dsl_win_screen'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown450: s32'dsl_win_screen'
+        endUpon: 
+    sprite: s32'null', 0
+    endState: 
+
+startState: s32'dsl_terikaeshi'
+    upon: (IMMEDIATE)
+        Unknown450: s32'dsl_floorbloom'
+        Unknown2312: 1
+        upon: 39
+            Unknown2218: 3, 150, 23, 100
+            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 18, 0, 300000
+                Unknown191: 300
+                endIf: 
+            else: 
+                Unknown191: -300
+                endElse: 
+            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 99, 0, 0
+                setObjectSize: 0
+                endIf: 
+            ifOperation: (IS_GREATER), (NEXT_ARG_IS_VAR), 99, 0, 1000
+                setObjectSize: 1000
+                endIf: 
+            Unknown98: 0
+            Unknown338: 0
+            if: (NEXT_ARG_IS_VAR), 3
+                Unknown338: 255
+                endIf: 
+            endUpon: 
+        endUpon: 
+    sprite: s32'null', 2147483647
+    endState: 
+
+startState: s32'ACEvtSOL_7A'
+    upon: (IMMEDIATE)
+        Unknown2114: '0x000000FF000000FF01000000'
+        Unknown2116: 1000
+        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+        Unknown2107: '0x4576656E74534F4C3037415F303100000000000000000000000000000000000001000000'
+        Unknown2109: '0x636D6E5F6576745F73696E30303000000000000000000000000000000000000053494E00000000000000000000000000000000000000000000000000000000006400000002000000'
+        Unknown2109: '0x636D6E5F6576745F72616D30303000000000000000000000000000000000000052414D00000000000000000000000000000000000000000000000000000000006400000003000000'
+        Unknown2109: '0x636D6E5F6576745F7261766E00000000000000000000000000000000000000005241564E000000000000000000000000000000000000000000000000000000006400000004000000'
+        Unknown2121: 2
+        Unknown94: -300000
+        Unknown1700: -300000
+        Unknown40: 
+        Unknown2121: 3
+        Unknown94: -500000
+        Unknown1700: -200000
+        Unknown232: -10000
+        Unknown40: 
+        Unknown2121: 4
+        Unknown94: -100000
+        Unknown1700: -200000
+        Unknown232: -40000
+        Unknown40: 
+        Unknown2121: 0
+        Unknown94: -300000
+        Unknown232: -10000
+        Unknown40: 
+        Unknown2121: 1
+        Unknown94: 200000
+        Unknown232: -10000
+        Unknown40: 
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2123: s32'BGM_Elegance'
+    Unknown2123: s32'BGM_INTERLUDE'
+    Unknown2122: 
+    sprite: s32'null', 1
+    Unknown2120: '0x456C6567616E636500000000000000000000000000000000000000000000000000000000'
+    Unknown2115: 50, 0
+    sprite: s32'null', 90
+    Unknown2113: '0x4143325F534F4C5F4237415F3030305F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+    sprite: s32'null', 140
+    Unknown2114: '0x000000FF000000003C000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237415F30303100000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237415F30303200000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237415F30303300000000000000000000000000000000001E000000'
+    sprite: s32'null', 100
+    Unknown2115: 0, 120
+    Unknown2106: '0x4143325F534F4C5F4237415F30303400000000000000000000000000000000001E000000'
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 48
+            Unknown2107: '0x4576656E74534F4C3037415F303200000000000000000000000000000000000001000000'
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 70
+            Unknown2107: '0x4576656E74534F4C3037415F303100000000000000000000000000000000000000000000'
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 2147483647
+    Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
+    Unknown2115: 50, 0
+    Unknown2106: '0x4143325F534F4C5F4237415F30303500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037415F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237415F30303600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037415F303200000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237415F30303700000000000000000000000000000000001E000000'
+    sprite: s32'null', 10
+    sprite: s32'null', 10
+    Unknown2114: '0x00000000000000FF0A000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'ACEvtSOL_7B'
+    upon: (IMMEDIATE)
+        Unknown2114: '0x000000FF000000001E000000'
+        Unknown2116: 1000
+        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+        Unknown2107: '0x4576656E74534F4C3037425F303100000000000000000000000000000000000001000000'
+        Unknown2109: '0x636D6E5F6576745F73696E30303000000000000000000000000000000000000053494E00000000000000000000000000000000000000000000000000000000006400000002000000'
+        Unknown2109: '0x636D6E5F6576745F72616D30303000000000000000000000000000000000000052414D00000000000000000000000000000000000000000000000000000000006400000003000000'
+        Unknown2109: '0x636D6E5F6576745F7261766E00000000000000000000000000000000000000005241564E000000000000000000000000000000000000000000000000000000006400000004000000'
+        Unknown2121: 2
+        Unknown94: -300000
+        Unknown1700: -300000
+        Unknown40: 
+        Unknown2121: 3
+        Unknown94: -500000
+        Unknown1700: -200000
+        Unknown232: -10000
+        Unknown40: 
+        Unknown2121: 4
+        Unknown94: -100000
+        Unknown1700: -35000
+        Unknown232: -60000
+        Unknown40: 
+        Unknown2121: 0
+        Unknown94: -300000
+        Unknown40: 
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2120: '0x494E5445524C554445000000000000000000000000000000000000000000000000000000'
+    Unknown2115: 50, 0
+    sprite: s32'null', 80
+    Unknown2107: '0x4576656E74534F4C3037425F303100000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303100000000000000000000000000000000001E000000'
+    Unknown2075: 1
+    sprite: s32'null', 380
+    Unknown2106: '0x4143325F534F4C5F4237425F30303200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037415F303300000000000000000000000000000000000001000000'
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 280
+            Unknown2107: '0x4576656E74534F4C3037425F303300000000000000000000000000000000000001000000'
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303300000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303400000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2075: 0
+    Unknown2106: '0x4143325F534F4C5F4237425F30303500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303200000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303400000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303600000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303700000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303800000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30303900000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303300000000000000000000000000000000000000000000'
+    Unknown2107: '0x636D6E5F6576745F73696E30303100000000000000000000000000000000000002000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313000000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313100000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313200000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313300000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313400000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313500000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303400000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313700000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313800000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30313900000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303500000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30323000000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303600000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30323100000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4237425F30323200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3037425F303700000000000000000000000000000000000000000000'
+    Unknown2107: '0x636D6E5F6576745F73696E30303200000000000000000000000000000000000002000000'
+    sprite: s32'null', 10
+    sprite: s32'null', 10
+    Unknown2114: '0x00000000000000FF0A000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'ACEvtSOL_8A'
+    upon: (IMMEDIATE)
+        Unknown2114: '0x000000FF000000FF01000000'
+        Unknown2116: 1000
+        Unknown2107: '0x4576656E74534F4C3038415F303100000000000000000000000000000000000000000000'
+        Unknown2107: '0x4576656E74534F4C3038415F303100000000000000000000000000000000000001000000'
+        Unknown2109: '0x636D6E5F6576745F73696E30303000000000000000000000000000000000000053494E00000000000000000000000000000000000000000000000000000000006400000002000000'
+        Unknown2109: '0x636D6E5F6576745F72616D30303000000000000000000000000000000000000052414D00000000000000000000000000000000000000000000000000000000006400000003000000'
+        Unknown2109: '0x636D6E5F6576745F7261766E00000000000000000000000000000000000000005241564E000000000000000000000000000000000000000000000000000000006400000004000000'
+        Unknown2121: 2
+        Unknown94: -300000
+        Unknown40: 
+        Unknown2121: 3
+        Unknown94: -200000
+        Unknown1700: -200000
+        Unknown232: -10000
+        Unknown40: 
+        Unknown2121: 4
+        Unknown94: 100000
+        Unknown1700: -200000
+        Unknown232: -40000
+        Unknown40: 
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2123: s32'BGM_HEIJI2'
+    Unknown2122: 
+    sprite: s32'null', 1
+    Unknown2120: '0x4845494A4932000000000000000000000000000000000000000000000000000000000000'
+    Unknown2115: 50, 0
+    sprite: s32'null', 90
+    Unknown2113: '0x4143325F534F4C5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+    sprite: s32'null', 140
+    Unknown2114: '0x000000FF000000003C000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2107: '0x4576656E74534F4C3038415F303200000000000000000000000000000000000000000000'
+    Unknown2106: '0x4143325F534F4C5F4238415F30303300000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303400000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744245443038415F303500000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303500000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303700000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303400000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303800000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303500000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30303900000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30313000000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303600000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30313100000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30313200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303300000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30313300000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303700000000000000000000000000000000000001000000'
+    Unknown2115: 0, 120
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F534F4C5F4238415F30313400000000000000000000000000000000001E000000'
+    sprite: s32'null', 90
+    Unknown2106: '0x4143325F534F4C5F4238415F30313500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74534F4C3038415F303800000000000000000000000000000000000001000000'
+    Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
+    Unknown2115: 50, 0
+    sprite: s32'null', 145
+    Unknown2107: '0x4576656E744A6B6F456E7472790000000000000000000000000000000000000001000000'
+    sprite: s32'null', 100
+    Unknown2106: '0x4143325F534F4C5F4238415F30313600000000000000000000000000000000001E000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'ACEvtSOL_8B'
+    upon: (IMMEDIATE)
+        Unknown2114: '0x000000FF000000FF01000000'
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'FBFefnirPunch'
+    upon: (IMMEDIATE)
+        Unknown245: 
+        hitEffectFlame: 1
+        groundHitEffect: (AIR_FACE_UP)
+        attackLevel: 3
+        Unknown1028: 2
+        setObjectSize: 1750
+        setObjectWidth: 1000
+        setForcedProration: 70
+        damage: 70
+        stunValue: 0
+        Unknown1137: 32
+        if: (NEXT_ARG_IS_VAR), 115
+            damage: 87
+            Unknown1177: 1
+            Unknown1179: 1
+            Unknown1086: 50
+            Unknown1165: s32'TyrantRaveBurst'
+            endIf: 
+        riscPlus: 14
+        Unknown1112: 0
+        riscMinus: 27
+        hitAirPushbackX: 31500
+        hitAirPushbackY: 31500
+        untechableTime: 45
+        wallBounceCount: 1
+        wallBounceXVelocityPercent: 20
+        wallBounceInCornerOnly: 1
+        if: (NEXT_ARG_IS_VAR), 126
+            guardType: (NONE)
+            endIf: 
+        if: (NEXT_ARG_IS_VAR), 84
+            Unknown58: 1
+            endIf: 
+        upon: (HIT)
+            if: (NEXT_ARG_IS_VAR), 115
+                ifNot: 2, 116
+                    ifNot: 2, 45
+                        storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+                        Unknown2130: 5000
+                        endIf: 
+                    endIf: 
+                endIf: 
+            endUpon: 
+        endUpon: 
+    Unknown24: s32'Boss', 2, 84
+    sprite: s32'vrsol432_00', 5
+    physicsXImpulse: 16000
+    playCharacterSFX: s32'SOL_002'
+    Unknown450: s32'sol_tyrantrave2'
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    physicsXImpulse: 12000
+    sprite: s32'vrsol432_02', 5
+    physicsXImpulse: 7500
+    sprite: s32'vrsol432_03', 5
+    physicsXImpulse: 5750
+    sprite: s32'vrsol432_04', 5
+    physicsXImpulse: 2000
+    sprite: s32'vrsol432_05', 5
+    recoveryState: 
+    sprite: s32'vrsol432_06', 5
+    Unknown243: 
+    recoveryState: 
+    sprite: s32'vrsol432_07', 5
+    sprite: s32'vrsol432_08', 5
+    sprite: s32'vrsol432_09', 5
+    sprite: s32'vrsol432_10', 5
+    sprite: s32'vrsol432_11', 5
+    sprite: s32'vrsol432_12', 5
+    sprite: s32'null', 100
+    Unknown3: 
+    Unknown18: 
+    setMarker: s32'Boss'
+    sprite: s32'vrsol432_00', 5
+    disableHitstop: 1
+    hitAirPushbackX: 50000
+    hitAirPushbackY: 10000
+    damage: 45
+    playCharacterSFX: s32'SOL_002'
+    Unknown450: s32'sol_tyrantrave2'
+    sprite: s32'vrsol432_01', 5
+    physicsXImpulse: 40000
+    hit: 
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    Unknown3: 
+    setMarker: s32'loop'
+    sprite: s32'vrsol432_01', 5
+    hit: 
+    Unknown3: 
+    goToMarker: s32'loop'
+    endState: 
+

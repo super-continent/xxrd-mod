@@ -1,0 +1,1489 @@
+startSubroutine: s32'RandomExPointNum3'
+    ifOperation: 22, 0, 33, 0, 100
+        Unknown2161: 0, 0, 0
+        endIf: 
+    else: 
+        ifOperation: 22, 0, 50, 0, 100
+            Unknown2161: 1, 0, 0
+            endIf: 
+        else: 
+            Unknown2161: 2, 0, 0
+            endElse: 
+        endElse: 
+    endSubroutine: 
+
+startState: s32'DustEffect'
+    upon: (IMMEDIATE)
+        Unknown450: s32'kyk_dust_start'
+        Unknown454: 2
+        Unknown456: 2
+        Unknown466: 3
+        Unknown2178: 
+        Unknown2184: 1
+        upon: 45
+            Unknown454: 0
+            Unknown2001: 3, s32'CmnActRomanCancel'
+            ifNot: 2, 0
+                Unknown14: s32'End'
+                endIf: 
+            else: 
+                ifOperation: (IS_GREATER), (NEXT_ARG_IS_VAR), 13, 0, 6
+                    Unknown448: s32'kyk_dust_end', 100
+                    endIf: 
+                Unknown19: 23
+                endElse: 
+            endUpon: 
+        upon: (FRAME_STEP)
+            Unknown2001: 3, s32'CmnActRomanCancel'
+            if: (NEXT_ARG_IS_VAR), 0
+                Unknown456: 0
+                Unknown23: 3
+                endIf: 
+            endUpon: 
+        endUpon: 
+    sprite: s32'dust_atk', 30
+    sprite: s32'dust_atk', 30
+    Unknown2176: 23
+    setMarker: s32'End'
+    sprite: s32'null', 5
+    sprite: s32'null', 1
+    Unknown448: s32'kyk_dust_end', 100
+    Unknown19: 23
+    endState: 
+
+startState: s32'DustEffectShot'
+    upon: (IMMEDIATE)
+        Unknown243: 
+        attackLevel: 4
+        damage: 25
+        setProration: 80
+        Unknown1108: 90
+        hitEffectLightning: 1
+        Unknown1028: 2
+        Unknown454: 0
+        Unknown456: 2
+        Unknown466: 3
+        endUpon: 
+    sprite: s32'dust_atk', 7
+    sprite: s32'dust_atk', 13
+    upon: (FRAME_STEP)
+        Unknown2001: 3, s32'CmnActRomanCancel'
+        if: (NEXT_ARG_IS_VAR), 0
+            grabOrRelease: 
+            Unknown456: 0
+            Unknown41: 2
+            Unknown1766: 5, 24
+            Unknown2161: 100, 300000, 220000
+            createObject2: s32'Mahojin', 130
+            Unknown43: 5, 1
+            Unknown1766: 5, 26
+            Unknown40: 
+            Unknown23: 3
+            endIf: 
+        endUpon: 
+    sprite: s32'dust_atk', 10
+    recoveryState: 
+    Unknown23: 3
+    sprite: s32'dust_atk', 30
+    Unknown2176: 23
+    endState: 
+
+startState: s32'AirDustAttackObj'
+    upon: (IMMEDIATE)
+        Unknown243: 
+        hitEffectLightning: 1
+        attackLevel: 2
+        Unknown725: 1
+        damage: 40
+        riscPlus: 10
+        counterHitUntechableTime: 56
+        groundCounterHitEffect: (AIR_LAUNCH)
+        airCounterHitEffect: (AIR_LAUNCH)
+        counterhitAirPushbackY: 33250
+        counterhitAirPushbackX: 7000
+        Unknown1602: 2
+        upon: (ON_HIT_OR_BLOCK)
+            Unknown1603: 2
+            endUpon: 
+        Unknown458: 3
+        endUpon: 
+    sprite: s32'KYEL_00', 3
+    Unknown450: s32'kyk_airdust_start'
+    sprite: s32'KYEL_13', 3
+    sprite: s32'KYEL_00', 3
+    sprite: s32'KYEL_13', 3
+    sprite: s32'KYEL_00', 3
+    sprite: s32'KYEL_13', 3
+    sprite: s32'KYEL_00', 3
+    sprite: s32'KYEL_13', 3
+    sprite: s32'KYEL_00', 3
+    sprite: s32'KYEL_01_rx', 2
+    Unknown450: s32'kyk_airdust_loop'
+    hit: 
+    sprite: s32'KYEL_02_rx', 2
+    sprite: s32'KYEL_01_rx', 2
+    sprite: s32'KYEL_02_rx', 2
+    sprite: s32'KYEL_01_rx', 2
+    sprite: s32'KYEL_02_rx', 2
+    sprite: s32'KYEL_01_rx', 1
+    sprite: s32'KYEL_03', 3
+    Unknown450: s32'kyk_airdust_end'
+    recoveryState: 
+    sprite: s32'KYEL_04', 3
+    sprite: s32'KYEL_05', 3
+    sprite: s32'KYEL_06', 3
+    sprite: s32'KYEL_07', 3
+    sprite: s32'KYEL_08', 3
+    sprite: s32'KYEL_09', 3
+    sprite: s32'KYEL_10', 3
+    sprite: s32'KYEL_11', 3
+    sprite: s32'KYEL_12', 3
+    endState: 
+
+startState: s32'Mahojin'
+    upon: (IMMEDIATE)
+        Unknown2178: 
+        Unknown2177: 1
+        Unknown2156: 0
+        superArmorEnabled: 1
+        Unknown1824: 0
+        Unknown454: 2
+        upon: 45
+            playSFX: s32'GG2_073'
+            Unknown449: s32'kyk_mahojin_end', 100
+            Unknown19: 23
+            endUpon: 
+        upon: (ON_HIT_OR_BLOCK)
+            Unknown448: s32'kyk_mahojin_powerup', 100
+            Unknown19: 23
+            endUpon: 
+        upon: 24
+            Unknown2176: 23
+            endUpon: 
+        upon: 26
+            Unknown454: 0
+            endUpon: 
+        upon: 59
+            Unknown19: 23
+            endUpon: 
+        endUpon: 
+    sprite: s32'mahojin', 10
+    Unknown450: s32'kyk_mahojin_start'
+    sprite: s32'mahojin', 90
+    Unknown450: s32'kyk_mahojin_loop'
+    storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+    sprite: s32'mahojin', 110
+    Unknown3: 
+    Unknown2176: 23
+    endState: 
+
+startState: s32'StunEdgeObj'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 2
+            storeValue: (NEXT_ARG_IS_VAR), 49, 0, 1
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 3
+            storeValue: (NEXT_ARG_IS_VAR), 49, 0, 1
+            endIf: 
+        Unknown2178: 
+        numberOfHits: 1
+        Unknown2189: 1
+        Unknown2180: 1
+        Unknown2181: 1
+        Unknown2182: 1
+        Unknown2183: 1
+        setThrowRange: 0
+        upon: 2
+            Unknown2176: 23
+            endUpon: 
+        upon: 45
+            createObject2: s32'StunEdgeDelete', 100
+            Unknown19: 23
+            endUpon: 
+        upon: (FRAME_STEP)
+            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 18, 0, 250000
+                ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 4
+                    Unknown448: s32'kyk_se_floor', 123
+                    endIf: 
+                endIf: 
+            Unknown200: 0
+            if: (NEXT_ARG_IS_VAR), 45
+                storeValue: (NEXT_ARG_IS_VAR), 52, 0, 0
+                setMarker: s32'sloop'
+                storeValue: (NEXT_ARG_IS_VAR), 51, 0, 0
+                Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
+                if: (NEXT_ARG_IS_VAR), 0
+                    Unknown53: 23, 2, 61, 4, 2, 45
+                    if: (NEXT_ARG_IS_VAR), 61
+                        storeValue: (NEXT_ARG_IS_VAR), 51, 0, 1
+                        Unknown60: '0x17000000670000000400000067000000'
+                        Unknown53: 23, 2, 62, 23, 2, 17
+                        Unknown53: 23, 2, 63, 4, 2, 17
+                        Unknown54: 1, 2, 62, 2, 63
+                        ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 62, 0, 0
+                        Unknown54: 2, 2, 62, 0, -1
+                        endIf: 
+                    Unknown53: 23, 2, 64, 23, 2, 18
+                    Unknown53: 23, 2, 65, 4, 2, 18
+                    Unknown54: 1, 2, 64, 2, 65
+                    ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 64, 0, 0
+                        Unknown54: 2, 2, 64, 0, -1
+                        endIf: 
+                    ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 62, 0, 80000
+                        ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 64, 0, 160000
+                        storeValue: (NEXT_ARG_IS_VAR), 51, 0, 0
+                        storeValue: (NEXT_ARG_IS_VAR), 45, 0, 0
+                        Unknown1766: 4, 23
+                        Unknown2247: 2, 115, 0, 0
+                        callEtcState: s32'SPStunEdgeObj', 100
+                        Unknown19: 23
+                        endIf: 
+                    endIf: 
+                endIf: 
+            endIf: 
+        Unknown31: '0x736C6F6F700000000000000000000000000000000000000000000000000000000A00000002000000330000000000000000000000'
+        endIf: 
+    endUpon: 
+
+Unknown1602: 1
+Unknown58: 1
+endUpon: 
+sprite: s32'null', 6
+Unknown450: s32'kyk_se_start'
+if: (NEXT_ARG_IS_VAR), 49
+    Unknown26: '0x080000000000000001000000'
+    endIf: 
+
+Unknown454: 2
+Unknown456: 2
+Unknown458: 2
+ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 0
+    hitEffectLightning: 1
+    attackLevel: 2
+    damage: 30
+    setProration: 90
+    setAttachOpponent: 1
+    tensionGainOnConnect: 40
+    physicsXImpulse: 28000
+    Unknown200: 0
+    Unknown1165: s32'LandStun'
+    endIf: 
+
+ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 1
+    hitEffectLightning: 1
+    attackLevel: 4
+    damage: 40
+    setAttachOpponent: 1
+    tensionGainOnConnect: 40
+    physicsXImpulse: 14000
+    Unknown120: 175
+    setObjectSize: 2000
+    Unknown200: 0
+    endIf: 
+
+ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 2
+    hitEffectLightning: 1
+    attackLevel: 3
+    damage: 33
+    setProration: 90
+    setAttachOpponent: 1
+    tensionGainOnConnect: 20
+    physicsXImpulse: 21000
+    physicsYImpulse: -34125
+    Unknown200: 0
+    Unknown1165: s32'AirStun1'
+    endIf: 
+
+ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 3
+    hitEffectLightning: 1
+    attackLevel: 3
+    damage: 33
+    setProration: 90
+    setAttachOpponent: 1
+    tensionGainOnConnect: 20
+    physicsXImpulse: 36750
+    physicsYImpulse: -7875
+    Unknown200: 0
+    Unknown1165: s32'AirStun2'
+    endIf: 
+
+Unknown2150: 1
+Unknown3: 
+Unknown450: s32'kyk_se_loop'
+grabOrRelease: 
+storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+Unknown454: 0
+Unknown456: 0
+Unknown458: 0
+setMarker: s32'top'
+sprite: s32'KYE3_05', 1
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE3_05', 1
+Unknown2150: 0
+sprite: s32'KYE3_06', 2
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE3_07', 2
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE3_08', 2
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE3_07', 2
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE3_06', 2
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+Unknown3: 
+goToMarker: s32'top'
+endState: 
+startState: s32'StunEdgeDelete'
+    upon: (IMMEDIATE)
+        Unknown1602: 1
+        Unknown450: s32'kyk_se_end'
+        Unknown53: 23, 2, 1, 2, 2, 1
+        endUpon: 
+    sprite: s32'KYE3_09', 4
+    sprite: s32'KYE3_10', 4
+    sprite: s32'KYE3_11', 4
+    sprite: s32'KYE3_12', 4
+    endState: 
+
+startState: s32'SPStunEdgeObj'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 0
+            hitEffectLightning: 1
+            groundCounterHitEffect: (AIR_FACE_UP)
+            hitAirPushbackX: 20000
+            hitAirPushbackY: 15000
+            attackLevel: 4
+            riscPlus: 3
+            damage: 40
+            tensionGainOnConnect: 40
+            Unknown1028: 2
+            hitstop: 18
+            Unknown14: s32'StunEdge'
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 1
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 2
+            hitEffectLightning: 1
+            groundCounterHitEffect: (AIR_FACE_UP)
+            attackLevel: 4
+            riscPlus: 3
+            damage: 43
+            groundCounterHitEffect: (STAGGER)
+            staggerDuration: 40
+            tensionGainOnConnect: 20
+            Unknown1028: 2
+            hitAirPushbackX: 20000
+            Unknown14: s32'AirStunEdge'
+            endIf: 
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 3
+            hitEffectLightning: 1
+            groundCounterHitEffect: (AIR_FACE_UP)
+            attackLevel: 4
+            riscPlus: 3
+            damage: 43
+            tensionGainOnConnect: 20
+            Unknown1028: 2
+            hitAirPushbackX: 20000
+            Unknown14: s32'AirHSStunEdge'
+            endIf: 
+        Unknown2150: 1
+        Unknown53: 23, 2, 7, 2, 2, 7
+        Unknown53: 23, 2, 8, 2, 2, 8
+        Unknown200: 0
+        Unknown176: 1
+        endUpon: 
+    setMarker: s32'StunEdge'
+    sprite: s32'null', 7
+    Unknown449: s32'kyk_mahojin_end', 100
+    sprite: s32'atk_line', 3
+    Unknown450: s32'kyk_spse'
+    playCharacterSFX: s32'2'
+    hit: 
+    sprite: s32'atk_line', 10
+    recoveryState: 
+    Unknown18: 
+    setMarker: s32'AirStunEdge'
+    sprite: s32'null', 7
+    Unknown449: s32'kyk_mahojin_end', 100
+    sprite: s32'atk_line', 3
+    Unknown450: s32'kyk_spse'
+    hit: 
+    playCharacterSFX: s32'2'
+    sprite: s32'atk_line', 10
+    recoveryState: 
+    Unknown18: 
+    setMarker: s32'AirHSStunEdge'
+    sprite: s32'null', 7
+    Unknown449: s32'kyk_mahojin_end', 100
+    sprite: s32'atk_line', 3
+    Unknown450: s32'kyk_spse'
+    hit: 
+    playCharacterSFX: s32'2'
+    sprite: s32'atk_line', 10
+    recoveryState: 
+    Unknown18: 
+    endState: 
+
+startState: s32'ChargedStunEdgeObj'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        Unknown2378: 
+        hitEffectLightning: 1
+        Unknown1112: 0
+        Unknown1110: 1
+        attackLevel: 4
+        riscPlus: 3
+        damage: 20
+        setAttachOpponent: 1
+        tensionGainOnConnect: 20
+        Unknown1153: 1
+        Unknown2156: 0
+        Unknown2178: 
+        numberOfHits: 3
+        Unknown2189: 1
+        Unknown2180: 1
+        Unknown2181: 1
+        Unknown2182: 1
+        Unknown2183: 1
+        setThrowRange: 0
+        upon: 2
+            Unknown2176: 23
+            endUpon: 
+        upon: 35
+            Unknown2176: 23
+            endUpon: 
+        upon: 45
+            Unknown448: s32'kyk_secharge_end', 100
+            Unknown19: 23
+            endUpon: 
+        upon: (FRAME_STEP)
+            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 18, 0, 250000
+                ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 4
+                    Unknown448: s32'kyk_se_floor', 123
+                    endIf: 
+                endIf: 
+            if: (NEXT_ARG_IS_VAR), 45
+                storeValue: (NEXT_ARG_IS_VAR), 52, 0, 0
+                setMarker: s32'sloop'
+                storeValue: (NEXT_ARG_IS_VAR), 51, 0, 0
+                Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
+                if: (NEXT_ARG_IS_VAR), 0
+                    Unknown53: 23, 2, 61, 4, 2, 45
+                    if: (NEXT_ARG_IS_VAR), 61
+                        storeValue: (NEXT_ARG_IS_VAR), 51, 0, 1
+                        Unknown60: '0x17000000670000000400000067000000'
+                        Unknown53: 23, 2, 62, 23, 2, 17
+                        Unknown53: 23, 2, 63, 4, 2, 17
+                        Unknown54: 1, 2, 62, 2, 63
+                        ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 62, 0, 0
+                        Unknown54: 2, 2, 62, 0, -1
+                        endIf: 
+                    Unknown53: 23, 2, 64, 23, 2, 18
+                    Unknown53: 23, 2, 65, 4, 2, 18
+                    Unknown54: 1, 2, 64, 2, 65
+                    ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 64, 0, 0
+                        Unknown54: 2, 2, 64, 0, -1
+                        endIf: 
+                    ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 62, 0, 60000
+                        ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 64, 0, 120000
+                        storeValue: (NEXT_ARG_IS_VAR), 51, 0, 0
+                        storeValue: (NEXT_ARG_IS_VAR), 45, 0, 0
+                        Unknown1766: 4, 23
+                        createObject2: s32'SPChargedStunEdgeObj', 100
+                        Unknown19: 23
+                        endIf: 
+                    endIf: 
+                endIf: 
+            endIf: 
+        Unknown31: '0x736C6F6F700000000000000000000000000000000000000000000000000000000A00000002000000330000000000000000000000'
+        endIf: 
+    endUpon: 
+
+Unknown1602: 1
+Unknown58: 1
+endUpon: 
+sprite: s32'null', 15
+Unknown450: s32'kyk_secharge_start'
+Unknown454: 2
+Unknown456: 2
+Unknown458: 2
+Unknown3: 
+Unknown450: s32'kyk_secharge_loop'
+grabOrRelease: 
+storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+Unknown454: 0
+Unknown456: 0
+Unknown458: 0
+Unknown2149: 2
+sprite: s32'KYE4_00', 3
+Unknown454: 0
+Unknown458: 0
+Unknown456: 0
+physicsXImpulse: 10500
+hit: 
+setMarker: s32'loop'
+sprite: s32'KYE4_01', 3
+Unknown111: 106
+hit: 
+Unknown448: s32'kyk_secharge_ring', 100
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE4_02', 3
+Unknown111: 106
+hit: 
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE4_00', 3
+Unknown111: 106
+hit: 
+Unknown448: s32'kyk_secharge_ring', 100
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE4_01', 3
+Unknown111: 106
+hit: 
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE4_02', 3
+Unknown111: 106
+hit: 
+Unknown448: s32'kyk_secharge_ring', 100
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+sprite: s32'KYE4_00', 3
+Unknown111: 106
+hit: 
+callCmnEfFunc: s32'RandomExPointNum3'
+Unknown2244: 0, 0
+Unknown449: s32'kyk_thunder_tail', 130
+Unknown3: 
+goToMarker: s32'loop'
+endState: 
+startState: s32'SPChargedStunEdgeObj'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        hitEffectLightning: 1
+        attackLevel: 4
+        riscPlus: 3
+        damage: 20
+        Unknown1028: 2
+        untechableTime: 60
+        hitPushbackX: 10
+        disableHitstop: 1
+        Unknown1602: 1
+        numberOfHits: 6
+        Unknown2180: 1
+        Unknown2181: 1
+        Unknown2185: 1
+        upon: 45
+            Unknown14: s32'koware'
+            endUpon: 
+        endUpon: 
+    sprite: s32'null', 8
+    Unknown449: s32'kyk_mahojin_end', 100
+    sprite: s32'sp_chargestun2_00', 2
+    Unknown450: s32'kyk_spsechargesord_loop'
+    hit: 
+    playSFX: s32'GG2_014'
+    sprite: s32'sp_chargestun2_01', 2
+    hit: 
+    sprite: s32'sp_chargestun2_02', 1
+    hit: 
+    sprite: s32'sp_chargestun2_03', 1
+    hit: 
+    playCharacterSFX: s32'6'
+    sprite: s32'sp_chargestun2_04', 8
+    sprite: s32'sp_chargestun2_04', 9
+    hit: 
+    sprite: s32'sp_chargestun2_04', 9
+    hit: 
+    sprite: s32'sp_chargestun2_04', 9
+    hit: 
+    sprite: s32'sp_chargestun2_04', 9
+    hit: 
+    sprite: s32'sp_chargestun2_04', 9
+    hit: 
+    setMarker: s32'koware'
+    sprite: s32'null', 20
+    recoveryState: 
+    Unknown450: s32'kyk_spsechargesord_end'
+    endState: 
+
+startState: s32'obj_kyk_secharge_power'
+    sprite: s32'null', 30
+    Unknown454: 2
+    Unknown450: s32'kyk_secharge_power'
+    endState: 
+
+startState: s32'SacredEdgeObj'
+    upon: (IMMEDIATE)
+        Unknown245: 
+        hitEffectLightning: 1
+        attackLevel: 4
+        Unknown1028: 1
+        riscPlus: 3
+        damage: 27
+        setAttachOpponent: 0
+        untechableTime: 30
+        Unknown58: 1
+        Unknown450: s32'kyk_sacred_loop'
+        Unknown2178: 
+        numberOfHits: 5
+        Unknown2189: 1
+        Unknown2180: 1
+        Unknown2181: 1
+        Unknown2182: 1
+        Unknown2183: 1
+        setThrowRange: 0
+        upon: 2
+            Unknown2176: 23
+            endUpon: 
+        upon: 45
+            Unknown448: s32'kyk_sacred_end', 100
+            Unknown19: 23
+            endUpon: 
+        upon: (FRAME_STEP)
+            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 18, 0, 250000
+                ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 4
+                    Unknown448: s32'kyk_se_floor', 123
+                    endIf: 
+                endIf: 
+            if: (NEXT_ARG_IS_VAR), 45
+                storeValue: (NEXT_ARG_IS_VAR), 52, 0, 0
+                setMarker: s32'sloop'
+                storeValue: (NEXT_ARG_IS_VAR), 51, 0, 0
+                Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
+                if: (NEXT_ARG_IS_VAR), 0
+                    Unknown53: 23, 2, 61, 4, 2, 45
+                    if: (NEXT_ARG_IS_VAR), 61
+                        storeValue: (NEXT_ARG_IS_VAR), 51, 0, 1
+                        Unknown60: '0x17000000670000000400000067000000'
+                        Unknown53: 23, 2, 62, 23, 2, 17
+                        Unknown53: 23, 2, 63, 4, 2, 17
+                        Unknown54: 1, 2, 62, 2, 63
+                        ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 62, 0, 0
+                        Unknown54: 2, 2, 62, 0, -1
+                        endIf: 
+                    Unknown53: 23, 2, 64, 23, 2, 18
+                    Unknown53: 23, 2, 65, 4, 2, 18
+                    Unknown54: 1, 2, 64, 2, 65
+                    ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 64, 0, 0
+                        Unknown54: 2, 2, 64, 0, -1
+                        endIf: 
+                    ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 62, 0, 40000
+                        ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 64, 0, 120000
+                        storeValue: (NEXT_ARG_IS_VAR), 51, 0, 0
+                        storeValue: (NEXT_ARG_IS_VAR), 45, 0, 0
+                        Unknown1766: 4, 23
+                        createObject2: s32'SPSacredEdgeObj', 100
+                        Unknown19: 23
+                        endIf: 
+                    endIf: 
+                endIf: 
+            endIf: 
+        Unknown31: '0x736C6F6F700000000000000000000000000000000000000000000000000000000A00000002000000330000000000000000000000'
+        endIf: 
+    endUpon: 
+
+storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+endUpon: 
+setMarker: s32'loop'
+sprite: s32'KYE9_00', 1
+physicsXImpulse: 35000
+hit: 
+sprite: s32'KYE9_00', 1
+sprite: s32'KYE9_01', 1
+hit: 
+sprite: s32'KYE9_01', 1
+sprite: s32'KYE9_02', 1
+hit: 
+sprite: s32'KYE9_02', 1
+sprite: s32'KYE9_03', 1
+hit: 
+sprite: s32'KYE9_03', 1
+Unknown3: 
+goToMarker: s32'loop'
+endState: 
+startState: s32'SPSacredEdgeObj'
+    upon: (IMMEDIATE)
+        Unknown245: 
+        attackLevel: 4
+        damage: 100
+        riscPlus: 20
+        hitEffectLightning: 1
+        groundHitEffect: (AIR_FACE_UP)
+        wallBounceCount: 1
+        wallBounceInCornerOnly: 1
+        wallstickDuration: 40
+        hitAirPushbackX: 50000
+        hitAirPushbackY: 25000
+        untechableTime: 40
+        riscMinus: 15
+        Unknown450: s32'kyk_sacredsp'
+        endUpon: 
+    sprite: s32'atk_line01', 3
+    hit: 
+    playCharacterSFX: s32'1'
+    sprite: s32'atk_line01', 40
+    recoveryState: 
+    endState: 
+
+startState: s32'RideAura'
+    upon: (IMMEDIATE)
+        Unknown245: 
+        Unknown1152: 1
+        Unknown454: 2
+        Unknown457: 2
+        setObjectSize: 1600
+        endUpon: 
+    setMarker: s32'loop'
+    sprite: s32'ride_aura', 1
+    hit: 
+    Unknown3: 
+    goToMarker: s32'loop'
+    endState: 
+
+startState: s32'obj_kyk_greedsever'
+    sprite: s32'null', 120
+    Unknown450: s32'kyk_greedsever'
+    Unknown454: 2
+    Unknown456: 2
+    Unknown457: 2
+    endState: 
+
+startState: s32'greed_long2F'
+    Unknown294: 1
+    Unknown456: 2
+    Unknown454: 2
+    Unknown458: 2
+    upon: (AFTER_EXIT)
+        Unknown454: 0
+        Unknown456: 0
+        endUpon: 
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 3
+            Unknown454: 0
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 2
+    Unknown450: s32'kyk_greedsever_one'
+    sprite: s32'null', 80
+    Unknown450: s32'kyk_greedsever_one'
+    endState: 
+
+startState: s32'greed_long1F'
+    Unknown294: 1
+    Unknown456: 2
+    Unknown454: 2
+    Unknown458: 2
+    upon: (AFTER_EXIT)
+        Unknown454: 0
+        Unknown456: 0
+        endUpon: 
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 3
+            Unknown454: 0
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown450: s32'kyk_greedsever_one'
+    sprite: s32'null', 80
+    Unknown450: s32'kyk_greedsever_one'
+    endState: 
+
+startState: s32'greed_long0F'
+    Unknown294: 1
+    Unknown456: 2
+    Unknown454: 2
+    Unknown458: 2
+    upon: (AFTER_EXIT)
+        Unknown454: 0
+        Unknown456: 0
+        endUpon: 
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 3
+            Unknown454: 0
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 80
+    Unknown450: s32'kyk_greedsever_one'
+    endState: 
+
+startState: s32'Thunder_stand'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown450: s32'kyk_thunder_sword_stand'
+        endUpon: 
+    sprite: s32'null', 50
+    endState: 
+
+startState: s32'Thunder_walk'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown450: s32'kyk_thunder_sword_walk'
+        endUpon: 
+    sprite: s32'null', 50
+    endState: 
+
+startState: s32'Thunder_chargestun'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown450: s32'kyk_thunder_chargestun'
+        endUpon: 
+    sprite: s32'null', 50
+    endState: 
+
+startState: s32'Nage_thunder'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown456: 3
+        Unknown450: s32'kyk_nage_slash'
+        Unknown1769: 1
+        endUpon: 
+    sprite: s32'null', 80
+    endState: 
+
+startState: s32'Slash_5HS'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_slash_5hs'
+        endUpon: 
+    sprite: s32'null', 80
+    endState: 
+
+startState: s32'Slash_3HS'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_slash_3hs'
+        endUpon: 
+    sprite: s32'null', 80
+    endState: 
+
+startState: s32'Slash_6HS'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_slash_6hs1'
+        endUpon: 
+    sprite: s32'null', 120
+    endState: 
+
+startState: s32'Slash_6HS_re1'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_slash_6hs_re1'
+        upon: (AFTER_EXIT)
+            Unknown454: 0
+            Unknown456: 0
+            endUpon: 
+        endUpon: 
+    sprite: s32'null', 40
+    endState: 
+
+startState: s32'Slash_6HS_re2'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_slash_6hs_re2'
+        upon: (AFTER_EXIT)
+            Unknown454: 0
+            Unknown456: 0
+            endUpon: 
+        endUpon: 
+    sprite: s32'null', 40
+    endState: 
+
+startState: s32'Slash_JS'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_slash_js'
+        endUpon: 
+    sprite: s32'null', 60
+    endState: 
+
+startState: s32'Stundipper'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_stundipper'
+        endUpon: 
+    sprite: s32'null', 50
+    endState: 
+
+startState: s32'Vaporthrust'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_vaporthrust_atk'
+        endUpon: 
+    sprite: s32'null', 80
+    endState: 
+
+startState: s32'Neoblitz_atk'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        Unknown456: 3
+        Unknown466: 2
+        Unknown450: s32'kyk_neoblitz'
+        endUpon: 
+    sprite: s32'null', 80
+    endState: 
+
+startState: s32'Scn_Rtl_start'
+    upon: (IMMEDIATE)
+        Unknown294: 1
+        endUpon: 
+    sprite: s32'null', 150
+    Unknown450: s32'kyk_rtl_start'
+    endState: 
+
+startState: s32'Scn_Rtl_spark'
+    upon: (IMMEDIATE)
+        Unknown294: 1
+        endUpon: 
+    sprite: s32'null', 150
+    Unknown450: s32'kyk_rtl_spark'
+    endState: 
+
+startState: s32'Scn_Rtl_core'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown457: 3
+        if: (NEXT_ARG_IS_VAR), 84
+            upon: (FRAME_STEP)
+                Unknown1879: 
+                endUpon: 
+            endIf: 
+        endUpon: 
+    Unknown24: s32'Boss', 2, 84
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_rtl_core'
+    Unknown3: 
+    Unknown18: 
+    setMarker: s32'Boss'
+    sprite: s32'null', 2147483647
+    Unknown450: s32'kyk_rtl_core'
+    Unknown3: 
+    Unknown18: 
+    endState: 
+
+startState: s32'Scn_Rtl_coreair'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown456: 3
+        Unknown457: 3
+        if: (NEXT_ARG_IS_VAR), 84
+            upon: (FRAME_STEP)
+                Unknown1879: 
+                endUpon: 
+            endIf: 
+        endUpon: 
+    Unknown24: s32'Boss', 2, 84
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_rtl_coreair'
+    Unknown3: 
+    Unknown18: 
+    setMarker: s32'Boss'
+    sprite: s32'null', 2147483647
+    Unknown450: s32'kyk_rtl_coreair'
+    Unknown3: 
+    Unknown18: 
+    endState: 
+
+startState: s32'Scn_Rtl_sub'
+    upon: (IMMEDIATE)
+        Unknown454: 3
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_rtl_sub'
+    endState: 
+
+startState: s32'Sacred_start1'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown294: 1
+        endUpon: 
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_sacred_start1'
+    endState: 
+
+startState: s32'Sacred_start2'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown294: 1
+        endUpon: 
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_sacred_start2'
+    endState: 
+
+startState: s32'SpChargeStanSord'
+    upon: (IMMEDIATE)
+        Unknown99: 300000
+        Unknown94: 150000
+        endUpon: 
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_spsechargesord_loop'
+    sprite: s32'null', 20
+    Unknown450: s32'kyk_spsechargesord_end'
+    endState: 
+
+startState: s32'TojoEff00'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        endUpon: 
+    sprite: s32'null', 50
+    playCharacterSFX: s32'1'
+    Unknown450: s32'kyk_tojo_anim00'
+    sprite: s32'null', 2147483647
+    endState: 
+
+startState: s32'TojoEff01'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        endUpon: 
+    sprite: s32'null', 60
+    Unknown450: s32'kyk_tojo_anim01'
+    endState: 
+
+startState: s32'BG_ichigeki'
+    upon: (IMMEDIATE)
+        Unknown457: 2
+        Unknown450: s32'kyk_ichigeki_bg'
+        endUpon: 
+    sprite: s32'null', 2147483647
+    endState: 
+
+startState: s32'Ichigeki_atk'
+    upon: (IMMEDIATE)
+        Unknown456: 3
+        Unknown457: 2
+        Unknown450: s32'kyk_ichigeki_tuki'
+        endUpon: 
+    sprite: s32'null', 1200
+    endState: 
+
+startState: s32'kyk_ichigeki_screen'
+    upon: (IMMEDIATE)
+        Unknown457: 3
+        Unknown454: 3
+        endUpon: 
+    sprite: s32'null', 1200
+    Unknown450: s32'kyk_ichigeki_screen'
+    endState: 
+
+startState: s32'ACEvtKYK_7A'
+    upon: (IMMEDIATE)
+        Unknown2075: 1
+        Unknown2114: '0x000000FF000000FF01000000'
+        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2123: s32'BGM_HEIJI2'
+    Unknown2123: s32'BGM_SeriousTalk'
+    Unknown2122: 
+    sprite: s32'null', 1
+    Unknown2120: '0x4845494A4932000000000000000000000000000000000000000000000000000000000000'
+    Unknown2115: 60, 0
+    sprite: s32'null', 90
+    Unknown2113: '0x4143325F4B594B5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+    sprite: s32'null', 140
+    Unknown2114: '0x000000FF000000003C000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30303200000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30303300000000000000000000000000000000001E000000'
+    sprite: s32'null', 160
+    Unknown2106: '0x4143325F4B594B5F4237415F30303400000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037415F303100000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E74504F543038415F303100000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30303500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037415F303200000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30303600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74504F543037415F303265000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F303037000000000000000000000000000000000028000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F303038000000000000000000000000000000000028000000'
+    Unknown2107: '0x4576656E74504F543037415F303365000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30303900000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30313000000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037415F303100000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F303131000000000000000000000000000000000028000000'
+    sprite: s32'null', 2147483647
+    Unknown2115: 0, 120
+    Unknown2106: '0x4143325F4B594B5F4237415F30313200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037415F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 20
+    Unknown2106: '0x4143325F4B594B5F4237415F30313300000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037415F303400000000000000000000000000000000000000000000'
+    sprite: s32'null', 70
+    Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
+    Unknown2115: 40, 0
+    Unknown2107: '0x4576656E74504F543038415F303200000000000000000000000000000000000001000000'
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 20
+            Unknown2107: '0x4576656E74504F543038415F303300000000000000000000000000000000000000000000'
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30313400000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237415F30313500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74504F543038415F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 10
+    sprite: s32'null', 10
+    Unknown2114: '0x00000000000000FF0A000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'ACEvtKYK_7B'
+    upon: (IMMEDIATE)
+        Unknown2114: '0x000000FF000000001E000000'
+        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+        Unknown2107: '0x4576656E744B594B3037425F303100000000000000000000000000000000000001000000'
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+    Unknown2115: 40, 0
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303100000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303200000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303300000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303400000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303100000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E74504F543037415F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303200000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303700000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303800000000000000000000000000000000003C000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30303900000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303300000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30313000000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037415F303300000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30313100000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30313200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303400000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F303133000000000000000000000000000000000028000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F303134000000000000000000000000000000000028000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F303135000000000000000000000000000000000028000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30313600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303500000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F303137000000000000000000000000000000000028000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30313800000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30313900000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303600000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4237425F30323000000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3037425F303400000000000000000000000000000000000001000000'
+    sprite: s32'null', 10
+    sprite: s32'null', 10
+    Unknown2114: '0x00000000000000FF0A000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'ACEvtKYK_8A'
+    upon: (IMMEDIATE)
+        Unknown1734: 1
+        Unknown2114: '0x000000FF000000FF01000000'
+        Unknown2107: '0x4576656E74504F543038415F303100000000000000000000000000000000000000000000'
+        Unknown2121: 0
+        Unknown94: 300000
+        Unknown40: 
+        Unknown2109: '0x636D6E5F6576745F706F74303030000000000000000000000000000000000000504F5400000000000000000000000000000000000000000000000000000000006400000002000000'
+        Unknown2121: 2
+        Unknown94: -300000
+        Unknown40: 
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2123: s32'BGM_Storm'
+    Unknown2123: s32'BGM_KINCHO'
+    Unknown2122: 
+    sprite: s32'null', 1
+    Unknown2120: '0x53746F726D00000000000000000000000000000000000000000000000000000000000000'
+    Unknown2115: 40, 0
+    sprite: s32'null', 90
+    Unknown2113: '0x4143325F4B594B5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+    sprite: s32'null', 140
+    Unknown2114: '0x000000FF000000003C000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303200000000000000000000000000000000001E000000'
+    createObject2: s32'cmn_opas_document', 131
+    Unknown43: 4, 1
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303300000000000000000000000000000000001E000000'
+    Unknown2107: '0x636D6E5F6576745F706F7430303100000000000000000000000000000000000002000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303400000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303500000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303600000000000000000000000000000000001E000000'
+    sprite: s32'null', 300
+    Unknown2106: '0x4143325F4B594B5F4238415F30303700000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303100000000000000000000000000000000000001000000'
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 30
+            Unknown1734: 0
+            Unknown2107: '0x4576656E744B594B3038415F303100000000000000000000000000000000000000000000'
+            Unknown2107: '0x636D6E5F6576745F706F7430303200000000000000000000000000000000000002000000'
+            Unknown1766: 4, 23
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303800000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30303900000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30313000000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2115: 0, 120
+    Unknown2106: '0x4143325F4B594B5F4238415F30313100000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30313200000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30313300000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30313400000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238415F30313500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303400000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
+    Unknown2115: 40, 0
+    Unknown2106: '0x4143325F4B594B5F4238415F30313600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303500000000000000000000000000000000000001000000'
+    sprite: s32'null', 10
+    sprite: s32'null', 10
+    Unknown2114: '0x00000000000000FF0A000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'ACEvtKYK_8B'
+    upon: (IMMEDIATE)
+        Unknown2114: '0x000000FF000000001E000000'
+        Unknown2075: 1
+        Unknown2107: '0x4576656E744348503038425F303100000000000000000000000000000000000000000000'
+        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+        Unknown2109: '0x636D6E5F6576745F706F74303030000000000000000000000000000000000000504F5400000000000000000000000000000000000000000000000000000000006400000002000000'
+        Unknown2121: 2
+        Unknown94: -300000
+        Unknown40: 
+        endUpon: 
+    sprite: s32'null', 1
+    Unknown2120: '0x4B494E43484F000000000000000000000000000000000000000000000000000000000000'
+    Unknown2115: 40, 0
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303100000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038425F303100000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303300000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303300000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303400000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303500000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744348503038425F303200000000000000000000000000000000000000000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303600000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038415F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303700000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30303800000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744348503038425F303300000000000000000000000000000000000000000000'
+    sprite: s32'null', 480
+    Unknown2106: '0x4143325F4B594B5F4238425F30303900000000000000000000000000000000001E000000'
+    upon: (FRAME_STEP)
+        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 60
+            Unknown2107: '0x4576656E744B594B3038425F303400000000000000000000000000000000000001000000'
+            Unknown2107: '0x4576656E744B594B3037425F303200000000000000000000000000000000000000000000'
+            endIf: 
+        endUpon: 
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30313000000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30313100000000000000000000000000000000001E000000'
+    sprite: s32'null', 2147483647
+    Unknown2106: '0x4143325F4B594B5F4238425F30313200000000000000000000000000000000001E000000'
+    Unknown2107: '0x4576656E744B594B3038425F303200000000000000000000000000000000000001000000'
+    sprite: s32'null', 10
+    sprite: s32'null', 10
+    Unknown2114: '0x00000000000000FF0A000000'
+    sprite: s32'null', 1
+    Unknown2108: 
+    endState: 
+
+startState: s32'JavelinObj'
+    upon: (IMMEDIATE)
+        Unknown243: 
+        hitEffectLightning: 1
+        attackLevel: 4
+        Unknown725: 1
+        setForcedProration: 75
+        damage: 55
+        riscPlus: 10
+        wallBounceCount: 1
+        wallBounceXVelocityPercent: 20
+        untechableTime: 41
+        counterHitUntechableTime: 75
+        groundHitEffect: (AIR_FACE_UP)
+        airHitEffect: (AIR_FACE_UP)
+        hitAirPushbackY: 4500
+        hitAirPushbackX: 43000
+        Unknown1602: 2
+        upon: (ON_HIT_OR_BLOCK)
+            Unknown1603: 2
+            endUpon: 
+        Unknown458: 3
+        endUpon: 
+    sprite: s32'null', 8
+    Unknown449: s32'kyk_mahojin_end', 100
+    sprite: s32'sp_chargestun2_00', 3
+    Unknown450: s32'kyk_spsechargesord_loop'
+    hit: 
+    playSFX: s32'GG2_014'
+    sprite: s32'sp_chargestun2_01', 4
+    sprite: s32'sp_chargestun2_02', 4
+    sprite: s32'sp_chargestun2_03', 3
+    playCharacterSFX: s32'6'
+    sprite: s32'sp_chargestun2_04', 4
+    setMarker: s32'koware'
+    sprite: s32'null', 10
+    recoveryState: 
+    Unknown450: s32'kyk_spsechargesord_end'
+    endState: 
+
+startState: s32'SnowflakeObj'
+    upon: (IMMEDIATE)
+        Unknown243: 
+        hitEffectLightning: 1
+        attackLevel: 4
+        Unknown725: 1
+        tensionGainOnConnect: 3
+        hitPushbackX: 3
+        damage: 8
+        groundCounterHitEffect: (AIR_LAUNCH)
+        airCounterHitEffect: (AIR_LAUNCH)
+        Unknown1602: 2
+        upon: (ON_HIT_OR_BLOCK)
+            Unknown1603: 2
+            endUpon: 
+        Unknown458: 3
+        endUpon: 
+    sprite: s32'KYEL_00', 1
+    Unknown450: s32'kyk_airdust_start'
+    sprite: s32'KYEL_13', 1
+    sprite: s32'KYEL_00', 1
+    sprite: s32'KYEL_13', 1
+    sprite: s32'KYEL_00', 1
+    sprite: s32'KYEL_13', 1
+    sprite: s32'KYEL_00', 2
+    sprite: s32'KYEL_13', 2
+    sprite: s32'KYEL_00', 2
+    sprite: s32'KYEL_01_rx', 3
+    Unknown450: s32'kyk_airdust_loop'
+    hit: 
+    sprite: s32'KYEL_02_rx', 16
+    Unknown450: s32'kyk_airdust_end'
+    hit: 
+    sprite: s32'KYEL_01_rx', 16
+    Unknown450: s32'kyk_airdust_end'
+    hit: 
+    sprite: s32'KYEL_02_rx', 16
+    Unknown450: s32'kyk_airdust_end'
+    hit: 
+    sprite: s32'KYEL_01_rx', 16
+    Unknown450: s32'kyk_airdust_end'
+    hit: 
+    sprite: s32'KYEL_01_rx', 16
+    Unknown450: s32'kyk_airdust_end'
+    hit: 
+    sprite: s32'KYEL_01_rx', 2
+    recoveryState: 
+    sprite: s32'KYEL_04', 3
+    sprite: s32'KYEL_05', 3
+    sprite: s32'KYEL_06', 3
+    sprite: s32'KYEL_07', 3
+    sprite: s32'KYEL_08', 3
+    sprite: s32'KYEL_09', 3
+    sprite: s32'KYEL_10', 3
+    sprite: s32'KYEL_11', 3
+    sprite: s32'KYEL_12', 3
+    endState: 
+
