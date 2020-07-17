@@ -9840,21 +9840,23 @@ startState: s32'XXMistFinerALv2'
         attackLevel: 4
         damage: 60
         tensionGainOnConnect: 90
-        hitAirPushbackX: 35000
-        hitAirPushbackY: 40000
+        hitAirPushbackX: 50000
+        hitAirPushbackY: 45000
         untechableTime: 80
         SFX_0: s32'SE_HITKIRIB'
         storeValue: (NEXT_ARG_IS_VAR), 45, 0, 0
         Unknown1873: 1
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
-            callCmnEfFunc: s32'XXAtkMistGahuCheck'
+            callCmnEfFunc: s32'AtkMistGahuCheck'
             Unknown143: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
+        wallBounceCount: 1
+        wallBounceXVelocityPercent: 30
         Unknown287: 1
         yrcWindowLength: 10
         endUpon: 
