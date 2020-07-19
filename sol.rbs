@@ -6997,7 +6997,7 @@ startState: s32'GroundViper'
         endIf: 
     Unknown3: 
     setStrikeInvul: 0
-    sprite: s32'sol402_03', 12
+    sprite: s32'sol402_03', 8
     Unknown707: 
     hitEffectFlame: 1
     isAirUnblockable: 1
@@ -7011,10 +7011,9 @@ startState: s32'GroundViper'
     playCharacterSFX: s32'5'
     Unknown2143: 5, 100
     physicsXImpulse: 14000
-    physicsYImpulse: 0
-    setGravity: 1225
     hit: 
     Unknown2202: 3
+    sprite: s32'sol408_00', 2
     sprite: s32'sol408_01', 2
     createObject2: s32'VV_Start2', 0
     setStrikeInvul: 1
@@ -7023,48 +7022,35 @@ startState: s32'GroundViper'
         endIf: 
     sprite: s32'sol408_02', 2
     playVoice: s16'vxxx206'
-    hitAirPushbackY: 1000
+    hitAirPushbackY: 5000
     hit: 
     sprite: s32'sol408_23', 2
     createObject2: s32'VV_Loop_hs', 0
     Unknown43: 4, 1
-    physicsYImpulse: 0
     setGravity: 1925
+    groundHitEffect: (AIR_FACE_UP)
     physicsXImpulse: 10500
-    hitAirPushbackX: 7500
-    hitAirPushbackY: 36000
-    sprite: s32'sol408_24', 8
+    hitAirPushbackX: 4500
+    hitAirPushbackY: 37500
+    sprite: s32'sol408_24', 4
     untechableTime: 60
     hit: 
     playCharacterSFX: s32'3'
     physicsXImpulse: 0
     frcWindow: 10
     setStrikeInvul: 0
-    physicsYImpulse: 10
-    setMarker: s32'drop'
     sprite: s32'sol408_05', 3
-    Unknown1766: 4, 23
-    recoveryState: 
     sprite: s32'sol408_06', 3
     sprite: s32'sol408_07', 3
-    sprite: s32'sol408_08', 2
-    sprite: s32'sol408_09', 1
-    sprite: s32'sol408_10', 2
-    sprite: s32'sol408_11', 1
-    sprite: s32'sol408_12', 2
-    sprite: s32'sol408_13', 1
-    sprite: s32'sol408_14', 2
-    sprite: s32'sol026_03', 2
-    sprite: s32'sol026_04', 3
-    setMarker: s32'loop'
-    sprite: s32'sol026_05', 3
-    sprite: s32'sol026_06', 3
-    Unknown3: 
-    goToMarker: s32'loop'
-    setMarker: s32'landing'
-    sprite: s32'sol010_16', 5
+    Unknown1766: 4, 23
+    recoveryState: 
     Unknown1677: 1
-    sprite: s32'sol010_01', 5
+    sprite: s32'sol010_01', 2
+    sprite: s32'sol010_02', 2
+    sprite: s32'sol010_03', 3
+    sprite: s32'sol010_04', 3
+    sprite: s32'sol010_05', 3
+    sprite: s32'sol010_06', 3
     endState: 
 
 startState: s32'GroundViper_DI'
