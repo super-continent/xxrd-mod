@@ -53,10 +53,12 @@ The windows for FRC are also much wider to make it feel consistent for players w
 NOTE: FRCs do replace the entire RC system currently as there is no way currently to add back RRC without slowdown
 
 Sol:
--236K FRC immediately, works on both ground and air
--236P FRC as soon as the projectile comes out
--214K FRC as soon as Sol begins traveling forward from the wall
--41236H FRC a couple frames before the move hits (dont blame me for this one, it was left over and i thought it was fun)
+-Bandit Revolver FRC immediately, works on both ground and air
+-Bandit Bringer FRC as soon as the fire effect appears
+-Gunflame FRC as soon as the projectile comes out
+-Kudakero FRC as soon as sol starts traveling downward
+-Riot Stamp FRC as soon as Sol begins traveling forward from the wall
+-Fafnir FRC a couple frames before the move hits (dont blame me for this one, it was left over and i thought it was fun)
 
 Ky:
 -Stun Edge FRC immediately when the projectile comes out, works with 236H as well
