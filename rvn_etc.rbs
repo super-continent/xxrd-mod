@@ -1016,11 +1016,11 @@ startState: s32'rvn430EffSmoke2'
         Unknown94: -50000
         endUpon: 
     sprite: s32'null', 5
-    Unknown365: '0x204E0000204E0000'
+    Unknown365: 20000, 20000
     Unknown454: 2
     Unknown450: s32'rvn_430Eff_smoke'
     sprite: s32'null', 35
-    Unknown365: '0x204E0000204E0000'
+    Unknown365: 20000, 20000
     Unknown454: 0
     sprite: s32'null', 60
     Unknown341: -4
@@ -1107,11 +1107,11 @@ startState: s32'rvn432EffHit'
         Unknown1769: 1
         Unknown295: 1
         setObjectSize: 800
-        Unknown194: '0xD4FEFFFF00000000'
-        Unknown102: '0x6079FEFFA0860100'
-        Unknown103: '0x00000000400D0300'
-        Unknown1703: '0xB03CFFFF50C30000'
-        Unknown169: '0x3CF6FFFFC4090000'
+        Unknown194: -300, 0
+        Unknown102: -100000, 100000
+        Unknown103: 0, 200000
+        Unknown1703: -50000, 50000
+        Unknown169: -2500, 2500
         endUpon: 
     sprite: s32'null', 60
     Unknown450: s32'rvn_432Eff_HitEff'
@@ -1591,7 +1591,7 @@ startState: s32'320Eff'
         Unknown450: s32'rvn_320Eff'
         endUpon: 
     sprite: s32'null', 30
-    Unknown365: '0x983A0000983A0000'
+    Unknown365: 15000, 15000
     endState: 
 
 startState: s32'320Eff_hit'
@@ -1600,7 +1600,7 @@ startState: s32'320Eff_hit'
         Unknown450: s32'rvn_320Eff_hit'
         endUpon: 
     sprite: s32'null', 60
-    Unknown365: '0x204E0000204E0000'
+    Unknown365: 20000, 20000
     endState: 
 
 startState: s32'360bake'
@@ -1636,12 +1636,12 @@ startState: s32'FinishCamera_RevengeAttack'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 180
-    Unknown2047: '0x17000000493EFEFF6CE2020057FF0000270100002B140000590000005A000000B40000000000000014000000000000000200000002000000'
+    Unknown2047: 23, -115127, 189036, 65367, 295, 5163, 89, 90, 180, 0, 20, 0, 2, 2
     endState: 
 
 startState: s32'ACEvtRVN_8A'
     upon: (IMMEDIATE)
-        Unknown2114: '0x000000FF000000FF01000000'
+        Unknown2114: -16777216, -16777216, 1
         Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
         Unknown2107: '0x4576656E7452564E3038415F303100000000000000000000000000000000000001000000'
         endUpon: 
@@ -1652,7 +1652,7 @@ startState: s32'ACEvtRVN_8A'
     Unknown2123: s32'BGM_Fear'
     Unknown2122: 
     sprite: s32'null', 120
-    Unknown2114: '0x000000FF000000001E000000'
+    Unknown2114: -16777216, 0, 30
     Unknown2120: '0x4845494A4932000000000000000000000000000000000000000000000000000000000000'
     Unknown2115: 50, 0
     sprite: s32'null', 2147483647
@@ -1689,12 +1689,12 @@ startState: s32'ACEvtRVN_8A'
 
 startState: s32'ACEvtRVN_8B'
     upon: (IMMEDIATE)
-        Unknown2114: '0x000000FF000000FF01000000'
+        Unknown2114: -16777216, -16777216, 1
         Unknown2107: '0x4576656E7452564E3038425F303100000000000000000000000000000000000000000000'
         Unknown2107: '0x4576656E7452564E3038425F303100000000000000000000000000000000000001000000'
         endUpon: 
     sprite: s32'null', 1
-    Unknown2114: '0x000000FF000000001E000000'
+    Unknown2114: -16777216, 0, 30
     Unknown2120: '0x4845494A4930303600000000000000000000000000000000000000000000000000000000'
     Unknown2115: 50, 0
     sprite: s32'null', 2147483647

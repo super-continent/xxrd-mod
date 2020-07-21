@@ -370,7 +370,7 @@ startSubroutine: s32'cmnDustInitialize'
         Unknown937: 26
         Unknown2045: s32'DustHit', 1000, 0, 15, 5
         Unknown2156: 1
-        Unknown365: '0x409C000000000000'
+        Unknown365: 40000, 0
         Unknown2328: s32'HomingJump'
         if: (NEXT_ARG_IS_VAR), 0
             Unknown1622: s32'HomingJump'
@@ -392,7 +392,7 @@ startSubroutine: s32'cmnDustInitialize'
     endSubroutine: 
 
 startSubroutine: s32'cmnHomingJumpInitialize'
-    Unknown2047: '0x17000000B894FEFFE87A010008520000EC1C00004A23000090E3FFFF6400000000000000280000000F000000000000000200000002000000'
+    Unknown2047: 23, -93000, 97000, 21000, 7404, 9034, -7280, 100, 0, 40, 15, 0, 2, 2
     Unknown53: 23, 2, 0, 22, 2, 158
     if: (NEXT_ARG_IS_VAR), 0
         Unknown41: 22
@@ -413,7 +413,7 @@ startSubroutine: s32'cmnHomingJumpInitialize'
             setGravity: 0
             Unknown448: s32'cmn_dustline', 100
             Unknown2045: s32'HomingJump', 600, 0, 20, 3
-            Unknown365: '0x204E000000000000'
+            Unknown365: 20000, 0
             Unknown2143: 5, 100
             playSFX: s32'SE_HITFIRE'
             playSFX: s32'SE_SDASH'
@@ -453,7 +453,7 @@ startState: s32'cmnHomingDash2Camera'
     Unknown2065: 
     Unknown2050: 
     Unknown2286: 1
-    Unknown2047: '0x17000000D1B9FEFFA1740200BF4C0000C70E000012150000C4FFFFFF5F000000050000000A00000032000000000000000200000002000000'
+    Unknown2047: 23, -83503, 160929, 19647, 3783, 5394, -60, 95, 5, 10, 50, 0, 2, 2
     endState: 
 
 startSubroutine: s32'cmnHomingDash2Initialize'
@@ -481,7 +481,7 @@ startSubroutine: s32'cmnHomingDash2Initialize'
             physicsXImpulse: 30000
             Unknown137: 75000
             Unknown144: 1
-            Unknown665: '0x680000000100000001000000'
+            Unknown665: 104, 1, 1
             endIf: 
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 23
             Unknown448: s32'cmn_dust_yoko_dashfire', 100
@@ -656,8 +656,8 @@ startState: s32'cmn_DokiDokiStopCamera'
     Unknown54: 3, 2, 18, 0, 2
     cameraMotion: 0, 250000, 110000, 0, 0, 0, 90, 80, 0, 5, 1
     Unknown2101: 60, 0, 200, 1000
-    Unknown2099: 0, '0x460000000A00000005000000BC020000E8030000FC080000D2050000'
-    Unknown2079: '0x000000000000000000000000'
+    Unknown2099: 0, 70, 10, 5, 700, 1000, 2300, 1490
+    Unknown2079: 0, 0, 0
     Unknown2080: 255, 250, 245
     Unknown2081: 128, 110, 100
     Unknown2082: 70, 55, 35
@@ -671,9 +671,9 @@ startState: s32'cmn_DokiDokiStopCamera'
 
 startState: s32'cmn_Kirakira'
     sprite: s32'null', 6
-    Unknown117: '0xB03CFFFF50C30000'
-    Unknown118: '0xB03CFFFF50C30000'
-    Unknown1709: '0xB03CFFFF50C30000'
+    Unknown117: -50000, 50000
+    Unknown118: -50000, 50000
+    Unknown1709: -50000, 50000
     Unknown111: 200
     Unknown116: 200
     Unknown1708: 200
@@ -728,7 +728,7 @@ startSubroutine: s32'cmnNandemoCancelC'
     endSubroutine: 
 
 startSubroutine: s32'cmnMOMEffTest'
-    Unknown2249: '0x0000000080FF20FF'
+    Unknown2249: 0, -14614656
     Unknown449: s32'cmn_mom_twinkle01', 105
     endSubroutine: 
 
@@ -759,7 +759,7 @@ startSubroutine: s32'cmnAtkTemplNageLand'
     Unknown1142: 1
     Unknown1157: 1
     disableHitstop: 1
-    Unknown1027: '0xFFFFFFFFFFFFFFFFD0FB010000000000'
+    Unknown1027: -1, -1, 130000, 0
     throwRange: 90000
     Unknown1040: 1
     endSubroutine: 
@@ -791,7 +791,7 @@ startSubroutine: s32'cmnAtkTemplNageAir'
     Unknown1142: 1
     Unknown1157: 1
     disableHitstop: 1
-    Unknown1027: '0xFFFFFFFFFFFFFFFFC0450400A015FFFF'
+    Unknown1027: -1, -1, 280000, -60000
     throwRange: 110000
     Unknown1041: 1
     endSubroutine: 
@@ -867,7 +867,7 @@ startSubroutine: s32'cmnCG_Initialize'
     Unknown1808: 1
     Unknown1807: 0
     Unknown1831: 0
-    Unknown1819: '0x00000000FEFFFFFF'
+    Unknown1819: 0, -2
     createObject2: s32'cmn_Tatami_burst', 100
     Unknown2001: 3, s32'CounterGuardStand'
     if: (NEXT_ARG_IS_VAR), 0
@@ -1074,7 +1074,7 @@ startState: s32'cmn_blitz_shield'
         Unknown455: 3
         Unknown295: 1
         upon: 36
-            Unknown2004: '0x0300000074000000'
+            Unknown2004: 3, 116
             endUpon: 
         Unknown450: s32'cmn_blitz_shield'
         endUpon: 
@@ -1108,8 +1108,8 @@ startSubroutine: s32'cmnCG_OnFrameStepAfter'
         Unknown1018: 1
         grabOrRelease: 
         storeValue: (NEXT_ARG_IS_VAR), 72, 0, 2
-        Unknown2298: '0x00000000E8030000'
-        Unknown2297: '0x00000000E8030000'
+        Unknown2298: 0, 1000
+        Unknown2297: 0, 1000
         Unknown2130: 1000
         upon: 42
             Unknown41: 22
@@ -1177,7 +1177,7 @@ startSubroutine: s32'cmnCG_Attack'
     Unknown23: 56
     callSubroutine: s32'CardDataIncrement', 0, 1, 0, 0, 0, 0, 0, 0
     callCmnEfFunc: s32'cmnCG_MutekiEnd'
-    Unknown2202: 3
+    romanCancelAvailability: (DISALLOWED_ON_WHIFF_WITH_X_MARK)
     Unknown1952: 0
     fadeColorRed: 0
     Unknown2161: 100, 50000, 240000
@@ -1345,7 +1345,7 @@ startState: s32'cmn_blitz_shield'
         Unknown455: 3
         Unknown295: 1
         upon: 36
-            Unknown2004: '0x0300000074000000'
+            Unknown2004: 3, 116
             endUpon: 
         Unknown450: s32'cmn_blitz_shield'
         endUpon: 
@@ -1402,7 +1402,7 @@ startSubroutine: s32'cmnDS_Initialize'
                 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 1
                     superArmorEnabled: 1
                     Unknown1808: 1
-                    Unknown1819: '0x1E0000001E000000'
+                    Unknown1819: 30, 30
                     setThrowInvul: 1
                     endIf: 
                 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 120
@@ -1443,8 +1443,8 @@ startState: s32'cmnDebug1'
         Unknown2225: 0
         endUpon: 
     sprite: s32'null', 420
-    Unknown2220: '0x70170000F4010000E8030000'
-    Unknown2219: '0x60E3160064000000'
+    Unknown2220: 6000, 500, 1000
+    Unknown2219: 1500000, 100
     Unknown176: 1
     playSFX: s32'SE_KAKUSEIFINISH'
     sprite: s32'null', 1
@@ -1500,7 +1500,7 @@ startState: s32'cmn_batten'
     Unknown295: 1
     playSFX: s32'SE_CANCEL'
     upon: (FRAME_STEP)
-        Unknown2004: '0x0200000067000000'
+        Unknown2004: 2, 103
         storeValue: (NEXT_ARG_IS_VAR), 45, (NEXT_ARG_IS_VAR), 18
         Unknown1889: 20
         ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 45, (NEXT_ARG_IS_VAR), 18
@@ -2127,7 +2127,7 @@ startState: s32'cmn_FaultlessDefenceLoop'
         Unknown455: 3
         Unknown295: 1
         upon: 36
-            Unknown2004: '0x0300000067000000'
+            Unknown2004: 3, 103
             endUpon: 
         Unknown450: s32'cmn_fd'
         endUpon: 
@@ -2138,7 +2138,7 @@ startState: s32'cmn_FaultlessDefenceImpact'
     upon: (IMMEDIATE)
         Unknown295: 1
         upon: 36
-            Unknown2004: '0x0300000067000000'
+            Unknown2004: 3, 103
             endUpon: 
         Unknown450: s32'cmn_fd_hit'
         endUpon: 
@@ -2149,7 +2149,7 @@ startState: s32'cmn_FaultlessDefenceImpactEco'
     upon: (IMMEDIATE)
         Unknown295: 1
         upon: 36
-            Unknown2004: '0x0300000067000000'
+            Unknown2004: 3, 103
             endUpon: 
         Unknown450: s32'cmn_fd_hit'
         setObjectSize: 800
@@ -2238,9 +2238,9 @@ startState: s32'RandomAttack'
     Unknown363: -16776961
     Unknown237: 1
     Unknown3: 
-    Unknown44: '0x02000000000000005A000000'
+    Unknown44: 2, 0, 90
     Unknown24: s32'0', 2, 0
-    Unknown44: '0x02000000000000000A000000'
+    Unknown44: 2, 0, 10
     Unknown24: s32'1', 2, 0
     setMarker: s32'4'
     sprite: s32'vr_debug_dmg', 20
@@ -2305,10 +2305,10 @@ startState: s32'cmn_BattleStartCamera'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 180
-    Unknown2066: '0x0200000016000000'
-    Unknown2067: '0x0200000016000000'
-    Unknown2170: '0x020000002D00000000000000010000000000000004000000'
-    Unknown2170: '0x020000002E00000000000000010000000000000002000000'
+    Unknown2066: 2, 22
+    Unknown2067: 2, 22
+    Unknown2170: 2, 45, 0, 1, 0, 4
+    Unknown2170: 2, 46, 0, 1, 0, 2
     Unknown2102: 1
     if: (NEXT_ARG_IS_VAR), 205
         storeValue: (NEXT_ARG_IS_VAR), 45, (NEXT_ARG_IS_VAR), 205
@@ -2346,8 +2346,8 @@ startState: s32'cmn_FinishCamera_Near1'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 180
-    Unknown2066: '0x0D0000000E000000'
-    Unknown2067: '0x0D0000000E000000'
+    Unknown2066: 13, 14
+    Unknown2067: 13, 14
     Unknown2020: s32'finish3', 13, 0, 10
     endState: 
 
@@ -2359,23 +2359,23 @@ startState: s32'cmn_FinishCamera_Near2'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 59
-    Unknown2066: '0x0D0000000E000000'
-    Unknown2067: '0x0D0000000E000000'
-    Unknown2047: '0x0D0000003BB8FEFF43D7040035920000680C0000C713000047F9FFFF5A00000000000000B400000000000000000000000200000002000000'
+    Unknown2066: 13, 14
+    Unknown2067: 13, 14
+    Unknown2047: 13, -83909, 317251, 37429, 3176, 5063, -1721, 90, 0, 180, 0, 0, 2, 2
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 25, 25
     playSFX: s32'SE_HITKIRIB'
     playSFX: s32'SE_HITSOUSAI'
     sprite: s32'null', 59
-    Unknown2066: '0x0D0000000E000000'
-    Unknown2067: '0x0D0000000E000000'
-    Unknown2047: '0x0D00000020E1020090AF0400C09000001E0A00008CF5FFFF67FAFFFF5C00000000000000B400000000000000000000000200000002000000'
+    Unknown2066: 13, 14
+    Unknown2067: 13, 14
+    Unknown2047: 13, 188704, 307088, 37056, 2590, -2676, -1433, 92, 0, 180, 0, 0, 2, 2
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 25, 25
     playSFX: s32'SE_HITSOUSAI'
     playSFX: s32'SE_HITKIRIB'
     sprite: s32'null', 59
-    Unknown2066: '0x0D0000000E000000'
-    Unknown2067: '0x0D0000000E000000'
-    Unknown2047: '0x0D000000AFFD00004B2E060049EB00006D050000DAFFFFFF140000003C00000000000000320000000F000000000000000200000002000000'
+    Unknown2066: 13, 14
+    Unknown2067: 13, 14
+    Unknown2047: 13, 64943, 405067, 60233, 1389, -38, 20, 60, 0, 50, 15, 0, 2, 2
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 25, 25
     playSFX: s32'SE_HITSOUSAI'
     playSFX: s32'SE_HITKIRIB'
@@ -2389,17 +2389,17 @@ startState: s32'cmn_FinishCamera_Far1'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 59
-    Unknown2047: '0x0E0000004E5BFFFFBD01060031520100E301000000000000000000003600000000000000B400000000000000000000000200000002000000'
+    Unknown2047: 14, -42162, 393661, 86577, 483, 0, 0, 54, 0, 180, 0, 0, 2, 2
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 25, 25
     playSFX: s32'SE_HITKIRIB'
     playSFX: s32'SE_HITSOUSAI'
     sprite: s32'null', 59
-    Unknown2048: '0x0D0000000E00000000000000A08601008038010000000000F049020000000000C0F2FCFF320000004800000000000000B400000000000000000000000200000002000000'
+    Unknown2048: 13, 14, 0, 100000, 80000, 0, 150000, 0, -200000, 50, 72, 0, 180, 0, 0, 2, '0x02000000'
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 25, 25
     playSFX: s32'SE_HITSOUSAI'
     playSFX: s32'SE_HITKIRIB'
     sprite: s32'null', 59
-    Unknown2048: '0x0D0000000E000000400D030080380100E0930400400D0300F049020000000000C0F2FCFF320000005000000005000000320000001E000000000000000200000002000000'
+    Unknown2048: 13, 14, 200000, 80000, 300000, 200000, 150000, 0, -200000, 50, 80, 5, 50, 30, 0, 2, '0x02000000'
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 25, 25
     playSFX: s32'SE_HITSOUSAI'
     playSFX: s32'SE_HITKIRIB'
@@ -2413,12 +2413,12 @@ startState: s32'cmn_FinishCamera_Far2'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 4
-    Unknown2048: '0x0E0000000D00000050C30000A08601008038010000000000F04902000000000080C7FEFF3200000050000000050000003200000005000000000000000000000000000000'
+    Unknown2048: 14, 13, 50000, 100000, 80000, 0, 150000, 0, -80000, 50, 80, 5, 50, 5, 0, 0, '0x00000000'
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 15, 15
     playSFX: s32'SE_HITSOUSAI'
     playSFX: s32'SE_HITKIRIB'
     sprite: s32'null', 173
-    Unknown2048: '0x0D0000000E000000A015FFFF0071020048E8010000000000A08601000000000080C7FEFF3200000064000000940000001E00000005000000000000000200000000000000'
+    Unknown2048: 13, 14, -60000, 160000, 125000, 0, 100000, 0, -80000, 50, 100, 148, 30, 5, 0, 2, '0x00000000'
     endState: 
 
 startState: s32'cmn_FinishCamera_Draw'
@@ -2450,7 +2450,7 @@ startState: s32'cmn_FinishCamera_DokiDoki'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 100
-    Unknown2048: '0x0D0000000E00000050C30000A0860100A086010000000000A08601000000000010B6FDFF1E0000005A0000000A0000003C0000000A000000000000000200000000000000'
+    Unknown2048: 13, 14, 50000, 100000, 100000, 0, 100000, 0, -150000, 30, 90, 10, 60, 10, 0, 2, '0x00000000'
     endState: 
 
 startState: s32'cmn_FinishCamera_AkebonoNear'
@@ -2461,7 +2461,7 @@ startState: s32'cmn_FinishCamera_AkebonoNear'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 180
-    Unknown2048: '0x0D0000000E00000050C30000A0860100A086010000000000A08601000000000010B6FDFF320000005A0000000A0000009600000014000000000000000200000000000000'
+    Unknown2048: 13, 14, 50000, 100000, 100000, 0, 100000, 0, -150000, 50, 90, 10, 150, 20, 0, 2, '0x00000000'
     endState: 
 
 startState: s32'cmn_FinishCamera_AkebonoFar'
@@ -2472,10 +2472,10 @@ startState: s32'cmn_FinishCamera_AkebonoFar'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 4
-    Unknown2048: '0x0E0000000D00000050C30000A086010050C3000000000000F04902000000000080C7FEFF3200000064000000050000003200000005000000000000000000000000000000'
+    Unknown2048: 14, 13, 50000, 100000, 50000, 0, 150000, 0, -80000, 50, 100, 5, 50, 5, 0, 0, '0x00000000'
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 15, 15
     sprite: s32'null', 173
-    Unknown2048: '0x0D0000000E00000000000000F04902007011010000000000A08601000000000080C7FEFF32000000780000008A0000001E00000005000000000000000200000000000000'
+    Unknown2048: 13, 14, 0, 150000, 70000, 0, 100000, 0, -80000, 50, 120, 138, 30, 5, 0, 2, '0x00000000'
     endState: 
 
 startState: s32'cmn_FinishCamera_FinalNear'
@@ -2499,13 +2499,13 @@ startState: s32'cmn_FinishCamera_FinalNear'
         Unknown53: 23, 2, 0, 22, 2, 18
         Unknown54: 0, 2, 18, 2, 0
         Unknown54: 3, 2, 18, 0, 2
-        Unknown2099: 0, '0x6E0000003E0000000500000084030000F4010000FC080000D2050000'
+        Unknown2099: 0, 110, 62, 5, 900, 500, 2300, 1490
         cameraMotion: 0, 250000, 110000, 0, 0, 0, 90, 172, 0, 60, 1
         Unknown295: 1
         Unknown2282: 1
         Unknown448: s32'cmn_slow_system', 100
-        Unknown2066: '0x0D0000000E000000'
-        Unknown2067: '0x0D0000000E000000'
+        Unknown2066: 13, 14
+        Unknown2067: 13, 14
         endUpon: 
     sprite: s32'null', 300
     endState: 
@@ -2518,10 +2518,10 @@ startState: s32'cmn_FinishCamera_FinalFar'
         Unknown2050: 
         endUpon: 
     sprite: s32'null', 4
-    Unknown2048: '0x0D0000000E000000E0B1FFFF00710200A08601001027000030750000000000006079FEFF3200000050000000000000009001000000000000000000000200000000000000'
-    Unknown2099: 0, '0x1E000000780000003C0000005802000058020000FC08000040060000'
+    Unknown2048: 13, 14, -20000, 160000, 100000, 10000, 30000, 0, -100000, 50, 80, 0, 400, 0, 0, 2, '0x00000000'
+    Unknown2099: 0, 30, 120, 60, 600, 600, 2300, 1600
     sprite: s32'null', 180
-    Unknown2048: '0x0D0000000E000000E0B1FFFF00710200A0860100A086010030750000000000006079FEFF320000005A000000A00000000000000014000000000000000200000000000000'
+    Unknown2048: 13, 14, -20000, 160000, 100000, 100000, 30000, 0, -100000, 50, 90, 160, 0, 20, 0, 2, '0x00000000'
     Unknown2045: s32'FinishCamera_Far', 1000, 0, 15, 15
     playSFX: s32'SE_HITSOUSAI'
     playSFX: s32'SE_HITKIRIB'
@@ -2548,7 +2548,7 @@ startState: s32'cmn_AkebonoFinish'
         Unknown450: s32'cmn_specialbg'
         Unknown448: s32'cmn_akebono_slow', 100
         Unknown41: 22
-        Unknown2241: '0x000000005E010000'
+        Unknown2241: 0, 350
         Unknown449: s32'cmn_finish_akebono', 102
         Unknown40: 
         endUpon: 
@@ -2560,7 +2560,7 @@ startState: s32'cmn_AkebonoFinish'
     sprite: s32'null', 180
     playSFX: s32'GG2_060'
     playSFX: s32'GG2_066'
-    Unknown2063: '0x0000000000000000'
+    Unknown2063: 0, 0
     endState: 
 
 startState: s32'cmn_FinalFinish_Unique'
@@ -2569,7 +2569,7 @@ startState: s32'cmn_FinalFinish_Unique'
         Unknown1769: 1
         endUpon: 
     sprite: s32'null', 180
-    Unknown2099: 0, '0x00000000AA0000003C0000005802000058020000FC08000040060000'
+    Unknown2099: 0, 0, 170, 60, 600, 600, 2300, 1600
     endState: 
 
 startState: s32'cmn_MOM_no000'
@@ -2950,7 +2950,7 @@ startState: s32'cmn_MOM_no026'
         endUpon: 
     sprite: s32'null', 2147483647
     physicsXImpulse: 10500
-    Unknown117: '0x000000006E110000'
+    Unknown117: 0, 4462
     physicsYImpulse: 52500
     setGravity: 2800
     Unknown3: 
@@ -3034,8 +3034,8 @@ startState: s32'cmn_MOM_no027'
         Unknown2183: 1
         Unknown2185: 1
         upon: 45
-            Unknown2241: '0x00000000DC050000'
-            Unknown2249: '0x0000000030FF00FF'
+            Unknown2241: 0, 1500
+            Unknown2249: 0, -16711888
             Unknown449: s32'cmn_mom_lightbulet_hit', 100
             Unknown19: 23
             endUpon: 
@@ -3043,8 +3043,8 @@ startState: s32'cmn_MOM_no027'
         Unknown363: -16711888
         playSFX: s32'SE_SWINGE'
         Unknown2267: 1500
-        Unknown2241: '0x0000000020030000'
-        Unknown2249: '0x0000000030FF00FF'
+        Unknown2241: 0, 800
+        Unknown2249: 0, -16711888
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         setThrowRange: 0
         upon: 5
@@ -3097,7 +3097,7 @@ startState: s32'cmn_MOM_no028'
     Unknown41: 3
     Unknown2248: 0, 16711680
     callEtcState: s32'cmn_MOM_kaihuku', 103
-    Unknown1758: '0x020000003D000000'
+    Unknown1758: 2, 61
     playSFX: s32'GG2_008'
     Unknown40: 
     endState: 
@@ -3122,7 +3122,7 @@ startState: s32'cmn_MOM_no029'
                     Unknown41: 22
                     Unknown2248: 0, 16711680
                     callEtcState: s32'cmn_MOM_kaihuku', 103
-                    Unknown1758: '0x020000003D000000'
+                    Unknown1758: 2, 61
                     playSFX: s32'GG2_008'
                     Unknown40: 
                     Unknown19: 23
@@ -3133,7 +3133,7 @@ startState: s32'cmn_MOM_no029'
                     Unknown41: 3
                     Unknown2248: 0, 16711680
                     callEtcState: s32'cmn_MOM_kaihuku', 103
-                    Unknown1758: '0x020000003D000000'
+                    Unknown1758: 2, 61
                     playSFX: s32'GG2_008'
                     Unknown40: 
                     Unknown19: 23
@@ -3141,7 +3141,7 @@ startState: s32'cmn_MOM_no029'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x0000000058020000'
+        Unknown2190: 0, 600
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -3220,11 +3220,11 @@ startState: s32'cmn_MOM_no031'
     if: (NEXT_ARG_IS_VAR), 0
         ifNot: 2, 36
             Unknown41: 3
-            Unknown1972: '0x0020800006000000FFFFFFFF'
+            Unknown1972: 8396800, 6, -1
             superArmorEnabled: 1
             Unknown1808: 1
             Unknown1807: 0
-            Unknown1819: '0xFEFFFFFFFEFFFFFF'
+            Unknown1819: -2, -2
             Unknown40: 
             endIf: 
         endIf: 
@@ -3239,9 +3239,9 @@ startState: s32'cmn_MOM_no032'
                 Unknown2315: '0x16000000000000000A0000000200000092000000'
                 endIf: 
             ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 4
-                Unknown2249: '0x000000008000FF80'
-                Unknown2241: '0x00000000BC020000'
-                Unknown169: '0xE040FDFF20BF0200'
+                Unknown2249: 0, -2130771840
+                Unknown2241: 0, 700
+                Unknown169: -180000, 180000
                 Unknown2244: 0, 0
                 Unknown449: s32'cmn_mom_smoke', 100
                 endIf: 
@@ -3289,7 +3289,7 @@ startState: s32'cmn_MOM_no036'
         Unknown94: 100000
         Unknown458: 2
         Unknown2248: 0, 8404992
-        Unknown2241: '0x00000000F4010000'
+        Unknown2241: 0, 500
         Unknown449: s32'cmn_mom_item_hassei', 100
         storeValue: (NEXT_ARG_IS_VAR), 69, (NEXT_ARG_IS_VAR), 146
         endUpon: 
@@ -3327,7 +3327,7 @@ startState: s32'cmn_RapidFireObj'
         playSFX: s32'SE_SWINGE'
         setObjectSize: 300
         Unknown2267: 1500
-        Unknown2241: '0x00000000F4010000'
+        Unknown2241: 0, 500
         Unknown2248: 0, 8404992
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         endUpon: 
@@ -3376,7 +3376,7 @@ startState: s32'cmn_MOM_no037'
         endUpon: 
     sprite: s32'null', 1
     Unknown19: 23
-    Unknown2241: '0x00000000F4010000'
+    Unknown2241: 0, 500
     Unknown449: s32'cmn_mom_smoke', 100
     Unknown3: 
     setMarker: s32'hit'
@@ -3794,7 +3794,7 @@ startState: s32'cmn_MOM_no044'
     sprite: s32'INE0_00', 2
     sprite: s32'INE0_00', 2
     Unknown3: 
-    Unknown708: '0x1200000003000000'
+    Unknown708: 18, 3
     Unknown1110: 1
     hitPushbackX: 40
     attackLevel: 1
@@ -4141,7 +4141,7 @@ startState: s32'cmn_MOM_no048'
         Unknown2268: 833
         Unknown2269: 2000
         Unknown2248: 0, 16639
-        Unknown2241: '0x00000000D0070000'
+        Unknown2241: 0, 2000
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         endUpon: 
     setMarker: s32'loop'
@@ -4387,7 +4387,7 @@ startState: s32'cmn_MOM_no051'
         Unknown98: 0
         Unknown2295: s32'mom_sphere_s'
         Unknown2248: 0, -65536
-        Unknown2241: '0x00000000D0070000'
+        Unknown2241: 0, 2000
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         endUpon: 
     sprite: s32'ZTE5_00', 5
@@ -4427,7 +4427,7 @@ startState: s32'cmn_MOM_no051'
     Unknown448: s32'mom_zat_mine_end', 100
     sprite: s32'ZTE0_00', 1
     Unknown450: s32'mom_zat_drill_start'
-    Unknown2241: '0x00000000D0070000'
+    Unknown2241: 0, 2000
     Unknown449: s32'mom_zat_drill_circle', 100
     setObjectSize: 300
     Unknown1883: 
@@ -4517,7 +4517,7 @@ startState: s32'cmn_MOM_no053'
         endUpon: 
     sprite: s32'FAE0_04', 2147483647
     physicsXImpulse: 8750
-    Unknown117: '0x000000006E110000'
+    Unknown117: 0, 4462
     physicsYImpulse: 43750
     setGravity: 2800
     hit: 
@@ -4621,11 +4621,11 @@ startState: s32'cmn_MeteoInseki'
     sprite: s32'FAE0_05', 3
     Unknown1889: 100
     Unknown99: 875000
-    Unknown103: '0x2A511B0000000000'
+    Unknown103: 1790250, 0
     Unknown1888: 50
     Unknown94: 350000
-    Unknown102: '0x00000000D65AF2FF'
-    Unknown102: '0x00000000D630F9FF'
+    Unknown102: 0, -894250
+    Unknown102: 0, -446250
     hit: 
     physicsXImpulse: 28000
     physicsYImpulse: -43750
@@ -4657,7 +4657,7 @@ startState: s32'cmn_MOM_no055'
         endUpon: 
     sprite: s32'FAE1_00', 3
     physicsXImpulse: 7875
-    Unknown117: '0x000000006E110000'
+    Unknown117: 0, 4462
     physicsYImpulse: 35000
     setGravity: 1925
     sprite: s32'FAE1_01', 3
@@ -4688,7 +4688,7 @@ startState: s32'cmn_SubItem_Poison'
         Unknown1110: 1
         attackLevel: 1
         damage: 10
-        Unknown1070: '0x6801000064000000'
+        Unknown1070: 360, 100
         Unknown2310: 
         setThrowRange: 0
         Unknown2225: 20
@@ -4730,7 +4730,7 @@ startState: s32'cmn_MOM_no056'
     sprite: s32'null', 2147483647
     physicsXImpulse: 10000
     Unknown166: 18500
-    Unknown117: '0x30F8FFFFD0070000'
+    Unknown117: -2000, 2000
     physicsYImpulse: 70000
     setGravity: 2200
     Unknown3: 
@@ -4845,7 +4845,7 @@ startState: s32'cmn_MOM_no057'
         endUpon: 
     sprite: s32'null', 2147483647
     physicsXImpulse: 6000
-    Unknown117: '0x30F8FFFFD0070000'
+    Unknown117: -2000, 2000
     physicsYImpulse: 40000
     setGravity: 2900
     Unknown3: 
@@ -4869,8 +4869,8 @@ startState: s32'cmn_Vacuum'
             endUpon: 
         endUpon: 
     sprite: s32'null', 2147483647
-    Unknown2220: '0x580200003200000064000000'
-    Unknown2219: '0x60E3160064000000'
+    Unknown2220: 600, 50, 100
+    Unknown2219: 1500000, 100
     Unknown176: 1
     playSFX: s32'SE_KAKUSEIFINISH'
     endState: 
@@ -4879,7 +4879,7 @@ startState: s32'cmn_MOM_no058'
     upon: (IMMEDIATE)
         Unknown457: 2
         Unknown2218: 2, 103, 23, 100
-        Unknown2241: '0x00000000B0040000'
+        Unknown2241: 0, 1200
         Unknown2248: 0, 8421504
         Unknown449: s32'cmn_mom_smoke', 100
         endUpon: 
@@ -4901,7 +4901,7 @@ startState: s32'cmn_MOM_no058'
             Unknown99: 400000
             Unknown94: -100000
             physicsYImpulse: 10000
-            Unknown2241: '0x00000000B0040000'
+            Unknown2241: 0, 1200
             Unknown2248: 0, 8421504
             Unknown449: s32'cmn_mom_smoke', 103
             jumpToState: s32'_NEUTRAL'
@@ -5088,7 +5088,7 @@ Unknown454: 0
 sprite: s32'keep', 1
 storeValue: (NEXT_ARG_IS_VAR), 50, 0, 0
 sprite: s32'keep', 2
-Unknown201: '0x5C44000000000000'
+Unknown201: 17500, 0
 Unknown111: 110
 Unknown116: 110
 Unknown458: 0
@@ -5140,39 +5140,39 @@ ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 53, 0, 3
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 1
-    Unknown201: '0x5C440000A8F0FDFF'
+    Unknown201: 17500, -135000
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 2
-    Unknown201: '0x5C44000070A0FEFF'
+    Unknown201: 17500, -90000
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 3
-    Unknown201: '0x5C4400003850FFFF'
+    Unknown201: 17500, -45000
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 4
-    Unknown201: '0x5C440000E040FDFF'
+    Unknown201: 17500, -180000
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 5
-    Unknown201: '0x5C44000000000000'
+    Unknown201: 17500, 0
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 6
-    Unknown201: '0x5C44000000000000'
+    Unknown201: 17500, 0
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 7
-    Unknown201: '0x5C440000580F0200'
+    Unknown201: 17500, 135000
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 8
-    Unknown201: '0x5C440000905F0100'
+    Unknown201: 17500, 90000
     endIf: 
 
 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 9
-    Unknown201: '0x5C440000C8AF0000'
+    Unknown201: 17500, 45000
     endIf: 
 
 Unknown111: 110
@@ -5230,7 +5230,7 @@ startState: s32'cmn_MOM_no062'
     if: (NEXT_ARG_IS_VAR), 0
         ifNot: 2, 36
             Unknown41: 3
-            Unknown708: '0x1200000001000000'
+            Unknown708: 18, 1
             attackLevel: 4
             hitPushbackX: 10
             damage: 27
@@ -5258,7 +5258,7 @@ startState: s32'cmn_MOM_no062'
     if: (NEXT_ARG_IS_VAR), 0
         ifNot: 2, 36
             Unknown41: 3
-            Unknown708: '0x1200000001000000'
+            Unknown708: 18, 1
             groundHitEffect: (AIR_FACE_UP)
             attackLevel: 2
             damage: 32
@@ -5335,7 +5335,7 @@ startState: s32'cmn_MOM_no063'
 startState: s32'cmn_MOM_no064'
     upon: (IMMEDIATE)
         Unknown244: 
-        Unknown2004: '0x0300000067000000'
+        Unknown2004: 3, 103
         Unknown2295: s32'mom_sphere_s'
         Unknown454: 3
         Unknown457: 3
@@ -5348,10 +5348,10 @@ startState: s32'cmn_MOM_no064'
     Unknown2267: 4000
     characterEffectOverlay: 33023
     Unknown2248: 0, 33023
-    Unknown2241: '0x00000000A00F0000'
+    Unknown2241: 0, 4000
     Unknown449: s32'cmn_mom_lightbulet_hit', 100
     Unknown41: 3
-    Unknown708: '0x1400000001000000'
+    Unknown708: 20, 1
     hitEffectLightning: 1
     isAirUnblockable: 1
     groundHitEffect: (AIR_FACE_UP)
@@ -5366,7 +5366,7 @@ startState: s32'cmn_MOM_no064'
     Unknown2318: 1
     Unknown2159: 5
     Unknown467: 12
-    Unknown1972: '0xFF8000000400000001000000'
+    Unknown1972: 33023, 4, 1
     setStrikeInvul: 1
     setThrowInvul: 1
     Unknown40: 
@@ -5451,13 +5451,13 @@ startState: s32'cmn_MOM_no064'
     Unknown40: 
     sprite: s32'mom_sphere', 1
     Unknown2248: 0, 33023
-    Unknown2241: '0x00000000A00F0000'
+    Unknown2241: 0, 4000
     Unknown449: s32'cmn_mom_lightbulet_hit', 100
     Unknown41: 3
     physicsXImpulse: 0
     Unknown338: 255
     characterEffectOverlay: 33023
-    Unknown1972: '0x000000001E00000001000000'
+    Unknown1972: 0, 30, 1
     Unknown40: 
     endState: 
 
@@ -5570,11 +5570,11 @@ startState: s32'cmn_MOM_no066'
         Unknown2267: 2500
         characterEffectOverlay: 16744576
         Unknown2248: 0, 16744576
-        Unknown2241: '0x00000000C4090000'
+        Unknown2241: 0, 2500
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         endUpon: 
     sprite: s32'sol408_24', 4
-    Unknown708: '0x1200000001000000'
+    Unknown708: 18, 1
     hitEffectFlame: 1
     isAirUnblockable: 1
     groundHitEffect: (AIR_FACE_UP)
@@ -5633,7 +5633,7 @@ startState: s32'cmn_MOM_no066'
     hit: 
     hitAirPushbackY: 43750
     Unknown2248: 0, 16744576
-    Unknown2241: '0x00000000C4090000'
+    Unknown2241: 0, 2500
     Unknown449: s32'cmn_mom_lightbulet_hit', 100
     Unknown2001: 3, s32'CmnActItemUse'
     if: (NEXT_ARG_IS_VAR), 0
@@ -5863,7 +5863,7 @@ startState: s32'cmn_MOM_no072'
         Unknown2271: 1
         Unknown2267: 1500
         Unknown2248: 0, 16639
-        Unknown2241: '0x00000000D0070000'
+        Unknown2241: 0, 2000
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         Unknown1997: '0x0200000016000000670000000000000000000000000000000000000000000000307500000000000010270000'
         upon: 66
@@ -5898,7 +5898,7 @@ startState: s32'cmn_MOM_no073'
                         superArmorEnabled: 1
                         Unknown1808: 1
                         Unknown1807: 0
-                        Unknown1819: '0xFDFFFFFFFEFFFFFF'
+                        Unknown1819: -3, -2
                         Unknown1823: 10
                         Unknown1952: 255
                         Unknown40: 
@@ -6013,7 +6013,7 @@ startState: s32'cmn_MOM_no078'
     Unknown41: 3
     Unknown2248: 0, 255
     callEtcState: s32'cmn_MOM_kaihuku', 103
-    Unknown2298: '0x020000003D000000'
+    Unknown2298: 2, 61
     playSFX: s32'GG2_008'
     Unknown40: 
     endState: 
@@ -6038,7 +6038,7 @@ startState: s32'cmn_MOM_no079'
                     Unknown41: 22
                     Unknown2248: 0, 255
                     callEtcState: s32'cmn_MOM_kaihuku', 103
-                    Unknown2298: '0x020000003D000000'
+                    Unknown2298: 2, 61
                     playSFX: s32'GG2_008'
                     Unknown40: 
                     Unknown19: 23
@@ -6049,7 +6049,7 @@ startState: s32'cmn_MOM_no079'
                     Unknown41: 3
                     Unknown2248: 0, 255
                     callEtcState: s32'cmn_MOM_kaihuku', 103
-                    Unknown2298: '0x020000003D000000'
+                    Unknown2298: 2, 61
                     playSFX: s32'GG2_008'
                     Unknown40: 
                     Unknown19: 23
@@ -6057,7 +6057,7 @@ startState: s32'cmn_MOM_no079'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x0000000058020000'
+        Unknown2190: 0, 600
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -6100,14 +6100,14 @@ startState: s32'cmn_MOM_no083'
         characterEffectOverlay: 255
         Unknown363: -16776961
         physicsYImpulse: 25000
-        Unknown117: '0x581B000028230000'
+        Unknown117: 7000, 9000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
         upon: 5
             Unknown176: 1
             Unknown2248: 0, 255
-            Unknown2249: '0x00000000FF0000FF'
+            Unknown2249: 0, -16776961
             callEtcState: s32'cmn_MOM_hanni', 100
             playSFX: s32'GG2_021'
             endUpon: 
@@ -6120,7 +6120,7 @@ startState: s32'cmn_MOM_no083'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x00000000A4010000'
+        Unknown2190: 0, 420
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -6135,14 +6135,14 @@ startState: s32'cmn_MOM_no084'
         characterEffectOverlay: 16711680
         Unknown363: -65536
         physicsYImpulse: 5000
-        Unknown117: '0x581B000028230000'
+        Unknown117: 7000, 9000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
         upon: 5
             Unknown176: 1
             Unknown2248: 0, 16711680
-            Unknown2249: '0x000000000000FFFF'
+            Unknown2249: 0, -65536
             callEtcState: s32'cmn_MOM_hanni', 100
             playSFX: s32'GG2_021'
             endUpon: 
@@ -6155,7 +6155,7 @@ startState: s32'cmn_MOM_no084'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x00000000A4010000'
+        Unknown2190: 0, 420
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -6170,13 +6170,13 @@ startState: s32'cmn_MOM_no085'
         characterEffectOverlay: 16776960
         Unknown363: -256
         physicsYImpulse: 25000
-        Unknown117: '0x581B000028230000'
+        Unknown117: 7000, 9000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
         upon: 5
             Unknown176: 1
-            Unknown2249: '0x0000000000FFFFFF'
+            Unknown2249: 0, -256
             callEtcState: s32'cmn_MOM_hanni', 100
             playSFX: s32'GG2_021'
             endUpon: 
@@ -6189,7 +6189,7 @@ startState: s32'cmn_MOM_no085'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x00000000A4010000'
+        Unknown2190: 0, 420
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -6203,14 +6203,14 @@ startState: s32'cmn_MOM_no086'
         Unknown450: s32'cmn_mom_item_rod'
         Unknown1958: 255
         physicsYImpulse: 25000
-        Unknown117: '0x581B000028230000'
+        Unknown117: 7000, 9000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
         upon: 5
             Unknown176: 1
             Unknown2248: 0, 8388608
-            Unknown2249: '0x000000008080FFFF'
+            Unknown2249: 0, -32640
             callEtcState: s32'cmn_MOM_hanni', 100
             playSFX: s32'GG2_021'
             endUpon: 
@@ -6227,7 +6227,7 @@ startState: s32'cmn_MOM_no086'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x0000000058020000'
+        Unknown2190: 0, 600
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -6281,7 +6281,7 @@ startState: s32'cmn_MOM_no090'
         upon: 5
             Unknown176: 1
             Unknown2248: 0, -16711936
-            Unknown2241: '0x000000002C010000'
+            Unknown2241: 0, 300
             callEtcState: s32'cmn_MOM_hanni', 100
             Unknown14: s32'landing'
             playSFX: s32'GG2_021'
@@ -6305,7 +6305,7 @@ startState: s32'cmn_MOM_no090'
     Unknown3: 
     Unknown24: s32'top', 2, 69
     sprite: s32'null', 300
-    Unknown2190: '0x000000003C000000'
+    Unknown2190: 0, 60
     endState: 
 
 startState: s32'cmn_BatteryRodObj'
@@ -6333,7 +6333,7 @@ startState: s32'cmn_BatteryRodObj'
         playSFX: s32'SE_SWINGE'
         setObjectSize: 600
         Unknown2267: 1500
-        Unknown2241: '0x00000000F4010000'
+        Unknown2241: 0, 500
         Unknown2248: 0, -16711936
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         endUpon: 
@@ -6355,7 +6355,7 @@ startState: s32'cmn_MOM_no091'
     sprite: s32'null', 15
     createObject2: s32'cmn_bb_MainUI_scr', 100
     sprite: s32'null', 15
-    Unknown2048: '0x030000001600000000000000400D0300A086010000000000A0860100000000003004FEFF320000005A0000000F000000000000000F000000000000000200000000000000'
+    Unknown2048: 3, 22, 0, 200000, 100000, 0, 100000, 0, -130000, 50, 90, 15, 0, 15, 0, 2, '0x00000000'
     sprite: s32'null', 135
     superFreeze: 1, 119, 120, 120
     Unknown2199: 1
@@ -6486,7 +6486,7 @@ startState: s32'cmn_MOM_no092'
     sprite: s32'null', 15
     createObject2: s32'cmn_bb_MainUI_scr', 100
     sprite: s32'null', 15
-    Unknown2048: '0x030000001600000000000000400D0300A086010000000000A0860100000000003004FEFF320000005A0000000F000000000000000F000000000000000200000000000000'
+    Unknown2048: 3, 22, 0, 200000, 100000, 0, 100000, 0, -130000, 50, 90, 15, 0, 15, 0, 2, '0x00000000'
     sprite: s32'null', 135
     superFreeze: 1, 119, 120, 120
     Unknown2199: 1
@@ -6556,7 +6556,7 @@ startState: s32'cmn_MOM_no093'
     sprite: s32'null', 15
     createObject2: s32'cmn_bb_MainUI_scr', 100
     sprite: s32'null', 15
-    Unknown2048: '0x030000001600000000000000400D0300A086010000000000A0860100000000003004FEFF320000005A0000000F000000000000000F000000000000000200000000000000'
+    Unknown2048: 3, 22, 0, 200000, 100000, 0, 100000, 0, -130000, 50, 90, 15, 0, 15, 0, 2, '0x00000000'
     sprite: s32'null', 135
     superFreeze: 1, 119, 120, 120
     Unknown2199: 1
@@ -6671,7 +6671,7 @@ startState: s32'cmn_MOM_no094'
     sprite: s32'null', 15
     createObject2: s32'cmn_bb_MainUI_scr', 100
     sprite: s32'null', 15
-    Unknown2048: '0x030000001600000000000000400D0300A086010000000000A0860100000000003004FEFF320000005A0000000F000000000000000F000000000000000200000000000000'
+    Unknown2048: 3, 22, 0, 200000, 100000, 0, 100000, 0, -130000, 50, 90, 15, 0, 15, 0, 2, '0x00000000'
     sprite: s32'null', 135
     superFreeze: 1, 119, 120, 120
     Unknown2199: 1
@@ -6707,28 +6707,28 @@ startState: s32'cmn_bb_reticle4'
     sprite: s32'null', 5
     Unknown450: s32''
     Unknown2161: 103, 0, 0
-    Unknown2243: '0x0000000000710200'
+    Unknown2243: 0, 160000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x00000000E0220200'
+    Unknown2243: 0, 140000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x00000000C0D40100'
+    Unknown2243: 0, 120000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x00000000A0860100'
+    Unknown2243: 0, 100000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x0000000080380100'
+    Unknown2243: 0, 80000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x0000000060EA0000'
+    Unknown2243: 0, 60000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x00000000409C0000'
+    Unknown2243: 0, 40000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     sprite: s32'null', 5
-    Unknown2243: '0x00000000204E0000'
+    Unknown2243: 0, 20000
     callEtcState: s32'cmn_MOM_no094_Attack', 130
     endState: 
 
@@ -6737,7 +6737,7 @@ startState: s32'cmn_MOM_no094_Attack'
         Unknown244: 
         Unknown294: 1
         Unknown2282: 1
-        Unknown202: '0x3075000000000000'
+        Unknown202: 30000, 0
         Unknown1110: 1
         attackLevel: 4
         groundHitEffect: (AIR_FACE_UP)
@@ -6749,7 +6749,7 @@ startState: s32'cmn_MOM_no094_Attack'
             endUpon: 
         endUpon: 
     sprite: s32'null', 1
-    Unknown2004: '0x0300000080000000'
+    Unknown2004: 3, 128
     sprite: s32'null', 60
     Unknown450: s32'bb_missile'
     playSFX: s32'GG2_019'
@@ -6769,7 +6769,7 @@ startState: s32'cmn_MOM_no094_Attack'
     Unknown23: 3
     Unknown23: 8
     playSFX: s32'SE_EXPLODE'
-    Unknown2241: '0x0000000058020000'
+    Unknown2241: 0, 600
     Unknown449: s32'bb_explosion', 100
     Unknown19: 23
     endState: 
@@ -6831,7 +6831,7 @@ startState: s32'cmn_MOM_no098'
         Unknown450: s32'cmn_mom_item_rod'
         characterEffectOverlay: 16527
         physicsYImpulse: 25000
-        Unknown117: '0x581B000028230000'
+        Unknown117: 7000, 9000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
@@ -6850,7 +6850,7 @@ startState: s32'cmn_MOM_no098'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x00000000A4010000'
+        Unknown2190: 0, 420
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -6908,14 +6908,14 @@ startState: s32'cmn_MOM_no101'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x0000000058020000'
+        Unknown2190: 0, 600
         upon: 45
             Unknown19: 23
             endUpon: 
         endUpon: 
     sprite: s32'null', 2147483647
     physicsXImpulse: 10500
-    Unknown117: '0x000000006E110000'
+    Unknown117: 0, 4462
     physicsYImpulse: 52500
     setGravity: 2800
     Unknown3: 
@@ -6969,13 +6969,13 @@ startState: s32'cmn_MOM_no106'
         characterEffectOverlay: 14614783
         Unknown363: -2162433
         physicsYImpulse: 25000
-        Unknown117: '0x581B000028230000'
+        Unknown117: 7000, 9000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
         upon: 5
             Unknown176: 1
-            Unknown2249: '0x00000000FF00DFFF'
+            Unknown2249: 0, -2162433
             callEtcState: s32'cmn_MOM_hanni', 100
             playSFX: s32'GG2_021'
             endUpon: 
@@ -6992,7 +6992,7 @@ startState: s32'cmn_MOM_no106'
                 endIf: 
             endUpon: 
         Unknown2178: 
-        Unknown2190: '0x0000000058020000'
+        Unknown2190: 0, 600
         upon: 45
             Unknown19: 23
             endUpon: 
@@ -7038,7 +7038,7 @@ startState: s32'cmn_MOM_no107'
     playSFX: s32'GG2_062'
     sprite: s32'mom_BKE2_04', 3
     sprite: s32'mom_BKE2_05', 2
-    Unknown365: '0x8813000088130000'
+    Unknown365: 5000, 5000
     sprite: s32'mom_BKE2_05', 1
     sprite: s32'mom_BKE2_06', 3
     recoveryState: 
@@ -7108,7 +7108,7 @@ startState: s32'cmn_MOM_no108'
                 endIf: 
             endIf: 
         ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 4
-            Unknown2249: '0x000000007FA1D8FF'
+            Unknown2249: 0, -2580097
             Unknown449: s32'cmn_mom_twinkle01', 105
             endIf: 
         endUpon: 
@@ -7119,7 +7119,7 @@ startState: s32'cmn_MOM_no108'
                 superArmorEnabled: 1
                 Unknown1808: 1
                 Unknown1807: 0
-                Unknown1819: '0xFEFFFFFFFEFFFFFF'
+                Unknown1819: -2, -2
                 Unknown40: 
                 endIf: 
             endIf: 
@@ -7130,7 +7130,7 @@ startState: s32'cmn_MOM_no108'
         superArmorEnabled: 1
         Unknown1808: 1
         Unknown1807: 0
-        Unknown1819: '0xFEFFFFFFFEFFFFFF'
+        Unknown1819: -2, -2
         Unknown40: 
         storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
         endIf: 
@@ -7224,7 +7224,7 @@ startState: s32'cmn_SubItem_Poison2'
         Unknown1110: 1
         attackLevel: 1
         damage: 10
-        Unknown1070: '0xCC01000064000000'
+        Unknown1070: 460, 100
         Unknown1079: 1
         Unknown1061: 1
         Unknown2310: 
@@ -7235,11 +7235,11 @@ startState: s32'cmn_SubItem_Poison2'
         setObjectSize: 1200
         endUpon: 
     sprite: s32'FAE1_20', 5
-    Unknown2249: '0x000000008000FF80'
-    Unknown2241: '0x00000000F4010000'
+    Unknown2249: 0, -2130771840
+    Unknown2241: 0, 500
     Unknown449: s32'cmn_mom_smoke', 100
     playSFX: s32'SE_HITFIRE'
-    Unknown365: '0x0000000002000000'
+    Unknown365: 0, 2
     sprite: s32'FAE1_21', 5
     sprite: s32'FAE1_22', 5
     sprite: s32'FAE1_23', 5
@@ -7446,8 +7446,8 @@ startState: s32'cmn_Meishi_Line'
         storeValue: (NEXT_ARG_IS_VAR), 45, (NEXT_ARG_IS_VAR), 116
         endElse: 
     Unknown54: 2, 2, 45, 0, 1000
-    Unknown2243: '0x020000002D000000'
-    Unknown2241: '0x020000002E000000'
+    Unknown2243: 2, 45
+    Unknown2241: 2, 46
     Unknown449: s32'mom_meishi_throwline', 100
     endState: 
 
@@ -7467,7 +7467,7 @@ startState: s32'cmn_Meishi_Explosion'
         Unknown2159: 3
         hitPushbackX: 300
         Unknown156: 3000
-        Unknown2241: '0x00000000F4010000'
+        Unknown2241: 0, 500
         Unknown449: s32'cmn_minefire', 100
         endUpon: 
     sprite: s32'mom_cube_on_land', 10
@@ -7725,7 +7725,7 @@ startState: s32'cmn_MOM_no114'
         Unknown456: 3
         endUpon: 
     sprite: s32'mom_crosswise', 1
-    Unknown365: '0x8813000088130000'
+    Unknown365: 5000, 5000
     createObject2: s32'cmnmom233Rock', 100
     Unknown450: s32'mombed_233arm01'
     sprite: s32'mom_crosswise', 3
@@ -7733,7 +7733,7 @@ startState: s32'cmn_MOM_no114'
     if: (NEXT_ARG_IS_VAR), 0
         ifNot: 2, 36
             Unknown41: 3
-            Unknown708: '0x1200000001000000'
+            Unknown708: 18, 1
             attackLevel: 4
             damage: 40
             setProration: 90
@@ -8124,14 +8124,14 @@ startState: s32'cmn431Shake'
         endUpon: 
     setMarker: s32'Loop'
     sprite: s32'null', 5
-    Unknown365: '0xC4090000C4090000'
+    Unknown365: 2500, 2500
     Unknown3: 
     goToMarker: s32'Loop'
     endState: 
 
 startState: s32'cmn431HitEff'
     upon: (IMMEDIATE)
-        Unknown102: '0xF824010008DBFEFF'
+        Unknown102: 75000, -75000
         Unknown1769: 1
         endUpon: 
     sprite: s32'null', 30
@@ -8591,8 +8591,8 @@ startState: s32'cmn_MOM_no123'
     Unknown3: 
     setMarker: s32'BeginC'
     sprite: s32'null', 3
-    Unknown2241: '0x0000000098080000'
-    Unknown2249: '0x000000003080FFFF'
+    Unknown2241: 0, 2200
+    Unknown2249: 0, -32720
     Unknown449: s32'cmn_mom_lightbulet_hit', 100
     Unknown2023: 0
     playSFX: s32'GG2_027'
@@ -8710,8 +8710,8 @@ startState: s32'cmn_MOM_no125'
     upon: (IMMEDIATE)
         Unknown178: 2
         Unknown99: 200000
-        Unknown2220: '0x200300003200000064000000'
-        Unknown2219: '0x60E3160064000000'
+        Unknown2220: 800, 50, 100
+        Unknown2219: 1500000, 100
         Unknown2234: s32'mom_kum_binta'
         Unknown245: 
         attackLevel: 4
@@ -8735,7 +8735,7 @@ startState: s32'cmn_MOM_no125'
     Unknown1771: s32'cmn_BlackHoleHandsR', 23
     Unknown1771: s32'cmn_BlackHoleHandsL', 23
     createObject2: s32'cmn_BlackHoleHandsAtk', 100
-    Unknown2220: '0x000000000000000000000000'
+    Unknown2220: 0, 0, 0
     hit: 
     playSFX: s32'SE_EXPLODE'
     sprite: s32'keep', 10
@@ -8769,8 +8769,8 @@ startState: s32'cmn_BlackHoleHand'
         Unknown457: 2
         Unknown454: 2
         Unknown35: 23, s32'end'
-        Unknown2241: '0x0000000098080000'
-        Unknown2249: '0x000000003080FFFF'
+        Unknown2241: 0, 2200
+        Unknown2249: 0, -32720
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         setObjectSize: 0
         Unknown191: 100
@@ -8822,8 +8822,8 @@ startState: s32'cmn_BlackHoleHand2'
         Unknown454: 2
         Unknown35: 23, s32'end'
         Unknown1700: 200000
-        Unknown2241: '0x0000000098080000'
-        Unknown2249: '0x000000003080FFFF'
+        Unknown2241: 0, 2200
+        Unknown2249: 0, -32720
         Unknown449: s32'cmn_mom_lightbulet_hit', 100
         setObjectSize: 0
         Unknown191: 100
@@ -8861,7 +8861,7 @@ startState: s32'cmn_BlackHoleHandsAtk'
         endUpon: 
     sprite: s32'null', 3
     Unknown450: s32'mom_kum_blackhole_handsATK'
-    Unknown365: '0x204E0000204E0000'
+    Unknown365: 20000, 20000
     sprite: s32'null', 3
     Unknown450: s32'mom_kum_blackhole_handsATK2'
     sprite: s32'null', 2147483647
@@ -8871,7 +8871,7 @@ startState: s32'cmn_BlackHoleHandsAtk'
     setMarker: s32'end'
     sprite: s32'null', 4
     sprite: s32'null', 1
-    Unknown365: '0x1027000010270000'
+    Unknown365: 10000, 10000
     Unknown338: 0
     Unknown448: s32'mom_kum_blackhole_handsATK4', 100
     Unknown457: 0
@@ -8895,7 +8895,7 @@ startState: s32'cmn_MOM_no126'
     if: (NEXT_ARG_IS_VAR), 0
         ifNot: 2, 36
             Unknown41: 3
-            Unknown708: '0x1200000001000000'
+            Unknown708: 18, 1
             attackLevel: 4
             damage: 40
             untechableTime: 40
@@ -8969,7 +8969,7 @@ startState: s32'cmn_MOM_no127'
     if: (NEXT_ARG_IS_VAR), 0
         ifNot: 2, 36
             Unknown41: 3
-            Unknown708: '0x1400000001000000'
+            Unknown708: 20, 1
             attackLevel: 4
             damage: 40
             Unknown725: 1
@@ -8990,7 +8990,7 @@ startState: s32'cmn_MOM_no127'
     createObject2: s32'cmn_rvn430Eff', 100
     sprite: s32'keep', 12
     playSFX: s32'GG2_036'
-    Unknown2241: '0x0000000098080000'
+    Unknown2241: 0, 2200
     Unknown2248: 0, -65536
     Unknown449: s32'cmn_mom_lightbulet_hit', 100
     Unknown1952: 255
@@ -9040,7 +9040,7 @@ startState: s32'cmn_MOM_no127'
             endIf: 
         endIf: 
     sprite: s32'keep', 30
-    Unknown2241: '0x0000000098080000'
+    Unknown2241: 0, 2200
     Unknown2248: 0, -65536
     Unknown449: s32'cmn_mom_lightbulet_hit', 100
     Unknown450: s32''
@@ -9589,7 +9589,7 @@ startState: s32'cmn_MOM_TakarabakoBroken'
             if: (NEXT_ARG_IS_VAR), 31
                 Unknown2161: 100, 0, 0
                 Unknown2162: '0x000000003004FEFF00000000D0FB010000000000307500000000000010980200'
-                Unknown2241: '0x0000000090010000'
+                Unknown2241: 0, 400
                 Unknown449: s32'cmn_dmg_fire', 130
                 endIf: 
             endUpon: 
@@ -9637,8 +9637,8 @@ startState: s32'cmn_MOM_TB_Normal'
         upon: 2
             Unknown176: 1
             endUpon: 
-        Unknown118: '0x3075000060EA0000'
-        Unknown117: '0x0000000070170000'
+        Unknown118: 30000, 60000
+        Unknown117: 0, 6000
         setGravity: 2000
         setObjectSize: 1400
         Unknown2271: 1
@@ -9689,8 +9689,8 @@ startState: s32'cmn_MOM_TB_Katai'
         upon: 2
             Unknown176: 1
             endUpon: 
-        Unknown118: '0x3075000060EA0000'
-        Unknown117: '0x0000000070170000'
+        Unknown118: 30000, 60000
+        Unknown117: 0, 6000
         setGravity: 2000
         setObjectSize: 1400
         Unknown2271: 1
@@ -9741,8 +9741,8 @@ startState: s32'cmn_MOM_TB_Kusari'
         upon: 2
             Unknown176: 1
             endUpon: 
-        Unknown118: '0x3075000060EA0000'
-        Unknown117: '0x0000000070170000'
+        Unknown118: 30000, 60000
+        Unknown117: 0, 6000
         setGravity: 2000
         setObjectSize: 1400
         Unknown2271: 1
@@ -9793,8 +9793,8 @@ startState: s32'cmn_MOM_TB_Moeru'
         upon: 2
             Unknown176: 1
             endUpon: 
-        Unknown118: '0x3075000060EA0000'
-        Unknown117: '0x0000000070170000'
+        Unknown118: 30000, 60000
+        Unknown117: 0, 6000
         setGravity: 2000
         setObjectSize: 1400
         Unknown2271: 1
@@ -9855,8 +9855,8 @@ startState: s32'cmn_MOM_TB_Huttobu'
         upon: 5
             Unknown176: 1
             endUpon: 
-        Unknown118: '0x3075000060EA0000'
-        Unknown117: '0x0000000070170000'
+        Unknown118: 30000, 60000
+        Unknown117: 0, 6000
         setGravity: 2000
         setObjectSize: 1400
         Unknown2271: 1
@@ -9907,8 +9907,8 @@ startState: s32'cmn_MOM_TB_Uiteru'
         upon: 2
             Unknown176: 1
             endUpon: 
-        Unknown118: '0x80BB000080BB0000'
-        Unknown117: '0x0000000070170000'
+        Unknown118: 48000, 48000
+        Unknown117: 0, 6000
         setGravity: 2000
         setObjectSize: 1400
         Unknown2271: 1
@@ -9976,8 +9976,8 @@ startState: s32'cmn_MOM_MasterKeyAC20'
 
 startState: s32'cmn_MOM_Medal'
     upon: (IMMEDIATE)
-        Unknown118: '0x3075000060EA0000'
-        Unknown117: '0x48F4FFFF581B0000'
+        Unknown118: 30000, 60000
+        Unknown117: -3000, 7000
         setGravity: 2000
         Unknown2225: 20
         Unknown2226: 0
@@ -10100,19 +10100,19 @@ startState: s32'cmn_MOM_Medal'
                     endIf: 
                 if: (NEXT_ARG_IS_VAR), 61
                     Unknown2248: 0, 16744448
-                    Unknown2241: '0x00000000F4010000'
+                    Unknown2241: 0, 500
                     Unknown449: s32'cmn_mom_hatudo_good', 100
                     playSFX: s32'SE_GC'
-                    Unknown2314: '0x0200000074000000'
+                    Unknown2314: 2, 116
                     Unknown14: s32'float'
-                    Unknown2190: '0x000000001E000000'
+                    Unknown2190: 0, 30
                     storeValue: (NEXT_ARG_IS_VAR), 47, 0, 1
                     endIf: 
                 endIf: 
             endIf: 
         endUpon: 
     Unknown2178: 
-    Unknown2190: '0x00000000A4010000'
+    Unknown2190: 0, 420
     upon: 45
         Unknown19: 23
         endUpon: 
@@ -10141,8 +10141,8 @@ startState: s32'cmn_MOM_Tabemono'
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 115, 0, 2
             Unknown450: s32'cmn_item_steak'
             endIf: 
-        Unknown118: '0x409C000050C30000'
-        Unknown117: '0x48F4FFFF581B0000'
+        Unknown118: 40000, 50000
+        Unknown117: -3000, 7000
         setGravity: 2000
         setThrowRange: 0
         Unknown287: 1
@@ -10172,10 +10172,10 @@ startState: s32'cmn_MOM_Tabemono'
                         endIf: 
                     endIf: 
                 if: (NEXT_ARG_IS_VAR), 61
-                    Unknown1757: '0x160000000200000074000000'
+                    Unknown1757: 22, 2, 116
                     storeValue: (NEXT_ARG_IS_VAR), 47, 0, 1
                     Unknown14: s32'float'
-                    Unknown2190: '0x000000001E000000'
+                    Unknown2190: 0, 30
                     Unknown2248: 0, 16728175
                     Unknown449: s32'cmn_mom_kaifuku', 103
                     playSFX: s32'GG2_008'
@@ -10184,7 +10184,7 @@ startState: s32'cmn_MOM_Tabemono'
             endIf: 
         endUpon: 
     Unknown2178: 
-    Unknown2190: '0x000000002C010000'
+    Unknown2190: 0, 300
     upon: 45
         Unknown19: 23
         endUpon: 
@@ -10205,8 +10205,8 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
         Unknown2225: 20
         Unknown2226: 0
         Unknown450: s32'cmn_item_soda'
-        Unknown118: '0x204E0000A8610000'
-        Unknown117: '0x48F4FFFF581B0000'
+        Unknown118: 20000, 25000
+        Unknown117: -3000, 7000
         setGravity: 1500
         upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 30
@@ -10242,12 +10242,12 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
                         endIf: 
                     endIf: 
                 if: (NEXT_ARG_IS_VAR), 61
-                    Unknown1757: '0x160000000200000074000000'
+                    Unknown1757: 22, 2, 116
                     storeValue: (NEXT_ARG_IS_VAR), 47, 0, 1
                     Unknown1993: 
                     Unknown23: 3
                     Unknown14: s32'float'
-                    Unknown2190: '0x000000001E000000'
+                    Unknown2190: 0, 30
                     Unknown2248: 0, 16728175
                     Unknown449: s32'cmn_mom_kaifuku', 103
                     playSFX: s32'GG2_008'
@@ -10256,7 +10256,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
             endIf: 
         endUpon: 
     Unknown2178: 
-    Unknown2190: '0x000000002C010000'
+    Unknown2190: 0, 300
     upon: 45
         Unknown19: 23
         endUpon: 
@@ -12785,7 +12785,7 @@ startState: s32'cmn_telOPR_phone02'
 startState: s32'cmn_TrialTokeiMain'
     upon: (IMMEDIATE)
         storeValue: (NEXT_ARG_IS_VAR), 50, (NEXT_ARG_IS_VAR), 17
-        Unknown2004: '0x0300000077000000'
+        Unknown2004: 3, 119
         Unknown54: 0, 2, 17, 2, 50
         Unknown450: s32'cmn_ready'
         Unknown454: 3

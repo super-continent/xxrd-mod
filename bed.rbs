@@ -62,7 +62,7 @@ startSubroutine: s32'RoundInit'
     Unknown1259: -70000
     Unknown1260: 297500
     Unknown1262: 5
-    Unknown1261: '0x060000000600000006000000060000000600000006000000'
+    Unknown1261: 6, 6, 6, 6, 6, 6
     Unknown1268: 0
     Unknown1269: 0
     Unknown1273: 100
@@ -365,7 +365,7 @@ startSubroutine: s32'RoundInit'
     addMove: s32'AirStop'
         moveType: (SPECIAL)
         characterState: (JUMPING)
-        Unknown1412: 260000
+        minimumHeightRequirement: 260000
         moveInput: 216
         addMoveFlag: 7
         addMoveFlag: 110
@@ -493,7 +493,7 @@ startSubroutine: s32'RoundInit'
         characterState: (JUMPING)
         moveInput: (INPUT_236)
         moveInput: (INPUT_PRESS_S)
-        Unknown1412: 96250
+        minimumHeightRequirement: 96250
         Unknown1498: -1210, -306, 1103, 246
         Unknown1532: 
         endMoveRegister: 
@@ -514,7 +514,7 @@ startSubroutine: s32'RoundInit'
         characterState: (JUMPING)
         moveInput: (INPUT_236)
         moveInput: (INPUT_PRESS_H)
-        Unknown1412: 300000
+        minimumHeightRequirement: 300000
         Unknown1498: -220, -148, 525, 977
         Unknown1511: 80
         endMoveRegister: 
@@ -570,7 +570,7 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_P)
         Unknown1392: 1
-        Unknown1412: 175000
+        minimumHeightRequirement: 175000
         Unknown1536: 
         Unknown1535: 
         endMoveRegister: 
@@ -580,7 +580,7 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_K)
         Unknown1392: 1
-        Unknown1412: 175000
+        minimumHeightRequirement: 175000
         Unknown1536: 
         Unknown1535: 
         endMoveRegister: 
@@ -590,7 +590,7 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_S)
         Unknown1392: 2
-        Unknown1412: 175000
+        minimumHeightRequirement: 175000
         Unknown1536: 
         Unknown1535: 
         endMoveRegister: 
@@ -600,7 +600,7 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_H)
         Unknown1392: 2
-        Unknown1412: 175000
+        minimumHeightRequirement: 175000
         Unknown1536: 
         Unknown1535: 
         endMoveRegister: 
@@ -611,7 +611,7 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_D)
         Unknown1392: 2
         addMoveFlag: (REQUIRES_25_TENSION)
-        Unknown1412: 175000
+        minimumHeightRequirement: 175000
         Unknown1536: 
         Unknown1535: 
         endMoveRegister: 
@@ -1096,31 +1096,31 @@ startSubroutine: s32'RoundInit'
     Unknown629: s16'vxxx027', s16'voice_none'
     Unknown629: s16'vxxx029', s16'voice_none'
     if: (NEXT_ARG_IS_VAR), 37
-        Unknown1679: s16'vxxx307', '0x7236303000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        Unknown1679: s16'vxxx309', '0x7231383600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        Unknown1679: s16'vxxx310', '0x7237353600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx307', s16'r600', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx309', s16'r186', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx310', s16'r756', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         endIf: 
     if: (NEXT_ARG_IS_VAR), 38
-        Unknown1679: s16'vxxx307', '0x7237373000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        Unknown1679: s16'vxxx309', '0x7232343000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        Unknown1679: s16'vxxx310', '0x7235333000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx307', s16'r770', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx309', s16'r240', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx310', s16'r530', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         endIf: 
     if: (NEXT_ARG_IS_VAR), 39
-        Unknown1679: s16'vxxx307', '0x7237313000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        Unknown1679: s16'vxxx309', '0x7232363000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        Unknown1679: s16'vxxx310', '0x7234383000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx307', s16'r710', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx309', s16'r260', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx310', s16'r480', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         endIf: 
     Unknown47: s16'sol'
     if: (NEXT_ARG_IS_VAR), 0
-        Unknown1679: s16'vxxx307', '0x7237383000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx307', s16'r780', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         endIf: 
     Unknown47: s16'ram'
     if: (NEXT_ARG_IS_VAR), 0
-        Unknown1679: s16'vxxx307', '0x7239343000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx307', s16'r940', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         endIf: 
     Unknown47: s16'jko'
     if: (NEXT_ARG_IS_VAR), 0
-        Unknown1679: s16'vxxx307', '0x7239363000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+        Unknown1679: s16'vxxx307', s16'r960', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         endIf: 
     Unknown2012: s32''
     Unknown2025: s32'headonly'
@@ -1344,14 +1344,14 @@ startSubroutine: s32'_ThrowGripParamLand'
     Unknown1101: s32'bed310_00'
     Unknown1042: s32'ThrowExe'
     throwRange: 75250
-    Unknown1027: '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
+    Unknown1027: -1, -1, -1, -1
     endSubroutine: 
 
 startSubroutine: s32'_ThrowGripParamAir'
     Unknown1101: s32'bed320_00'
     Unknown1042: s32'AirThrowExe'
     throwRange: 210000
-    Unknown1027: '0xFFFFFFFFFFFFFFFF98AB0200EC32FFFF'
+    Unknown1027: -1, -1, 175000, -52500
     endSubroutine: 
 
 startState: s32'CmnActStand'
@@ -1515,7 +1515,7 @@ startState: s32'CmnActCrouch'
     sprite: s32'bed010_58', 3
     sprite: s32'bed010_59', 3
     Unknown3: 
-    Unknown44: '0x010000000200000056000000'
+    Unknown44: 1, 2, 86
     Unknown24: s32'loop', 2, 0
     Unknown13: s32'loop', 22, 0, 80, 0, 100
     sprite: s32'bed011_00', 3
@@ -1639,7 +1639,7 @@ startState: s32'CmnActFDash'
                 Unknown2260: 1
                 Unknown2156: 1
                 endUpon: 
-            Unknown2202: 1
+            romanCancelAvailability: (ALLOWED)
             endIf: 
         addWhiffCancelOption: s32'CmnVJump'
         addWhiffCancelOption: s32'CmnBJump'
@@ -1658,7 +1658,7 @@ startState: s32'CmnActFDash'
     Unknown1808: 1
     Unknown1807: 0
     Unknown1818: 0
-    Unknown1819: '0xFEFFFFFFFEFFFFFF'
+    Unknown1819: -2, -2
     physicsXImpulse: 26000
     sprite: s32'bed032_02', 2
     sprite: s32'bed032_03', 2
@@ -1734,7 +1734,7 @@ startState: s32'CmnActBDash'
             Unknown2262: 14
             storeValue: (NEXT_ARG_IS_VAR), 113, 0, 5
             endUpon: 
-        Unknown2202: 1
+        romanCancelAvailability: (ALLOWED)
         endUpon: 
     sprite: s32'bed034_00', 4
     setThrowInvul: 1
@@ -2778,7 +2778,7 @@ startState: s32'CmnActMatchWin'
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 0
             createObject2: s32'WinKiri', 100
             createObject2: s32'WinBG00', 100
-            Unknown2063: '0x0000000064000000'
+            Unknown2063: 0, 100
             playCharacterSFX: s32'BED_Win001'
             endIf: 
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 260
@@ -2863,7 +2863,7 @@ startState: s32'CmnActLose'
 
 startState: s32'CmnActResultWin'
     sprite: s32'bed650_00', 2147483647
-    Unknown2062: '0xE040FDFF0000000048EFEBFF000000000000000000000000'
+    Unknown2062: -180000, 0, -1315000, 0, 0, 0
     upon: (FRAME_STEP)
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 69, 0, 0
             if: (NEXT_ARG_IS_VAR), 138
@@ -2891,7 +2891,7 @@ startState: s32'CmnActResultWin'
 
 startState: s32'CmnActResultLose'
     sprite: s32'bed660_00', 2147483647
-    Unknown2062: '0x880D0100F0DEFEFFF8C5FBFF00000000A06E0500B86A0500'
+    Unknown2062: 69000, -74000, -277000, 0, 356000, 355000
     endState: 
 
 startState: s32'NmlAtk5A'
@@ -2931,7 +2931,7 @@ startState: s32'NmlAtk5A'
     sprite: s32'bed200_00', 2
     setJumpCancelable: 1
     sprite: s32'bed200_01', 3
-    Unknown621: '0x00000000FFFFFFFF'
+    Unknown621: 0, -1
     sprite: s32'bed200_02', 2
     ifNot: 2, 3
         createObject2: s32'bake200', 100
@@ -2966,7 +2966,7 @@ startState: s32'NmlAtk6A'
         endUpon: 
     sprite: s32'bed210_00', 2
     sprite: s32'bed210_01', 2
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'bed210_02', 4
     sprite: s32'bed210_03', 2
     hit: 
@@ -3019,7 +3019,7 @@ startState: s32'NmlAtk2A'
         endUpon: 
     sprite: s32'bed230_00', 2
     sprite: s32'bed230_01', 2
-    Unknown621: '0x00000000FFFFFFFF'
+    Unknown621: 0, -1
     sprite: s32'bed230_02', 2
     ifNot: 2, 3
         createObject2: s32'bake230', 100
@@ -3062,7 +3062,7 @@ startState: s32'NmlAtk5B'
     sprite: s32'bed201_00', 2
     setJumpCancelable: 1
     sprite: s32'bed201_01', 2
-    Unknown621: '0x00000000FFFFFFFF'
+    Unknown621: 0, -1
     sprite: s32'bed201_02', 3
     sprite: s32'bed201_03', 3
     createObject2: s32'bake201', 100
@@ -3102,7 +3102,7 @@ startState: s32'NmlAtk2B'
         endUpon: 
     sprite: s32'bed231_00', 2
     sprite: s32'bed231_01', 3
-    Unknown621: '0x00000000FFFFFFFF'
+    Unknown621: 0, -1
     sprite: s32'bed231_02', 2
     createObject2: s32'bake231', 100
     hit: 
@@ -3144,7 +3144,7 @@ startState: s32'NmlAtk5CNear'
     sprite: s32'bed202_00', 2
     setJumpCancelable: 1
     sprite: s32'bed202_01', 3
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'bed202_02', 3
     createObject2: s32'bake202', 100
     hit: 
@@ -3183,7 +3183,7 @@ startState: s32'NmlAtk5CFar'
     sprite: s32'Bed203_00', 2
     setJumpCancelable: 1
     sprite: s32'Bed203_01', 2
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'Bed203_02', 2
     sprite: s32'Bed203_03', 2
     sprite: s32'Bed203_04', 2
@@ -3229,7 +3229,7 @@ startState: s32'NmlAtk2C'
         endUpon: 
     sprite: s32'bed232_00', 3
     sprite: s32'bed232_01', 3
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'bed232_02', 5
     sprite: s32'bed232_03', 1
     createObject2: s32'bake232', 100
@@ -3269,7 +3269,7 @@ startState: s32'NmlAtk5D'
         endUpon: 
     sprite: s32'bed204_00', 2
     sprite: s32'bed204_01', 2
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed204_02', 2
     sprite: s32'bed204_03', 5
     sprite: s32'bed204_04', 3
@@ -3343,7 +3343,7 @@ startState: s32'NmlAtk6D'
     createObject2: s32'Bake213_re1', 100
     hit: 
     playSFX: s32'SE_SWINGF'
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'bed213_re_07', 1
     sprite: s32'bed213_re_08', 1
     sprite: s32'bed213_re_09', 2
@@ -3356,7 +3356,7 @@ startState: s32'NmlAtk6D'
     createObject2: s32'Bake213_re2', 100
     hit: 
     playSFX: s32'SE_SWINGF'
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     playCharacterSFX: s32'BED_001'
     damage: 18
     sprite: s32'bed213_re_13', 1
@@ -3402,7 +3402,7 @@ startState: s32'NmlAtk6D_2'
     createObject2: s32'Bake213_re1', 100
     hit: 
     playSFX: s32'SE_SWINGF'
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'bed213_re_07', 1
     physicsXImpulse: -10000
     sprite: s32'bed213_re_08', 1
@@ -3418,7 +3418,7 @@ startState: s32'NmlAtk6D_2'
     hitPushbackX: 120
     specialCancelEnabled: 0
     playSFX: s32'SE_SWINGF'
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     playCharacterSFX: s32'BED_001'
     damage: 24
     groundHitEffect: (AIR_STRONG)
@@ -3462,7 +3462,7 @@ startState: s32'NmlAtk1D'
         endUpon: 
     sprite: s32'bed233_00', 1
     sprite: s32'bed233_01', 2
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed233_02', 2
     sprite: s32'bed233_03', 2
     sprite: s32'bed233_04', 2
@@ -3506,7 +3506,7 @@ startState: s32'NmlAtk2D'
         endUpon: 
     sprite: s32'bed233_00', 1
     sprite: s32'bed233_01', 2
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed233_02', 2
     sprite: s32'bed233_03', 2
     sprite: s32'bed233_04', 2
@@ -3550,7 +3550,7 @@ startState: s32'NmlAtk3D'
         endUpon: 
     sprite: s32'bed233_00', 1
     sprite: s32'bed233_01', 2
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed233_02', 2
     sprite: s32'bed233_03', 2
     sprite: s32'bed233_04', 3
@@ -3677,7 +3677,7 @@ startState: s32'NmlAtk2E'
         endUpon: 
     sprite: s32'bed234_00', 2
     sprite: s32'bed234_01', 2
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed234_02', 3
     sprite: s32'bed234_03', 2
     createObject2: s32'bake234', 100
@@ -3928,7 +3928,7 @@ startState: s32'NmlAtkAir5A'
         endUpon: 
     sprite: s32'bed250_00', 2
     sprite: s32'bed250_01ex', 3
-    Unknown621: '0x00000000FFFFFFFF'
+    Unknown621: 0, -1
     sprite: s32'bed250_02ex', 2
     ifNot: 2, 3
         createObject2: s32'bake250', 100
@@ -3964,7 +3964,7 @@ startState: s32'NmlAtkAir5B'
         endUpon: 
     sprite: s32'bed251_00', 4
     sprite: s32'bed251_01', 4
-    Unknown621: '0x00000000FFFFFFFF'
+    Unknown621: 0, -1
     sprite: s32'bed251_02', 6
     createObject2: s32'bake251', 100
     hit: 
@@ -4004,7 +4004,7 @@ startState: s32'NmlAtkAir5C'
         endUpon: 
     sprite: s32'bed252_00', 3
     sprite: s32'bed252_01', 3
-    Unknown621: '0x01000000FFFFFFFF'
+    Unknown621: 1, -1
     sprite: s32'bed252_02', 3
     sprite: s32'bed252_03', 2
     createObject2: s32'bake252', 100
@@ -4032,7 +4032,7 @@ startState: s32'NmlAtkAir5D'
         endUpon: 
     sprite: s32'bed253_00', 4
     sprite: s32'bed253_01', 4
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed253_02', 4
     sprite: s32'bed253_03', 2
     createObject2: s32'bake253', 100
@@ -4086,9 +4086,9 @@ startState: s32'NmlAtkAir5E'
         endUpon: 
     sprite: s32'bed254_00', 1
     sprite: s32'bed254_01', 1
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed254_01', 1
-    Unknown1792: '0x0500000001000000'
+    Unknown1792: 5, 1
     specialCancelEnabled: 0
     Unknown111: 50
     sprite: s32'bed254_02', 2
@@ -4408,7 +4408,7 @@ startState: s32'DebugSkillEx'
 
 startState: s32'ThrowExe'
     upon: (IMMEDIATE)
-        Unknown1641: '0x1100000001000000'
+        Unknown1641: 17, 1
         attackLevel: 0
         damage: 10
         Unknown725: 1
@@ -4448,7 +4448,7 @@ startState: s32'ThrowExe'
     Unknown546: 0, 103, 0
     Unknown2143: 8, 125
     Unknown2144: 1, 125
-    Unknown365: '0x1027000000000000'
+    Unknown365: 10000, 0
     sprite: s32'bed310_05', 3
     sprite: s32'bed310_06', 3
     createObject2: s32'bake310', 100
@@ -4503,7 +4503,7 @@ startState: s32'ThrowExe'
 
 startState: s32'AirThrowExe'
     upon: (IMMEDIATE)
-        Unknown1641: '0x1100000003000000'
+        Unknown1641: 17, 3
         attackLevel: 4
         damage: 60
         riscMinus: 0
@@ -4566,7 +4566,7 @@ startState: s32'AirThrowExe'
     hit: 
     Unknown2143: 8, 0
     Unknown2144: 1, 0
-    Unknown365: '0x204E000000000000'
+    Unknown365: 20000, 0
     Unknown32: s32'bake320'
     sprite: s32'bed320_08', 4
     sprite: s32'bed320_09', 4
@@ -4761,7 +4761,7 @@ startState: s32'AirStopCancelOnly'
             setStylishCombo: s32'StylishComboSlot0', s32'6Move'
                 endMoveRegister: 
             setStylishCombo: s32'StylishComboSlot1', s32'9Move'
-                Unknown1422: '0x0000000040420F00'
+                Unknown1422: 0, 1000000
                 endMoveRegister: 
             endIf: 
         endUpon: 
@@ -5263,7 +5263,7 @@ startState: s32'BWarp'
         endUpon: 
     sprite: s32'bed000_00', 3
     Unknown176: 1
-    Unknown2004: '0x1600000065000000'
+    Unknown2004: 22, 101
     Unknown98: 0
     Unknown19: 4
     createObject2: s32'WarpEff00', 100
@@ -5745,7 +5745,7 @@ startState: s32'Dejavu_A_Air'
         createObject2: s32'DreamCatcherSuka', 100
         endElse: 
     tensionGain: 10
-    Unknown1792: '0x0600000001000000'
+    Unknown1792: 6, 1
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
     playCharacterSFX: s32'BED_003'
@@ -5785,7 +5785,7 @@ startState: s32'Dejavu_B_Air'
         createObject2: s32'DreamCatcherSuka', 100
         endElse: 
     tensionGain: 10
-    Unknown1792: '0x0600000001000000'
+    Unknown1792: 6, 1
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
     playCharacterSFX: s32'BED_003'
@@ -5825,7 +5825,7 @@ startState: s32'Dejavu_C_Air'
         createObject2: s32'DreamCatcherSuka', 100
         endElse: 
     tensionGain: 10
-    Unknown1792: '0x0600000001000000'
+    Unknown1792: 6, 1
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
     playCharacterSFX: s32'BED_003'
@@ -5865,7 +5865,7 @@ startState: s32'Dejavu_D_Air'
         createObject2: s32'DreamCatcherSuka', 100
         endElse: 
     tensionGain: 10
-    Unknown1792: '0x0600000001000000'
+    Unknown1792: 6, 1
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
     playCharacterSFX: s32'BED_003'
@@ -6179,9 +6179,9 @@ startState: s32'Ichigeki'
     Unknown40: 
     upon: (FRAME_STEP)
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 0
-            Unknown2063: '0x0000000000000000'
+            Unknown2063: 0, 0
             createObject2: s32'BG_ichigeki', 100
-            Unknown2079: '0x000000000000000000000000'
+            Unknown2079: 0, 0, 0
             Unknown2080: 76, 83, 155
             Unknown2081: 227, 174, 136
             Unknown2082: 101, 74, 76
@@ -6192,7 +6192,7 @@ startState: s32'Ichigeki'
             Unknown2211: s32'prev', 180
             endIf: 
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 300
-            Unknown2079: '0x000000000000000000000000'
+            Unknown2079: 0, 0, 0
             Unknown2080: 189, 179, 99
             Unknown2081: 255, 186, 126
             Unknown2082: 83, 65, 155
@@ -6955,7 +6955,7 @@ startState: s32'FBAtkRIP'
         endUpon: 
     sprite: s32'bed213_00', 1
     sprite: s32'bed213_01', 2
-    Unknown621: '0x02000000FFFFFFFF'
+    Unknown621: 2, -1
     sprite: s32'bed213_02', 1
     createObject2: s32'WarpEff213', 100
     playSFX: s32'SE_DASHD'
