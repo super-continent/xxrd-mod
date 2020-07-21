@@ -1,14 +1,14 @@
 startSubroutine: s32'PreInit'
     Unknown1264: s16'bed'
-    endSubroutine: 
+    endSubroutine:
 
 startSubroutine: s32'PreInit2nd'
     storeValue: (NEXT_ARG_IS_VAR), 61, 0, 0
     ifNot: 2, 61
         Unknown2213: s32'entry_default', s32'', 0
         storeValue: (NEXT_ARG_IS_VAR), 61, 0, 1
-        endIf: 
-    endSubroutine: 
+        endIf:
+    endSubroutine:
 
 startSubroutine: s32'RoundInit'
     life: 420
@@ -73,22 +73,22 @@ startSubroutine: s32'RoundInit'
         characterState: (CROUCHING)
         moveInput: (INPUT_3)
         Unknown1392: 16
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'CrouchBWalk'
         moveType: (DUST_FOLLOWUP)
         characterState: (CROUCHING)
         moveInput: (INPUT_1)
         Unknown1392: 32
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'NmlAtk5A'
         moveType: (NORMAL)
         characterState: (STANDING)
         moveInput: (INPUT_PRESS_P)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -295, -366, 198, 72
-        Unknown1537: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1537:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk6A'
         moveType: (NORMAL)
         characterState: (STANDING)
@@ -96,36 +96,36 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_ANY_FORWARD)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -266, -537, 424, 365
-        Unknown1541: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1541:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk2A'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_P)
         moveInput: (INPUT_ANY_DOWN)
         Unknown1498: -275, -261, 181, 131
-        Unknown1537: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1537:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk5B'
         moveType: (NORMAL)
         characterState: (STANDING)
         moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -332, -254, 310, 152
-        Unknown1537: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1537:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk2B'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_ANY_DOWN)
         Unknown1498: -322, -68, 223, 71
-        Unknown1537: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1537:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk5CNear'
         moveType: (NORMAL)
         characterState: (STANDING)
@@ -133,9 +133,9 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_DISALLOW_UP)
         addMoveFlag: 102
         Unknown1498: -353, -471, 279, 402
-        Unknown1532: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1532:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk5CFar'
         moveType: (NORMAL)
         characterState: (STANDING)
@@ -143,27 +143,27 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_DISALLOW_UP)
         addMoveFlag: 103
         Unknown1498: -425, -279, 337, 155
-        Unknown1532: 
-        Unknown1536: 
-        endMoveRegister: 
+        Unknown1532:
+        Unknown1536:
+        endMoveRegister:
     addMove: s32'NmlAtk2C'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_S)
         moveInput: (INPUT_ANY_DOWN)
         Unknown1498: -486, -108, 367, 111
-        Unknown1539: 
-        Unknown1536: 
-        endMoveRegister: 
+        Unknown1539:
+        Unknown1536:
+        endMoveRegister:
     addMove: s32'NmlAtk5D'
         moveType: (NORMAL)
         characterState: (STANDING)
         moveInput: (INPUT_PRESS_H)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -381, -300, 366, 236
-        Unknown1532: 
-        Unknown1536: 
-        endMoveRegister: 
+        Unknown1532:
+        Unknown1536:
+        endMoveRegister:
     addMove: s32'NmlAtk6D'
         moveType: (NORMAL)
         characterState: (STANDING)
@@ -171,8 +171,8 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_ANY_FORWARD)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -854, -348, 408, 310
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'NmlAtk6D_2'
         isFollowupMove: 1
         moveType: (NORMAL)
@@ -181,71 +181,71 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_ANY_FORWARD)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -854, -348, 408, 310
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'NmlAtk1D'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_H)
         moveInput: (INPUT_1)
         Unknown1498: -292, -337, 203, 346
-        Unknown1532: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1532:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk2D'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_H)
         moveInput: (INPUT_2)
         Unknown1498: -862, -320, 178, 321
-        Unknown1536: 
-        endMoveRegister: 
+        Unknown1536:
+        endMoveRegister:
     addMove: s32'NmlAtk3D'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_H)
         moveInput: (INPUT_3)
         Unknown1498: -1433, -310, 184, 328
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'NmlAtk5E'
         moveType: (NORMAL)
         characterState: (STANDING)
         moveInput: (INPUT_PRESS_D)
         moveInput: (INPUT_DISALLOW_UP)
         Unknown1498: -290, -339, 259, 317
-        Unknown1538: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1538:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'HomingJump'
         moveType: (DUST_FOLLOWUP)
         characterState: (STANDING)
         Unknown1486: 1
         moveInput: (INPUT_ANY_UP)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'HomingDash2'
         moveType: (DUST_FOLLOWUP)
         characterState: (STANDING)
         moveInput: (INPUT_6)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'NmlAtk2E'
         moveType: (NORMAL)
         characterState: (CROUCHING)
         moveInput: (INPUT_PRESS_D)
         moveInput: (INPUT_ANY_DOWN)
         Unknown1498: -504, -68, 392, 72
-        Unknown1539: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1539:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtk5F'
         moveType: (NORMAL)
         Unknown1387: 1
         characterState: (STANDING)
         moveInput: (INPUT_PRESS_TAUNT)
         Unknown1511: 0
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'NmlAtk6F'
         moveType: (NORMAL)
         Unknown1387: 2
@@ -253,47 +253,47 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_TAUNT)
         moveInput: (INPUT_ANY_FORWARD)
         Unknown1511: 0
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'NmlAtkAir5A'
         moveType: (NORMAL)
         characterState: (JUMPING)
         moveInput: (INPUT_PRESS_P)
         Unknown1498: -312, -298, 274, 160
-        Unknown1538: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1538:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtkAir5B'
         moveType: (NORMAL)
         characterState: (JUMPING)
         moveInput: (INPUT_PRESS_K)
         Unknown1498: -354, -118, 232, 110
-        Unknown1538: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1538:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtkAir5C'
         moveType: (NORMAL)
         characterState: (JUMPING)
         moveInput: (INPUT_PRESS_S)
         Unknown1498: -505, -364, 477, 218
-        Unknown1538: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1538:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtkAir5D'
         moveType: (NORMAL)
         characterState: (JUMPING)
         moveInput: (INPUT_PRESS_H)
         Unknown1498: -277, -154, 247, 190
-        Unknown1538: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1538:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'NmlAtkAir5E'
         moveType: (NORMAL)
         characterState: (JUMPING)
         moveInput: (INPUT_PRESS_D)
         Unknown1498: -73, -112, 202, 222
-        Unknown1538: 
-        Unknown1534: 
-        endMoveRegister: 
+        Unknown1538:
+        Unknown1534:
+        endMoveRegister:
     addMove: s32'DeadAngleAttack'
         moveType: (DEAD_ANGLE_ATTACK)
         characterState: (STANDING)
@@ -301,45 +301,111 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_ANY_FORWARD)
         moveInput: 167
         moveInput: (INPUT_ANY_TWO_OF_PKSH)
-        endMoveRegister: 
+        endMoveRegister:
+    addMove: s32'SlashbackStanding'
+        moveType: (SPECIAL)
+        characterState: (STANDING)
+        disableSpecialCancel: 1
+        moveInput: 107
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_8)
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_4)
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_7)
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        Unknown1381: 45
+        Unknown1387: 5
+        endMoveRegister:
+    addMove: s32'SlashbackCrouching'
+        moveType: (SPECIAL)
+        characterState: (CROUCHING)
+        disableSpecialCancel: 1
+        moveInput: (INPUT_2)
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_1)
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        Unknown1381: 45
+        Unknown1387: 5
+        endMoveRegister:
+    addMove: s32'SlashbackAir'
+        moveType: (SPECIAL)
+        characterState: (JUMPING)
+        disableSpecialCancel: 1
+        moveInput: 107
+        moveInput: (INPUT_PRESS_S)
+        moveInput: (INPUT_PRESS_H)
+        Unknown1381: 45
+        Unknown1387: 5
+        endMoveRegister:
     addMove: s32'CounterGuardStand'
         moveType: (BLITZ_SHIELD)
         characterState: (STANDING)
         Unknown1406: 5
         moveInput: 107
-        moveInput: (INPUT_ANY_TWO_OF_PKSH)
+        moveInput: (INPUT_PRESS_P)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: 107
+        moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_PRESS_H)
         moveInput: (INPUT_BOOLEAN_OR)
         moveInput: (INPUT_8)
-        moveInput: (INPUT_ANY_TWO_OF_PKSH)
+        moveInput: (INPUT_PRESS_P)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_8)
+        moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_PRESS_H)
         addMoveFlag: (REQUIRES_25_TENSION)
         Unknown1511: 0
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'CounterGuardCrouch'
         moveType: (BLITZ_SHIELD)
         characterState: (CROUCHING)
         Unknown1406: 5
         moveInput: (INPUT_2)
-        moveInput: (INPUT_ANY_TWO_OF_PKSH)
+        moveInput: (INPUT_PRESS_P)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_2)
+        moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_PRESS_H)
         moveInput: (INPUT_BOOLEAN_OR)
         moveInput: (INPUT_3)
-        moveInput: (INPUT_ANY_TWO_OF_PKSH)
+        moveInput: (INPUT_PRESS_P)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: (INPUT_3)
+        moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_PRESS_H)
         addMoveFlag: (REQUIRES_25_TENSION)
         Unknown1511: 0
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'CounterGuardAir'
         moveType: (BLITZ_SHIELD)
         characterState: (JUMPING)
         Unknown1406: 5
         moveInput: 107
-        moveInput: (INPUT_ANY_TWO_OF_PKSH)
+        moveInput: (INPUT_PRESS_P)
+        moveInput: (INPUT_PRESS_H)
+        moveInput: (INPUT_BOOLEAN_OR)
+        moveInput: 107
+        moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_PRESS_H)
         addMoveFlag: (REQUIRES_25_TENSION)
         Unknown1511: 0
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'IchigekiJunbi'
         moveType: (INSTANT_KILL_PREPARATION)
         characterState: (STANDING)
@@ -348,20 +414,20 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_K)
         moveInput: (INPUT_PRESS_S)
         moveInput: (INPUT_PRESS_H)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'MOMSuki'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: 287
         disableSpecialCancel: 1
         Unknown1511: 0
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'DebugSkillEx'
         moveType: (SPECIAL)
         characterState: (NONE)
         moveInput: 47
         addMoveFlag: 111
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'AirStop'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -371,7 +437,7 @@ startSubroutine: s32'RoundInit'
         addMoveFlag: 110
         disableSpecialCancel: 1
         Unknown1392: 64
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'AirStopCancelOnly'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -381,55 +447,55 @@ startSubroutine: s32'RoundInit'
         addMoveFlag: 110
         isFollowupMove: 1
         Unknown1392: 64
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'1Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_1)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'2Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_2)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'3Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_3)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'4Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_4)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'6Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_6)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'7Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_7)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'8Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_8)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'9Move'
         moveType: (SPECIAL)
         characterState: (JUMPING)
         moveInput: (INPUT_9)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'Boomerang_A'
         moveType: (SPECIAL)
         characterState: (STANDING)
@@ -437,12 +503,12 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_P)
         Unknown1392: 1
         Unknown1498: -1485, -389, 1490, 427
-        Unknown1535: 
-        Unknown1544: 
-        Unknown1550: 
-        Unknown1531: 
+        Unknown1535:
+        Unknown1544:
+        Unknown1550:
+        Unknown1531:
         Unknown1511: 120
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'Boomerang_A_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -450,11 +516,11 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_P)
         Unknown1392: 1
         Unknown1498: -1485, -177, 1490, 427
-        Unknown1535: 
-        Unknown1546: 
-        Unknown1550: 
+        Unknown1535:
+        Unknown1546:
+        Unknown1550:
         Unknown1511: 120
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'Boomerang_B'
         moveType: (SPECIAL)
         characterState: (STANDING)
@@ -462,12 +528,12 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_K)
         Unknown1392: 1
         Unknown1498: -1485, -389, 1490, 427
-        Unknown1535: 
-        Unknown1544: 
-        Unknown1550: 
-        Unknown1531: 
+        Unknown1535:
+        Unknown1544:
+        Unknown1550:
+        Unknown1531:
         Unknown1511: 120
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'Boomerang_B_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -475,19 +541,19 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_K)
         Unknown1392: 1
         Unknown1498: -1485, -177, 1490, 427
-        Unknown1535: 
-        Unknown1546: 
-        Unknown1550: 
+        Unknown1535:
+        Unknown1546:
+        Unknown1550:
         Unknown1511: 120
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'SpiralBed'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: (INPUT_236)
         moveInput: (INPUT_PRESS_S)
         Unknown1498: -1210, -306, 1103, 246
-        Unknown1532: 
-        endMoveRegister: 
+        Unknown1532:
+        endMoveRegister:
     addMove: s32'SpiralBed_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -495,20 +561,20 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_S)
         Unknown1412: 96250
         Unknown1498: -1210, -306, 1103, 246
-        Unknown1532: 
-        endMoveRegister: 
+        Unknown1532:
+        endMoveRegister:
     addMove: s32'FlyingBed'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: (INPUT_236)
         moveInput: (INPUT_PRESS_H)
         Unknown1498: -609, -893, 680, 781
-        Unknown1536: 
-        Unknown1541: 
-        Unknown1531: 
-        Unknown1538: 
+        Unknown1536:
+        Unknown1541:
+        Unknown1531:
+        Unknown1538:
         Unknown1511: 80
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'FlyingBed_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -517,43 +583,43 @@ startSubroutine: s32'RoundInit'
         Unknown1412: 300000
         Unknown1498: -220, -148, 525, 977
         Unknown1511: 80
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'Dejavu_A'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_P)
         Unknown1392: 1
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_B'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_K)
         Unknown1392: 1
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_C'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_S)
         Unknown1392: 2
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_D'
         moveType: (SPECIAL)
         characterState: (STANDING)
         moveInput: (INPUT_214)
         moveInput: (INPUT_PRESS_H)
         Unknown1392: 2
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_FB'
         moveType: (SPECIAL)
         characterState: (STANDING)
@@ -561,9 +627,9 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_D)
         addMoveFlag: (REQUIRES_25_TENSION)
         Unknown1392: 2
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_A_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -571,9 +637,9 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_P)
         Unknown1392: 1
         Unknown1412: 175000
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_B_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -581,9 +647,9 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_K)
         Unknown1392: 1
         Unknown1412: 175000
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_C_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -591,9 +657,9 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_S)
         Unknown1392: 2
         Unknown1412: 175000
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_D_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -601,9 +667,9 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_H)
         Unknown1392: 2
         Unknown1412: 175000
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Dejavu_FB_Air'
         moveType: (SPECIAL)
         characterState: (JUMPING)
@@ -612,9 +678,9 @@ startSubroutine: s32'RoundInit'
         Unknown1392: 2
         addMoveFlag: (REQUIRES_25_TENSION)
         Unknown1412: 175000
-        Unknown1536: 
-        Unknown1535: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        endMoveRegister:
     addMove: s32'Alarm'
         moveType: (OVERDRIVE)
         characterState: (STANDING)
@@ -622,12 +688,12 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_632146)
         moveInput: (INPUT_PRESS_H)
         Unknown1498: -684, -402, 704, 442
-        Unknown1548: 
-        Unknown1549: 
-        Unknown1532: 
-        Unknown1543: 
-        Unknown1557: 
-        endMoveRegister: 
+        Unknown1548:
+        Unknown1549:
+        Unknown1532:
+        Unknown1543:
+        Unknown1557:
+        endMoveRegister:
     addMove: s32'AlarmBurst'
         Unknown1394: s32'Alarm'
         moveType: (OVERDRIVE)
@@ -638,12 +704,12 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_632146)
         moveInput: (INPUT_PRESS_D)
         Unknown1498: -684, -402, 704, 442
-        Unknown1548: 
-        Unknown1549: 
-        Unknown1532: 
-        Unknown1543: 
-        Unknown1557: 
-        endMoveRegister: 
+        Unknown1548:
+        Unknown1549:
+        Unknown1532:
+        Unknown1543:
+        Unknown1557:
+        endMoveRegister:
     addMove: s32'Merry'
         moveType: (OVERDRIVE)
         characterState: (STANDING)
@@ -652,28 +718,28 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_S)
         Unknown1392: 4
         Unknown1498: -1621, -429, 1642, 427
-        Unknown1536: 
-        Unknown1535: 
-        Unknown1555: 
-        endMoveRegister: 
+        Unknown1536:
+        Unknown1535:
+        Unknown1555:
+        endMoveRegister:
     addMove: s32'BWarp'
         moveType: (SPECIAL)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'MerryWarp'
         moveType: (SPECIAL)
         isFollowupMove: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'Ichigeki'
         moveType: (INSTANT_KILL)
         characterState: (STANDING)
         addMoveFlag: 107
         moveInput: (INPUT_236236)
         moveInput: (INPUT_PRESS_H)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_HomingJumpCombo'
         Unknown1488: 2, 1, 30
-        Unknown1561: 
+        Unknown1561:
         Unknown1483: s32'NmlAtkAir5C'
         Unknown1483: s32'NmlAtkAir5C'
         Unknown1483: s32'NmlAtkAir5A'
@@ -682,48 +748,48 @@ startSubroutine: s32'RoundInit'
         Unknown1483: s32'9Move'
         Unknown1483: s32'NmlAtkAir5B'
         Unknown1483: s32'NmlAtkAir5E'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_BonusA'
         Unknown1488: 2, 0, 30
-        Unknown1559: 
+        Unknown1559:
         Unknown1483: s32'FlyingBed'
         Unknown1483: s32'FlyingBed'
         Unknown1483: s32'CmnBHighJump'
         Unknown1482: 0, 15
         Unknown1483: s32'SpiralBed_Air'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_BonusB'
         Unknown1488: 2, 0, 30
-        Unknown1559: 
+        Unknown1559:
         Unknown1483: s32'NmlAtk1D'
         Unknown1483: s32'NmlAtk3D'
         Unknown1483: s32'NmlAtk2D'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_BonusC'
         Unknown1488: 2, 0, 30
         Unknown1392: 1
-        Unknown1559: 
+        Unknown1559:
         Unknown1483: s32'CmnBHighJump'
         Unknown1482: 0, 15
         Unknown1482: 1, 1
         Unknown1482: 0, 40
         Unknown1483: s32'Boomerang_A_Air'
         Unknown1483: s32'FlyingBed_Air'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_BerserkA'
         Unknown1488: 2, 0, 30
         Unknown1392: 1
-        Unknown1560: 
+        Unknown1560:
         Unknown1483: s32'CmnStandForce'
         Unknown1483: s32'CmnBDash'
         Unknown1483: s32'Boomerang_A'
         Unknown1483: s32'FlyingBed'
         Unknown1483: s32'Dejavu_D'
         Unknown1483: s32'Dejavu_A'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_BerserkB'
         Unknown1488: 2, 0, 30
-        Unknown1560: 
+        Unknown1560:
         Unknown1483: s32'CmnBHighJump'
         Unknown1482: 0, 10
         Unknown1482: 1, 1
@@ -731,10 +797,10 @@ startSubroutine: s32'RoundInit'
         Unknown1482: 4, 1
         Unknown1482: 0, 35
         Unknown1483: s32'SpiralBed_Air'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_BerserkC'
         Unknown1488: 2, 0, 30
-        Unknown1560: 
+        Unknown1560:
         Unknown1483: s32'CmnBHighJump'
         Unknown1483: s32'AirStop'
         Unknown1483: s32'3Move'
@@ -750,68 +816,68 @@ startSubroutine: s32'RoundInit'
         Unknown1482: 1, 1
         Unknown1482: 0, 30
         Unknown1483: s32'FlyingBed_Air'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_DashAttackA'
         Unknown1488: 2, 0, 30
-        Unknown1536: 
-        Unknown1539: 
+        Unknown1536:
+        Unknown1539:
         Unknown1511: 130
         Unknown1483: s32'CmnFDash'
         Unknown1482: 8, 44
         Unknown1483: s32'NmlAtk2B'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_DashAttackB'
         Unknown1488: 2, 0, 30
-        Unknown1535: 
+        Unknown1535:
         Unknown1511: 130
         Unknown1483: s32'CmnFDash'
         Unknown1482: 8, 44
         Unknown1483: s32'NmlAtk6D'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_DashNage'
         Unknown1488: 2, 0, 30
-        Unknown1536: 
+        Unknown1536:
         Unknown1511: 130
         Unknown1483: s32'CmnFDash'
         Unknown1482: 8, 44
         Unknown1483: s32'CmnFWalk'
         Unknown1482: 200, 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_MOMBoss1'
         Unknown1488: 2, 0, 30
-        Unknown1557: 
+        Unknown1557:
         Unknown1483: s32'SpiralBed'
         Unknown1483: s32'SpiralBed'
         Unknown1483: s32'SpiralBed'
         Unknown1483: s32'Dejavu_C'
         Unknown1483: s32'MOMSuki'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_MOMBoss2'
         Unknown1488: 2, 0, 30
-        Unknown1557: 
+        Unknown1557:
         Unknown1483: s32'FlyingBed'
         Unknown1483: s32'FlyingBed'
         Unknown1483: s32'FlyingBed'
         Unknown1483: s32'Dejavu_D'
         Unknown1483: s32'MOMSuki'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_MOMBoss3'
         Unknown1488: 2, 0, 30
-        Unknown1557: 
+        Unknown1557:
         Unknown1483: s32'NmlAtk6D'
         Unknown1483: s32'NmlAtk6D'
         Unknown1483: s32'NmlAtk6D'
         Unknown1483: s32'NmlAtk5E'
         Unknown1483: s32'MOMSuki'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_MOMBoss4'
         Unknown1488: 2, 0, 30
-        Unknown1557: 
+        Unknown1557:
         Unknown1483: s32'NmlAtk3D'
         Unknown1483: s32'NmlAtk2D'
         Unknown1483: s32'NmlAtk1D'
         Unknown1483: s32'MOMSuki'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'RC_Trial0'
         Unknown1488: 2, 0, 30
         Unknown1485: 1
@@ -824,71 +890,71 @@ startSubroutine: s32'RoundInit'
         Unknown1483: s32'Dejavu_A'
         Unknown1483: s32'CmnBDash'
         Unknown1483: s32'Dejavu_D'
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishComboSlot0'
-        Unknown1421: 
-        endMoveRegister: 
+        Unknown1421:
+        endMoveRegister:
     addMove: s32'StylishComboSlot1'
-        Unknown1421: 
-        endMoveRegister: 
+        Unknown1421:
+        endMoveRegister:
     addMove: s32'StylishComboSlot2'
-        Unknown1421: 
-        endMoveRegister: 
+        Unknown1421:
+        endMoveRegister:
     addMove: s32'StylishComboSlot3'
-        Unknown1421: 
-        endMoveRegister: 
+        Unknown1421:
+        endMoveRegister:
     addMove: s32'StylishComboSlot4'
-        Unknown1421: 
-        endMoveRegister: 
+        Unknown1421:
+        endMoveRegister:
     addMove: s32'StylishBoomerang_A'
         Unknown1420: s32'Boomerang_A'
         moveInput: 279
         Unknown1423: 1
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishDejavu_A'
         Unknown1420: s32'Dejavu_A'
         moveInput: 279
         moveInput: (INPUT_ANY_DOWN)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishSpiralBed'
         Unknown1420: s32'SpiralBed'
         moveInput: 279
         moveInput: (INPUT_ANY_FORWARD)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishDejavu_C'
         Unknown1420: s32'Dejavu_C'
         moveInput: 279
         moveInput: (INPUT_3)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishFlyingBed'
         Unknown1420: s32'FlyingBed'
         moveInput: 279
         moveInput: 95
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishDejavu_D'
         Unknown1420: s32'Dejavu_D'
         moveInput: 279
         moveInput: (INPUT_1)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishBoomerang_A_Air'
         Unknown1420: s32'Boomerang_A_Air'
         moveInput: 279
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishBoomerang_B_Air'
         Unknown1420: s32'Boomerang_B_Air'
         moveInput: 279
         moveInput: (INPUT_ANY_DOWN)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishSpiralBed_Air'
         Unknown1420: s32'SpiralBed_Air'
         moveInput: 279
         moveInput: (INPUT_ANY_FORWARD)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishFlyingBed_Air'
         Unknown1420: s32'FlyingBed_Air'
         moveInput: 279
         moveInput: 95
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishAlarm'
         Unknown1420: s32'Alarm'
         moveInput: 279
@@ -896,7 +962,7 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_BOOLEAN_OR)
         moveInput: 279
         moveInput: (INPUT_PRESS_K)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishMerry'
         Unknown1420: s32'Merry'
         moveInput: 279
@@ -904,12 +970,12 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_BOOLEAN_OR)
         moveInput: 279
         moveInput: (INPUT_PRESS_H)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'StylishAlarmBurst'
         Unknown1420: s32'AlarmBurst'
         moveInput: 279
         moveInput: (INPUT_PRESS_D)
-        endMoveRegister: 
+        endMoveRegister:
     addMove: s32'FBAtkRIP'
         moveType: (SPECIAL)
         characterState: (STANDING)
@@ -917,8 +983,8 @@ startSubroutine: s32'RoundInit'
         moveInput: (INPUT_PRESS_D)
         Unknown1498: -1210, -306, 1103, 246
         addMoveFlag: (REQUIRES_25_TENSION)
-        Unknown1532: 
-        endMoveRegister: 
+        Unknown1532:
+        endMoveRegister:
     registerFunc: s32'Dejavu_FB'
     registerFunc: s32'Dejavu_FB_Air'
     registerFunc: s32'FBAtkRIP'
@@ -1013,6 +1079,9 @@ startSubroutine: s32'RoundInit'
     registerFunc: s32'FaultlessDefenceCrouch'
     registerFunc: s32'FaultlessDefenceAir'
     registerFunc: s32'CmnActItemUse'
+    registerFunc: s32'SlashbackStanding'
+    registerFunc: s32'SlashbackCrouching'
+    registerFunc: s32'SlashbackAir'
     registerFunc: s32'CounterGuardStand'
     registerFunc: s32'CounterGuardCrouch'
     registerFunc: s32'CounterGuardAir'
@@ -1099,33 +1168,33 @@ startSubroutine: s32'RoundInit'
         Unknown1679: s16'vxxx307', '0x7236303000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         Unknown1679: s16'vxxx309', '0x7231383600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         Unknown1679: s16'vxxx310', '0x7237353600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        endIf: 
+        endIf:
     if: (NEXT_ARG_IS_VAR), 38
         Unknown1679: s16'vxxx307', '0x7237373000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         Unknown1679: s16'vxxx309', '0x7232343000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         Unknown1679: s16'vxxx310', '0x7235333000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        endIf: 
+        endIf:
     if: (NEXT_ARG_IS_VAR), 39
         Unknown1679: s16'vxxx307', '0x7237313000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         Unknown1679: s16'vxxx309', '0x7232363000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
         Unknown1679: s16'vxxx310', '0x7234383000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        endIf: 
+        endIf:
     Unknown47: s16'sol'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown1679: s16'vxxx307', '0x7237383000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        endIf: 
+        endIf:
     Unknown47: s16'ram'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown1679: s16'vxxx307', '0x7239343000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        endIf: 
+        endIf:
     Unknown47: s16'jko'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown1679: s16'vxxx307', '0x7239363000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-        endIf: 
+        endIf:
     Unknown2012: s32''
     Unknown2025: s32'headonly'
     Unknown2026: s32'Head'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'nohead'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head'
@@ -1136,7 +1205,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'wlegs'
     Unknown2026: s32'whorrorhead'
     Unknown2026: s32'wsixeyes'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'MSEntry'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
@@ -1145,24 +1214,24 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'wmatress'
     Unknown2026: s32'warms'
     Unknown2026: s32'wlegs'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'MSMatchWin'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'Manpu'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'MS_Ichigeki'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'Manpu'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'MS_1'
     Unknown2026: s32'Weapon'
     Unknown2026: s32'toge'
     Unknown2026: s32'whead'
     Unknown2026: s32'whorrorhead'
     Unknown2026: s32'wsixeyes'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'high'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
@@ -1173,7 +1242,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'wlegs'
     Unknown2026: s32'whorrorhead'
     Unknown2026: s32'wetc'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'CmnCutSceneDamage_Kakusei'
     Unknown47: s16'pot'
     if: (NEXT_ARG_IS_VAR), 0
@@ -1182,7 +1251,7 @@ startSubroutine: s32'RoundInit'
         Unknown2026: s32'wmatress'
         Unknown2026: s32'whead'
         Unknown2026: s32'Manpu'
-        endIf: 
+        endIf:
     Unknown47: s16'fau'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown2026: s32'Body'
@@ -1192,8 +1261,8 @@ startSubroutine: s32'RoundInit'
         Unknown2026: s32'warms'
         Unknown2026: s32'wlegs'
         Unknown2026: s32'Manpu'
-        endIf: 
-    Unknown2027: 
+        endIf:
+    Unknown2027:
     Unknown2025: s32'CmnCutSceneDamage_Ichigeki'
     Unknown47: s16'zat'
     if: (NEXT_ARG_IS_VAR), 0
@@ -1205,7 +1274,7 @@ startSubroutine: s32'RoundInit'
         Unknown2026: s32'wlegs'
         Unknown2026: s32'Manpu'
         Unknown2026: s32'Zat_IKparts'
-        endIf: 
+        endIf:
     Unknown47: s16'fau'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown2026: s32'Body'
@@ -1217,19 +1286,19 @@ startSubroutine: s32'RoundInit'
         Unknown2026: s32'Manpu'
         if: (NEXT_ARG_IS_VAR), 37
             Unknown2026: s32'FauIKParts_Killer'
-            endIf: 
+            endIf:
         if: (NEXT_ARG_IS_VAR), 38
             Unknown2026: s32'FauIKParts_Rose'
-            endIf: 
+            endIf:
         if: (NEXT_ARG_IS_VAR), 39
             Unknown2026: s32'FauIKParts_Cute'
-            endIf: 
-        endIf: 
+            endIf:
+        endIf:
     Unknown47: s16'ven'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown2026: s32'VenIKBall'
-        endIf: 
-    Unknown2027: 
+        endIf:
+    Unknown2027:
     Unknown2025: s32'CmnCutSceneDamageHigh'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
@@ -1238,7 +1307,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'warms'
     Unknown2026: s32'wlegs'
     Unknown2026: s32'Manpu'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'CmnCutSceneDamageLow'
     Unknown2026: s32'Body'
     Unknown2026: s32'head'
@@ -1247,14 +1316,14 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'warms'
     Unknown2026: s32'wlegs'
     Unknown2026: s32'Manpu'
-    Unknown2027: 
+    Unknown2027:
     Unknown2025: s32'EvttEnding'
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'Manpu'
-    Unknown2027: 
-    Unknown2036: 
-    Unknown2034: 
+    Unknown2027:
+    Unknown2036:
+    Unknown2034:
     storeValue: (NEXT_ARG_IS_VAR), 53, 0, -2147483647
     storeValue: (NEXT_ARG_IS_VAR), 54, 0, -2147483647
     storeValue: (NEXT_ARG_IS_VAR), 55, 0, -2147483647
@@ -1263,96 +1332,96 @@ startSubroutine: s32'RoundInit'
     storeValue: (NEXT_ARG_IS_VAR), 58, 0, -2147483647
     storeValue: (NEXT_ARG_IS_VAR), 59, 0, -2147483647
     storeValue: (NEXT_ARG_IS_VAR), 60, 0, -2147483647
-    endSubroutine: 
+    endSubroutine:
 
 startSubroutine: s32'CPUEstimate'
     Unknown1999: 22, s32'NmlAtk5E'
     if: (NEXT_ARG_IS_VAR), 0
         Unknown1581: s32'RC_HomingJumpCombo'
-        endIf: 
+        endIf:
     Unknown1582: s32'CmnFDash'
-    endSubroutine: 
+    endSubroutine:
 
 startSubroutine: s32'OnFrameStep'
     ifNot: 2, 139
         ifNot: 2, 24
             if: (NEXT_ARG_IS_VAR), 3
                 Unknown2032: s32'nohead'
-                Unknown2034: 
-                endIf: 
-            else: 
-                Unknown2033: 
-                Unknown2034: 
-                endElse: 
-            endIf: 
-        endIf: 
+                Unknown2034:
+                endIf:
+            else:
+                Unknown2033:
+                Unknown2034:
+                endElse:
+            endIf:
+        endIf:
     if: (NEXT_ARG_IS_VAR), 84
         tensionGain: 2
-        endIf: 
-    endSubroutine: 
+        endIf:
+    endSubroutine:
 
 startSubroutine: s32'OnActionBegin'
     upon: 27
         Unknown2156: 1
         ifNot: 2, 4
             jumpToState: s32'BWarp'
-            endIf: 
+            endIf:
         storeValue: (NEXT_ARG_IS_VAR), 6, 0, 1
-        endUpon: 
+        endUpon:
     upon: 28
         Unknown2156: 1
         ifNot: 2, 4
             jumpToState: s32'MerryWarp'
-            endIf: 
+            endIf:
         storeValue: (NEXT_ARG_IS_VAR), 6, 0, 2
-        endUpon: 
+        endUpon:
     ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 6, 0, 1
         ifNot: 2, 24
             jumpToState: s32'BWarp'
-            endIf: 
-        else: 
+            endIf:
+        else:
             storeValue: (NEXT_ARG_IS_VAR), 6, 0, 0
-            endElse: 
-        endIf: 
+            endElse:
+        endIf:
     ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 6, 0, 2
         ifNot: 2, 24
             jumpToState: s32'MerryWarp'
-            endIf: 
-        else: 
+            endIf:
+        else:
             storeValue: (NEXT_ARG_IS_VAR), 6, 0, 0
-            endElse: 
-        endIf: 
+            endElse:
+        endIf:
     upon: 29
         storeValue: (NEXT_ARG_IS_VAR), 53, 0, -2147483647
         storeValue: (NEXT_ARG_IS_VAR), 54, 0, -2147483647
-        endUpon: 
+        endUpon:
     upon: 30
         storeValue: (NEXT_ARG_IS_VAR), 55, 0, -2147483647
         storeValue: (NEXT_ARG_IS_VAR), 56, 0, -2147483647
-        endUpon: 
+        endUpon:
     upon: 31
         storeValue: (NEXT_ARG_IS_VAR), 57, 0, -2147483647
         storeValue: (NEXT_ARG_IS_VAR), 58, 0, -2147483647
-        endUpon: 
+        endUpon:
     upon: 32
         storeValue: (NEXT_ARG_IS_VAR), 59, 0, -2147483647
         storeValue: (NEXT_ARG_IS_VAR), 60, 0, -2147483647
-        endUpon: 
-    endSubroutine: 
+        endUpon:
+    endSubroutine:
 
 startSubroutine: s32'_ThrowGripParamLand'
     Unknown1101: s32'bed310_00'
     Unknown1042: s32'ThrowExe'
     throwRange: 75250
     Unknown1027: '0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'
-    endSubroutine: 
+    endSubroutine:
 
 startSubroutine: s32'_ThrowGripParamAir'
     Unknown1101: s32'bed320_00'
     Unknown1042: s32'AirThrowExe'
     throwRange: 210000
     Unknown1027: '0xFFFFFFFFFFFFFFFF98AB0200EC32FFFF'
-    endSubroutine: 
+    endSubroutine:
 
 startState: s32'CmnActStand'
     setMarker: s32'loop'
@@ -1412,7 +1481,7 @@ startState: s32'CmnActStand'
     sprite: s32'bed000_53', 3
     sprite: s32'bed000_54', 3
     sprite: s32'bed000_55', 3
-    Unknown3: 
+    Unknown3:
     Unknown13: s32'loop', 22, 0, 90, 0, 100
     Unknown25: s32'loop', 2, 86
     storeValue: (NEXT_ARG_IS_VAR), 87, 0, 960
@@ -1430,30 +1499,30 @@ startState: s32'CmnActStand'
     sprite: s32'bed001_06', 40
     sprite: s32'bed001_05', 20
     sprite: s32'bed001_04', 40
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop2'
     sprite: s32'bed001_07', 5
     sprite: s32'bed001_08', 2
     sprite: s32'bed001_09', 2
     sprite: s32'bed001_10', 2
     sprite: s32'bed001_11', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActStandTurn'
     sprite: s32'bed003_00', 3
     sprite: s32'bed003_01', 2
     sprite: s32'bed003_02', 2
     sprite: s32'bed003_03', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActStand2Crouch'
     sprite: s32'bed010_00', 3
     sprite: s32'bed010_01', 3
     sprite: s32'bed010_02', 3
     sprite: s32'bed010_03', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActCrouch'
     Unknown2041: -1, 0, 1000
@@ -1514,7 +1583,7 @@ startState: s32'CmnActCrouch'
     sprite: s32'bed010_57', 3
     sprite: s32'bed010_58', 3
     sprite: s32'bed010_59', 3
-    Unknown3: 
+    Unknown3:
     Unknown44: '0x010000000200000056000000'
     Unknown24: s32'loop', 2, 0
     Unknown13: s32'loop', 22, 0, 80, 0, 100
@@ -1533,24 +1602,24 @@ startState: s32'CmnActCrouch'
     sprite: s32'bed011_11', 3
     sprite: s32'bed011_12', 3
     sprite: s32'bed011_13', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActCrouchTurn'
     sprite: s32'bed013_00', 3
     sprite: s32'bed013_01', 2
     sprite: s32'bed013_02', 2
     sprite: s32'bed013_03', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActCrouch2Stand'
     sprite: s32'bed010_60', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActJumpPre'
     sprite: s32'bed028_00', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActJump'
     setMarker: s32'_Upper'
@@ -1558,7 +1627,7 @@ startState: s32'CmnActJump'
     whiffCancelOptionBufferTime: s32'AirStop', 8
     sprite: s32'bed020_00', 3
     sprite: s32'bed020_01', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'upperloop'
     sprite: s32'keep', 2147483647
     setMarker: s32'_UpperToTop'
@@ -1576,22 +1645,22 @@ startState: s32'CmnActJump'
     setMarker: s32'downloop'
     sprite: s32'bed026_02', 3
     sprite: s32'bed026_03', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'downloop'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActJumpLanding'
     sprite: s32'bed027_00', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActLandingStiff'
     sprite: s32'bed027_00', 2147483647
-    Unknown3: 
+    Unknown3:
     setMarker: s32'_End'
     sprite: s32'keep', 1
-    Unknown18: 
-    endState: 
+    Unknown18:
+    endState:
 
 startState: s32'CmnActFWalk'
     sprite: s32'bed030_00', 3
@@ -1604,9 +1673,9 @@ startState: s32'CmnActFWalk'
     sprite: s32'bed030_04', 4
     sprite: s32'bed030_05', 4
     sprite: s32'bed030_06', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActBWalk'
     sprite: s32'bed031_00', 3
@@ -1619,9 +1688,9 @@ startState: s32'CmnActBWalk'
     sprite: s32'bed031_04', 4
     sprite: s32'bed031_05', 4
     sprite: s32'bed031_06', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActFDash'
     upon: (IMMEDIATE)
@@ -1630,7 +1699,7 @@ startState: s32'CmnActFDash'
             Unknown276: 1
             upon: (FRAME_STEP)
                 Unknown2262: 12
-                endUpon: 
+                endUpon:
             upon: 33
                 enableWhiffCancelOptions: 0
                 Unknown2156: 1
@@ -1638,16 +1707,16 @@ startState: s32'CmnActFDash'
                 Unknown14: s32'Atemi'
                 Unknown2260: 1
                 Unknown2156: 1
-                endUpon: 
+                endUpon:
             Unknown2202: 1
-            endIf: 
+            endIf:
         addWhiffCancelOption: s32'CmnVJump'
         addWhiffCancelOption: s32'CmnBJump'
         addWhiffCancelOption: s32'CmnFJump'
         addWhiffCancelOption: s32'CmnVHighJump'
         addWhiffCancelOption: s32'CmnBHighJump'
         addWhiffCancelOption: s32'CmnFHighJump'
-        endUpon: 
+        endUpon:
     callSubroutine: s32'CheckNormalDash', 0, 0, 0, 0, 0, 0, 0, 0
     Unknown24: s32'NormalDash', 2, 0
     sprite: s32'bed032_00', 2
@@ -1684,7 +1753,7 @@ startState: s32'CmnActFDash'
     sprite: s32'bed032_08', 2
     sprite: s32'keep', 2147483647
     jumpToState: s32'_NEUTRAL'
-    Unknown3: 
+    Unknown3:
     setMarker: s32'Atemi'
     sprite: s32'bed000_00', 8
     Unknown176: 1
@@ -1694,7 +1763,7 @@ startState: s32'CmnActFDash'
     Unknown178: 22
     Unknown98: 0
     Unknown94: 360000
-    Unknown240: 
+    Unknown240:
     Unknown19: 4
     Unknown32: s32'WarpEffHead'
     createObject2: s32'WarpEff00', 100
@@ -1705,8 +1774,8 @@ startState: s32'CmnActFDash'
     Unknown2023: 1
     Unknown32: s32'WarpEff00'
     jumpToState: s32'_NEUTRAL'
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'NormalDash'
     sprite: s32'bed030_00', 1
     sprite: s32'bed030_01', 1
@@ -1718,14 +1787,14 @@ startState: s32'CmnActFDash'
     sprite: s32'bed030_04', 2
     sprite: s32'bed030_05', 2
     sprite: s32'bed030_06', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'ndLoop'
-    endState: 
+    endState:
 
 startState: s32'CmnActFDashStop'
     sprite: s32'bed030_01', 3
     sprite: s32'bed030_00', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActBDash'
     upon: (IMMEDIATE)
@@ -1733,9 +1802,9 @@ startState: s32'CmnActBDash'
         upon: (FRAME_STEP)
             Unknown2262: 14
             storeValue: (NEXT_ARG_IS_VAR), 113, 0, 5
-            endUpon: 
+            endUpon:
         Unknown2202: 1
-        endUpon: 
+        endUpon:
     sprite: s32'bed034_00', 4
     setThrowInvul: 1
     Unknown2155: 10
@@ -1758,13 +1827,13 @@ startState: s32'CmnActBDash'
     physicsXImpulse: 0
     sprite: s32'keep', 2147483647
     jumpToState: s32'_NEUTRAL'
-    endState: 
+    endState:
 
 startState: s32'CmnActAirFDash'
-    endState: 
+    endState:
 
 startState: s32'CmnActAirBDash'
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriHighLv1'
     sprite: s32'bed050_04', 1
@@ -1772,7 +1841,7 @@ startState: s32'CmnActNokezoriHighLv1'
     sprite: s32'bed050_04', 2
     sprite: s32'bed050_05', 2
     sprite: s32'bed050_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriHighLv2'
     sprite: s32'bed050_03', 1
@@ -1781,7 +1850,7 @@ startState: s32'CmnActNokezoriHighLv2'
     sprite: s32'bed050_04', 2
     sprite: s32'bed050_05', 2
     sprite: s32'bed050_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriHighLv3'
     sprite: s32'bed050_03', 2
@@ -1790,7 +1859,7 @@ startState: s32'CmnActNokezoriHighLv3'
     sprite: s32'bed050_04', 2
     sprite: s32'bed050_05', 2
     sprite: s32'bed050_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriHighLv4'
     sprite: s32'bed050_00', 2
@@ -1800,7 +1869,7 @@ startState: s32'CmnActNokezoriHighLv4'
     sprite: s32'bed050_04', 2
     sprite: s32'bed050_05', 2
     sprite: s32'bed050_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriHighLv5'
     sprite: s32'bed050_00', 2
@@ -1810,7 +1879,7 @@ startState: s32'CmnActNokezoriHighLv5'
     sprite: s32'bed050_04', 2
     sprite: s32'bed050_05', 2
     sprite: s32'bed050_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriLowLv1'
     sprite: s32'bed052_04', 1
@@ -1818,7 +1887,7 @@ startState: s32'CmnActNokezoriLowLv1'
     sprite: s32'bed052_04', 2
     sprite: s32'bed052_05', 2
     sprite: s32'bed052_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriLowLv2'
     sprite: s32'bed052_03', 1
@@ -1827,7 +1896,7 @@ startState: s32'CmnActNokezoriLowLv2'
     sprite: s32'bed052_04', 2
     sprite: s32'bed052_05', 2
     sprite: s32'bed052_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriLowLv3'
     sprite: s32'bed052_03', 2
@@ -1836,7 +1905,7 @@ startState: s32'CmnActNokezoriLowLv3'
     sprite: s32'bed052_04', 2
     sprite: s32'bed052_05', 2
     sprite: s32'bed052_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriLowLv4'
     sprite: s32'bed052_00', 2
@@ -1846,7 +1915,7 @@ startState: s32'CmnActNokezoriLowLv4'
     sprite: s32'bed052_04', 2
     sprite: s32'bed052_05', 2
     sprite: s32'bed052_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriLowLv5'
     sprite: s32'bed052_00', 2
@@ -1856,7 +1925,7 @@ startState: s32'CmnActNokezoriLowLv5'
     sprite: s32'bed052_04', 2
     sprite: s32'bed052_05', 2
     sprite: s32'bed052_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriCrouchLv1'
     sprite: s32'bed054_04', 1
@@ -1864,7 +1933,7 @@ startState: s32'CmnActNokezoriCrouchLv1'
     sprite: s32'bed054_04', 2
     sprite: s32'bed054_05', 2
     sprite: s32'bed054_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriCrouchLv2'
     sprite: s32'bed054_03', 2
@@ -1873,7 +1942,7 @@ startState: s32'CmnActNokezoriCrouchLv2'
     sprite: s32'bed054_04', 2
     sprite: s32'bed054_05', 2
     sprite: s32'bed054_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriCrouchLv3'
     sprite: s32'bed054_03', 2
@@ -1882,7 +1951,7 @@ startState: s32'CmnActNokezoriCrouchLv3'
     sprite: s32'bed054_04', 2
     sprite: s32'bed054_05', 2
     sprite: s32'bed054_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriCrouchLv4'
     sprite: s32'bed054_00', 2
@@ -1892,7 +1961,7 @@ startState: s32'CmnActNokezoriCrouchLv4'
     sprite: s32'bed054_04', 2
     sprite: s32'bed054_05', 2
     sprite: s32'bed054_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActNokezoriCrouchLv5'
     sprite: s32'bed054_00', 2
@@ -1902,19 +1971,19 @@ startState: s32'CmnActNokezoriCrouchLv5'
     sprite: s32'bed054_04', 2
     sprite: s32'bed054_05', 2
     sprite: s32'bed054_06', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActBDownUpper'
     setMarker: s32'loop'
     sprite: s32'bed060_00', 4
     sprite: s32'bed060_01', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActBDownUpperEnd'
     sprite: s32'bed060_01', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActBDownDown'
     sprite: s32'bed060_02', 2
@@ -1923,9 +1992,9 @@ startState: s32'CmnActBDownDown'
     setMarker: s32'loop'
     sprite: s32'bed060_05', 4
     sprite: s32'bed060_06', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActBDownBound'
     sprite: s32'bed060_07', 3
@@ -1935,11 +2004,11 @@ startState: s32'CmnActBDownBound'
     sprite: s32'bed060_10', 3
     sprite: s32'bed060_11', 2
     sprite: s32'bed060_12', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActBDownLoop'
     sprite: s32'bed060_13', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActBDown2Stand'
     sprite: s32'bed061_00', 2
@@ -1955,7 +2024,7 @@ startState: s32'CmnActBDown2Stand'
     createObject2: s32'bake061', 100
     sprite: s32'bed061_10', 2
     sprite: s32'bed061_11', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActFDownUpper'
     sprite: s32'bed063_00', 3
@@ -1964,23 +2033,23 @@ startState: s32'CmnActFDownUpper'
     setMarker: s32'loop'
     sprite: s32'bed063_03', 3
     sprite: s32'bed063_04', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActFDownUpperEnd'
     sprite: s32'bed063_02', 4
     sprite: s32'bed063_03', 4
-    endState: 
+    endState:
 
 startState: s32'CmnActFDownDown'
     sprite: s32'bed063_04', 2
     sprite: s32'bed063_05', 2
     setMarker: s32'loop'
     sprite: s32'bed063_06', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActFDownBound'
     sprite: s32'bed063_05', 3
@@ -1992,11 +2061,11 @@ startState: s32'CmnActFDownBound'
     sprite: s32'bed063_10', 3
     sprite: s32'bed063_11', 4
     sprite: s32'bed063_12', 4
-    endState: 
+    endState:
 
 startState: s32'CmnActFDownLoop'
     sprite: s32'bed063_13', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActFDown2Stand'
     sprite: s32'bed064_00', 2
@@ -2012,22 +2081,22 @@ startState: s32'CmnActFDown2Stand'
     sprite: s32'bed064_10', 2
     sprite: s32'bed064_11', 2
     sprite: s32'bed064_12', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActVDownUpper'
     sprite: s32'bed062_00', 4
     setMarker: s32'loop'
     sprite: s32'bed062_01', 4
     sprite: s32'bed062_02', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActVDownUpperEnd'
     sprite: s32'bed062_03', 4
     sprite: s32'bed062_04', 3
     sprite: s32'bed062_05', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActVDownDown'
     sprite: s32'bed062_03', 2
@@ -2037,9 +2106,9 @@ startState: s32'CmnActVDownDown'
     setMarker: s32'loop'
     sprite: s32'bed062_07', 4
     sprite: s32'bed062_08', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActVDownBound'
     sprite: s32'bed062_09', 3
@@ -2051,20 +2120,20 @@ startState: s32'CmnActVDownBound'
     sprite: s32'bed062_14', 3
     sprite: s32'bed062_15', 4
     sprite: s32'bed062_16', 4
-    endState: 
+    endState:
 
 startState: s32'CmnActVDownLoop'
     sprite: s32'bed062_17', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActBlowoff'
     sprite: s32'bed075_00', 3
     setMarker: s32'loop'
     sprite: s32'bed075_01', 3
     sprite: s32'bed075_02', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActKirimomiUpper'
     setMarker: s32'loop'
@@ -2076,15 +2145,15 @@ startState: s32'CmnActKirimomiUpper'
     sprite: s32'bed074_05', 3
     sprite: s32'bed074_06', 3
     sprite: s32'bed074_07', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActWallBound'
     sprite: s32'bed076_00', 3
     sprite: s32'bed076_01', 3
     sprite: s32'bed076_02', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActWallBoundDown'
     sprite: s32'bed076_03', 4
@@ -2094,9 +2163,9 @@ startState: s32'CmnActWallBoundDown'
     setMarker: s32'loop'
     sprite: s32'bed076_07', 3
     sprite: s32'bed076_08', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActWallHaritsuki'
     sprite: s32'bed077_00', 4
@@ -2114,9 +2183,9 @@ startState: s32'CmnActWallHaritsuki'
     sprite: s32'bed077_07', 8
     sprite: s32'bed077_08', 8
     Unknown448: s32'cmn_harituki', 114
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActWallHaritsukiLand'
     sprite: s32'bed077_09', 3
@@ -2124,7 +2193,7 @@ startState: s32'CmnActWallHaritsukiLand'
     sprite: s32'bed077_10', 3
     sprite: s32'bed077_11', 3
     sprite: s32'bed077_12', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActWallHaritsukiGetUp'
     sprite: s32'bed078_00', 3
@@ -2132,7 +2201,7 @@ startState: s32'CmnActWallHaritsukiGetUp'
     sprite: s32'bed078_02', 3
     sprite: s32'bed078_03', 3
     sprite: s32'bed078_04', 3
-    endState: 
+    endState:
 
 startState: s32'CmnActJitabataLoop'
     sprite: s32'bed070_00', 4
@@ -2144,11 +2213,11 @@ startState: s32'CmnActJitabataLoop'
     sprite: s32'bed070_05', 4
     sprite: s32'bed070_06', 4
     sprite: s32'bed070_07', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_End'
     sprite: s32'bed070_00', 4
-    endState: 
+    endState:
 
 startState: s32'CmnActKizetsu'
     sprite: s32'bed071_00', 5
@@ -2161,11 +2230,11 @@ startState: s32'CmnActKizetsu'
     sprite: s32'bed071_06', 5
     sprite: s32'bed071_07', 5
     sprite: s32'bed071_08', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_End'
     sprite: s32'bed071_09', 5
-    endState: 
+    endState:
 
 startState: s32'CmnActHizakuzure'
     callCmnEfFunc: s32'cmn_Hizakuzure'
@@ -2187,7 +2256,7 @@ startState: s32'CmnActHizakuzure'
     sprite: s32'bed085_14', 2147483647
     Unknown94: 30000
     createObject2: s32'head085', 100
-    Unknown3: 
+    Unknown3:
     setMarker: s32'ko'
     sprite: s32'bed085_00', 8
     sprite: s32'bed085_01', 8
@@ -2210,11 +2279,11 @@ startState: s32'CmnActHizakuzure'
     sprite: s32'bed085_14', 6
     Unknown94: 30000
     createObject2: s32'head085', 100
-    Unknown3: 
+    Unknown3:
     Unknown2144: 1, 100
     Unknown658: 100, 1, 0
     jumpToState: s32'CmnActFDownLoop'
-    endState: 
+    endState:
 
 startState: s32'CmnActKorogari'
     setMarker: s32'loop'
@@ -2233,7 +2302,7 @@ startState: s32'CmnActKorogari'
     sprite: s32'bed082_02', 4
     sprite: s32'bed082_03', 4
     sprite: s32'bed082_04', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_ToDown'
     sprite: s32'bed083_00', 4
@@ -2247,7 +2316,7 @@ startState: s32'CmnActKorogari'
     sprite: s32'bed083_08', 4
     sprite: s32'bed083_09', 4
     sprite: s32'bed083_10', 4
-    endState: 
+    endState:
 
 startState: s32'CmnActZSpin'
     setMarker: s32'loop'
@@ -2266,14 +2335,14 @@ startState: s32'CmnActZSpin'
     sprite: s32'bed082_02', 2
     sprite: s32'bed082_03', 2
     sprite: s32'bed082_04', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CmnActUkemi'
     sprite: s32'bed113_00', 4
     sprite: s32'bed113_01', 4
-    endState: 
+    endState:
 
 startState: s32'CmnActMidGuardLoop'
     setMarker: s32'_Pre'
@@ -2284,28 +2353,28 @@ startState: s32'CmnActMidGuardLoop'
     setMarker: s32'_Top'
     setMarker: s32'loop'
     sprite: s32'bed040_04', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_Lv1'
     sprite: s32'bed040_04', 1
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv2'
     sprite: s32'bed040_05', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv3'
     sprite: s32'bed040_06', 8
     sprite: s32'bed040_05', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
-    endState: 
+    endState:
 
 startState: s32'CmnActMidGuardEnd'
     sprite: s32'bed040_02', 2
     sprite: s32'bed040_01', 2
     sprite: s32'bed040_00', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActHighGuardLoop'
     setMarker: s32'_Pre'
@@ -2316,28 +2385,28 @@ startState: s32'CmnActHighGuardLoop'
     setMarker: s32'_Top'
     setMarker: s32'loop'
     sprite: s32'bed040_04', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_Lv1'
     sprite: s32'bed040_04', 1
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv2'
     sprite: s32'bed040_05', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv3'
     sprite: s32'bed040_06', 8
     sprite: s32'bed040_05', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
-    endState: 
+    endState:
 
 startState: s32'CmnActHighGuardEnd'
     sprite: s32'bed040_02', 2
     sprite: s32'bed040_01', 2
     sprite: s32'bed040_00', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActCrouchGuardLoop'
     setMarker: s32'_Pre'
@@ -2348,28 +2417,28 @@ startState: s32'CmnActCrouchGuardLoop'
     setMarker: s32'_Top'
     setMarker: s32'loop'
     sprite: s32'bed043_04', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_Lv1'
     sprite: s32'bed043_04', 1
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv2'
     sprite: s32'bed043_05', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv3'
     sprite: s32'bed043_06', 8
     sprite: s32'bed043_05', 5
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
-    endState: 
+    endState:
 
 startState: s32'CmnActCrouchGuardEnd'
     sprite: s32'bed043_02', 2
     sprite: s32'bed043_01', 2
     sprite: s32'bed043_00', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActAirGuardLoop'
     setMarker: s32'_Pre'
@@ -2380,27 +2449,27 @@ startState: s32'CmnActAirGuardLoop'
     setMarker: s32'_Top'
     setMarker: s32'loop'
     sprite: s32'bed045_04', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_Lv1'
     sprite: s32'bed045_04', 1
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv2'
     sprite: s32'bed045_04', 1
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
     setMarker: s32'_Lv3'
     sprite: s32'bed045_04', 1
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'_Top'
-    endState: 
+    endState:
 
 startState: s32'CmnActAirGuardEnd'
     sprite: s32'bed045_02', 2
     sprite: s32'bed045_01', 2
     sprite: s32'bed045_00', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActHajikareStand'
     sprite: s32'bed100_00', 3
@@ -2413,7 +2482,7 @@ startState: s32'CmnActHajikareStand'
     sprite: s32'bed100_06', 3
     sprite: s32'bed100_07', 3
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActHajikareCrouch'
     sprite: s32'bed101_00', 3
@@ -2426,7 +2495,7 @@ startState: s32'CmnActHajikareCrouch'
     sprite: s32'bed101_06', 3
     sprite: s32'bed101_07', 3
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActHajikareAir'
     sprite: s32'bed102_00', 3
@@ -2444,30 +2513,30 @@ startState: s32'CmnActHajikareAir'
     sprite: s32'bed102_06', 3
     sprite: s32'bed102_07', 3
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActAirTurn'
     sprite: s32'bed023_00', 3
     sprite: s32'bed023_01', 2
     sprite: s32'bed023_02', 2
     sprite: s32'bed023_03', 2
-    endState: 
+    endState:
 
 startState: s32'CmnActLockWait'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActLockReject'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActAirLockWait'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActAirLockReject'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActItemUse'
     Unknown13: s32'_BeginB', 9, 2, 122, 0, 1
@@ -2483,7 +2552,7 @@ startState: s32'CmnActItemUse'
     Unknown43: 12, 1
     Unknown2161: 100, 320000, 240000
     Unknown448: s32'cmn_mom_bun', 130
-    Unknown3: 
+    Unknown3:
     sprite: s32'bed310_12', 3
     sprite: s32'bed310_13', 3
     storeValue: (NEXT_ARG_IS_VAR), 69, 0, 1
@@ -2492,28 +2561,28 @@ startState: s32'CmnActItemUse'
     sprite: s32'bed310_14', 3
     sprite: s32'bed310_15', 3
     sprite: s32'bed310_16', 3
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'_BeginB'
     upon: (ON_HIT_OR_BLOCK)
         Unknown2161: 103, 0, 100000
-        endUpon: 
+        endUpon:
     setMarker: s32'loop'
     sprite: s32'bed450_00', 2
     sprite: s32'bed450_01', 2
     sprite: s32'bed450_02', 2
     sprite: s32'bed450_03', 2
     sprite: s32'bed450_04', 2
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_EndB'
     sprite: s32'bed450_04', 9
     sprite: s32'bed450_05', 2
     sprite: s32'bed450_06', 2
     sprite: s32'bed450_07', 2
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'CmnActBurst'
     sprite: s32'bed330_00', 2
@@ -2525,68 +2594,68 @@ startState: s32'CmnActBurst'
     setMarker: s32'loop'
     sprite: s32'bed330_04', 3
     sprite: s32'bed330_05', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_Drop'
     sprite: s32'bed330_06', 3
     setMarker: s32'downloop'
     sprite: s32'bed330_07', 3
     sprite: s32'bed330_08', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'downloop'
-    endState: 
+    endState:
 
 startState: s32'CmnActRomanCancel'
     sprite: s32'bed350_00', 4
     if: (NEXT_ARG_IS_VAR), 30
         Unknown2234: s32'bed351_00'
-        endIf: 
+        endIf:
     sprite: s32'bed350_01', 3
     if: (NEXT_ARG_IS_VAR), 30
         Unknown2234: s32'bed351_01'
-        endIf: 
+        endIf:
     sprite: s32'bed350_02', 4
     if: (NEXT_ARG_IS_VAR), 30
         Unknown2234: s32'bed351_02'
-        endIf: 
+        endIf:
     setMarker: s32'loop'
     sprite: s32'bed350_03', 4
     if: (NEXT_ARG_IS_VAR), 30
         Unknown2234: s32'bed351_03'
-        endIf: 
+        endIf:
     sprite: s32'bed350_04', 4
     if: (NEXT_ARG_IS_VAR), 30
         Unknown2234: s32'bed351_04'
-        endIf: 
-    Unknown3: 
+        endIf:
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'_EndLand'
     sprite: s32'bed350_05', 2
     sprite: s32'bed350_06', 2
     sprite: s32'bed350_07', 2
     sprite: s32'keep', 2147483647
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'_EndAir'
     sprite: s32'bed351_05', 2
     sprite: s32'bed351_06', 2
     sprite: s32'bed351_07', 2
     sprite: s32'keep', 2147483647
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'CmnActEntryWait'
     upon: (IMMEDIATE)
-        endUpon: 
+        endUpon:
     sprite: s32'null', 2147483647
     Unknown2023: 0
-    endState: 
+    endState:
 
 startState: s32'entry_default'
     upon: (IMMEDIATE)
-        Unknown1638: 
-        endUpon: 
+        Unknown1638:
+        endUpon:
     sprite: s32'null', 2147483647
     Unknown2013: s32'bed700cs', 0
     Unknown2020: s32'bed700', 23, 0, -1
@@ -2598,87 +2667,87 @@ startState: s32'entry_default'
             createObject2: s32'Tojo_spark', 100
             createObject2: s32'Tojo_scr', 100
             playCharacterSFX: s32'BED_Entry001'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 95
             playCharacterSFX: s32'BED_Entry002'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 131
             playCharacterSFX: s32'BED_Entry003'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 151
             playCharacterSFX: s32'BED_Entry004'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 155
             playCharacterSFX: s32'BED_Entry003'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 179
             playCharacterSFX: s32'BED_Entry003'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 180
             playCharacterSFX: s32'BED_Entry004'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 197
             playCharacterSFX: s32'BED_Entry003'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 212
             playCharacterSFX: s32'BED_Entry004'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 243
             playCharacterSFX: s32'BED_Entry003'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 256
             playCharacterSFX: s32'BED_Entry004'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 258
             playCharacterSFX: s32'BED_Entry005'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 279
             playCharacterSFX: s32'BED_Entry003'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 300
             playCharacterSFX: s32'BED_Entry006'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 303
             playCharacterSFX: s32'BED_Entry011'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 373
             playCharacterSFX: s32'BED_Entry007'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 414
             playCharacterSFX: s32'BED_Entry008'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 479
             playCharacterSFX: s32'BED_Entry009'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 483
             playCharacterSFX: s32'BED_Entry010'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 578
             playCharacterSFX: s32'BED_Entry013'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 583
             playCharacterSFX: s32'BED_Entry012'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 680
-            Unknown1676: 
-            endIf: 
-        endUpon: 
-    Unknown3: 
-    Unknown18: 
-    endState: 
+            Unknown1676:
+            endIf:
+        endUpon:
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'CmnActExDamage'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActExDamageLand'
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'CmnActRoundWin'
     if: (NEXT_ARG_IS_VAR), 136
         Unknown14: s32'TypeA'
-        endIf: 
+        endIf:
     Unknown13: s32'TypeA', 9, 2, 153, 0, 1
     Unknown13: s32'TypeB', 9, 2, 153, 0, 2
     Unknown13: s32'TypeB', 22, 0, 50, 0, 100
@@ -2701,8 +2770,8 @@ startState: s32'CmnActRoundWin'
     sprite: s32'bed615_13', 3
     sprite: s32'bed615_14', 3
     sprite: s32'bed615_15', 2147483647
-    Unknown1676: 
-    Unknown18: 
+    Unknown1676:
+    Unknown18:
     setMarker: s32'TypeB'
     sprite: s32'bed032_00', 3
     physicsYImpulse: 5000
@@ -2753,8 +2822,8 @@ startState: s32'CmnActRoundWin'
     sprite: s32'bed616_16', 3
     sprite: s32'bed616_17', 2147483647
     Unknown1771: s32'WinDreamcatcher00', 23
-    Unknown1676: 
-    endState: 
+    Unknown1676:
+    endState:
 
 startState: s32'CmnActMatchWin'
     sprite: s32'null', 2147483647
@@ -2767,90 +2836,90 @@ startState: s32'CmnActMatchWin'
         if: (NEXT_ARG_IS_VAR), 46
             ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 30
                 Unknown2045: s32'DustHit', 1500, 10, 10, 10
-                endIf: 
+                endIf:
             ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 45
                 createObject2: s32'Winnoise', 100
-                endIf: 
+                endIf:
             ifOperation: 16, (NEXT_ARG_IS_VAR), 13, 0, 46
                 Unknown32: s32'Winnoise'
-                endIf: 
-            endIf: 
+                endIf:
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 0
             createObject2: s32'WinKiri', 100
             createObject2: s32'WinBG00', 100
             Unknown2063: '0x0000000064000000'
             playCharacterSFX: s32'BED_Win001'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 260
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 266
             Unknown32: s32'Winnoise'
             playVoice: s16'vxxx307'
             Unknown2211: s32'prev', -2147483618
             storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 400
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 406
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 490
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 494
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 510
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 518
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 535
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 537
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 551
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 553
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 562
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 565
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 600
             createObject2: s32'Winnoise', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 605
             Unknown32: s32'Winnoise'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 630
             storeValue: (NEXT_ARG_IS_VAR), 46, 0, 1
-            endIf: 
+            endIf:
         if: (NEXT_ARG_IS_VAR), 45
             ifNot: 2, 95
                 Unknown1675: 30
-                Unknown1676: 
+                Unknown1676:
                 storeValue: (NEXT_ARG_IS_VAR), 45, 0, 0
                 storeValue: (NEXT_ARG_IS_VAR), 46, 0, 0
                 Unknown32: s32'Winnoise'
                 createObject2: s32'WinEndeff', 100
                 playCharacterSFX: s32'BED_Win002'
                 playCharacterSFX: s32'BED_Win003'
-                endIf: 
-            endIf: 
-        endUpon: 
-    Unknown3: 
-    Unknown18: 
-    endState: 
+                endIf:
+            endIf:
+        endUpon:
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'CmnActLose'
     sprite: s32'bed640_00', 2
@@ -2858,8 +2927,8 @@ startState: s32'CmnActLose'
     createObject2: s32'losenoise', 100
     playVoice: s16'vxxx008'
     sprite: s32'bed640_02', 2147483647
-    Unknown1676: 
-    endState: 
+    Unknown1676:
+    endState:
 
 startState: s32'CmnActResultWin'
     sprite: s32'bed650_00', 2147483647
@@ -2871,28 +2940,28 @@ startState: s32'CmnActResultWin'
                 Unknown2211: s32'vxxx400', 10000
                 Unknown2313: 1
                 storeValue: (NEXT_ARG_IS_VAR), 69, 0, 1
-                endIf: 
-            endIf: 
-        else: 
+                endIf:
+            endIf:
+        else:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 69, 0, 1
                 storeValue: (NEXT_ARG_IS_VAR), 69, 0, 2
-                endIf: 
-            else: 
+                endIf:
+            else:
                 ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 69, 0, 2
                     ifNot: 2, 143
                         storeValue: (NEXT_ARG_IS_VAR), 138, 0, 0
                         storeValue: (NEXT_ARG_IS_VAR), 69, 0, 3
-                        endIf: 
-                    endIf: 
-                endElse: 
-            endElse: 
-        endUpon: 
-    endState: 
+                        endIf:
+                    endIf:
+                endElse:
+            endElse:
+        endUpon:
+    endState:
 
 startState: s32'CmnActResultLose'
     sprite: s32'bed660_00', 2147483647
     Unknown2062: '0x880D0100F0DEFEFFF8C5FBFF00000000A06E0500B86A0500'
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5A'
     upon: (IMMEDIATE)
@@ -2922,12 +2991,12 @@ startState: s32'NmlAtk5A'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 6
-        endUpon: 
+        endUpon:
     sprite: s32'bed200_00', 2
     setJumpCancelable: 1
     sprite: s32'bed200_01', 3
@@ -2935,16 +3004,16 @@ startState: s32'NmlAtk5A'
     sprite: s32'bed200_02', 2
     ifNot: 2, 3
         createObject2: s32'bake200', 100
-        endIf: 
-    hit: 
+        endIf:
+    hit:
     playSFX: s32'SE_SWINGA'
     sprite: s32'bed200_03', 2
     Unknown32: s32'bake200'
     Unknown1616: 1
     sprite: s32'bed200_04', 3
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed200_05', 3
-    endState: 
+    endState:
 
 startState: s32'NmlAtk6A'
     upon: (IMMEDIATE)
@@ -2958,30 +3027,30 @@ startState: s32'NmlAtk6A'
         addGatlingOption: s32'NmlAtk3D'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk6D'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 9
-        endUpon: 
+        endUpon:
     sprite: s32'bed210_00', 2
     sprite: s32'bed210_01', 2
     Unknown621: '0x01000000FFFFFFFF'
     sprite: s32'bed210_02', 4
     sprite: s32'bed210_03', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGB'
     sprite: s32'bed210_04', 2
     sprite: s32'bed210_05', 2
     sprite: s32'bed210_06', 7
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed210_07', 2
     sprite: s32'bed210_08', 2
     sprite: s32'bed210_09', 2
     sprite: s32'bed210_10', 4
     sprite: s32'bed210_11', 2
     sprite: s32'bed210_12', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk2A'
     upon: (IMMEDIATE)
@@ -3011,29 +3080,29 @@ startState: s32'NmlAtk2A'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 5
-        endUpon: 
+        endUpon:
     sprite: s32'bed230_00', 2
     sprite: s32'bed230_01', 2
     Unknown621: '0x00000000FFFFFFFF'
     sprite: s32'bed230_02', 2
     ifNot: 2, 3
         createObject2: s32'bake230', 100
-        endIf: 
-    hit: 
+        endIf:
+    hit:
     playSFX: s32'SE_SWINGA'
     sprite: s32'bed230_03', 2
     Unknown32: s32'bake230'
     sprite: s32'bed230_04', 2
     Unknown1616: 1
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed230_05', 2
     sprite: s32'bed230_06', 3
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5B'
     upon: (IMMEDIATE)
@@ -3053,12 +3122,12 @@ startState: s32'NmlAtk5B'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 8
-        endUpon: 
+        endUpon:
     sprite: s32'bed201_00', 2
     setJumpCancelable: 1
     sprite: s32'bed201_01', 2
@@ -3066,16 +3135,16 @@ startState: s32'NmlAtk5B'
     sprite: s32'bed201_02', 3
     sprite: s32'bed201_03', 3
     createObject2: s32'bake201', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGB'
     sprite: s32'bed201_04', 3
-    recoveryState: 
+    recoveryState:
     Unknown32: s32'bake201'
     sprite: s32'bed201_05', 3
     sprite: s32'bed201_06', 3
     sprite: s32'bed201_07', 3
     sprite: s32'bed201_08', 3
-    endState: 
+    endState:
 
 startState: s32'NmlAtk2B'
     upon: (IMMEDIATE)
@@ -3094,27 +3163,27 @@ startState: s32'NmlAtk2B'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 6
-        endUpon: 
+        endUpon:
     sprite: s32'bed231_00', 2
     sprite: s32'bed231_01', 3
     Unknown621: '0x00000000FFFFFFFF'
     sprite: s32'bed231_02', 2
     createObject2: s32'bake231', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGA'
     sprite: s32'bed231_03', 4
     Unknown32: s32'bake231'
     sprite: s32'bed231_04', 2
     sprite: s32'bed231_05', 2
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed231_06', 2
     sprite: s32'bed231_07', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5CNear'
     upon: (IMMEDIATE)
@@ -3134,28 +3203,28 @@ startState: s32'NmlAtk5CNear'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'CmnFJump'
                 addMoveFlag: 99
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 6
-        endUpon: 
+        endUpon:
     sprite: s32'bed202_00', 2
     setJumpCancelable: 1
     sprite: s32'bed202_01', 3
     Unknown621: '0x01000000FFFFFFFF'
     sprite: s32'bed202_02', 3
     createObject2: s32'bake202', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGD'
     sprite: s32'bed202_03', 5
     Unknown32: s32'bake202'
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed202_04', 2
     sprite: s32'bed202_05', 2
     sprite: s32'bed202_06', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5CFar'
     upon: (IMMEDIATE)
@@ -3170,16 +3239,16 @@ startState: s32'NmlAtk5CFar'
         addGatlingOption: s32'NmlAtk3D'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2D'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2C'
                 Unknown1416: 450000
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot2', s32'FlyingBed'
                 addMoveFlag: 99
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 9
-        endUpon: 
+        endUpon:
     sprite: s32'Bed203_00', 2
     setJumpCancelable: 1
     sprite: s32'Bed203_01', 2
@@ -3188,23 +3257,23 @@ startState: s32'NmlAtk5CFar'
     sprite: s32'Bed203_03', 2
     sprite: s32'Bed203_04', 2
     createObject2: s32'bake203', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     sprite: s32'Bed203_05', 1
     Unknown32: s32'bake203'
-    endCounterHitState: 
+    endCounterHitState:
     sprite: s32'Bed203_06', 2
     sprite: s32'Bed203_07', 2
     sprite: s32'Bed203_08', 2
     sprite: s32'Bed203_09', 2
     sprite: s32'Bed203_10', 2
-    recoveryState: 
+    recoveryState:
     sprite: s32'Bed203_11', 2
     sprite: s32'Bed203_12', 2
     sprite: s32'Bed203_13', 2
     sprite: s32'Bed203_14', 1
     sprite: s32'Bed203_15', 1
-    endState: 
+    endState:
 
 startState: s32'NmlAtk2C'
     upon: (IMMEDIATE)
@@ -3220,32 +3289,32 @@ startState: s32'NmlAtk2C'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2D'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2E'
                 Unknown1416: 450000
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 12
-        endUpon: 
+        endUpon:
     sprite: s32'bed232_00', 3
     sprite: s32'bed232_01', 3
     Unknown621: '0x01000000FFFFFFFF'
     sprite: s32'bed232_02', 5
     sprite: s32'bed232_03', 1
     createObject2: s32'bake232', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGE'
     sprite: s32'bed232_04', 2
     Unknown1771: s32'bake232', 23
     sprite: s32'bed232_04', 1
     Unknown32: s32'bake232'
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed232_05', 2
     sprite: s32'bed232_06', 2
     sprite: s32'bed232_07', 2
     sprite: s32'bed232_08', 2
     sprite: s32'bed232_09', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5D'
     upon: (IMMEDIATE)
@@ -3260,13 +3329,13 @@ startState: s32'NmlAtk5D'
         addGatlingOption: s32'NmlAtk2E'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'FlyingBed'
                 addMoveFlag: 99
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 12
-        endUpon: 
+        endUpon:
     sprite: s32'bed204_00', 2
     sprite: s32'bed204_01', 2
     Unknown621: '0x02000000FFFFFFFF'
@@ -3274,43 +3343,43 @@ startState: s32'NmlAtk5D'
     sprite: s32'bed204_03', 5
     sprite: s32'bed204_04', 3
     createObject2: s32'bake204', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed204_05', 3
     Unknown32: s32'bake204'
     createObject2: s32'bake204_3', 100
-    Unknown1883: 
+    Unknown1883:
     sprite: s32'bed204_06', 3
     hitPushbackX: -100
     createObject2: s32'bake204_2', 100
     Unknown32: s32'bake204_3'
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     setJumpCancelable: 1
     if: (NEXT_ARG_IS_VAR), 212
         setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
-            endMoveRegister: 
+            endMoveRegister:
         setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk1D'
             addMoveFlag: 117
-            endMoveRegister: 
+            endMoveRegister:
         setStylishCombo: s32'StylishComboSlot2', s32'Alarm'
             addMoveFlag: 117
-            endMoveRegister: 
+            endMoveRegister:
         setStylishCombo: s32'StylishComboSlot3', s32'FlyingBed'
             addMoveFlag: 99
-            endMoveRegister: 
-        endIf: 
+            endMoveRegister:
+        endIf:
     sprite: s32'bed204_07', 3
     Unknown32: s32'bake204_2'
     createObject2: s32'bake204_4', 100
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed204_08', 3
     sprite: s32'bed204_09', 3
     sprite: s32'bed204_10', 3
     sprite: s32'bed204_11', 2
     sprite: s32'bed204_12', 2
     sprite: s32'bed204_13', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk6D'
     upon: (IMMEDIATE)
@@ -3322,13 +3391,13 @@ startState: s32'NmlAtk6D'
         hitAirPushbackY: 12000
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed'
                 addMoveFlag: 117
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 18
-        endUpon: 
+        endUpon:
     sprite: s32'bed213_re_00', 2
     sprite: s32'bed213_re_01', 3
     sprite: s32'bed213_re_02', 3
@@ -3341,7 +3410,7 @@ startState: s32'NmlAtk6D'
     Unknown2143: 3, 100
     sprite: s32'bed213_re_06', 1
     createObject2: s32'Bake213_re1', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGF'
     Unknown621: '0x01000000FFFFFFFF'
     sprite: s32'bed213_re_07', 1
@@ -3354,7 +3423,7 @@ startState: s32'NmlAtk6D'
     Unknown2143: 3, 100
     sprite: s32'bed213_re_12', 1
     createObject2: s32'Bake213_re2', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGF'
     Unknown621: '0x02000000FFFFFFFF'
     playCharacterSFX: s32'BED_001'
@@ -3366,12 +3435,12 @@ startState: s32'NmlAtk6D'
     whiffCancelOptionBufferTime: s32'NmlAtk6D_2', 3
     sprite: s32'bed213_re_16', 3
     sprite: s32'bed213_re_17', 3
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed213_re_18', 3
     sprite: s32'bed213_re_19', 3
     sprite: s32'bed213_re_20', 3
     sprite: s32'bed213_re_21', 3
-    endState: 
+    endState:
 
 startState: s32'NmlAtk6D_2'
     upon: (IMMEDIATE)
@@ -3384,13 +3453,13 @@ startState: s32'NmlAtk6D_2'
         untechableTime: 40
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed'
                 addMoveFlag: 117
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 10
-        endUpon: 
+        endUpon:
     sprite: s32'bed213_re_22', 3
     sprite: s32'bed213_re_23', 3
     sprite: s32'bed213_re_24', 3
@@ -3400,7 +3469,7 @@ startState: s32'NmlAtk6D_2'
     Unknown2143: 3, 100
     sprite: s32'bed213_re_06', 1
     createObject2: s32'Bake213_re1', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGF'
     Unknown621: '0x01000000FFFFFFFF'
     sprite: s32'bed213_re_07', 1
@@ -3414,7 +3483,7 @@ startState: s32'NmlAtk6D_2'
     Unknown2143: 3, 100
     sprite: s32'bed213_re_12', 1
     createObject2: s32'Bake213_re2', 100
-    hit: 
+    hit:
     hitPushbackX: 120
     specialCancelEnabled: 0
     playSFX: s32'SE_SWINGF'
@@ -3429,18 +3498,18 @@ startState: s32'NmlAtk6D_2'
     hitstop: 24
     upon: (HIT_OR_GUARD)
         screenShake: 0, 2
-        endUpon: 
+        endUpon:
     sprite: s32'bed213_re_13', 2
     sprite: s32'bed213_re_14', 2
     sprite: s32'bed213_re_15', 2
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed213_re_16', 2
     sprite: s32'bed213_re_17', 2
     sprite: s32'bed213_re_18', 2
     sprite: s32'bed213_re_19', 2
     sprite: s32'bed213_re_20', 2
     sprite: s32'bed213_re_21', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk1D'
     upon: (IMMEDIATE)
@@ -3453,13 +3522,13 @@ startState: s32'NmlAtk1D'
         setJumpCancelable: 1
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'FlyingBed'
                 addMoveFlag: 117
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 15
-        endUpon: 
+        endUpon:
     sprite: s32'bed233_00', 1
     sprite: s32'bed233_01', 2
     Unknown621: '0x02000000FFFFFFFF'
@@ -3473,7 +3542,7 @@ startState: s32'NmlAtk1D'
     createObject2: s32'233Object1D', 130
     Unknown43: 5, 1
     Unknown467: 5
-    grabOrRelease: 
+    grabOrRelease:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed233_07', 5
     sprite: s32'bed233_08', 4
@@ -3483,7 +3552,7 @@ startState: s32'NmlAtk1D'
     sprite: s32'bed233_12', 2
     sprite: s32'bed233_13', 2
     sprite: s32'bed233_14', 1
-    endState: 
+    endState:
 
 startState: s32'NmlAtk2D'
     upon: (IMMEDIATE)
@@ -3498,12 +3567,12 @@ startState: s32'NmlAtk2D'
         setJumpCancelable: 1
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_A'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 15
-        endUpon: 
+        endUpon:
     sprite: s32'bed233_00', 1
     sprite: s32'bed233_01', 2
     Unknown621: '0x02000000FFFFFFFF'
@@ -3517,7 +3586,7 @@ startState: s32'NmlAtk2D'
     createObject2: s32'233Object2D', 130
     Unknown43: 5, 1
     Unknown467: 5
-    grabOrRelease: 
+    grabOrRelease:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed233_07', 5
     sprite: s32'bed233_08', 4
@@ -3527,7 +3596,7 @@ startState: s32'NmlAtk2D'
     sprite: s32'bed233_12', 2
     sprite: s32'bed233_13', 2
     sprite: s32'bed233_14', 1
-    endState: 
+    endState:
 
 startState: s32'NmlAtk3D'
     upon: (IMMEDIATE)
@@ -3542,12 +3611,12 @@ startState: s32'NmlAtk3D'
         setJumpCancelable: 1
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_A'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 19
-        endUpon: 
+        endUpon:
     sprite: s32'bed233_00', 1
     sprite: s32'bed233_01', 2
     Unknown621: '0x02000000FFFFFFFF'
@@ -3561,7 +3630,7 @@ startState: s32'NmlAtk3D'
     createObject2: s32'233Object3D', 130
     Unknown43: 5, 1
     Unknown467: 5
-    grabOrRelease: 
+    grabOrRelease:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed233_07', 5
     sprite: s32'bed233_08', 4
@@ -3571,7 +3640,7 @@ startState: s32'NmlAtk3D'
     sprite: s32'bed233_12', 2
     sprite: s32'bed233_13', 2
     sprite: s32'bed233_14', 1
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5E'
     upon: (IMMEDIATE)
@@ -3583,10 +3652,10 @@ startState: s32'NmlAtk5E'
         setProration: 80
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'HomingJump'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 26
-        endUpon: 
+        endUpon:
     sprite: s32'bed205_00', 3
     sprite: s32'bed205_01', 5
     playVoice: s16'vxxx111'
@@ -3594,25 +3663,25 @@ startState: s32'NmlAtk5E'
     sprite: s32'bed205_03', 9
     sprite: s32'bed205_04', 3
     sprite: s32'bed205_05', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGD'
     createObject2: s32'205shock', 100
     createObject2: s32'bake205', 100
     sprite: s32'bed205_06', 2
     sprite: s32'bed205_07', 3
     sprite: s32'bed205_08', 2
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed205_09', 2
     sprite: s32'bed205_10', 2
     sprite: s32'bed205_11', 2
     sprite: s32'bed205_12', 2
     sprite: s32'bed205_13', 2
-    endState: 
+    endState:
 
 startState: s32'HomingDash2'
     upon: (IMMEDIATE)
         callCmnEfFunc: s32'cmnHomingDash2Initialize'
-        endUpon: 
+        endUpon:
     sprite: s32'bed010_02', 6
     sprite: s32'bed010_03', 3
     sprite: s32'bed010_04', 3
@@ -3637,12 +3706,12 @@ startState: s32'HomingDash2'
     sprite: s32'bed032_06', 2
     sprite: s32'bed032_07', 2
     sprite: s32'bed032_08', 2
-    endState: 
+    endState:
 
 startState: s32'HomingJump'
     upon: (IMMEDIATE)
         callCmnEfFunc: s32'cmnHomingJumpInitialize'
-        endUpon: 
+        endUpon:
     sprite: s32'bed028_00', 11
     sprite: s32'bed025_00', 3
     sprite: s32'bed025_01', 3
@@ -3650,9 +3719,9 @@ startState: s32'HomingJump'
     setMarker: s32'loop'
     sprite: s32'bed025_03', 3
     sprite: s32'bed025_04', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'NmlAtk2E'
     upon: (IMMEDIATE)
@@ -3664,17 +3733,17 @@ startState: s32'NmlAtk2E'
         hitAirPushbackX: 15000
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_B'
                 addMoveFlag: 117
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot2', s32'SpiralBed'
                 addMoveFlag: 117
                 Unknown1416: 400000
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 12
-        endUpon: 
+        endUpon:
     sprite: s32'bed234_00', 2
     sprite: s32'bed234_01', 2
     Unknown621: '0x02000000FFFFFFFF'
@@ -3686,7 +3755,7 @@ startState: s32'NmlAtk2E'
     createObject2: s32'bake234_2', 100
     createObject2: s32'Spark234', 100
     sprite: s32'bed234_05', 3
-    hit: 
+    hit:
     Unknown32: s32'bake234_2'
     createObject2: s32'Spark234', 100
     playSFX: s32'SE_SWINGB'
@@ -3694,21 +3763,21 @@ startState: s32'NmlAtk2E'
     sprite: s32'bed234_07', 3
     Unknown2217: 0
     sprite: s32'bed234_08', 3
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed234_09', 2
     sprite: s32'bed234_10', 2
     sprite: s32'bed234_11', 2
-    endState: 
+    endState:
 
 startState: s32'NmlAtk5F'
     upon: (IMMEDIATE)
         Unknown2160: 61
-        Unknown2215: 
-        recoveryState: 
-        endUpon: 
+        Unknown2215:
+        recoveryState:
+        endUpon:
     if: (NEXT_ARG_IS_VAR), 3
         Unknown14: s32'TypeB'
-        endIf: 
+        endIf:
     Unknown13: s32'TypeB', 22, 0, 50, 0, 100
     setMarker: s32'TypeA'
     sprite: s32'bed300_00', 5
@@ -3743,8 +3812,8 @@ startState: s32'NmlAtk5F'
     sprite: s32'bed300_24', 4
     sprite: s32'bed300_25', 4
     sprite: s32'bed300_26', 4
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'TypeB'
     sprite: s32'bed301_00', 3
     sprite: s32'bed301_01', 3
@@ -3810,18 +3879,18 @@ startState: s32'NmlAtk5F'
     playSFX: s32'GG2_016'
     sprite: s32'bed301_35', 3
     sprite: s32'bed301_36', 3
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'NmlAtk6F'
     upon: (IMMEDIATE)
         Unknown2160: 17
-        recoveryState: 
-        endUpon: 
+        recoveryState:
+        endUpon:
     if: (NEXT_ARG_IS_VAR), 3
         Unknown14: s32'TypeB'
-        endIf: 
+        endIf:
     Unknown13: s32'TypeB', 22, 0, 50, 0, 100
     setMarker: s32'TypeA'
     sprite: s32'bed305_00', 5
@@ -3850,8 +3919,8 @@ startState: s32'NmlAtk6F'
     sprite: s32'bed305_20', 5
     sprite: s32'bed305_21', 5
     sprite: s32'bed305_22', 5
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'TypeB'
     sprite: s32'bed306_00', 3
     sprite: s32'bed306_01', 3
@@ -3901,9 +3970,9 @@ startState: s32'NmlAtk6F'
     sprite: s32'bed306_36', 3
     sprite: s32'bed306_37', 3
     sprite: s32'bed306_38', 3
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'NmlAtkAir5A'
     upon: (IMMEDIATE)
@@ -3922,27 +3991,27 @@ startState: s32'NmlAtkAir5A'
         setJumpCancelable: 1
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 6
-        endUpon: 
+        endUpon:
     sprite: s32'bed250_00', 2
     sprite: s32'bed250_01ex', 3
     Unknown621: '0x00000000FFFFFFFF'
     sprite: s32'bed250_02ex', 2
     ifNot: 2, 3
         createObject2: s32'bake250', 100
-        endIf: 
-    hit: 
+        endIf:
+    hit:
     playSFX: s32'SE_SWINGA'
     sprite: s32'bed250_03ex', 4
     Unknown32: s32'bake250'
     sprite: s32'bed250_04', 3
-    recoveryState: 
+    recoveryState:
     Unknown1616: 1
     sprite: s32'bed250_05', 3
     sprite: s32'bed250_06', 3
-    endState: 
+    endState:
 
 startState: s32'NmlAtkAir5B'
     upon: (IMMEDIATE)
@@ -3958,27 +4027,27 @@ startState: s32'NmlAtkAir5B'
         addGatlingOption: s32'AirStopCancelOnly'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 9
-        endUpon: 
+        endUpon:
     sprite: s32'bed251_00', 4
     sprite: s32'bed251_01', 4
     Unknown621: '0x00000000FFFFFFFF'
     sprite: s32'bed251_02', 6
     createObject2: s32'bake251', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGB'
     sprite: s32'bed251_03', 3
     Unknown32: s32'bake251'
     sprite: s32'bed251_04', 3
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed251_05', 3
     sprite: s32'bed251_06', 3
     sprite: s32'bed251_07', 3
     sprite: s32'bed251_08', 3
     sprite: s32'bed251_09', 3
-    endState: 
+    endState:
 
 startState: s32'NmlAtkAir5C'
     upon: (IMMEDIATE)
@@ -3993,34 +4062,34 @@ startState: s32'NmlAtkAir5C'
         addGatlingOption: s32'AirStopCancelOnly'
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5D'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed_Air'
                 addMoveFlag: 117
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot2', s32'AirStopCancelOnly'
-                endMoveRegister: 
-            endIf: 
+                endMoveRegister:
+            endIf:
         Unknown2331: 6
-        endUpon: 
+        endUpon:
     sprite: s32'bed252_00', 3
     sprite: s32'bed252_01', 3
     Unknown621: '0x01000000FFFFFFFF'
     sprite: s32'bed252_02', 3
     sprite: s32'bed252_03', 2
     createObject2: s32'bake252', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGF'
     sprite: s32'bed252_04', 6
     Unknown32: s32'bake252'
     sprite: s32'bed252_05', 3
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed252_06', 3
     sprite: s32'bed252_07', 3
     sprite: s32'bed252_08', 3
     sprite: s32'bed252_09', 3
     sprite: s32'bed252_10', 3
     sprite: s32'bed252_11', 4
-    endState: 
+    endState:
 
 startState: s32'NmlAtkAir5D'
     upon: (IMMEDIATE)
@@ -4029,38 +4098,38 @@ startState: s32'NmlAtkAir5D'
         Unknown725: 1
         Unknown1110: 1
         Unknown2331: 13
-        endUpon: 
+        endUpon:
     sprite: s32'bed253_00', 4
     sprite: s32'bed253_01', 4
     Unknown621: '0x02000000FFFFFFFF'
     sprite: s32'bed253_02', 4
     sprite: s32'bed253_03', 2
     createObject2: s32'bake253', 100
-    hit: 
+    hit:
     playCharacterSFX: s32'BED_001'
     sprite: s32'bed253_04', 2
-    hit: 
+    hit:
     sprite: s32'bed253_05', 2
-    hit: 
+    hit:
     sprite: s32'bed253_06', 2
-    hit: 
+    hit:
     sprite: s32'bed253_07', 2
-    hit: 
+    hit:
     sprite: s32'bed253_08', 2
-    hit: 
+    hit:
     if: (NEXT_ARG_IS_VAR), 212
         setStylishCombo: s32'StylishComboSlot0', s32'SpiralBed_Air'
             addMoveFlag: 117
-            endMoveRegister: 
-        endIf: 
+            endMoveRegister:
+        endIf:
     sprite: s32'bed253_09', 8
     Unknown32: s32'bake253'
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed253_10', 4
     sprite: s32'bed253_11', 4
     sprite: s32'bed253_12', 4
     sprite: s32'bed253_13', 4
-    endState: 
+    endState:
 
 startState: s32'NmlAtkAir5E'
     upon: (IMMEDIATE)
@@ -4069,21 +4138,21 @@ startState: s32'NmlAtkAir5E'
         airHitEffect: (AIR_FACE_UP)
         hitAirPushbackY: -30000
         setProration: 90
-        Unknown240: 
+        Unknown240:
         upon: (HIT_OR_GUARD)
             physicsYImpulse: 30000
             checkInput: 121
             if: (NEXT_ARG_IS_VAR), 0
                 addVelocityX: 8000
-                endIf: 
+                endIf:
             checkInput: 95
             if: (NEXT_ARG_IS_VAR), 0
                 addVelocityX: -12000
-                endIf: 
+                endIf:
             Unknown14: s32'End'
-            endUpon: 
+            endUpon:
         Unknown2331: 11
-        endUpon: 
+        endUpon:
     sprite: s32'bed254_00', 1
     sprite: s32'bed254_01', 1
     Unknown621: '0x02000000FFFFFFFF'
@@ -4097,13 +4166,13 @@ startState: s32'NmlAtkAir5E'
     sprite: s32'bed254_05', 2
     Unknown116: 50
     sprite: s32'bed254_06', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGB'
     frcWindow: 9
     sprite: s32'bed254_07', 3
     sprite: s32'bed254_08', 3
     sprite: s32'bed254_09', 3
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed254_10', 3
     sprite: s32'bed254_11', 3
     sprite: s32'bed254_12', 3
@@ -4112,7 +4181,7 @@ startState: s32'NmlAtkAir5E'
     sprite: s32'bed254_14', 3
     sprite: s32'bed254_15', 3
     sprite: s32'bed254_16', 3
-    endState: 
+    endState:
 
 startState: s32'DeadAngleAttack'
     upon: (IMMEDIATE)
@@ -4126,7 +4195,7 @@ startState: s32'DeadAngleAttack'
         wallBounceCount: 1
         setProration: 50
         Unknown1064: s32'CmnNeutral'
-        endUpon: 
+        endUpon:
     sprite: s32'bed201_00', 2
     setThrowInvul: 1
     setStrikeInvul: 1
@@ -4135,10 +4204,10 @@ startState: s32'DeadAngleAttack'
     sprite: s32'bed201_02', 3
     sprite: s32'bed201_03', 3
     createObject2: s32'bake201', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGB'
     sprite: s32'bed201_04', 12
-    recoveryState: 
+    recoveryState:
     setStrikeInvul: 0
     setThrowInvul: 0
     Unknown32: s32'bake201'
@@ -4146,24 +4215,249 @@ startState: s32'DeadAngleAttack'
     sprite: s32'bed201_06', 5
     sprite: s32'bed201_07', 5
     sprite: s32'bed201_08', 5
-    endState: 
+    endState:
+startState: s32'SlashbackStanding'
+    upon: (IMMEDIATE)
+        Unknown2140: 1
+        Unknown2260: 1
+        addWhiffCancelOption: s32'SlashbackStanding'
+        addWhiffCancelOption: s32'SlashbackCrouching'
+        consumeTension: 400
+        upon: 12
+            ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 45, 0, 1
+                Unknown2260: 0
+                endIf:
+            endUpon:
+        upon: 41
+            Unknown27: s32'SlashbackSuccess'
+            endUpon:
+        endUpon:
+    sprite: s32'bed041_05', 1
+    if: (NEXT_ARG_IS_VAR), 92
+        Unknown1320: 1
+        Unknown1309: 1
+        Unknown1314: 1
+        Unknown1307: 1
+        endIf:
+    superArmorEnabled: 1
+    Unknown1808: 1
+    Unknown1817: 0
+    Unknown1807: 0
+    Unknown1818: 1
+    Unknown1819: '0x0700000009000000'
+    sprite: s32'bed041_05', 1
+    Unknown1320: 0
+    Unknown1309: 0
+    Unknown1314: 0
+    Unknown1307: 0
+    sprite: s32'bed041_05', 1
+    superArmorEnabled: 0
+    Unknown1616: 1
+    yrcWindowLength: 1
+    recoveryState:
+    ifNot: 2, 45
+        if: (NEXT_ARG_IS_VAR), 92
+            Unknown1309: 1
+            Unknown1308: 1
+            Unknown1311: 1
+            Unknown1312: 1
+            Unknown1307: 1
+            endIf:
+        endIf:
+    sprite: s32'bed041_05', 3
+    sprite: s32'bed041_05', 3
+    sprite: s32'bed041_05', 3
+    sprite: s32'bed041_05', 3
+    sprite: s32'bed041_05', 5
+    endState:
+
+startState: s32'SlashbackCrouching'
+    upon: (IMMEDIATE)
+        Unknown2140: 1
+        Unknown2260: 1
+        addWhiffCancelOption: s32'SlashbackStanding'
+        addWhiffCancelOption: s32'SlashbackCrouching'
+        consumeTension: 200
+        upon: 12
+            ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 45, 0, 1
+                Unknown2260: 0
+                endIf:
+            endUpon:
+        upon: 41
+            Unknown27: s32'SlashbackSuccess'
+            endUpon:
+        endUpon:
+    sprite: s32'bed043_04', 1
+    if: (NEXT_ARG_IS_VAR), 92
+        Unknown1320: 1
+        Unknown1309: 1
+        Unknown1314: 1
+        Unknown1307: 1
+        endIf:
+    superArmorEnabled: 1
+    Unknown1808: 1
+    Unknown1815: 0
+    Unknown1816: 0
+    Unknown1807: 0
+    Unknown1818: 1
+    Unknown1819: '0x0700000009000000'
+    sprite: s32'bed043_04', 1
+    Unknown1320: 0
+    Unknown1309: 0
+    Unknown1314: 0
+    Unknown1307: 0
+    sprite: s32'bed043_04', 1
+    superArmorEnabled: 0
+    Unknown1616: 1
+    yrcWindowLength: 1
+    recoveryState:
+    ifNot: 2, 45
+        if: (NEXT_ARG_IS_VAR), 92
+            Unknown1309: 1
+            Unknown1308: 1
+            Unknown1311: 1
+            Unknown1312: 1
+            Unknown1307: 1
+            endIf:
+        endIf:
+    sprite: s32'bed043_04', 3
+    sprite: s32'bed043_04', 3
+    sprite: s32'bed043_04', 3
+    sprite: s32'bed043_04', 3
+    sprite: s32'bed043_04', 5
+    endState:
+
+startState: s32'SlashbackAir'
+    upon: (IMMEDIATE)
+        Unknown2140: 1
+        Unknown2260: 1
+        addWhiffCancelOption: s32'SlashbackAir'
+        consumeTension: 200
+        upon: 12
+            ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 45, 0, 1
+                Unknown2260: 0
+                endIf:
+            endUpon:
+        upon: 41
+            Unknown27: s32'SlashbackSuccessAir'
+            endUpon:
+        endUpon:
+    sprite: s32'bed045_04', 1
+    if: (NEXT_ARG_IS_VAR), 92
+        Unknown1320: 1
+        Unknown1309: 1
+        Unknown1314: 1
+        Unknown1307: 1
+        endIf:
+    superArmorEnabled: 1
+    Unknown1808: 1
+
+    Unknown1807: 0
+    Unknown1818: 1
+    Unknown1819: '0x0700000009000000'
+    sprite: s32'bed045_04', 1
+    Unknown1320: 0
+    Unknown1309: 0
+    Unknown1314: 0
+    Unknown1307: 0
+    sprite: s32'bed045_04', 1
+    superArmorEnabled: 0
+    Unknown1616: 1
+    yrcWindowLength: 1
+    recoveryState:
+    ifNot: 2, 45
+        if: (NEXT_ARG_IS_VAR), 92
+            Unknown1309: 1
+            Unknown1308: 1
+            Unknown1311: 1
+            Unknown1312: 1
+            Unknown1307: 1
+            endIf:
+        endIf:
+    sprite: s32'bed045_04', 3
+    sprite: s32'bed045_04', 3
+    sprite: s32'bed045_04', 3
+    sprite: s32'bed045_04', 3
+    sprite: s32'bed045_04', 5
+    endState:
+
+startState: s32'SlashbackSuccess'
+    upon: 50
+        Unknown2199: 1
+        Unknown2161: 100, 0, 300000
+        Unknown448: s32'cmn_kakusei_hatudo', 130
+        endUpon:
+    tensionGain: 300
+    Unknown1320: 0
+    Unknown1309: 0
+    Unknown1314: 0
+    Unknown1307: 0
+    storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+    Unknown2161: 100, 30000, 280000
+    characterEffectOverlay: -1
+    fadeColorRed: -15
+    fadeColorGreen: -15
+    fadeColorBlue: -15
+    Unknown1974: 1
+    screenShake: 1, 3
+    tensionGain: 40
+    Unknown176: 1
+    Unknown1325: 1
+    Unknown2140: 1
+    superArmorEnabled: 0
+    recoveryState:
+    sprite: s32'bed362_01', 3
+    superFreeze: 1, 119, 0, 3
+    sprite: s32'bed362_01', 1
+    Unknown27: s32'_NEUTRAL'
+    endState:
+startState: s32'SlashbackSuccessAir'
+    upon: 50
+        Unknown2199: 1
+        Unknown2161: 100, 0, 300000
+        Unknown448: s32'cmn_kakusei_hatudo', 130
+        endUpon:
+    tensionGain: 300
+    Unknown1320: 0
+    Unknown1309: 0
+    Unknown1314: 0
+    Unknown1307: 0
+    storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+    Unknown2161: 100, 30000, 280000
+    characterEffectOverlay: -1
+    fadeColorRed: -15
+    fadeColorGreen: -15
+    fadeColorBlue: -15
+    Unknown1974: 1
+    screenShake: 1, 3
+    tensionGain: 40
+    Unknown176: 1
+    Unknown1325: 1
+    Unknown2140: 1
+    superArmorEnabled: 0
+    recoveryState:
+    sprite: s32'bed026_04', 3
+    superFreeze: 1, 119, 0, 3
+    sprite: s32'bed026_04', 1
+    Unknown27: s32'_NEUTRAL'
+    endState:
 
 startState: s32'CounterGuardStand'
     upon: (IMMEDIATE)
         callCmnEfFunc: s32'cmnCG_Initialize'
         upon: 33
             callCmnEfFunc: s32'cmnCG_OnMuteki'
-            endUpon: 
+            endUpon:
         upon: 36
             callCmnEfFunc: s32'cmnCG_OnFrameStep'
-            endUpon: 
+            endUpon:
         upon: (RECEIVE_ATTACK)
             callCmnEfFunc: s32'cmnCG_OnDamage'
-            endUpon: 
+            endUpon:
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'cmnCG_OnIdling'
-            endUpon: 
-        endUpon: 
+            endUpon:
+        endUpon:
     sprite: s32'bed362_00', 3
     sprite: s32'bed362_01', 3
     sprite: s32'bed362_00', 3
@@ -4177,7 +4471,7 @@ startState: s32'CounterGuardStand'
     setMarker: s32'loop'
     sprite: s32'bed360_09', 3
     sprite: s32'bed360_10', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'attack'
     sprite: s32'keep', 1
@@ -4189,7 +4483,7 @@ startState: s32'CounterGuardStand'
     sprite: s32'bed360_13', 4
     sprite: s32'bed360_14', 3
     createObject2: s32'Neoblitz_atk', 100
-    hit: 
+    hit:
     screenShake: 1, 1
     playSFX: s32'GG2_019'
     playVoice: s16'vxxx126'
@@ -4205,34 +4499,34 @@ startState: s32'CounterGuardStand'
     sprite: s32'bed360_19', 3
     sprite: s32'bed360_20', 3
     sprite: s32'bed360_21', 2
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'end'
     sprite: s32'bed362_00', 20
     callCmnEfFunc: s32'cmnCG_MutekiEnd'
     sprite: s32'bed362_01', 6
     sprite: s32'bed362_02', 6
     sprite: s32'bed362_03', 6
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'CounterGuardCrouch'
     upon: (IMMEDIATE)
         callCmnEfFunc: s32'cmnCG_Initialize'
         upon: 33
             callCmnEfFunc: s32'cmnCG_OnMuteki'
-            endUpon: 
+            endUpon:
         upon: 36
             callCmnEfFunc: s32'cmnCG_OnFrameStep'
-            endUpon: 
+            endUpon:
         upon: (RECEIVE_ATTACK)
             callCmnEfFunc: s32'cmnCG_OnDamage'
-            endUpon: 
+            endUpon:
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'cmnCG_OnIdling'
-            endUpon: 
-        endUpon: 
+            endUpon:
+        endUpon:
     sprite: s32'bed363_00', 3
     sprite: s32'bed363_01', 3
     sprite: s32'bed363_00', 3
@@ -4250,7 +4544,7 @@ startState: s32'CounterGuardCrouch'
     setMarker: s32'loop'
     sprite: s32'bed360_09', 3
     sprite: s32'bed360_10', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'attack'
     sprite: s32'keep', 1
@@ -4262,7 +4556,7 @@ startState: s32'CounterGuardCrouch'
     sprite: s32'bed360_13', 4
     sprite: s32'bed360_14', 3
     createObject2: s32'Neoblitz_atk', 100
-    hit: 
+    hit:
     screenShake: 1, 1
     playSFX: s32'GG2_019'
     playVoice: s16'vxxx126'
@@ -4278,34 +4572,34 @@ startState: s32'CounterGuardCrouch'
     sprite: s32'bed360_19', 3
     sprite: s32'bed360_20', 3
     sprite: s32'bed360_21', 2
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'end'
     sprite: s32'bed363_00', 20
     callCmnEfFunc: s32'cmnCG_MutekiEnd'
     sprite: s32'bed363_01', 6
     sprite: s32'bed363_02', 6
     sprite: s32'bed363_03', 6
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'CounterGuardAir'
     upon: (IMMEDIATE)
         callCmnEfFunc: s32'cmnCG_Initialize'
         upon: 33
             callCmnEfFunc: s32'cmnCG_OnMuteki'
-            endUpon: 
+            endUpon:
         upon: 36
             callCmnEfFunc: s32'cmnCG_OnFrameStep'
-            endUpon: 
+            endUpon:
         upon: (RECEIVE_ATTACK)
             callCmnEfFunc: s32'cmnCG_OnDamage'
-            endUpon: 
+            endUpon:
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'cmnCG_OnIdling_Air'
-            endUpon: 
-        endUpon: 
+            endUpon:
+        endUpon:
     sprite: s32'bed045_03', 12
     sprite: s32'bed045_02', 4
     callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4316,26 +4610,26 @@ startState: s32'CounterGuardAir'
     setMarker: s32'droploop'
     sprite: s32'bed026_02', 3
     sprite: s32'bed026_03', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'droploop'
     setMarker: s32'landing'
     superArmorEnabled: 0
     sprite: s32'bed027_00', 4
     sprite: s32'bed010_00', 4
     sprite: s32'bed010_01', 4
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'guard'
     sprite: s32'bed045_03', 4
     sprite: s32'bed045_02', 4
     sprite: s32'bed045_01', 4
     sprite: s32'bed045_00', 4
-    endState: 
+    endState:
 
 startState: s32'IchigekiJunbi'
     upon: (IMMEDIATE)
         callSubroutine: s32'IchigekiGoldCheck', 0, 0, 0, 0, 0, 0, 0, 0
-        endUpon: 
+        endUpon:
     sprite: s32'bed450_00', 2
     createObject2: s32'IchigekiJunbi00', 100
     sprite: s32'bed450_01', 2
@@ -4353,12 +4647,12 @@ startState: s32'IchigekiJunbi'
     sprite: s32'bed450_05', 2
     sprite: s32'bed450_06', 2
     sprite: s32'bed450_07', 2
-    endState: 
+    endState:
 
 startState: s32'MOMSuki'
     upon: (IMMEDIATE)
-        recoveryState: 
-        endUpon: 
+        recoveryState:
+        endUpon:
     sprite: s32'bed306_00', 3
     sprite: s32'bed306_01', 3
     sprite: s32'bed306_02', 3
@@ -4397,14 +4691,14 @@ startState: s32'MOMSuki'
     sprite: s32'bed306_36', 3
     sprite: s32'bed306_37', 3
     sprite: s32'bed306_38', 3
-    endState: 
+    endState:
 
 startState: s32'DebugSkillEx'
     upon: (IMMEDIATE)
         callCmnEfFunc: s32'cmnDS_Initialize'
-        endUpon: 
+        endUpon:
     sprite: s32'keep', 2147483647
-    endState: 
+    endState:
 
 startState: s32'ThrowExe'
     upon: (IMMEDIATE)
@@ -4426,11 +4720,11 @@ startState: s32'ThrowExe'
         Unknown1127: 1
         Unknown1128: 1
         hitPushbackX: 0
-        endUpon: 
+        endUpon:
     sprite: s32'keep', 1
     Unknown547: 1
     sprite: s32'bed310_00', 2
-    Unknown550: 
+    Unknown550:
     Unknown448: s32'cmn_nage', 0
     Unknown544: 13
     Unknown546: 0, 103, 0
@@ -4453,25 +4747,25 @@ startState: s32'ThrowExe'
     sprite: s32'bed310_06', 3
     createObject2: s32'bake310', 100
     Unknown1139: 1
-    hit: 
+    hit:
     sprite: s32'bed310_07', 3
-    hit: 
+    hit:
     sprite: s32'bed310_06', 3
-    hit: 
+    hit:
     sprite: s32'bed310_07', 3
-    hit: 
+    hit:
     sprite: s32'bed310_06', 3
-    hit: 
+    hit:
     sprite: s32'bed310_07', 3
-    hit: 
+    hit:
     sprite: s32'bed310_06', 3
-    hit: 
+    hit:
     sprite: s32'bed310_07', 3
-    hit: 
+    hit:
     sprite: s32'bed310_06', 3
-    hit: 
+    hit:
     sprite: s32'bed310_07', 3
-    hit: 
+    hit:
     sprite: s32'bed310_08', 3
     Unknown32: s32'bake310'
     sprite: s32'bed310_09', 3
@@ -4492,14 +4786,14 @@ startState: s32'ThrowExe'
     untechableTime: 60
     tensionGainOnConnect: 0
     Unknown1157: 1
-    grabOrRelease: 
+    grabOrRelease:
     playSFX: s32'SE_SWINGD'
     sprite: s32'bed310_12', 5
     sprite: s32'bed310_13', 4
     sprite: s32'bed310_14', 4
     sprite: s32'bed310_15', 4
     sprite: s32'bed310_16', 4
-    endState: 
+    endState:
 
 startState: s32'AirThrowExe'
     upon: (IMMEDIATE)
@@ -4519,11 +4813,11 @@ startState: s32'AirThrowExe'
         Unknown1142: 1
         hitPushbackX: 0
         Unknown35: 2, s32'landing'
-        endUpon: 
+        endUpon:
     sprite: s32'keep', 1
     Unknown547: 1
     sprite: s32'bed320_00', 5
-    Unknown550: 
+    Unknown550:
     Unknown448: s32'cmn_nage', 0
     Unknown544: 32
     Unknown546: 0, 115, 0
@@ -4532,10 +4826,10 @@ startState: s32'AirThrowExe'
     ifOperation: (IS_GREATER), (NEXT_ARG_IS_VAR), 119, 0, 0
         playVoice: s16'vxxx116'
         storeValue: (NEXT_ARG_IS_VAR), 119, 0, 0
-        endIf: 
-    else: 
+        endIf:
+    else:
         playVoice: s16'vxxx120'
-        endElse: 
+        endElse:
     sprite: s32'bed320_01', 5
     Unknown546: 0, 115, 0
     sprite: s32'bed320_02', 5
@@ -4557,13 +4851,13 @@ startState: s32'AirThrowExe'
     sprite: s32'bed320_06', 2
     Unknown546: 0, 115, 0
     Unknown544: 27
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'landing'
     sprite: s32'bed320_07', 18
     Unknown546: 0, 115, 0
     Unknown544: 29
-    hit: 
+    hit:
     Unknown2143: 8, 0
     Unknown2144: 1, 0
     Unknown365: '0x204E000000000000'
@@ -4576,7 +4870,7 @@ startState: s32'AirThrowExe'
     sprite: s32'bed320_12', 4
     sprite: s32'bed320_13', 4
     Unknown176: 1
-    endState: 
+    endState:
 
 startState: s32'CrouchFWalk'
     upon: (IMMEDIATE)
@@ -4594,11 +4888,11 @@ startState: s32'CrouchFWalk'
             checkInput: 81
             ifNot: 2, 0
                 jumpToState: s32'_NEUTRAL'
-                endIf: 
+                endIf:
             Unknown2262: 10
-            endUpon: 
+            endUpon:
         physicsXImpulse: 7000
-        endUpon: 
+        endUpon:
     sprite: s32'bed030_00', 3
     sprite: s32'bed030_01', 3
     setMarker: s32'loop'
@@ -4614,9 +4908,9 @@ startState: s32'CrouchFWalk'
     sprite: s32'bed030_04', 4
     sprite: s32'bed030_05', 4
     sprite: s32'bed030_06', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'CrouchBWalk'
     upon: (IMMEDIATE)
@@ -4633,11 +4927,11 @@ startState: s32'CrouchBWalk'
             checkInput: 55
             ifNot: 2, 0
                 jumpToState: s32'_NEUTRAL'
-                endIf: 
+                endIf:
             Unknown2262: 11
-            endUpon: 
+            endUpon:
         physicsXImpulse: -3500
-        endUpon: 
+        endUpon:
     sprite: s32'bed031_00', 3
     sprite: s32'bed031_01', 3
     setMarker: s32'loop'
@@ -4653,43 +4947,43 @@ startState: s32'CrouchBWalk'
     sprite: s32'bed031_04', 4
     sprite: s32'bed031_05', 4
     sprite: s32'bed031_06', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'AirStop'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
-                endIf: 
-            endUpon: 
+                Unknown135:
+                endIf:
+            endUpon:
         Unknown1601: 64
-        disableAirThrow: 
+        disableAirThrow:
         upon: (FRAME_STEP)
             checkInput: 133
             if: (NEXT_ARG_IS_VAR), 0
                 Unknown54: 0, 2, 45, 0, 1
-                endIf: 
+                endIf:
             ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 45, 0, 12
                 addWhiffCancelOption: s32'7Move'
-                endIf: 
+                endIf:
             checkInput: 146
             if: (NEXT_ARG_IS_VAR), 0
                 Unknown54: 0, 2, 46, 0, 1
-                endIf: 
+                endIf:
             ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 46, 0, 12
                 addWhiffCancelOption: s32'8Move'
-                endIf: 
+                endIf:
             checkInput: 159
             if: (NEXT_ARG_IS_VAR), 0
                 Unknown54: 0, 2, 47, 0, 1
-                endIf: 
+                endIf:
             ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 47, 0, 12
                 addWhiffCancelOption: s32'9Move'
-                endIf: 
-            endUpon: 
-        endUpon: 
+                endIf:
+            endUpon:
+        endUpon:
     sprite: s32'bed409_00', 3
     Unknown131: 50
     Unknown176: 0
@@ -4697,7 +4991,7 @@ startState: s32'AirStop'
     Unknown1321: 1
     Unknown1325: 1
     Unknown1791: -1
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed409_01', 3
     sprite: s32'bed409_02', 2
     setGravity: 0
@@ -4728,12 +5022,12 @@ startState: s32'AirStop'
     sprite: s32'bed409_02', 3
     sprite: s32'bed409_01', 3
     sprite: s32'bed409_02', 3
-    Unknown135: 
-    Unknown3: 
-    endState: 
+    Unknown135:
+    Unknown3:
+    endState:
 
 startState: s32'AirStopCancelOnly'
-    disableAirThrow: 
+    disableAirThrow:
     upon: (IMMEDIATE)
         addWhiffCancelOption: s32'1Move'
         whiffCancelOptionBufferTime: s32'1Move', 16
@@ -4753,18 +5047,18 @@ startState: s32'AirStopCancelOnly'
         whiffCancelOptionBufferTime: s32'9Move', 16
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
-                endIf: 
-            endUpon: 
+                Unknown135:
+                endIf:
+            endUpon:
         Unknown1601: 64
         if: (NEXT_ARG_IS_VAR), 212
             setStylishCombo: s32'StylishComboSlot0', s32'6Move'
-                endMoveRegister: 
+                endMoveRegister:
             setStylishCombo: s32'StylishComboSlot1', s32'9Move'
                 Unknown1422: '0x0000000040420F00'
-                endMoveRegister: 
-            endIf: 
-        endUpon: 
+                endMoveRegister:
+            endIf:
+        endUpon:
     sprite: s32'bed409_00', 2
     Unknown111: 50
     Unknown116: 50
@@ -4772,7 +5066,7 @@ startState: s32'AirStopCancelOnly'
     Unknown1321: 1
     Unknown1325: 1
     Unknown1791: -1
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed409_01', 3
     sprite: s32'bed409_02', 2
     setGravity: 0
@@ -4781,8 +5075,8 @@ startState: s32'AirStopCancelOnly'
     sprite: s32'bed409_01', 3
     Unknown1616: 1
     sprite: s32'bed409_02', 3
-    Unknown3: 
-    endState: 
+    Unknown3:
+    endState:
 
 startSubroutine: s32'Cancelmove'
     addGatlingOption: s32'1Move'
@@ -4793,7 +5087,7 @@ startSubroutine: s32'Cancelmove'
     addGatlingOption: s32'7Move'
     addGatlingOption: s32'8Move'
     addGatlingOption: s32'9Move'
-    endSubroutine: 
+    endSubroutine:
 
 startSubroutine: s32'Cancelmove_Chain'
     addWhiffCancelOption: s32'NmlAtkAir5A'
@@ -4816,18 +5110,18 @@ startSubroutine: s32'Cancelmove_Chain'
     Unknown1314: 1
     Unknown1325: 1
     Unknown1335: 1
-    endSubroutine: 
+    endSubroutine:
 
 startState: s32'1Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
+                Unknown135:
                 Unknown111: 75
-                endIf: 
-            endUpon: 
+                endIf:
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed415_03', 1
     physicsXImpulse: -22000
     physicsYImpulse: -22000
@@ -4835,7 +5129,7 @@ startState: s32'1Move'
     Unknown1616: 1
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed415_03', 1
     sprite: s32'bed415_04', 2
     sprite: s32'bed415_03', 2
@@ -4844,21 +5138,21 @@ startState: s32'1Move'
     sprite: s32'bed415_05', 3
     Unknown111: 50
     Unknown116: 50
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed415_05', 3
     sprite: s32'bed415_06', 3
     sprite: s32'bed415_07', 3
-    endState: 
+    endState:
 
 startState: s32'2Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
-                endIf: 
-            endUpon: 
+                Unknown135:
+                endIf:
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed415_03', 1
     physicsXImpulse: 0
     physicsYImpulse: -30000
@@ -4866,7 +5160,7 @@ startState: s32'2Move'
     Unknown1616: 1
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed415_03', 1
     sprite: s32'bed415_04', 2
     sprite: s32'bed415_03', 2
@@ -4875,25 +5169,25 @@ startState: s32'2Move'
     sprite: s32'bed415_05', 3
     Unknown111: 50
     Unknown116: 50
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed415_05', 3
     sprite: s32'bed415_06', 3
     sprite: s32'bed415_07', 3
-    endState: 
+    endState:
 
 startState: s32'3Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
+                Unknown135:
                 Unknown111: 75
-                endIf: 
-            endUpon: 
+                endIf:
+            endUpon:
         upon: (FRAME_STEP)
             Unknown2262: 12
-            endUpon: 
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed415_03', 1
     physicsXImpulse: 22000
     physicsYImpulse: -22000
@@ -4901,7 +5195,7 @@ startState: s32'3Move'
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
     setGravity: 0
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed415_03', 1
     sprite: s32'bed415_04', 2
     sprite: s32'bed415_03', 2
@@ -4910,22 +5204,22 @@ startState: s32'3Move'
     sprite: s32'bed415_05', 3
     Unknown111: 50
     Unknown116: 50
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed415_05', 3
     sprite: s32'bed415_06', 3
     sprite: s32'bed415_07', 3
-    endState: 
+    endState:
 
 startState: s32'4Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
+                Unknown135:
                 Unknown111: 75
-                endIf: 
-            endUpon: 
+                endIf:
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed410_03', 1
     physicsXImpulse: -24000
     physicsYImpulse: 0
@@ -4933,7 +5227,7 @@ startState: s32'4Move'
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
     setGravity: 0
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed410_03', 1
     sprite: s32'bed410_04', 2
     sprite: s32'bed410_03', 2
@@ -4943,23 +5237,23 @@ startState: s32'4Move'
     Unknown111: 50
     sprite: s32'bed410_03', 3
     sprite: s32'bed410_05', 3
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed410_06', 3
-    endState: 
+    endState:
 
 startState: s32'6Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
+                Unknown135:
                 Unknown111: 75
-                endIf: 
-            endUpon: 
+                endIf:
+            endUpon:
         upon: (FRAME_STEP)
             Unknown2262: 12
-            endUpon: 
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed409_03', 1
     physicsXImpulse: 30000
     physicsYImpulse: 0
@@ -4967,7 +5261,7 @@ startState: s32'6Move'
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
     setGravity: 0
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed409_03', 1
     sprite: s32'bed409_04', 2
     sprite: s32'bed409_03', 2
@@ -4977,32 +5271,32 @@ startState: s32'6Move'
     Unknown111: 50
     sprite: s32'bed409_03', 3
     sprite: s32'bed409_05', 3
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed409_06', 3
-    endState: 
+    endState:
 
 startState: s32'7Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
+                Unknown135:
                 Unknown111: 75
-                endIf: 
-            endUpon: 
+                endIf:
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed411_03', 1
     physicsXImpulse: -20000
     physicsYImpulse: 31000
     Unknown1998: s32'AirStop'
     if: (NEXT_ARG_IS_VAR), 0
         physicsYImpulse: 26000
-        endIf: 
+        endIf:
     Unknown1616: 1
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
     setGravity: 0
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed411_03', 1
     sprite: s32'bed411_04', 2
     sprite: s32'bed411_03', 2
@@ -5013,31 +5307,31 @@ startState: s32'7Move'
     sprite: s32'bed411_05', 3
     Unknown111: 50
     Unknown116: 50
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed411_06', 3
-    endState: 
+    endState:
 
 startState: s32'8Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
-                endIf: 
-            endUpon: 
+                Unknown135:
+                endIf:
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed411_03', 1
     physicsXImpulse: 0
     physicsYImpulse: 33000
     Unknown1998: s32'AirStop'
     if: (NEXT_ARG_IS_VAR), 0
         physicsYImpulse: 28000
-        endIf: 
+        endIf:
     Unknown1616: 1
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
     setGravity: 0
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed411_03', 1
     sprite: s32'bed411_04', 2
     sprite: s32'bed411_03', 2
@@ -5048,35 +5342,35 @@ startState: s32'8Move'
     sprite: s32'bed411_05', 3
     Unknown111: 50
     Unknown116: 50
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed411_06', 3
-    endState: 
+    endState:
 
 startState: s32'9Move'
     upon: (IMMEDIATE)
         upon: (BEFORE_EXIT)
             ifNot: 2, 36
-                Unknown135: 
+                Unknown135:
                 Unknown111: 75
-                endIf: 
-            endUpon: 
+                endIf:
+            endUpon:
         upon: (FRAME_STEP)
             Unknown2262: 12
-            endUpon: 
+            endUpon:
         callCmnEfFunc: s32'Cancelmove_Chain'
-        endUpon: 
+        endUpon:
     sprite: s32'bed411_03', 1
     physicsXImpulse: 20000
     physicsYImpulse: 31000
     Unknown1998: s32'AirStop'
     if: (NEXT_ARG_IS_VAR), 0
         physicsYImpulse: 26000
-        endIf: 
+        endIf:
     Unknown1616: 1
     Unknown1321: 1
     playSFX: s32'SE_VEN3'
     setGravity: 0
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed411_03', 1
     sprite: s32'bed411_04', 2
     sprite: s32'bed411_03', 2
@@ -5087,14 +5381,14 @@ startState: s32'9Move'
     sprite: s32'bed411_05', 3
     Unknown111: 50
     Unknown116: 50
-    Unknown135: 
+    Unknown135:
     sprite: s32'bed411_06', 3
-    endState: 
+    endState:
 
 startState: s32'Boomerang_A'
     upon: (IMMEDIATE)
         yrcWindowLength: 24
-        endUpon: 
+        endUpon:
     sprite: s32'bed417_00', 2
     tensionGain: 30
     sprite: s32'bed417_01', 3
@@ -5128,12 +5422,12 @@ startState: s32'Boomerang_A'
     sprite: s32'bed417_19', 3
     sprite: s32'bed417_20', 3
     sprite: s32'bed417_21', 3
-    endState: 
+    endState:
 
 startState: s32'Boomerang_A_Air'
     upon: (IMMEDIATE)
         yrcWindowLength: 24
-        endUpon: 
+        endUpon:
     sprite: s32'bed418_00', 2
     Unknown176: 1
     tensionGain: 30
@@ -5171,12 +5465,12 @@ startState: s32'Boomerang_A_Air'
     sprite: s32'bed418_19', 3
     sprite: s32'bed418_20', 3
     sprite: s32'bed418_21', 3
-    endState: 
+    endState:
 
 startState: s32'Boomerang_B'
     upon: (IMMEDIATE)
         yrcWindowLength: 43
-        endUpon: 
+        endUpon:
     sprite: s32'bed417_00', 2
     tensionGain: 30
     sprite: s32'bed417_01', 3
@@ -5210,12 +5504,12 @@ startState: s32'Boomerang_B'
     sprite: s32'bed417_19', 3
     sprite: s32'bed417_20', 3
     sprite: s32'bed417_21', 3
-    endState: 
+    endState:
 
 startState: s32'Boomerang_B_Air'
     upon: (IMMEDIATE)
         yrcWindowLength: 43
-        endUpon: 
+        endUpon:
     sprite: s32'bed418_00', 2
     Unknown176: 1
     tensionGain: 30
@@ -5253,14 +5547,14 @@ startState: s32'Boomerang_B_Air'
     sprite: s32'bed418_19', 3
     sprite: s32'bed418_20', 3
     sprite: s32'bed418_21', 3
-    endState: 
+    endState:
 
 startState: s32'BWarp'
     upon: (IMMEDIATE)
         specialCancelEnabled: 0
         superArmorEnabled: 1
         storeValue: (NEXT_ARG_IS_VAR), 6, 0, 0
-        endUpon: 
+        endUpon:
     sprite: s32'bed000_00', 3
     Unknown176: 1
     Unknown2004: '0x1600000065000000'
@@ -5273,16 +5567,16 @@ startState: s32'BWarp'
     sprite: s32'bed000_00', 3
     Unknown2023: 1
     Unknown32: s32'WarpEff00'
-    Unknown240: 
+    Unknown240:
     jumpToState: s32'_NEUTRAL'
-    endState: 
+    endState:
 
 startState: s32'MerryWarp'
     upon: (IMMEDIATE)
         specialCancelEnabled: 0
         superArmorEnabled: 1
         storeValue: (NEXT_ARG_IS_VAR), 6, 0, 0
-        endUpon: 
+        endUpon:
     sprite: s32'bed000_00', 70
     Unknown176: 1
     Unknown178: 22
@@ -5296,9 +5590,9 @@ startState: s32'MerryWarp'
     sprite: s32'bed000_00', 3
     createObject2: s32'WarpEff213', 100
     Unknown2023: 1
-    Unknown240: 
+    Unknown240:
     jumpToState: s32'_NEUTRAL'
-    endState: 
+    endState:
 
 startState: s32'SpiralBed'
     upon: (IMMEDIATE)
@@ -5312,7 +5606,7 @@ startState: s32'SpiralBed'
         hitAirPushbackY: 8000
         Unknown725: 1
         Unknown2331: 12
-        endUpon: 
+        endUpon:
     sprite: s32'bed421_00', 3
     tensionGain: 50
     sprite: s32'bed421_01', 2
@@ -5323,23 +5617,23 @@ startState: s32'SpiralBed'
     sprite: s32'bed421_04', 2
     createObject2: s32'421SlashEff00', 100
     sprite: s32'bed421_05_rx', 2
-    hit: 
+    hit:
     Unknown2023: 0
     createObject2: s32'421_bakeGround', 100
     playSFX: s32'SE_SWINGC'
     playVoice: s16'vxxx104'
     sprite: s32'bed421_06_rx', 2
     sprite: s32'bed421_07_rx', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     Unknown2197: 90
     sprite: s32'bed421_05_rx', 2
     sprite: s32'bed421_06_rx', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed421_07_rx', 2
     sprite: s32'bed421_05_rx', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed421_06_rx', 2
     Unknown1771: s32'421SlashEff00', 23
@@ -5347,7 +5641,7 @@ startState: s32'SpiralBed'
     Unknown2023: 1
     Unknown32: s32'421_bakeGround'
     Unknown111: 30
-    recoveryState: 
+    recoveryState:
     Unknown32: s32'DejavIconSpiralBed'
     sprite: s32'bed421_08', 1
     createObject2: s32'DejavIconSpiralBed', 103
@@ -5365,7 +5659,7 @@ startState: s32'SpiralBed'
     physicsXImpulse: 0
     sprite: s32'bed421_15', 3
     sprite: s32'bed421_16', 3
-    endState: 
+    endState:
 
 startState: s32'SpiralBed_Air'
     upon: (IMMEDIATE)
@@ -5381,7 +5675,7 @@ startState: s32'SpiralBed_Air'
         Unknown2137: 0
         Unknown35: 2, s32'landing'
         Unknown2331: 12
-        endUpon: 
+        endUpon:
     sprite: s32'bed421_00', 3
     physicsYImpulse: 0
     setGravity: 0
@@ -5395,7 +5689,7 @@ startState: s32'SpiralBed_Air'
     sprite: s32'bed421_04', 2
     createObject2: s32'421SlashEff00', 100
     sprite: s32'bed421_05_rx', 2
-    hit: 
+    hit:
     Unknown2023: 0
     createObject2: s32'421_bakeAir', 100
     playSFX: s32'SE_SWINGC'
@@ -5403,13 +5697,13 @@ startState: s32'SpiralBed_Air'
     sprite: s32'bed421_06_rx', 2
     sprite: s32'bed421_07_rx', 2
     sprite: s32'bed421_05_rx', 2
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     sprite: s32'bed421_06_rx', 2
     sprite: s32'bed421_07_rx', 2
     sprite: s32'bed421_05_rx', 2
     hitAirPushbackY: 11000
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGC'
     groundHitEffect: (AIR_FACE_UP)
     sprite: s32'bed421_06_rx', 2
@@ -5419,7 +5713,7 @@ startState: s32'SpiralBed_Air'
     Unknown2023: 1
     Unknown32: s32'421_bakeAir'
     Unknown111: 50
-    recoveryState: 
+    recoveryState:
     setGravity: 2450
     createObject2: s32'DejavIconSpiralBed', 103
     storeValue: (NEXT_ARG_IS_VAR), 59, (NEXT_ARG_IS_VAR), 17
@@ -5436,12 +5730,12 @@ startState: s32'SpiralBed_Air'
     setMarker: s32'loop'
     sprite: s32'bed026_02', 3
     sprite: s32'bed026_03', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'landing'
     sprite: s32'bed027_00', 4
     sprite: s32'bed010_00', 4
-    endState: 
+    endState:
 
 startState: s32'FlyingBed'
     upon: (IMMEDIATE)
@@ -5454,10 +5748,10 @@ startState: s32'FlyingBed'
         Unknown1108: 60
         Unknown2137: 0
         Unknown35: 2, s32'landing'
-        restoreAirDash: 
+        restoreAirDash:
         Unknown2301: 1
         Unknown2331: 11
-        endUpon: 
+        endUpon:
     sprite: s32'bed423_00', 1
     tensionGain: 40
     sprite: s32'bed423_01', 2
@@ -5473,7 +5767,7 @@ startState: s32'FlyingBed'
     sprite: s32'bed423_05', 4
     createObject2: s32'423bake00', 100
     Unknown2023: 0
-    hit: 
+    hit:
     sprite: s32'bed423_06', 4
     createObject2: s32'423RotationEnd', 100
     sprite: s32'bed423_07', 3
@@ -5481,14 +5775,14 @@ startState: s32'FlyingBed'
     Unknown116: 40
     Unknown2023: 1
     Unknown32: s32'423bake00'
-    Unknown1883: 
+    Unknown1883:
     sprite: s32'bed423_08', 3
     sprite: s32'bed423_09', 3
     sprite: s32'bed423_10', 3
     sprite: s32'bed423_11', 1
     sprite: s32'bed423_12', 4
     sprite: s32'bed423_13', 4
-    hit: 
+    hit:
     physicsYImpulse: -50000
     setGravity: 2450
     groundHitEffect: (AIR_FACE_UP)
@@ -5503,7 +5797,7 @@ startState: s32'FlyingBed'
     setMarker: s32'loop'
     sprite: s32'bed423_14', 4
     sprite: s32'bed423_13', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'landing'
     sprite: s32'bed423_15', 1
@@ -5522,7 +5816,7 @@ startState: s32'FlyingBed'
     sprite: s32'bed423_18', 4
     sprite: s32'bed423_19', 4
     sprite: s32'bed423_20', 4
-    endState: 
+    endState:
 
 startState: s32'FlyingBed_Air'
     upon: (IMMEDIATE)
@@ -5538,16 +5832,16 @@ startState: s32'FlyingBed_Air'
         Unknown2137: 0
         Unknown35: 2, s32'landing'
         Unknown2331: 21
-        endUpon: 
+        endUpon:
     sprite: s32'bed423_07', 3
     tensionGain: 30
     Unknown111: 50
     physicsYImpulse: 10000
-    Unknown136: 
+    Unknown136:
     frcWindow: 25
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 18, 0, 700000
         storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
-        endIf: 
+        endIf:
     sprite: s32'bed423_08', 4
     sprite: s32'bed423_09', 4
     sprite: s32'bed423_10', 4
@@ -5559,7 +5853,7 @@ startState: s32'FlyingBed_Air'
     sprite: s32'bed423_12', 4
     sprite: s32'bed423_13ex', 4
     createObject2: s32'423bake02', 100
-    hit: 
+    hit:
     physicsYImpulse: -50000
     setGravity: 2450
     hitAirPushbackY: -15000
@@ -5570,17 +5864,17 @@ startState: s32'FlyingBed_Air'
     setMarker: s32'loop'
     sprite: s32'bed423_14', 4
     sprite: s32'bed423_13', 4
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
     setMarker: s32'landing'
     sprite: s32'bed423_15', 4
     Unknown32: s32'423bake02'
     if: (NEXT_ARG_IS_VAR), 45
         createObject2: s32'Flying_bomb2', 123
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'Flying_bomb1', 123
-        endElse: 
+        endElse:
     Unknown2143: 8, 127
     screenShake: 1, 3
     Unknown2144: 1, 127
@@ -5589,19 +5883,19 @@ startState: s32'FlyingBed_Air'
     sprite: s32'bed423_18', 3
     sprite: s32'bed423_19', 3
     sprite: s32'bed423_20', 3
-    endState: 
+    endState:
 
 startState: s32'Dejavu_A'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
@@ -5612,7 +5906,7 @@ startState: s32'Dejavu_A'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 53
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 54
         createObject2: s32'Djavu_A_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5624,19 +5918,19 @@ startState: s32'Dejavu_A'
     sprite: s32'bed425_09', 2
     sprite: s32'bed425_10', 2
     sprite: s32'bed425_11', 2
-    endState: 
+    endState:
 
 startState: s32'Dejavu_B'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 58, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
@@ -5647,7 +5941,7 @@ startState: s32'Dejavu_B'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 57
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 58
         createObject2: s32'Djavu_B_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5659,19 +5953,19 @@ startState: s32'Dejavu_B'
     sprite: s32'bed425_09', 2
     sprite: s32'bed425_10', 2
     sprite: s32'bed425_11', 2
-    endState: 
+    endState:
 
 startState: s32'Dejavu_C'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 60, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
@@ -5682,7 +5976,7 @@ startState: s32'Dejavu_C'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 59
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 60
         createObject2: s32'Djavu_C_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5694,19 +5988,19 @@ startState: s32'Dejavu_C'
     sprite: s32'bed425_09', 2
     sprite: s32'bed425_10', 2
     sprite: s32'bed425_11', 2
-    endState: 
+    endState:
 
 startState: s32'Dejavu_D'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 56, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
@@ -5717,7 +6011,7 @@ startState: s32'Dejavu_D'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 55
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 56
         createObject2: s32'Djavu_D_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5729,21 +6023,21 @@ startState: s32'Dejavu_D'
     sprite: s32'bed425_09', 2
     sprite: s32'bed425_10', 2
     sprite: s32'bed425_11', 2
-    endState: 
+    endState:
 
 startState: s32'Dejavu_A_Air'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        Unknown109: 
+        Unknown109:
         Unknown176: 1
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     Unknown1792: '0x0600000001000000'
     sprite: s32'bed425_01', 2
@@ -5755,7 +6049,7 @@ startState: s32'Dejavu_A_Air'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 53
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 54
         createObject2: s32'Djavu_A_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5764,26 +6058,26 @@ startState: s32'Dejavu_A_Air'
     sprite: s32'bed425_06', 3
     sprite: s32'bed425_07', 5
     sprite: s32'bed425_08', 5
-    Unknown110: 
-    Unknown135: 
+    Unknown110:
+    Unknown135:
     sprite: s32'bed425_09', 5
     sprite: s32'bed425_10', 5
     sprite: s32'bed425_11', 5
-    endState: 
+    endState:
 
 startState: s32'Dejavu_B_Air'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        Unknown109: 
+        Unknown109:
         Unknown176: 1
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 58, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     Unknown1792: '0x0600000001000000'
     sprite: s32'bed425_01', 2
@@ -5795,7 +6089,7 @@ startState: s32'Dejavu_B_Air'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 57
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 58
         createObject2: s32'Djavu_B_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5804,26 +6098,26 @@ startState: s32'Dejavu_B_Air'
     sprite: s32'bed425_06', 3
     sprite: s32'bed425_07', 5
     sprite: s32'bed425_08', 5
-    Unknown110: 
-    Unknown135: 
+    Unknown110:
+    Unknown135:
     sprite: s32'bed425_09', 5
     sprite: s32'bed425_10', 5
     sprite: s32'bed425_11', 5
-    endState: 
+    endState:
 
 startState: s32'Dejavu_C_Air'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        Unknown109: 
+        Unknown109:
         Unknown176: 1
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 60, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     Unknown1792: '0x0600000001000000'
     sprite: s32'bed425_01', 2
@@ -5835,7 +6129,7 @@ startState: s32'Dejavu_C_Air'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 59
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 60
         createObject2: s32'Djavu_C_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5844,26 +6138,26 @@ startState: s32'Dejavu_C_Air'
     sprite: s32'bed425_06', 3
     sprite: s32'bed425_07', 5
     sprite: s32'bed425_08', 5
-    Unknown110: 
-    Unknown135: 
+    Unknown110:
+    Unknown135:
     sprite: s32'bed425_09', 5
     sprite: s32'bed425_10', 5
     sprite: s32'bed425_11', 5
-    endState: 
+    endState:
 
 startState: s32'Dejavu_D_Air'
     upon: (IMMEDIATE)
         yrcWindowLength: 23
-        Unknown109: 
+        Unknown109:
         Unknown176: 1
-        endUpon: 
+        endUpon:
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 56, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         createObject2: s32'DreamCatcherSuka', 100
-        endElse: 
+        endElse:
     tensionGain: 10
     Unknown1792: '0x0600000001000000'
     sprite: s32'bed425_01', 2
@@ -5875,7 +6169,7 @@ startState: s32'Dejavu_D_Air'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 55
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 56
         createObject2: s32'Djavu_D_Ghost', 130
-        endIf: 
+        endIf:
     sprite: s32'bed425_03', 1
     frcWindow: 8
     sprite: s32'bed425_03', 1
@@ -5884,21 +6178,21 @@ startState: s32'Dejavu_D_Air'
     sprite: s32'bed425_06', 3
     sprite: s32'bed425_07', 5
     sprite: s32'bed425_08', 5
-    Unknown110: 
-    Unknown135: 
+    Unknown110:
+    Unknown135:
     sprite: s32'bed425_09', 5
     sprite: s32'bed425_10', 5
     sprite: s32'bed425_11', 5
-    endState: 
+    endState:
 
 startState: s32'Alarm'
     upon: (IMMEDIATE)
         Unknown1939: 1
         upon: (AFTER_EXIT)
             storeValue: (NEXT_ARG_IS_VAR), 4, 0, 0
-            endUpon: 
+            endUpon:
         storeValue: (NEXT_ARG_IS_VAR), 4, 0, 1
-        endUpon: 
+        endUpon:
     Unknown25: s32'tame_end', 2, 126
     sprite: s32'bed450_00', 2
     guardType: (NONE)
@@ -5918,20 +6212,20 @@ startState: s32'Alarm'
     sprite: s32'bed450_05', 2
     sprite: s32'bed450_06', 2
     sprite: s32'bed450_07', 2
-    Unknown240: 
-    Unknown3: 
+    Unknown240:
+    Unknown3:
     setMarker: s32'tame_end'
     sprite: s32'bed430_00', 5
     setStrikeInvul: 1
     if: (NEXT_ARG_IS_VAR), 164
         setThrowInvul: 1
-        endIf: 
+        endIf:
     Unknown19: 4
     if: (NEXT_ARG_IS_VAR), 161
         setStrikeInvul: 0
         Unknown2155: 0
         setThrowInvul: 0
-        endIf: 
+        endIf:
     sprite: s32'bed430_01', 1
     superFreeze: 1, 119, 115, 125
     consumeTension: 5000
@@ -5949,46 +6243,46 @@ startState: s32'Alarm'
             Unknown2132: 0
             Unknown448: s32'cmn_bkakusei_fire', 100
             storeValue: (NEXT_ARG_IS_VAR), 120, 0, 0
-            endIf: 
+            endIf:
         upon: (FRAME_STEP)
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 1
                 playVoice: s16'vxxx104'
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 10
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 40
                 playCharacterSFX: s32'BED_Kakusei001'
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 45
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 48
                 playCharacterSFX: s32'BED_Kakusei002'
                 playVoice: s16'vxxx206'
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 55
                 createObject2: s32'Yodare430', 100
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 61
                 playCharacterSFX: s32'BED_Kakusei003'
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 62
                 playCharacterSFX: s32'BED_Kakusei004'
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 75
                 createObject2: s32'430BG', 100
-                endIf: 
+                endIf:
             ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 113
                 Unknown2212: 0
                 Unknown2051: 0
-                endIf: 
-            endUpon: 
-        endUpon: 
+                endIf:
+            endUpon:
+        endUpon:
     sprite: s32'bed430_01', 2
     if: (NEXT_ARG_IS_VAR), 161
         setStrikeInvul: 0
         Unknown2155: 0
         setThrowInvul: 0
-        endIf: 
+        endIf:
     sprite: s32'bed430_06', 3
     sprite: s32'bed430_07', 5
     sprite: s32'bed430_08', 5
@@ -6006,7 +6300,7 @@ startState: s32'Alarm'
     sprite: s32'bed430_09', 2
     sprite: s32'bed430_10', 2
     sprite: s32'bed430_09', 2
-    Unknown3: 
+    Unknown3:
     Unknown24: s32'Boss', 2, 84
     sprite: s32'bed430_11', 3
     sprite: s32'bed430_12', 2
@@ -6015,8 +6309,8 @@ startState: s32'Alarm'
     sprite: s32'bed430_13', 3
     sprite: s32'bed430_14', 3
     sprite: s32'bed430_15', 3
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'Boss'
     sprite: s32'bed430_09', 2
     sprite: s32'bed430_10', 2
@@ -6044,9 +6338,9 @@ startState: s32'Alarm'
     sprite: s32'bed430_13', 3
     sprite: s32'bed430_14', 3
     sprite: s32'bed430_15', 3
-    Unknown3: 
-    Unknown18: 
-    endState: 
+    Unknown3:
+    Unknown18:
+    endState:
 
 startState: s32'Merry'
     upon: (IMMEDIATE)
@@ -6058,11 +6352,11 @@ startState: s32'Merry'
             cameraMotion: 31077, 454202, 89872, 455, 0, 0, 54, 15, 20, 15, 1
             Unknown2161: 100, 10000, 280000
             Unknown448: s32'cmn_kakusei_hatudo', 130
-            endUpon: 
+            endUpon:
         upon: (AFTER_EXIT)
             storeValue: (NEXT_ARG_IS_VAR), 4, 0, 0
-            endUpon: 
-        endUpon: 
+            endUpon:
+        endUpon:
     sprite: s32'bed431_00', 4
     storeValue: (NEXT_ARG_IS_VAR), 4, 0, 1
     Unknown19: 4
@@ -6088,7 +6382,7 @@ startState: s32'Merry'
     sprite: s32'bed431_14', 4
     sprite: s32'bed431_15', 4
     sprite: s32'bed431_16', 4
-    endState: 
+    endState:
 
 startState: s32'Ichigeki'
     upon: (IMMEDIATE)
@@ -6105,21 +6399,21 @@ startState: s32'Ichigeki'
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 135, 0, 2
             Unknown1076: 0
             canGrabDuringHitstun: 1
-            endIf: 
+            endIf:
         upon: (SUPERFREEZE)
             Unknown2199: 1
             Unknown2161: 100, 0, 300000
             Unknown448: s32'cmn_kakusei_hatudo', 130
-            endUpon: 
+            endUpon:
         upon: (HIT)
             Unknown14: s32'hit'
             Unknown23: 10
-            endUpon: 
+            endUpon:
         upon: (AFTER_EXIT)
             storeValue: (NEXT_ARG_IS_VAR), 4, 0, 0
-            endUpon: 
+            endUpon:
         callCmnEfFunc: s32'cmn_IchigekiInit'
-        endUpon: 
+        endUpon:
     sprite: s32'bed213_00', 2
     callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
     sprite: s32'bed213_01', 2
@@ -6144,25 +6438,25 @@ startState: s32'Ichigeki'
     callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
     createObject2: s32'WarpEff213', 100
     createObject2: s32'bake213', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGF'
     sprite: s32'bed213_09', 4
     Unknown32: s32'bake213'
     sprite: s32'bed213_10', 11
-    recoveryState: 
+    recoveryState:
     setStrikeInvul: 0
     setThrowInvul: 0
     sprite: s32'bed213_11', 4
     sprite: s32'bed213_12', 4
     sprite: s32'bed213_13', 4
     sprite: s32'bed213_14', 4
-    Unknown3: 
-    Unknown18: 
+    Unknown3:
+    Unknown18:
     setMarker: s32'hit'
     Unknown23: 10
     sprite: s32'null', 2147483647
     Unknown1940: 1
-    Unknown2058: 
+    Unknown2058:
     Unknown2210: 1
     Unknown92: 0
     Unknown176: 1
@@ -6176,7 +6470,7 @@ startState: s32'Ichigeki'
     Unknown53: 23, 2, 32, 22, 2, 32
     Unknown2013: s32'xxx_bed451cs', 0
     Unknown2028: s32'CmnCutSceneDamageLow'
-    Unknown40: 
+    Unknown40:
     upon: (FRAME_STEP)
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 0
             Unknown2063: '0x0000000000000000'
@@ -6186,11 +6480,11 @@ startState: s32'Ichigeki'
             Unknown2081: 227, 174, 136
             Unknown2082: 101, 74, 76
             playCharacterSFX: s32'bed_IK001'
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 10
             playVoice: s16'vxxx209'
             Unknown2211: s32'prev', 180
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 300
             Unknown2079: '0x000000000000000000000000'
             Unknown2080: 189, 179, 99
@@ -6199,41 +6493,41 @@ startState: s32'Ichigeki'
             Unknown41: 22
             playVoice: s16'vxxx038'
             Unknown2211: s32'prev', 300
-            Unknown40: 
-            endIf: 
+            Unknown40:
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 370
             createObject2: s32'BG_ichigeki_eye', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 650
             Unknown1018: 1
-            grabOrRelease: 
+            grabOrRelease:
             Unknown1059: 3
             Unknown996: 0, 0, 0
             hitstop: 0
             Unknown1139: 1
             Unknown1142: 1
             Unknown1063: 1
-            Unknown1678: 
-            endIf: 
+            Unknown1678:
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 690
             Unknown448: s32'bed_ichigeki_teri', 100
-            endIf: 
+            endIf:
         ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 762
             if: (NEXT_ARG_IS_VAR), 111
                 playVoice: s16'vxxx310'
                 Unknown2211: s32'prev', -2147483618
                 Unknown1890: 1
                 Unknown1675: 20
-                endIf: 
-            else: 
+                endIf:
+            else:
                 playVoice: s16'vxxx309'
                 Unknown2211: s32'prev', -2147483618
                 Unknown1890: 1
                 Unknown1675: 20
-                endElse: 
-            endIf: 
-        endUpon: 
-    endState: 
+                endElse:
+            endIf:
+        endUpon:
+    endState:
 
 startState: s32'EventStand'
     setMarker: s32'loop'
@@ -6293,13 +6587,13 @@ startState: s32'EventStand'
     sprite: s32'bed000_53', 3
     sprite: s32'bed000_54', 3
     sprite: s32'bed000_55', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventBED07A_00'
     Unknown92: 1200000
-    flipDirection: 
+    flipDirection:
     setMarker: s32'loop'
     sprite: s32'bed000_00', 3
     sprite: s32'bed000_01', 3
@@ -6357,9 +6651,9 @@ startState: s32'EventBED07A_00'
     sprite: s32'bed000_53', 3
     sprite: s32'bed000_54', 3
     sprite: s32'bed000_55', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventBED07A_01'
     sprite: s32'bed032_00', 3
@@ -6377,7 +6671,7 @@ startState: s32'EventBED07A_01'
     Unknown2023: 0
     setNoCollision: 0
     Unknown176: 1
-    flipDirection: 
+    flipDirection:
     sprite: s32'bed032_03', 8
     sprite: s32'bed032_04', 3
     playSFX: s32'SE_VEN3'
@@ -6405,9 +6699,9 @@ startState: s32'EventBED07A_01'
     sprite: s32'bed010_09', 9
     sprite: s32'bed010_10', 9
     sprite: s32'bed010_11', 9
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventBED07A_02'
     sprite: s32'bed032_00', 3
@@ -6457,9 +6751,9 @@ startState: s32'EventBED07A_02'
     playSFX: s32'SE_GUARDF'
     playVoice: s16'vxxx004'
     sprite: s32'bed360_10', 2147483647
-    Unknown3: 
+    Unknown3:
     jumpToState: s32'EventStand'
-    endState: 
+    endState:
 
 startState: s32'EventBED07B_01'
     sprite: s32'bed616_00', 3
@@ -6481,7 +6775,7 @@ startState: s32'EventBED07B_01'
     sprite: s32'bed616_14', 20
     sprite: s32'bed616_16', 3
     sprite: s32'bed616_17', 2147483647
-    endState: 
+    endState:
 
 startState: s32'EventBED07B_02'
     sprite: s32'bed616_05', 3
@@ -6491,9 +6785,9 @@ startState: s32'EventBED07B_02'
     sprite: s32'bed616_02', 3
     sprite: s32'bed616_01', 3
     sprite: s32'bed616_00', 3
-    Unknown3: 
+    Unknown3:
     jumpToState: s32'EventStand'
-    endState: 
+    endState:
 
 startState: s32'EventBED07B_03'
     sprite: s32'bed032_08', 6
@@ -6501,7 +6795,7 @@ startState: s32'EventBED07B_03'
     sprite: s32'bed032_06', 6
     sprite: s32'bed032_05', 2147483647
     playSFX: s32'SE_SWINGH'
-    endState: 
+    endState:
 
 startState: s32'EventBED07B_04'
     sprite: s32'bed032_06', 6
@@ -6511,7 +6805,7 @@ startState: s32'EventBED07B_04'
     sprite: s32'bed305_01', 6
     sprite: s32'bed305_02', 6
     sprite: s32'bed305_03', 2147483647
-    endState: 
+    endState:
 
 startState: s32'EventBED07B_05'
     sprite: s32'bed305_02', 6
@@ -6569,12 +6863,12 @@ startState: s32'EventBED07B_05'
     setNoCollision: 0
     Unknown176: 1
     sprite: s32'bed032_03', 2147483647
-    endState: 
+    endState:
 
 startState: s32'EventBED08A_01'
     sprite: s32'bed000_00', 2147483647
     Unknown2023: 0
-    endState: 
+    endState:
 
 startState: s32'EventBED08A_02'
     sprite: s32'keep', 30
@@ -6589,9 +6883,9 @@ startState: s32'EventBED08A_02'
     sprite: s32'bed032_06', 3
     sprite: s32'bed032_07', 3
     sprite: s32'bed032_08', 3
-    Unknown3: 
+    Unknown3:
     jumpToState: s32'EventStand'
-    endState: 
+    endState:
 
 startState: s32'EventBED08B_01'
     sprite: s32'bed010_00', 3
@@ -6655,9 +6949,9 @@ startState: s32'EventBED08B_01'
     sprite: s32'bed010_57', 3
     sprite: s32'bed010_58', 3
     sprite: s32'bed010_59', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventBED08B_02'
     sprite: s32'bed010_45', 6
@@ -6679,15 +6973,15 @@ startState: s32'EventBED08B_02'
     sprite: s32'bed010_37', 6
     sprite: s32'bed010_38', 6
     sprite: s32'bed010_39', 6
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventBED08B_03'
     sprite: s32'bed010_60', 3
-    Unknown3: 
+    Unknown3:
     jumpToState: s32'EventStand'
-    endState: 
+    endState:
 
 startState: s32'EventBED08B_04'
     sprite: s32'bed034_00', 4
@@ -6708,9 +7002,9 @@ startState: s32'EventBED08B_04'
     sprite: s32'bed034_02', 4
     sprite: s32'bed034_03', 4
     physicsXImpulse: 0
-    Unknown3: 
+    Unknown3:
     jumpToState: s32'EventStand'
-    endState: 
+    endState:
 
 startState: s32'EventBED08B_05'
     sprite: s32'bed032_00', 3
@@ -6729,7 +7023,7 @@ startState: s32'EventBED08B_05'
     setNoCollision: 0
     Unknown176: 1
     sprite: s32'bed032_03', 2147483647
-    endState: 
+    endState:
 
 startState: s32'EventELP08A_01'
     sprite: s32'bed032_00', 3
@@ -6743,7 +7037,7 @@ startState: s32'EventELP08A_01'
     sprite: s32'bed032_02', 2
     sprite: s32'bed032_03', 3
     Unknown176: 1
-    flipDirection: 
+    flipDirection:
     sprite: s32'bed032_03', 8
     sprite: s32'bed032_04', 3
     playSFX: s32'SE_VEN3'
@@ -6767,9 +7061,9 @@ startState: s32'EventELP08A_01'
     sprite: s32'bed000_05', 6
     sprite: s32'bed000_06', 6
     sprite: s32'bed000_07', 6
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventELP08A_02'
     sprite: s32'bed000_08', 3
@@ -6789,9 +7083,9 @@ startState: s32'EventELP08A_02'
     sprite: s32'bed000_13', 6
     sprite: s32'bed000_12', 6
     sprite: s32'bed000_11', 6
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventELP08A_03'
     sprite: s32'bed032_00', 3
@@ -6805,7 +7099,7 @@ startState: s32'EventELP08A_03'
     Unknown2023: 0
     setNoCollision: 0
     Unknown176: 1
-    flipDirection: 
+    flipDirection:
     sprite: s32'bed032_03', 8
     sprite: s32'bed032_04', 3
     playSFX: s32'SE_VEN3'
@@ -6834,9 +7128,9 @@ startState: s32'EventELP08A_03'
     playSFX: s32'SE_GUARDF'
     playVoice: s16'vxxx004'
     sprite: s32'bed360_10', 2147483647
-    Unknown3: 
+    Unknown3:
     jumpToState: s32'EventStand'
-    endState: 
+    endState:
 
 startState: s32'EventELP08B_01'
     sprite: s32'bed616_05', 3
@@ -6907,9 +7201,9 @@ startState: s32'EventELP08B_01'
     sprite: s32'bed010_57', 3
     sprite: s32'bed010_58', 3
     sprite: s32'bed010_59', 3
-    Unknown3: 
+    Unknown3:
     goToMarker: s32'loop'
-    endState: 
+    endState:
 
 startState: s32'EventELP08B_02'
     sprite: s32'bed010_60', 3
@@ -6931,7 +7225,7 @@ startState: s32'EventELP08B_02'
     sprite: s32'bed615_13', 3
     sprite: s32'bed615_14', 3
     sprite: s32'bed615_15', 2147483647
-    endState: 
+    endState:
 
 startState: s32'FBAtkRIP'
     upon: (IMMEDIATE)
@@ -6952,7 +7246,7 @@ startState: s32'FBAtkRIP'
         untechableTime: 65
         setProration: 95
         Unknown2331: 27
-        endUpon: 
+        endUpon:
     sprite: s32'bed213_00', 1
     sprite: s32'bed213_01', 2
     Unknown621: '0x02000000FFFFFFFF'
@@ -6985,7 +7279,7 @@ startState: s32'FBAtkRIP'
     sprite: s32'bed213_07', 2
     sprite: s32'bed213_08', 2
     createObject2: s32'bake213', 100
-    hit: 
+    hit:
     playSFX: s32'SE_SWINGF'
     physicsXImpulse: 0
     setNoCollision: 1
@@ -6993,41 +7287,41 @@ startState: s32'FBAtkRIP'
     sprite: s32'bed213_09', 3
     Unknown32: s32'bake213'
     sprite: s32'bed213_10', 5
-    endCounterHitState: 
+    endCounterHitState:
     sprite: s32'bed213_11', 2
-    recoveryState: 
+    recoveryState:
     sprite: s32'bed213_12', 3
     sprite: s32'bed213_13', 3
     sprite: s32'bed213_14', 3
-    endState: 
+    endState:
 
 startState: s32'Dejavu_FB_Air'
     upon: (IMMEDIATE)
         reduceTensionGainForTime: 240
         consumeTension: 2500
-        Unknown109: 
+        Unknown109:
         Unknown176: 1
-        endUpon: 
+        endUpon:
     storeValue: (NEXT_ARG_IS_VAR), 300, 0, 0
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 56, 0, 0
             createObject2: s32'DreamCatcher', 100
-            endIf: 
-        endElse: 
-    else: 
+            endIf:
+        endElse:
+    else:
         ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 58, 0, 0
             createObject2: s32'DreamCatcher', 100
-            endIf: 
-        endElse: 
-    else: 
+            endIf:
+        endElse:
+    else:
         ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 60, 0, 0
             createObject2: s32'DreamCatcher', 100
-            endIf: 
-        endElse: 
+            endIf:
+        endElse:
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
     playCharacterSFX: s32'BED_003'
@@ -7037,22 +7331,22 @@ startState: s32'Dejavu_FB_Air'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 53
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 54
         createObject2: s32'Djavu_A_Ghost', 130
-        endIf: 
+        endIf:
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 56, 0, 0
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 55
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 56
         createObject2: s32'Djavu_D_Ghost', 130
-        endIf: 
+        endIf:
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 58, 0, 0
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 57
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 58
         createObject2: s32'Djavu_B_Ghost', 130
-        endIf: 
+        endIf:
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 60, 0, 0
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 59
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 60
         createObject2: s32'Djavu_C_Ghost', 130
-        endIf: 
+        endIf:
     playSFX: s32'SE_KAKUSEI'
     characterEffectOverlay: -1
     sprite: s32'bed425_03', 1
@@ -7066,37 +7360,37 @@ startState: s32'Dejavu_FB_Air'
     sprite: s32'bed425_07', 5
     sprite: s32'bed425_08', 2
     sprite: s32'bed425_09', 2
-    Unknown110: 
-    Unknown135: 
+    Unknown110:
+    Unknown135:
     sprite: s32'bed425_10', 2
     sprite: s32'bed425_11', 2
-    endState: 
+    endState:
 
 startState: s32'Dejavu_FB'
     upon: (IMMEDIATE)
         reduceTensionGainForTime: 240
         consumeTension: 2500
-        endUpon: 
+        endUpon:
     storeValue: (NEXT_ARG_IS_VAR), 300, 0, 0
     sprite: s32'bed425_00', 2
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 54, 0, 0
         createObject2: s32'DreamCatcher', 100
-        endIf: 
-    else: 
+        endIf:
+    else:
         ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 56, 0, 0
             createObject2: s32'DreamCatcher', 100
-            endIf: 
-        endElse: 
-    else: 
+            endIf:
+        endElse:
+    else:
         ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 58, 0, 0
             createObject2: s32'DreamCatcher', 100
-            endIf: 
-        endElse: 
-    else: 
+            endIf:
+        endElse:
+    else:
         ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 60, 0, 0
             createObject2: s32'DreamCatcher', 100
-            endIf: 
-        endElse: 
+            endIf:
+        endElse:
     sprite: s32'bed425_01', 2
     playVoice: s16'vxxx200'
     playCharacterSFX: s32'BED_003'
@@ -7106,22 +7400,22 @@ startState: s32'Dejavu_FB'
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 53
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 54
         createObject2: s32'Djavu_A_Ghost', 130
-        endIf: 
+        endIf:
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 56, 0, 0
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 55
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 56
         createObject2: s32'Djavu_D_Ghost', 130
-        endIf: 
+        endIf:
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 58, 0, 0
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 57
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 58
         createObject2: s32'Djavu_B_Ghost', 130
-        endIf: 
+        endIf:
     ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 60, 0, 0
         storeValue: (NEXT_ARG_IS_VAR), 102, (NEXT_ARG_IS_VAR), 59
         storeValue: (NEXT_ARG_IS_VAR), 103, (NEXT_ARG_IS_VAR), 60
         createObject2: s32'Djavu_C_Ghost', 130
-        endIf: 
+        endIf:
     playSFX: s32'SE_KAKUSEI'
     characterEffectOverlay: -1
     sprite: s32'bed425_03', 1
@@ -7137,5 +7431,4 @@ startState: s32'Dejavu_FB'
     sprite: s32'bed425_09', 2
     sprite: s32'bed425_10', 2
     sprite: s32'bed425_11', 2
-    endState: 
-
+    endState:
