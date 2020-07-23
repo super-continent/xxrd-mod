@@ -4470,14 +4470,14 @@ startState: s32'NmlAtkAir5D'
 
 startState: s32'NmlAtkAir5E'
     upon: (IMMEDIATE)
-        attackLevel: 3
-        damage: 35
+        attackLevel: 4
+        damage: 44
         setProration: 90
         riscMinus: 8
         Unknown1108: 20
         hitAirPushbackX: 26250
         hitAirPushbackY: 24500
-        untechableTime: 29
+        untechableTime: 30
         counterHitUntechableTime: 80
         airHitEffect: (AIR_FACE_UP)
         groundHitEffect: (AIR_FACE_UP)
