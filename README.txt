@@ -50,10 +50,10 @@ FRC POINTS:
 Many FRC points I made sure to have an audible cue for to make the timing feel more natural
 The windows for FRC are also much wider to make it feel consistent for players who arent used to it
 
-NOTE: FRCs do replace the entire RC system currently as there is no way currently to add back RRC without slowdown
+NOTE: FRCs replace the normal RC system, RRC is currently reimplemented as a special move and is added as a gatling option to specials that need it
 
 Sol:
--Bandit Revolver FRC immediately, works on both ground and air
+-Bandit Revolver FRC immediately, works in air
 -Bandit Bringer FRC as soon as the fire effect appears
 -Gunflame FRC as soon as the projectile comes out
 -Kudakero FRC as soon as sol starts traveling downward
@@ -74,7 +74,6 @@ Bedman:
 -Air Task B FRC immediately when the move starts gaining momentum
 -Ground and air Task C FRC when bedman begins falling downward
 -Deja Vu FRC immediately as the ghost is/would be summoned
--jD FRC immediately on hit, possible to combo into Airdash Down-Forward jP
 
 Raven:
 -Needle FRC as soon as the projectile comes out

@@ -919,6 +919,7 @@ startSubroutine: s32'RoundInit'
         addMoveFlag: (REQUIRES_25_TENSION)
         Unknown1532: 
         endMoveRegister: 
+	registerFunc: s32'RedRomanCancel'
     registerFunc: s32'Dejavu_FB'
     registerFunc: s32'Dejavu_FB_Air'
     registerFunc: s32'FBAtkRIP'
@@ -4071,6 +4072,7 @@ startState: s32'NmlAtkAir5E'
         setProration: 90
         Unknown240: 
         upon: (HIT_OR_GUARD)
+			addGatlingOption: s32'RedRomanCancel'
             physicsYImpulse: 30000
             checkInput: 121
             if: (NEXT_ARG_IS_VAR), 0
@@ -4099,7 +4101,6 @@ startState: s32'NmlAtkAir5E'
     sprite: s32'bed254_06', 2
     hit: 
     playSFX: s32'SE_SWINGB'
-    frcWindow: 9
     sprite: s32'bed254_07', 3
     sprite: s32'bed254_08', 3
     sprite: s32'bed254_09', 3

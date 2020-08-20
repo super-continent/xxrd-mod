@@ -967,6 +967,7 @@ startSubroutine: s32'RoundInit'
         moveInput: 279
         moveInput: (INPUT_PRESS_D)
         endMoveRegister: 
+	registerFunc: s32'RedRomanCancel'
     registerFunc: s32'CmnNeutral'
     registerFunc: s32'CmnStandForce'
     registerFunc: s32'CmnFWalk'
@@ -1064,6 +1065,7 @@ startSubroutine: s32'RoundInit'
     registerFunc: s32'CmnMaximumBurst'
     registerFunc: s32'CmnDamageBurst'
     registerFunc: s32'DeadAngleAttack'
+	registerFunc: s32'RedRomanCancel'
     registerFunc: s32'RomanCancelHit'
     registerFunc: s32'IchigekiJunbi'
     registerFunc: s32'MOMSuki'
@@ -4678,7 +4680,7 @@ startState: s32'Ensenga'
     untechableTime: 30
     sprite: s32'JY69_07', 3
     hit: 
-    Unknown143: 25
+    multiplyCarriedMomentum: 25
     setGravity: 175
     sprite: s32'JY69_08', 3
     recoveryState: 
@@ -5565,7 +5567,7 @@ startState: s32'MistFinerALv0'
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 50
+            multiplyCarriedMomentum: 50
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -5631,7 +5633,7 @@ startState: s32'MistFinerALv1'
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -5699,7 +5701,7 @@ startState: s32'MistFinerALv2'
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 95
+            multiplyCarriedMomentum: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -5768,7 +5770,7 @@ startState: s32'MistFinerBLv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 50
+            multiplyCarriedMomentum: 50
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -5835,7 +5837,7 @@ startState: s32'MistFinerBLv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -5904,7 +5906,7 @@ startState: s32'MistFinerBLv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 95
+            multiplyCarriedMomentum: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -5968,7 +5970,7 @@ startState: s32'MistFinerCLv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 50
+            multiplyCarriedMomentum: 50
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -6036,7 +6038,7 @@ startState: s32'MistFinerCLv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -6103,7 +6105,7 @@ startState: s32'MistFinerCLv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 95
+            multiplyCarriedMomentum: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -6681,7 +6683,7 @@ startState: s32'AirMistFinerALv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 82
+            multiplyCarriedMomentum: 82
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -6761,7 +6763,7 @@ startState: s32'AirMistFinerALv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -6842,7 +6844,7 @@ startState: s32'AirMistFinerALv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 90
+            multiplyCarriedMomentum: 90
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -6924,7 +6926,7 @@ startState: s32'AirMistFinerBLv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 82
+            multiplyCarriedMomentum: 82
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -7006,7 +7008,7 @@ startState: s32'AirMistFinerBLv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -7089,7 +7091,7 @@ startState: s32'AirMistFinerBLv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 90
+            multiplyCarriedMomentum: 90
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -7169,7 +7171,7 @@ startState: s32'AirMistFinerCLv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 82
+            multiplyCarriedMomentum: 82
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -7253,7 +7255,7 @@ startState: s32'AirMistFinerCLv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -7334,7 +7336,7 @@ startState: s32'AirMistFinerCLv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkAirMistGahuCheck'
-            Unknown143: 90
+            multiplyCarriedMomentum: 90
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9317,7 +9319,7 @@ startState: s32'XXMistFinerALv0'
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 50
+            multiplyCarriedMomentum: 50
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9383,7 +9385,7 @@ startState: s32'XXMistFinerALv1'
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9449,7 +9451,7 @@ startState: s32'XXMistFinerBLv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 50
+            multiplyCarriedMomentum: 50
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9515,7 +9517,7 @@ startState: s32'XXMistFinerBLv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9584,7 +9586,7 @@ startState: s32'XXMistFinerBLv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 95
+            multiplyCarriedMomentum: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9648,7 +9650,7 @@ startState: s32'XXMistFinerCLv0'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 50
+            multiplyCarriedMomentum: 50
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9716,7 +9718,7 @@ startState: s32'XXMistFinerCLv1'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 85
+            multiplyCarriedMomentum: 85
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9783,7 +9785,7 @@ startState: s32'XXMistFinerCLv2'
         Unknown1873: 1
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'XXAtkMistGahuCheck'
-            Unknown143: 95
+            multiplyCarriedMomentum: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
@@ -9849,7 +9851,7 @@ startState: s32'XXMistFinerALv2'
         Unknown1045: 2, s32'MistHit_High'
         upon: (FRAME_STEP)
             callCmnEfFunc: s32'AtkMistGahuCheck'
-            Unknown143: 95
+            multiplyCarriedMomentum: 95
             endUpon: 
         upon: (HIT)
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0

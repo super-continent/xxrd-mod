@@ -319,6 +319,16 @@ startSubroutine: s32'cmn_SkillInit'
         Unknown1483: s32'NmlAtkAir5D'
         Unknown1483: s32'CmnFWalk'
         endMoveRegister: 
+	addMove: s32'RedRomanCancel'
+        moveType: (SPECIAL)
+        characterState: (NONE)
+		addMoveFlag: (REQUIRES_50_TENSION)
+        Unknown1394: s32'CmnActRomanCancel'
+        moveInput: 214
+        Unknown1510: 30
+        Unknown1511: 160
+        Unknown1514: 1
+        endMoveRegister: 
     endSubroutine: 
 
 startSubroutine: s32'cmnBurstKakuseiParticle'
@@ -5587,7 +5597,7 @@ startState: s32'cmn_MOM_no066'
     riscMinus: 6
     hitPushbackX: 50
     untechableTime: 60
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     createObject2: s32'cmn_VV_Loop_hs_DI', 0
     playSFX: s32'SE_EXPLODE'
     Unknown2001: 3, s32'CmnActItemUse'

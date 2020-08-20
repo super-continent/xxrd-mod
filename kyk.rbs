@@ -829,6 +829,7 @@ startSubroutine: s32'RoundInit'
         Unknown1498: -328, -348, 202, 352
         Unknown1511: 120
         endMoveRegister: 
+	registerFunc: s32'RedRomanCancel'
     registerFunc: s32'FBJavelin'
     registerFunc: s32'FBSnowflake'
     registerFunc: s32'CmnNeutral'
@@ -4420,7 +4421,7 @@ startState: s32'VaporThrustC'
     setMarker: s32'landing'
     sprite: s32'kyk010_00', 3
     physicsXImpulse: 0
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     sprite: s32'kyk010_01', 2
     sprite: s32'kyk010_02', 2
     sprite: s32'kyk010_03', 2
@@ -4505,7 +4506,7 @@ startState: s32'VaporThrustD'
     setMarker: s32'landing'
     sprite: s32'kyk010_00', 3
     physicsXImpulse: 0
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     sprite: s32'kyk010_01', 2
     sprite: s32'kyk010_02', 2
     sprite: s32'kyk010_03', 2
@@ -4540,7 +4541,7 @@ startState: s32'AirVaporThrust'
     physicsXImpulse: 0
     physicsYImpulse: 0
     setGravity: 0
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     setStrikeInvul: 1
     if: (NEXT_ARG_IS_VAR), 161
         setThrowInvul: 0
@@ -4584,7 +4585,7 @@ startState: s32'AirVaporThrust'
     setMarker: s32'landing'
     sprite: s32'kyk010_00', 3
     physicsXImpulse: 0
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     sprite: s32'kyk010_01', 2
     sprite: s32'kyk010_02', 2
     sprite: s32'kyk010_03', 2
@@ -4696,7 +4697,7 @@ startState: s32'GreedSaber'
         endUpon: 
     sprite: s32'kyk405_00', 3
     playVoice: s16'vxxx204'
-    Unknown143: 50
+    multiplyCarriedMomentum: 50
     tensionGain: 40
     sprite: s32'kyk405_01', 7
     Unknown2161: 100, -120000, 260000

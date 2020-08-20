@@ -754,6 +754,7 @@ startSubroutine: s32'RoundInit'
         Unknown1392: 1
         minimumHeightRequirement: 96000
         endMoveRegister: 
+	registerFunc: s32'RedRomanCancel'
     registerFunc: s32'FBScratch'
     registerFunc: s32'FBTripleNeedle'
     registerFunc: s32'CmnNeutral'
@@ -4013,7 +4014,7 @@ startState: s32'NmlAtkAir2B'
         endUpon: 
     sprite: s32'rvn255_00', 3
     sprite: s32'rvn255_01', 4
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     physicsXImpulse: 3000
     physicsYImpulse: 20000
     sprite: s32'rvn255_02', 4
@@ -4022,7 +4023,7 @@ startState: s32'NmlAtkAir2B'
     playSFX: s32'SE_SWINGB'
     Unknown111: 55
     Unknown116: 75
-    Unknown143: 50
+    multiplyCarriedMomentum: 50
     setGravity: 4000
     setMarker: s32'loop'
     sprite: s32'rvn255_04', 3
@@ -5578,6 +5579,7 @@ jumpToState: s32'_NEUTRAL'
 endState: 
 startState: s32'LandBlowAttack'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         attackLevel: 4
         damage: 40
         untechableTime: 40
@@ -5629,7 +5631,6 @@ startState: s32'LandBlowAttack'
     Unknown32: s32'rvn407EffATK1'
     createObject2: s32'rvn407EffATK2', 100
     sprite: s32'rvn407_09', 3
-    recoveryState: 
     sprite: s32'rvn407_10', 3
     sprite: s32'rvn407_11', 3
     sprite: s32'rvn407_09', 3
@@ -5644,6 +5645,7 @@ startState: s32'LandBlowAttack'
 
 startState: s32'AirBlowAttack'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         attackLevel: 4
         damage: 40
         groundHitEffect: 13
@@ -7656,6 +7658,7 @@ startState: s32'EventRVN08B_03'
 
 startState: s32'FBScratch'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         consumeTension: 2500
         reduceTensionGainForTime: 240
         attackLevel: 3
@@ -7721,7 +7724,6 @@ startState: s32'FBScratch'
     sprite: s32'rvn407_08', 3
     Unknown32: s32'rvn407EffATK1'
     createObject2: s32'rvn407EffATK2', 100
-    recoveryState: 
     sprite: s32'rvn407_09', 3
     sprite: s32'rvn407_10', 3
     sprite: s32'rvn407_11', 3

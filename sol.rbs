@@ -1200,6 +1200,7 @@ startSubroutine: s32'RoundInit'
         Unknown1543: 
         Unknown1557: 
         endMoveRegister: 
+	registerFunc: s32'RedRomanCancel'
     registerFunc: s32'FBFefnirTyrant'
     registerFunc: s32'Sidewinder'
     registerFunc: s32'FBSidewinder'
@@ -4945,12 +4946,12 @@ startState: s32'GunFlame'
     sprite: s32'sol400_00', 1
     tensionGain: 40
     Unknown2157: 0, 5
-    Unknown143: 150
+    multiplyCarriedMomentum: 150
     sprite: s32'sol400_01', 2
-    Unknown143: 150
+    multiplyCarriedMomentum: 150
     playVoice: s16'vxxx200'
     sprite: s32'sol400_02', 2
-    Unknown143: 120
+    multiplyCarriedMomentum: 120
     sprite: s32'sol400_03', 2
     sprite: s32'sol400_04', 3
     playSFX: s32'GG2_019'
@@ -4975,12 +4976,12 @@ startState: s32'GunFlame_DI'
     sprite: s32'sol400_00', 1
     tensionGain: 40
     Unknown2157: 0, 5
-    Unknown143: 150
+    multiplyCarriedMomentum: 150
     sprite: s32'sol400_00', 2
-    Unknown143: 150
+    multiplyCarriedMomentum: 150
     sprite: s32'sol400_01', 3
     playVoice: s16'vxxx200'
-    Unknown143: 120
+    multiplyCarriedMomentum: 120
     sprite: s32'sol400_02', 4
     sprite: s32'sol400_03', 2
     sprite: s32'sol400_04', 2
@@ -5009,11 +5010,11 @@ startState: s32'GunFlameFeint'
     playVoice: s16'vxxx201'
     tensionGain: 70
     Unknown2157: 0, 5
-    Unknown143: 150
+    multiplyCarriedMomentum: 150
     sprite: s32'sol400_00', 2
-    Unknown143: 150
+    multiplyCarriedMomentum: 150
     sprite: s32'sol400_01', 3
-    Unknown143: 120
+    multiplyCarriedMomentum: 120
     sprite: s32'sol400_02', 2
     sprite: s32'sol400_03', 2
     sprite: s32'sol400_04', 2
@@ -5338,6 +5339,7 @@ startState: s32'RiotStamp_DI'
 
 startState: s32'BanditRevolverLand'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         isAirUnblockable: 1
         attackLevel: 2
         groundHitEffect: (AIR_FACE_UP)
@@ -5373,7 +5375,6 @@ startState: s32'BanditRevolverLand'
     physicsYImpulse: 27125
     setGravity: 1925
     Unknown1943: 50000
-    frcWindow: 14
     sprite: s32'sol402_03', 4
     enableWhiffCancelOptions: 0
     sprite: s32'sol402_04', 3
@@ -5411,6 +5412,7 @@ startState: s32'BanditRevolverLand'
 
 startState: s32'BanditRevolverLand_DI'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         isAirUnblockable: 1
         groundHitEffect: (AIR_FACE_UP)
         hitEffectFlame: 1
@@ -5449,7 +5451,6 @@ startState: s32'BanditRevolverLand_DI'
     enableWhiffCancelOptions: 1
     sprite: s32'sol402_03', 3
     enableWhiffCancelOptions: 0
-    frcWindow: 8
     hit: 
     sprite: s32'sol402_03', 3
     hit: 
@@ -5929,6 +5930,7 @@ startState: s32'Kudakero_DI'
 
 startState: s32'VolcanicViperLandS'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         isAirUnblockable: 1
         groundHitEffect: (AIR_FACE_UP)
@@ -6024,6 +6026,7 @@ startState: s32'VolcanicViperLandS'
 
 startState: s32'VolcanicViperLandS_DI'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         isAirUnblockable: 1
         groundHitEffect: (AIR_FACE_UP)
@@ -6118,6 +6121,7 @@ startState: s32'VolcanicViperLandS_DI'
 
 startState: s32'VolcanicViperAirS'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         groundHitEffect: (AIR_FACE_UP)
         airHitEffect: (AIR_FACE_UP)
@@ -6214,6 +6218,7 @@ startState: s32'VolcanicViperAirS'
 
 startState: s32'VolcanicViperAirS_DI'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         groundHitEffect: (AIR_FACE_UP)
         airHitEffect: (AIR_FACE_UP)
@@ -6315,6 +6320,7 @@ startState: s32'VolcanicViperAirS_DI'
 
 startState: s32'VolcanicViperLandHS'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         isAirUnblockable: 1
         groundHitEffect: (AIR_FACE_UP)
@@ -6425,6 +6431,7 @@ startState: s32'VolcanicViperLandHS'
 
 startState: s32'VolcanicViperLandHS_DI'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         isAirUnblockable: 1
         groundHitEffect: (AIR_FACE_UP)
@@ -6485,7 +6492,7 @@ startState: s32'VolcanicViperLandHS_DI'
     riscMinus: 6
     hitPushbackX: 50
     untechableTime: 60
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     createObject2: s32'VV_Loop_hs_DI', 0
     physicsYImpulse: 43750
     physicsXImpulse: 10500
@@ -6569,6 +6576,7 @@ startState: s32'VolcanicViperLandHS_DI'
 
 startState: s32'VolcanicViperAirHS'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         groundHitEffect: (AIR_FACE_UP)
         airHitEffect: (AIR_FACE_UP)
@@ -6679,6 +6687,7 @@ startState: s32'VolcanicViperAirHS'
 
 startState: s32'VolcanicViperAirHS_DI'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         hitEffectFlame: 1
         groundHitEffect: (AIR_FACE_UP)
         airHitEffect: (AIR_FACE_UP)
@@ -6736,7 +6745,7 @@ startState: s32'VolcanicViperAirHS_DI'
     riscMinus: 6
     hitPushbackX: 50
     untechableTime: 60
-    Unknown143: 0
+    multiplyCarriedMomentum: 0
     createObject2: s32'VV_Loop_hs_DI', 0
     physicsYImpulse: 43750
     physicsXImpulse: 10500
@@ -6819,6 +6828,7 @@ startState: s32'VolcanicViperAirHS_DI'
 
 startState: s32'VolcanicViperKick'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         groundHitEffect: (AIR_FACE_UP)
         airHitEffect: (AIR_FACE_UP)
         attackLevel: 2
@@ -7492,6 +7502,7 @@ startState: s32'AirCommandThrowExe'
 
 startState: s32'Fefnir'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         guardType: (ANY)
         Unknown724: 1
         hitEffectFlame: 1
@@ -9616,9 +9627,7 @@ startState: s32'Sidewinder'
                 endIf: 
             endIf: 
         endIf: 
-    ifOperation: (IS_GREATER), (NEXT_ARG_IS_VAR), 35, 0, -130000
-        hit: 
-        endIf: 
+    hit: 
     createObject2: s32'FafnirPunch', 0
     playSFX: s32'GG2_019'
     sprite: s32'sol413_06', 4
@@ -9641,6 +9650,7 @@ startState: s32'Sidewinder'
 
 startState: s32'FBSidewinder'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         reduceTensionGainForTime: 240
         guardType: (ANY)
         consumeTension: 2500
@@ -9774,6 +9784,7 @@ startState: s32'Sidewinder_DI'
 
 startState: s32'FBSidewinder_DI'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         reduceTensionGainForTime: 240
         guardType: (ANY)
         consumeTension: 2500
@@ -10001,6 +10012,7 @@ startState: s32'FBAirWildThrowExe'
 
 startState: s32'FBFefnirTyrant'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         consumeTension: 2500
         attackLevel: 4
         groundHitEffect: (AIR_FACE_UP)
