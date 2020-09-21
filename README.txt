@@ -8,6 +8,7 @@ Current Characters:
 -Johnny
 -Bedman
 -Raven
+-Millia
 
 -------------------------------------------------------------------------
 
