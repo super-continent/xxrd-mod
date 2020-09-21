@@ -49,6 +49,7 @@ Millia:
 -236D in the air is now a force break that functions as Air Pretty Maze, it has 44 frames untech time on hit and wall bounces
 -Lust Shaker(Mash S or 214S) can be whiff-canceled into 214D, which is now a force break similar to her +R Longinus
 -2H in the air is now Millia-Copter, currently unchanged from its SIGN version
+-jD is now airdash-cancelable
 -fS is now jump-cancelable (I'm so sorry)
 
 -------------------------------------------------------------------------
