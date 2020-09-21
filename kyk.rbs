@@ -4360,6 +4360,7 @@ startState: s32'AirStunEdge2'
 
 startState: s32'VaporThrustC'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         Unknown725: 1
         hitEffectLightning: 1
         groundHitEffect: (AIR_LAUNCH)
@@ -4429,6 +4430,7 @@ startState: s32'VaporThrustC'
 
 startState: s32'VaporThrustD'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         Unknown725: 1
         hitEffectLightning: 1
         groundHitEffect: (AIR_LAUNCH)
@@ -4514,6 +4516,7 @@ startState: s32'VaporThrustD'
 
 startState: s32'AirVaporThrust'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         Unknown725: 1
         hitEffectLightning: 1
         groundHitEffect: (AIR_LAUNCH)
@@ -4667,6 +4670,7 @@ startState: s32'StunDipper'
 
 startState: s32'GreedSaber'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         Unknown725: 1
         hitEffectLightning: 1
         guardType: (HIGH)

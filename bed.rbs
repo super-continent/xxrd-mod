@@ -3315,6 +3315,7 @@ startState: s32'NmlAtk5D'
 
 startState: s32'NmlAtk6D'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         Unknown725: 1
         attackLevel: 4
         riscPlus: 10
@@ -3376,6 +3377,7 @@ startState: s32'NmlAtk6D'
 
 startState: s32'NmlAtk6D_2'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         Unknown725: 1
         attackLevel: 4
         riscPlus: 10
@@ -4065,6 +4067,7 @@ startState: s32'NmlAtkAir5D'
 
 startState: s32'NmlAtkAir5E'
     upon: (IMMEDIATE)
+		addGatlingOption: s32'RedRomanCancel'
         attackLevel: 4
         damage: 50
         airHitEffect: (AIR_FACE_UP)
@@ -4072,7 +4075,6 @@ startState: s32'NmlAtkAir5E'
         setProration: 90
         Unknown240: 
         upon: (HIT_OR_GUARD)
-			addGatlingOption: s32'RedRomanCancel'
             physicsYImpulse: 30000
             checkInput: 121
             if: (NEXT_ARG_IS_VAR), 0

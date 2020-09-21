@@ -43,6 +43,11 @@ Raven:
 -236D on the ground is now a force break that functions as Scratch with much less recovery time, allowing for small confirms off of it midscreen
 -236D in the air is now a force break that shoots 3 needle projectiles, covering most space on the screen
 
+Millia:
+-236D on the ground is now a force break that functions as her +R Pretty Maze
+-236D in the air is now a force break that functions as Air Pretty Maze, it has 44 frames untech time on hit and wall bounces
+-Lust Shaker(Mash S or 214S) can be whiff-canceled into 214D, which is now a force break similar to her +R Longinus
+
 -------------------------------------------------------------------------
 
 FRC POINTS:
@@ -80,6 +85,11 @@ Raven:
 -Scharf Kugel FRC as soon as the ball appears
 -Armor Dance FRC throughout the entirety of the animation (unless you hold it for longer than 2,147,483,647 frames)
 
+Millia:
+-Iron Savior FRC just before it comes out to the moment it becomes active
+-S Tandem Top FRC just after the move starts up
+-H Tandem Top FRC just after the ring spawns
+-Turbo Fall FRC just after Millia receives the momentum
 -------------------------------------------------------------------------
 
 thank you for testing out this build of XXrd, i hope you enjoy it.

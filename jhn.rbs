@@ -9325,7 +9325,10 @@ startState: s32'XXMistFinerALv0'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 10
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn401_00', 1
     tensionGain: 20
@@ -9392,7 +9395,10 @@ startState: s32'XXMistFinerALv1'
             Unknown32: s32'MistKuttsuku'
             endUpon: 
         Unknown287: 1
-        yrcWindowLength: 10
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn401_00', 1
     playVoice: s16'vxxx201'
@@ -9457,7 +9463,10 @@ startState: s32'XXMistFinerBLv0'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 12
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn402_00', 2
     playVoice: s16'vxxx202'
@@ -9523,7 +9532,10 @@ startState: s32'XXMistFinerBLv1'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 10
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn402_00', 1
     playVoice: s16'vxxx202'
@@ -9592,7 +9604,10 @@ startState: s32'XXMistFinerBLv2'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 10
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn402_00', 1
     playVoice: s16'vxxx202'
@@ -9656,7 +9671,10 @@ startState: s32'XXMistFinerCLv0'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 17
+		upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn403_00', 3
     playVoice: s16'vxxx203'
@@ -9724,7 +9742,10 @@ startState: s32'XXMistFinerCLv1'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 11
+		upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn403_01', 1
     playVoice: s16'vxxx203'
@@ -9791,7 +9812,10 @@ startState: s32'XXMistFinerCLv2'
             storeValue: (NEXT_ARG_IS_VAR), 5, 0, 0
             Unknown32: s32'MistKuttsuku'
             endUpon: 
-        yrcWindowLength: 11
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn403_01', 1
     playVoice: s16'vxxx203'
@@ -9860,7 +9884,10 @@ startState: s32'XXMistFinerALv2'
         wallBounceCount: 1
         wallBounceXVelocityPercent: 30
         Unknown287: 1
-        yrcWindowLength: 10
+        upon: (HIT_OR_GUARD)
+			addWhiffCancelOption: s32'RedRomanCancel'
+			enableWhiffCancelOptions: 1
+			endUpon:
         endUpon: 
     sprite: s32'jhn401_00', 1
     playVoice: s16'vxxx201'
@@ -9911,7 +9938,7 @@ startState: s32'FB_Jackhound'
         disableHitstop: 1
         Unknown1051: 0
         hitPushbackX: 8
-        attackLevel: 4
+        attackLevel: 0
         damage: 50
         isAirUnblockable: 1
         groundHitEffect: (STAGGER)
@@ -9919,7 +9946,7 @@ startState: s32'FB_Jackhound'
         staggerDuration: 92
         hitAirPushbackX: 5000
         hitAirPushbackY: 40000
-        untechableTime: 80
+        untechableTime: 50
         SFX_0: s32'SE_HITKIRIB'
         Unknown1939: 1
         upon: (SUPERFREEZE)
