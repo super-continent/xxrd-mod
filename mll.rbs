@@ -5992,6 +5992,7 @@ startState: s32'FBAirMaze'
     upon: (IMMEDIATE)
 		consumeTension: 2500
 		reduceTensionGainForTime: 240
+		Unknown1792: 18, 3
         endUpon: 
     sprite: s32'mll407_00', 1
 	playSFX: s32'SE_KAKUSEI'

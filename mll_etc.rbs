@@ -1561,8 +1561,8 @@ startState: s32'AirMazeRing'
         damage: 40
         groundHitEffect: (AIR_FACE_UP)
         setAttachOpponent: 1
-        hitAirPushbackX: 24500
-        hitAirPushbackY: 19250
+        hitAirPushbackX: 21500
+        hitAirPushbackY: 17250
         untechableTime: 44
         wallBounceCount: 1
 		wallBounceInCornerOnly: 1
