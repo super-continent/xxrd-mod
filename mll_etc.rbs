@@ -1586,7 +1586,6 @@ startState: s32'AirMazeRing'
     sprite: s32'mle2_01', 2
     sprite: s32'mle2_02', 2
     sprite: s32'mle2_03', 1
-    sprite: s32'null', 41
     recoveryState: 
     Unknown23: 45
     endState: 

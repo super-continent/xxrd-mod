@@ -3581,6 +3581,7 @@ startState: s32'NmlAtkAir5E'
     upon: (IMMEDIATE)
         attackLevel: 2
 		addGatlingOption: s32'CmnFAirDash'
+		addGatlingOption: s32'CmnBAirDash'
         damage: 36
         hitAirPushbackY: 22750
         untechableTime: 26
