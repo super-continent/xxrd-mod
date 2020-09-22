@@ -1540,11 +1540,6 @@ startState: s32'PrettyMazeRing'
     hit: 
 	sprite: s32'mle2_03', 2
     hit: 
-    sprite: s32'mle2_01', 2
-    hit: 
-    sprite: s32'mle2_02', 2
-    hit: 
-    sprite: s32'mle2_03', 1
     recoveryState: 
     storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
     Unknown23: 45
@@ -1594,4 +1589,119 @@ startState: s32'AirMazeRing'
     sprite: s32'null', 41
     recoveryState: 
     Unknown23: 45
+    endState: 
+	
+startState: s32'SFHorizontal'
+    upon: (IMMEDIATE)
+        Unknown244: 
+        attackLevel: 1
+		Unknown166: 30000
+        damage: 20
+        groundCounterHitEffect: (STAGGER)
+        staggerDuration: 49
+        riscMinus: 6
+        setProration: 80
+        tensionGainOnConnect: 20
+        untechableTime: 44
+        Unknown1108: -45
+        hitAirPushbackX: 16000
+        hitGravity: 2100
+        hitAirPushbackY: 7500
+        Unknown730: 1
+        if: (NEXT_ARG_IS_VAR), 115
+            Unknown1165: s32'SilentForceKnifeD'
+            endIf: 
+        setThrowRange: 0
+        upon: 2
+            Unknown14: s32'landing'
+            endUpon: 
+        upon: 12
+            if: (NEXT_ARG_IS_VAR), 52
+                Unknown60: '0x030000007B000000170000007B000000'
+                storeValue: (NEXT_ARG_IS_VAR), 62, 0, 0
+                Unknown59: s32'TRP_MLL', 2, 157
+                Unknown54: 6, 2, 62, 2, 157
+                ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 0, 0, 180000
+                    Unknown2001: 3, s32'CmnActCrouch'
+                    Unknown54: 6, 2, 62, 2, 0
+                    Unknown2001: 3, s32'CmnActStand2Crouch'
+                    Unknown54: 6, 2, 62, 2, 0
+                    Unknown2001: 3, s32'CmnActCrouchTurn'
+                    Unknown54: 6, 2, 62, 2, 0
+                    Unknown2001: 3, s32'Zenten'
+                    Unknown54: 6, 2, 62, 2, 0
+                    Unknown2001: 3, s32'SaiZenten'
+                    Unknown54: 6, 2, 62, 2, 0
+                    endIf: 
+                if: (NEXT_ARG_IS_VAR), 62
+                    Unknown19: 23
+                    Unknown448: s32'mll_silentforce_get', 100
+                    playCharacterSFX: s32'1'
+                    Unknown2320: s32'SilentForceGet'
+                    endIf: 
+                endIf: 
+            endUpon: 
+        Unknown287: 1
+        upon: 46
+            Unknown54: 0, 2, 48, 0, 1
+            ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 48, 0, 2
+                Unknown23: 46
+                Unknown14: s32'reaction'
+                endIf: 
+            endUpon: 
+        Unknown1602: 2
+        upon: (BEFORE_EXIT)
+            Unknown1603: 2
+            endUpon: 
+        numberOfHits: 1
+        Unknown2185: 1
+        Unknown2183: 1
+        upon: 45
+            Unknown23: 46
+            Unknown14: s32'reaction'
+            endUpon: 
+        upon: 59
+            Unknown19: 23
+            endUpon: 
+        endUpon: 
+    sprite: s32'mle9_02', 2
+    playCharacterSFX: s32'3'
+    physicsXImpulse: 35000
+    Unknown450: s32'mll_silentforce'
+    Unknown3: 
+    hit: 
+    setMarker: s32'atloop'
+    sprite: s32'mle9_02', 1
+    Unknown2161: 100, 0, 0
+    Unknown2162: '0x0000000050C3000000000000B03CFFFF0000000050C3000000000000B03CFFFF'
+    Unknown448: s32'mll_twinkle', 130
+    Unknown3: 
+    goToMarker: s32'atloop'
+    setMarker: s32'landing'
+    sprite: s32'mle9_02', 2147483647
+    Unknown2178: 
+    Unknown23: 46
+    Unknown98: 0
+    recoveryState: 
+    Unknown176: 1
+    storeValue: (NEXT_ARG_IS_VAR), 45, 0, 1
+    Unknown166: 0
+    Unknown164: 0
+    storeValue: (NEXT_ARG_IS_VAR), 52, 0, 1
+    Unknown3: 
+    setMarker: s32'reaction'
+    sprite: s32'mle9_02', 2
+    recoveryState: 
+    Unknown2178: 
+    Unknown23: 46
+    Unknown99: 1
+    physicsXImpulse: -8750
+    physicsYImpulse: 17500
+    setGravity: 1050
+    Unknown166: 30000
+    sprite: s32'mle9_02', 2147483647
+    upon: 2
+        Unknown14: s32'landing'
+        endUpon: 
+    Unknown3: 
     endState: 

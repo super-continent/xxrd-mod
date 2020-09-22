@@ -877,6 +877,17 @@ startSubroutine: s32'RoundInit'
         Unknown1538: 
         Unknown1532: 
         endMoveRegister: 
+    addMove: s32'LandSilentForce'
+        moveType: (SPECIAL)
+        characterState: (STANDING)
+        moveInput: (INPUT_236)
+        moveInput: (INPUT_PRESS_P)
+        Unknown1392: 2
+        Unknown1498: -566, -202, 418, 410
+        Unknown1536: 
+        Unknown1550: 
+        endMoveRegister: 
+	registerFunc: s32'LandSilentForce'
 	registerFunc: s32'RedRomanCancel'
 	registerFunc: s32'FBPrettyMaze'
 	registerFunc: s32'FBAirMaze'
@@ -3521,6 +3532,8 @@ startState: s32'NmlAtkAir5C'
 startState: s32'NmlAtkAir5D'
     upon: (IMMEDIATE)
         Unknown725: 1
+		addGatlingOption: s32'CmnFAirDash'
+		addGatlingOption: s32'CmnBAirDash'
         attackLevel: 2
         damage: 28
         hitAirPushbackX: 14000
@@ -6097,4 +6110,32 @@ startState: s32'MilliaCopter'
     sprite: s32'mll253_10', 3
     sprite: s32'mll253_11', 3
     sprite: s32'mll253_12', 3
+    endState: 
+
+startState: s32'LandSilentForce'
+    upon: (IMMEDIATE)
+        endUpon: 
+    sprite: s32'mll402_00', 3
+    Unknown1883: 
+    tensionGain: 25
+    multiplyCarriedMomentum: 110
+    sprite: s32'mll402_01', 2
+    sprite: s32'mll402_02', 2
+    Unknown448: s32'mll_tandemtop_twinkle', 100
+    sprite: s32'mll402_03', 1
+    playSFX: s32'SE_SWINGH'
+    playCharacterSFX: s32'1'
+    createObject2: s32'SFHorizontal', 119
+    sprite: s32'mll402_03', 1
+    sprite: s32'mll402_03', 1
+    sprite: s32'mll402_04', 1
+    sprite: s32'mll402_04', 1
+    sprite: s32'mll402_04', 1
+    sprite: s32'mll402_05', 1
+    sprite: s32'mll402_06', 2
+    sprite: s32'mll402_07', 2
+    sprite: s32'mll402_08', 2
+    sprite: s32'mll402_09', 2
+    sprite: s32'mll402_10', 2
+    sprite: s32'mll402_11', 1
     endState: 

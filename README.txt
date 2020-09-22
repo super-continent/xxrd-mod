@@ -45,11 +45,13 @@ Raven:
 -236D in the air is now a force break that shoots 3 needle projectiles, covering most space on the screen
 
 Millia:
+-236P is now a move that throws pin horizontally forward, similar to 236P on her EX version in +R
 -236D on the ground is now a force break that functions as her +R Pretty Maze
 -236D in the air is now a force break that functions as Air Pretty Maze, it has 44 frames untech time on hit and wall bounces
 -Lust Shaker(Mash S or 214S) can be whiff-canceled into 214D, which is now a force break similar to her +R Longinus
 -2H in the air is now Millia-Copter, currently unchanged from its SIGN version
--jD is now airdash-cancelable
+-jD is now forward airdash-cancelable
+-jH is now airdash-cancelable
 -fS is now jump-cancelable (I'm so sorry)
 
 -------------------------------------------------------------------------
