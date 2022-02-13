@@ -1,1754 +1,1754 @@
 startState: s32'dmy'
-    sprite: s32'null', 1
-    endState: 
+  sprite: s32'null', 1
+  endState: 
 
 startState: s32'Mist'
-    upon: (IMMEDIATE)
-        Unknown458: 3
-        Unknown1601: 1
-        upon: (FRAME_STEP)
-            ifOperation: (IS_GREATER_OR_EQUAL), (NEXT_ARG_IS_VAR), 13, 0, 100
-                Unknown19: 23
-                endIf: 
-            ifOperation: (IS_LESSER_OR_EQUAL), (NEXT_ARG_IS_VAR), 96, 0, 280000
-                Unknown19: 23
-                Unknown32: s32'MistKuttsuku'
-                createObject2: s32'MistKuttsuku', 100
-                endIf: 
-            endUpon: 
-        endUpon: 
-    sprite: s32'JYE1_XX', 3
-    physicsXImpulse: 6125
-    createObject2: s32'MistEffParts', 0
-    setMarker: s32'loop'
-    sprite: s32'JYE1_XX', 4
-    createObject2: s32'MistEffParts', 1
-    sprite: s32'JYE1_XX', 3
-    createObject2: s32'MistEffParts', 2
-    sprite: s32'JYE1_XX', 4
-    createObject2: s32'MistEffParts', 3
-    sprite: s32'JYE1_XX', 3
-    createObject2: s32'MistEffParts', 0
-    Unknown3: 
-    goToMarker: s32'loop'
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown1601: 1
+    upon: (FRAME_STEP)
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 100
+        Unknown19: 23
+        endIf: 
+      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 96, (STATIC), 280000
+        Unknown19: 23
+        Unknown32: s32'MistKuttsuku'
+        createObject2: s32'MistKuttsuku', 100
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'JYE1_XX', 3
+  physicsXImpulse: 6125
+  createObject2: s32'MistEffParts', 0
+  setMarker: s32'loop'
+  sprite: s32'JYE1_XX', 4
+  createObject2: s32'MistEffParts', 1
+  sprite: s32'JYE1_XX', 3
+  createObject2: s32'MistEffParts', 2
+  sprite: s32'JYE1_XX', 4
+  createObject2: s32'MistEffParts', 3
+  sprite: s32'JYE1_XX', 3
+  createObject2: s32'MistEffParts', 0
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
 
 startState: s32'MistKuttsuku'
-    upon: (IMMEDIATE)
-        Unknown458: 3
-        storeValue: (NEXT_ARG_IS_VAR), 5, 0, 360
-        Unknown2320: s32'Mist_Harituku'
-        upon: (FRAME_STEP)
-            if: (NEXT_ARG_IS_VAR), 5
-                Unknown54: 0, 2, 5, 0, -1
-                ifNot: 2, 5
-                    Unknown19: 23
-                    endIf: 
-                endIf: 
-            Unknown178: 22
-            Unknown53: 23, 2, 32, 22, 2, 32
-            endUpon: 
-        endUpon: 
-    setMarker: s32'loop'
-    sprite: s32'JYE1_XX', 3
-    Unknown2164: '0x16000000900000000000000000000000'
-    createObject2: s32'MistEffParts', 130
-    Unknown3: 
-    goToMarker: s32'loop'
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    storeValue: (VARIABLE), 5, (STATIC), 360
+    Unknown2320: s32'Mist_Harituku'
+    upon: (FRAME_STEP)
+      if: (NEXT_ARG_IS_VAR), 5
+        Unknown54: 0, 2, 5, 0, -1
+        ifNot: 2, 5
+          Unknown19: 23
+          endIf: 
+        endIf: 
+      Unknown178: 22
+      Unknown53: 23, 2, 32, 22, 2, 32
+      endUpon: 
+    endUpon: 
+  setMarker: s32'loop'
+  sprite: s32'JYE1_XX', 3
+  Unknown2164: '0x16000000900000000000000000000000'
+  createObject2: s32'MistEffParts', 130
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
 
 startState: s32'MistEffParts'
-    sprite: s32'null', 60
-    Unknown450: s32'jhn_mistsmoke'
-    endState: 
+  sprite: s32'null', 60
+  Unknown450: s32'jhn_mistsmoke'
+  endState: 
 
 startState: s32'FlyingCoin'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        Unknown1110: 1
-        attackLevel: 2
-        Unknown1028: 1
-        damage: 10
-        riscMinus: 12
-        setThrowRange: 0
-        Unknown35: 2, s32'bound'
-        ifNot: 2, 115
-            Unknown450: s32'jhn_coin_throw'
-            endIf: 
-        else: 
-            callSubroutine: s32'jhn_LinkParticleForCoinLoop', 0, 0, 0, 0, 0, 0, 0, 0
-            endElse: 
-        createObject2: s32'Coin_ribbon', 100
-        ifNot: 2, 32
-            Unknown2018: 1
-            endIf: 
-        upon: (HIT_OR_GUARD)
-            Unknown111: -100
-            physicsYImpulse: 7000
-            setGravity: 1050
-            Unknown111: 20
-            endUpon: 
-        upon: (HIT)
-            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 4, 0, 2
-                Unknown54: 0, 2, 4, 0, 1
-                endIf: 
-            endUpon: 
-        Unknown2149: 1
-        endUpon: 
-    sprite: s32'JYEF_00', 2
-    hit: 
-    physicsYImpulse: 45000
-    setGravity: 2275
-    physicsXImpulse: 6500
+  upon: (IMMEDIATE)
+    Unknown244: 
+    Unknown1110: 1
+    attackLevel: 2
+    Unknown1028: 1
+    damage: 10
+    riscMinus: 12
+    setThrowRange: 0
+    Unknown35: 2, s32'bound'
     ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_00', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    setMarker: s32'loop'
-    sprite: s32'JYEF_01', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_01', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_02', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_02', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_03', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_03', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_04', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_04', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_05', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_05', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_00', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_00', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    Unknown3: 
-    goToMarker: s32'loop'
-    setMarker: s32'bound'
-    sprite: s32'null', 3
-    recoveryState: 
-    physicsYImpulse: 7000
-    setGravity: 1050
-    Unknown111: 20
-    Unknown35: 2, s32'landing'
-    setMarker: s32'boundloop'
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    Unknown3: 
-    goToMarker: s32'boundloop'
-    setMarker: s32'landing'
-    sprite: s32'null', 2
-    ifNot: 2, 115
-        Unknown450: s32'jhn_coin_floor'
-        endIf: 
+      Unknown450: s32'jhn_coin_throw'
+      endIf: 
     else: 
-        callSubroutine: s32'jhn_LinkParticleForCoinEnd', 0, 0, 0, 0, 0, 0, 0, 0
-        endElse: 
-    recoveryState: 
-    physicsYImpulse: 0
-    physicsXImpulse: 0
-    setGravity: 0
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    endState: 
+      callSubroutine: s32'jhn_LinkParticleForCoinLoop', 0, 0, 0, 0, 0, 0, 0, 0
+      endElse: 
+    createObject2: s32'Coin_ribbon', 100
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    upon: (HIT_OR_GUARD)
+      Unknown111: -100
+      physicsYImpulse: 7000
+      setGravity: 1050
+      Unknown111: 20
+      endUpon: 
+    upon: (HIT)
+      ifOperation: (IS_LESSER), (VARIABLE), 4, (STATIC), 2
+        Unknown54: 0, 2, 4, 0, 1
+        endIf: 
+      endUpon: 
+    Unknown2149: 1
+    endUpon: 
+  sprite: s32'JYEF_00', 2
+  hit: 
+  physicsYImpulse: 45000
+  setGravity: 2275
+  physicsXImpulse: 6500
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_00', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  setMarker: s32'loop'
+  sprite: s32'JYEF_01', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_01', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_02', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_02', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_03', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_03', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_04', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_04', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_05', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_05', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_00', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_00', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'bound'
+  sprite: s32'null', 3
+  recoveryState: 
+  physicsYImpulse: 7000
+  setGravity: 1050
+  Unknown111: 20
+  Unknown35: 2, s32'landing'
+  setMarker: s32'boundloop'
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  Unknown3: 
+  goToMarker: s32'boundloop'
+  setMarker: s32'landing'
+  sprite: s32'null', 2
+  ifNot: 2, 115
+    Unknown450: s32'jhn_coin_floor'
+    endIf: 
+  else: 
+    callSubroutine: s32'jhn_LinkParticleForCoinEnd', 0, 0, 0, 0, 0, 0, 0, 0
+    endElse: 
+  recoveryState: 
+  physicsYImpulse: 0
+  physicsXImpulse: 0
+  setGravity: 0
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  endState: 
 
 startState: s32'Coin'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        Unknown1110: 1
-        attackLevel: 2
-        Unknown1028: 1
-        damage: 10
-        riscMinus: 12
-        setThrowRange: 0
-        Unknown35: 2, s32'bound'
-        ifNot: 2, 115
-            Unknown450: s32'jhn_coin_throw'
-            endIf: 
-        else: 
-            callSubroutine: s32'jhn_LinkParticleForCoinLoop', 0, 0, 0, 0, 0, 0, 0, 0
-            endElse: 
-        createObject2: s32'Coin_ribbon', 100
-        ifNot: 2, 32
-            Unknown2018: 1
-            endIf: 
-        upon: (HIT_OR_GUARD)
-            Unknown111: -100
-            physicsYImpulse: 7250
-            setGravity: 950
-            Unknown111: 20
-            endUpon: 
-        upon: (HIT)
-            ifOperation: (IS_LESSER), (NEXT_ARG_IS_VAR), 4, 0, 2
-                Unknown54: 0, 2, 4, 0, 1
-                endIf: 
-            endUpon: 
-        Unknown2149: 1
-        endUpon: 
-    sprite: s32'JYEF_00', 2
-    hit: 
-    physicsYImpulse: 24000
-    setGravity: 2275
-    physicsXImpulse: 14875
+  upon: (IMMEDIATE)
+    Unknown244: 
+    Unknown1110: 1
+    attackLevel: 2
+    Unknown1028: 1
+    damage: 10
+    riscMinus: 12
+    setThrowRange: 0
+    Unknown35: 2, s32'bound'
     ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_00', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    setMarker: s32'loop'
-    sprite: s32'JYEF_01', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_01', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_02', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_02', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_03', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_03', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_04', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_04', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_05', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_05', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_00', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    sprite: s32'JYEF_00', 2
-    ifNot: 2, 115
-        Unknown448: s32'jhn_coin_twinkle', 0
-        endIf: 
-    Unknown3: 
-    goToMarker: s32'loop'
-    setMarker: s32'bound'
-    sprite: s32'null', 3
-    recoveryState: 
-    physicsYImpulse: 7000
-    setGravity: 1050
-    Unknown111: 20
-    Unknown35: 2, s32'landing'
-    setMarker: s32'boundloop'
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    sprite: s32'null', 3
-    Unknown3: 
-    goToMarker: s32'boundloop'
-    setMarker: s32'landing'
-    sprite: s32'null', 2
-    ifNot: 2, 115
-        Unknown450: s32'jhn_coin_floor'
-        endIf: 
+      Unknown450: s32'jhn_coin_throw'
+      endIf: 
     else: 
-        callSubroutine: s32'jhn_LinkParticleForCoinEnd', 0, 0, 0, 0, 0, 0, 0, 0
-        endElse: 
-    recoveryState: 
-    physicsYImpulse: 0
-    physicsXImpulse: 0
-    setGravity: 0
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    sprite: s32'null', 2
-    endState: 
+      callSubroutine: s32'jhn_LinkParticleForCoinLoop', 0, 0, 0, 0, 0, 0, 0, 0
+      endElse: 
+    createObject2: s32'Coin_ribbon', 100
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    upon: (HIT_OR_GUARD)
+      Unknown111: -100
+      physicsYImpulse: 7250
+      setGravity: 950
+      Unknown111: 20
+      endUpon: 
+    upon: (HIT)
+      ifOperation: (IS_LESSER), (VARIABLE), 4, (STATIC), 2
+        Unknown54: 0, 2, 4, 0, 1
+        endIf: 
+      endUpon: 
+    Unknown2149: 1
+    endUpon: 
+  sprite: s32'JYEF_00', 2
+  hit: 
+  physicsYImpulse: 18000
+  setGravity: 2100
+  physicsXImpulse: 19500
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_00', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  setMarker: s32'loop'
+  sprite: s32'JYEF_01', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_01', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_02', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_02', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_03', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_03', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_04', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_04', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_05', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_05', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_00', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  sprite: s32'JYEF_00', 2
+  ifNot: 2, 115
+    Unknown448: s32'jhn_coin_twinkle', 0
+    endIf: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'bound'
+  sprite: s32'null', 3
+  recoveryState: 
+  physicsYImpulse: 7000
+  setGravity: 1050
+  Unknown111: 20
+  Unknown35: 2, s32'landing'
+  setMarker: s32'boundloop'
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  Unknown3: 
+  goToMarker: s32'boundloop'
+  setMarker: s32'landing'
+  sprite: s32'null', 2
+  ifNot: 2, 115
+    Unknown450: s32'jhn_coin_floor'
+    endIf: 
+  else: 
+    callSubroutine: s32'jhn_LinkParticleForCoinEnd', 0, 0, 0, 0, 0, 0, 0, 0
+    endElse: 
+  recoveryState: 
+  physicsYImpulse: 0
+  physicsXImpulse: 0
+  setGravity: 0
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  endState: 
 
 startState: s32'TreasureGet'
-    upon: (IMMEDIATE)
-        Unknown454: 2
-        Unknown457: 2
-        createObject2: s32'Treasure_get', 100
-        Unknown1699: 200000
-        Unknown94: 80000
-        Unknown99: 30000
-        Unknown241: 
-        endUpon: 
-    sprite: s32'null', 4
-    callSubroutine: s32'jhn_LinkParticleForCoinGet', 0, 0, 0, 0, 0, 0, 0, 0
-    sprite: s32'null', 52
-    Unknown92: 0
-    Unknown99: -30000
-    Unknown448: s32'jhn_treasure_end', 100
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 2
+    Unknown457: 2
+    createObject2: s32'Treasure_get', 100
+    Unknown1699: 200000
+    Unknown94: 80000
+    Unknown99: 30000
+    Unknown241: 
+    endUpon: 
+  sprite: s32'null', 4
+  callSubroutine: s32'jhn_LinkParticleForCoinGet', 0, 0, 0, 0, 0, 0, 0, 0
+  sprite: s32'null', 52
+  Unknown92: 0
+  Unknown99: -30000
+  Unknown448: s32'jhn_treasure_end', 100
+  endState: 
 
 startState: s32'Jackhound_Treasure'
-    upon: (IMMEDIATE)
-        Unknown454: 2
-        Unknown457: 2
-        createObject2: s32'Treasure_get', 100
-        Unknown1699: 200000
-        Unknown94: 80000
-        Unknown99: 30000
-        Unknown241: 
-        endUpon: 
-    sprite: s32'null', 4
-    callSubroutine: s32'jhn_LinkParticleForCoinGet', 0, 0, 0, 0, 0, 0, 0, 0
-    sprite: s32'null', 10
-    Unknown92: 0
-    Unknown99: -30000
-    Unknown448: s32'jhn_treasure_end', 100
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 2
+    Unknown457: 2
+    createObject2: s32'Treasure_get', 100
+    Unknown1699: 200000
+    Unknown94: 80000
+    Unknown99: 30000
+    Unknown241: 
+    endUpon: 
+  sprite: s32'null', 4
+  callSubroutine: s32'jhn_LinkParticleForCoinGet', 0, 0, 0, 0, 0, 0, 0, 0
+  sprite: s32'null', 10
+  Unknown92: 0
+  Unknown99: -30000
+  Unknown448: s32'jhn_treasure_end', 100
+  endState: 
 
 startState: s32'Coin_ribbon'
-    upon: (IMMEDIATE)
-        Unknown454: 2
-        Unknown458: 2
-        Unknown457: 2
-        Unknown450: s32'jhn_coin_ribbon'
-        endUpon: 
-    sprite: s32'null', 2147483647
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 2
+    Unknown458: 2
+    Unknown457: 2
+    Unknown450: s32'jhn_coin_ribbon'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
 
 startState: s32'201atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_201bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_201bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'202atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown450: s32'jhn_202hit'
-        endUpon: 
-    sprite: s32'null', 40
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'jhn_202hit'
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
 
 startState: s32'203atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_203bake01'
-        endUpon: 
-    sprite: s32'null', 40
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_203bake01'
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
 
 startState: s32'204atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_204bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_204bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'205atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_205bake02'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_205bake02'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'211atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_211bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_211bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'231atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_231bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_231bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'213atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_213bake01'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_213bake01'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'232atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_232bake01'
-        endUpon: 
-    sprite: s32'null', 40
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_232bake01'
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
 
 startState: s32'233atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_234bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_234bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'234atk1'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_234bake01'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_234bake01'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'234atk2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_234bake02'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_234bake02'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'251atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_251bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_251bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'252atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_252bake01'
-        endUpon: 
-    sprite: s32'null', 40
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_252bake01'
+    endUpon: 
+  sprite: s32'null', 40
+  endState: 
 
 startState: s32'Noutou'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_noutou01'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_noutou01'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'253bake1'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_253bake01'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_253bake01'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'253bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_253bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_253bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'253bake3'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_253bake03'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_253bake03'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'254atk'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_254bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_254bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'401High_kira'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown1769: 1
-    Unknown450: s32'jhn_401high1_twinkle3'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown1769: 1
+  Unknown450: s32'jhn_401high1_twinkle3'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'409High_kira'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown1769: 1
-    Unknown450: s32'jhn_409high1_twinkle3'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown1769: 1
+  Unknown450: s32'jhn_409high1_twinkle3'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'401High_bake1'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        upon: (AFTER_EXIT)
-            Unknown454: 0
-            endUpon: 
-        endUpon: 
-    sprite: s32'null', 2
-    Unknown1769: 1
-    Unknown450: s32'jhn_401high1_bake01'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    upon: (AFTER_EXIT)
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown1769: 1
+  Unknown450: s32'jhn_401high1_bake01'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'401High_bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_401high1_bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_401high1_bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'409High_bake1'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        upon: (AFTER_EXIT)
-            Unknown454: 0
-            endUpon: 
-        endUpon: 
-    sprite: s32'null', 2
-    Unknown1769: 1
-    Unknown450: s32'jhn_409high1_bake01'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    upon: (AFTER_EXIT)
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown1769: 1
+  Unknown450: s32'jhn_409high1_bake01'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'409High_bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_409high1_bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_409high1_bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'402Mid_kira'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown1769: 1
-    Unknown450: s32'jhn_402mid1_twinkle3'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown1769: 1
+  Unknown450: s32'jhn_402mid1_twinkle3'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'410Mid_kira'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown1769: 1
-    Unknown450: s32'jhn_410mid1_twinkle3'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown1769: 1
+  Unknown450: s32'jhn_410mid1_twinkle3'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'402Mid_bake1'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        upon: (AFTER_EXIT)
-            Unknown454: 0
-            endUpon: 
-        endUpon: 
-    sprite: s32'null', 2
-    Unknown1769: 1
-    Unknown450: s32'jhn_402mid1_bake01'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    upon: (AFTER_EXIT)
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown1769: 1
+  Unknown450: s32'jhn_402mid1_bake01'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'402Mid_bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_402mid1_bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_402mid1_bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'410Mid_bake1'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        upon: (AFTER_EXIT)
-            Unknown454: 0
-            endUpon: 
-        endUpon: 
-    sprite: s32'null', 2
-    Unknown1769: 1
-    Unknown450: s32'jhn_410mid1_bake01'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    upon: (AFTER_EXIT)
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown1769: 1
+  Unknown450: s32'jhn_410mid1_bake01'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'410Mid_bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_410mid1_bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_410mid1_bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'403Low_kira'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown1769: 1
-    Unknown450: s32'jhn_403low1_twinkle3'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown1769: 1
+  Unknown450: s32'jhn_403low1_twinkle3'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'411Low_kira'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown1769: 1
-    Unknown450: s32'jhn_411low1_twinkle3'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown1769: 1
+  Unknown450: s32'jhn_411low1_twinkle3'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'403Low_bake1'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        upon: (AFTER_EXIT)
-            Unknown454: 0
-            endUpon: 
-        endUpon: 
-    sprite: s32'null', 2
-    Unknown1769: 1
-    Unknown450: s32'jhn_403low1_bake01'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    upon: (AFTER_EXIT)
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown1769: 1
+  Unknown450: s32'jhn_403low1_bake01'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'403Low_bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_403low1_bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_403low1_bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'411Low_bake1'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        upon: (AFTER_EXIT)
-            Unknown454: 0
-            endUpon: 
-        endUpon: 
-    sprite: s32'null', 2
-    Unknown1769: 1
-    Unknown450: s32'jhn_411low1_bake01'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    upon: (AFTER_EXIT)
+      Unknown454: 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2
+  Unknown1769: 1
+  Unknown450: s32'jhn_411low1_bake01'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'411Low_bake2'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_411low1_bake02'
-        endUpon: 
-    sprite: s32'null', 20
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_411low1_bake02'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
 
 startState: s32'MistHit_High'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        Unknown164: 30000
-        endUpon: 
-    sprite: s32'null', 55
-    Unknown448: s32'cmn_slash_spblood', 100
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    Unknown164: 30000
+    endUpon: 
+  sprite: s32'null', 55
+  Unknown448: s32'cmn_slash_spblood', 100
+  endState: 
 
 startState: s32'MistHit_Mid'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        endUpon: 
-    sprite: s32'null', 55
-    Unknown448: s32'cmn_slash_spblood', 100
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    endUpon: 
+  sprite: s32'null', 55
+  Unknown448: s32'cmn_slash_spblood', 100
+  endState: 
 
 startState: s32'MistHit_Low'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        Unknown164: -30000
-        endUpon: 
-    sprite: s32'null', 55
-    createObject2: s32'MistHit_Lowblood', 100
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    Unknown164: -30000
+    endUpon: 
+  sprite: s32'null', 55
+  createObject2: s32'MistHit_Lowblood', 100
+  endState: 
 
 startState: s32'MistHit_Lowblood'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_spblood'
-        Unknown94: 50000
-        Unknown99: 10000
-        Unknown164: -40000
-        physicsYImpulse: 1500
-        endUpon: 
-    sprite: s32'null', 55
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_spblood'
+    Unknown94: 50000
+    Unknown99: 10000
+    Unknown164: -40000
+    physicsYImpulse: 1500
+    endUpon: 
+  sprite: s32'null', 55
+  endState: 
 
 startState: s32'Sinwaza_Kick'
-    upon: (IMMEDIATE)
-        Unknown456: 3
-        Unknown457: 3
-        Unknown1934: 1
-        endUpon: 
-    sprite: s32'sinwaza_kick', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown457: 3
+    Unknown1934: 1
+    endUpon: 
+  sprite: s32'sinwaza_kick', 1
+  endState: 
 
 startState: s32'416DB_atk1st'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        endUpon: 
-    sprite: s32'null', 3
-    Unknown1769: 1
-    Unknown450: s32'jhn_db_atk1st'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    endUpon: 
+  sprite: s32'null', 3
+  Unknown1769: 1
+  Unknown450: s32'jhn_db_atk1st'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'416DB_atk2nd'
-    upon: (IMMEDIATE)
-        endUpon: 
-    sprite: s32'null', 8
-    Unknown1769: 1
-    Unknown450: s32'jhn_db_atk'
-    sprite: s32'null', 30
-    Unknown1769: 0
-    endState: 
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 8
+  Unknown1769: 1
+  Unknown450: s32'jhn_db_atk'
+  sprite: s32'null', 30
+  Unknown1769: 0
+  endState: 
 
 startState: s32'Sinwaza_Shot2'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        tensionGainOnConnect: 10
-        damage: 55
-        untechableTime: 22
-        hitAirPushbackX: 8000
-        hitAirPushbackY: 16000
-        groundHitEffect: (AIR_FACE_UP)
-        attackLevel: 2
-        Unknown1028: 3
-        hitPushbackX: 0
-        Unknown1108: 90
-        setProration: 90
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown454: 3
-    sprite: s32'sinwaza_fire_rx', 6
-    Unknown454: 0
-    createObject2: s32'416DB_atk2nd', 100
-    Unknown1148: s32'SE_HITNIKUC'
-    grabOrRelease: 
-    physicsYImpulse: -33000
-    Unknown159: 100
-    sprite: s32'sinwaza_fire_rx', 2
-    sprite: s32'sinwaza_fire_rx', 1
-    setObjectWidth: 800
-    Unknown94: 12000
-    sprite: s32'sinwaza_fire_rx', 1
-    setObjectWidth: 600
-    Unknown94: 12000
-    sprite: s32'null', 1
-    recoveryState: 
-    Unknown3: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown244: 
+    tensionGainOnConnect: 10
+    damage: 55
+    untechableTime: 22
+    hitAirPushbackX: 8000
+    hitAirPushbackY: 16000
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 3
+    hitPushbackX: 0
+    Unknown1108: 90
+    setProration: 90
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown454: 3
+  sprite: s32'sinwaza_fire_rx', 6
+  Unknown454: 0
+  createObject2: s32'416DB_atk2nd', 100
+  Unknown1148: s32'SE_HITNIKUC'
+  grabOrRelease: 
+  physicsYImpulse: -33000
+  Unknown159: 100
+  sprite: s32'sinwaza_fire_rx', 2
+  sprite: s32'sinwaza_fire_rx', 1
+  setObjectWidth: 800
+  Unknown94: 12000
+  sprite: s32'sinwaza_fire_rx', 1
+  setObjectWidth: 600
+  Unknown94: 12000
+  sprite: s32'null', 1
+  recoveryState: 
+  Unknown3: 
+  endState: 
 
 startState: s32'Sinwaza_Shot2_Air'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        tensionGainOnConnect: 10
-        damage: 40
-        groundHitEffect: (AIR_FACE_UP)
-        attackLevel: 2
-        Unknown1028: 3
-        hitPushbackX: 0
-        untechableTime: 22
-        hitAirPushbackX: 8000
-        hitAirPushbackY: 16000
-        Unknown1108: 90
-        setProration: 90
-        endUpon: 
-    sprite: s32'null', 4
-    Unknown454: 3
-    sprite: s32'sinwaza_fire_air_rx', 6
-    Unknown454: 0
-    createObject2: s32'416DB_atk2nd', 100
-    Unknown1148: s32'SE_HITNIKUC'
-    grabOrRelease: 
-    physicsYImpulse: -33000
-    Unknown159: 100
-    sprite: s32'sinwaza_fire_air_rx', 2
-    sprite: s32'sinwaza_fire_air_rx', 1
-    setObjectWidth: 800
-    Unknown94: 12000
-    sprite: s32'sinwaza_fire_air_rx', 1
-    setObjectWidth: 600
-    Unknown94: 12000
-    sprite: s32'null', 1
-    recoveryState: 
-    Unknown3: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown244: 
+    tensionGainOnConnect: 10
+    damage: 40
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 3
+    hitPushbackX: 0
+    untechableTime: 22
+    hitAirPushbackX: 8000
+    hitAirPushbackY: 16000
+    Unknown1108: 90
+    setProration: 90
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown454: 3
+  sprite: s32'sinwaza_fire_air_rx', 6
+  Unknown454: 0
+  createObject2: s32'416DB_atk2nd', 100
+  Unknown1148: s32'SE_HITNIKUC'
+  grabOrRelease: 
+  physicsYImpulse: -33000
+  Unknown159: 100
+  sprite: s32'sinwaza_fire_air_rx', 2
+  sprite: s32'sinwaza_fire_air_rx', 1
+  setObjectWidth: 800
+  Unknown94: 12000
+  sprite: s32'sinwaza_fire_air_rx', 1
+  setObjectWidth: 600
+  Unknown94: 12000
+  sprite: s32'null', 1
+  recoveryState: 
+  Unknown3: 
+  endState: 
 
 startState: s32'MistFinerALv0sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn401_03sousai', 1
-    hit: 
-    sprite: s32'jhn401_04sousai', 1
-    sprite: s32'jhn401_05sousai', 1
-    sprite: s32'jhn401_06sousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn401_03sousai', 1
+  hit: 
+  sprite: s32'jhn401_04sousai', 1
+  sprite: s32'jhn401_05sousai', 1
+  sprite: s32'jhn401_06sousai', 1
+  endState: 
 
 startState: s32'MistFinerALv2sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn401_03sousai', 1
-    hit: 
-    sprite: s32'jhn401_04sousai', 1
-    sprite: s32'jhn401_05sousai', 1
-    sprite: s32'jhn401_06sousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn401_03sousai', 1
+  hit: 
+  sprite: s32'jhn401_04sousai', 1
+  sprite: s32'jhn401_05sousai', 1
+  sprite: s32'jhn401_06sousai', 1
+  endState: 
 
 startState: s32'MistFinerBLv0sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn402_03sousai', 1
-    hit: 
-    sprite: s32'jhn402_04sousai', 1
-    sprite: s32'jhn402_05sousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn402_03sousai', 1
+  hit: 
+  sprite: s32'jhn402_04sousai', 1
+  sprite: s32'jhn402_05sousai', 1
+  endState: 
 
 startState: s32'MistFinerBLv2sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn402_03exsousai', 1
-    hit: 
-    sprite: s32'jhn402_04exsousai', 1
-    sprite: s32'jhn402_05exsousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn402_03exsousai', 1
+  hit: 
+  sprite: s32'jhn402_04exsousai', 1
+  sprite: s32'jhn402_05exsousai', 1
+  endState: 
 
 startState: s32'MistFinerCLv0sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn403_05sousai', 1
-    hit: 
-    sprite: s32'jhn403_06sousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn403_05sousai', 1
+  hit: 
+  sprite: s32'jhn403_06sousai', 1
+  endState: 
 
 startState: s32'MistFinerCLv2sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn403_05exsousai', 1
-    hit: 
-    sprite: s32'jhn403_06exsousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn403_05exsousai', 1
+  hit: 
+  sprite: s32'jhn403_06exsousai', 1
+  endState: 
 
 startState: s32'AirMistFinerALv0sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn409_04sousai', 1
-    hit: 
-    sprite: s32'jhn409_05sousai', 1
-    sprite: s32'jhn409_06sousai', 2
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn409_04sousai', 1
+  hit: 
+  sprite: s32'jhn409_05sousai', 1
+  sprite: s32'jhn409_06sousai', 2
+  endState: 
 
 startState: s32'AirMistFinerALv2sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn409_04exsousai', 1
-    hit: 
-    sprite: s32'jhn409_05exsousai', 1
-    sprite: s32'jhn409_06exsousai', 2
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn409_04exsousai', 1
+  hit: 
+  sprite: s32'jhn409_05exsousai', 1
+  sprite: s32'jhn409_06exsousai', 2
+  endState: 
 
 startState: s32'AirMistFinerBLv0sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn410_05sousai', 1
-    hit: 
-    sprite: s32'jhn410_06sousai', 1
-    sprite: s32'jhn410_07sousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn410_05sousai', 1
+  hit: 
+  sprite: s32'jhn410_06sousai', 1
+  sprite: s32'jhn410_07sousai', 1
+  endState: 
 
 startState: s32'AirMistFinerBLv2sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn410_05exsousai', 1
-    hit: 
-    sprite: s32'jhn410_06exsousai', 1
-    sprite: s32'jhn410_07exsousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn410_05exsousai', 1
+  hit: 
+  sprite: s32'jhn410_06exsousai', 1
+  sprite: s32'jhn410_07exsousai', 1
+  endState: 
 
 startState: s32'AirMistFinerCLv0sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn411_05sousai', 1
-    hit: 
-    sprite: s32'jhn411_06sousai', 1
-    sprite: s32'jhn411_07sousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn411_05sousai', 1
+  hit: 
+  sprite: s32'jhn411_06sousai', 1
+  sprite: s32'jhn411_07sousai', 1
+  endState: 
 
 startState: s32'AirMistFinerCLv2sousai'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown244: 
-        Unknown1152: 1
-        Unknown1058: 1
-        Unknown1028: 2
-        endUpon: 
-    sprite: s32'jhn411_05exsousai', 1
-    hit: 
-    sprite: s32'jhn411_06exsousai', 1
-    sprite: s32'jhn411_07exsousai', 1
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown244: 
+    Unknown1152: 1
+    Unknown1058: 1
+    Unknown1028: 2
+    endUpon: 
+  sprite: s32'jhn411_05exsousai', 1
+  hit: 
+  sprite: s32'jhn411_06exsousai', 1
+  sprite: s32'jhn411_07exsousai', 1
+  endState: 
 
 startState: s32'Sinwaza_NonShot'
-    upon: (IMMEDIATE)
-        createObject2: s32'416DB_atk2nd', 100
-        endUpon: 
-    sprite: s32'null', 10
-    Unknown3: 
-    endState: 
+  upon: (IMMEDIATE)
+    createObject2: s32'416DB_atk2nd', 100
+    endUpon: 
+  sprite: s32'null', 10
+  Unknown3: 
+  endState: 
 
 startState: s32'DivineFire'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        groundHitEffect: (AIR_FACE_UP)
-        hitEffectFlame: 1
-        attackLevel: 4
-        damage: 50
-        Unknown2233: 1
-        endUpon: 
-    sprite: s32'JYE0_07', 1
-    Unknown1148: s32'SE_HITNIKUC'
-    setObjectSize: 1000
-    grabOrRelease: 
-    sprite: s32'JYE0_07', 1
-    Unknown156: 1200
-    sprite: s32'JYE0_07', 1
-    Unknown156: 1400
-    sprite: s32'JYE0_08', 1
-    Unknown156: 1600
-    sprite: s32'JYE0_08', 1
-    Unknown156: 1800
-    sprite: s32'JYE0_08', 1
-    Unknown156: 2000
-    sprite: s32'JYE0_09', 1
-    Unknown156: 2200
-    sprite: s32'JYE0_09', 1
-    Unknown156: 2400
-    sprite: s32'JYE0_09', 1
-    Unknown156: 2600
-    setObjectWidth: 800
-    sprite: s32'JYE0_07', 1
-    Unknown156: 2800
-    sprite: s32'JYE0_07', 1
-    Unknown156: 3000
-    setObjectWidth: 600
-    recoveryState: 
-    sprite: s32'JYE0_07', 1
-    Unknown156: 3200
-    sprite: s32'JYE0_08', 3
-    Unknown156: 3400
-    setObjectWidth: 400
-    sprite: s32'JYE0_09', 3
-    Unknown156: 4000
-    setObjectWidth: 300
-    sprite: s32'JYE0_07', 3
-    Unknown156: 4600
-    setObjectWidth: 200
-    sprite: s32'JYE0_08', 3
-    Unknown156: 5200
-    setObjectWidth: 100
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_FACE_UP)
+    hitEffectFlame: 1
+    attackLevel: 4
+    damage: 50
+    Unknown2233: 1
+    endUpon: 
+  sprite: s32'JYE0_07', 1
+  Unknown1148: s32'SE_HITNIKUC'
+  setObjectSize: 1000
+  grabOrRelease: 
+  sprite: s32'JYE0_07', 1
+  Unknown156: 1200
+  sprite: s32'JYE0_07', 1
+  Unknown156: 1400
+  sprite: s32'JYE0_08', 1
+  Unknown156: 1600
+  sprite: s32'JYE0_08', 1
+  Unknown156: 1800
+  sprite: s32'JYE0_08', 1
+  Unknown156: 2000
+  sprite: s32'JYE0_09', 1
+  Unknown156: 2200
+  sprite: s32'JYE0_09', 1
+  Unknown156: 2400
+  sprite: s32'JYE0_09', 1
+  Unknown156: 2600
+  setObjectWidth: 800
+  sprite: s32'JYE0_07', 1
+  Unknown156: 2800
+  sprite: s32'JYE0_07', 1
+  Unknown156: 3000
+  setObjectWidth: 600
+  recoveryState: 
+  sprite: s32'JYE0_07', 1
+  Unknown156: 3200
+  sprite: s32'JYE0_08', 3
+  Unknown156: 3400
+  setObjectWidth: 400
+  sprite: s32'JYE0_09', 3
+  Unknown156: 4000
+  setObjectWidth: 300
+  sprite: s32'JYE0_07', 3
+  Unknown156: 4600
+  setObjectWidth: 200
+  sprite: s32'JYE0_08', 3
+  Unknown156: 5200
+  setObjectWidth: 100
+  endState: 
 
 startState: s32'430zan01'
-    upon: (IMMEDIATE)
-        Unknown450: s32'jhn_430zan01'
-        endUpon: 
-    sprite: s32'null', 180
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'jhn_430zan01'
+    endUpon: 
+  sprite: s32'null', 180
+  endState: 
 
 startState: s32'430zan02'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        Unknown450: s32'jhn_430zan02'
-        Unknown242: 
-        endUpon: 
-    sprite: s32'null', 180
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'jhn_430zan02'
+    Unknown242: 
+    endUpon: 
+  sprite: s32'null', 180
+  endState: 
 
 startState: s32'430zan03'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        Unknown450: s32'jhn_430zan03'
-        Unknown242: 
-        endUpon: 
-    sprite: s32'null', 60
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'jhn_430zan03'
+    Unknown242: 
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
 
 startState: s32'430yoin'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_430yoin'
-        endUpon: 
-    sprite: s32'null', 150
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_430yoin'
+    endUpon: 
+  sprite: s32'null', 150
+  endState: 
 
 startState: s32'430Jfire'
-    upon: (IMMEDIATE)
-        Unknown450: s32'jhn_430jfire'
-        Unknown242: 
-        endUpon: 
-    sprite: s32'null', 300
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'jhn_430jfire'
+    Unknown242: 
+    endUpon: 
+  sprite: s32'null', 300
+  endState: 
 
 startState: s32'Jhit1'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        Unknown164: 30000
-        endUpon: 
-    sprite: s32'null', 55
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    Unknown164: 30000
+    endUpon: 
+  sprite: s32'null', 55
+  endState: 
 
 startState: s32'Jhit2'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        Unknown164: 80000
-        endUpon: 
-    sprite: s32'null', 55
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    Unknown164: 80000
+    endUpon: 
+  sprite: s32'null', 55
+  endState: 
 
 startState: s32'Jhit3'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        Unknown164: 105000
-        endUpon: 
-    sprite: s32'null', 55
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    Unknown164: 105000
+    endUpon: 
+  sprite: s32'null', 55
+  endState: 
 
 startState: s32'430Jhit'
-    upon: (IMMEDIATE)
-        createObject2: s32'MistHit_Mid', 100
-        createObject2: s32'MistHit_High', 100
-        endUpon: 
-    sprite: s32'null', 200
-    endState: 
+  upon: (IMMEDIATE)
+    createObject2: s32'MistHit_Mid', 100
+    createObject2: s32'MistHit_High', 100
+    endUpon: 
+  sprite: s32'null', 200
+  endState: 
 
 startState: s32'Chohatu_kurukuru'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_301kurukuru'
-        endUpon: 
-    sprite: s32'null', 120
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_301kurukuru'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
 
 startState: s32'431bake'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown456: 3
-        Unknown450: s32'jhn_431_bake'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown456: 3
+    Unknown450: s32'jhn_431_bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'Treasure_charge'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown450: s32'jhn_treasure_charge'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'jhn_treasure_charge'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'Treasure_chargemax'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        Unknown450: s32'jhn_treasure_chargemax'
-        endUpon: 
-    sprite: s32'null', 30
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'jhn_treasure_chargemax'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
 
 startState: s32'Treasure_zanzo'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        Unknown457: 3
-        Unknown450: s32'jhn_treasure_zanzo'
-        endUpon: 
-    sprite: s32'null', 120
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown457: 3
+    Unknown450: s32'jhn_treasure_zanzo'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
 
 startState: s32'Treasure_get'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_treasure_get'
-        endUpon: 
-    sprite: s32'null', 60
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_treasure_get'
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
 
 startState: s32'Treasure_fail'
-    upon: (IMMEDIATE)
-        Unknown454: 3
-        Unknown450: s32'jhn_treasure_fail'
-        endUpon: 
-    sprite: s32'null', 60
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown454: 3
+    Unknown450: s32'jhn_treasure_fail'
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
 
 startState: s32'Treasure_dash'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_treasure_dash'
-        endUpon: 
-    sprite: s32'null', 55
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_treasure_dash'
+    endUpon: 
+  sprite: s32'null', 55
+  endState: 
 
 startState: s32'Treasure_hit'
-    upon: (IMMEDIATE)
-        Unknown450: s32'cmn_slash_sp'
-        Unknown164: -10000
-        endUpon: 
-    sprite: s32'null', 55
-    Unknown2161: 123, 0, 180000
-    Unknown448: s32'jhn_treasure_gethit', 130
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_slash_sp'
+    Unknown164: -10000
+    endUpon: 
+  sprite: s32'null', 55
+  Unknown2161: 123, 0, 180000
+  Unknown448: s32'jhn_treasure_gethit', 130
+  endState: 
 
 startState: s32'Neoblitz_atk'
-    upon: (IMMEDIATE)
-        Unknown457: 2
-        Unknown454: 2
-        Unknown456: 2
-        Unknown450: s32'jhn_neoblitz'
-        endUpon: 
-    sprite: s32'null', 80
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown456: 2
+    Unknown450: s32'jhn_neoblitz'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
 
 startState: s32'800win'
-    upon: (IMMEDIATE)
-        Unknown457: 3
-        Unknown454: 3
-        Unknown450: s32'jhn_800win_eff'
-        endUpon: 
-    sprite: s32'null', 1000
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown454: 3
+    Unknown450: s32'jhn_800win_eff'
+    endUpon: 
+  sprite: s32'null', 1000
+  endState: 
 
 startState: s32'Ichigeki_1st'
-    upon: (IMMEDIATE)
-        Unknown457: 2
-        Unknown450: s32'jhn_ik_1st'
-        endUpon: 
-    sprite: s32'null', 1500
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown450: s32'jhn_ik_1st'
+    endUpon: 
+  sprite: s32'null', 1500
+  endState: 
 
 startState: s32'Ichigeki_2nd'
-    upon: (IMMEDIATE)
-        Unknown457: 2
-        Unknown450: s32'jhn_ik_2nd'
-        endUpon: 
-    sprite: s32'null', 2147483647
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown450: s32'jhn_ik_2nd'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
 
 startState: s32'Mist_Anti_FD'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        guardType: (NONE)
-        groundHitEffect: (STAGGER)
-        damage: 1
-        riscMinus: 0
-        hitPushbackX: 0
-        Unknown1142: 1
-        disableHitstop: 1
-        Unknown1061: 1
-        Unknown1157: 1
-        Unknown1018: 1
-        Unknown456: 3
-        Unknown454: 0
-        Unknown2001: 3, s32'MistFinerALv0'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 51
-            staggerDuration: 52
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerALv1'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 68
-            staggerDuration: 74
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerALv2'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 102
-            staggerDuration: 70
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerBLv0'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 54
-            staggerDuration: 68
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerBLv1'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 68
-            staggerDuration: 66
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerBLv2'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 102
-            staggerDuration: 74
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerCLv0'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 49
-            staggerDuration: 72
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerCLv1'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 68
-            staggerDuration: 64
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'MistFinerCLv2'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 102
-            staggerDuration: 66
-            stunValue: 0
-            endIf: 
-        endUpon: 
-    sprite: s32'JYEF_01', 2
-    hit: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown244: 
+    guardType: (NONE)
+    groundHitEffect: (STAGGER)
+    damage: 1
+    riscMinus: 0
+    hitPushbackX: 0
+    Unknown1142: 1
+    disableHitstop: 1
+    Unknown1061: 1
+    Unknown1157: 1
+    Unknown1018: 1
+    Unknown456: 3
+    Unknown454: 0
+    Unknown2001: 3, s32'MistFinerALv0'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 51
+      staggerDuration: 52
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerALv1'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 68
+      staggerDuration: 74
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerALv2'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 102
+      staggerDuration: 70
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerBLv0'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 54
+      staggerDuration: 68
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerBLv1'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 68
+      staggerDuration: 66
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerBLv2'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 102
+      staggerDuration: 74
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerCLv0'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 49
+      staggerDuration: 72
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerCLv1'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 68
+      staggerDuration: 64
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'MistFinerCLv2'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 102
+      staggerDuration: 66
+      stunValue: 0
+      endIf: 
+    endUpon: 
+  sprite: s32'JYEF_01', 2
+  hit: 
+  endState: 
 
 startState: s32'Mist_Anti_FD_Air'
-    upon: (IMMEDIATE)
-        Unknown244: 
-        guardType: (NONE)
-        groundHitEffect: (STAGGER)
-        riscMinus: 0
-        hitPushbackX: 0
-        Unknown1142: 1
-        disableHitstop: 1
-        Unknown1061: 1
-        Unknown1157: 1
-        Unknown1018: 1
-        Unknown456: 3
-        Unknown454: 0
-        Unknown2001: 3, s32'AirMistFinerALv0'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 51
-            staggerDuration: 54
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerALv1'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 68
-            staggerDuration: 58
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerALv2'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 93
-            staggerDuration: 66
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerBLv0'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 54
-            staggerDuration: 54
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerBLv1'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 68
-            staggerDuration: 58
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerBLv2'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 93
-            staggerDuration: 66
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerCLv0'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 3
-            damage: 49
-            staggerDuration: 54
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerCLv1'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 68
-            staggerDuration: 58
-            stunValue: 0
-            endIf: 
-        Unknown2001: 3, s32'AirMistFinerCLv2'
-        if: (NEXT_ARG_IS_VAR), 0
-            attackLevel: 4
-            damage: 93
-            staggerDuration: 66
-            stunValue: 0
-            endIf: 
-        endUpon: 
-    sprite: s32'JYEF_01', 2
-    hit: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown244: 
+    guardType: (NONE)
+    groundHitEffect: (STAGGER)
+    riscMinus: 0
+    hitPushbackX: 0
+    Unknown1142: 1
+    disableHitstop: 1
+    Unknown1061: 1
+    Unknown1157: 1
+    Unknown1018: 1
+    Unknown456: 3
+    Unknown454: 0
+    Unknown2001: 3, s32'AirMistFinerALv0'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 51
+      staggerDuration: 54
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerALv1'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 68
+      staggerDuration: 58
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerALv2'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 93
+      staggerDuration: 66
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerBLv0'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 54
+      staggerDuration: 54
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerBLv1'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 68
+      staggerDuration: 58
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerBLv2'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 93
+      staggerDuration: 66
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerCLv0'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 3
+      damage: 49
+      staggerDuration: 54
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerCLv1'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 68
+      staggerDuration: 58
+      stunValue: 0
+      endIf: 
+    Unknown2001: 3, s32'AirMistFinerCLv2'
+    if: (NEXT_ARG_IS_VAR), 0
+      attackLevel: 4
+      damage: 93
+      staggerDuration: 66
+      stunValue: 0
+      endIf: 
+    endUpon: 
+  sprite: s32'JYEF_01', 2
+  hit: 
+  endState: 
 
 startState: s32'ACEvtJHN_7A'
-    upon: (IMMEDIATE)
-        Unknown2114: -16777216, -16777216, 1
-        endUpon: 
-    sprite: s32'null', 1
-    Unknown2123: s32'BGM_HeartfullTime'
-    Unknown2122: 
-    sprite: s32'null', 1
-    Unknown2108: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_HeartfullTime'
+  Unknown2122: 
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
 
 startState: s32'ACEvtJHN_7B'
-    upon: (IMMEDIATE)
-        Unknown2114: -16777216, -16777216, 1
-        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-        Unknown2109: '0x636D6E5F6576745F6D61793030300000000000000000000000000000000000004D415900000000000000000000000000000000000000000000000000000000006400000002000000'
-        Unknown2121: 2
-        Unknown94: -300000
-        Unknown40: 
-        endUpon: 
-    sprite: s32'null', 1
-    Unknown2120: '0x486561727466756C6C54696D650000000000000000000000000000000000000000000000'
-    Unknown2115: 40, 0
-    sprite: s32'null', 90
-    Unknown2113: '0x4143325F4A484E5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
-    sprite: s32'null', 140
-    Unknown2114: -16777216, 0, 60
-    Unknown2107: '0x4576656E744A484E3037425F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x636D6E5F6576745F6D617930303300000000000000000000000000000000000002000000'
-    sprite: s32'null', 110
-    Unknown2106: '0x4143325F4A484E5F4237415F30303200000000000000000000000000000000001E000000'
-    Unknown2107: '0x636D6E5F6576745F6D617930303400000000000000000000000000000000000002000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303300000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3037425F303200000000000000000000000000000000000000000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303400000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303500000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3037425F303300000000000000000000000000000000000000000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303600000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3037425F303400000000000000000000000000000000000000000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303700000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303800000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30303900000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3037425F303500000000000000000000000000000000000000000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30313000000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4237415F30313100000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3037425F303600000000000000000000000000000000000000000000'
-    sprite: s32'null', 10
-    sprite: s32'null', 10
-    Unknown2114: 0, -16777216, 10
-    sprite: s32'null', 1
-    Unknown2108: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2109: '0x636D6E5F6576745F6D61793030300000000000000000000000000000000000004D415900000000000000000000000000000000000000000000000000000000006400000002000000'
+    Unknown2121: 2
+    Unknown94: -300000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: '0x486561727466756C6C54696D650000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  sprite: s32'null', 90
+  Unknown2113: '0x4143325F4A484E5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  Unknown2107: '0x4576656E744A484E3037425F303100000000000000000000000000000000000000000000'
+  Unknown2107: '0x636D6E5F6576745F6D617930303300000000000000000000000000000000000002000000'
+  sprite: s32'null', 110
+  Unknown2106: '0x4143325F4A484E5F4237415F30303200000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F6D617930303400000000000000000000000000000000000002000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303300000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3037425F303200000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303400000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3037425F303300000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303600000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3037425F303400000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303700000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303800000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30303900000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3037425F303500000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30313000000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4237415F30313100000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3037425F303600000000000000000000000000000000000000000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
 
 startState: s32'ACEvtJHN_8A'
-    upon: (IMMEDIATE)
-        Unknown2114: -16777216, -16777216, 1
-        Unknown2116: 1000
-        Unknown1734: 1
-        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-        Unknown2121: 0
-        Unknown94: -250000
-        Unknown40: 
-        Unknown2107: '0x4576656E744D41593038415F303100000000000000000000000000000000000001000000'
-        Unknown2121: 1
-        Unknown94: -250000
-        Unknown40: 
-        Unknown2109: '0x636D6E5F6576745F6D61793030300000000000000000000000000000000000004D415900000000000000000000000000000000000000000000000000000000006400000002000000'
-        Unknown2121: 2
-        Unknown94: -450000
-        Unknown1700: -100000
-        Unknown232: -10000
-        Unknown40: 
-        Unknown2109: '0x636D6E5F6576745F67746264303032000000000000000000000000000000000047544244000000000000000000000000000000000000000000000000000000006400000003000000'
-        Unknown2121: 3
-        Unknown94: 1100000
-        Unknown1700: -300000
-        Unknown232: 55000
-        Unknown40: 
-        endUpon: 
-    sprite: s32'null', 1
-    Unknown2123: s32'BGM_MissionStart'
-    Unknown2123: s32'BGM_SeriousTalk'
-    Unknown2122: 
-    sprite: s32'null', 90
-    Unknown2113: '0x4143325F4A484E5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
-    sprite: s32'null', 140
-    Unknown2114: -16777216, 0, 60
-    Unknown2107: '0x4576656E744A484E3037425F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x636D6E5F6576745F6D617930303500000000000000000000000000000000000002000000'
-    sprite: s32'null', 2147483647
-    Unknown2120: '0x4D697373696F6E5374617274000000000000000000000000000000000000000000000000'
-    Unknown2115: 40, 0
-    Unknown2106: '0x4143325F4A484E5F4238415F30303200000000000000000000000000000000001E000000'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2116: 1000
+    Unknown1734: 1
     Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
     Unknown2121: 0
-    physicsXImpulse: 0
+    Unknown94: -250000
     Unknown40: 
-    Unknown2107: '0x636D6E5F6576745F6D617930303000000000000000000000000000000000000002000000'
+    Unknown2107: '0x4576656E744D41593038415F303100000000000000000000000000000000000001000000'
+    Unknown2121: 1
+    Unknown94: -250000
+    Unknown40: 
+    Unknown2109: '0x636D6E5F6576745F6D61793030300000000000000000000000000000000000004D415900000000000000000000000000000000000000000000000000000000006400000002000000'
     Unknown2121: 2
-    physicsXImpulse: 0
+    Unknown94: -450000
+    Unknown1700: -100000
+    Unknown232: -10000
     Unknown40: 
-    Unknown1734: 0
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30303300000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744C454F3038415F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x636D6E5F6576745F6D617930303100000000000000000000000000000000000002000000'
-    sprite: s32'null', 2147483647
-    Unknown2115: 0, 120
-    Unknown2106: '0x4143325F4A484E5F4238415F30303400000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744D41593038415F303200000000000000000000000000000000000001000000'
-    sprite: s32'null', 2147483647
-    Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
-    Unknown2115: 40, 0
-    Unknown2106: '0x4143325F4A484E5F4238415F30303500000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744D41593038415F303300000000000000000000000000000000000001000000'
-    sprite: s32'null', 230
-    Unknown2106: '0x4143325F4A484E5F4238415F30303600000000000000000000000000000000001E000000'
-    upon: (FRAME_STEP)
-        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 30
-            Unknown2107: '0x4576656E744C454F3038415F303200000000000000000000000000000000000000000000'
-            Unknown2107: '0x4576656E744C454F3038415F303200000000000000000000000000000000000001000000'
-            Unknown2107: '0x636D6E5F6576745F6D617930303200000000000000000000000000000000000002000000'
-            endIf: 
-        endUpon: 
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30303700000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30303800000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30303900000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313000000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313100000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313200000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313300000000000000000000000000000000001E000000'
-    sprite: s32'null', 60
-    Unknown2107: '0x4576656E744A484E3038415F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E744C454F3038415F303300000000000000000000000000000000000001000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313400000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3038415F303100000000000000000000000000000000000001000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313500000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3038415F303200000000000000000000000000000000000000000000'
-    Unknown2115: 0, 1
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313600000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3038415F303200000000000000000000000000000000000001000000'
-    sprite: s32'null', 2147483647
-    Unknown2107: '0x4576656E744A484E3038415F303300000000000000000000000000000000000000000000'
-    Unknown2106: '0x4143325F4A484E5F4238415F30313700000000000000000000000000000000001E000000'
-    Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
-    Unknown2115: 40, 0
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238415F30313800000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3038415F303300000000000000000000000000000000000001000000'
-    sprite: s32'null', 10
-    sprite: s32'null', 10
-    Unknown2114: 0, -16777216, 10
-    sprite: s32'null', 1
-    Unknown2108: 
-    endState: 
+    Unknown2109: '0x636D6E5F6576745F67746264303032000000000000000000000000000000000047544244000000000000000000000000000000000000000000000000000000006400000003000000'
+    Unknown2121: 3
+    Unknown94: 1100000
+    Unknown1700: -300000
+    Unknown232: 55000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_MissionStart'
+  Unknown2123: s32'BGM_SeriousTalk'
+  Unknown2122: 
+  sprite: s32'null', 90
+  Unknown2113: '0x4143325F4A484E5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  Unknown2107: '0x4576656E744A484E3037425F303100000000000000000000000000000000000000000000'
+  Unknown2107: '0x636D6E5F6576745F6D617930303500000000000000000000000000000000000002000000'
+  sprite: s32'null', 2147483647
+  Unknown2120: '0x4D697373696F6E5374617274000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  Unknown2106: '0x4143325F4A484E5F4238415F30303200000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+  Unknown2121: 0
+  physicsXImpulse: 0
+  Unknown40: 
+  Unknown2107: '0x636D6E5F6576745F6D617930303000000000000000000000000000000000000002000000'
+  Unknown2121: 2
+  physicsXImpulse: 0
+  Unknown40: 
+  Unknown1734: 0
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30303300000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744C454F3038415F303100000000000000000000000000000000000000000000'
+  Unknown2107: '0x636D6E5F6576745F6D617930303100000000000000000000000000000000000002000000'
+  sprite: s32'null', 2147483647
+  Unknown2115: 0, 120
+  Unknown2106: '0x4143325F4A484E5F4238415F30303400000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744D41593038415F303200000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
+  Unknown2115: 40, 0
+  Unknown2106: '0x4143325F4A484E5F4238415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744D41593038415F303300000000000000000000000000000000000001000000'
+  sprite: s32'null', 230
+  Unknown2106: '0x4143325F4A484E5F4238415F30303600000000000000000000000000000000001E000000'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+      Unknown2107: '0x4576656E744C454F3038415F303200000000000000000000000000000000000000000000'
+      Unknown2107: '0x4576656E744C454F3038415F303200000000000000000000000000000000000001000000'
+      Unknown2107: '0x636D6E5F6576745F6D617930303200000000000000000000000000000000000002000000'
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30303700000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30303800000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30303900000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313000000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313100000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313300000000000000000000000000000000001E000000'
+  sprite: s32'null', 60
+  Unknown2107: '0x4576656E744A484E3038415F303100000000000000000000000000000000000000000000'
+  Unknown2107: '0x4576656E744C454F3038415F303300000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313400000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3038415F303100000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313500000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3038415F303200000000000000000000000000000000000000000000'
+  Unknown2115: 0, 1
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313600000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3038415F303200000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E744A484E3038415F303300000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F4A484E5F4238415F30313700000000000000000000000000000000001E000000'
+  Unknown2120: '0x6D61696E00000000000000000000000000000000000000000000000000000000F0000000'
+  Unknown2115: 40, 0
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238415F30313800000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3038415F303300000000000000000000000000000000000001000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
 
 startState: s32'ACEvtJHN_8B'
-    upon: (IMMEDIATE)
-        Unknown2114: -16777216, 0, 30
-        Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-        Unknown2121: 0
-        Unknown94: 90000
-        Unknown40: 
-        Unknown2107: '0x4576656E744D41593038425F303100000000000000000000000000000000000001000000'
-        Unknown2121: 1
-        Unknown94: -50000
-        Unknown40: 
-        Unknown2109: '0x636D6E5F6576745F6D61793030300000000000000000000000000000000000004D415900000000000000000000000000000000000000000000000000000000006400000002000000'
-        Unknown2121: 2
-        Unknown94: -200000
-        Unknown1700: -150000
-        Unknown232: -10000
-        Unknown40: 
-        Unknown2109: '0x636D6E5F6576745F6B756D6163000000000000000000000000000000000000004B554D41430000000000000000000000000000000000000000000000000000006400000003000000'
-        Unknown2121: 3
-        Unknown94: 300000
-        Unknown99: 1000000
-        Unknown40: 
-        endUpon: 
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303100000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303200000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744A484E3038425F303100000000000000000000000000000000000000000000'
-    sprite: s32'null', 120
-    Unknown2106: '0x4143325F4A484E5F4238425F30303300000000000000000000000000000000001E000000'
-    Unknown2107: '0x636D6E5F6576745F6B756D61635F32000000000000000000000000000000000003000000'
-    playSFX: s32'GG2_060'
-    upon: (FRAME_STEP)
-        ifOperation: (IS_EQUAL), (NEXT_ARG_IS_VAR), 105, 0, 16
-            Unknown2107: '0x4576656E744A484E3038425F303200000000000000000000000000000000000000000000'
-            Unknown2107: '0x4576656E744C454F3038425F303200000000000000000000000000000000000001000000'
-            Unknown2107: '0x636D6E5F6576745F6D617930303600000000000000000000000000000000000002000000'
-            endIf: 
-        endUpon: 
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303400000000000000000000000000000000001E000000'
-    Unknown2107: '0x636D6E5F6576745F6B756D61635F32310000000000000000000000000000000003000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303500000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744C454F3038425F303300000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E744C454F3038425F303300000000000000000000000000000000000001000000'
-    Unknown2107: '0x636D6E5F6576745F6D617930303700000000000000000000000000000000000002000000'
-    sprite: s32'null', 2147483647
-    Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
-    Unknown2115: 40, 0
-    Unknown2106: '0x4143325F4A484E5F4238425F30303600000000000000000000000000000000001E000000'
-    Unknown2107: '0x636D6E5F6576745F6B756D61635F33000000000000000000000000000000000003000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303700000000000000000000000000000000001E000000'
-    Unknown2107: '0x4576656E744D41593038425F303400000000000000000000000000000000000001000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303800000000000000000000000000000000001E000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30303900000000000000000000000000000000001E000000'
-    Unknown2107: '0x636D6E5F6576745F6B756D61635F34000000000000000000000000000000000003000000'
-    sprite: s32'null', 2147483647
-    Unknown2106: '0x4143325F4A484E5F4238425F30313000000000000000000000000000000000001E000000'
-    sprite: s32'null', 10
-    sprite: s32'null', 10
-    Unknown2114: 0, -16777216, 10
-    sprite: s32'null', 1
-    Unknown2108: 
-    endState: 
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, 0, 30
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2121: 0
+    Unknown94: 90000
+    Unknown40: 
+    Unknown2107: '0x4576656E744D41593038425F303100000000000000000000000000000000000001000000'
+    Unknown2121: 1
+    Unknown94: -50000
+    Unknown40: 
+    Unknown2109: '0x636D6E5F6576745F6D61793030300000000000000000000000000000000000004D415900000000000000000000000000000000000000000000000000000000006400000002000000'
+    Unknown2121: 2
+    Unknown94: -200000
+    Unknown1700: -150000
+    Unknown232: -10000
+    Unknown40: 
+    Unknown2109: '0x636D6E5F6576745F6B756D6163000000000000000000000000000000000000004B554D41430000000000000000000000000000000000000000000000000000006400000003000000'
+    Unknown2121: 3
+    Unknown94: 300000
+    Unknown99: 1000000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303100000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303200000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744A484E3038425F303100000000000000000000000000000000000000000000'
+  sprite: s32'null', 120
+  Unknown2106: '0x4143325F4A484E5F4238425F30303300000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F6B756D61635F32000000000000000000000000000000000003000000'
+  playSFX: s32'GG2_060'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 16
+      Unknown2107: '0x4576656E744A484E3038425F303200000000000000000000000000000000000000000000'
+      Unknown2107: '0x4576656E744C454F3038425F303200000000000000000000000000000000000001000000'
+      Unknown2107: '0x636D6E5F6576745F6D617930303600000000000000000000000000000000000002000000'
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303400000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F6B756D61635F32310000000000000000000000000000000003000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303500000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744C454F3038425F303300000000000000000000000000000000000000000000'
+  Unknown2107: '0x4576656E744C454F3038425F303300000000000000000000000000000000000001000000'
+  Unknown2107: '0x636D6E5F6576745F6D617930303700000000000000000000000000000000000002000000'
+  sprite: s32'null', 2147483647
+  Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  Unknown2106: '0x4143325F4A484E5F4238425F30303600000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F6B756D61635F33000000000000000000000000000000000003000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303700000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744D41593038425F303400000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303800000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30303900000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F6B756D61635F34000000000000000000000000000000000003000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4A484E5F4238425F30313000000000000000000000000000000000001E000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
 

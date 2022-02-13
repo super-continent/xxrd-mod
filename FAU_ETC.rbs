@@ -1,0 +1,3857 @@
+startState: s32'dmy'
+  sprite: s32'null', 1
+  endState: 
+
+startState: s32'fau_guardbake_stand'
+  sprite: s32'null', 2147483647
+  Unknown450: s32'fau_guardbake_stand'
+  Unknown454: 2
+  Unknown456: 2
+  Unknown466: 2
+  Unknown457: 2
+  upon: 56
+    Unknown2218: 2, 0, 23, 100
+    endUpon: 
+  endState: 
+
+startState: s32'fau_guardbake_jump'
+  sprite: s32'null', 2147483647
+  Unknown450: s32'fau_guardbake_jump'
+  Unknown454: 2
+  Unknown456: 2
+  Unknown466: 2
+  Unknown457: 2
+  upon: 56
+    Unknown2218: 2, 0, 23, 100
+    endUpon: 
+  endState: 
+
+startState: s32'Item_Pre'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown456: 2
+    Unknown454: 2
+    Unknown466: 2
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+      Unknown450: s32'fau_item_oilcan'
+      Unknown1700: 200000
+      setObjectSize: 850
+      ifNot: 2, 32
+        Unknown2018: 1
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
+      Unknown450: s32'fau_item_blackhole'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+      Unknown450: s32'fau_item_bomb'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+      Unknown450: s32'fau_item_helium_loop'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
+      Unknown450: s32'fau_item_meteo_start'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 5
+      Unknown450: s32'fau_item_hammer'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 6
+      Unknown451: s32'chibi', s32'chibi_tojo'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 7
+      Unknown450: s32'fau_item_poisonflask_loop'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 8
+      Unknown450: s32'fau_item_choco'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 9
+      Unknown450: s32'fau_item_donuts'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 10
+      Unknown451: s32'jumpdai', s32'jumpdai001'
+      if: (NEXT_ARG_IS_VAR), 32
+        Unknown2019: 1
+        endIf: 
+      Unknown2021: 0
+      setObjectSize: 10000
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 11
+      Unknown450: s32'fau_item_100t'
+      ifNot: 2, 32
+        Unknown2018: 1
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 12
+      Unknown450: s32'fau_item_hanabidama'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 13
+      Unknown450: s32'fau_item_meteo_special'
+      setObjectSize: 200
+      Unknown164: 120000
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 14
+      Unknown450: s32'fau_item_goldenhammer'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 15
+      Unknown451: s32'chibi', s32'chibi_tojo'
+      setObjectSize: 3000
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 16
+      Unknown450: s32'fau_item_choco_special'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 17
+      Unknown450: s32'fau_item_donuts_special'
+      ifNot: 2, 32
+        Unknown2018: 1
+        endIf: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 18
+      Unknown450: s32'fau_item_golden100t'
+      ifNot: 2, 32
+        Unknown2018: 1
+        endIf: 
+      endIf: 
+    upon: (FRAME_STEP)
+      Unknown454: 0
+      Unknown2004: 3, 0
+      Unknown454: 2
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'Item_Oilcan'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_oilcan'
+    Unknown2225: 20
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    setThrowRange: 150000
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        Unknown23: 24
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown23: 24
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown1602: 1
+  physicsXImpulse: 10000
+  Unknown166: 18500
+  Unknown117: -2000, 2000
+  physicsYImpulse: 60000
+  setGravity: 2200
+  upon: 25
+    physicsXImpulse: 2000
+    physicsYImpulse: 72000
+    endUpon: 
+  Unknown3: 
+  setMarker: s32'HomeRun'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 20000
+  physicsYImpulse: 20000
+  setGravity: 2000
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'null', 1
+  setThrowRange: 0
+  playSFX: s32'SE_DOWNA'
+  Unknown98: 0
+  Unknown164: 0
+  Unknown166: 0
+  Unknown450: s32'fau_item_oilcan_yoko'
+  Unknown176: 1
+  sprite: s32'null', 5
+  physicsXImpulse: 1000
+  physicsYImpulse: 10000
+  sprite: s32'null', 5
+  physicsYImpulse: -10000
+  sprite: s32'null', 5
+  physicsYImpulse: 5000
+  playSFX: s32'SE_DOWNA'
+  playSFX: s32'SE_WATER'
+  sprite: s32'null', 5
+  physicsYImpulse: -5000
+  sprite: s32'null', 29
+  Unknown176: 0
+  sprite: s32'null', 90
+  createObject2: s32'OilWater', 123
+  sprite: s32'null', 8
+  Unknown450: s32'fau_item_oilcan_toumei'
+  Unknown338: 220
+  sprite: s32'null', 4
+  Unknown338: 200
+  sprite: s32'null', 4
+  Unknown338: 180
+  sprite: s32'null', 4
+  Unknown338: 160
+  sprite: s32'null', 4
+  Unknown338: 140
+  sprite: s32'null', 4
+  Unknown338: 120
+  sprite: s32'null', 4
+  Unknown338: 100
+  sprite: s32'null', 4
+  Unknown338: 80
+  sprite: s32'null', 4
+  Unknown338: 60
+  sprite: s32'null', 4
+  Unknown338: 40
+  sprite: s32'null', 4
+  Unknown338: 20
+  sprite: s32'null', 4
+  Unknown19: 23
+  Unknown1603: 1
+  endState: 
+
+startState: s32'OilWater'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_oilcan_loop'
+    Unknown2221: 320000
+    allowHitting: (ALL)
+    Unknown2156: 0
+    Unknown2178: 
+    Unknown2177: 1
+    superArmorEnabled: 1
+    Unknown1826: 0
+    Unknown2225: 20
+    upon: 45
+      Unknown19: 23
+      Unknown19: 2
+      createObject2: s32'OilFire', 100
+      endUpon: 
+    endUpon: 
+  sprite: s32'ef_oil', 420
+  sprite: s32'ef_oil', 255
+  Unknown448: s32'fau_item_oilcan_end', 123
+  Unknown19: 23
+  endState: 
+
+startState: s32'OilFire'
+  Unknown244: 
+  hitEffectFlame: 1
+  attackLevel: 4
+  damage: 80
+  riscPlus: 20
+  Unknown1137: 32
+  Unknown1028: 2
+  groundHitEffect: (AIR_FACE_UP)
+  Unknown1154: 1
+  allowHitting: (ALL)
+  callCmnEfFunc: s32'JibakuBlitz'
+  sprite: s32'ef_oil', 10
+  Unknown450: s32'fau_item_oil_bomb'
+  playSFX: s32'SE_EXPLODE'
+  sprite: s32'ef_oil2', 20
+  hit: 
+  sprite: s32'ef_oil', 20
+  recoveryState: 
+  endState: 
+
+startState: s32'Item_BlackHole'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_blackhole'
+    setThrowRange: 0
+    Unknown2225: 0
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        Unknown23: 24
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown23: 24
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  physicsXImpulse: 10000
+  Unknown117: -1000, 1000
+  physicsYImpulse: 50000
+  setGravity: 2200
+  Unknown1602: 1
+  upon: 25
+    physicsXImpulse: 2000
+    physicsYImpulse: 60000
+    endUpon: 
+  Unknown3: 
+  setMarker: s32'HomeRun'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'null', 180
+  createObject2: s32'Vacuum', 123
+  Unknown176: 1
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Vacuum'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_blackhole_vacuum'
+    Unknown2225: 0
+    endUpon: 
+  sprite: s32'null', 180
+  Unknown2220: 600, 50, 100
+  Unknown2219: 1500000, 100
+  Unknown176: 1
+  playSFX: s32'SE_KAKUSEIFINISH'
+  sprite: s32'null', 1
+  Unknown19: 23
+  Unknown448: s32'fau_item_blackhole_end', 123
+  endState: 
+
+startSubroutine: s32'JibakuBlitz'
+  upon: 55
+    Unknown2001: 3, s32'CounterGuardStand'
+    if: (NEXT_ARG_IS_VAR), 0
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      endIf: 
+    Unknown2001: 3, s32'CounterGuardCrouch'
+    if: (NEXT_ARG_IS_VAR), 0
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      endIf: 
+    Unknown2001: 3, s32'CounterGuardAir'
+    if: (NEXT_ARG_IS_VAR), 0
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      endIf: 
+    if: (NEXT_ARG_IS_VAR), 45
+      Unknown41: 3
+      storeValue: (VARIABLE), 52, (STATIC), 1
+      Unknown40: 
+      endIf: 
+    endUpon: 
+  endSubroutine: 
+
+startState: s32'Item_Bomb'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    hitEffectFlame: 1
+    attackLevel: 4
+    Unknown1028: 2
+    damage: 80
+    riscPlus: 20
+    hitAirPushbackY: 35000
+    untechableTime: 120
+    Unknown1137: 32
+    Unknown1154: 1
+    allowHitting: (ALL)
+    Unknown1058: 1
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    setThrowRange: 0
+    Unknown2225: 20
+    Unknown1602: 1
+    Unknown450: s32'fau_item_bomb'
+    Unknown2157: 1, 5
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        Unknown23: 24
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown23: 24
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    callCmnEfFunc: s32'JibakuBlitz'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  physicsXImpulse: 10500
+  Unknown117: 0, 4462
+  physicsYImpulse: 45500
+  setGravity: 2800
+  upon: 25
+    physicsXImpulse: 2100
+    physicsYImpulse: 54600
+    endUpon: 
+  Unknown3: 
+  setMarker: s32'HomeRun'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'null', 2147483647
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE0_06', 4
+  Unknown176: 1
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1100
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1500
+  playCharacterSFX: s32'1'
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1400
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1300
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1200
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1100
+  sprite: s32'FAE0_06', 4
+  setObjectSize: 1050
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1000
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1200
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1700
+  playCharacterSFX: s32'1'
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1500
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1300
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1200
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1100
+  sprite: s32'FAE0_06', 3
+  setObjectSize: 1050
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1000
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1300
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1900
+  playCharacterSFX: s32'1'
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1400
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1300
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1200
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1100
+  sprite: s32'FAE0_06', 2
+  setObjectSize: 1050
+  Unknown3: 
+  sprite: s32'fae9_00', 4
+  Unknown450: s32'fau_item_bomb_explosion'
+  Unknown2271: 1
+  setObjectSize: 4000
+  Unknown2267: 625
+  Unknown1058: 0
+  sprite: s32'fae9_01', 4
+  hit: 
+  Unknown2267: 625
+  playSFX: s32'SE_EXPLODE'
+  sprite: s32'fae9_02', 2
+  Unknown2267: 1250
+  sprite: s32'fae9_03', 2
+  Unknown2267: 1375
+  sprite: s32'fae9_03', 4
+  recoveryState: 
+  sprite: s32'fae9_03', 30
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Item_FireWorks'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    hitEffectFlame: 1
+    attackLevel: 4
+    Unknown1028: 2
+    damage: 80
+    riscPlus: 20
+    hitAirPushbackY: 35000
+    untechableTime: 120
+    Unknown1137: 32
+    Unknown1154: 1
+    allowHitting: (ALL)
+    Unknown1058: 1
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    setThrowRange: 0
+    Unknown2225: 20
+    Unknown1602: 1
+    Unknown450: s32'fau_item_hanabidama'
+    Unknown2157: 1, 5
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        Unknown23: 24
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown23: 24
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    callCmnEfFunc: s32'JibakuBlitz'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  physicsXImpulse: 10500
+  Unknown117: 0, 4462
+  physicsYImpulse: 45500
+  setGravity: 2800
+  upon: 25
+    physicsXImpulse: 2100
+    physicsYImpulse: 54600
+    endUpon: 
+  Unknown3: 
+  setMarker: s32'HomeRun'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'null', 2147483647
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE0_06', 30
+  Unknown176: 1
+  sprite: s32'FAE0_06', 3
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 3
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: 2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: -2000
+  sprite: s32'FAE0_06', 2
+  Unknown94: 2000
+  Unknown3: 
+  sprite: s32'FAE0_06', 3
+  physicsYImpulse: 50000
+  Unknown2198: 93
+  playCharacterSFX: s32'0'
+  createObject2: s32'FireWorks_smoke', 123
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: 3200
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: -3200
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: 1600
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: -1600
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: 800
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: -800
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: 400
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: -400
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: 200
+  sprite: s32'FAE0_06', 6
+  physicsXImpulse: -200
+  Unknown3: 
+  sprite: s32'fae9_00', 4
+  Unknown450: s32'fau_item_fireworks'
+  Unknown2271: 1
+  setObjectSize: 3500
+  Unknown2267: 625
+  Unknown1058: 0
+  sprite: s32'fae9_01', 4
+  hit: 
+  playSFX: s32'SE_EXPLODE'
+  sprite: s32'fae9_02', 2
+  Unknown2267: 625
+  sprite: s32'fae9_03', 2
+  Unknown2267: 625
+  sprite: s32'fae9_03', 4
+  recoveryState: 
+  sprite: s32'fae9_03', 116
+  Unknown1603: 1
+  endState: 
+
+startState: s32'FireWorks_smoke'
+  upon: (IMMEDIATE)
+    Unknown450: s32'cmn_jump_default'
+    setObjectWidth: 200
+    Unknown156: 1200
+    Unknown164: -2000
+    endUpon: 
+  sprite: s32'fae9_02', 120
+  endState: 
+
+startState: s32'Item_Helium'
+  upon: (IMMEDIATE)
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    setThrowRange: 0
+    Unknown2225: 20
+    Unknown450: s32'fau_item_helium_loop'
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown1602: 1
+  physicsXImpulse: 5000
+  Unknown117: -1000, 1000
+  physicsYImpulse: 20000
+  setGravity: 500
+  upon: 25
+    physicsXImpulse: 1000
+    physicsYImpulse: 24000
+    endUpon: 
+  Unknown3: 
+  setMarker: s32'HomeRun'
+  sprite: s32'null', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'null', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'null', 328
+  Unknown23: 24
+  Unknown1603: 1
+  Unknown98: 0
+  playSFX: s32'SE_DOWNA'
+  Unknown176: 1
+  upon: (FRAME_STEP)
+    Unknown60: '0x17000000640000001600000064000000'
+    ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+      Unknown19: 23
+      playSFX: s32'SE_EXPLODE'
+      Unknown53: 22, 2, 112, 23, 0, 1200
+      Unknown448: s32'fau_item_helium_hit', 100
+      endIf: 
+    Unknown60: '0x17000000640000000300000064000000'
+    ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+      Unknown19: 23
+      playSFX: s32'SE_EXPLODE'
+      Unknown53: 3, 2, 112, 23, 0, 1200
+      Unknown448: s32'fau_item_helium_hit', 100
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 4
+  Unknown2023: 0
+  sprite: s32'null', 4
+  Unknown2023: 1
+  sprite: s32'null', 4
+  Unknown2023: 0
+  sprite: s32'null', 4
+  Unknown2023: 1
+  sprite: s32'null', 4
+  Unknown2023: 0
+  sprite: s32'null', 4
+  Unknown2023: 1
+  sprite: s32'null', 2
+  Unknown2023: 0
+  sprite: s32'null', 2
+  Unknown2023: 1
+  sprite: s32'null', 2
+  Unknown2023: 0
+  sprite: s32'null', 2
+  Unknown2023: 1
+  endState: 
+
+startState: s32'Item_Meteo'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_meteo_start'
+    Unknown2225: 0
+    Unknown1602: 1
+    endUpon: 
+  sprite: s32'FAE0_05', 180
+  physicsXImpulse: 21000
+  physicsYImpulse: 43750
+  sprite: s32'FAE0_05', 3
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 3, (STATIC), 60
+    createObject2: s32'MeteoInseki', 100
+    createObject2: s32'MeteoInseki', 100
+    endIf: 
+  sprite: s32'FAE0_05', 3
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 3, (STATIC), 60
+    playCharacterSFX: s32'0'
+    createObject2: s32'MeteoInseki', 100
+    createObject2: s32'MeteoInseki', 100
+    endIf: 
+  sprite: s32'FAE0_05', 3
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 3, (STATIC), 60
+    playCharacterSFX: s32'0'
+    createObject2: s32'MeteoInseki', 100
+    createObject2: s32'MeteoInseki', 100
+    endIf: 
+  endState: 
+
+startState: s32'Item_Armageddon'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_meteo_special'
+    setObjectSize: 200
+    Unknown164: 120000
+    Unknown2225: 0
+    Unknown1602: 1
+    endUpon: 
+  sprite: s32'FAE0_05', 180
+  physicsXImpulse: 21000
+  physicsYImpulse: 43750
+  sprite: s32'FAE0_05', 3
+  sprite: s32'FAE0_05', 3
+  playSFX: s32'SE_GROUNDSHAKE'
+  sprite: s32'FAE0_05', 3
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 4, (STATIC), 20
+    createObject2: s32'ArmageddonInseki', 100
+    endIf: 
+  endState: 
+
+startState: s32'MeteoInseki'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    hitEffectFlame: 1
+    attackLevel: 4
+    Unknown1028: 2
+    damage: 36
+    riscPlus: 20
+    riscMinus: 10
+    stunValue: 18
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: (HIT_OR_GUARD)
+      Unknown23: 24
+      Unknown14: s32'rakkahit'
+      endUpon: 
+    setThrowRange: 0
+    Unknown450: s32'fau_item_meteo_loop'
+    Unknown2225: 10
+    Unknown1602: 1
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        Unknown23: 24
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown23: 24
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    Unknown54: 0, 2, 3, 0, 1
+    upon: (BEFORE_EXIT)
+      Unknown54: 0, 2, 3, 0, -1
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_05', 3
+  Unknown1889: 100
+  Unknown99: 875000
+  Unknown103: 1790250, 0
+  Unknown1888: 50
+  Unknown94: 350000
+  Unknown102: 0, -894250
+  Unknown102: 0, -446250
+  hit: 
+  physicsXImpulse: 28000
+  physicsYImpulse: -43750
+  setGravity: 1750
+  sprite: s32'FAE0_05', 3
+  sprite: s32'FAE0_05', 2147483647
+  setMarker: s32'HomeRun'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'null', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'null', 80
+  Unknown176: 1
+  screenShake: 1, 1
+  Unknown450: s32'fau_item_meteo_bound'
+  Unknown1603: 1
+  sprite: s32'null', 1
+  Unknown19: 23
+  setMarker: s32'rakkahit'
+  sprite: s32'null', 80
+  Unknown176: 1
+  Unknown450: s32'fau_item_meteo_hit'
+  Unknown1603: 1
+  sprite: s32'null', 1
+  Unknown19: 23
+  endState: 
+
+startState: s32'ArmageddonInseki'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    hitEffectFlame: 1
+    attackLevel: 4
+    Unknown1028: 2
+    damage: 36
+    riscPlus: 10
+    riscMinus: 10
+    stunValue: 18
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    setThrowRange: -20000
+    Unknown450: s32'fau_item_meteo_special'
+    setObjectSize: 4000
+    Unknown2267: 250
+    Unknown2225: 10
+    Unknown1602: 1
+    upon: (FRAME_STEP)
+      upon: (HIT_OR_GUARD)
+        Unknown54: 0, 2, 45, 0, 1
+        endUpon: 
+      endUpon: 
+    Unknown1771: s32'ArmageddonInseki', 25
+    upon: 25
+      storeValue: (VARIABLE), 46, (STATIC), 1
+      endUpon: 
+    Unknown54: 0, 2, 4, 0, 1
+    upon: (BEFORE_EXIT)
+      Unknown54: 0, 2, 4, 0, -1
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_05', 3
+  Unknown1888: 50
+  Unknown94: 140000
+  Unknown1889: 100
+  Unknown99: 1225000
+  hit: 
+  physicsXImpulse: 4000
+  physicsYImpulse: -4000
+  setGravity: 50
+  playSFX: s32'SE_GROUNDSHAKE'
+  setMarker: s32'loop'
+  sprite: s32'FAE0_05', 6
+  ifNot: 2, 46
+    screenShake: 0, 1
+    endIf: 
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 45, (STATIC), 5
+    hit: 
+    endIf: 
+  sprite: s32'FAE0_05', 6
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'landing'
+  sprite: s32'FAE0_05', 20
+  Unknown176: 1
+  screenShake: 1, 1
+  hit: 
+  sprite: s32'FAE0_05', 6
+  Unknown450: s32'fau_item_meteo_special_bound'
+  playSFX: s32'SE_EXPLODE2'
+  sprite: s32'FAE0_05', 74
+  Unknown1603: 1
+  recoveryState: 
+  sprite: s32'null', 1
+  Unknown19: 23
+  endState: 
+
+startState: s32'Item_ChibiFaust'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 2
+    damage: 25
+    riscPlus: 10
+    Unknown1028: 0
+    Unknown451: s32'chibi', s32''
+    Unknown2157: 1, 5
+    setThrowRange: 0
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'walk'
+      endUpon: 
+    upon: (HIT_OR_GUARD)
+      Unknown23: 2
+      Unknown14: s32'dead'
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown2320: s32'ChibiShot'
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown2320: s32'ChibiShot'
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'chibi_tojo_00', 4
+  physicsXImpulse: 3500
+  Unknown117: 0, 4462
+  physicsYImpulse: 42000
+  setGravity: 1750
+  Unknown1602: 1
+  Unknown58: 1
+  upon: 25
+    physicsXImpulse: 700
+    physicsYImpulse: 50400
+    endUpon: 
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_tojo_00', 4
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_tojo_00', 4
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_tojo_00', 4
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_rakka_00', 2
+  Unknown2225: 30
+  physicsYImpulse: -8750
+  setGravity: 0
+  physicsXImpulse: 1400
+  hit: 
+  sprite: s32'chibi_rakka_00', 2
+  setMarker: s32'fall_loop'
+  sprite: s32'chibi_rakka_00', 2
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: 7000
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: 3500
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: 0
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: -3500
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: -7000
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: -3500
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: 0
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: 3500
+  Unknown3: 
+  goToMarker: s32'fall_loop'
+  setMarker: s32'HomeRun'
+  sprite: s32'chibi_hit_00', 4
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  goToMarker: s32'Hit_loop'
+  setMarker: s32'Hit'
+  sprite: s32'chibi_hit_00', 4
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  setMarker: s32'Hit_loop'
+  sprite: s32'chibi_hit_01', 4
+  sprite: s32'chibi_hit_00', 4
+  Unknown3: 
+  goToMarker: s32'Hit_loop'
+  setMarker: s32'walk'
+  sprite: s32'chibi_rakka_00', 4
+  attackLevel: 2
+  Unknown1028: 1
+  Unknown1603: 1
+  Unknown23: 24
+  sprite: s32'chibi_walk_00', 4
+  physicsXImpulse: 3500
+  Unknown2161: 100, 0, 100000
+  createObject2: s32'Chibi_balloon', 130
+  sprite: s32'chibi_walk_01', 4
+  sprite: s32'chibi_walk_02', 4
+  sprite: s32'chibi_walk_03', 4
+  sprite: s32'chibi_walk_04', 4
+  sprite: s32'chibi_walk_05', 4
+  setMarker: s32'land_loop'
+  sprite: s32'chibi_walk_00', 4
+  sprite: s32'chibi_walk_01', 4
+  sprite: s32'chibi_walk_02', 4
+  sprite: s32'chibi_walk_03', 4
+  sprite: s32'chibi_walk_04', 4
+  sprite: s32'chibi_walk_05', 4
+  Unknown3: 
+  goToMarker: s32'land_loop'
+  setMarker: s32'dead'
+  sprite: s32'chibi_death_00', 4
+  physicsXImpulse: 0
+  physicsYImpulse: 17500
+  setGravity: 875
+  setThrowRange: -300000
+  Unknown23: 24
+  Unknown1603: 1
+  setMarker: s32'dead_loop'
+  sprite: s32'chibi_death_01', 4
+  upon: 2
+    Unknown19: 23
+    endUpon: 
+  sprite: s32'chibi_death_00', 4
+  Unknown3: 
+  goToMarker: s32'dead_loop'
+  endState: 
+
+startState: s32'Chibi_Balloon'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_chibi_balloon'
+    endUpon: 
+  sprite: s32'null', 255
+  Unknown117: 0, 4462
+  physicsYImpulse: 7000
+  setGravity: -350
+  sprite: s32'null', 6
+  Unknown338: 200
+  sprite: s32'null', 6
+  Unknown338: 150
+  sprite: s32'null', 6
+  Unknown338: 100
+  sprite: s32'null', 6
+  Unknown338: 50
+  sprite: s32'null', 6
+  Unknown338: 25
+  sprite: s32'null', 6
+  Unknown19: 23
+  endState: 
+
+startState: s32'Item_BigFaust'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 2
+    damage: 25
+    riscPlus: 10
+    Unknown1028: 0
+    Unknown451: s32'chibi', s32''
+    Unknown2157: 1, 5
+    setObjectSize: 3000
+    setThrowRange: 0
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'walk'
+      endUpon: 
+    upon: (HIT_OR_GUARD)
+      Unknown23: 2
+      Unknown14: s32'dead'
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown2320: s32'ChibiShot'
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown2320: s32'ChibiShot'
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'chibi_tojo_00', 4
+  physicsXImpulse: 3500
+  Unknown117: 0, 4462
+  physicsYImpulse: 42000
+  setGravity: 1750
+  Unknown1602: 1
+  Unknown58: 1
+  upon: 25
+    physicsXImpulse: 700
+    physicsYImpulse: 50400
+    endUpon: 
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_tojo_00', 4
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_tojo_00', 4
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_tojo_00', 4
+  sprite: s32'chibi_tojo_01', 4
+  sprite: s32'chibi_rakka_00', 2
+  Unknown2225: 30
+  physicsYImpulse: -8750
+  setGravity: 0
+  physicsXImpulse: 1400
+  hit: 
+  sprite: s32'chibi_rakka_00', 2
+  setMarker: s32'fall_loop'
+  sprite: s32'chibi_rakka_00', 2
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: 7000
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: 3500
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: 0
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: -3500
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: -7000
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  sprite: s32'chibi_rakka_01', 6
+  sprite: s32'chibi_rakka_00', 6
+  setObjectSize: 3000
+  physicsXImpulse: -3500
+  sprite: s32'chibi_rakka_01', 6
+  physicsXImpulse: 0
+  sprite: s32'chibi_rakka_00', 6
+  physicsXImpulse: 3500
+  Unknown3: 
+  goToMarker: s32'fall_loop'
+  setMarker: s32'HomeRun'
+  sprite: s32'chibi_hit_00', 4
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  goToMarker: s32'Hit_loop'
+  setMarker: s32'Hit'
+  sprite: s32'chibi_hit_00', 4
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  setMarker: s32'Hit_loop'
+  sprite: s32'chibi_hit_01', 4
+  sprite: s32'chibi_hit_00', 4
+  Unknown3: 
+  goToMarker: s32'Hit_loop'
+  setMarker: s32'walk'
+  sprite: s32'chibi_rakka_00', 4
+  attackLevel: 2
+  Unknown1028: 1
+  damage: 25
+  Unknown1603: 1
+  Unknown23: 24
+  sprite: s32'chibi_walk_00', 4
+  physicsXImpulse: 3500
+  Unknown2161: 100, 0, 100000
+  Unknown2241: 0, 3000
+  callEtcState: s32'Chibi_balloon', 130
+  sprite: s32'chibi_walk_01', 4
+  sprite: s32'chibi_walk_02', 4
+  sprite: s32'chibi_walk_03', 4
+  sprite: s32'chibi_walk_04', 4
+  sprite: s32'chibi_walk_05', 4
+  setMarker: s32'land_loop'
+  sprite: s32'chibi_walk_00', 4
+  sprite: s32'chibi_walk_01', 4
+  sprite: s32'chibi_walk_02', 4
+  sprite: s32'chibi_walk_03', 4
+  sprite: s32'chibi_walk_04', 4
+  sprite: s32'chibi_walk_05', 4
+  Unknown3: 
+  goToMarker: s32'land_loop'
+  setMarker: s32'dead'
+  sprite: s32'chibi_death_00', 4
+  physicsXImpulse: 0
+  physicsYImpulse: 17500
+  setGravity: 875
+  setThrowRange: -300000
+  Unknown23: 24
+  Unknown1603: 1
+  setMarker: s32'dead_loop'
+  sprite: s32'chibi_death_01', 4
+  upon: 2
+    Unknown19: 23
+    endUpon: 
+  sprite: s32'chibi_death_00', 4
+  Unknown3: 
+  goToMarker: s32'dead_loop'
+  endState: 
+
+startState: s32'Item_Hammer'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 4
+    damage: 44
+    riscPlus: 20
+    stunValue: 88
+    Unknown450: s32'fau_item_hammer'
+    upon: (HIT_OR_GUARD)
+      Unknown23: 24
+      Unknown23: 2
+      Unknown14: s32'hit'
+      endUpon: 
+    upon: 2
+      Unknown23: 24
+      Unknown23: 8
+      Unknown14: s32'bound'
+      endUpon: 
+    setThrowRange: 0
+    Unknown2225: 20
+    Unknown166: -45000
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_04', 2147483647
+  physicsXImpulse: 8750
+  Unknown117: 0, 4462
+  physicsYImpulse: 43750
+  setGravity: 2800
+  hit: 
+  Unknown1602: 1
+  upon: 25
+    physicsXImpulse: 1750
+    physicsYImpulse: 52500
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'bound'
+  sprite: s32'FAE0_04', 8
+  recoveryState: 
+  physicsXImpulse: 10500
+  physicsYImpulse: 21000
+  setGravity: 875
+  Unknown1603: 1
+  setThrowRange: -100000
+  sprite: s32'FAE0_04', 4
+  Unknown450: s32'fau_item_hammer_end'
+  Unknown338: 220
+  sprite: s32'FAE0_04', 4
+  Unknown338: 200
+  sprite: s32'FAE0_04', 4
+  Unknown338: 180
+  sprite: s32'FAE0_04', 4
+  Unknown338: 160
+  sprite: s32'FAE0_04', 4
+  Unknown338: 140
+  sprite: s32'FAE0_04', 4
+  Unknown338: 120
+  sprite: s32'FAE0_04', 4
+  Unknown338: 100
+  sprite: s32'FAE0_04', 4
+  Unknown338: 80
+  sprite: s32'FAE0_04', 4
+  Unknown338: 60
+  sprite: s32'FAE0_04', 4
+  Unknown338: 40
+  sprite: s32'FAE0_04', 4
+  Unknown338: 20
+  Unknown3: 
+  Unknown19: 23
+  setMarker: s32'hit'
+  sprite: s32'FAE0_04', 8
+  recoveryState: 
+  Unknown1603: 1
+  setThrowRange: -100000
+  physicsXImpulse: -8750
+  physicsYImpulse: 8750
+  setGravity: 875
+  sprite: s32'FAE0_04', 4
+  Unknown338: 220
+  sprite: s32'FAE0_04', 4
+  Unknown338: 200
+  sprite: s32'FAE0_04', 4
+  Unknown338: 180
+  sprite: s32'FAE0_04', 4
+  Unknown338: 160
+  sprite: s32'FAE0_04', 4
+  Unknown338: 140
+  sprite: s32'FAE0_04', 4
+  Unknown338: 120
+  sprite: s32'FAE0_04', 4
+  Unknown338: 100
+  sprite: s32'FAE0_04', 4
+  Unknown338: 80
+  Unknown3: 
+  Unknown19: 23
+  endState: 
+
+startState: s32'Item_GoldenHammer'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 4
+    damage: 44
+    riscPlus: 20
+    stunValue: 132
+    hitstop: 20
+    Unknown1112: 0
+    Unknown450: s32'fau_item_goldenhammer'
+    upon: (HIT_OR_GUARD)
+      Unknown23: 24
+      Unknown23: 2
+      Unknown14: s32'hit'
+      endUpon: 
+    upon: 2
+      Unknown23: 24
+      Unknown23: 8
+      Unknown14: s32'bound'
+      endUpon: 
+    setThrowRange: 0
+    Unknown2225: 20
+    Unknown166: -45000
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_04', 2147483647
+  physicsXImpulse: 8750
+  Unknown117: 0, 4462
+  physicsYImpulse: 43750
+  setGravity: 2800
+  hit: 
+  Unknown1602: 1
+  upon: 25
+    physicsXImpulse: 1750
+    physicsYImpulse: 52500
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'bound'
+  sprite: s32'FAE0_04', 8
+  recoveryState: 
+  physicsXImpulse: 10500
+  physicsYImpulse: 21000
+  setGravity: 875
+  Unknown1603: 1
+  setThrowRange: -100000
+  sprite: s32'FAE0_04', 4
+  Unknown450: s32'fau_item_goldenhammer_end'
+  Unknown338: 220
+  sprite: s32'FAE0_04', 4
+  Unknown338: 200
+  sprite: s32'FAE0_04', 4
+  Unknown338: 180
+  sprite: s32'FAE0_04', 4
+  Unknown338: 160
+  sprite: s32'FAE0_04', 4
+  Unknown338: 140
+  sprite: s32'FAE0_04', 4
+  Unknown338: 120
+  sprite: s32'FAE0_04', 4
+  Unknown338: 100
+  sprite: s32'FAE0_04', 4
+  Unknown338: 80
+  sprite: s32'FAE0_04', 4
+  Unknown338: 60
+  sprite: s32'FAE0_04', 4
+  Unknown338: 40
+  sprite: s32'FAE0_04', 4
+  Unknown338: 20
+  Unknown3: 
+  Unknown19: 23
+  setMarker: s32'hit'
+  sprite: s32'FAE0_04', 8
+  recoveryState: 
+  Unknown1603: 1
+  setThrowRange: -100000
+  physicsXImpulse: -8750
+  physicsYImpulse: 8750
+  setGravity: 875
+  sprite: s32'FAE0_04', 4
+  Unknown338: 220
+  sprite: s32'FAE0_04', 4
+  Unknown338: 200
+  sprite: s32'FAE0_04', 4
+  Unknown338: 180
+  sprite: s32'FAE0_04', 4
+  Unknown338: 160
+  sprite: s32'FAE0_04', 4
+  Unknown338: 140
+  sprite: s32'FAE0_04', 4
+  Unknown338: 120
+  sprite: s32'FAE0_04', 4
+  Unknown338: 100
+  sprite: s32'FAE0_04', 4
+  Unknown338: 80
+  Unknown3: 
+  Unknown19: 23
+  endState: 
+
+startState: s32'Item_Frasco'
+  upon: (IMMEDIATE)
+    setThrowRange: 60000
+    Unknown2225: 20
+    Unknown1058: 1
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    Unknown450: s32'fau_item_poisonflask_loop'
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE1_00', 3
+  Unknown1602: 1
+  physicsXImpulse: 7875
+  Unknown117: 0, 4462
+  physicsYImpulse: 35000
+  setGravity: 1925
+  upon: 25
+    physicsXImpulse: 1575
+    physicsYImpulse: 42000
+    endUpon: 
+  sprite: s32'FAE1_01', 3
+  sprite: s32'FAE1_02', 3
+  sprite: s32'FAE1_00', 3
+  sprite: s32'FAE1_01', 2147483647
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE1_03', 20
+  Unknown1603: 1
+  Unknown176: 1
+  Unknown338: 250
+  createObject2: s32'SubItem_Poison', 100
+  Unknown450: s32'fau_item_poisonflask_end'
+  sprite: s32'FAE1_03', 3
+  Unknown338: 200
+  sprite: s32'FAE1_03', 3
+  Unknown338: 150
+  sprite: s32'FAE1_03', 3
+  Unknown338: 100
+  sprite: s32'FAE1_03', 3
+  Unknown338: 50
+  Unknown3: 
+  Unknown19: 23
+  endState: 
+
+startState: s32'SubItem_Poison'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    Unknown1110: 1
+    attackLevel: 1
+    damage: 10
+    riscPlus: 6
+    Unknown1070: 360, 100
+    setThrowRange: 0
+    Unknown2225: 20
+    Unknown450: s32'fau_item_poison_smoke'
+    endUpon: 
+  sprite: s32'FAE1_20', 5
+  sprite: s32'FAE1_21', 5
+  sprite: s32'FAE1_22', 5
+  sprite: s32'FAE1_23', 5
+  sprite: s32'FAE1_24', 5
+  sprite: s32'FAE1_25', 5
+  hit: 
+  sprite: s32'FAE1_26', 5
+  sprite: s32'FAE1_27', 5
+  sprite: s32'FAE1_28', 5
+  sprite: s32'FAE1_27', 5
+  sprite: s32'FAE1_26', 5
+  sprite: s32'FAE1_25', 5
+  sprite: s32'FAE1_26', 5
+  sprite: s32'FAE1_27', 5
+  sprite: s32'FAE1_28', 5
+  sprite: s32'FAE1_29', 5
+  recoveryState: 
+  sprite: s32'FAE1_30', 5
+  sprite: s32'FAE1_31', 5
+  endState: 
+
+startState: s32'Item_Chocolate'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 25
+    Unknown450: s32'fau_item_choco'
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    Unknown2225: 20
+    setThrowRange: 0
+    recoveryState: 
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: 12
+      if: (NEXT_ARG_IS_VAR), 31
+        storeValue: (VARIABLE), 50, (STATIC), 0
+        ifNot: 2, 50
+          Unknown43: 4, 3
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 16
+              Unknown40: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        ifNot: 2, 50
+          Unknown43: 4, 22
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 16
+              Unknown40: 
+              ifOpponentCharacter: s16'sin'
+                Unknown41: 22
+                Unknown54: 0, 2, 25, 0, 500
+                Unknown40: 
+                endIf: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_02', 2147483647
+  Unknown1602: 1
+  physicsXImpulse: 14000
+  Unknown117: 0, 4375
+  physicsYImpulse: 38500
+  setGravity: 2800
+  upon: 25
+    physicsXImpulse: 1400
+    physicsYImpulse: 46200
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE0_02', 120
+  Unknown23: 24
+  Unknown176: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 1
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Item_BestChocolate'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 25
+    Unknown450: s32'fau_item_choco_special'
+    setObjectSize: 1500
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    Unknown2225: 20
+    setThrowRange: 0
+    recoveryState: 
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: 12
+      if: (NEXT_ARG_IS_VAR), 31
+        storeValue: (VARIABLE), 50, (STATIC), 0
+        ifNot: 2, 50
+          Unknown43: 4, 3
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 48
+              Unknown40: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        ifNot: 2, 50
+          Unknown43: 4, 22
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 48
+              Unknown40: 
+              ifOpponentCharacter: s16'sin'
+                Unknown41: 22
+                Unknown54: 0, 2, 25, 0, 500
+                Unknown40: 
+                endIf: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_02', 2147483647
+  Unknown1602: 1
+  physicsXImpulse: 14000
+  Unknown117: 0, 4375
+  physicsYImpulse: 38500
+  setGravity: 2800
+  upon: 25
+    physicsXImpulse: 1400
+    physicsYImpulse: 46200
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE0_02', 120
+  Unknown23: 24
+  Unknown176: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 1
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_02', 2
+  Unknown2023: 1
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Item_Donut'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 25
+    Unknown450: s32'fau_item_donuts'
+    Unknown2225: 20
+    setThrowRange: 0
+    recoveryState: 
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: 12
+      if: (NEXT_ARG_IS_VAR), 31
+        storeValue: (VARIABLE), 50, (STATIC), 0
+        ifNot: 2, 50
+          Unknown43: 4, 3
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 16
+              ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (VARIABLE), 78
+                Unknown2278: s32'MAXIMUM', '0x0000000000000000000000000000000000000000000000000000000000000000'
+                endIf: 
+              Unknown40: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        ifNot: 2, 50
+          Unknown43: 4, 22
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 16
+              ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (VARIABLE), 78
+                Unknown2278: s32'MAXIMUM', '0x0000000000000000000000000000000000000000000000000000000000000000'
+                endIf: 
+              Unknown40: 
+              ifOpponentCharacter: s16'sin'
+                Unknown41: 22
+                Unknown54: 0, 2, 25, 0, 500
+                Unknown40: 
+                endIf: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_03', 2147483647
+  Unknown1602: 1
+  physicsXImpulse: 3500
+  Unknown117: 0, 4375
+  physicsYImpulse: 38500
+  setGravity: 2800
+  upon: 25
+    physicsXImpulse: 1750
+    physicsYImpulse: 57750
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE0_03', 120
+  Unknown23: 24
+  Unknown176: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 1
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Item_ManyDonut'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 25
+    Unknown450: s32'fau_item_donuts_special'
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    Unknown2225: 20
+    setThrowRange: 0
+    recoveryState: 
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    upon: 12
+      if: (NEXT_ARG_IS_VAR), 31
+        storeValue: (VARIABLE), 50, (STATIC), 0
+        ifNot: 2, 50
+          Unknown43: 4, 3
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 48
+              ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (VARIABLE), 78
+                Unknown2278: s32'MAXIMUM', '0x0000000000000000000000000000000000000000000000000000000000000000'
+                endIf: 
+              Unknown40: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        ifNot: 2, 50
+          Unknown43: 4, 22
+          Unknown53: 23, 2, 61, 4, 2, 17
+          Unknown53: 23, 2, 62, 4, 2, 18
+          Unknown54: 1, 2, 61, 2, 17
+          ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+            Unknown54: 2, 2, 61, 0, -1
+            endIf: 
+          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
+            ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
+              Unknown448: s32'fau_font_buildup', 100
+              Unknown41: 4
+              Unknown1759: 48
+              ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (VARIABLE), 78
+                Unknown2278: s32'MAXIMUM', '0x0000000000000000000000000000000000000000000000000000000000000000'
+                endIf: 
+              Unknown40: 
+              ifOpponentCharacter: s16'sin'
+                Unknown41: 22
+                Unknown54: 0, 2, 25, 0, 500
+                Unknown40: 
+                endIf: 
+              storeValue: (VARIABLE), 50, (STATIC), 1
+              Unknown19: 23
+              endIf: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAE0_03', 2147483647
+  Unknown1602: 1
+  physicsXImpulse: 3500
+  Unknown117: 0, 4375
+  physicsYImpulse: 38500
+  setGravity: 2800
+  upon: 25
+    physicsXImpulse: 1750
+    physicsYImpulse: 57750
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'FAE0_03', 120
+  Unknown23: 24
+  Unknown176: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 8
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 4
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 1
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 0
+  sprite: s32'FAE0_03', 2
+  Unknown2023: 1
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Item_JumpStand'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 0
+    damage: 0
+    setProration: 70
+    guardType: (NONE)
+    groundHitEffect: (AIR_FACE_UP)
+    Unknown1040: 1
+    hitAirPushbackX: 0
+    hitAirPushbackY: 100000
+    untechableTime: 50
+    Unknown1027: 300000, -300000, 0, 0
+    Unknown1061: 1
+    Unknown1154: 1
+    allowHitting: (ALL)
+    setThrowRange: 0
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    Unknown2225: 20
+    setObjectSize: 500
+    Unknown2267: 2000
+    Unknown1058: 1
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    callCmnEfFunc: s32'JibakuBlitz'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown1602: 1
+  createObject2: s32'Jumpdai_Loop', 100
+  physicsXImpulse: 10500
+  Unknown117: 0, 255
+  physicsYImpulse: 28000
+  setGravity: 1400
+  upon: 25
+    physicsXImpulse: 2100
+    physicsYImpulse: 33600
+    endUpon: 
+  Unknown3: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown58: 1
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'ef_jump', 5
+  Unknown23: 24
+  physicsXImpulse: 1000
+  physicsYImpulse: 10000
+  sprite: s32'ef_jump', 5
+  physicsYImpulse: -10000
+  sprite: s32'ef_jump', 5
+  physicsYImpulse: 5000
+  sprite: s32'ef_jump', 5
+  physicsYImpulse: -5000
+  sprite: s32'ef_jump', 100
+  Unknown176: 0
+  hit: 
+  upon: (HIT_OR_GUARD)
+    playSFX: s32'SE_JUMPB'
+    Unknown19: 1
+    createObject2: s32'Jumpdai_Hatudo', 100
+    Unknown19: 23
+    endUpon: 
+  sprite: s32'ef_jump', 96
+  Unknown1766: 1, 23
+  endState: 
+
+startState: s32'Item_100t'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 4
+    damage: 44
+    riscPlus: 20
+    stunValue: 88
+    Unknown450: s32'fau_item_100t'
+    Unknown2157: 1, 5
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    upon: 2
+      Unknown23: 24
+      Unknown14: s32'landing'
+      endUpon: 
+    Unknown2225: 20
+    setThrowRange: 100000
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    callCmnEfFunc: s32'JibakuBlitz'
+    endUpon: 
+  sprite: s32'FAE0_04', 2147483647
+  hit: 
+  physicsXImpulse: 7000
+  Unknown117: 0, 4462
+  physicsYImpulse: 79000
+  setGravity: 4200
+  Unknown1602: 1
+  upon: 25
+    physicsXImpulse: 1400
+    physicsYImpulse: 94800
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown58: 1
+  physicsXImpulse: 20000
+  physicsYImpulse: 20000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'ef_100t', 1
+  Unknown23: 24
+  damage: 0
+  stunValue: 0
+  Unknown1142: 1
+  disableHitstop: 1
+  groundHitEffect: (AIR_FACE_DOWN)
+  guardType: (NONE)
+  Unknown870: 61
+  Unknown1154: 1
+  allowHitting: (ALL)
+  Unknown1061: 1
+  Unknown448: s32'fau_item_100t_impact', 123
+  hit: 
+  physicsXImpulse: 1000
+  physicsYImpulse: 10500
+  setGravity: 700
+  screenShake: 1, 3
+  setThrowRange: -100000
+  playSFX: s32'SE_DOWNC'
+  Unknown1603: 1
+  sprite: s32'FAE0_04', 4
+  recoveryState: 
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  Unknown3: 
+  Unknown19: 23
+  endState: 
+
+startState: s32'Item_Golden100t'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 4
+    damage: 44
+    riscPlus: 20
+    stunValue: 88
+    untechableTime: 24
+    Unknown450: s32'fau_item_golden100t'
+    Unknown2157: 1, 5
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    upon: 2
+      Unknown23: 24
+      Unknown23: 3
+      Unknown14: s32'landing'
+      endUpon: 
+    Unknown2225: 20
+    setThrowRange: 100000
+    upon: 24
+      Unknown60: '0x17000000640000000300000000000000'
+      ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
+        callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
+        Unknown14: s32'HomeRun'
+        endIf: 
+      else: 
+        Unknown60: '0x17000000640000000300000000000000'
+        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
+          Unknown14: s32'Hit'
+          endIf: 
+        endElse: 
+      endUpon: 
+    callCmnEfFunc: s32'JibakuBlitz'
+    endUpon: 
+  sprite: s32'FAE0_04', 2147483647
+  hit: 
+  physicsXImpulse: 7000
+  Unknown117: 0, 4462
+  physicsYImpulse: 79000
+  setGravity: 4200
+  Unknown1602: 1
+  upon: 25
+    physicsXImpulse: 1400
+    physicsYImpulse: 94800
+    endUpon: 
+  upon: (FRAME_STEP)
+    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 8, (STATIC), -10000
+      Unknown14: s32'Fall'
+      endIf: 
+    endUpon: 
+  setMarker: s32'Fall'
+  sprite: s32'FAE0_04', 2147483647
+  Unknown23: 3
+  hit: 
+  hitAirPushbackY: -50000
+  untechableTime: 60
+  setMarker: s32'HomeRun'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown23: 3
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  Unknown3: 
+  setMarker: s32'Hit'
+  sprite: s32'FAEH_01', 2147483647
+  Unknown23: 24
+  Unknown23: 3
+  Unknown58: 1
+  physicsXImpulse: 20000
+  physicsYImpulse: 20000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  Unknown3: 
+  setMarker: s32'landing'
+  sprite: s32'ef_100t', 1
+  Unknown23: 24
+  Unknown23: 3
+  damage: 0
+  stunValue: 0
+  Unknown1142: 1
+  disableHitstop: 1
+  groundHitEffect: (AIR_FACE_DOWN)
+  guardType: (NONE)
+  Unknown870: 61
+  Unknown1154: 1
+  allowHitting: (ALL)
+  Unknown1061: 1
+  Unknown450: s32'fau_item_golden100t_landing'
+  hit: 
+  physicsXImpulse: 1000
+  physicsYImpulse: 10500
+  setGravity: 700
+  screenShake: 1, 3
+  setThrowRange: -100000
+  playSFX: s32'SE_DOWNC'
+  Unknown1603: 1
+  sprite: s32'FAE0_04', 4
+  recoveryState: 
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  sprite: s32'FAE0_04', 4
+  Unknown3: 
+  Unknown19: 23
+  endState: 
+
+startState: s32'Ai_Bomb'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 1
+    Unknown1028: 1
+    damage: 1
+    hitAirPushbackX: 5250
+    hitAirPushbackY: 10500
+    untechableTime: 30
+    hitPushbackX: 0
+    upon: 45
+      Unknown32: s32'Ai_Bomb'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 3
+  sprite: s32'FAEJ_00', 2147483647
+  Unknown450: s32'fau_ai_headloop'
+  physicsXImpulse: 15750
+  physicsYImpulse: 0
+  setGravity: 1925
+  hit: 
+  setThrowRange: 0
+  Unknown1602: 2
+  upon: (HIT_OR_GUARD)
+    Unknown23: 2
+    Unknown14: s32'touch'
+    endUpon: 
+  upon: 2
+    Unknown23: 8
+    Unknown14: s32'touch'
+    endUpon: 
+  setMarker: s32'touch'
+  sprite: s32'FAEJ_01', 2
+  Unknown450: s32'fau_ai_headbomb'
+  physicsXImpulse: 0
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'FAEJ_02', 2
+  playSFX: s32'SE_EXPLODE2'
+  sprite: s32'FAEJ_03', 2
+  sprite: s32'FAEJ_04', 2
+  sprite: s32'FAEJ_05', 2
+  sprite: s32'FAEJ_06', 2
+  sprite: s32'FAEJ_07', 2
+  sprite: s32'FAEJ_08', 1
+  Unknown448: s32'cmn_baku_s', 100
+  sprite: s32'FAEJ_08', 1
+  createObject2: s32'Ai_Bomb2', 100
+  Unknown1603: 2
+  Unknown2176: 23
+  endState: 
+
+startState: s32'Ai_Bomb2'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_FACE_UP)
+    hitEffectFlame: 1
+    attackLevel: 2
+    Unknown1028: 0
+    damage: 40
+    Unknown1137: 32
+    untechableTime: 30
+    Unknown1154: 1
+    allowHitting: (ALL)
+    upon: 54
+      damage: 40
+      endUpon: 
+    upon: 55
+      damage: 30
+      Unknown2001: 3, s32'CounterGuardStand'
+      if: (NEXT_ARG_IS_VAR), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      Unknown2001: 3, s32'CounterGuardCrouch'
+      if: (NEXT_ARG_IS_VAR), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      Unknown2001: 3, s32'CounterGuardAir'
+      if: (NEXT_ARG_IS_VAR), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      if: (NEXT_ARG_IS_VAR), 45
+        Unknown41: 3
+        storeValue: (VARIABLE), 52, (STATIC), 1
+        Unknown40: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'FAEI_00', 3
+  hit: 
+  sprite: s32'FAEI_00', 3
+  setObjectSize: 1200
+  recoveryState: 
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  sprite: s32'FAEI_00', 3
+  endState: 
+
+startState: s32'cmn_fd_end_yellow'
+  sprite: s32'null', 20
+  Unknown363: -256
+  characterEffectOverlay: 16776960
+  Unknown450: s32'cmn_fd_end'
+  endState: 
+
+startState: s32'cmn_fd_end_blue'
+  sprite: s32'null', 20
+  Unknown363: -16776961
+  characterEffectOverlay: 255
+  Unknown450: s32'cmn_fd_end'
+  endState: 
+
+startState: s32'ShigekiJibakuObj'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    hitEffectFlame: 1
+    attackLevel: 4
+    Unknown1028: 2
+    damage: 10
+    tensionGainOnConnect: 10
+    disableHitstop: 1
+    if: (NEXT_ARG_IS_VAR), 164
+      Unknown1177: 1
+      Unknown1179: 1
+      endIf: 
+    hitAirPushbackY: 70000
+    untechableTime: 49
+    allowHitting: (SELF)
+    Unknown1061: 1
+    Unknown1079: 1
+    Unknown1037: 1
+    endUpon: 
+  sprite: s32'fae9_00', 4
+  Unknown450: s32'fau_item_bomb_explosion'
+  Unknown2271: 1
+  setObjectSize: 4000
+  Unknown2267: 625
+  sprite: s32'fae9_01', 4
+  hit: 
+  Unknown2267: 625
+  playSFX: s32'SE_EXPLODE'
+  sprite: s32'fae9_02', 4
+  Unknown2267: 1250
+  sprite: s32'fae9_03', 4
+  Unknown2267: 1375
+  sprite: s32'fae9_03', 30
+  recoveryState: 
+  Unknown1603: 1
+  endState: 
+
+startState: s32'TreasureAngel'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown242: 
+    Unknown450: s32'fau_shigeki_angel'
+    upon: (ON_HIT_OR_BLOCK)
+      endUpon: 
+    upon: 24
+      Unknown14: s32'suka_open'
+      endUpon: 
+    upon: 29
+      Unknown450: s32'fau_shigeki_devil_s'
+      Unknown448: s32'fau_shigeki_smoke', 100
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 40
+  createObject2: s32'TreasureBox', 100
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 2147483647
+  setMarker: s32'suka_open'
+  sprite: s32'null', 40
+  sprite: s32'null', 20
+  Unknown448: s32'fau_shigeki_smoke', 100
+  Unknown2023: 0
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'TreasureDevil1'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown242: 
+    Unknown450: s32'fau_shigeki_devil_s'
+    upon: (ON_HIT_OR_BLOCK)
+      endUpon: 
+    upon: 24
+      Unknown14: s32'suka_open'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 40
+  createObject2: s32'TreasureBox', 100
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 2147483647
+  setMarker: s32'suka_open'
+  sprite: s32'null', 40
+  sprite: s32'null', 20
+  Unknown448: s32'fau_shigeki_smoke', 100
+  Unknown2023: 0
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'TreasureDevil2'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown242: 
+    Unknown450: s32'fau_shigeki_devil_m'
+    upon: (ON_HIT_OR_BLOCK)
+      endUpon: 
+    upon: 24
+      Unknown14: s32'suka_open'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 40
+  createObject2: s32'TreasureBox', 100
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 2147483647
+  setMarker: s32'suka_open'
+  sprite: s32'null', 40
+  sprite: s32'null', 20
+  Unknown448: s32'fau_shigeki_smoke', 100
+  Unknown2023: 0
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'TreasureDevil3'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown242: 
+    Unknown450: s32'fau_shigeki_devil_l'
+    upon: (ON_HIT_OR_BLOCK)
+      endUpon: 
+    upon: 24
+      Unknown14: s32'suka_open'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 40
+  createObject2: s32'TreasureBox', 100
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 40
+  sprite: s32'null', 2147483647
+  setMarker: s32'suka_open'
+  sprite: s32'null', 40
+  sprite: s32'null', 20
+  Unknown448: s32'fau_shigeki_smoke', 100
+  Unknown2023: 0
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'TreasureBox'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown242: 
+    Unknown450: s32'fau_shigeki_kamibukuro'
+    Unknown99: 300000
+    physicsYImpulse: -60000
+    upon: (ON_HIT_OR_BLOCK)
+      characterEffectOverlay: -1
+      fadeColorBlue: -30
+      fadeColorGreen: -30
+      fadeColorRed: -30
+      endUpon: 
+    upon: 24
+      physicsYImpulse: 60000
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 5
+  sprite: s32'null', 10
+  Unknown176: 1
+  sprite: s32'null', 10
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'TreasureYajirushi'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown242: 
+    Unknown450: s32'fau_shigeki_finger'
+    createObject2: s32'TreasureYajirushiLR', 100
+    upon: (ON_HIT_OR_BLOCK)
+      characterEffectOverlay: -1
+      fadeColorBlue: -30
+      fadeColorGreen: -30
+      fadeColorRed: -30
+      Unknown32: s32'TreasureYajirushiLR'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 100
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'TreasureYajirushiLR'
+  sprite: s32'null', 2147483647
+  Unknown454: 2
+  Unknown457: 2
+  Unknown242: 
+  ifOperation: (IS_EQUAL), (VARIABLE), 93, (STATIC), 0
+    Unknown450: s32'fau_shigeki_2p'
+    endIf: 
+  else: 
+    Unknown450: s32'fau_shigeki_1p'
+    endElse: 
+  endState: 
+
+startState: s32'Jumpdai_Loop'
+  upon: (IMMEDIATE)
+    Unknown451: s32'jumpdai', s32'jumpdai001'
+    Unknown2021: 0
+    setObjectSize: 13000
+    Unknown454: 2
+    Unknown58: 1
+    if: (NEXT_ARG_IS_VAR), 32
+      Unknown2019: 2
+      endIf: 
+    upon: (ON_HIT_OR_BLOCK)
+      Unknown14: s32'Del'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  setMarker: s32'Del'
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 8
+  Unknown2023: 0
+  sprite: s32'null', 8
+  Unknown2023: 1
+  sprite: s32'null', 4
+  Unknown2023: 0
+  sprite: s32'null', 4
+  Unknown2023: 1
+  sprite: s32'null', 4
+  Unknown2023: 0
+  sprite: s32'null', 4
+  Unknown2023: 1
+  sprite: s32'null', 4
+  Unknown2023: 0
+  sprite: s32'null', 4
+  Unknown2023: 1
+  sprite: s32'null', 2
+  Unknown2023: 0
+  sprite: s32'null', 2
+  Unknown2023: 1
+  sprite: s32'null', 2
+  Unknown2023: 0
+  sprite: s32'null', 2
+  Unknown2023: 1
+  Unknown1603: 1
+  endState: 
+
+startState: s32'Jumpdai_Hatudo'
+  upon: (IMMEDIATE)
+    Unknown451: s32'jumpdai', s32'jumpdai000'
+    if: (NEXT_ARG_IS_VAR), 32
+      Unknown2019: 2
+      endIf: 
+    Unknown2021: 0
+    setObjectSize: 13000
+    Unknown448: s32'fau_item_jumpdaieff', 100
+    endUpon: 
+  sprite: s32'null', 100
+  Unknown1603: 1
+  sprite: s32'null', 1
+  createObject2: s32'Jumpdai_Del', 100
+  Unknown19: 23
+  endState: 
+
+startState: s32'Jumpdai_Del'
+  upon: (IMMEDIATE)
+    Unknown450: s32'fau_item_jumpdai_toumei'
+    ifNot: 2, 32
+      Unknown2018: 1
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 4
+  Unknown338: 220
+  sprite: s32'null', 4
+  Unknown338: 200
+  sprite: s32'null', 4
+  Unknown338: 180
+  sprite: s32'null', 4
+  Unknown338: 160
+  sprite: s32'null', 4
+  Unknown338: 140
+  sprite: s32'null', 4
+  Unknown338: 120
+  sprite: s32'null', 4
+  Unknown338: 100
+  sprite: s32'null', 4
+  Unknown338: 80
+  sprite: s32'null', 4
+  Unknown338: 60
+  sprite: s32'null', 4
+  Unknown338: 40
+  sprite: s32'null', 4
+  Unknown338: 20
+  sprite: s32'null', 1
+  Unknown19: 23
+  endState: 
+
+startState: s32'Treasurebox_Loop'
+  upon: (IMMEDIATE)
+    Unknown451: s32'treasurebox', s32'treasurebox001'
+    Unknown2021: 0
+    setObjectSize: 1500
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Treasurebox_Open'
+  upon: (IMMEDIATE)
+    Unknown451: s32'treasurebox', s32'treasurebox000'
+    Unknown2021: 0
+    setObjectSize: 1500
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'031Bake'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_031bake'
+    endUpon: 
+  sprite: s32'null', 16
+  endState: 
+
+startState: s32'Down_fukki'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_down_fukki'
+    endUpon: 
+  sprite: s32'null', 10
+  endState: 
+
+startState: s32'Dust_tornado'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_dust_tornado'
+    endUpon: 
+  sprite: s32'null', 10
+  endState: 
+
+startState: s32'213Bake'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_213bake'
+    endUpon: 
+  sprite: s32'null', 10
+  endState: 
+
+startState: s32'233Bake'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_233bake'
+    endUpon: 
+  sprite: s32'null', 10
+  endState: 
+
+startState: s32'233Atk'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_233atk'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+startState: s32'Mettagiri'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown456: 2
+    Unknown450: s32'fau_mettagiri'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+startState: s32'ReReRe'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_rerere'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+startState: s32'ReReRe_modoshi'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown450: s32'fau_rerere_modoshi'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+startState: s32'GoingMayWay_eff'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_goingmayway'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'Reaction_flower'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown450: s32'fau_reaction_flower'
+    Unknown454: 2
+    endUpon: 
+  sprite: s32'null', 200
+  endState: 
+
+startState: s32'Reaction_ikari'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown450: s32'fau_reaction_ikari'
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+startState: s32'Flashhead'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown456: 2
+    Unknown450: s32'fau_face_flash'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+startState: s32'Kusudama'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown456: 2
+    Unknown450: s32'fau_kusudama'
+    endUpon: 
+  sprite: s32'null', 100
+  endState: 
+
+startState: s32'GrowingFlower'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown454: 2
+    Unknown457: 2
+    endUpon: 
+  sprite: s32'null', 22
+  ifOperation: 22, (STATIC), 25, (STATIC), 100
+    Unknown450: s32'fau_gflower_a'
+    endIf: 
+  else: 
+    ifOperation: 22, (STATIC), 25, (STATIC), 100
+      Unknown450: s32'fau_gflower_b'
+      endIf: 
+    else: 
+      ifOperation: 22, (STATIC), 25, (STATIC), 100
+        Unknown450: s32'fau_gflower_c'
+        endIf: 
+      else: 
+        Unknown450: s32'fau_gflower_d'
+        endElse: 
+      endElse: 
+    endElse: 
+  endState: 
+
+startState: s32'OreHana'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    Unknown458: 3
+    Unknown287: 1
+    upon: (FRAME_STEP)
+      Unknown2001: 3, s32'CmnActRomanCancel'
+      if: (NEXT_ARG_IS_VAR), 0
+        Unknown23: 3
+        Unknown456: 0
+        Unknown454: 0
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 4
+  ifOperation: 22, (STATIC), 25, (STATIC), 100
+    Unknown450: s32'fau_gflower_a'
+    endIf: 
+  else: 
+    ifOperation: 22, (STATIC), 25, (STATIC), 100
+      Unknown450: s32'fau_gflower_b'
+      endIf: 
+    else: 
+      ifOperation: 22, (STATIC), 25, (STATIC), 100
+        Unknown450: s32'fau_gflower_c'
+        endIf: 
+      else: 
+        Unknown450: s32'fau_gflower_d'
+        endElse: 
+      endElse: 
+    endElse: 
+  sprite: s32'fau412_07ef', 2
+  sprite: s32'null', 16
+  endState: 
+
+startState: s32'OreHana_Shot'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 2
+    Unknown1028: 0
+    damage: 36
+    groundCounterHitEffect: (AIR_LAUNCH)
+    airCounterHitEffect: (AIR_LAUNCH)
+    untechableTime: 32
+    hitAirPushbackX: 3500
+    hitAirPushbackY: 35000
+    tensionGainOnConnect: 40
+    Unknown456: 3
+    Unknown454: 3
+    Unknown458: 3
+    Unknown287: 1
+    upon: (FRAME_STEP)
+      Unknown2001: 3, s32'CmnActRomanCancel'
+      if: (NEXT_ARG_IS_VAR), 0
+        grabOrRelease: 
+        Unknown23: 3
+        Unknown456: 0
+        Unknown454: 0
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 4
+  sprite: s32'fau412_07ef', 2
+  sprite: s32'null', 16
+  Unknown23: 3
+  recoveryState: 
+  endState: 
+
+startState: s32'OreHanaBig'
+  upon: (IMMEDIATE)
+    Unknown456: 3
+    setObjectSize: 2000
+    Unknown458: 3
+    Unknown287: 1
+    upon: (FRAME_STEP)
+      Unknown2001: 3, s32'CmnActRomanCancel'
+      if: (NEXT_ARG_IS_VAR), 0
+        Unknown23: 3
+        Unknown456: 0
+        Unknown454: 0
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 4
+  ifOperation: 22, (STATIC), 25, (STATIC), 100
+    Unknown450: s32'fau_gflower_a'
+    endIf: 
+  else: 
+    ifOperation: 22, (STATIC), 25, (STATIC), 100
+      Unknown450: s32'fau_gflower_b'
+      endIf: 
+    else: 
+      ifOperation: 22, (STATIC), 25, (STATIC), 100
+        Unknown450: s32'fau_gflower_c'
+        endIf: 
+      else: 
+        Unknown450: s32'fau_gflower_d'
+        endElse: 
+      endElse: 
+    endElse: 
+  sprite: s32'fau412_07efex', 10
+  sprite: s32'null', 16
+  endState: 
+
+startState: s32'OreHanaBig_Shot'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 4
+    Unknown1028: 0
+    damage: 48
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    hitAirPushbackX: -10000
+    hitAirPushbackY: 42000
+    untechableTime: 46
+    tensionGainOnConnect: 60
+    setObjectSize: 2000
+    Unknown456: 3
+    Unknown454: 3
+    Unknown458: 3
+    Unknown287: 1
+    upon: (FRAME_STEP)
+      Unknown2001: 3, s32'CmnActRomanCancel'
+      if: (NEXT_ARG_IS_VAR), 0
+        grabOrRelease: 
+        Unknown23: 3
+        Unknown456: 0
+        Unknown454: 0
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'null', 4
+  sprite: s32'fau412_07efex', 10
+  sprite: s32'null', 16
+  Unknown23: 3
+  recoveryState: 
+  endState: 
+
+startState: s32'Sudare'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_keii1'
+    endUpon: 
+  sprite: s32'null', 150
+  endState: 
+
+startState: s32'306flower_start'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown466: 2
+    Unknown454: 2
+    Unknown450: s32'fau_306flower_start'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+startState: s32'306flower_loop'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown466: 2
+    Unknown454: 2
+    Unknown450: s32'fau_306flower_loop'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'306flower_end'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown466: 2
+    Unknown454: 2
+    Unknown450: s32'fau_306flower_end'
+    endUpon: 
+  sprite: s32'null', 60
+  endState: 
+
+startState: s32'Souten_bake_front'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_409bake_front'
+    endUpon: 
+  sprite: s32'null', 3
+  endState: 
+
+startState: s32'Souten_bake_back'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_409bake_back'
+    endUpon: 
+  sprite: s32'null', 3
+  endState: 
+
+startState: s32'414bake'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_414bake_leg'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'Swim_splash'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown450: s32'fau_shigeki_splash'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'Swim_water'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown450: s32'fau_shigeki_waterloop'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'Swim_water_oku'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown450: s32'fau_shigeki_waterloop2'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'Kancho_hit'
+  upon: (IMMEDIATE)
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_kancho_hit'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+startState: s32'Neoblitz_atk'
+  upon: (IMMEDIATE)
+    Unknown457: 2
+    Unknown454: 2
+    Unknown466: 2
+    Unknown456: 2
+    Unknown450: s32'fau_neoblitz'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Shot_HomeRun'
+  upon: (IMMEDIATE)
+    Unknown243: 
+    attackLevel: 2
+    riscPlus: 3
+    damage: 20
+    tensionGainOnConnect: 20
+    Unknown450: s32'fau_baseball'
+    endUpon: 
+  setMarker: s32'HomeRun'
+  sprite: s32'chibi_hit_00', 4
+  hit: 
+  Unknown58: 1
+  physicsXImpulse: 100000
+  physicsYImpulse: 50000
+  Unknown448: s32'fau_batting', 100
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackX: 50000
+  untechableTime: 60
+  playCharacterSFX: s32'SE_FAU001'
+  setMarker: s32'Hit_loop'
+  sprite: s32'chibi_hit_01', 4
+  sprite: s32'chibi_hit_00', 4
+  Unknown3: 
+  goToMarker: s32'Hit_loop'
+  endState: 
+
+startState: s32'Shot_Hit'
+  upon: (IMMEDIATE)
+    Unknown243: 
+    attackLevel: 0
+    riscPlus: 3
+    damage: 10
+    tensionGainOnConnect: 10
+    Unknown450: s32'fau_baseball'
+    endUpon: 
+  setMarker: s32'Hit'
+  sprite: s32'chibi_hit_00', 4
+  hit: 
+  Unknown58: 1
+  physicsXImpulse: 30000
+  physicsYImpulse: 30000
+  setGravity: 2000
+  Unknown448: s32'fau_batting', 100
+  playCharacterSFX: s32'SE_FAU001'
+  setMarker: s32'Hit_loop'
+  sprite: s32'chibi_hit_01', 4
+  sprite: s32'chibi_hit_00', 4
+  Unknown3: 
+  goToMarker: s32'Hit_loop'
+  endState: 
+
+startState: s32'BG_roka'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_bg_roka'
+    endUpon: 
+  sprite: s32'null', 1000
+  endState: 
+
+startState: s32'BG_roka2'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_bg_roka2'
+    endUpon: 
+  sprite: s32'null', 1000
+  endState: 
+
+startState: s32'BG_shigeki'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_bg_shigekiroom'
+    endUpon: 
+  sprite: s32'null', 1000
+  endState: 
+
+startState: s32'BG_sky'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_bg_sky'
+    endUpon: 
+  sprite: s32'null', 1000
+  endState: 
+
+startState: s32'BG_ichigeki'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_ichigeki_bg'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'BG_operate'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_ichigeki_gakudan_move'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'fau_ichigeki_screen'
+  upon: (IMMEDIATE)
+    Unknown457: 3
+    Unknown450: s32'fau_ichigeki_screen'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'ACEvtFAU_7A'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_HEIJI2'
+  Unknown2122: 
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+startState: s32'ACEvtFAU_7B'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2109: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000'
+    Unknown2121: 0
+    Unknown94: 550000
+    Unknown40: 
+    Unknown2121: 2
+    Unknown232: -45000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: '0x4845494A4932000000000000000000000000000000000000000000000000000000000000'
+  Unknown2115: 60, 0
+  sprite: s32'null', 90
+  Unknown2113: '0x4143325F4641555F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  Unknown2107: '0x4576656E744641553037425F303100000000000000000000000000000000000000000000'
+  Unknown2107: '0x636D6E5F6576745F63726E73303033000000000000000000000000000000000002000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303200000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000002000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303300000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553037425F303200000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303400000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553037425F303300000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303600000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303700000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303800000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30303900000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313000000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313100000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313300000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313400000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553037425F303400000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313500000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313600000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4237415F30313700000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553037425F303500000000000000000000000000000000000000000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+startState: s32'ACEvtFAU_8A'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2116: 1000
+    Unknown2075: 1
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E744641553038415F303000000000000000000000000000000000000001000000'
+    Unknown2121: 1
+    flipDirection: 
+    Unknown40: 
+    Unknown2109: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000'
+    Unknown2121: 2
+    Unknown94: -300000
+    Unknown232: -45000
+    Unknown40: 
+    Unknown2109: '0x636D6E5F6576745F67746264000000000000000000000000000000000000000047544244000000000000000000000000000000000000000000000000000000006400000003000000'
+    Unknown2121: 3
+    Unknown94: 800000
+    Unknown1700: -300000
+    Unknown232: 45000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_MissionStart'
+  Unknown2123: s32'BGM_SeriousTalk'
+  Unknown2122: 
+  sprite: s32'null', 90
+  Unknown2113: '0x4143325F4641555F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30303200000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303100000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30303300000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303100000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30303400000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2120: '0x4D697373696F6E5374617274000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  Unknown2106: '0x4143325F4641555F4238415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303200000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30303600000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303300000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30303700000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303200000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2115: 0, 120
+  Unknown2106: '0x4143325F4641555F4238415F30303800000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303400000000000000000000000000000000000001000000'
+  sprite: s32'null', 320
+  Unknown2106: '0x4143325F4641555F4238415F30303900000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303300000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30313000000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303500000000000000000000000000000000000001000000'
+  Unknown2120: '0x6D61696E0000000000000000000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30313100000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303600000000000000000000000000000000000001000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30313200000000000000000000000000000000001E000000'
+  Unknown2107: '0x636D6E5F6576745F67746264303033000000000000000000000000000000000003000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238415F30313300000000000000000000000000000000001E000000'
+  Unknown2107: '0x4576656E744641553038415F303400000000000000000000000000000000000000000000'
+  Unknown2107: '0x4576656E744641553038415F303700000000000000000000000000000000000001000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+startState: s32'ACEvtFAU_8B'
+  upon: (IMMEDIATE)
+    Unknown2075: 1
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2121: 0
+    Unknown94: -1000000
+    Unknown287: 0
+    Unknown40: 
+    Unknown2109: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000'
+    Unknown2121: 2
+    Unknown94: -100000
+    Unknown232: -45000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  sprite: s32'null', 60
+  Unknown2107: '0x4576656E744641553038425F303100000000000000000000000000000000000000000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303300000000000000000000000000000000003C000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E744641553038425F303200000000000000000000000000000000000000000000'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+      Unknown2106: '0x4143325F4641555F4238425F30303400000000000000000000000000000000001E000000'
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303500000000000000000000000000000000001E000000'
+  createObject2: s32'cmn_avatar_tuusin_jhn', 131
+  Unknown43: 4, 1
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303600000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303700000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303800000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F4641555F4238425F30303900000000000000000000000000000000001E000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
