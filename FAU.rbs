@@ -2721,10 +2721,10 @@ startState: s32'CmnActRoundWin'
     Unknown54: 3, 2, 46, 0, 2
     Unknown52: '0x01000000020000002E000000020000002D0000000200000031000000'
     ifOperation: (IS_GREATER), (VARIABLE), 49, (STATIC), 0
-      Unknown106: 10000
+      physicsXImpulseAbsolute: 10000
       endIf: 
     else: 
-      Unknown106: -10000
+      physicsXImpulseAbsolute: -10000
       endElse: 
     Unknown44: 3, 2, 49
     ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 15000

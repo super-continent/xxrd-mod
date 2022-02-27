@@ -234,9 +234,9 @@ startState: s32'Coin'
     endUpon: 
   sprite: s32'JYEF_00', 2
   hit: 
-  physicsYImpulse: 18000
-  setGravity: 2100
-  physicsXImpulse: 19500
+  physicsYImpulse: 8000
+  setGravity: 1300
+  physicsXImpulse: 16000
   ifNot: 2, 115
     Unknown448: s32'jhn_coin_twinkle', 0
     endIf: 

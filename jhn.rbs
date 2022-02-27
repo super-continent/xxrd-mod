@@ -681,7 +681,7 @@ startSubroutine: s32'RoundInit'
     moveType: (OVERDRIVE)
     characterState: (STANDING)
     addMoveFlag: (REQUIRES_50_TENSION)
-    moveInput: (INPUT_236214)
+    moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_H)
     Unknown1511: 90
     Unknown1498: -557, -529, 472, 425
@@ -699,7 +699,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     addMoveFlag: (REQUIRES_50_TENSION)
     addMoveFlag: 116
-    moveInput: (INPUT_236214)
+    moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_D)
     Unknown1511: 90
     Unknown1498: -557, -529, 472, 425
@@ -714,9 +714,23 @@ startSubroutine: s32'RoundInit'
     moveType: (SPECIAL)
     characterState: (STANDING)
     addMoveFlag: (REQUIRES_25_TENSION)
-    moveInput: (INPUT_236)
+    moveInput: (INPUT_214)
     moveInput: (INPUT_PRESS_D)
     Unknown1511: 80
+    Unknown1498: -915, -367, 901, 292
+    Unknown1532: 
+    Unknown1536: 
+    Unknown1544: 
+    Unknown1556: 
+    endMoveRegister: 
+  addMove: s32'FB_Jackhound_Stance'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    addMoveFlag: (REQUIRES_25_TENSION)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_D)
+    Unknown1511: 80
+    isFollowupMove: 1
     Unknown1498: -915, -367, 901, 292
     Unknown1532: 
     Unknown1536: 
@@ -1046,6 +1060,7 @@ startSubroutine: s32'RoundInit'
   registerFunc: s32'XXMistFinerBDash'
   registerFunc: s32'UpCoin'
   registerFunc: s32'FB_Jackhound'
+  registerFunc: s32'FB_Jackhound_Stance'
   registerFunc: s32'FB_Killerjoker'
   registerFunc: s32'Sinwaza'
   registerFunc: s32'Sinwaza_Shot'
@@ -6685,6 +6700,8 @@ startState: s32'AirMistFinerALv0'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -6765,6 +6782,8 @@ startState: s32'AirMistFinerALv1'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     wallBounceCount: 1
     wallBounceXVelocityPercent: 10
@@ -6846,6 +6865,8 @@ startState: s32'AirMistFinerALv2'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     wallBounceCount: 1
     wallBounceXVelocityPercent: 10
@@ -6928,6 +6949,8 @@ startState: s32'AirMistFinerBLv0'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -7010,6 +7033,8 @@ startState: s32'AirMistFinerBLv1'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -7093,6 +7118,8 @@ startState: s32'AirMistFinerBLv2'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -7173,6 +7200,8 @@ startState: s32'AirMistFinerCLv0'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -7257,6 +7286,8 @@ startState: s32'AirMistFinerCLv1'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -7338,6 +7369,8 @@ startState: s32'AirMistFinerCLv2'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown2137: 1
     Unknown2136: 1
@@ -8885,6 +8918,7 @@ startState: s32'XXMistFinerLoop'
       addWhiffCancelOption: s32'XXMistFinerFDash'
       addWhiffCancelOption: s32'XXMistFinerBDash'
       addWhiffCancelOption: s32'XXMistFinerCancel'
+      addWhiffCancelOption: s32'FB_Jackhound_Stance'
       Unknown1616: 1
       endIf: 
     else: 
@@ -9038,6 +9072,7 @@ startState: s32'XXMistFinerFWalk'
       endUpon: 
     addWhiffCancelOption: s32'XXMistFinerCancel'
     addWhiffCancelOption: s32'TreasureHunt'
+    addWhiffCancelOption: s32'FB_Jackhound_Stance'
     enableWhiffCancelOptions: 1
     endUpon: 
   setMarker: s32'loop'
@@ -9086,6 +9121,7 @@ startState: s32'XXMistFinerBWalk'
       endUpon: 
     addWhiffCancelOption: s32'XXMistFinerCancel'
     addWhiffCancelOption: s32'TreasureHunt'
+    addWhiffCancelOption: s32'FB_Jackhound_Stance'
     enableWhiffCancelOptions: 1
     endUpon: 
   setMarker: s32'loop'
@@ -9107,6 +9143,7 @@ startState: s32'XXMistFinerFDash'
   upon: (IMMEDIATE)
     recoveryState: 
     addWhiffCancelOption: s32'StepTreasureHunt'
+    addWhiffCancelOption: s32'FB_Jackhound_Stance'
     enableWhiffCancelOptions: 1
     upon: (FRAME_STEP)
       callSubroutine: s32'jhn_DispMistFinerLevel', 0, 0, 0, 0, 0, 0, 0, 0
@@ -9199,6 +9236,7 @@ startState: s32'XXMistFinerBDash'
   upon: (IMMEDIATE)
     recoveryState: 
     addWhiffCancelOption: s32'StepTreasureHunt'
+    addWhiffCancelOption: s32'FB_Jackhound_Stance'
     enableWhiffCancelOptions: 1
     upon: (FRAME_STEP)
       callSubroutine: s32'jhn_DispMistFinerLevel', 0, 0, 0, 0, 0, 0, 0, 0
@@ -9295,7 +9333,6 @@ startState: s32'XXMistFinerCancel'
 
 startState: s32'XXMistFinerALv0'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     isAirUnblockable: 1
     groundHitEffect: (AIR_FACE_UP)
@@ -9321,6 +9358,8 @@ startState: s32'XXMistFinerALv0'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     yrcWindowLength: 10
     endUpon: 
@@ -9362,7 +9401,6 @@ startState: s32'XXMistFinerALv0'
 
 startState: s32'XXMistFinerALv1'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     isAirUnblockable: 1
     groundHitEffect: (AIR_FACE_UP)
@@ -9387,6 +9425,8 @@ startState: s32'XXMistFinerALv1'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     Unknown287: 1
     yrcWindowLength: 10
@@ -9429,7 +9469,6 @@ startState: s32'XXMistFinerALv1'
 
 startState: s32'XXMistFinerBLv0'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     groundHitEffect: (AIR_FACE_UP)
     disableHitstop: 1
@@ -9453,6 +9492,8 @@ startState: s32'XXMistFinerBLv0'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     yrcWindowLength: 12
     endUpon: 
@@ -9494,7 +9535,6 @@ startState: s32'XXMistFinerBLv0'
 
 startState: s32'XXMistFinerBLv1'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     groundHitEffect: (AIR_FACE_UP)
     disableHitstop: 1
@@ -9519,6 +9559,8 @@ startState: s32'XXMistFinerBLv1'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     yrcWindowLength: 10
     endUpon: 
@@ -9560,7 +9602,6 @@ startState: s32'XXMistFinerBLv1'
 
 startState: s32'XXMistFinerBLv2'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     groundHitEffect: (AIR_FACE_UP)
     disableHitstop: 1
@@ -9588,6 +9629,8 @@ startState: s32'XXMistFinerBLv2'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     yrcWindowLength: 10
     endUpon: 
@@ -9630,7 +9673,6 @@ startState: s32'XXMistFinerBLv2'
 
 startState: s32'XXMistFinerCLv0'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     isAirUnblockable: 1
     guardType: (LOW)
@@ -9652,6 +9694,8 @@ startState: s32'XXMistFinerCLv0'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     yrcWindowLength: 17
     endUpon: 
@@ -9694,7 +9738,6 @@ startState: s32'XXMistFinerCLv0'
 
 startState: s32'XXMistFinerCLv1'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     isAirUnblockable: 1
     guardType: (LOW)
@@ -9720,6 +9763,8 @@ startState: s32'XXMistFinerCLv1'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     yrcWindowLength: 11
     endUpon: 
@@ -9761,7 +9806,6 @@ startState: s32'XXMistFinerCLv1'
 
 startState: s32'XXMistFinerCLv2'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     isAirUnblockable: 1
     guardType: (LOW)
@@ -9829,7 +9873,6 @@ startState: s32'XXMistFinerCLv2'
 
 startState: s32'XXMistFinerALv2'
   upon: (IMMEDIATE)
-    addGatlingOption: s32'RedRomanCancel'
     Unknown708: 18, 1
     isAirUnblockable: 1
     disableHitstop: 1
@@ -9853,6 +9896,8 @@ startState: s32'XXMistFinerALv2'
     upon: (HIT)
       storeValue: (VARIABLE), 5, (STATIC), 0
       Unknown32: s32'MistKuttsuku'
+      addWhiffCancelOption: s32'RedRomanCancel'
+      enableWhiffCancelOptions: 1
       endUpon: 
     wallBounceCount: 1
     wallBounceXVelocityPercent: 30
@@ -9904,27 +9949,20 @@ startState: s32'FB_Jackhound'
     Unknown1045: 1, s32''
     Unknown1108: 40
     Unknown1112: 1
-    disableHitstop: 1
     Unknown1051: 0
-    hitPushbackX: 8
+    hitPushbackX: 10
     attackLevel: 2
-    damage: 50
+    damage: 40
+    hitstop: 5
     isAirUnblockable: 1
     groundHitEffect: (STAGGER)
     airHitEffect: (AIR_LAUNCH)
-    staggerDuration: 92
+    staggerDuration: 60
     hitAirPushbackX: 5000
     hitAirPushbackY: 40000
     untechableTime: 80
     SFX_0: s32'SE_HITKIRIB'
     Unknown1939: 1
-    upon: (SUPERFREEZE)
-      Unknown2199: 1
-      Unknown2286: 1
-      cameraMotion: -20152, 82673, 110370, 2400, 2820, 0, 90, 15, 20, 15, 1
-      Unknown2161: 100, -10000, 230000
-      Unknown448: s32'cmn_kakusei_hatudo', 130
-      endUpon: 
     upon: (HIT)
       callCmnEfFunc: s32'Treasure1up'
       Unknown14: s32'hit'
@@ -9950,14 +9988,8 @@ startState: s32'FB_Jackhound'
   sprite: s32'jhn431_06', 2
   sprite: s32'jhn431_07', 2
   createObject2: s32'Treasure_dash', 100
-  setStrikeInvul: 1
-  setThrowInvul: 1
   physicsXImpulse: 80000
   setNoCollision: 0
-  if: (NEXT_ARG_IS_VAR), 161
-    setThrowInvul: 0
-    setStrikeInvul: 0
-    endIf: 
   sprite: s32'jhn431_08', 2
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -410000
@@ -9978,8 +10010,6 @@ startState: s32'FB_Jackhound'
   sprite: s32'jhn431_11', 2
   recoveryState: 
   setNoCollision: 1
-  setStrikeInvul: 0
-  setThrowInvul: 0
   Unknown2199: 0
   Unknown23: 3
   physicsXImpulse: 1000
@@ -10010,17 +10040,125 @@ startState: s32'FB_Jackhound'
   createObject2: s32'Treasure_hit', 132
   Unknown2161: 100, 0, 205000
   createObject2: s32'Jackhound_Treasure', 130
-  romanCancelAvailability: (DISALLOWED)
   sprite: s32'jhn431_11', 3
   recoveryState: 
   sprite: s32'jhn431_12', 5
   createObject2: s32'Treasure_zanzo', 100
-  setStrikeInvul: 0
-  setThrowInvul: 0
   setNoCollision: 1
   Unknown2143: 6, 100
   sprite: s32'jhn431_13', 2
-  romanCancelAvailability: (ALLOWED)
+  sprite: s32'jhn431_15', 2
+  playSFX: s32'SE_SAYA2'
+  Unknown2199: 0
+  sprite: s32'jhn431_24', 3
+  sprite: s32'jhn431_25', 2
+  endState: 
+
+startState: s32'FB_Jackhound_Stance'
+  upon: (IMMEDIATE)
+    consumeTension: 2500
+    reduceTensionGainForTime: 240
+    setForcedProration: 70
+    Unknown1045: 1, s32''
+    Unknown1108: 40
+    Unknown1112: 1
+    Unknown1051: 0
+    hitPushbackX: 10
+    attackLevel: 2
+    damage: 50
+    hitstop: 5
+    isAirUnblockable: 1
+    groundHitEffect: (STAGGER)
+    airHitEffect: (AIR_LAUNCH)
+    staggerDuration: 90
+    hitAirPushbackX: 5000
+    hitAirPushbackY: 40000
+    untechableTime: 80
+    SFX_0: s32'SE_HITKIRIB'
+    Unknown1939: 1
+    upon: (HIT)
+      callCmnEfFunc: s32'Treasure1up'
+      Unknown14: s32'hit'
+      endUpon: 
+    endUpon: 
+  playSFX: s32'SE_KAKUSEI'
+  characterEffectOverlay: -1
+  sprite: s32'jhn431_00', 1
+  Unknown176: 1
+  fadeColorRed: -30
+  fadeColorGreen: -30
+  fadeColorBlue: -30
+  upon: (FRAME_STEP)
+    Unknown23: 3
+    Unknown14: s32'Run'
+    endIf: 
+  sprite: s32'jhn431_03', 1
+  createObject2: s32'Treasure_charge', 100
+  sprite: s32'jhn431_04', 1
+  sprite: s32'jhn431_05', 1
+  Unknown3: 
+  setMarker: s32'Run'
+  sprite: s32'jhn431_06', 1
+  sprite: s32'jhn431_07', 1
+  createObject2: s32'Treasure_dash', 100
+  physicsXImpulse: 175000
+  setNoCollision: 0
+  sprite: s32'jhn431_08', 1
+  upon: (FRAME_STEP)
+    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -410000
+      Unknown23: 3
+      physicsXImpulse: 1000
+      Unknown2197: 90
+      endIf: 
+    endUpon: 
+  sprite: s32'jhn431_08', 1
+  setMarker: s32'Attack'
+  sprite: s32'jhn431_09', 1
+  sprite: s32'jhn431_10', 1
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 140000
+    createObject2: s32'431bake', 100
+    hit: 
+    endIf: 
+  sprite: s32'jhn431_11', 2
+  recoveryState: 
+  setNoCollision: 1
+  Unknown2199: 0
+  Unknown23: 3
+  physicsXImpulse: 1000
+  Unknown2197: 90
+  sprite: s32'jhn432_00', 2
+  playVoice: s16'vxxx213'
+  playSFX: s32'SE_SWINGG'
+  sprite: s32'jhn432_01', 2
+  Unknown2143: 6, 100
+  sprite: s32'jhn432_02', 4
+  createObject2: s32'Treasure_fail', 100
+  sprite: s32'jhn432_03', 3
+  sprite: s32'jhn432_04', 3
+  sprite: s32'jhn432_05', 2
+  sprite: s32'jhn431_19', 2
+  sprite: s32'jhn431_21', 3
+  Unknown448: s32'jhn_noutou01', 130
+  playSFX: s32'SE_SAYA2'
+  sprite: s32'jhn431_22', 4
+  sprite: s32'jhn431_23', 3
+  sprite: s32'jhn431_24', 3
+  sprite: s32'jhn431_25', 3
+  Unknown3: 
+  Unknown18: 
+  setMarker: s32'hit'
+  sprite: s32'jhn431_10', 3
+  playVoice: s16'vxxx212'
+  createObject2: s32'Treasure_hit', 132
+  Unknown2161: 100, 0, 205000
+  createObject2: s32'Jackhound_Treasure', 130
+  sprite: s32'jhn431_11', 3
+  recoveryState: 
+  sprite: s32'jhn431_12', 5
+  createObject2: s32'Treasure_zanzo', 100
+  setNoCollision: 1
+  Unknown2143: 6, 100
+  sprite: s32'jhn431_13', 2
   sprite: s32'jhn431_15', 2
   playSFX: s32'SE_SAYA2'
   Unknown2199: 0
@@ -10042,7 +10180,7 @@ startState: s32'FB_Killerjoker'
     setForcedProration: 85
     hitAirPushbackX: -6500
     hitAirPushbackY: 34000
-    untechableTime: 60
+    untechableTime: 20
     endUpon: 
   upon: (HIT)
     restoreDoubleJump: 
@@ -10055,8 +10193,10 @@ startState: s32'FB_Killerjoker'
   playVoice: s16'vxxx206'
   tensionGain: 20
   sprite: s32'jhn411_01', 1
-  physicsYImpulse: 12000
-  setGravity: 1500
+  ifOperation: (IS_LESSER), (VARIABLE), 8, (STATIC), 20000
+    physicsYImpulse: 20000
+    setGravity: 1500
+    endIf: 
   sprite: s32'jhn411_02', 1
   playSFX: s32'GG2_012'
   sprite: s32'jhn411_03', 1
