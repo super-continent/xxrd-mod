@@ -1592,7 +1592,7 @@ startState: s32'CmnActLandingStiff'
   Unknown3: 
   setMarker: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActFWalk'
@@ -2495,7 +2495,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'fau210_06', 3
   sprite: s32'fau210_07', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
@@ -2515,7 +2515,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'fau351_05', 3
   sprite: s32'fau351_06', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2562,13 +2562,13 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'fau350_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'fau351_05', 3
   sprite: s32'fau351_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -2670,7 +2670,7 @@ startState: s32'entry_default'
     Unknown32: s32'BG_roka2'
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActExDamage'
@@ -2704,7 +2704,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'fau615_08', 4
   sprite: s32'fau615_09', 5
   sprite: s32'fau615_10', 2147483647
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'fau616_00', 4
   setNoCollision: 0
@@ -2820,7 +2820,7 @@ startState: s32'CmnActMatchWin'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActLose'
@@ -3617,7 +3617,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'fau300_24', 4
   sprite: s32'fau300_25', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'fau301_00', 6
   recoveryState: 
@@ -3636,7 +3636,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'fau301_11', 6
   sprite: s32'fau301_12', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtk6F'
@@ -3672,7 +3672,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'fau305_12', 6
   sprite: s32'fau305_13', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'fau306_00', 6
   sprite: s32'fau306_01', 6
@@ -3734,7 +3734,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'fau306_10', 6
   sprite: s32'fau306_11', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtkAir5A'
@@ -4042,7 +4042,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'fau360_20', 3
   sprite: s32'fau360_21', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'fau362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4050,7 +4050,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'fau362_02', 6
   sprite: s32'fau362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -4115,7 +4115,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'fau360_20', 3
   sprite: s32'fau360_21', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'fau363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4123,7 +4123,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'fau363_02', 6
   sprite: s32'fau363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -4172,7 +4172,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'fau033_05', 2
   sprite: s32'fau033_06', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'fau045_05', 1
   Unknown32: s32'fau_guardbake_jump'
@@ -4459,7 +4459,7 @@ startState: s32'NanigaDerukana'
   callCmnEfFunc: s32'ItemThrow_high'
   sprite: s32'fau408_05', 5
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'fastthrow'
   sprite: s32'fau408_04', 6
   Unknown32: s32'Item_Pre'
@@ -5079,7 +5079,7 @@ startState: s32'Mettagiri'
   sprite: s32'fau405_14', 3
   sprite: s32'fau405_15', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Miss'
   sprite: s32'fau406_00', 2
   recoveryState: 
@@ -6280,7 +6280,7 @@ startState: s32'Shigeki'
   playVoice: s16'vxxx104'
   sprite: s32'fau430_34', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   sprite: s32'fau430_15', 20
   playVoice: s16'vxxx207'
@@ -6306,7 +6306,7 @@ startState: s32'Shigeki'
   grabOrRelease: 
   Unknown35: 10, s32'lock_kakutei'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'lock_kakutei'
   sprite: s32'fau430_15', 4
   Unknown240: 
@@ -6491,7 +6491,7 @@ startState: s32'Shigeki'
   sprite: s32'fau430_33', 33
   sprite: s32'fau430_34', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'tenshi'
   sprite: s32'fau430_18', 20
   sprite: s32'fau430_18', 30
@@ -6521,7 +6521,7 @@ startState: s32'Shigeki'
   sprite: s32'fau430_33', 40
   sprite: s32'fau430_34', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'tenshiToAkuma'
   sprite: s32'fau430_18', 20
   sprite: s32'fau430_18', 30
@@ -6537,7 +6537,7 @@ startState: s32'Shigeki'
   sprite: s32'fau430_18', 30
   Unknown3: 
   goToMarker: s32'akuma_tochuu'
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NaNaNaNanigaDerukana'
@@ -6767,7 +6767,7 @@ startState: s32'Ichigeki'
   sprite: s32'fau202_01', 3
   sprite: s32'fau202_00', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647

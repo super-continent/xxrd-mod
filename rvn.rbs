@@ -2465,7 +2465,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'rvn210_11', 1
   sprite: s32'rvn210_12', 1
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
@@ -2491,7 +2491,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'rvn305_01', 5
   sprite: s32'rvn305_00', 5
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2548,13 +2548,13 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'rvn350_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'rvn351_05', 3
   sprite: s32'rvn351_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -2636,7 +2636,7 @@ upon: (FRAME_STEP)
   endUpon: 
 
 Unknown3: 
-Unknown18: 
+exitState: 
 endState: 
 startState: s32'CmnActExDamage'
   sprite: s32'keep', 2147483647
@@ -2685,7 +2685,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'rvn615_28', 2147483647
   Unknown1676: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn616_00', 3
   sprite: s32'rvn616_01', 3
@@ -2930,7 +2930,7 @@ startState: s32'Kakkuu'
   Unknown2217: 1
   sprite: s32'rvn400_08', 2
   sprite: s32'rvn400_07', 3
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown120: 0
   sprite: s32'rvn400_08', 3
   sprite: s32'rvn400_07', 3
@@ -3751,7 +3751,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'rvn300_18', 3
   sprite: s32'rvn300_19', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn301_00', 4
   playVoice: s16'vxxx300'
@@ -3816,7 +3816,7 @@ startState: s32'NmlAtk5F'
   Unknown350: 255
   Unknown356: 255
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtk6F'
@@ -3888,7 +3888,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'rvn305_27', 3
   sprite: s32'rvn305_28', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn306_00', 3
   sprite: s32'rvn306_01', 3
@@ -3926,7 +3926,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'rvn306_25', 6
   sprite: s32'rvn306_26', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtkAir5A'
@@ -4022,7 +4022,7 @@ startState: s32'NmlAtkAir2B'
   hit: 
   playSFX: s32'SE_SWINGB'
   Unknown111: 55
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   multiplyCarriedMomentum: 50
   setGravity: 4000
   setMarker: s32'loop'
@@ -4182,7 +4182,7 @@ startState: s32'NmlAtkAir5E'
   Unknown1325: 1
   sprite: s32'rvn254_16', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   sprite: s32'rvn254_06', 2
   sprite: s32'rvn254_07', 2
@@ -4304,7 +4304,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'rvn360_19', 3
   sprite: s32'rvn360_20', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'rvn362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4312,7 +4312,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'rvn362_02', 6
   sprite: s32'rvn362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -4379,7 +4379,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'rvn360_19', 3
   sprite: s32'rvn360_20', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'rvn363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4387,7 +4387,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'rvn363_02', 6
   sprite: s32'rvn363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -4428,7 +4428,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'rvn010_27', 2
   sprite: s32'rvn010_28', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'rvn045_03', 4
   sprite: s32'rvn045_02', 4
@@ -5157,7 +5157,7 @@ startState: s32'ArmorDance'
   Unknown23: 3
   sprite: s32'rvn406_33', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'End2'
   sprite: s32'rvn406_23', 4
   upon: (FRAME_STEP)
@@ -5178,7 +5178,7 @@ startState: s32'ArmorDance'
   Unknown23: 3
   sprite: s32'rvn406_33', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'End3'
   sprite: s32'rvn406_26', 3
   upon: (FRAME_STEP)
@@ -5513,7 +5513,7 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_33', 2
   Unknown3: 
   jumpToState: s32'_NEUTRAL'
-  Unknown18: 
+  exitState: 
   setMarker: s32'End2'
   sprite: s32'rvn406_23', 4
   upon: (FRAME_STEP)
@@ -5712,7 +5712,7 @@ startState: s32'AirBlowAttack'
   sprite: s32'rvn408_12', 3
   sprite: s32'rvn408_13', 3
   sprite: s32'rvn408_14', 3
-  Unknown18: 
+  exitState: 
   setMarker: s32'landing'
   sprite: s32'rvn027_00', 3
   sprite: s32'rvn010_24', 2
@@ -5764,7 +5764,7 @@ startState: s32'CommandThrow'
   sprite: s32'rvn410_21', 4
   sprite: s32'rvn410_22', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CommandThrowEx'
@@ -5958,7 +5958,7 @@ startState: s32'AntiAirCommandThrow'
   sprite: s32'rvn412_21', 2
   sprite: s32'rvn412_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'AntiAirCommandThrowEx'
@@ -6307,7 +6307,7 @@ startState: s32'LandDashAttack'
   sprite: s32'rvn430_16', 2
   sprite: s32'rvn430_17', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn430_18', 2
   Unknown176: 1
@@ -6337,7 +6337,7 @@ startState: s32'LandDashAttack'
   sprite: s32'rvn430_23', 2
   sprite: s32'rvn430_24', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeC'
   sprite: s32'rvn430_25', 2
   Unknown176: 1
@@ -6366,7 +6366,7 @@ startState: s32'LandDashAttack'
   sprite: s32'rvn430_30', 2
   sprite: s32'rvn430_31', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeD'
   sprite: s32'rvn430_32', 2
   Unknown176: 1
@@ -6395,7 +6395,7 @@ startState: s32'LandDashAttack'
   sprite: s32'rvn430_37', 2
   sprite: s32'rvn430_38', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'AirDashAttack'
@@ -6537,7 +6537,7 @@ startState: s32'AirDashAttack'
   sprite: s32'rvn430_16', 2
   sprite: s32'rvn430_17', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn430_18', 2
   Unknown176: 1
@@ -6567,7 +6567,7 @@ startState: s32'AirDashAttack'
   sprite: s32'rvn430_23', 2
   sprite: s32'rvn430_24', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeC'
   sprite: s32'rvn430_25', 2
   Unknown176: 1
@@ -6596,7 +6596,7 @@ startState: s32'AirDashAttack'
   sprite: s32'rvn430_30', 2
   sprite: s32'rvn430_31', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeD'
   sprite: s32'rvn430_32', 2
   Unknown176: 1
@@ -6625,7 +6625,7 @@ startState: s32'AirDashAttack'
   sprite: s32'rvn430_37', 2
   sprite: s32'rvn430_38', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'RevengeAttack'
@@ -7325,7 +7325,7 @@ startState: s32'Ichigeki'
   sprite: s32'rvn410_21', 3
   sprite: s32'rvn410_22', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647

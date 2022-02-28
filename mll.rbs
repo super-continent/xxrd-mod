@@ -1488,7 +1488,7 @@ startState: s32'CmnActLandingStiff'
   Unknown3: 
   setMarker: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActFWalk'
@@ -2267,7 +2267,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'mll202_07', 3
   sprite: s32'mll202_08', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
@@ -2290,7 +2290,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'mll408_10', 3
   sprite: s32'mll408_11', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2345,12 +2345,12 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'mll350_05', 3
   sprite: s32'mll350_06', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'mll351_05', 3
   sprite: s32'mll351_06', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -2421,7 +2421,7 @@ startState: s32'entry_default'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'entry_mll_vs_ven'
@@ -2446,7 +2446,7 @@ startState: s32'entry_mll_vs_ven'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActExDamage'
@@ -2494,7 +2494,7 @@ startState: s32'CmnActRoundWin'
   playVoice: s16'vxxx307'
   Unknown1890: 1
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'mll616_00', 4
   sprite: s32'mll616_01', 4
@@ -2556,7 +2556,7 @@ startState: s32'CmnActMatchWin'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActLose'
@@ -3329,7 +3329,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'mll300_09', 6
   sprite: s32'mll300_10', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'mll301_00', 5
   sprite: s32'mll301_01', 5
@@ -3397,7 +3397,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'mll305_13', 6
   sprite: s32'mll305_14', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'mll306_00', 6
   sprite: s32'mll306_01', 6
@@ -3418,7 +3418,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'mll306_09', 6
   sprite: s32'mll306_10', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtkAir5A'
@@ -3704,7 +3704,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'mll360_21', 3
   sprite: s32'mll360_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'mll362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -3712,7 +3712,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'mll362_02', 6
   sprite: s32'mll362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -3777,7 +3777,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'mll360_21', 3
   sprite: s32'mll360_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'mll363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -3785,7 +3785,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'mll363_02', 6
   sprite: s32'mll363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -3825,7 +3825,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'mll404_16', 4
   sprite: s32'mll404_17', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'mll045_04', 4
   sprite: s32'mll045_03', 4
@@ -4308,11 +4308,11 @@ startState: s32'SilentForce'
   sprite: s32'mll407_00', 2
   tensionGain: 30
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   Unknown109: 
   Unknown114: 
   Unknown111: 20
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   addVelocityY: 3500
   setGravity: 0
   sprite: s32'mll407_01', 2
@@ -4328,17 +4328,17 @@ startState: s32'SilentForce'
   sprite: s32'mll407_05', 4
   sprite: s32'mll407_06', 4
   sprite: s32'mll407_07', 4
-  Unknown18: 
+  exitState: 
   setMarker: s32'SF2'
   sprite: s32'mll407_00', 1
   tensionGain: 30
   physicsYImpulse: 30000
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   Unknown109: 
   Unknown114: 
   Unknown111: 20
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   addVelocityY: 3500
   setGravity: 0
   Unknown99: 25000
@@ -4360,7 +4360,7 @@ startState: s32'SilentForce'
   callEtcState: s32'SilentForceKnife', 0
   Unknown110: 
   Unknown115: 
-  Unknown116: 90
+  multiplyYVelocityByPercent: 90
   setGravity: 2275
   sprite: s32'mll407_05', 6
   sprite: s32'mll407_06', 5
@@ -4516,7 +4516,7 @@ startState: s32'Zenten'
     endUpon: 
   sprite: s32'mll405_00', 3
   Unknown1616: 1
-  Unknown137: 0
+  physicsXImpulseIfVelocityMatchesSign: 0
   playVoice: s16'vxxx206'
   setNoCollision: 0
   tensionGain: 20
@@ -5313,7 +5313,7 @@ startState: s32'Winger'
   sprite: s32'mll430_20', 4
   sprite: s32'mll010_26', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'mll430_05', 3
   physicsXImpulse: 1000
@@ -5503,7 +5503,7 @@ startState: s32'Ichigeki'
   sprite: s32'mll431_21', 6
   sprite: s32'mll431_22', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647

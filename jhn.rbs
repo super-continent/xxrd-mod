@@ -1794,7 +1794,7 @@ startState: s32'CmnActFDash'
   Unknown24: s32'NormalDash', 2, 0
   sprite: s32'jhn032_00', 1
   physicsXImpulse: 30000
-  Unknown137: 7000
+  physicsXImpulseIfVelocityMatchesSign: 7000
   storeValue: (VARIABLE), 45, (STATIC), 1
   playSFX: s32'9'
   sprite: s32'jhn032_00', 2
@@ -1806,7 +1806,7 @@ startState: s32'CmnActFDash'
   sprite: s32'jhn032_01', 2
   sprite: s32'jhn032_04', 1
   Unknown176: 0
-  Unknown137: 0
+  physicsXImpulseIfVelocityMatchesSign: 0
   storeValue: (VARIABLE), 45, (STATIC), 0
   sprite: s32'jhn032_04', 2
   Unknown1320: 1
@@ -1822,7 +1822,7 @@ startState: s32'CmnActFDash'
   sprite: s32'keep', 2147483647
   jumpToState: s32'_NEUTRAL'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'NormalDash'
   sprite: s32'jhn032_00', 2
   setMarker: s32'ndLoop'
@@ -2575,7 +2575,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'jhn413_05', 3
   sprite: s32'jhn413_06', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
@@ -2600,7 +2600,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'jhn300_15', 6
   sprite: s32'jhn300_16', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2652,13 +2652,13 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'jhn350_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'jhn351_05', 3
   sprite: s32'jhn351_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -2714,7 +2714,7 @@ startState: s32'entry_default'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActExDamage'
@@ -2769,7 +2769,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'jhn615_31', 6
   Unknown3: 
   goToMarker: s32'loop'
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'jhn616_00', 3
   sprite: s32'jhn616_01', 3
@@ -2814,7 +2814,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'jhn616_19', 4
   sprite: s32'jhn616_20', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActMatchWin'
@@ -2888,7 +2888,7 @@ startState: s32'CmnActMatchWin'
   Unknown3: 
   Unknown2073: 1
   Unknown2072: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActLose'
@@ -3677,7 +3677,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'jhn300_15', 4
   sprite: s32'jhn300_16', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'jhn301_00', 6
   sprite: s32'jhn301_01', 6
@@ -3730,7 +3730,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'jhn301_30', 6
   sprite: s32'jhn301_31', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtk6F'
@@ -3794,7 +3794,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'jhn305_32', 3
   sprite: s32'jhn305_33', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'jhn306_00', 4
   sprite: s32'jhn306_01', 3
@@ -3833,7 +3833,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'jhn306_24', 3
   sprite: s32'jhn306_25', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtkAir5A'
@@ -4142,7 +4142,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'jhn360_21', 2
   sprite: s32'jhn360_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'jhn362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4150,7 +4150,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'jhn362_02', 6
   sprite: s32'jhn362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -4218,7 +4218,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'jhn360_21', 2
   sprite: s32'jhn360_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'jhn363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4226,7 +4226,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'jhn363_02', 6
   sprite: s32'jhn363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -4266,7 +4266,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'jhn010_23', 2
   sprite: s32'jhn010_25', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'jhn045_03', 4
   sprite: s32'jhn045_02', 4
@@ -4589,7 +4589,7 @@ startState: s32'DivineBladeLandShot'
   sprite: s32'JY60_04', 2
   createObject2: s32'DivineFire', 1
   playCharacterSFX: s32'3'
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   Unknown111: 50
   addVelocityY: 24500
   setGravity: 1400
@@ -4628,7 +4628,7 @@ startState: s32'DivineBladeAir'
   sprite: s32'JY60_00', 3
   tensionGain: 60
   tensionGainOnConnect: 0
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   setGravity: 700
   physicsXImpulse: 0
   sprite: s32'JY60_01', 3
@@ -4637,7 +4637,7 @@ startState: s32'DivineBladeAir'
   sprite: s32'JY60_04', 2
   createObject2: s32'DivineFire', 1
   playCharacterSFX: s32'3'
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   addVelocityY: 21000
   setGravity: 1925
   physicsXImpulse: -1750
@@ -4671,7 +4671,7 @@ startState: s32'Ensenga'
     endUpon: 
   sprite: s32'JY69_00', 2
   addVelocityX: 1750
-  Unknown116: 10
+  multiplyYVelocityByPercent: 10
   addVelocityY: 2625
   setGravity: 350
   untechableTime: 60
@@ -4839,7 +4839,7 @@ startState: s32'Sinwaza_Shot'
   Unknown111: 50
   sprite: s32'jhn416_08', 2
   Unknown115: 
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   addVelocityY: 34000
   setGravity: 1400
   Unknown1943: 40000
@@ -4894,7 +4894,7 @@ startState: s32'Sinwaza_Air'
   playVoice: s16'vxxx209'
   tensionGain: 60
   addVelocityY: 20000
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   setGravity: 700
   physicsXImpulse: 2000
   sprite: s32'jhn416_00', 2
@@ -4911,7 +4911,7 @@ startState: s32'Sinwaza_Air'
   Unknown2161: 100, 40000, 0
   createObject2: s32'Sinwaza_Shot2_Air', 130
   playSFX: s32'GG2_018'
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   addVelocityY: 21000
   setGravity: 1925
   physicsXImpulse: -1750
@@ -4984,7 +4984,7 @@ startState: s32'Sinwaza2'
   Unknown2155: 4
   sprite: s32'JY06_11', 8
   Unknown111: 20
-  Unknown116: 20
+  multiplyYVelocityByPercent: 20
   sprite: s32'JY34_02', 5
   Unknown111: 0
   physicsYImpulse: -90000
@@ -6296,7 +6296,7 @@ startState: s32'AirMistFinerDehajime'
       endUpon: 
     Unknown2198: 95
     Unknown2197: 95
-    Unknown116: 60
+    multiplyYVelocityByPercent: 60
     Unknown111: 60
     setGravity: 500
     endUpon: 
@@ -6459,7 +6459,7 @@ startState: s32'MistFinerFDashAir'
   Unknown448: s32'jhn_mistair_dash', 100
   playSFX: s32'GG2_072'
   playVoice: s16'vxxx204'
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'jhn408_05', 2
   tensionGain: 0
   tensionGainOnConnect: 0
@@ -6571,7 +6571,7 @@ startState: s32'MistFinerBDashAir'
   Unknown448: s32'jhn_mistair_backstep', 100
   playSFX: s32'GG2_072'
   playVoice: s16'vxxx204'
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'jhn408_05', 2
   tensionGain: 0
   tensionGainOnConnect: 0
@@ -6711,7 +6711,7 @@ startState: s32'AirMistFinerALv0'
     endUpon: 
   sprite: s32'jhn409_00', 1
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 20
   sprite: s32'jhn409_01', 1
   sprite: s32'jhn409_02', 1
@@ -6722,7 +6722,7 @@ startState: s32'AirMistFinerALv0'
   createObject2: s32'409High_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerALv0sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 120
   sprite: s32'jhn409_05', 1
   sprite: s32'jhn409_06', 2
@@ -6738,7 +6738,7 @@ startState: s32'AirMistFinerALv0'
   sprite: s32'jhn409_12', 3
   Unknown2161: 100, -115000, 320000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn409_13', 3
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn409_14', 3
@@ -6796,7 +6796,7 @@ startState: s32'AirMistFinerALv1'
     endUpon: 
   sprite: s32'jhn409_00', 1
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 30
   sprite: s32'jhn409_01', 1
   sprite: s32'jhn409_02', 1
@@ -6807,7 +6807,7 @@ startState: s32'AirMistFinerALv1'
   createObject2: s32'409High_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerALv0sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 120
   sprite: s32'jhn409_05', 1
   sprite: s32'jhn409_06', 2
@@ -6822,7 +6822,7 @@ startState: s32'AirMistFinerALv1'
   sprite: s32'jhn409_12', 2
   Unknown2161: 100, -115000, 320000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn409_13', 2
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn409_14', 1
@@ -6879,7 +6879,7 @@ startState: s32'AirMistFinerALv2'
     endUpon: 
   sprite: s32'jhn409_00', 1
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 40
   sprite: s32'jhn409_01', 1
   sprite: s32'jhn409_02', 1
@@ -6891,7 +6891,7 @@ startState: s32'AirMistFinerALv2'
   createObject2: s32'409High_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerALv2sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 120
   sprite: s32'jhn409_05ex', 1
   sprite: s32'jhn409_06ex', 2
@@ -6906,7 +6906,7 @@ startState: s32'AirMistFinerALv2'
   sprite: s32'jhn409_12', 2
   Unknown2161: 100, -115000, 320000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn409_13', 1
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn409_14', 1
@@ -6960,7 +6960,7 @@ startState: s32'AirMistFinerBLv0'
     endUpon: 
   sprite: s32'jhn410_00', 1
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 20
   sprite: s32'jhn410_01', 1
   sprite: s32'jhn410_02', 1
@@ -6972,7 +6972,7 @@ startState: s32'AirMistFinerBLv0'
   createObject2: s32'410Mid_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerBLv0sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 120
   sprite: s32'jhn410_06', 1
   sprite: s32'jhn410_07', 1
@@ -6988,7 +6988,7 @@ startState: s32'AirMistFinerBLv0'
   sprite: s32'jhn410_13', 4
   Unknown2161: 100, -106000, 345000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn410_14', 4
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn410_15', 4
@@ -7044,7 +7044,7 @@ startState: s32'AirMistFinerBLv1'
     endUpon: 
   sprite: s32'jhn410_00', 1
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 30
   sprite: s32'jhn410_01', 1
   sprite: s32'jhn410_02', 1
@@ -7056,7 +7056,7 @@ startState: s32'AirMistFinerBLv1'
   createObject2: s32'410Mid_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerBLv0sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 120
   sprite: s32'jhn410_06', 1
   sprite: s32'jhn410_07', 1
@@ -7071,7 +7071,7 @@ startState: s32'AirMistFinerBLv1'
   sprite: s32'jhn410_13', 2
   Unknown2161: 100, -106000, 345000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn410_14', 2
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn410_15', 1
@@ -7129,7 +7129,7 @@ startState: s32'AirMistFinerBLv2'
     endUpon: 
   sprite: s32'jhn410_00', 1
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 40
   sprite: s32'jhn410_01', 1
   sprite: s32'jhn410_02', 1
@@ -7142,7 +7142,7 @@ startState: s32'AirMistFinerBLv2'
   createObject2: s32'410Mid_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerBLv2sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 120
   sprite: s32'jhn410_06ex', 1
   sprite: s32'jhn410_07ex', 1
@@ -7157,7 +7157,7 @@ startState: s32'AirMistFinerBLv2'
   sprite: s32'jhn410_13', 2
   Unknown2161: 100, -106000, 345000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn410_14', 1
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn410_15', 1
@@ -7212,7 +7212,7 @@ startState: s32'AirMistFinerCLv0'
   sprite: s32'jhn411_00', 2
   playVoice: s16'vxxx206'
   tensionGain: 20
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   sprite: s32'jhn411_01', 2
   sprite: s32'jhn411_02', 2
   playSFX: s32'GG2_012'
@@ -7223,7 +7223,7 @@ startState: s32'AirMistFinerCLv0'
   createObject2: s32'411Low_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerCLv0sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 110
   sprite: s32'jhn411_06', 1
   sprite: s32'jhn411_07', 1
@@ -7241,7 +7241,7 @@ startState: s32'AirMistFinerCLv0'
   Unknown131: 50
   Unknown2161: 100, -90000, 340000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn411_14', 5
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn411_15', 5
@@ -7297,7 +7297,7 @@ startState: s32'AirMistFinerCLv1'
     endUpon: 
   sprite: s32'jhn411_00', 2
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 30
   sprite: s32'jhn411_01', 2
   sprite: s32'jhn411_02', 2
@@ -7309,7 +7309,7 @@ startState: s32'AirMistFinerCLv1'
   createObject2: s32'411Low_bake1', 100
   grabOrRelease: 
   createObject2: s32'AirMistFinerCLv0sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 110
   sprite: s32'jhn411_06', 1
   sprite: s32'jhn411_07', 1
@@ -7324,7 +7324,7 @@ startState: s32'AirMistFinerCLv1'
   sprite: s32'jhn411_13', 2
   Unknown2161: 100, -90000, 340000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn411_14', 2
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn411_15', 2
@@ -7380,7 +7380,7 @@ startState: s32'AirMistFinerCLv2'
     endUpon: 
   sprite: s32'jhn411_00', 2
   playVoice: s16'vxxx206'
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   tensionGain: 40
   sprite: s32'jhn411_01', 2
   sprite: s32'jhn411_02', 2
@@ -7393,7 +7393,7 @@ startState: s32'AirMistFinerCLv2'
   screenShake: 1, 3
   grabOrRelease: 
   createObject2: s32'AirMistFinerCLv2sousai', 100
-  Unknown116: 30
+  multiplyYVelocityByPercent: 30
   Unknown131: 110
   sprite: s32'jhn411_06ex', 1
   sprite: s32'jhn411_07ex', 1
@@ -7408,7 +7408,7 @@ startState: s32'AirMistFinerCLv2'
   sprite: s32'jhn411_13', 2
   Unknown2161: 100, -90000, 340000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn411_14', 2
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn411_15', 2
@@ -7737,7 +7737,7 @@ startState: s32'OrenonaExe'
   sprite: s32'jhn430_51', 5
   sprite: s32'jhn430_52', 5
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'jhn430_21', 2
   sprite: s32'jhn430_20', 1
@@ -7962,7 +7962,7 @@ startState: s32'TreasureHunt'
   sprite: s32'jhn431_24', 3
   sprite: s32'jhn431_25', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   sprite: s32'jhn431_10', 3
   playVoice: s16'vxxx212'
@@ -8140,7 +8140,7 @@ startState: s32'StepTreasureHunt'
   sprite: s32'jhn431_24', 3
   sprite: s32'jhn431_25', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   sprite: s32'jhn431_10', 3
   cameraMotion: 1077, 454202, 89872, 455, 0, 0, 54, 15, 20, 15, 1
@@ -8244,7 +8244,7 @@ startState: s32'Ichigeki'
   sprite: s32'jhn204_17', 2
   sprite: s32'jhn204_18', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647
@@ -9957,7 +9957,7 @@ startState: s32'FB_Jackhound'
     isAirUnblockable: 1
     groundHitEffect: (STAGGER)
     airHitEffect: (AIR_LAUNCH)
-    staggerDuration: 60
+    staggerDuration: 45
     hitAirPushbackX: 5000
     hitAirPushbackY: 40000
     untechableTime: 80
@@ -9975,22 +9975,12 @@ startState: s32'FB_Jackhound'
   fadeColorRed: -30
   fadeColorGreen: -30
   fadeColorBlue: -30
-  upon: (FRAME_STEP)
-    Unknown23: 3
-    Unknown14: s32'Run'
-    endIf: 
-  sprite: s32'jhn431_03', 4
-  createObject2: s32'Treasure_charge', 100
-  sprite: s32'jhn431_04', 4
-  sprite: s32'jhn431_05', 4
-  Unknown3: 
-  setMarker: s32'Run'
-  sprite: s32'jhn431_06', 2
-  sprite: s32'jhn431_07', 2
+  sprite: s32'jhn431_06', 5
+  sprite: s32'jhn431_07', 1
   createObject2: s32'Treasure_dash', 100
-  physicsXImpulse: 80000
+  physicsXImpulse: 175000
   setNoCollision: 0
-  sprite: s32'jhn431_08', 2
+  sprite: s32'jhn431_08', 1
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -410000
       Unknown23: 3
@@ -9998,11 +9988,10 @@ startState: s32'FB_Jackhound'
       Unknown2197: 90
       endIf: 
     endUpon: 
-  sprite: s32'jhn431_07', 2
-  sprite: s32'jhn431_08', 2
+  sprite: s32'jhn431_08', 1
   setMarker: s32'Attack'
-  sprite: s32'jhn431_09', 2
-  sprite: s32'jhn431_10', 2
+  sprite: s32'jhn431_09', 1
+  sprite: s32'jhn431_10', 1
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 140000
     createObject2: s32'431bake', 100
     hit: 
@@ -10032,8 +10021,7 @@ startState: s32'FB_Jackhound'
   sprite: s32'jhn431_23', 3
   sprite: s32'jhn431_24', 3
   sprite: s32'jhn431_25', 3
-  Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   sprite: s32'jhn431_10', 3
   playVoice: s16'vxxx212'
@@ -10046,12 +10034,12 @@ startState: s32'FB_Jackhound'
   createObject2: s32'Treasure_zanzo', 100
   setNoCollision: 1
   Unknown2143: 6, 100
-  sprite: s32'jhn431_13', 2
-  sprite: s32'jhn431_15', 2
+  sprite: s32'jhn431_13', 3
+  sprite: s32'jhn431_15', 3
   playSFX: s32'SE_SAYA2'
   Unknown2199: 0
   sprite: s32'jhn431_24', 3
-  sprite: s32'jhn431_25', 2
+  sprite: s32'jhn431_25', 3
   endState: 
 
 startState: s32'FB_Jackhound_Stance'
@@ -10088,16 +10076,6 @@ startState: s32'FB_Jackhound_Stance'
   fadeColorRed: -30
   fadeColorGreen: -30
   fadeColorBlue: -30
-  upon: (FRAME_STEP)
-    Unknown23: 3
-    Unknown14: s32'Run'
-    endIf: 
-  sprite: s32'jhn431_03', 1
-  createObject2: s32'Treasure_charge', 100
-  sprite: s32'jhn431_04', 1
-  sprite: s32'jhn431_05', 1
-  Unknown3: 
-  setMarker: s32'Run'
   sprite: s32'jhn431_06', 1
   sprite: s32'jhn431_07', 1
   createObject2: s32'Treasure_dash', 100
@@ -10144,8 +10122,7 @@ startState: s32'FB_Jackhound_Stance'
   sprite: s32'jhn431_23', 3
   sprite: s32'jhn431_24', 3
   sprite: s32'jhn431_25', 3
-  Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   sprite: s32'jhn431_10', 3
   playVoice: s16'vxxx212'
@@ -10224,7 +10201,7 @@ startState: s32'FB_Killerjoker'
   Unknown131: 50
   Unknown2161: 100, -90000, 340000
   Unknown448: s32'jhn_noutou01', 130
-  Unknown116: 130
+  multiplyYVelocityByPercent: 130
   sprite: s32'jhn411_14', 5
   playSFX: s32'SE_SAYA2'
   sprite: s32'jhn411_15', 5

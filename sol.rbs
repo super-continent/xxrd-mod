@@ -2006,7 +2006,7 @@ startState: s32'CmnActLandingStiff'
   Unknown3: 
   setMarker: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActFWalk'
@@ -2838,7 +2838,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'sol205_11', 3
   sprite: s32'sol205_12', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 103, 0, 100000
@@ -2867,7 +2867,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'sol450_19', 4
   sprite: s32'sol450_20', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2920,13 +2920,13 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'sol350_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'sol351_05', 3
   sprite: s32'sol351_06', 3
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -3038,7 +3038,7 @@ startState: s32'entry_default'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActExDamage'
@@ -3084,7 +3084,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'sol615_21', 5
   sprite: s32'sol615_22', 15
   sprite: s32'sol615_22', 2147483647
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'sol616_00', 6
   sprite: s32'sol616_01', 6
@@ -3112,7 +3112,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'sol616_16', 3
   sprite: s32'sol616_17', 101
   sprite: s32'sol616_17', 2147483647
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeD'
   sprite: s32'sol620_00', 4
   sprite: s32'sol620_01', 4
@@ -3213,7 +3213,7 @@ startState: s32'CmnActMatchWin'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeDI'
   sprite: s32'null', 2147483647
   Unknown2013: s32'sol801cs', 0
@@ -3255,7 +3255,7 @@ startState: s32'CmnActMatchWin'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActLose'
@@ -3807,7 +3807,7 @@ startState: s32'NmlAtk5D'
   sprite: s32'sol204_13', 3
   overrideSpriteLengthIf: 2, (VARIABLE), 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'DIkoutyoku'
   sprite: s32'sol204_06', 1
   Unknown2145: 0, 126
@@ -4058,7 +4058,7 @@ startState: s32'TestDash'
     endUpon: 
   sprite: s32'sol032_00', 2
   physicsXImpulse: 20000
-  Unknown137: 30000
+  physicsXImpulseIfVelocityMatchesSign: 30000
   Unknown665: 104, 1, 1
   sprite: s32'sol032_01', 2
   sprite: s32'sol032_02', 2
@@ -4186,7 +4186,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'sol300_15', 4
   sprite: s32'sol300_16', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'sol301_00', 6
   sprite: s32'sol301_01', 6
@@ -4214,7 +4214,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'sol000_00', 1
   playSFX: s32'SE_JUMPLANDA'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtk6F'
@@ -4242,7 +4242,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'sol305_14', 4
   sprite: s32'sol305_15', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'sol306_00', 6
   sprite: s32'sol306_01', 6
@@ -4622,7 +4622,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'sol360_21', 2
   sprite: s32'sol360_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'sol362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4630,7 +4630,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'sol362_02', 6
   sprite: s32'sol362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -4695,7 +4695,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'sol360_21', 2
   sprite: s32'sol360_22', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'sol363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4703,7 +4703,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'sol363_02', 6
   sprite: s32'sol363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -4741,7 +4741,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'sol010_00', 3
   sprite: s32'sol010_15', 9
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'sol045_03', 4
   sprite: s32'sol045_02', 4
@@ -6851,7 +6851,7 @@ startState: s32'VolcanicViperKick'
       physicsYImpulse: 7000
       endIf: 
     else: 
-      Unknown116: 50
+      multiplyYVelocityByPercent: 50
       endElse: 
     Unknown2331: 11
     endUpon: 
@@ -6906,7 +6906,7 @@ startState: s32'VolcanicViperKick_DI'
       physicsYImpulse: 7000
       endIf: 
     else: 
-      Unknown116: 50
+      multiplyYVelocityByPercent: 50
       endElse: 
     Unknown2331: 11
     endUpon: 
@@ -7360,7 +7360,7 @@ startState: s32'BukkiraExe'
   sprite: s32'sol407_14', 3
   sprite: s32'sol000_00', 1
   flipDirection: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'AirCommandThrow'
@@ -8149,7 +8149,7 @@ startState: s32'DragonInstall'
   sprite: s32'sol434_34', 10
   sprite: s32'sol434_35', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Air'
   sprite: s32'sol434_04', 5
   Unknown448: s32'dsl_start_yoin2', 100
@@ -8258,7 +8258,7 @@ startState: s32'Ichigeki'
   sprite: s32'sol413_09', 3
   sprite: s32'sol413_10', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647
@@ -8362,7 +8362,7 @@ startState: s32'Ichigeki'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'DI_hit'
   Unknown23: 10
   sprite: s32'null', 2147483647
@@ -8464,7 +8464,7 @@ startState: s32'Ichigeki'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'StylishBanditBringer'

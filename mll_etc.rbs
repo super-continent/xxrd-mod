@@ -318,34 +318,34 @@ startState: s32'SecretGardenBall'
   Unknown456: 0
   Unknown201: 17500, 0
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   Unknown458: 0
   Unknown1883: 
   sprite: s32'keep', 2
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 2
   hit: 
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 10
   storeValue: (VARIABLE), 50, (STATIC), 0
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown1883: 
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown3: 
   setMarker: s32'top'
   Unknown13: s32'End', 12, 2, 53, 2, 51
@@ -400,32 +400,32 @@ startState: s32'SecretGardenBall'
     Unknown2320: s32'SecretGarden9'
     endIf: 
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   Unknown1883: 
   sprite: s32'keep', 2
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 2
   hit: 
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 10
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown1883: 
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown3: 
   Unknown54: 0, 2, 53, 0, 1
   goToMarker: s32'top'

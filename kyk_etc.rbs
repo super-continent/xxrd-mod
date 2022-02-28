@@ -410,7 +410,7 @@ startState: s32'SPStunEdgeObj'
   hit: 
   sprite: s32'atk_line', 10
   recoveryState: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'AirStunEdge'
   sprite: s32'null', 7
   Unknown449: s32'kyk_mahojin_end', 100
@@ -420,7 +420,7 @@ startState: s32'SPStunEdgeObj'
   playCharacterSFX: s32'2'
   sprite: s32'atk_line', 10
   recoveryState: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'AirHSStunEdge'
   sprite: s32'null', 7
   Unknown449: s32'kyk_mahojin_end', 100
@@ -430,7 +430,7 @@ startState: s32'SPStunEdgeObj'
   playCharacterSFX: s32'2'
   sprite: s32'atk_line', 10
   recoveryState: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'ChargedStunEdgeObj'
@@ -995,12 +995,12 @@ startState: s32'Scn_Rtl_core'
   sprite: s32'null', 60
   Unknown450: s32'kyk_rtl_core'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'null', 2147483647
   Unknown450: s32'kyk_rtl_core'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'Scn_Rtl_coreair'
@@ -1018,12 +1018,12 @@ startState: s32'Scn_Rtl_coreair'
   sprite: s32'null', 60
   Unknown450: s32'kyk_rtl_coreair'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'null', 2147483647
   Unknown450: s32'kyk_rtl_coreair'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'Scn_Rtl_sub'

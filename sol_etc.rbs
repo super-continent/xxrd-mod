@@ -434,7 +434,7 @@ startState: s32'TyrantRavePunch2'
   sprite: s32'vrsol432_12', 5
   sprite: s32'null', 100
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'vrsol432_00', 5
   disableHitstop: 1
@@ -1424,7 +1424,7 @@ startState: s32'FBFefnirPunch'
   sprite: s32'vrsol432_12', 5
   sprite: s32'null', 100
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'vrsol432_00', 5
   disableHitstop: 1

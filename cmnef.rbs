@@ -434,7 +434,7 @@ startSubroutine: s32'cmnHomingJumpInitialize'
       Unknown53: 23, 2, 0, 22, 2, 158
       if: (NEXT_ARG_IS_VAR), 0
         Unknown41: 22
-        Unknown116: 50
+        multiplyYVelocityByPercent: 50
         Unknown40: 
         endIf: 
       Unknown53: 23, 2, 8, 22, 2, 8
@@ -489,7 +489,7 @@ startSubroutine: s32'cmnHomingDash2Initialize'
       createObject2: s32'cmnYokodust_BG', 100
       Unknown448: s32'cmn_dust_yoko_dashfire', 100
       physicsXImpulse: 30000
-      Unknown137: 75000
+      physicsXImpulseIfVelocityMatchesSign: 75000
       Unknown144: 1
       Unknown665: 104, 1, 1
       endIf: 
@@ -685,7 +685,7 @@ startState: s32'cmn_Kirakira'
   Unknown118: -50000, 50000
   Unknown1709: -50000, 50000
   Unknown111: 200
-  Unknown116: 200
+  multiplyYVelocityByPercent: 200
   Unknown1708: 200
   Unknown109: 
   Unknown114: 
@@ -695,11 +695,11 @@ startState: s32'cmn_Kirakira'
   Unknown450: s32'cmn_mom_lightbulet'
   sprite: s32'null', 54
   Unknown111: 1
-  Unknown116: 1
+  multiplyYVelocityByPercent: 1
   Unknown1708: 1
   sprite: s32'null', 40
   Unknown111: 2000
-  Unknown116: 2000
+  multiplyYVelocityByPercent: 2000
   Unknown1708: 2000
   Unknown110: 
   Unknown115: 
@@ -926,7 +926,7 @@ startSubroutine: s32'cmnCG_OnMuteki'
   if: (NEXT_ARG_IS_VAR), 30
     Unknown135: 
     Unknown111: 50
-    Unknown116: 50
+    multiplyYVelocityByPercent: 50
     endIf: 
   storeValue: (VARIABLE), 46, (STATIC), 1
   storeValue: (VARIABLE), 47, (VARIABLE), 13
@@ -1391,7 +1391,7 @@ startSubroutine: s32'cmnMOMFly'
       addVelocityY: 1050
       endElse: 
     endElse: 
-  Unknown116: 96
+  multiplyYVelocityByPercent: 96
   Unknown111: 88
   storeValue: (VARIABLE), 61, (VARIABLE), 7
   ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
@@ -5097,33 +5097,33 @@ startState: s32'cmn_MOM_no061'
   sprite: s32'keep', 2
   Unknown201: 17500, 0
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   Unknown458: 0
   Unknown1883: 
   sprite: s32'keep', 2
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 2
   hit: 
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 10
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown1883: 
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown3: 
   setMarker: s32'top'
   Unknown13: s32'End', 12, 2, 53, 2, 51
@@ -5170,32 +5170,32 @@ startState: s32'cmn_MOM_no061'
     Unknown201: 17500, 45000
     endIf: 
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   Unknown1883: 
   sprite: s32'keep', 2
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 2
   hit: 
   Unknown111: 110
-  Unknown116: 110
+  multiplyYVelocityByPercent: 110
   sprite: s32'keep', 10
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown1883: 
   Unknown111: 75
-  Unknown116: 75
+  multiplyYVelocityByPercent: 75
   sprite: s32'keep', 2
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown3: 
   Unknown54: 0, 2, 53, 0, 1
   goToMarker: s32'top'
@@ -7947,7 +7947,7 @@ startState: s32'cmn_MOM_no115'
   hit: 
   sprite: s32'cmne431_Laser_00', 3
   recoveryState: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Koware'
   sprite: s32'cmne431_Laser_00', 1
   Unknown1771: s32'cmn431Beam', 23
@@ -8059,7 +8059,7 @@ startState: s32'cmn431Beam'
   Unknown1771: s32'cmn431Sentan', 23
   Unknown1771: s32'cmn431JizokuTyukan', 23
   Unknown1771: s32'cmn431JizokuHassei', 23
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'cmn431Sentan'
@@ -9977,7 +9977,7 @@ startState: s32'cmn_MOM_Medal'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown116: -30
+      multiplyYVelocityByPercent: -30
       Unknown54: 0, 2, 45, 0, 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
         storeValue: (VARIABLE), 46, (STATIC), 1
@@ -10140,7 +10140,7 @@ startState: s32'cmn_MOM_Tabemono'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown116: -30
+      multiplyYVelocityByPercent: -30
       Unknown54: 0, 2, 45, 0, 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
         storeValue: (VARIABLE), 46, (STATIC), 1
@@ -10210,7 +10210,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown116: -30
+      multiplyYVelocityByPercent: -30
       Unknown54: 0, 2, 45, 0, 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
         storeValue: (VARIABLE), 46, (STATIC), 1

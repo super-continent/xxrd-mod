@@ -1593,7 +1593,7 @@ startState: s32'CmnActLandingStiff'
   sprite: s32'kyk010_04', 4
   setMarker: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActFWalk'
@@ -2458,7 +2458,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'kyk430_19', 2
   sprite: s32'kyk430_20', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
@@ -2482,7 +2482,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'kyk205_11', 6
   sprite: s32'kyk205_12', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2534,12 +2534,12 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'kyk350_05', 3
   sprite: s32'kyk350_06', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'kyk351_05', 3
   sprite: s32'kyk351_06', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -2634,7 +2634,7 @@ startState: s32'entry_default'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActExDamage'
@@ -2666,7 +2666,7 @@ startState: s32'CmnActRoundWin'
   playVoice: s16'vxxx306'
   Unknown1890: 1
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'kyk616_00', 5
   sprite: s32'kyk616_01', 5
@@ -2752,7 +2752,7 @@ startState: s32'CmnActMatchWin'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActLose'
@@ -3534,7 +3534,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'kyk300_20', 6
   sprite: s32'kyk300_21', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'kyk301_00', 4
   sprite: s32'kyk301_01', 4
@@ -3568,7 +3568,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'kyk301_38', 4
   sprite: s32'kyk301_39', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtk6F'
@@ -3603,7 +3603,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'kyk305_13', 6
   sprite: s32'kyk305_14', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'kyk306_00', 5
   Unknown2157: 0, 5
@@ -3804,7 +3804,7 @@ startState: s32'NmlAtkAir5E'
   Unknown110: 
   Unknown115: 
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   setGravity: 2100
   recoveryState: 
   Unknown1771: s32'Mahojin', 26
@@ -3902,7 +3902,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'kyk360_20', 3
   sprite: s32'kyk360_21', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'kyk362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -3910,7 +3910,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'kyk362_02', 6
   sprite: s32'kyk362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -3976,7 +3976,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'kyk360_20', 3
   sprite: s32'kyk360_21', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'kyk363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -3984,7 +3984,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'kyk363_02', 6
   sprite: s32'kyk363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -4022,7 +4022,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'kyk010_00', 3
   sprite: s32'kyk010_15', 9
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'kyk045_03', 4
   sprite: s32'kyk045_02', 4
@@ -5000,7 +5000,7 @@ startState: s32'RideTheLightning'
   sprite: s32'kyk431_14', 3
   sprite: s32'kyk431_15', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'kyk431_05', 3
   setNoCollision: 0
@@ -5210,7 +5210,7 @@ startState: s32'AirRideTheLightning'
   Unknown3: 
   goToMarker: s32'drop'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'kyk431_05', 3
   setNoCollision: 0
@@ -5408,7 +5408,7 @@ startState: s32'Ichigeki'
   sprite: s32'kyk214_16', 3
   sprite: s32'kyk214_17', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647

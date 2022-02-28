@@ -1591,7 +1591,7 @@ startState: s32'CmnActLandingStiff'
   Unknown3: 
   setMarker: s32'_End'
   sprite: s32'keep', 1
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActFWalk'
@@ -1707,7 +1707,7 @@ startState: s32'CmnActFDash'
   Unknown32: s32'WarpEff00'
   jumpToState: s32'_NEUTRAL'
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'NormalDash'
   sprite: s32'bed030_00', 1
   sprite: s32'bed030_01', 1
@@ -2494,7 +2494,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'bed310_15', 3
   sprite: s32'bed310_16', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_BeginB'
   upon: (ON_HIT_OR_BLOCK)
     Unknown2161: 103, 0, 100000
@@ -2513,7 +2513,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'bed450_06', 2
   sprite: s32'bed450_07', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActBurst'
@@ -2567,14 +2567,14 @@ startState: s32'CmnActRomanCancel'
   sprite: s32'bed350_07', 2
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'_EndAir'
   sprite: s32'bed351_05', 2
   sprite: s32'bed351_06', 2
   sprite: s32'bed351_07', 2
   sprite: s32'keep', 2147483647
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActEntryWait'
@@ -2665,7 +2665,7 @@ startState: s32'entry_default'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActExDamage'
@@ -2703,7 +2703,7 @@ startState: s32'CmnActRoundWin'
   sprite: s32'bed615_14', 3
   sprite: s32'bed615_15', 2147483647
   Unknown1676: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'bed032_00', 3
   physicsYImpulse: 5000
@@ -2850,7 +2850,7 @@ startState: s32'CmnActMatchWin'
       endIf: 
     endUpon: 
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CmnActLose'
@@ -3745,7 +3745,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'bed300_25', 4
   sprite: s32'bed300_26', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'bed301_00', 3
   sprite: s32'bed301_01', 3
@@ -3812,7 +3812,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'bed301_35', 3
   sprite: s32'bed301_36', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtk6F'
@@ -3852,7 +3852,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'bed305_21', 5
   sprite: s32'bed305_22', 5
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'TypeB'
   sprite: s32'bed306_00', 3
   sprite: s32'bed306_01', 3
@@ -3903,7 +3903,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'bed306_37', 3
   sprite: s32'bed306_38', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'NmlAtkAir5A'
@@ -4097,7 +4097,7 @@ startState: s32'NmlAtkAir5E'
   sprite: s32'bed254_03', 1
   sprite: s32'bed254_04', 2
   sprite: s32'bed254_05', 2
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   sprite: s32'bed254_06', 2
   hit: 
   playSFX: s32'SE_SWINGB'
@@ -4207,7 +4207,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'bed360_20', 3
   sprite: s32'bed360_21', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'bed362_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4215,7 +4215,7 @@ startState: s32'CounterGuardStand'
   sprite: s32'bed362_02', 6
   sprite: s32'bed362_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardCrouch'
@@ -4280,7 +4280,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'bed360_20', 3
   sprite: s32'bed360_21', 2
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'end'
   sprite: s32'bed363_00', 20
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
@@ -4288,7 +4288,7 @@ startState: s32'CounterGuardCrouch'
   sprite: s32'bed363_02', 6
   sprite: s32'bed363_03', 6
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'CounterGuardAir'
@@ -4325,7 +4325,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'bed010_00', 4
   sprite: s32'bed010_01', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'guard'
   sprite: s32'bed045_03', 4
   sprite: s32'bed045_02', 4
@@ -4768,7 +4768,7 @@ startState: s32'AirStopCancelOnly'
     endUpon: 
   sprite: s32'bed409_00', 2
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown131: 50
   Unknown1321: 1
   Unknown1325: 1
@@ -4844,7 +4844,7 @@ startState: s32'1Move'
   sprite: s32'bed415_03', 4
   sprite: s32'bed415_05', 3
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown135: 
   sprite: s32'bed415_05', 3
   sprite: s32'bed415_06', 3
@@ -4875,7 +4875,7 @@ startState: s32'2Move'
   sprite: s32'bed415_03', 4
   sprite: s32'bed415_05', 3
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown135: 
   sprite: s32'bed415_05', 3
   sprite: s32'bed415_06', 3
@@ -4910,7 +4910,7 @@ startState: s32'3Move'
   sprite: s32'bed415_03', 4
   sprite: s32'bed415_05', 3
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown135: 
   sprite: s32'bed415_05', 3
   sprite: s32'bed415_06', 3
@@ -5013,7 +5013,7 @@ startState: s32'7Move'
   sprite: s32'bed411_03', 3
   sprite: s32'bed411_05', 3
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown135: 
   sprite: s32'bed411_06', 3
   endState: 
@@ -5048,7 +5048,7 @@ startState: s32'8Move'
   sprite: s32'bed411_03', 3
   sprite: s32'bed411_05', 3
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown135: 
   sprite: s32'bed411_06', 3
   endState: 
@@ -5087,7 +5087,7 @@ startState: s32'9Move'
   sprite: s32'bed411_03', 3
   sprite: s32'bed411_05', 3
   Unknown111: 50
-  Unknown116: 50
+  multiplyYVelocityByPercent: 50
   Unknown135: 
   sprite: s32'bed411_06', 3
   endState: 
@@ -5482,7 +5482,7 @@ startState: s32'FlyingBed'
   createObject2: s32'423RotationEnd', 100
   sprite: s32'bed423_07', 3
   Unknown111: 40
-  Unknown116: 40
+  multiplyYVelocityByPercent: 40
   Unknown2023: 1
   Unknown32: s32'423bake00'
   Unknown1883: 
@@ -6019,7 +6019,7 @@ startState: s32'Alarm'
   sprite: s32'bed430_14', 3
   sprite: s32'bed430_15', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'Boss'
   sprite: s32'bed430_09', 2
   sprite: s32'bed430_10', 2
@@ -6048,7 +6048,7 @@ startState: s32'Alarm'
   sprite: s32'bed430_14', 3
   sprite: s32'bed430_15', 3
   Unknown3: 
-  Unknown18: 
+  exitState: 
   endState: 
 
 startState: s32'Merry'
@@ -6160,7 +6160,7 @@ startState: s32'Ichigeki'
   sprite: s32'bed213_13', 4
   sprite: s32'bed213_14', 4
   Unknown3: 
-  Unknown18: 
+  exitState: 
   setMarker: s32'hit'
   Unknown23: 10
   sprite: s32'null', 2147483647
