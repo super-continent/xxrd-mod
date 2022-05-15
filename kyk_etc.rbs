@@ -35,7 +35,7 @@ startState: s32'DustEffect'
       endUpon: 
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown456: 0
         Unknown23: 3
         endIf: 
@@ -68,7 +68,7 @@ startState: s32'DustEffectShot'
   sprite: s32'dust_atk', 13
   upon: (FRAME_STEP)
     Unknown2001: 3, s32'CmnActRomanCancel'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       grabOrRelease: 
       Unknown456: 0
       Unknown41: 2
@@ -208,14 +208,14 @@ startState: s32'StunEdgeObj'
           endIf: 
         endIf: 
       Unknown200: 0
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         storeValue: (VARIABLE), 52, (STATIC), 0
         setMarker: s32'sloop'
         storeValue: (VARIABLE), 51, (STATIC), 0
         Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown53: 23, 2, 61, 4, 2, 45
-          if: (NEXT_ARG_IS_VAR), 61
+          if: (VARIABLE), 61
             storeValue: (VARIABLE), 51, (STATIC), 1
             Unknown60: '0x17000000670000000400000067000000'
             Unknown53: 23, 2, 62, 23, 2, 17
@@ -250,7 +250,7 @@ startState: s32'StunEdgeObj'
     endUpon: 
   sprite: s32'null', 6
   Unknown450: s32'kyk_se_start'
-  if: (NEXT_ARG_IS_VAR), 49
+  if: (VARIABLE), 49
     overrideSpriteLengthIf: 8, (STATIC), 1
     endIf: 
   Unknown454: 2
@@ -471,14 +471,14 @@ startState: s32'ChargedStunEdgeObj'
           Unknown448: s32'kyk_se_floor', 123
           endIf: 
         endIf: 
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         storeValue: (VARIABLE), 52, (STATIC), 0
         setMarker: s32'sloop'
         storeValue: (VARIABLE), 51, (STATIC), 0
         Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown53: 23, 2, 61, 4, 2, 45
-          if: (NEXT_ARG_IS_VAR), 61
+          if: (VARIABLE), 61
             storeValue: (VARIABLE), 51, (STATIC), 1
             Unknown60: '0x17000000670000000400000067000000'
             Unknown53: 23, 2, 62, 23, 2, 17
@@ -662,14 +662,14 @@ startState: s32'SacredEdgeObj'
           Unknown448: s32'kyk_se_floor', 123
           endIf: 
         endIf: 
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         storeValue: (VARIABLE), 52, (STATIC), 0
         setMarker: s32'sloop'
         storeValue: (VARIABLE), 51, (STATIC), 0
         Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown53: 23, 2, 61, 4, 2, 45
-          if: (NEXT_ARG_IS_VAR), 61
+          if: (VARIABLE), 61
             storeValue: (VARIABLE), 51, (STATIC), 1
             Unknown60: '0x17000000670000000400000067000000'
             Unknown53: 23, 2, 62, 23, 2, 17
@@ -985,7 +985,7 @@ startState: s32'Scn_Rtl_core'
     Unknown454: 3
     Unknown456: 3
     Unknown457: 3
-    if: (NEXT_ARG_IS_VAR), 84
+    if: (VARIABLE), 84
       upon: (FRAME_STEP)
         Unknown1879: 
         endUpon: 
@@ -1008,7 +1008,7 @@ startState: s32'Scn_Rtl_coreair'
     Unknown454: 3
     Unknown456: 3
     Unknown457: 3
-    if: (NEXT_ARG_IS_VAR), 84
+    if: (VARIABLE), 84
       upon: (FRAME_STEP)
         Unknown1879: 
         endUpon: 

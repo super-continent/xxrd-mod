@@ -26,7 +26,7 @@ startState: s32'SlowNeeldeObjLand'
       Unknown2176: 23
       endUpon: 
     upon: (HIT)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown32: s32'SlowEffect'
         Unknown2247: 0, 1, 0, 0
         callEtcState: s32'SlowEffect', 100
@@ -101,7 +101,7 @@ startState: s32'SlowNeeldeObjAir'
       Unknown2176: 23
       endUpon: 
     upon: (HIT)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown32: s32'SlowEffect'
         Unknown2247: 0, 1, 0, 0
         callEtcState: s32'SlowEffect', 100

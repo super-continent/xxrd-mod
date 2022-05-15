@@ -39,7 +39,7 @@ startState: s32'MistKuttsuku'
     storeValue: (VARIABLE), 5, (STATIC), 360
     Unknown2320: s32'Mist_Harituku'
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 5
+      if: (VARIABLE), 5
         Unknown54: 0, 2, 5, 0, -1
         ifNot: 2, 5
           Unknown19: 23
@@ -902,6 +902,43 @@ startState: s32'Sinwaza_Shot2_Air'
   Unknown3: 
   endState: 
 
+
+startState: s32'KJ_Shot'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    tensionGainOnConnect: 10
+    damage: 40
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 3
+    hitPushbackX: 0
+    untechableTime: 40
+    hitAirPushbackX: 8000
+    hitAirPushbackY: 28000
+    Unknown1108: 90
+    setProration: 90
+    endUpon: 
+  sprite: s32'null', 6
+  Unknown454: 3
+  sprite: s32'sinwaza_fire_air_rx', 6
+  Unknown454: 0
+  createObject2: s32'416DB_atk2nd', 100
+  Unknown1148: s32'SE_HITNIKUC'
+  grabOrRelease: 
+  physicsYImpulse: -33000
+  Unknown159: 100
+  sprite: s32'sinwaza_fire_air_rx', 2
+  sprite: s32'sinwaza_fire_air_rx', 1
+  setObjectWidth: 800
+  Unknown94: 12000
+  sprite: s32'sinwaza_fire_air_rx', 1
+  setObjectWidth: 600
+  Unknown94: 12000
+  sprite: s32'null', 1
+  recoveryState: 
+  Unknown3: 
+  endState: 
+
 startState: s32'MistFinerALv0sousai'
   upon: (IMMEDIATE)
     Unknown457: 3
@@ -1359,63 +1396,63 @@ startState: s32'Mist_Anti_FD'
     Unknown456: 3
     Unknown454: 0
     Unknown2001: 3, s32'MistFinerALv0'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 51
       staggerDuration: 52
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerALv1'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 68
       staggerDuration: 74
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerALv2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 102
       staggerDuration: 70
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerBLv0'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 54
       staggerDuration: 68
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerBLv1'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 68
       staggerDuration: 66
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerBLv2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 102
       staggerDuration: 74
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerCLv0'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 49
       staggerDuration: 72
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerCLv1'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 68
       staggerDuration: 64
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'MistFinerCLv2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 102
       staggerDuration: 66
@@ -1441,63 +1478,63 @@ startState: s32'Mist_Anti_FD_Air'
     Unknown456: 3
     Unknown454: 0
     Unknown2001: 3, s32'AirMistFinerALv0'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 51
       staggerDuration: 54
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerALv1'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 68
       staggerDuration: 58
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerALv2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 93
       staggerDuration: 66
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerBLv0'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 54
       staggerDuration: 54
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerBLv1'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 68
       staggerDuration: 58
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerBLv2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 93
       staggerDuration: 66
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerCLv0'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 3
       damage: 49
       staggerDuration: 54
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerCLv1'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 68
       staggerDuration: 58
       stunValue: 0
       endIf: 
     Unknown2001: 3, s32'AirMistFinerCLv2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       attackLevel: 4
       damage: 93
       staggerDuration: 66

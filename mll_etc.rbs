@@ -216,47 +216,47 @@ startState: s32'SecretGardenBall'
       Unknown19: 23
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 50
+      if: (VARIABLE), 50
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 3
           checkInput: 107
           ifNot: 2, 0
             checkInput: 29
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               storeValue: (VARIABLE), 52, (STATIC), 5
               checkInput: 55
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 1
                 endIf: 
               checkInput: 68
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 2
                 endIf: 
               checkInput: 81
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 3
                 endIf: 
               checkInput: 94
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 4
                 endIf: 
               checkInput: 107
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 5
                 endIf: 
               checkInput: 120
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 6
                 endIf: 
               checkInput: 133
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 7
                 endIf: 
               checkInput: 146
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 8
                 endIf: 
               checkInput: 159
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 9
                 endIf: 
               ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 0
@@ -454,7 +454,7 @@ startState: s32'SilentForceKnife'
     hitGravity: 2100
     hitAirPushbackY: 5000
     Unknown730: 1
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       Unknown1165: s32'SilentForceKnifeD'
       endIf: 
     setThrowRange: 0
@@ -462,7 +462,7 @@ startState: s32'SilentForceKnife'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 52
+      if: (VARIABLE), 52
         Unknown60: '0x030000007B000000170000007B000000'
         storeValue: (VARIABLE), 62, (STATIC), 0
         Unknown59: s32'TRP_MLL', 2, 157
@@ -479,7 +479,7 @@ startState: s32'SilentForceKnife'
           Unknown2001: 3, s32'SaiZenten'
           Unknown54: 6, 2, 62, 2, 0
           endIf: 
-        if: (NEXT_ARG_IS_VAR), 62
+        if: (VARIABLE), 62
           Unknown19: 23
           Unknown448: s32'mll_silentforce_get', 100
           playCharacterSFX: s32'1'
@@ -1591,7 +1591,7 @@ startState: s32'SFHorizontal'
     hitGravity: 2100
     hitAirPushbackY: 7500
     Unknown730: 1
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       Unknown1165: s32'SilentForceKnifeD'
       endIf: 
     setThrowRange: 0
@@ -1599,7 +1599,7 @@ startState: s32'SFHorizontal'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 52
+      if: (VARIABLE), 52
         Unknown60: '0x030000007B000000170000007B000000'
         storeValue: (VARIABLE), 62, (STATIC), 0
         Unknown59: s32'TRP_MLL', 2, 157
@@ -1616,7 +1616,7 @@ startState: s32'SFHorizontal'
           Unknown2001: 3, s32'SaiZenten'
           Unknown54: 6, 2, 62, 2, 0
           endIf: 
-        if: (NEXT_ARG_IS_VAR), 62
+        if: (VARIABLE), 62
           Unknown19: 23
           Unknown448: s32'mll_silentforce_get', 100
           playCharacterSFX: s32'1'

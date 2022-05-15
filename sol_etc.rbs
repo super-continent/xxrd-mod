@@ -153,14 +153,14 @@ startState: s32'GunFlameHibashira'
       Unknown19: 4
       endUpon: 
     upon: (ON_HIT_OR_BLOCK)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown1883: 
         storeValue: (VARIABLE), 46, (STATIC), 1
         endIf: 
       endUpon: 
     upon: 66
       Unknown51: 4
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown1766: 4, 24
         endIf: 
       endUpon: 
@@ -170,7 +170,7 @@ startState: s32'GunFlameHibashira'
       Unknown178: 2
       Unknown94: 138000
       Unknown51: 4
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown1766: 4, 24
         endIf: 
       endUpon: 
@@ -374,7 +374,7 @@ startState: s32'TyrantRavePunch2'
     damage: 70
     stunValue: 0
     Unknown1137: 32
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       damage: 87
       Unknown1177: 1
       Unknown1179: 1
@@ -390,14 +390,14 @@ startState: s32'TyrantRavePunch2'
     wallBounceCount: 1
     wallBounceXVelocityPercent: 20
     wallBounceInCornerOnly: 1
-    if: (NEXT_ARG_IS_VAR), 126
+    if: (VARIABLE), 126
       guardType: (NONE)
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 84
+    if: (VARIABLE), 84
       Unknown58: 1
       endIf: 
     upon: (HIT)
-      if: (NEXT_ARG_IS_VAR), 115
+      if: (VARIABLE), 115
         ifNot: 2, 116
           ifNot: 2, 45
             storeValue: (VARIABLE), 45, (STATIC), 1
@@ -481,7 +481,7 @@ startState: s32'TyrantRavePunch2_DI'
     wallBounceCount: 1
     wallstickDuration: 40
     wallBounceInCornerOnly: 1
-    if: (NEXT_ARG_IS_VAR), 126
+    if: (VARIABLE), 126
       guardType: (NONE)
       endIf: 
     Unknown2271: 1
@@ -1075,7 +1075,7 @@ startState: s32'dsl_terikaeshi'
         endIf: 
       Unknown98: 0
       Unknown338: 0
-      if: (NEXT_ARG_IS_VAR), 3
+      if: (VARIABLE), 3
         Unknown338: 255
         endIf: 
       endUpon: 
@@ -1364,7 +1364,7 @@ startState: s32'FBFefnirPunch'
     damage: 70
     stunValue: 0
     Unknown1137: 32
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       damage: 87
       Unknown1177: 1
       Unknown1179: 1
@@ -1380,14 +1380,14 @@ startState: s32'FBFefnirPunch'
     wallBounceCount: 1
     wallBounceXVelocityPercent: 20
     wallBounceInCornerOnly: 1
-    if: (NEXT_ARG_IS_VAR), 126
+    if: (VARIABLE), 126
       guardType: (NONE)
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 84
+    if: (VARIABLE), 84
       Unknown58: 1
       endIf: 
     upon: (HIT)
-      if: (NEXT_ARG_IS_VAR), 115
+      if: (VARIABLE), 115
         ifNot: 2, 116
           ifNot: 2, 45
             storeValue: (VARIABLE), 45, (STATIC), 1

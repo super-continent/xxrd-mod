@@ -333,11 +333,11 @@ startSubroutine: s32'cmn_SkillInit'
 
 startSubroutine: s32'cmnBurstKakuseiParticle'
   ifNot: 2, 142
-    if: (NEXT_ARG_IS_VAR), 16
+    if: (VARIABLE), 16
       Unknown49: 116
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown49: 3
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           ifOperation: 16, (VARIABLE), 200, (STATIC), 14
             Unknown448: s32'cmn_burstkakusei_idling', 151
             endIf: 
@@ -354,7 +354,7 @@ startSubroutine: s32'cmnDustInitialize'
   specialCancelEnabled: 0
   callSubroutine: s32'DustInitializeP', 0, 0, 0, 0, 0, 0, 0, 0
   upon: (FRAME_STEP)
-    if: (NEXT_ARG_IS_VAR), 69
+    if: (VARIABLE), 69
       Unknown54: 0, 2, 69, 0, -1
       ifNot: 2, 69
         Unknown1627: s32'HomingJump'
@@ -382,11 +382,11 @@ startSubroutine: s32'cmnDustInitialize'
     Unknown2156: 1
     Unknown365: 40000, 0
     Unknown2328: s32'HomingJump'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       Unknown1622: s32'HomingJump'
       endIf: 
     Unknown2328: s32'HomingDash2'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       Unknown1622: s32'HomingDash2'
       endIf: 
     storeValue: (VARIABLE), 69, (STATIC), 1
@@ -404,7 +404,7 @@ startSubroutine: s32'cmnDustInitialize'
 startSubroutine: s32'cmnHomingJumpInitialize'
   Unknown2047: 23, -93000, 97000, 21000, 7404, 9034, -7280, 100, 0, 40, 15, 0, 2, 2
   Unknown53: 23, 2, 0, 22, 2, 158
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown41: 22
     physicsXImpulse: -9000
     physicsYImpulse: 48840
@@ -432,7 +432,7 @@ startSubroutine: s32'cmnHomingJumpInitialize'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 39
       Unknown53: 23, 2, 0, 22, 2, 158
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown41: 22
         multiplyYVelocityByPercent: 50
         Unknown40: 
@@ -470,7 +470,7 @@ startSubroutine: s32'cmnHomingDash2Initialize'
   Unknown176: 1
   createObject2: s32'cmnHomingDash2Camera', 100
   Unknown53: 23, 2, 0, 22, 2, 158
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     storeValue: (VARIABLE), 165, (STATIC), 60
     Unknown41: 22
     physicsXImpulse: -19000
@@ -574,7 +574,7 @@ startState: s32'cmn_nagenuke'
     Unknown1154: 1
     allowHitting: (ALL)
     Unknown1051: 2
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       groundHitEffect: 25
       airHitEffect: 25
       endIf: 
@@ -880,11 +880,11 @@ startSubroutine: s32'cmnCG_Initialize'
   Unknown1819: 0, -2
   createObject2: s32'cmn_Tatami_burst', 100
   Unknown2001: 3, s32'CounterGuardStand'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1817: 0
     endIf: 
   Unknown2001: 3, s32'CounterGuardCrouch'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1815: 0
     Unknown1816: 0
     endIf: 
@@ -906,11 +906,11 @@ startSubroutine: s32'cmnCG_Initialize'
       endIf: 
     endUpon: 
   callSubroutine: s32'MOM_Check_MET_BreakBritz', 0, 0, 0, 0, 0, 0, 0, 0
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     superArmorEnabled: 0
     endIf: 
   upon: 56
-    if: (NEXT_ARG_IS_VAR), 46
+    if: (VARIABLE), 46
       callCmnEfFunc: s32'cmnCG_OnFrameStepAfter'
       endIf: 
     endUpon: 
@@ -923,7 +923,7 @@ startSubroutine: s32'cmnCG_OnMuteki'
   Unknown2278: s32'REJECTED', '0x0000000000000000000000000000000000000000000000000000000000000000'
   Unknown448: s32'cmn_blitz_hatudo', 103
   Unknown2320: s32'BlitzShield'
-  if: (NEXT_ARG_IS_VAR), 30
+  if: (VARIABLE), 30
     Unknown135: 
     Unknown111: 50
     multiplyYVelocityByPercent: 50
@@ -938,7 +938,7 @@ startSubroutine: s32'cmnCG_OnMuteki'
     callSubroutine: s32'CardDataIncrement', 0, 0, 0, 0, 0, 0, 0, 0
     endIf: 
   Unknown2001: 3, s32'CounterGuardAir'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown99: 1
     restoreDoubleJump: 
     restoreAirDash: 
@@ -956,14 +956,14 @@ startSubroutine: s32'cmnCG_OnMuteki'
   endSubroutine: 
 
 startSubroutine: s32'cmnCG_OnFrameStep'
-  if: (NEXT_ARG_IS_VAR), 71
+  if: (VARIABLE), 71
     Unknown54: 0, 2, 71, 0, 1
     ifOperation: (IS_EQUAL), (VARIABLE), 71, (STATIC), 12
       callSubroutine: s32'ClearPastSenkoInputTime', 0, 0, 0, 0, 0, 0, 0, 0
       callSubroutine: s32'LongSenkoInput', 0, 1, 0, 0, 0, 0, 0, 0
       endIf: 
     endIf: 
-  if: (NEXT_ARG_IS_VAR), 72
+  if: (VARIABLE), 72
     Unknown54: 0, 2, 72, 0, -1
     ifNot: 2, 72
       Unknown1883: 
@@ -971,11 +971,11 @@ startSubroutine: s32'cmnCG_OnFrameStep'
     endIf: 
   ifNot: 2, 45
     checkInput: 28
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       Unknown54: 0, 2, 51, 0, 1
       endIf: 
     checkInput: 32
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       storeValue: (VARIABLE), 45, (STATIC), 1
       endIf: 
     endIf: 
@@ -999,7 +999,7 @@ startSubroutine: s32'cmnCG_OnIdling'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 12
-    if: (NEXT_ARG_IS_VAR), 45
+    if: (VARIABLE), 45
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 12
         Unknown14: s32'end'
         endIf: 
@@ -1007,14 +1007,14 @@ startSubroutine: s32'cmnCG_OnIdling'
     endIf: 
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 16
     storeValue: (VARIABLE), 48, (STATIC), 1
-    if: (NEXT_ARG_IS_VAR), 45
+    if: (VARIABLE), 45
       callCmnEfFunc: s32'cmnCG_MutekiEnd'
       Unknown14: s32'attack'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 30
     ifNot: 2, 45
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown1815: 1
         Unknown1816: 1
         Unknown1817: 1
@@ -1031,10 +1031,10 @@ startSubroutine: s32'cmnCG_OnIdling'
     Unknown14: s32'attack'
     endIf: 
   upon: 39
-    if: (NEXT_ARG_IS_VAR), 47
+    if: (VARIABLE), 47
       ifOperation: (IS_GREATER), (VARIABLE), 13, (VARIABLE), 47
         ifNot: 2, 81
-          if: (NEXT_ARG_IS_VAR), 45
+          if: (VARIABLE), 45
             ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 12
               callCmnEfFunc: s32'cmnCG_CancelReady'
               Unknown2156: 0
@@ -1067,7 +1067,7 @@ startSubroutine: s32'cmnCG_OnIdling_Air'
       endIf: 
     endIf: 
   upon: 39
-    if: (NEXT_ARG_IS_VAR), 47
+    if: (VARIABLE), 47
       ifOperation: (IS_GREATER), (VARIABLE), 13, (VARIABLE), 47
         ifNot: 2, 81
           Unknown2156: 0
@@ -1098,7 +1098,7 @@ startSubroutine: s32'cmnCG_MutekiEnd'
   Unknown23: 11
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 20
-      if: (NEXT_ARG_IS_VAR), 30
+      if: (VARIABLE), 30
         Unknown135: 
         endIf: 
       endIf: 
@@ -1114,7 +1114,7 @@ startSubroutine: s32'cmnCG_MutekiEnd'
 startSubroutine: s32'cmnCG_OnFrameStepAfter'
   Unknown2263: 22
   Unknown53: 23, 2, 0, 24, 2, 130
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1018: 1
     grabOrRelease: 
     storeValue: (VARIABLE), 72, (STATIC), 2
@@ -1250,7 +1250,7 @@ startSubroutine: s32'cmnCG_Attack'
       wallBounceCount: 1
       wallstickDuration: 50
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 16
+    if: (VARIABLE), 16
       Unknown41: 22
       Unknown54: 0, 2, 120, 0, -750
       Unknown2133: 
@@ -1292,7 +1292,7 @@ startState: s32'cmnCG_BurstCharge'
 
 startSubroutine: s32'cmn_Hizakuzure'
   upon: (FRAME_STEP)
-    if: (NEXT_ARG_IS_VAR), 16
+    if: (VARIABLE), 16
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 51
         Unknown658: 100, 1, 0
         Unknown2144: 0, 100
@@ -1365,19 +1365,19 @@ startState: s32'cmn_blitz_shield'
 startSubroutine: s32'cmnMOMFly'
   Unknown240: 
   checkInput: 121
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     addVelocityX: 1225
     endIf: 
   checkInput: 95
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     addVelocityX: -1225
     endIf: 
   checkInput: 147
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     addVelocityY: 700
     endIf: 
   checkInput: 69
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     addVelocityY: -1750
     endIf: 
   ifOperation: (IS_GREATER), (VARIABLE), 18, (STATIC), 875000
@@ -2212,13 +2212,13 @@ startState: s32'Banana'
     Unknown1877: 1000
     storeValue: (VARIABLE), 45, (STATIC), 1
     upon: 14
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown14: s32'0'
         endIf: 
       storeValue: (VARIABLE), 45, (STATIC), 0
       endUpon: 
     upon: (HIT_OR_GUARD)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown14: s32'0'
         endIf: 
       storeValue: (VARIABLE), 45, (STATIC), 0
@@ -2320,10 +2320,10 @@ startState: s32'cmn_BattleStartCamera'
   Unknown2170: 2, 45, 0, 1, 0, 4
   Unknown2170: 2, 46, 0, 1, 0, 2
   Unknown2102: 1
-  if: (NEXT_ARG_IS_VAR), 205
+  if: (VARIABLE), 205
     storeValue: (VARIABLE), 45, (VARIABLE), 205
     endIf: 
-  if: (NEXT_ARG_IS_VAR), 206
+  if: (VARIABLE), 206
     storeValue: (VARIABLE), 46, (VARIABLE), 206
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
@@ -2676,10 +2676,10 @@ startState: s32'cmn_MOM_no023'
     Unknown2157: 1, 5
     Unknown458: 3
     upon: 36
-      if: 0, 1
-        if: (NEXT_ARG_IS_VAR), 154
+      if: (STATIC), 1
+        if: (VARIABLE), 154
           modifyVar: 22, (STATIC), 1, (STATIC), 100
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown14: s32'Bakuha'
             Unknown23: 36
             Unknown176: 1
@@ -2688,7 +2688,7 @@ startState: s32'cmn_MOM_no023'
           endIf: 
         else: 
           checkInput: 275
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown14: s32'Bakuha'
             Unknown23: 36
             Unknown176: 1
@@ -3125,7 +3125,7 @@ startState: s32'cmn_MOM_no029'
       Unknown176: 1
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0000000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 150000
           Unknown53: 22, 2, 61, 23, 2, 146
@@ -3171,7 +3171,7 @@ startState: s32'cmn_MOM_no030'
     Unknown450: s32'cmn_mom_sphere_aura'
     Unknown98: 0
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0000000017000000640000000300000067000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 400000
           Unknown2311: 3
@@ -3213,7 +3213,7 @@ startState: s32'cmn_MOM_no031'
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (VARIABLE), 146
         Unknown2001: 3, s32'CmnActItemUse'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           ifNot: 2, 36
             Unknown41: 3
             Unknown1321: 1
@@ -3227,7 +3227,7 @@ startState: s32'cmn_MOM_no031'
     endUpon: 
   sprite: s32'null', 300
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown1972: 8396800, 6, -1
@@ -3717,22 +3717,22 @@ startState: s32'cmn_MOM_no044'
       endUpon: 
     upon: 42
       checkInput: 149
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         storeValue: (VARIABLE), 48, (STATIC), 1
         endIf: 
       checkInput: 71
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         storeValue: (VARIABLE), 48, (STATIC), 2
         endIf: 
       endUpon: 
     upon: (FRAME_STEP)
       ifNot: 2, 45
         checkInput: 147
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           addVelocityY: 280
           endIf: 
         checkInput: 69
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           addVelocityY: -280
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 1
@@ -4487,7 +4487,7 @@ startState: s32'cmn_MOM_no052'
     Unknown456: 2
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActItemUse'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         ifNot: 2, 36
           ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 1
             Unknown41: 3
@@ -4895,7 +4895,7 @@ startState: s32'cmn_MOM_no058'
     endUpon: 
   sprite: s32'null', 5
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown41: 3
     ifNot: 2, 36
       Unknown338: 0
@@ -4904,7 +4904,7 @@ startState: s32'cmn_MOM_no058'
     endIf: 
   sprite: s32'null', 10
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown41: 3
     ifNot: 2, 36
       Unknown178: 22
@@ -5001,47 +5001,47 @@ startState: s32'cmn_MOM_no061'
     damage: 30
     setThrowRange: 0
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 50
+      if: (VARIABLE), 50
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 3
           checkInput: 107
           ifNot: 2, 0
             checkInput: 29
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               storeValue: (VARIABLE), 52, (STATIC), 5
               checkInput: 55
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 1
                 endIf: 
               checkInput: 68
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 2
                 endIf: 
               checkInput: 81
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 3
                 endIf: 
               checkInput: 94
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 4
                 endIf: 
               checkInput: 107
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 5
                 endIf: 
               checkInput: 120
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 6
                 endIf: 
               checkInput: 133
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 7
                 endIf: 
               checkInput: 146
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 8
                 endIf: 
               checkInput: 159
-              if: (NEXT_ARG_IS_VAR), 0
+              if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 9
                 endIf: 
               ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 0
@@ -5222,7 +5222,7 @@ startState: s32'cmn_MOM_no062'
   Unknown450: s32'mom_sly_croswise00'
   sprite: s32'mom_crosswise', 1
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown708: 18, 1
@@ -5250,7 +5250,7 @@ startState: s32'cmn_MOM_no062'
   sprite: s32'mom_crosswise', 4
   sprite: s32'mom_crosswise', 4
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown708: 18, 1
@@ -5275,7 +5275,7 @@ startState: s32'cmn_MOM_no062'
   sprite: s32'mom_crosswise', 4
   sprite: s32'mom_crosswise', 2
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown1883: 
@@ -5586,7 +5586,7 @@ startState: s32'cmn_MOM_no066'
   createObject2: s32'cmn_VV_Loop_hs_DI', 0
   playSFX: s32'SE_EXPLODE'
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown338: 0
@@ -5631,7 +5631,7 @@ startState: s32'cmn_MOM_no066'
   Unknown2241: 0, 2500
   Unknown449: s32'cmn_mom_lightbulet_hit', 100
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       jumpToState: s32'_NEUTRAL'
@@ -5887,7 +5887,7 @@ startState: s32'cmn_MOM_no073'
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 1
         Unknown2001: 3, s32'CmnActItemUse'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           ifNot: 2, 36
             Unknown41: 3
             superArmorEnabled: 1
@@ -5902,7 +5902,7 @@ startState: s32'cmn_MOM_no073'
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 30
         Unknown2001: 3, s32'CmnActItemUse'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           ifNot: 2, 36
             Unknown41: 3
             superArmorEnabled: 0
@@ -6026,7 +6026,7 @@ startState: s32'cmn_MOM_no079'
       Unknown176: 1
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0000000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 150000
           Unknown53: 22, 2, 61, 23, 2, 146
@@ -6107,7 +6107,7 @@ startState: s32'cmn_MOM_no083'
       playSFX: s32'GG2_021'
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0100000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 320000
           Unknown2311: 22
@@ -6142,7 +6142,7 @@ startState: s32'cmn_MOM_no084'
       playSFX: s32'GG2_021'
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0100000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 320000
           Unknown2311: 22
@@ -6176,7 +6176,7 @@ startState: s32'cmn_MOM_no085'
       playSFX: s32'GG2_021'
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0100000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 320000
           Unknown2311: 22
@@ -6210,7 +6210,7 @@ startState: s32'cmn_MOM_no086'
       playSFX: s32'GG2_021'
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0100000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 320000
           Unknown2311: 22
@@ -6837,7 +6837,7 @@ startState: s32'cmn_MOM_no098'
       playSFX: s32'GG2_021'
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0100000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 320000
           Unknown2311: 22
@@ -6879,7 +6879,7 @@ startState: s32'cmn_MOM_no101'
       Unknown176: 1
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0000000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 150000
           Unknown2311: 22
@@ -6975,7 +6975,7 @@ startState: s32'cmn_MOM_no106'
       playSFX: s32'GG2_021'
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2302: '0x0100000017000000640000001600000064000000'
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 320000
           Unknown2311: 22
@@ -7087,7 +7087,7 @@ startState: s32'cmn_MOM_no108'
     playSFX: s32'GG2_027'
     endUpon: 
   upon: 21
-    if: (NEXT_ARG_IS_VAR), 45
+    if: (VARIABLE), 45
       Unknown41: 3
       superArmorEnabled: 0
       Unknown40: 
@@ -7095,8 +7095,8 @@ startState: s32'cmn_MOM_no108'
       endIf: 
     endUpon: 
   upon: (FRAME_STEP)
-    if: (NEXT_ARG_IS_VAR), 45
-      if: (NEXT_ARG_IS_VAR), 236
+    if: (VARIABLE), 45
+      if: (VARIABLE), 236
         Unknown41: 3
         Unknown1321: 1
         Unknown40: 
@@ -7109,7 +7109,7 @@ startState: s32'cmn_MOM_no108'
     endUpon: 
   upon: (AFTER_EXIT)
     ifNot: 2, 36
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown41: 3
         superArmorEnabled: 1
         Unknown1808: 1
@@ -7263,14 +7263,14 @@ startState: s32'cmn_MOM_no111'
     endUpon: 
   sprite: s32'null', 1
   storeValue: (VARIABLE), 0, (STATIC), 1
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown2247: 0, 0, 0, 0
     callEtcState: s32'cmn_Meishi', 100
     storeValue: (VARIABLE), 46, (STATIC), 1
     Unknown14: s32'P'
     endIf: 
   else: 
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       Unknown2247: 0, 0, 0, 1
       callEtcState: s32'cmn_Meishi', 100
       storeValue: (VARIABLE), 46, (STATIC), 2
@@ -7367,10 +7367,10 @@ startState: s32'cmn_Meishi'
   Unknown2023: 0
   sprite: s32'null', 1
   storeValue: (VARIABLE), 0, (STATIC), 1
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown14: s32'P'
     endIf: 
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown14: s32'K'
     endIf: 
   setMarker: s32'K'
@@ -7419,7 +7419,7 @@ startState: s32'cmn_Meishi_Line'
   upon: (IMMEDIATE)
     endUpon: 
   sprite: s32'null', 1
-  if: (NEXT_ARG_IS_VAR), 115
+  if: (VARIABLE), 115
     Unknown2283: 5
     endIf: 
   sprite: s32'null', 1
@@ -7723,7 +7723,7 @@ startState: s32'cmn_MOM_no114'
   Unknown450: s32'mombed_233arm01'
   sprite: s32'mom_crosswise', 3
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown708: 18, 1
@@ -7806,7 +7806,7 @@ startState: s32'cmn_MOM_no115'
     Unknown23: 8
     endUpon: 
   upon: (FRAME_STEP)
-    if: (NEXT_ARG_IS_VAR), 46
+    if: (VARIABLE), 46
       damage: 6
       storeValue: (VARIABLE), 46, (STATIC), 0
       endIf: 
@@ -8157,7 +8157,7 @@ startState: s32'cmn_MOM_no118'
     attackLevel: 4
     damage: 130
     stunValue: 65
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       damage: 162
       stunValue: 65
       Unknown1177: 1
@@ -8176,7 +8176,7 @@ startState: s32'cmn_MOM_no118'
     Unknown450: s32'momleo_431jizoku10'
     Unknown99: -80000
     physicsXImpulse: 70000
-    if: (NEXT_ARG_IS_VAR), 84
+    if: (VARIABLE), 84
       Unknown287: 1
       upon: 46
         flipDirection: 
@@ -8188,7 +8188,7 @@ startState: s32'cmn_MOM_no118'
       endIf: 
     Unknown58: 1
     upon: (HIT)
-      if: (NEXT_ARG_IS_VAR), 115
+      if: (VARIABLE), 115
         ifNot: 2, 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
@@ -8259,7 +8259,7 @@ startState: s32'cmnMistKuttsuku'
   upon: (IMMEDIATE)
     storeValue: (VARIABLE), 53, (STATIC), 360
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 53
+      if: (VARIABLE), 53
         Unknown41: 3
         Unknown2342: 1
         Unknown40: 
@@ -8339,14 +8339,14 @@ startState: s32'cmnjkoBomb'
     hitAirPushbackY: 40000
     groundHitEffect: (AIR_FACE_UP)
     Unknown2159: 3
-    if: (NEXT_ARG_IS_VAR), 115
+    if: (VARIABLE), 115
       damage: 31
       Unknown1177: 1
       Unknown1179: 1
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 84
+    if: (VARIABLE), 84
       damage: 50
-      if: (NEXT_ARG_IS_VAR), 115
+      if: (VARIABLE), 115
         damage: 62
         Unknown1177: 1
         Unknown1179: 1
@@ -8355,7 +8355,7 @@ startState: s32'cmnjkoBomb'
     upon: (BEFORE_EXIT)
       endUpon: 
     upon: (HIT)
-      if: (NEXT_ARG_IS_VAR), 115
+      if: (VARIABLE), 115
         ifOperation: 7, (VARIABLE), 5, (STATIC), 131072
           endIf: 
         else: 
@@ -8548,12 +8548,12 @@ startState: s32'cmn_MOM_no123'
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 7, (STATIC), 40000
           checkInput: 121
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             addVelocityX: 600
             endIf: 
           endIf: 
         checkInput: 95
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           addVelocityX: -700
           endIf: 
         endIf: 
@@ -8885,7 +8885,7 @@ startState: s32'cmn_MOM_no126'
   sprite: s32'keep', 1
   sprite: s32'keep', 3
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown708: 18, 1
@@ -8909,7 +8909,7 @@ startState: s32'cmn_MOM_no126'
   Unknown32: s32'cmn_rvn407EffATK1'
   createObject2: s32'cmn_rvn407EffATK2', 100
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       recoveryState: 
@@ -8959,7 +8959,7 @@ startState: s32'cmn_MOM_no127'
   sprite: s32'keep', 1
   sprite: s32'keep', 5
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown708: 20, 1
@@ -8990,7 +8990,7 @@ startState: s32'cmn_MOM_no127'
   Unknown450: s32'cmn_mom_lightbulet'
   Unknown2267: 2000
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       Unknown338: 0
@@ -9002,7 +9002,7 @@ startState: s32'cmn_MOM_no127'
   sprite: s32'keep', 6
   Unknown1771: s32'cmn_rvn430Eff', 23
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       grabOrRelease: 
@@ -9013,7 +9013,7 @@ startState: s32'cmn_MOM_no127'
   sprite: s32'keep', 6
   Unknown1771: s32'cmn_rvn430Eff', 23
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       grabOrRelease: 
@@ -9024,7 +9024,7 @@ startState: s32'cmn_MOM_no127'
   sprite: s32'keep', 10
   Unknown1771: s32'cmn_rvn430Eff', 23
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       grabOrRelease: 
@@ -9038,7 +9038,7 @@ startState: s32'cmn_MOM_no127'
   Unknown449: s32'cmn_mom_lightbulet_hit', 100
   Unknown450: s32''
   Unknown2001: 3, s32'CmnActItemUse'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     ifNot: 2, 36
       Unknown41: 3
       setStrikeInvul: 0
@@ -9579,7 +9579,7 @@ startState: s32'cmn_MOM_TakarabakoBroken'
     Unknown2271: 1
     Unknown363: -14671840
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         Unknown2161: 100, 0, 0
         Unknown2162: '0x000000003004FEFF00000000D0FB010000000000307500000000000010980200'
         Unknown2241: 0, 400
@@ -9617,7 +9617,7 @@ startState: s32'cmn_MOM_TB_Normal'
       createObject2: s32'cmn_MOM_MasterKey', 100
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER), (VARIABLE), 45, (STATIC), 60
           Unknown19: 23
@@ -9669,7 +9669,7 @@ startState: s32'cmn_MOM_TB_Katai'
       createObject2: s32'cmn_MOM_MasterKey', 100
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER), (VARIABLE), 45, (STATIC), 60
           Unknown19: 23
@@ -9721,7 +9721,7 @@ startState: s32'cmn_MOM_TB_Kusari'
       createObject2: s32'cmn_MOM_MasterKey', 100
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER), (VARIABLE), 45, (STATIC), 60
           Unknown19: 23
@@ -9773,7 +9773,7 @@ startState: s32'cmn_MOM_TB_Moeru'
       createObject2: s32'cmn_MOM_MasterKey', 100
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER), (VARIABLE), 45, (STATIC), 60
           Unknown19: 23
@@ -9831,13 +9831,13 @@ startState: s32'cmn_MOM_TB_Huttobu'
       createObject2: s32'cmn_MOM_MasterKey', 100
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER), (VARIABLE), 45, (STATIC), 60
           Unknown19: 23
           endIf: 
         endIf: 
-      if: (NEXT_ARG_IS_VAR), 114
+      if: (VARIABLE), 114
         Unknown111: -50
         endIf: 
       endUpon: 
@@ -9887,7 +9887,7 @@ startState: s32'cmn_MOM_TB_Uiteru'
       createObject2: s32'cmn_MOM_MasterKey', 100
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER), (VARIABLE), 45, (STATIC), 60
           Unknown19: 23
@@ -10075,7 +10075,7 @@ startState: s32'cmn_MOM_Medal'
       Unknown190: 340
       endIf: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 46
+      if: (VARIABLE), 46
         Unknown54: 0, 2, 46, 0, 1
         ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 20
           endIf: 
@@ -10091,7 +10091,7 @@ startState: s32'cmn_MOM_Medal'
               storeValue: (VARIABLE), 61, (STATIC), 1
               endIf: 
             endIf: 
-          if: (NEXT_ARG_IS_VAR), 61
+          if: (VARIABLE), 61
             Unknown2248: 0, 16744448
             Unknown2241: 0, 500
             Unknown449: s32'cmn_mom_hatudo_good', 100
@@ -10148,7 +10148,7 @@ startState: s32'cmn_MOM_Tabemono'
         endIf: 
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 46
+      if: (VARIABLE), 46
         Unknown54: 0, 2, 46, 0, 1
         ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 20
           endIf: 
@@ -10164,7 +10164,7 @@ startState: s32'cmn_MOM_Tabemono'
               storeValue: (VARIABLE), 61, (STATIC), 1
               endIf: 
             endIf: 
-          if: (NEXT_ARG_IS_VAR), 61
+          if: (VARIABLE), 61
             Unknown1757: 22, 2, 116
             storeValue: (VARIABLE), 47, (STATIC), 1
             Unknown14: s32'float'
@@ -10218,7 +10218,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
         endIf: 
       endUpon: 
     upon: 36
-      if: (NEXT_ARG_IS_VAR), 46
+      if: (VARIABLE), 46
         Unknown54: 0, 2, 46, 0, 1
         ifOperation: (IS_EQUAL), (VARIABLE), 46, (STATIC), 20
           endIf: 
@@ -10234,7 +10234,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
               storeValue: (VARIABLE), 61, (STATIC), 1
               endIf: 
             endIf: 
-          if: (NEXT_ARG_IS_VAR), 61
+          if: (VARIABLE), 61
             Unknown1757: 22, 2, 116
             storeValue: (VARIABLE), 47, (STATIC), 1
             Unknown1993: 
@@ -10276,7 +10276,7 @@ startState: s32'cmn_hijump_obj'
   upon: (FRAME_STEP)
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 2
       Unknown2001: 2, s32'CmnActJump'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown338: 255
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 13, (STATIC), 8
           Unknown53: 23, 2, 7, 2, 2, 7
@@ -11751,7 +11751,7 @@ startState: s32'cmn_evt_jko002'
     Unknown92: -500000
     endUpon: 
   setMarker: s32'loop'
-  if: (NEXT_ARG_IS_VAR), 45
+  if: (VARIABLE), 45
     Unknown14: s32'stop'
     endIf: 
   sprite: s32'jko616_15', 8
@@ -11794,7 +11794,7 @@ startState: s32'cmn_evt_jko003'
     Unknown2210: 1
     Unknown1734: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 32
+      if: (VARIABLE), 32
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 17, (STATIC), 50000
           Unknown23: 3
           Unknown176: 1
@@ -12199,7 +12199,7 @@ startState: s32'cmn_evt_jko011'
     Unknown451: s32'EVT_JKO', s32''
     upon: (FRAME_STEP)
       modifyVar: 10, (VARIABLE), 17, (STATIC), 252000
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown23: 3
         Unknown176: 1
         Unknown14: s32'loop2'
@@ -12791,7 +12791,7 @@ startState: s32'cmn_TrialTokeiMain'
     upon: (ON_HIT_OR_BLOCK)
       storeValue: (VARIABLE), 46, (STATIC), 1
       ifNot: 2, 48
-        if: (NEXT_ARG_IS_VAR), 116
+        if: (VARIABLE), 116
           Unknown2350: 0
           Unknown2359: 0
           Unknown2369: 0
@@ -12804,8 +12804,8 @@ startState: s32'cmn_TrialTokeiMain'
         endIf: 
       endUpon: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 46
-        if: (NEXT_ARG_IS_VAR), 48
+      if: (VARIABLE), 46
+        if: (VARIABLE), 48
           ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 180
             Unknown448: s32'cmn_count3', 100
             endIf: 
@@ -12817,7 +12817,7 @@ startState: s32'cmn_TrialTokeiMain'
             endIf: 
           Unknown54: 0, 2, 48, 0, -1
           ifNot: 2, 48
-            if: (NEXT_ARG_IS_VAR), 116
+            if: (VARIABLE), 116
               Unknown2350: 0
               Unknown2359: 0
               Unknown2369: 0
@@ -12879,7 +12879,7 @@ startState: s32'cmn_KTX01_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
           Unknown2367: 
@@ -12913,7 +12913,7 @@ startState: s32'cmn_KTX02_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 70
           Unknown2367: 
@@ -12945,7 +12945,7 @@ startState: s32'cmn_KTX03_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
           Unknown2367: 
@@ -12979,7 +12979,7 @@ startState: s32'cmn_KTX04_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           Unknown2367: 
@@ -13011,7 +13011,7 @@ startState: s32'cmn_KTX05_1P'
     Unknown2359: 1
     Unknown2351: 0
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           Unknown2367: 
@@ -13043,14 +13043,14 @@ startState: s32'cmn_KTX06_1P'
     Unknown2359: 1
     upon: (GUARD)
       Unknown2371: 22, s32'SacredEdgeObj'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2367: 
         endIf: 
       endUpon: 
     upon: (FRAME_STEP)
       ifNot: 2, 218
         Unknown2001: 3, s32'SacredEdge'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         endIf: 
@@ -13073,14 +13073,14 @@ startState: s32'cmn_KTX07_1P'
     Unknown2359: 1
     upon: (GUARD)
       Unknown2371: 22, s32'AirVaporThrust'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2367: 
         endIf: 
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
         Unknown2001: 3, s32'AirVaporThrust'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         endIf: 
@@ -13104,7 +13104,7 @@ startState: s32'cmn_KTX08_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 36
           Unknown2367: 
@@ -13136,7 +13136,7 @@ startState: s32'cmn_KTX09_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           Unknown2367: 
@@ -13162,7 +13162,7 @@ startState: s32'cmn_KTX10_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           Unknown2367: 
@@ -13190,7 +13190,7 @@ startState: s32'cmn_KTX11_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 136
           Unknown2367: 
@@ -13219,7 +13219,7 @@ startState: s32'cmn_KTX12_1P'
     Unknown2359: 1
     Unknown2351: 0
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 100
           Unknown2367: 
@@ -13246,12 +13246,12 @@ startState: s32'cmn_KTX13_1P'
     Unknown2368: 1
     upon: 72
       Unknown2371: 3, s32'NmlAtk2C'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2320: s32'Kurauna'
         endIf: 
       else: 
         Unknown2371: 3, s32'NmlAtk5E'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2320: s32'Kurauna'
           endIf: 
         endElse: 
@@ -13283,13 +13283,13 @@ startState: s32'cmn_KTX14_1P'
     Unknown2351: 0
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
           Unknown2367: 
           endIf: 
         endIf: 
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 60
           upon: 71
@@ -13323,7 +13323,7 @@ startState: s32'cmn_KTX15_1P'
     Unknown2359: 1
     Unknown2352: 0
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 104
           Unknown2367: 
@@ -13352,7 +13352,7 @@ startState: s32'cmn_KTX16_1P'
     Unknown2359: 1
     Unknown2354: 0
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 1
@@ -13394,7 +13394,7 @@ startState: s32'cmn_KTX17_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
           upon: 71
@@ -13424,7 +13424,7 @@ startState: s32'cmn_KTX18_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 80
           Unknown2350: 0
@@ -13459,7 +13459,7 @@ startState: s32'cmn_KTX19_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         endIf: 
       upon: 71
@@ -13494,16 +13494,16 @@ startState: s32'cmn_KTX20_1P'
     Unknown2352: 0
     Unknown2353: 0
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           Unknown2001: 28, s32'CmnActStand'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endIf: 
         Unknown2001: 27, s32'CmnActJitabataLoop'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         endIf: 
@@ -13545,7 +13545,7 @@ startState: s32'cmn_KTX21_1P'
     Unknown2359: 1
     Unknown2352: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
           upon: 71
@@ -13584,7 +13584,7 @@ startState: s32'cmn_KTX22_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
           upon: 71
@@ -13627,7 +13627,7 @@ startState: s32'cmn_KTX23_1P'
     storeValue: (VARIABLE), 120, (STATIC), 15000
     Unknown40: 
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         Unknown2368: 0
         ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 420
@@ -13640,12 +13640,12 @@ startState: s32'cmn_KTX23_1P'
       endUpon: 
     upon: 72
       Unknown2371: 3, s32'NmlAtk2C'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2320: s32'Kurauna'
         endIf: 
       else: 
         Unknown2371: 3, s32'NmlAtk5E'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2320: s32'Kurauna'
           endIf: 
         endElse: 
@@ -13668,7 +13668,7 @@ startState: s32'cmn_KTX24_1P'
     Unknown2359: 1
     upon: (FRAME_STEP)
       Unknown2001: 28, s32'VolcanicViperLandHS'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2367: 
         endIf: 
       upon: 72
@@ -13677,7 +13677,7 @@ startState: s32'cmn_KTX24_1P'
       upon: 71
         Unknown2367: 
         endUpon: 
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown54: 0, 2, 46, 0, 1
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 10
@@ -13714,21 +13714,21 @@ startState: s32'cmn_KTX25_1P'
       endIf: 
     Unknown53: 28, 2, 53, 23, 2, 53
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown41: 28
         Unknown2386: 1
         Unknown40: 
         Unknown54: 0, 2, 45, 0, 1
-        if: (NEXT_ARG_IS_VAR), 53
+        if: (VARIABLE), 53
           Unknown53: 23, 2, 0, 28, 2, 213
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endIf: 
         else: 
           Unknown53: 23, 2, 0, 28, 2, 213
-          if: (NEXT_ARG_IS_VAR), 0
-            if: (NEXT_ARG_IS_VAR), 46
+          if: (VARIABLE), 0
+            if: (VARIABLE), 46
               Unknown2367: 
               endIf: 
             Unknown54: 0, 2, 46, 0, 1
@@ -13761,7 +13761,7 @@ startState: s32'cmn_KTX26_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
           Unknown2359: 0
@@ -13796,7 +13796,7 @@ startState: s32'cmn_KTX27_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
           Unknown2350: 0
@@ -13831,7 +13831,7 @@ startState: s32'cmn_KTX28_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
           Unknown2359: 0
@@ -13840,7 +13840,7 @@ startState: s32'cmn_KTX28_1P'
           Unknown2367: 
           endIf: 
         endIf: 
-      if: (NEXT_ARG_IS_VAR), 46
+      if: (VARIABLE), 46
         Unknown54: 0, 2, 46, 0, 1
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 10
@@ -13871,7 +13871,7 @@ startState: s32'cmn_KTX29_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
           Unknown2367: 
@@ -13909,7 +13909,7 @@ startState: s32'cmn_KTX30_1P'
     Unknown2359: 1
     Unknown2368: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 10
           Unknown2359: 0
@@ -13917,7 +13917,7 @@ startState: s32'cmn_KTX30_1P'
           endIf: 
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
           Unknown2001: 28, s32'CmnActStand'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endIf: 
@@ -13956,7 +13956,7 @@ startState: s32'cmn_KTX31_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
           Unknown2359: 0
@@ -14002,7 +14002,7 @@ startState: s32'cmn_KTX32_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
           Unknown2367: 
@@ -14036,7 +14036,7 @@ startState: s32'cmn_KTX33_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
           Unknown2367: 
@@ -14061,7 +14061,7 @@ startState: s32'cmn_KTX34_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
           Unknown2367: 
@@ -14086,7 +14086,7 @@ startState: s32'cmn_KTX35_1P'
     Unknown2350: 1
     Unknown2359: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 600
           Unknown2367: 
@@ -14148,7 +14148,7 @@ startState: s32'cmn_KTX37_1P'
     Unknown2359: 1
     Unknown2352: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
           Unknown2367: 
@@ -14198,11 +14198,11 @@ startState: s32'cmn_KTX38_1P'
           endIf: 
         endIf: 
       Unknown2001: 28, s32'CmnActUkemi'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2367: 
         endIf: 
       Unknown2001: 28, s32'CmnActJumpLanding'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2367: 
         endIf: 
       endUpon: 
@@ -14236,15 +14236,15 @@ startState: s32'cmn_KTX39_1P'
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 218, (STATIC), 2
         Unknown2001: 28, s32'CmnActUkemi'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         Unknown2001: 28, s32'CmnActJumpLanding'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         Unknown2001: 28, s32'CmnActStand'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         endIf: 
@@ -14274,7 +14274,7 @@ startState: s32'cmn_KTX40_1P'
     Unknown2359: 1
     upon: (FRAME_STEP)
       Unknown2001: 28, s32'CmnActBurst'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown2367: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 218, (STATIC), 2
@@ -14307,7 +14307,7 @@ startState: s32'cmn_KTX41_1P'
     Unknown2350: 1
     Unknown2368: 1
     upon: (FRAME_STEP)
-      if: (NEXT_ARG_IS_VAR), 218
+      if: (VARIABLE), 218
         Unknown54: 0, 2, 45, 0, 1
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 140
           upon: 71
@@ -14371,7 +14371,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2351: 0
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 70
             Unknown2367: 
@@ -14407,7 +14407,7 @@ startState: s32'cmn_KTX42_1P'
           endIf: 
         else: 
           Unknown2001: 27, s32'BanditBringer'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endElse: 
@@ -14423,7 +14423,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2359: 1
       Unknown2350: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             upon: 71
@@ -14457,7 +14457,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2367: 
@@ -14487,7 +14487,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 302
             Unknown2320: s32'Kurauna'
@@ -14515,7 +14515,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2351: 0
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2367: 
@@ -14553,7 +14553,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2350: 1
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
@@ -14561,7 +14561,7 @@ startState: s32'cmn_KTX42_1P'
           endIf: 
         else: 
           Unknown2001: 27, s32'IchigekiJunbi'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endElse: 
@@ -14593,7 +14593,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 130
             Unknown2367: 
@@ -14622,14 +14622,14 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 170
             Unknown2367: 
             endIf: 
           endIf: 
         Unknown2001: 28, s32'VolcanicViperLandHS'
-        if: (NEXT_ARG_IS_VAR), 0
+        if: (VARIABLE), 0
           Unknown2367: 
           endIf: 
         endUpon: 
@@ -14657,7 +14657,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 250
             Unknown2367: 
@@ -14686,7 +14686,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
             Unknown2350: 0
@@ -14719,7 +14719,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
             Unknown2350: 0
@@ -14752,7 +14752,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2350: 0
@@ -14786,7 +14786,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2359: 0
@@ -14824,7 +14824,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2350: 0
@@ -14832,7 +14832,7 @@ startState: s32'cmn_KTX42_1P'
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 124
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -14870,7 +14870,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2367: 
@@ -14905,7 +14905,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 110
             Unknown2367: 
@@ -14940,7 +14940,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 110
             Unknown2367: 
@@ -14969,7 +14969,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 50
             Unknown2350: 0
@@ -15003,7 +15003,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2350: 1
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 91
             Unknown2367: 
@@ -15037,7 +15037,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 90
             Unknown2320: s32'Kurauna'
@@ -15066,14 +15066,14 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 116
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -15107,7 +15107,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 240
             Unknown2320: s32'Ikiro'
@@ -15133,7 +15133,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 90
             Unknown2367: 
@@ -15169,13 +15169,13 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2367: 
             endIf: 
           Unknown2001: 28, s32'BentenGari'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endIf: 
@@ -15201,7 +15201,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2350: 1
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
@@ -15234,7 +15234,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 130
             Unknown2367: 
@@ -15262,7 +15262,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2359: 1
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 100
             Unknown2320: s32'Kurauna'
@@ -15296,7 +15296,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 106
             Unknown2367: 
@@ -15325,7 +15325,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 112
             Unknown2367: 
@@ -15360,7 +15360,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 130
             Unknown2320: s32'Kurauna'
@@ -15389,7 +15389,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 140
             Unknown2367: 
@@ -15419,7 +15419,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2368: 1
       Unknown2369: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 30
             Unknown2368: 0
@@ -15451,7 +15451,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2320: s32'Kurauna'
@@ -15480,7 +15480,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 130
             Unknown2367: 
@@ -15509,7 +15509,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 50
             Unknown2350: 0
@@ -15548,7 +15548,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 270
             Unknown2367: 
@@ -15581,7 +15581,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 120
             Unknown2367: 
@@ -15614,7 +15614,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
@@ -15647,7 +15647,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 140
             Unknown2367: 
@@ -15680,7 +15680,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2320: s32'Kurauna'
@@ -15712,7 +15712,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
             Unknown2359: 0
@@ -15720,7 +15720,7 @@ startState: s32'cmn_KTX42_1P'
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2367: 
             endIf: 
-          if: (NEXT_ARG_IS_VAR), 46
+          if: (VARIABLE), 46
             Unknown54: 0, 2, 46, 0, 1
             ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 5
               Unknown2367: 
@@ -15762,13 +15762,13 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2367: 
             endIf: 
           Unknown2001: 27, s32'CmnActJitabataLoop'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endIf: 
@@ -15802,7 +15802,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2350: 1
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
@@ -15834,7 +15834,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
@@ -15870,7 +15870,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2350: 1
       Unknown2359: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 72
             Unknown2367: 
@@ -15912,7 +15912,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 30
             Unknown2350: 0
@@ -15951,14 +15951,14 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2352: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 360
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -15990,18 +15990,18 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 360
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2001: 28, s32'CmnActBDash'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -16033,18 +16033,18 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 360
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2001: 28, s32'CmnActBDash'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -16076,14 +16076,14 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 360
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 60
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -16118,7 +16118,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 360
             Unknown2367: 
@@ -16151,13 +16151,13 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 240
             Unknown2367: 
             endIf: 
           Unknown2001: 28, s32'CmnActBDash'
-          if: (NEXT_ARG_IS_VAR), 0
+          if: (VARIABLE), 0
             Unknown2367: 
             endIf: 
           endIf: 
@@ -16183,7 +16183,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2359: 1
       Unknown2351: 0
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 44
             Unknown2350: 0
@@ -16224,7 +16224,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2353: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2367: 
@@ -16260,7 +16260,7 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 180
             Unknown2367: 
@@ -16314,13 +16314,13 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 200
             Unknown2367: 
             endIf: 
           endIf: 
-        if: (NEXT_ARG_IS_VAR), 46
+        if: (VARIABLE), 46
           Unknown54: 0, 2, 46, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 3
             Unknown2320: s32'Nandemo'
@@ -16358,14 +16358,14 @@ startState: s32'cmn_KTX42_1P'
       Unknown2359: 1
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 10
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 
@@ -16402,14 +16402,14 @@ startState: s32'cmn_KTX42_1P'
       Unknown2352: 0
       Unknown2368: 1
       upon: (FRAME_STEP)
-        if: (NEXT_ARG_IS_VAR), 218
+        if: (VARIABLE), 218
           Unknown54: 0, 2, 45, 0, 1
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 300
             Unknown2367: 
             endIf: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 10
             Unknown2001: 28, s32'CmnActStand'
-            if: (NEXT_ARG_IS_VAR), 0
+            if: (VARIABLE), 0
               Unknown2367: 
               endIf: 
             endIf: 

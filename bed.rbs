@@ -1096,31 +1096,31 @@ startSubroutine: s32'RoundInit'
   Unknown629: s16'vxxx023', s16'voice_none'
   Unknown629: s16'vxxx027', s16'voice_none'
   Unknown629: s16'vxxx029', s16'voice_none'
-  if: (NEXT_ARG_IS_VAR), 37
+  if: (VARIABLE), 37
     Unknown1679: s16'vxxx307', s16'r600', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     Unknown1679: s16'vxxx309', s16'r186', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     Unknown1679: s16'vxxx310', s16'r756', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     endIf: 
-  if: (NEXT_ARG_IS_VAR), 38
+  if: (VARIABLE), 38
     Unknown1679: s16'vxxx307', s16'r770', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     Unknown1679: s16'vxxx309', s16'r240', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     Unknown1679: s16'vxxx310', s16'r530', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     endIf: 
-  if: (NEXT_ARG_IS_VAR), 39
+  if: (VARIABLE), 39
     Unknown1679: s16'vxxx307', s16'r710', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     Unknown1679: s16'vxxx309', s16'r260', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     Unknown1679: s16'vxxx310', s16'r480', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     endIf: 
   Unknown47: s16'sol'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1679: s16'vxxx307', s16'r780', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     endIf: 
   Unknown47: s16'ram'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1679: s16'vxxx307', s16'r940', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     endIf: 
   Unknown47: s16'jko'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1679: s16'vxxx307', s16'r960', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
     endIf: 
   Unknown2012: s32''
@@ -1177,7 +1177,7 @@ startSubroutine: s32'RoundInit'
   Unknown2027: 
   Unknown2025: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'wmatress'
@@ -1185,7 +1185,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'Manpu'
     endIf: 
   Unknown47: s16'fau'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'wmatress'
@@ -1197,7 +1197,7 @@ startSubroutine: s32'RoundInit'
   Unknown2027: 
   Unknown2025: s32'CmnCutSceneDamage_Ichigeki'
   Unknown47: s16'zat'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown2026: s32'Body'
     Unknown2026: s32'head'
     Unknown2026: s32'wmatress'
@@ -1208,7 +1208,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'Zat_IKparts'
     endIf: 
   Unknown47: s16'fau'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'wmatress'
@@ -1216,18 +1216,18 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'warms'
     Unknown2026: s32'wlegs'
     Unknown2026: s32'Manpu'
-    if: (NEXT_ARG_IS_VAR), 37
+    if: (VARIABLE), 37
       Unknown2026: s32'FauIKParts_Killer'
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 38
+    if: (VARIABLE), 38
       Unknown2026: s32'FauIKParts_Rose'
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 39
+    if: (VARIABLE), 39
       Unknown2026: s32'FauIKParts_Cute'
       endIf: 
     endIf: 
   Unknown47: s16'ven'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown2026: s32'VenIKBall'
     endIf: 
   Unknown2027: 
@@ -1268,7 +1268,7 @@ startSubroutine: s32'RoundInit'
 
 startSubroutine: s32'CPUEstimate'
   Unknown1999: 22, s32'NmlAtk5E'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     Unknown1581: s32'RC_HomingJumpCombo'
     endIf: 
   Unknown1582: s32'CmnFDash'
@@ -1277,7 +1277,7 @@ startSubroutine: s32'CPUEstimate'
 startSubroutine: s32'OnFrameStep'
   ifNot: 2, 139
     ifNot: 2, 24
-      if: (NEXT_ARG_IS_VAR), 3
+      if: (VARIABLE), 3
         Unknown2032: s32'nohead'
         Unknown2034: 
         endIf: 
@@ -1287,7 +1287,7 @@ startSubroutine: s32'OnFrameStep'
         endElse: 
       endIf: 
     endIf: 
-  if: (NEXT_ARG_IS_VAR), 84
+  if: (VARIABLE), 84
     tensionGain: 2
     endIf: 
   endSubroutine: 
@@ -2539,24 +2539,24 @@ startState: s32'CmnActBurst'
 
 startState: s32'CmnActRomanCancel'
   sprite: s32'bed350_00', 4
-  if: (NEXT_ARG_IS_VAR), 30
+  if: (VARIABLE), 30
     Unknown2234: s32'bed351_00'
     endIf: 
   sprite: s32'bed350_01', 3
-  if: (NEXT_ARG_IS_VAR), 30
+  if: (VARIABLE), 30
     Unknown2234: s32'bed351_01'
     endIf: 
   sprite: s32'bed350_02', 4
-  if: (NEXT_ARG_IS_VAR), 30
+  if: (VARIABLE), 30
     Unknown2234: s32'bed351_02'
     endIf: 
   setMarker: s32'loop'
   sprite: s32'bed350_03', 4
-  if: (NEXT_ARG_IS_VAR), 30
+  if: (VARIABLE), 30
     Unknown2234: s32'bed351_03'
     endIf: 
   sprite: s32'bed350_04', 4
-  if: (NEXT_ARG_IS_VAR), 30
+  if: (VARIABLE), 30
     Unknown2234: s32'bed351_04'
     endIf: 
   Unknown3: 
@@ -2677,7 +2677,7 @@ startState: s32'CmnActExDamageLand'
   endState: 
 
 startState: s32'CmnActRoundWin'
-  if: (NEXT_ARG_IS_VAR), 136
+  if: (VARIABLE), 136
     Unknown14: s32'TypeA'
     endIf: 
   Unknown13: s32'TypeA', 9, 2, 153, 0, 1
@@ -2765,7 +2765,7 @@ startState: s32'CmnActMatchWin'
   Unknown2051: 1900
   Unknown2028: s32'MSMatchWin'
   upon: (FRAME_STEP)
-    if: (NEXT_ARG_IS_VAR), 46
+    if: (VARIABLE), 46
       ifOperation: 16, (VARIABLE), 13, (STATIC), 30
         Unknown2045: s32'DustHit', 1500, 10, 10, 10
         endIf: 
@@ -2836,7 +2836,7 @@ startState: s32'CmnActMatchWin'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 630
       storeValue: (VARIABLE), 46, (STATIC), 1
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 45
+    if: (VARIABLE), 45
       ifNot: 2, 95
         Unknown1675: 30
         Unknown1676: 
@@ -2867,7 +2867,7 @@ startState: s32'CmnActResultWin'
   Unknown2062: -180000, 0, -1315000, 0, 0, 0
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 0
-      if: (NEXT_ARG_IS_VAR), 138
+      if: (VARIABLE), 138
         playVoice: s16'vxxx400'
         Unknown2211: s32'vxxx400', 10000
         Unknown2313: 1
@@ -2921,7 +2921,7 @@ startState: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -2957,7 +2957,7 @@ startState: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk1D'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk3D'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk6D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3010,7 +3010,7 @@ startState: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3052,7 +3052,7 @@ startState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3093,7 +3093,7 @@ startState: s32'NmlAtk2B'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3133,7 +3133,7 @@ startState: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'CmnFJump'
@@ -3169,7 +3169,7 @@ startState: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk1D'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk3D'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2C'
@@ -3219,7 +3219,7 @@ startState: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2E'
@@ -3259,7 +3259,7 @@ startState: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'FlyingBed'
@@ -3288,7 +3288,7 @@ startState: s32'NmlAtk5D'
   hit: 
   playSFX: s32'SE_SWINGC'
   setJumpCancelable: 1
-  if: (NEXT_ARG_IS_VAR), 212
+  if: (VARIABLE), 212
     setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk1D'
@@ -3321,7 +3321,7 @@ startState: s32'NmlAtk6D'
     damage: 24
     hitPushbackX: 80
     hitAirPushbackY: 12000
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed'
@@ -3383,7 +3383,7 @@ startState: s32'NmlAtk6D_2'
     hitPushbackX: 80
     hitAirPushbackY: 12000
     untechableTime: 40
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed'
@@ -3452,7 +3452,7 @@ startState: s32'NmlAtk1D'
     hitAirPushbackY: 35000
     yrcWindowLength: 32
     setJumpCancelable: 1
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'FlyingBed'
@@ -3497,7 +3497,7 @@ startState: s32'NmlAtk2D'
     hitAirPushbackY: 35000
     yrcWindowLength: 34
     setJumpCancelable: 1
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_A'
@@ -3541,7 +3541,7 @@ startState: s32'NmlAtk3D'
     hitAirPushbackY: 35000
     yrcWindowLength: 39
     setJumpCancelable: 1
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_A'
@@ -3582,7 +3582,7 @@ startState: s32'NmlAtk5E'
     damage: 25
     riscMinus: 20
     setProration: 80
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'HomingJump'
         endMoveRegister: 
       endIf: 
@@ -3663,7 +3663,7 @@ startState: s32'NmlAtk2E'
     attackLevel: 2
     damage: 28
     hitAirPushbackX: 15000
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_B'
@@ -3707,7 +3707,7 @@ startState: s32'NmlAtk5F'
     Unknown2215: 
     recoveryState: 
     endUpon: 
-  if: (NEXT_ARG_IS_VAR), 3
+  if: (VARIABLE), 3
     Unknown14: s32'TypeB'
     endIf: 
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
@@ -3820,7 +3820,7 @@ startState: s32'NmlAtk6F'
     Unknown2160: 17
     recoveryState: 
     endUpon: 
-  if: (NEXT_ARG_IS_VAR), 3
+  if: (VARIABLE), 3
     Unknown14: s32'TypeB'
     endIf: 
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
@@ -3921,7 +3921,7 @@ startState: s32'NmlAtkAir5A'
     addGatlingOption: s32'AirStopCancelOnly'
     addWhiffCancelOption: s32'NmlAtkAir5A'
     setJumpCancelable: 1
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
         endMoveRegister: 
       endIf: 
@@ -3957,7 +3957,7 @@ startState: s32'NmlAtkAir5B'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     addGatlingOption: s32'AirStopCancelOnly'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
         endMoveRegister: 
       endIf: 
@@ -3992,7 +3992,7 @@ startState: s32'NmlAtkAir5C'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     addGatlingOption: s32'AirStopCancelOnly'
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed_Air'
@@ -4049,7 +4049,7 @@ startState: s32'NmlAtkAir5D'
   hit: 
   sprite: s32'bed253_08', 2
   hit: 
-  if: (NEXT_ARG_IS_VAR), 212
+  if: (VARIABLE), 212
     setStylishCombo: s32'StylishComboSlot0', s32'SpiralBed_Air'
       addMoveFlag: 117
       endMoveRegister: 
@@ -4075,11 +4075,11 @@ startState: s32'NmlAtkAir5E'
     upon: (HIT_OR_GUARD)
       physicsYImpulse: 30000
       checkInput: 121
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         addVelocityX: 8000
         endIf: 
       checkInput: 95
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         addVelocityX: -12000
         endIf: 
       Unknown14: s32'End'
@@ -4669,21 +4669,21 @@ startState: s32'AirStop'
     disableAirThrow: 
     upon: (FRAME_STEP)
       checkInput: 133
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown54: 0, 2, 45, 0, 1
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 12
         addWhiffCancelOption: s32'7Move'
         endIf: 
       checkInput: 146
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown54: 0, 2, 46, 0, 1
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 12
         addWhiffCancelOption: s32'8Move'
         endIf: 
       checkInput: 159
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown54: 0, 2, 47, 0, 1
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 12
@@ -4758,7 +4758,7 @@ startState: s32'AirStopCancelOnly'
         endIf: 
       endUpon: 
     Unknown1601: 64
-    if: (NEXT_ARG_IS_VAR), 212
+    if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'6Move'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'9Move'
@@ -4996,7 +4996,7 @@ startState: s32'7Move'
   physicsXImpulse: -20000
   physicsYImpulse: 31000
   Unknown1998: s32'AirStop'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     physicsYImpulse: 26000
     endIf: 
   Unknown1616: 1
@@ -5031,7 +5031,7 @@ startState: s32'8Move'
   physicsXImpulse: 0
   physicsYImpulse: 33000
   Unknown1998: s32'AirStop'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     physicsYImpulse: 28000
     endIf: 
   Unknown1616: 1
@@ -5070,7 +5070,7 @@ startState: s32'9Move'
   physicsXImpulse: 20000
   physicsYImpulse: 31000
   Unknown1998: s32'AirStop'
-  if: (NEXT_ARG_IS_VAR), 0
+  if: (VARIABLE), 0
     physicsYImpulse: 26000
     endIf: 
   Unknown1616: 1
@@ -5578,7 +5578,7 @@ startState: s32'FlyingBed_Air'
   setMarker: s32'landing'
   sprite: s32'bed423_15', 4
   Unknown32: s32'423bake02'
-  if: (NEXT_ARG_IS_VAR), 45
+  if: (VARIABLE), 45
     createObject2: s32'Flying_bomb2', 123
     endIf: 
   else: 
@@ -5926,11 +5926,11 @@ startState: s32'Alarm'
   setMarker: s32'tame_end'
   sprite: s32'bed430_00', 5
   setStrikeInvul: 1
-  if: (NEXT_ARG_IS_VAR), 164
+  if: (VARIABLE), 164
     setThrowInvul: 1
     endIf: 
   Unknown19: 4
-  if: (NEXT_ARG_IS_VAR), 161
+  if: (VARIABLE), 161
     setStrikeInvul: 0
     Unknown2155: 0
     setThrowInvul: 0
@@ -5947,7 +5947,7 @@ startState: s32'Alarm'
     Unknown2028: s32'high'
     Unknown2051: 1900
     Unknown2212: 1
-    if: (NEXT_ARG_IS_VAR), 164
+    if: (VARIABLE), 164
       Unknown2199: 1
       Unknown2132: 0
       Unknown448: s32'cmn_bkakusei_fire', 100
@@ -5987,7 +5987,7 @@ startState: s32'Alarm'
       endUpon: 
     endUpon: 
   sprite: s32'bed430_01', 2
-  if: (NEXT_ARG_IS_VAR), 161
+  if: (VARIABLE), 161
     setStrikeInvul: 0
     Unknown2155: 0
     setThrowInvul: 0
@@ -6222,7 +6222,7 @@ startState: s32'Ichigeki'
       Unknown448: s32'bed_ichigeki_teri', 100
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 762
-      if: (NEXT_ARG_IS_VAR), 111
+      if: (VARIABLE), 111
         playVoice: s16'vxxx310'
         Unknown2211: s32'prev', -2147483618
         Unknown1890: 1

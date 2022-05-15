@@ -69,7 +69,7 @@ startState: s32'Item_Pre'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 10
       Unknown451: s32'jumpdai', s32'jumpdai001'
-      if: (NEXT_ARG_IS_VAR), 32
+      if: (VARIABLE), 32
         Unknown2019: 1
         endIf: 
       Unknown2021: 0
@@ -353,18 +353,18 @@ startState: s32'Vacuum'
 startSubroutine: s32'JibakuBlitz'
   upon: 55
     Unknown2001: 3, s32'CounterGuardStand'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       storeValue: (VARIABLE), 45, (STATIC), 1
       endIf: 
     Unknown2001: 3, s32'CounterGuardCrouch'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       storeValue: (VARIABLE), 45, (STATIC), 1
       endIf: 
     Unknown2001: 3, s32'CounterGuardAir'
-    if: (NEXT_ARG_IS_VAR), 0
+    if: (VARIABLE), 0
       storeValue: (VARIABLE), 45, (STATIC), 1
       endIf: 
-    if: (NEXT_ARG_IS_VAR), 45
+    if: (VARIABLE), 45
       Unknown41: 3
       storeValue: (VARIABLE), 52, (STATIC), 1
       Unknown40: 
@@ -1726,7 +1726,7 @@ startState: s32'Item_Chocolate'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: 2, 50
           Unknown43: 4, 3
@@ -1879,7 +1879,7 @@ startState: s32'Item_BestChocolate'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: 2, 50
           Unknown43: 4, 3
@@ -2028,7 +2028,7 @@ startState: s32'Item_Donut'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: 2, 50
           Unknown43: 4, 3
@@ -2186,7 +2186,7 @@ startState: s32'Item_ManyDonut'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (NEXT_ARG_IS_VAR), 31
+      if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: 2, 50
           Unknown43: 4, 3
@@ -2719,18 +2719,18 @@ startState: s32'Ai_Bomb2'
     upon: 55
       damage: 30
       Unknown2001: 3, s32'CounterGuardStand'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
       Unknown2001: 3, s32'CounterGuardCrouch'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
       Unknown2001: 3, s32'CounterGuardAir'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
-      if: (NEXT_ARG_IS_VAR), 45
+      if: (VARIABLE), 45
         Unknown41: 3
         storeValue: (VARIABLE), 52, (STATIC), 1
         Unknown40: 
@@ -2777,7 +2777,7 @@ startState: s32'ShigekiJibakuObj'
     damage: 10
     tensionGainOnConnect: 10
     disableHitstop: 1
-    if: (NEXT_ARG_IS_VAR), 164
+    if: (VARIABLE), 164
       Unknown1177: 1
       Unknown1179: 1
       endIf: 
@@ -2991,7 +2991,7 @@ startState: s32'Jumpdai_Loop'
     setObjectSize: 13000
     Unknown454: 2
     Unknown58: 1
-    if: (NEXT_ARG_IS_VAR), 32
+    if: (VARIABLE), 32
       Unknown2019: 2
       endIf: 
     upon: (ON_HIT_OR_BLOCK)
@@ -3042,7 +3042,7 @@ startState: s32'Jumpdai_Loop'
 startState: s32'Jumpdai_Hatudo'
   upon: (IMMEDIATE)
     Unknown451: s32'jumpdai', s32'jumpdai000'
-    if: (NEXT_ARG_IS_VAR), 32
+    if: (VARIABLE), 32
       Unknown2019: 2
       endIf: 
     Unknown2021: 0
@@ -3284,7 +3284,7 @@ startState: s32'OreHana'
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown23: 3
         Unknown456: 0
         Unknown454: 0
@@ -3331,7 +3331,7 @@ startState: s32'OreHana_Shot'
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         grabOrRelease: 
         Unknown23: 3
         Unknown456: 0
@@ -3355,7 +3355,7 @@ startState: s32'OreHanaBig'
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         Unknown23: 3
         Unknown456: 0
         Unknown454: 0
@@ -3403,7 +3403,7 @@ startState: s32'OreHanaBig_Shot'
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
-      if: (NEXT_ARG_IS_VAR), 0
+      if: (VARIABLE), 0
         grabOrRelease: 
         Unknown23: 3
         Unknown456: 0
