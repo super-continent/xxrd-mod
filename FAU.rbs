@@ -4,7 +4,7 @@ startSubroutine: s32'PreInit'
 
 startSubroutine: s32'PreInit2nd'
   storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     Unknown2213: s32'entry_default', s32'', 0
     storeValue: (VARIABLE), 61, (STATIC), 1
     endIf: 
@@ -1292,12 +1292,12 @@ startSubroutine: s32'ItemSelect'
     endElse: 
   if: (VARIABLE), 205
     storeValue: (VARIABLE), 45, (VARIABLE), 205
-    Unknown54: 0, 2, 45, 0, -1
+    modifyVar: (ADD), (VARIABLE), 45, (STATIC), -1
     endIf: 
   Unknown59: s32'TRP_FAU', 2, 157
   if: (VARIABLE), 157
     storeValue: (VARIABLE), 45, (VARIABLE), 157
-    Unknown54: 0, 2, 45, 0, -1
+    modifyVar: (ADD), (VARIABLE), 45, (STATIC), -1
     endIf: 
   endSubroutine: 
 
@@ -2120,9 +2120,9 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'fau085_09', 5
   sprite: s32'fau085_10', 3
   sprite: s32'fau085_11', 3
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'fau085_12', 3
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'fau085_13', 2147483647
   Unknown3: 
   setMarker: s32'ko'
@@ -2141,9 +2141,9 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'fau085_09', 9
   sprite: s32'fau085_10', 6
   sprite: s32'fau085_11', 6
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'fau085_12', 6
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'fau085_13', 6
   Unknown3: 
   Unknown2144: 1, 100
@@ -2718,7 +2718,7 @@ startState: s32'CmnActRoundWin'
     Unknown62: '0x160000007300000002000000320000000200000000000000'
     Unknown62: '0x160000007400000002000000330000000200000000000000'
     Unknown52: '0x0000000002000000320000000200000033000000020000002E000000'
-    Unknown54: 3, 2, 46, 0, 2
+    modifyVar: (DIV), (VARIABLE), 46, (STATIC), 2
     Unknown52: '0x01000000020000002E000000020000002D0000000200000031000000'
     ifOperation: (IS_GREATER), (VARIABLE), 49, (STATIC), 0
       physicsXImpulseAbsolute: 10000
@@ -2860,7 +2860,7 @@ startState: s32'CmnActResultWin'
         endIf: 
       else: 
         ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: 2, 143
+          ifNot: (VARIABLE), 143
             storeValue: (VARIABLE), 138, (STATIC), 0
             storeValue: (VARIABLE), 69, (STATIC), 3
             endIf: 
@@ -2888,7 +2888,7 @@ startState: s32'CrouchFWalk'
     Unknown1601: 16
     upon: (FRAME_STEP)
       checkInput: 81
-      ifNot: 2, 0
+      ifNot: (VARIABLE), 0
         jumpToState: s32'_NEUTRAL'
         endIf: 
       Unknown2262: -1
@@ -2928,7 +2928,7 @@ startState: s32'CrouchBWalk'
     Unknown1601: 32
     upon: (FRAME_STEP)
       checkInput: 55
-      ifNot: 2, 0
+      ifNot: (VARIABLE), 0
         jumpToState: s32'_NEUTRAL'
         endIf: 
       Unknown2262: -1
@@ -4332,7 +4332,7 @@ startState: s32'ThrowExe'
   untechableTime: 60
   sprite: s32'fau310_18', 4
   sprite: s32'fau310_19', 3
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'fau310_20', 7
   sprite: s32'fau310_21', 4
   sprite: s32'fau310_22', 4
@@ -4396,7 +4396,7 @@ startState: s32'AirThrowExe'
   else: 
     playVoice: s16'vxxx121'
     endElse: 
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'fau320_05', 7
   sprite: s32'fau320_06', 5
   sprite: s32'fau320_07', 5
@@ -4413,7 +4413,7 @@ startState: s32'NanigaDerukana'
     Unknown1058: 1
     upon: (FRAME_STEP)
       checkInput: 1
-      ifNot: 2, 0
+      ifNot: (VARIABLE), 0
         storeValue: (VARIABLE), 46, (STATIC), 1
         endIf: 
       endUpon: 
@@ -4421,7 +4421,7 @@ startState: s32'NanigaDerukana'
     if: (VARIABLE), 0
       upon: (FRAME_STEP)
         checkInput: 276
-        ifNot: 2, 0
+        ifNot: (VARIABLE), 0
           storeValue: (VARIABLE), 46, (STATIC), 1
           endIf: 
         endUpon: 
@@ -4442,17 +4442,17 @@ startState: s32'NanigaDerukana'
     Unknown14: s32'fastthrow'
     endIf: 
   sprite: s32'fau408_03', 2
-  Unknown94: 5000
+  addPositionX: 5000
   sprite: s32'fau408_03', 2
-  Unknown94: -5000
+  addPositionX: -5000
   sprite: s32'fau408_03', 2
-  Unknown94: 5000
+  addPositionX: 5000
   sprite: s32'fau408_03', 2
-  Unknown94: -5000
+  addPositionX: -5000
   sprite: s32'fau408_03', 2
-  Unknown94: 5000
+  addPositionX: 5000
   sprite: s32'fau408_03', 2
-  Unknown94: -5000
+  addPositionX: -5000
   setMarker: s32'slowthrow'
   sprite: s32'fau408_04', 6
   Unknown32: s32'Item_Pre'
@@ -4509,7 +4509,7 @@ startState: s32'MaekaraIkimasuyo'
   sprite: s32'fau418_09', 5
   Unknown2023: 1
   Unknown178: 22
-  Unknown94: -350000
+  addPositionX: -350000
   Unknown98: 0
   playCharacterSFX: s32'3'
   playVoice: s16'vxxx217'
@@ -4563,7 +4563,7 @@ startState: s32'UshirokaraIkimasuyo'
   sprite: s32'fau418_09', 5
   Unknown2023: 1
   Unknown178: 22
-  Unknown94: 350000
+  addPositionX: 350000
   Unknown98: 0
   flipDirection: 
   playCharacterSFX: s32'3'
@@ -4632,7 +4632,7 @@ startState: s32'UekaraIkimasuyo'
   sprite: s32'fau020_04', 4
   Unknown2023: 1
   Unknown178: 22
-  Unknown99: 1128750
+  addPositionY: 1128750
   playVoice: s16'vxxx218'
   playSFX: s32'SE_DASHD'
   setGravity: 4375
@@ -4720,7 +4720,7 @@ startState: s32'AirGoingMyWay'
     Unknown2331: 11
     upon: (HIT)
       setNoCollision: 0
-      Unknown54: 0, 2, 45, 0, 1
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 4
         Unknown2137: 1
         Unknown23: 2
@@ -5010,7 +5010,7 @@ startState: s32'Mettagiri'
     upon: 67
       if: (VARIABLE), 45
         guardType: (NONE)
-        Unknown53: 23, 2, 0, 22, 2, 30
+        storeFromObjToObj: (SELF), (VARIABLE), 0, (ENEMY), (VARIABLE), 30
         if: (VARIABLE), 0
           guardType: (ANY)
           endIf: 
@@ -5125,11 +5125,11 @@ startState: s32'Souten'
   tensionGain: 50
   Unknown176: 1
   sprite: s32'fau409_01', 2
-  Unknown94: 70000
+  addPositionX: 70000
   playSFX: s32'SE_HITKIRIC'
   playVoice: s16'vxxx208'
   sprite: s32'fau409_02', 2
-  Unknown94: 70000
+  addPositionX: 70000
   sprite: s32'fau409_03', 2
   sprite: s32'fau409_04', 2
   sprite: s32'fau409_05', 2
@@ -5166,7 +5166,7 @@ startState: s32'Souten'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5189,9 +5189,9 @@ startState: s32'Souten'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5203,9 +5203,9 @@ startState: s32'SoutenCancel'
   Unknown2157: 0, 5
   sprite: s32'fau409_22', 6
   frcWindow: 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5251,7 +5251,7 @@ startState: s32'SoutenA'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5274,9 +5274,9 @@ startState: s32'SoutenA'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5378,7 +5378,7 @@ startState: s32'SoutenB'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5401,9 +5401,9 @@ startState: s32'SoutenB'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5465,7 +5465,7 @@ startState: s32'SoutenC'
   hitAirPushbackY: 42000
   untechableTime: 46
   tensionGainOnConnect: 60
-  grabOrRelease: 
+  hitUnchecked: 
   Unknown3: 
   goToMarker: s32'attackend'
   setMarker: s32'open'
@@ -5484,7 +5484,7 @@ startState: s32'SoutenC'
   sprite: s32'fau412_05', 2
   sprite: s32'fau412_06', 2
   sprite: s32'fau412_07', 2
-  grabOrRelease: 
+  hitUnchecked: 
   setMarker: s32'attackend'
   sprite: s32'fau412_08', 1
   recoveryState: 
@@ -5510,7 +5510,7 @@ startState: s32'SoutenC'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5533,9 +5533,9 @@ startState: s32'SoutenC'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5664,7 +5664,7 @@ startState: s32'SoutenE'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5687,9 +5687,9 @@ startState: s32'SoutenE'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5747,7 +5747,7 @@ startState: s32'Souten66'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5770,9 +5770,9 @@ startState: s32'Souten66'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5826,14 +5826,14 @@ startState: s32'Souten44'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
   recoveryState: 
   setMarker: s32'taikiloop'
   sprite: s32'fau409_13', 2
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     Unknown240: 
     endIf: 
   storeValue: (VARIABLE), 45, (STATIC), 1
@@ -5853,9 +5853,9 @@ startState: s32'Souten44'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5911,7 +5911,7 @@ startState: s32'Souten9'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -5934,9 +5934,9 @@ startState: s32'Souten9'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -5977,7 +5977,7 @@ startState: s32'Souten8'
   sprite: s32'fau414_06', 3
   createObject2: s32'414bake', 100
   upon: (FRAME_STEP)
-    ifNot: 2, 45
+    ifNot: (VARIABLE), 45
       checkInput: 147
       if: (VARIABLE), 0
         setGravity: 1500
@@ -5987,8 +5987,8 @@ startState: s32'Souten8'
         endElse: 
       endIf: 
     if: (VARIABLE), 45
-      Unknown54: 0, 2, 45, 0, 1
-      modifyVar: 12, (VARIABLE), 45, (STATIC), 9
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+      modifyAccumulator: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 9
       if: (VARIABLE), 0
         storeValue: (VARIABLE), 45, (STATIC), 0
         endIf: 
@@ -6063,7 +6063,7 @@ startState: s32'Souten8'
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
       Unknown14: s32'end'
       endIf: 
-    ifNot: 2, 16
+    ifNot: (VARIABLE), 16
       Unknown14: s32'end'
       endIf: 
     endUpon: 
@@ -6086,9 +6086,9 @@ startState: s32'Souten8'
   enableWhiffCancelOptions: 0
   recoveryState: 
   sprite: s32'fau409_22', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_23', 6
-  Unknown94: -70000
+  addPositionX: -70000
   sprite: s32'fau409_24', 6
   endState: 
 
@@ -6121,7 +6121,7 @@ startState: s32'Shigeki'
       Unknown23: 10
       Unknown23: 8
       if: (VARIABLE), 164
-        ifNot: 2, 45
+        ifNot: (VARIABLE), 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
           endIf: 
@@ -6303,7 +6303,7 @@ startState: s32'Shigeki'
   riscMinus: 0
   hitPushbackX: 0
   Unknown1075: 1
-  grabOrRelease: 
+  hitUnchecked: 
   Unknown35: 10, s32'lock_kakutei'
   Unknown3: 
   exitState: 
@@ -6318,14 +6318,14 @@ startState: s32'Shigeki'
     setNoCollision: 0
     Unknown287: 0
     Unknown268: 0
-    Unknown454: 22
+    linkObjPositionTo: (ENEMY)
     Unknown240: 
     flipDirection: 
     Unknown40: 
     endUpon: 
   Unknown41: 22
   Unknown178: 22
-  Unknown94: -395500
+  addPositionX: -395500
   Unknown40: 
   Unknown452: 22
   createObject2: s32'TreasureAngel', 100
@@ -6343,7 +6343,7 @@ startState: s32'Shigeki'
   sprite: s32'fau430_17', 4
   Unknown452: 0
   Unknown41: 22
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   Unknown40: 
   sprite: s32'fau430_18', 2147483647
   setMarker: s32'akuma'
@@ -6416,7 +6416,7 @@ startState: s32'Shigeki'
   Unknown2074: 1
   Unknown23: 36
   Unknown41: 22
-  Unknown94: 395500
+  addPositionX: 395500
   Unknown2289: 45
   Unknown2157: 1, 5
   Unknown40: 
@@ -6456,7 +6456,7 @@ startState: s32'Shigeki'
       endIf: 
     Unknown1165: s32'TreasureDevil3'
     endIf: 
-  grabOrRelease: 
+  hitUnchecked: 
   SFX_0: s32'NoSE'
   sprite: s32'fau430_23', 4
   sprite: s32'fau430_24', 4
@@ -6483,7 +6483,7 @@ startState: s32'Shigeki'
   damage: 0
   riscMinus: 0
   Unknown1075: 1
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'fau430_32', 4
   romanCancelAvailability: (ALLOWED)
   whiffCancelOptionBufferTime: s32'RomanCancelHit', 10
@@ -6783,7 +6783,7 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  Unknown53: 23, 2, 32, 22, 2, 32
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
   Unknown2013: s32'xxx_fau451cs', 0
   Unknown2028: s32'CmnCutSceneDamage_Ichigeki'
   Unknown40: 
@@ -6822,7 +6822,7 @@ startState: s32'Ichigeki'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 680
       Unknown1018: 1
-      grabOrRelease: 
+      hitUnchecked: 
       Unknown1059: 3
       Unknown996: 0, 0, 0
       hitstop: 0
@@ -7180,7 +7180,7 @@ startState: s32'EventFAU08B_02'
 
 startState: s32'EventLEO07A_01'
   Unknown2235: 3
-  Unknown94: -200000
+  addPositionX: -200000
   setMarker: s32'loop'
   Unknown2145: 0, 100
   Unknown2143: 1, 100

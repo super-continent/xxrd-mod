@@ -4,7 +4,7 @@ startSubroutine: s32'PreInit'
 
 startSubroutine: s32'PreInit2nd'
   storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     ifOpponentCharacter: s16'sly'
       Unknown2213: s32'entry_default', s32'entry_default', 1
       storeValue: (VARIABLE), 61, (STATIC), 1
@@ -26,7 +26,7 @@ startSubroutine: s32'PreInit2nd'
       storeValue: (VARIABLE), 61, (STATIC), 1
       endIf: 
     endIf: 
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     Unknown2213: s32'entry_default', s32'', 0
     storeValue: (VARIABLE), 61, (STATIC), 1
     endIf: 
@@ -1676,7 +1676,7 @@ startSubroutine: s32'OnBattleDecision'
 
 startSubroutine: s32'OnFrameStep'
   Unknown59: s32'TRP_SOL', 2, 157
-  Unknown54: 8, 2, 157, 2, 234
+  modifyVar: (BIT_OR), (VARIABLE), 157, (VARIABLE), 234
   if: (VARIABLE), 156
     if: (VARIABLE), 157
       storeValue: (VARIABLE), 3, (STATIC), 1
@@ -1685,16 +1685,16 @@ startSubroutine: s32'OnFrameStep'
       Unknown2034: 
       endIf: 
     endIf: 
-  ifNot: 2, 57
+  ifNot: (VARIABLE), 57
     storeValue: (VARIABLE), 57, (STATIC), 1
     createObject2: s32'dsl_terikaeshi', 100
     endIf: 
   if: (VARIABLE), 3
     if: (VARIABLE), 16
-      ifNot: 2, 53
-        ifNot: 2, 81
-          ifNot: 2, 157
-            Unknown54: 0, 2, 4, 0, -1
+      ifNot: (VARIABLE), 53
+        ifNot: (VARIABLE), 81
+          ifNot: (VARIABLE), 157
+            modifyVar: (ADD), (VARIABLE), 4, (STATIC), -1
             endIf: 
           endIf: 
         endIf: 
@@ -1707,7 +1707,7 @@ startSubroutine: s32'OnFrameStep'
       endElse: 
     Unknown2054: 71, 45
     endIf: 
-  ifNot: 2, 3
+  ifNot: (VARIABLE), 3
     ifOperation: (IS_NOT_EQUAL), (VARIABLE), 5, (STATIC), 1234
       storeValue: (VARIABLE), 5, (STATIC), 1234
       walkFSpeed: 6125
@@ -1811,7 +1811,7 @@ startSubroutine: s32'OnFrameStep'
       Unknown2287: s32'headonly', s32'headonly_DI'
       endIf: 
     ifOperation: 16, (VARIABLE), 58, (STATIC), 3
-      ifNot: 2, 142
+      ifNot: (VARIABLE), 142
         Unknown2246: s32'head', 0
         Unknown449: s32'dsl_fire_headloop', 100
         Unknown2246: s32'footL', 0
@@ -1822,7 +1822,7 @@ startSubroutine: s32'OnFrameStep'
         Unknown449: s32'dsl_fire_bodyloop', 100
         endIf: 
       endIf: 
-    Unknown54: 0, 2, 58, 0, 1
+    modifyVar: (ADD), (VARIABLE), 58, (STATIC), 1
     endElse: 
   if: (VARIABLE), 84
     tensionGain: 2
@@ -2506,11 +2506,11 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'sol085_09', 4
   sprite: s32'sol085_10', 4
   sprite: s32'sol085_11', 4
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'sol085_12', 3
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'sol085_13', 2147483647
-  Unknown94: 20000
+  addPositionX: 20000
   Unknown3: 
   setMarker: s32'ko'
   sprite: s32'sol085_00', 6
@@ -2528,11 +2528,11 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'sol085_09', 6
   sprite: s32'sol085_10', 6
   sprite: s32'sol085_11', 6
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'sol085_12', 6
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'sol085_13', 6
-  Unknown94: 20000
+  addPositionX: 20000
   Unknown3: 
   Unknown2144: 1, 100
   Unknown658: 100, 1, 0
@@ -3029,7 +3029,7 @@ startState: s32'entry_default'
         playVoice: s16'vxxx370'
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
-      ifNot: 2, 45
+      ifNot: (VARIABLE), 45
         playVoice: s16'vxxx304'
         endIf: 
       Unknown2211: s32'prev', -2147483618
@@ -3310,7 +3310,7 @@ startState: s32'CmnActResultWin'
         endIf: 
       else: 
         ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: 2, 143
+          ifNot: (VARIABLE), 143
             storeValue: (VARIABLE), 138, (STATIC), 0
             storeValue: (VARIABLE), 69, (STATIC), 3
             endIf: 
@@ -4171,7 +4171,7 @@ startState: s32'NmlAtk5F'
   setMarker: s32'loop'
   sprite: s32'sol300_10', 6
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeANext'
       Unknown23: 3
       endIf: 
@@ -4204,7 +4204,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'sol301_10', 4
   sprite: s32'sol301_11', 2147483647
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
       Unknown23: 3
       endIf: 
@@ -4268,7 +4268,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'sol306_19', 5
   sprite: s32'sol306_20', 2147483647
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
       Unknown23: 3
       endIf: 
@@ -4405,10 +4405,10 @@ startState: s32'NmlAtkAir5C'
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 14, (STATIC), 372000
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 15, (STATIC), 228000
         Unknown2001: 22, s32'CmnActFDown2Stand'
-        ifNot: 2, 0
+        ifNot: (VARIABLE), 0
           Unknown2001: 22, s32'CmnActBDown2Stand'
-          ifNot: 2, 0
-            ifNot: 2, 230
+          ifNot: (VARIABLE), 0
+            ifNot: (VARIABLE), 230
               Unknown2320: s32'Air5CReAttack'
               endIf: 
             endIf: 
@@ -5055,12 +5055,12 @@ startState: s32'RiotStamp'
     Unknown2301: 1
     upon: (FRAME_STEP)
       if: (VARIABLE), 45
-        ifNot: 2, 46
+        ifNot: (VARIABLE), 46
           ifOperation: (IS_GREATER), (VARIABLE), 18, (STATIC), 35000
-            modifyVar: (DIV), (VARIABLE), 18, (STATIC), -20
+            modifyAccumulator: (DIV), (VARIABLE), 18, (STATIC), -20
             endIf: 
           else: 
-            modifyVar: (DIV), (VARIABLE), 18, (STATIC), -10
+            modifyAccumulator: (DIV), (VARIABLE), 18, (STATIC), -10
             endElse: 
           storeValue: (VARIABLE), 8, (VARIABLE), 0
           ifOperation: (IS_GREATER), (VARIABLE), 8, (STATIC), -875
@@ -5121,7 +5121,7 @@ startState: s32'RiotStamp'
   upon: 9
     Unknown14: s32'hit'
     Unknown176: 1
-    Unknown99: 1
+    addPositionY: 1
     endUpon: 
   sprite: s32'sol414_05', 2
   Unknown2161: 100, 0, 0
@@ -5148,15 +5148,15 @@ startState: s32'RiotStamp'
   sprite: s32'sol414_06', 3
   Unknown1883: 
   Unknown176: 1
-  Unknown94: 40000
-  Unknown99: 1
+  addPositionX: 40000
+  addPositionY: 1
   storeValue: (VARIABLE), 45, (STATIC), 0
   Unknown23: 9
   sprite: s32'sol414_07', 3
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'sol414_08', 6
   sprite: s32'sol414_09', 3
-  Unknown99: 19000
+  addPositionY: 19000
   sprite: s32'sol414_10', 3
   Unknown707: 
   attackLevel: 4
@@ -5176,8 +5176,8 @@ startState: s32'RiotStamp'
   untechableTime: 40
   hitPushbackX: 20
   Unknown1051: 0
-  grabOrRelease: 
-  Unknown99: 17000
+  hitUnchecked: 
+  addPositionY: 17000
   physicsXImpulse: -2000
   physicsYImpulse: 22000
   Unknown135: 
@@ -5208,12 +5208,12 @@ startState: s32'RiotStamp_DI'
     Unknown2301: 1
     upon: (FRAME_STEP)
       if: (VARIABLE), 45
-        ifNot: 2, 46
+        ifNot: (VARIABLE), 46
           ifOperation: (IS_GREATER), (VARIABLE), 18, (STATIC), 35000
-            modifyVar: (DIV), (VARIABLE), 18, (STATIC), -20
+            modifyAccumulator: (DIV), (VARIABLE), 18, (STATIC), -20
             endIf: 
           else: 
-            modifyVar: (DIV), (VARIABLE), 18, (STATIC), -10
+            modifyAccumulator: (DIV), (VARIABLE), 18, (STATIC), -10
             endElse: 
           storeValue: (VARIABLE), 8, (VARIABLE), 0
           ifOperation: (IS_GREATER), (VARIABLE), 8, (STATIC), -875
@@ -5275,7 +5275,7 @@ startState: s32'RiotStamp_DI'
   upon: 9
     Unknown14: s32'hit'
     Unknown176: 1
-    Unknown99: 1
+    addPositionY: 1
     endUpon: 
   sprite: s32'sol414_05', 2
   Unknown2161: 100, 0, 0
@@ -5303,15 +5303,15 @@ startState: s32'RiotStamp_DI'
   sprite: s32'sol414_06', 3
   Unknown1883: 
   Unknown176: 1
-  Unknown94: 40000
-  Unknown99: 1
+  addPositionX: 40000
+  addPositionY: 1
   storeValue: (VARIABLE), 45, (STATIC), 0
   Unknown23: 9
   sprite: s32'sol414_07', 3
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'sol414_08', 6
   sprite: s32'sol414_09', 3
-  Unknown99: 19000
+  addPositionY: 19000
   sprite: s32'sol414_10', 3
   Unknown707: 
   attackLevel: 4
@@ -5326,8 +5326,8 @@ startState: s32'RiotStamp_DI'
   untechableTime: 40
   hitPushbackX: 20
   tensionGainOnConnect: 25
-  grabOrRelease: 
-  Unknown99: 17000
+  hitUnchecked: 
+  addPositionY: 17000
   physicsXImpulse: -2000
   physicsYImpulse: 22000
   Unknown135: 
@@ -5354,7 +5354,7 @@ startState: s32'BanditRevolverLand'
     Unknown35: 2, s32'landing'
     Unknown2137: 0
     Unknown176: 0
-    ifNot: 2, 160
+    ifNot: (VARIABLE), 160
       addWhiffCancelOption: s32'BanditBringer'
       endIf: 
     upon: (HIT_OR_GUARD)
@@ -5401,7 +5401,7 @@ startState: s32'BanditRevolverLand'
   sprite: s32'sol402_09', 2
   sprite: s32'sol402_10', 2
   sprite: s32'sol402_11', 2
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx208'
     endIf: 
   physicsXImpulse: 12250
@@ -5495,7 +5495,7 @@ startState: s32'BanditRevolverLand_DI'
   Unknown448: s32'dsl_banditfire', 130
   physicsXImpulse: 12250
   recoveryState: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx208'
     endIf: 
   sprite: s32'sol402_12', 2147483647
@@ -5561,7 +5561,7 @@ startState: s32'BanditRevolverAir'
     endUpon: 
   sprite: s32'sol402_11', 10
   sprite: s32'sol402_11', 2
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx208'
     endIf: 
   setMarker: s32'loop'
@@ -5641,7 +5641,7 @@ startState: s32'BanditRevolverAir_DI'
   Unknown448: s32'dsl_banditfire', 130
   setGravity: 2800
   sprite: s32'sol402_11', 2
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx208'
     endIf: 
   setMarker: s32'loop'
@@ -5713,7 +5713,7 @@ startState: s32'BanditBringer'
     endUpon: 
   sprite: s32'sol403_09', 3
   recoveryState: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx209'
     endIf: 
   sprite: s32'sol403_10', 3
@@ -5780,7 +5780,7 @@ startState: s32'BanditBringer_DI'
     endUpon: 
   sprite: s32'sol403_09', 3
   recoveryState: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx209'
     endIf: 
   sprite: s32'sol403_10', 3
@@ -7246,7 +7246,7 @@ startState: s32'BukkirabouNiNageru'
     endUpon: 
   sprite: s32'sol406_00', 3
   sprite: s32'sol406_00', 1
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_SWINGB'
   sprite: s32'sol406_01', 10
   playVoice: s16'vxxx212'
@@ -7348,7 +7348,7 @@ startState: s32'BukkiraExe'
   Unknown544: 28
   Unknown2161: 100, -100000, 0
   Unknown546: 130, 100, 0
-  grabOrRelease: 
+  hitUnchecked: 
   if: (VARIABLE), 3
     createObject2: s32'Bukkira_DI', 123
     endIf: 
@@ -7387,7 +7387,7 @@ startState: s32'AirCommandThrow'
   Unknown448: s32'dsl_aircommand_dash', 130
   sprite: s32'sol429_03', 3
   sprite: s32'sol429_04', 1
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'sol429_05', 2
   recoveryState: 
   Unknown135: 
@@ -7488,7 +7488,7 @@ startState: s32'AirCommandThrowExe'
   Unknown2161: 100, 120000, 340000
   Unknown448: s32'dsl_aircommand_hiza', 130
   screenShake: 1, 3
-  grabOrRelease: 
+  hitUnchecked: 
   Unknown1139: 0
   damage: 100
   setForcedProration: 60
@@ -7733,7 +7733,7 @@ startState: s32'TyrantRave'
     Unknown176: 1
     upon: (HIT)
       if: (VARIABLE), 164
-        ifNot: 2, 45
+        ifNot: (VARIABLE), 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
           endIf: 
@@ -7789,7 +7789,7 @@ startState: s32'TyrantRave'
     Unknown2013: s32'sol432cs', 0
     Unknown2020: s32'sol432', 23, 0, 5
     Unknown2051: 1900
-    ifNot: 2, 3
+    ifNot: (VARIABLE), 3
       Unknown2028: s32'high'
       endIf: 
     Unknown2212: 1
@@ -7980,7 +7980,7 @@ startState: s32'TyrantRave_DI'
     Unknown2013: s32'sol432cs', 0
     Unknown2020: s32'sol432', 23, 0, 5
     Unknown2051: 1900
-    ifNot: 2, 3
+    ifNot: (VARIABLE), 3
       Unknown2028: s32'high'
       endIf: 
     Unknown2212: 1
@@ -8276,7 +8276,7 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  Unknown53: 23, 2, 32, 22, 2, 32
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
   Unknown2013: s32'xxx_sol451cs', 0
   Unknown2028: s32'CmnCutSceneDamageHigh'
   Unknown40: 
@@ -8338,7 +8338,7 @@ startState: s32'Ichigeki'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 795
       Unknown1018: 1
-      grabOrRelease: 
+      hitUnchecked: 
       Unknown1059: 3
       Unknown996: 0, 0, 0
       hitstop: 0
@@ -8377,7 +8377,7 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  Unknown53: 23, 2, 32, 22, 2, 32
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
   Unknown2013: s32'xxx_sol452cs', 0
   Unknown2028: s32'CmnCutSceneDamageHigh'
   Unknown40: 
@@ -8440,7 +8440,7 @@ startState: s32'Ichigeki'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 513
       Unknown1018: 1
-      grabOrRelease: 
+      hitUnchecked: 
       Unknown1059: 3
       Unknown996: 0, 0, 0
       hitstop: 0
@@ -8529,7 +8529,7 @@ startState: s32'StylishBanditBringer'
     endUpon: 
   sprite: s32'sol403_09', 3
   recoveryState: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx209'
     endIf: 
   sprite: s32'sol403_10', 3
@@ -8601,7 +8601,7 @@ startState: s32'StylishBanditBringer_DI'
     endUpon: 
   sprite: s32'sol403_09', 3
   recoveryState: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     playVoice: s16'vxxx209'
     endIf: 
   sprite: s32'sol403_10', 3
@@ -9963,7 +9963,7 @@ startState: s32'FBAirWildThrow'
   createObject2: s32'FafnirPunch', 0
   sprite: s32'sol429_03', 4
   sprite: s32'sol429_04', 3
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'sol429_05', 4
   recoveryState: 
   Unknown135: 
@@ -10066,7 +10066,7 @@ startState: s32'FBAirWildThrowExe'
   Unknown2161: 100, 120000, 340000
   Unknown448: s32'dsl_aircommand_hiza', 130
   screenShake: 1, 3
-  grabOrRelease: 
+  hitUnchecked: 
   Unknown1139: 0
   setForcedProration: 60
   hitEffectFlame: 1

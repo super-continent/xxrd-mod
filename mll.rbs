@@ -4,7 +4,7 @@ startSubroutine: s32'PreInit'
 
 startSubroutine: s32'PreInit2nd'
   storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     Unknown2213: s32'entry_default', s32'', 0
     storeValue: (VARIABLE), 61, (STATIC), 1
     endIf: 
@@ -1256,9 +1256,9 @@ startSubroutine: s32'_ThrowGripParamAir'
 
 startSubroutine: s32'OnFrameStep'
   if: (VARIABLE), 3
-    ifNot: 2, 81
-      ifNot: 2, 53
-        Unknown54: 0, 2, 4, 0, -1
+    ifNot: (VARIABLE), 81
+      ifNot: (VARIABLE), 53
+        modifyVar: (ADD), (VARIABLE), 4, (STATIC), -1
         endIf: 
       ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 4, (STATIC), 0
         Unknown1771: s32'RoseBody', 23
@@ -1305,7 +1305,7 @@ startState: s32'CmnActStand'
   sprite: s32'mll001_12', 6
   sprite: s32'mll001_13', 5
   sprite: s32'mll001_13', 1
-  Unknown54: 0, 2, 45, 0, 1
+  modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
   Unknown13: s32'legacy_loop', 13, 2, 45, 0, 1
   Unknown3: 
   sprite: s32'mll001_14', 6
@@ -1963,7 +1963,7 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'mll085_09', 6
   sprite: s32'mll085_10', 3
   sprite: s32'mll085_11', 3
-  Unknown94: 50000
+  addPositionX: 50000
   sprite: s32'mll085_12', 2147483647
   Unknown3: 
   setMarker: s32'ko'
@@ -1982,7 +1982,7 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'mll085_09', 9
   sprite: s32'mll085_10', 6
   sprite: s32'mll085_11', 6
-  Unknown94: 50000
+  addPositionX: 50000
   sprite: s32'mll085_12', 6
   Unknown3: 
   Unknown2144: 1, 100
@@ -2412,7 +2412,7 @@ startState: s32'entry_default'
         playVoice: s16'vxxx356'
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
-      ifNot: 2, 45
+      ifNot: (VARIABLE), 45
         Unknown618: s16'vxxx305', 100, s16'vxxx306', 100, s16'', 0, s16'', 0
         endIf: 
       Unknown2211: s32'prev', -2147483618
@@ -2547,7 +2547,7 @@ startState: s32'CmnActMatchWin'
         playVoice: s16'vxxx355'
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
-      ifNot: 2, 45
+      ifNot: (VARIABLE), 45
         Unknown618: s16'vxxx309', 100, s16'vxxx310', 100, s16'', 0, s16'', 0
         endIf: 
       Unknown2211: s32'prev', -2147483618
@@ -2607,7 +2607,7 @@ startState: s32'CmnActResultWin'
         endIf: 
       else: 
         ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: 2, 143
+          ifNot: (VARIABLE), 143
             storeValue: (VARIABLE), 138, (STATIC), 0
             storeValue: (VARIABLE), 69, (STATIC), 3
             endIf: 
@@ -3191,7 +3191,7 @@ startState: s32'NmlAtk5E'
     endIf: 
   sprite: s32'mll205_03', 3
   overrideSpriteLengthIf: 2, (VARIABLE), 0
-  ifNot: 2, 0
+  ifNot: (VARIABLE), 0
     createObject2: s32'DustHair', 100
     Unknown43: 4, 1
     Unknown467: 4
@@ -3208,7 +3208,7 @@ startState: s32'NmlAtk5E'
   sprite: s32'mll205_08', 3
   sprite: s32'mll205_09', 2
   sprite: s32'mll205_10', 3
-  grabOrRelease: 
+  hitUnchecked: 
   Unknown1771: s32'DustHair', 23
   playSFX: s32'SE_SWINGF'
   playVoice: s16'vxxx111'
@@ -3320,7 +3320,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'mll300_06', 2147483647
   playVoice: s16'vxxx300'
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeANext'
       Unknown23: 3
       endIf: 
@@ -3387,7 +3387,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'mll305_11', 2147483647
   playVoice: s16'vxxx302'
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeANext'
       Unknown23: 3
       endIf: 
@@ -3409,7 +3409,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'mll306_06', 2147483647
   playVoice: s16'vxxx303'
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
       Unknown23: 3
       endIf: 
@@ -3560,7 +3560,7 @@ startState: s32'NmlAtkAir5D'
   sprite: s32'mll253_re_03', 2
   createObject2: s32'253re_bake', 100
   createObject2: s32'253re_yoin', 100
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_SWINGF'
   sprite: s32'mll253_re_04', 2
   sprite: s32'mll253_re_05', 3
@@ -3949,7 +3949,7 @@ startState: s32'ThrowExe'
   Unknown544: 5
   Unknown2161: 100, -372750, 0
   Unknown546: 130, 100, 0
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_HITKIRIA'
   sprite: s32'mll310_06', 5
   playSFX: s32'SE_HITKIRIC'
@@ -4003,7 +4003,7 @@ startState: s32'AirThrowExe'
   sprite: s32'mll320_03', 2
   Unknown544: 10
   Unknown1139: 1
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'mll320_04', 2
   sprite: s32'mll320_05', 16
   sprite: s32'mll320_06', 3
@@ -4021,7 +4021,7 @@ startState: s32'AirThrowExe'
   physicsXImpulse: -17500
   physicsYImpulse: 26250
   setGravity: 1750
-  grabOrRelease: 
+  hitUnchecked: 
   damage: 0
   Unknown1139: 0
   tensionGainOnConnect: 0
@@ -4123,7 +4123,7 @@ startState: s32'LustShakerRenda'
       ifOperation: (IS_GREATER), (VARIABLE), 13, (STATIC), 16
         checkInput: 20
         if: (VARIABLE), 0
-          Unknown54: 0, 2, 47, 0, 1
+          modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
           ifOperation: (IS_GREATER), (VARIABLE), 47, (STATIC), 4
             storeValue: (VARIABLE), 47, (STATIC), 4
             endIf: 
@@ -4175,14 +4175,14 @@ startState: s32'LustShakerRenda'
   playSFX: s32'SE_SWINGF'
   sprite: s32'mll406_10', 1
   Unknown3: 
-  Unknown54: 0, 2, 46, 0, -1
+  modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
   Unknown25: s32'End', 2, 46
   if: (VARIABLE), 47
-    Unknown54: 0, 2, 47, 0, -1
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
     endIf: 
   storeValue: (VARIABLE), 52, (STATIC), 0
-  Unknown54: 6, 2, 52, 2, 47
-  Unknown54: 6, 2, 52, 2, 48
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 47
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 48
   Unknown25: s32'End', 2, 52
   setMarker: s32'loop'
   sprite: s32'mll406_03', 1
@@ -4194,14 +4194,14 @@ startState: s32'LustShakerRenda'
   playSFX: s32'SE_SWINGF'
   sprite: s32'mll406_06', 1
   Unknown3: 
-  Unknown54: 0, 2, 46, 0, -1
+  modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
   Unknown25: s32'End', 2, 46
   if: (VARIABLE), 47
-    Unknown54: 0, 2, 47, 0, -1
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
     endIf: 
   storeValue: (VARIABLE), 52, (STATIC), 0
-  Unknown54: 6, 2, 52, 2, 47
-  Unknown54: 6, 2, 52, 2, 48
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 47
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 48
   Unknown25: s32'End', 2, 52
   sprite: s32'mll406_07', 1
   sprite: s32'mll406_08', 1
@@ -4212,14 +4212,14 @@ startState: s32'LustShakerRenda'
   playSFX: s32'SE_SWINGF'
   sprite: s32'mll406_10', 1
   Unknown3: 
-  Unknown54: 0, 2, 46, 0, -1
+  modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
   Unknown25: s32'End', 2, 46
   if: (VARIABLE), 47
-    Unknown54: 0, 2, 47, 0, -1
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
     endIf: 
   storeValue: (VARIABLE), 52, (STATIC), 0
-  Unknown54: 6, 2, 52, 2, 47
-  Unknown54: 6, 2, 52, 2, 48
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 47
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 48
   Unknown25: s32'End', 2, 52
   sprite: s32'mll406_11', 1
   sprite: s32'mll406_12', 1
@@ -4230,14 +4230,14 @@ startState: s32'LustShakerRenda'
   playSFX: s32'SE_SWINGF'
   sprite: s32'mll406_14', 1
   Unknown3: 
-  Unknown54: 0, 2, 46, 0, -1
+  modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
   Unknown25: s32'End', 2, 46
   if: (VARIABLE), 47
-    Unknown54: 0, 2, 47, 0, -1
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
     endIf: 
   storeValue: (VARIABLE), 52, (STATIC), 0
-  Unknown54: 6, 2, 52, 2, 47
-  Unknown54: 6, 2, 52, 2, 48
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 47
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 48
   Unknown25: s32'End', 2, 52
   sprite: s32'mll406_07', 1
   sprite: s32'mll406_08', 1
@@ -4249,14 +4249,14 @@ startState: s32'LustShakerRenda'
   sprite: s32'mll406_10', 1
   Unknown3: 
   Unknown3: 
-  Unknown54: 0, 2, 46, 0, -1
+  modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
   Unknown25: s32'End', 2, 46
   if: (VARIABLE), 47
-    Unknown54: 0, 2, 47, 0, -1
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
     endIf: 
   storeValue: (VARIABLE), 52, (STATIC), 0
-  Unknown54: 6, 2, 52, 2, 47
-  Unknown54: 6, 2, 52, 2, 48
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 47
+  modifyVar: (OR), (VARIABLE), 52, (VARIABLE), 48
   Unknown25: s32'End', 2, 52
   goToMarker: s32'loop'
   setMarker: s32'End'
@@ -4341,17 +4341,17 @@ startState: s32'SilentForce'
   multiplyYVelocityByPercent: 20
   addVelocityY: 3500
   setGravity: 0
-  Unknown99: 25000
+  addPositionY: 25000
   sprite: s32'mll407_00', 1
-  Unknown99: 25000
+  addPositionY: 25000
   sprite: s32'mll407_01', 1
-  Unknown99: 25000
+  addPositionY: 25000
   sprite: s32'mll407_01', 1
-  Unknown99: 25000
+  addPositionY: 25000
   sprite: s32'mll407_02', 1
-  Unknown99: 25000
+  addPositionY: 25000
   sprite: s32'mll407_02', 1
-  Unknown99: 25000
+  addPositionY: 25000
   playVoice: s16'vxxx204'
   sprite: s32'mll407_03', 2
   playSFX: s32'SE_SWINGG'
@@ -4752,11 +4752,11 @@ startState: s32'BadMoon'
         Unknown23: 8
         storeValue: (VARIABLE), 52, (STATIC), 0
         upon: 77
-          Unknown54: 0, 2, 52, 0, 1
+          modifyVar: (ADD), (VARIABLE), 52, (STATIC), 1
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 52, (STATIC), 10
             Unknown1999: 22, s32'BadMoon'
             if: (VARIABLE), 0
-              Unknown53: 23, 2, 0, 22, 2, 30
+              storeFromObjToObj: (SELF), (VARIABLE), 0, (ENEMY), (VARIABLE), 30
               if: (VARIABLE), 0
                 Unknown41: 22
                 Unknown2289: 27
@@ -4806,7 +4806,7 @@ startState: s32'BadMoon'
   Unknown448: s32'mll_twinkle_big', 145
   Unknown448: s32'mll_twinkle_big', 145
   Unknown448: s32'mll_twinkle_big', 145
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     if: (VARIABLE), 46
       physicsXImpulse: 31500
       endIf: 
@@ -4916,7 +4916,7 @@ startState: s32'IronSavior'
     upon: (FRAME_STEP)
       if: (VARIABLE), 45
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 106, (STATIC), 1
-          Unknown54: 0, 2, 46, 0, 1
+          modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
           endIf: 
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 30
           Unknown23: 3
@@ -5105,7 +5105,7 @@ startState: s32'Winger'
       endIf: 
     upon: (HIT)
       if: (VARIABLE), 164
-        ifNot: 2, 45
+        ifNot: (VARIABLE), 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
           endIf: 
@@ -5519,7 +5519,7 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  Unknown53: 23, 2, 32, 22, 2, 32
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
   Unknown2013: s32'xxx_mll451cs', 0
   Unknown2028: s32'CmnCutSceneDamageHigh'
   Unknown40: 
@@ -5544,7 +5544,7 @@ startState: s32'Ichigeki'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 500
       Unknown1018: 1
-      grabOrRelease: 
+      hitUnchecked: 
       Unknown1059: 3
       Unknown996: 0, 0, 0
       hitstop: 0

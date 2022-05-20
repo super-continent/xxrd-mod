@@ -18,7 +18,7 @@ startState: s32'SlowNeeldeObjLand'
     Unknown2183: 1
     Unknown58: 1
     setThrowRange: 0
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'rvn_401EffEnd', 100
       Unknown14: s32'End'
       endUpon: 
@@ -61,7 +61,7 @@ startState: s32'SlowNeeldeObjLand'
   ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
     physicsXImpulse: 38000
     endIf: 
-  Unknown450: s32'rvn_401EffJizoku'
+  linkParticleEx: s32'rvn_401EffJizoku'
   hit: 
   createObject2: s32'rvn401EffNokosi', 100
   Unknown157: -100
@@ -75,7 +75,7 @@ startState: s32'SlowNeeldeObjLand'
   setMarker: s32'End'
   sprite: s32'null', 14
   Unknown176: 1
-  Unknown450: s32'CN_Null'
+  linkParticleEx: s32'CN_Null'
   endState: 
 
 startState: s32'SlowNeeldeObjAir'
@@ -93,7 +93,7 @@ startState: s32'SlowNeeldeObjAir'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'rvn_401EffEnd', 100
       Unknown14: s32'End'
       endUpon: 
@@ -138,7 +138,7 @@ startState: s32'SlowNeeldeObjAir'
     physicsYImpulse: -25000
     Unknown164: -38000
     endIf: 
-  Unknown450: s32'rvn_401EffJizoku'
+  linkParticleEx: s32'rvn_401EffJizoku'
   hit: 
   createObject2: s32'rvn401EffNokosi', 100
   Unknown157: -100
@@ -152,12 +152,12 @@ startState: s32'SlowNeeldeObjAir'
   setMarker: s32'End'
   sprite: s32'null', 14
   Unknown176: 1
-  Unknown450: s32'CN_Null'
+  linkParticleEx: s32'CN_Null'
   endState: 
 
 startState: s32'SlowEffect'
   upon: (IMMEDIATE)
-    Unknown454: 22
+    linkObjPositionTo: (ENEMY)
     upon: (BEFORE_EXIT)
       Unknown1771: s32'401EffDebuff', 23
       ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
@@ -172,18 +172,18 @@ startState: s32'SlowEffect'
     upon: (FRAME_STEP)
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 150
-          Unknown19: 23
+          deactivateObj: (SELF)
           endIf: 
         endIf: 
       else: 
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 120
-            Unknown19: 23
+            deactivateObj: (SELF)
             endIf: 
           endIf: 
         else: 
           ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 90
-            Unknown19: 23
+            deactivateObj: (SELF)
             endIf: 
           endElse: 
         endElse: 
@@ -192,7 +192,7 @@ startState: s32'SlowEffect'
       Unknown41: 22
       storeValue: (VARIABLE), 229, (STATIC), 100
       Unknown40: 
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'null', 1
@@ -238,7 +238,7 @@ startState: s32'LandSettingTypeNeedleObj'
       attackLevel: 4
       numberOfHits: 4
       endIf: 
-    upon: 45
+    upon: (ON_DESTROY)
       playCharacterSFX: s32'RVN_04_3'
       Unknown14: s32'koware'
       endUpon: 
@@ -274,7 +274,7 @@ startState: s32'LandSettingTypeNeedleObj'
       Unknown2176: 23
       endUpon: 
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     Unknown1602: 1
     endUpon: 
@@ -299,7 +299,7 @@ startState: s32'LandSettingTypeNeedleObj'
   createObject2: s32'rvn403EffEnd', 100
   Unknown32: s32'rvn403Eff'
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'AirSettingTypeNeedleObj'
@@ -326,7 +326,7 @@ startState: s32'AirSettingTypeNeedleObj'
       attackLevel: 4
       numberOfHits: 4
       endIf: 
-    upon: 45
+    upon: (ON_DESTROY)
       playCharacterSFX: s32'RVN_04_3'
       Unknown14: s32'koware'
       endUpon: 
@@ -360,7 +360,7 @@ startState: s32'AirSettingTypeNeedleObj'
       Unknown2176: 23
       endUpon: 
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     Unknown1602: 1
     setThrowRange: 100000
@@ -385,7 +385,7 @@ startState: s32'AirSettingTypeNeedleObj'
   createObject2: s32'rvn403EffEnd', 100
   Unknown32: s32'rvn403EffAir'
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'AntiAirNeedleObj1'
@@ -402,9 +402,9 @@ startState: s32'AntiAirNeedleObj1'
     Unknown2182: 1
     Unknown2183: 1
     Unknown58: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'cmn_fd_end', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
@@ -415,7 +415,7 @@ startState: s32'AntiAirNeedleObj1'
     endUpon: 
   sprite: s32'null', 6
   sprite: s32'rvn_AntiAirNeedleObj', 2147483647
-  Unknown450: s32'cmn_fd'
+  linkParticleEx: s32'cmn_fd'
   Unknown2267: 200
   physicsXImpulse: 20000
   physicsYImpulse: 30000
@@ -436,9 +436,9 @@ startState: s32'AntiAirNeedleObj2'
     Unknown2182: 1
     Unknown2183: 1
     Unknown58: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'cmn_fd_end', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
@@ -449,7 +449,7 @@ startState: s32'AntiAirNeedleObj2'
     endUpon: 
   sprite: s32'null', 6
   sprite: s32'rvn_AntiAirNeedleObj', 10
-  Unknown450: s32'cmn_fd'
+  linkParticleEx: s32'cmn_fd'
   Unknown2267: 200
   sprite: s32'rvn_AntiAirNeedleObj', 2147483647
   physicsXImpulse: 20000
@@ -471,9 +471,9 @@ startState: s32'AntiAirNeedleObj3'
     Unknown2182: 1
     Unknown2183: 1
     Unknown58: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'cmn_fd_end', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
@@ -484,7 +484,7 @@ startState: s32'AntiAirNeedleObj3'
     endUpon: 
   sprite: s32'null', 6
   sprite: s32'rvn_AntiAirNeedleObj', 20
-  Unknown450: s32'cmn_fd'
+  linkParticleEx: s32'cmn_fd'
   Unknown2267: 200
   sprite: s32'rvn_AntiAirNeedleObj', 2147483647
   physicsXImpulse: 20000
@@ -495,10 +495,10 @@ startState: s32'AntiAirNeedleObj3'
 startState: s32'Atk6D'
   sprite: s32'atk6D_00', 7
   upon: (ON_HIT_OR_BLOCK)
-    Unknown457: 0
+    Unknown457: (NULL)
     endUpon: 
-  Unknown456: 3
-  Unknown457: 3
+  Unknown456: (PLAYER)
+  Unknown457: (PLAYER)
   endState: 
 
 startState: s32'Craw_MatchWin'
@@ -514,7 +514,7 @@ startState: s32'Craw_MatchWin'
 
 startState: s32'Craw01'
   upon: (IMMEDIATE)
-    Unknown451: s32'craw', s32'rvn800cs_01'
+    linkPawnWithAnim: s32'craw', s32'rvn800cs_01'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 1345
@@ -522,7 +522,7 @@ startState: s32'Craw01'
 
 startState: s32'Craw02'
   upon: (IMMEDIATE)
-    Unknown451: s32'craw', s32'rvn800cs_02'
+    linkPawnWithAnim: s32'craw', s32'rvn800cs_02'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 1345
@@ -530,7 +530,7 @@ startState: s32'Craw02'
 
 startState: s32'Craw03'
   upon: (IMMEDIATE)
-    Unknown451: s32'craw', s32'rvn800cs_03'
+    linkPawnWithAnim: s32'craw', s32'rvn800cs_03'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 1345
@@ -538,7 +538,7 @@ startState: s32'Craw03'
 
 startState: s32'Craw04'
   upon: (IMMEDIATE)
-    Unknown451: s32'craw', s32'rvn800cs_04'
+    linkPawnWithAnim: s32'craw', s32'rvn800cs_04'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 1345
@@ -548,10 +548,10 @@ startState: s32'rvn032DashEff'
   upon: (IMMEDIATE)
     Unknown295: 1
     Unknown1769: 1
-    Unknown466: 3
-    Unknown450: s32'rvn_032dasheff00'
+    Unknown466: (PLAYER)
+    linkParticleEx: s32'rvn_032dasheff00'
     setObjectSize: 1550
-    Unknown94: 250000
+    addPositionX: 250000
     endUpon: 
   sprite: s32'null', 120
   endState: 
@@ -560,10 +560,10 @@ startState: s32'rvn032DashEff2'
   upon: (IMMEDIATE)
     Unknown295: 1
     Unknown1769: 1
-    Unknown466: 3
-    Unknown454: 2
-    Unknown457: 2
-    Unknown450: s32'rvn_032dasheff01'
+    Unknown466: (PLAYER)
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'rvn_032dasheff01'
     Unknown35: 23, s32'POS0'
     Unknown35: 24, s32'POS1'
     Unknown35: 25, s32'POS2'
@@ -571,26 +571,26 @@ startState: s32'rvn032DashEff2'
     Unknown35: 27, s32'POS4'
     endUpon: 
   sprite: s32'null', 1
-  Unknown94: 250000
+  addPositionX: 250000
   Unknown338: 0
   sprite: s32'null', 45
   Unknown338: 255
   setMarker: s32'POS0'
   sprite: s32'null', 30
-  Unknown94: -60000
+  addPositionX: -60000
   setMarker: s32'POS1'
   sprite: s32'null', 2147483647
-  Unknown94: -20000
+  addPositionX: -20000
   setMarker: s32'POS2'
   sprite: s32'null', 2147483647
-  Unknown94: -80000
+  addPositionX: -80000
   setMarker: s32'POS3'
   sprite: s32'null', 2147483647
-  Unknown94: -50000
-  Unknown454: 0
+  addPositionX: -50000
+  linkObjPositionTo: (NULL)
   setMarker: s32'POS4'
   sprite: s32'null', 1
-  Unknown94: -100000
+  addPositionX: -100000
   Unknown338: 0
   createObject2: s32'rvn032DashEffNokosi', 100
   endState: 
@@ -599,17 +599,17 @@ startState: s32'rvn032DashEffNokosi'
   upon: (IMMEDIATE)
     Unknown295: 1
     Unknown1769: 1
-    Unknown466: 3
-    Unknown450: s32'rvn_032dasheff02'
+    Unknown466: (PLAYER)
+    linkParticleEx: s32'rvn_032dasheff02'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
 startState: s32'DashPushCollisionObject'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
     endUpon: 
   sprite: s32'null', 7
   physicsXImpulse: 30000
@@ -620,50 +620,50 @@ startState: s32'DashPushCollisionObject'
 
 startState: s32'rvn032DashEff2Test'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
-    Unknown456: 2
-    Unknown99: 250000
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    addPositionY: 250000
     endUpon: 
   sprite: s32'null', 5
-  Unknown450: s32'rvn_032dasheff01Test'
+  linkParticleEx: s32'rvn_032dasheff01Test'
   sprite: s32'null', 30
-  Unknown454: 0
-  Unknown457: 0
-  Unknown456: 0
+  linkObjPositionTo: (NULL)
+  Unknown457: (NULL)
+  Unknown456: (NULL)
   endState: 
 
 startState: s32'rvndashmodel2'
   upon: (IMMEDIATE)
-    Unknown451: s32'Dash', s32''
+    linkPawnWithAnim: s32'Dash', s32''
     Unknown2021: 0
-    Unknown454: 2
-    Unknown457: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
     upon: 36
-      Unknown53: 23, 2, 7, 2, 2, 7
+      storeFromObjToObj: (SELF), (VARIABLE), 7, (PARENT), (VARIABLE), 7
       Unknown111: -100
       endUpon: 
-    Unknown94: 180000
+    addPositionX: 180000
     endUpon: 
   sprite: s32'null', 3
   createObject2: s32'rvn032DashEff2Test', 100
   sprite: s32'Dash000_00', 2
   sprite: s32'Dash000_01', 2
-  Unknown94: 10000
+  addPositionX: 10000
   sprite: s32'Dash000_02', 2
-  Unknown94: 40000
+  addPositionX: 40000
   sprite: s32'Dash000_03', 2
-  Unknown94: 50000
+  addPositionX: 50000
   sprite: s32'Dash000_04', 2
-  Unknown94: 50000
+  addPositionX: 50000
   sprite: s32'Dash000_05', 2
-  Unknown94: 60000
+  addPositionX: 60000
   endState: 
 
 startState: s32'rvn034Eff'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_043Eff_00'
+    linkParticleEx: s32'rvn_043Eff_00'
     Unknown295: 1
     flipDirection: 
     endUpon: 
@@ -672,37 +672,37 @@ startState: s32'rvn034Eff'
 
 startState: s32'rvn253Eff'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     endUpon: 
   sprite: s32'null', 7
-  Unknown450: s32'rvn_253Atk00'
+  linkParticleEx: s32'rvn_253Atk00'
   sprite: s32'null', 15
   endState: 
 
 startState: s32'rvn253Eff1'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     endUpon: 
   sprite: s32'null', 7
-  Unknown450: s32'rvn_253Atk01'
+  linkParticleEx: s32'rvn_253Atk01'
   sprite: s32'null', 15
   endState: 
 
 startState: s32'rvn253Eff2'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     endUpon: 
   sprite: s32'null', 7
-  Unknown450: s32'rvn_253Atk02'
+  linkParticleEx: s32'rvn_253Atk02'
   sprite: s32'null', 15
   endState: 
 
 startState: s32'rvn401EffNokosi'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_401EffHane'
+    linkParticleEx: s32'rvn_401EffHane'
     Unknown295: 1
     Unknown1769: 1
     Unknown453: 2
@@ -713,10 +713,10 @@ startState: s32'rvn401EffNokosi'
 
 startState: s32'401EffDebuff'
   upon: (IMMEDIATE)
-    Unknown454: 22
-    Unknown450: s32'rvn_401EffDebuff'
+    linkObjPositionTo: (ENEMY)
+    linkParticleEx: s32'rvn_401EffDebuff'
     upon: (ON_HIT_OR_BLOCK)
-      Unknown19: 23
+      deactivateObj: (SELF)
       endIf: 
     endUpon: 
   sprite: s32'null', 20
@@ -724,8 +724,8 @@ startState: s32'401EffDebuff'
 
 startState: s32'rvn403Eff'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     Unknown1700: 100000
     setObjectSize: 800
     Unknown1769: 1
@@ -733,7 +733,7 @@ startState: s32'rvn403Eff'
     Unknown165: 35000
     endUpon: 
   sprite: s32'null', 10
-  Unknown450: s32'rvn_403startEff_00'
+  linkParticleEx: s32'rvn_403startEff_00'
   Unknown347: 5
   Unknown353: 5
   Unknown359: 5
@@ -744,39 +744,39 @@ startState: s32'rvn403Eff'
   setObjectSize: 400
   sprite: s32'null', 5
   setObjectSize: 450
-  Unknown450: s32'rvn_403startEff_01'
+  linkParticleEx: s32'rvn_403startEff_01'
   sprite: s32'null', 3
   setObjectSize: 500
-  Unknown450: s32'rvn_403startEff_02'
+  linkParticleEx: s32'rvn_403startEff_02'
   sprite: s32'null', 3
   setObjectSize: 550
-  Unknown450: s32'rvn_403startEff_03'
+  linkParticleEx: s32'rvn_403startEff_03'
   sprite: s32'null', 3
   setObjectSize: 600
-  Unknown450: s32'rvn_403startEff_04'
+  linkParticleEx: s32'rvn_403startEff_04'
   sprite: s32'null', 3
   setObjectSize: 650
-  Unknown450: s32'rvn_403startEff_05'
+  linkParticleEx: s32'rvn_403startEff_05'
   sprite: s32'null', 2
   setObjectSize: 700
-  Unknown450: s32'rvn_403startEff_06'
+  linkParticleEx: s32'rvn_403startEff_06'
   sprite: s32'null', 2
   setObjectSize: 750
-  Unknown450: s32'rvn_403startEff_07'
+  linkParticleEx: s32'rvn_403startEff_07'
   sprite: s32'null', 1
-  Unknown450: s32'rvn_403EffJizoku'
-  Unknown456: 2
+  linkParticleEx: s32'rvn_403EffJizoku'
+  Unknown456: (PARENT)
   Unknown1769: 0
   setMarker: s32'Jizoku'
   sprite: s32'null', 2
-  Unknown94: 12500
+  addPositionX: 12500
   Unknown448: s32'rvn_403EffJizokuHane', 100
   sprite: s32'null', 2
-  Unknown94: -12500
+  addPositionX: -12500
   sprite: s32'null', 2
-  Unknown94: 12500
+  addPositionX: 12500
   sprite: s32'null', 2
-  Unknown94: -12500
+  addPositionX: -12500
   goToMarker: s32'Jizoku'
   endState: 
 
@@ -787,13 +787,13 @@ startState: s32'rvn403EffEnd'
     Unknown1769: 1
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'rvn_403EffEnd'
+  linkParticleEx: s32'rvn_403EffEnd'
   endState: 
 
 startState: s32'rvn403EffAir'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     Unknown1700: 100000
     Unknown1769: 1
     Unknown2267: 800
@@ -803,88 +803,88 @@ startState: s32'rvn403EffAir'
     Unknown356: 100
     endUpon: 
   sprite: s32'null', 6
-  Unknown450: s32'rvn_403startEff_00'
+  linkParticleEx: s32'rvn_403startEff_00'
   Unknown347: 5
   Unknown353: 5
   Unknown359: 5
   setObjectSize: 400
   sprite: s32'null', 5
   setObjectSize: 450
-  Unknown450: s32'rvn_403startEff_01'
+  linkParticleEx: s32'rvn_403startEff_01'
   sprite: s32'null', 3
   setObjectSize: 500
-  Unknown450: s32'rvn_403startEff_02'
+  linkParticleEx: s32'rvn_403startEff_02'
   sprite: s32'null', 3
   setObjectSize: 550
-  Unknown450: s32'rvn_403startEff_03'
+  linkParticleEx: s32'rvn_403startEff_03'
   sprite: s32'null', 2
   setObjectSize: 600
-  Unknown450: s32'rvn_403startEff_04'
+  linkParticleEx: s32'rvn_403startEff_04'
   sprite: s32'null', 2
   setObjectSize: 650
-  Unknown450: s32'rvn_403startEff_05'
+  linkParticleEx: s32'rvn_403startEff_05'
   sprite: s32'null', 2
   setObjectSize: 700
-  Unknown450: s32'rvn_403startEff_06'
+  linkParticleEx: s32'rvn_403startEff_06'
   sprite: s32'null', 2
   setObjectSize: 750
-  Unknown450: s32'rvn_403startEff_07'
+  linkParticleEx: s32'rvn_403startEff_07'
   sprite: s32'null', 1
   setObjectSize: 800
-  Unknown450: s32'rvn_403EffJizoku'
-  Unknown456: 2
+  linkParticleEx: s32'rvn_403EffJizoku'
+  Unknown456: (PARENT)
   Unknown344: 255
   Unknown350: 255
   Unknown356: 255
   Unknown1769: 0
   setMarker: s32'Jizoku'
   sprite: s32'null', 2
-  Unknown94: 12500
+  addPositionX: 12500
   Unknown448: s32'rvn_403EffJizokuHane', 100
   sprite: s32'null', 2
-  Unknown94: -12500
+  addPositionX: -12500
   sprite: s32'null', 2
-  Unknown94: 12500
+  addPositionX: 12500
   sprite: s32'null', 2
-  Unknown94: -12500
+  addPositionX: -12500
   goToMarker: s32'Jizoku'
   endState: 
 
 startState: s32'rvn407EffATK1'
   upon: (IMMEDIATE)
     flipDirection: 
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 30
-  Unknown450: s32'rvn_407EffAtk01'
+  linkParticleEx: s32'rvn_407EffAtk01'
   endState: 
 
 startState: s32'rvn407EffATK'
   upon: (IMMEDIATE)
     flipDirection: 
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 30
-  Unknown450: s32'rvn_407EffAtk02'
+  linkParticleEx: s32'rvn_407EffAtk02'
   endState: 
 
 startState: s32'rvn407EffATK2'
   upon: (IMMEDIATE)
     flipDirection: 
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 10
-  Unknown450: s32'rvn_407EffAtk00'
+  linkParticleEx: s32'rvn_407EffAtk00'
   sprite: s32'null', 60
-  Unknown457: 0
-  Unknown456: 0
-  Unknown454: 0
+  Unknown457: (NULL)
+  Unknown456: (NULL)
+  linkObjPositionTo: (NULL)
   Unknown1769: 1
   Unknown295: 1
   endState: 
@@ -892,16 +892,16 @@ startState: s32'rvn407EffATK2'
 startState: s32'rvn407EffATK2Air'
   upon: (IMMEDIATE)
     flipDirection: 
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 10
-  Unknown450: s32'rvn_407EffAtk00'
+  linkParticleEx: s32'rvn_407EffAtk00'
   sprite: s32'null', 60
-  Unknown457: 0
-  Unknown456: 0
-  Unknown454: 0
+  Unknown457: (NULL)
+  Unknown456: (NULL)
+  linkObjPositionTo: (NULL)
   Unknown1769: 1
   Unknown295: 1
   endState: 
@@ -911,7 +911,7 @@ startState: s32'rvn409EffGareki'
     Unknown178: 22
     Unknown98: 0
     Unknown295: 1
-    Unknown450: s32'rvn_409Effgareki'
+    linkParticleEx: s32'rvn_409Effgareki'
     setObjectSize: 1800
     endUpon: 
   sprite: s32'null', 15
@@ -920,39 +920,39 @@ startState: s32'rvn409EffGareki'
   Unknown1769: 0
   createObject2: s32'rvn409EffGarekiSmoke', 100
   sprite: s32'null', 4
-  Unknown99: -25000
+  addPositionY: -25000
   sprite: s32'null', 4
-  Unknown99: -25000
+  addPositionY: -25000
   sprite: s32'null', 4
-  Unknown99: -25000
+  addPositionY: -25000
   sprite: s32'null', 4
-  Unknown99: -25000
+  addPositionY: -25000
   endState: 
 
 startState: s32'rvn409EffGarekiSmoke'
   upon: (IMMEDIATE)
     Unknown295: 1
-    Unknown450: s32'rvn_409Effsmok'
+    linkParticleEx: s32'rvn_409Effsmok'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
 startState: s32'rvn430Eff'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
-    Unknown99: 180000
-    Unknown94: 350000
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    addPositionY: 180000
+    addPositionX: 350000
     Unknown1700: 150000
     Unknown295: 1
     Unknown35: 23, s32'jizoku'
     Unknown35: 24, s32'End'
     endUpon: 
   sprite: s32'null', 2147483647
-  Unknown450: s32'rvn_430EffStart'
+  linkParticleEx: s32'rvn_430EffStart'
   setMarker: s32'jizoku'
   sprite: s32'null', 1
-  Unknown450: s32'rvn_430EffJizoku'
+  linkParticleEx: s32'rvn_430EffJizoku'
   setMarker: s32'jizokuLoop'
   sprite: s32'null', 2
   Unknown189: 50
@@ -967,9 +967,9 @@ startState: s32'rvn430Eff'
   setMarker: s32'End'
   sprite: s32'null', 60
   Unknown1771: s32'rvn430EffNokosi', 23
-  Unknown454: 0
-  Unknown457: 0
-  Unknown450: s32'rvn_430EffEnd'
+  linkObjPositionTo: (NULL)
+  Unknown457: (NULL)
+  linkParticleEx: s32'rvn_430EffEnd'
   endState: 
 
 startState: s32'rvn430EffNokosi'
@@ -977,7 +977,7 @@ startState: s32'rvn430EffNokosi'
     Unknown453: 2
     Unknown295: 1
     Unknown1769: 1
-    Unknown450: s32'rvn_430EffNokosi'
+    linkParticleEx: s32'rvn_430EffNokosi'
     Unknown35: 23, s32'End'
     endUpon: 
   sprite: s32'null', 60
@@ -988,52 +988,52 @@ startState: s32'rvn430EffNokosi'
 
 startState: s32'rvn430EffSmoke'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown295: 1
     Unknown1769: 1
     flipDirection: 
     setObjectSize: 570
-    Unknown94: -250000
+    addPositionX: -250000
     endUpon: 
   sprite: s32'null', 5
-  Unknown454: 2
-  Unknown450: s32'rvn_430Eff_smoke'
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'rvn_430Eff_smoke'
   sprite: s32'null', 35
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   sprite: s32'null', 60
   Unknown341: -4
   endState: 
 
 startState: s32'rvn430EffSmoke2'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown295: 1
     Unknown1769: 1
     flipDirection: 
     setObjectWidth: 570
     Unknown180: 570
     Unknown156: 620
-    Unknown94: -50000
+    addPositionX: -50000
     endUpon: 
   sprite: s32'null', 5
   Unknown365: 20000, 20000
-  Unknown454: 2
-  Unknown450: s32'rvn_430Eff_smoke'
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'rvn_430Eff_smoke'
   sprite: s32'null', 35
   Unknown365: 20000, 20000
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   sprite: s32'null', 60
   Unknown341: -4
   endState: 
 
 startState: s32'rvn430EffRay'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     Unknown455: 3
     Unknown295: 1
     Unknown1769: 1
-    Unknown450: s32'rvn_430Ray'
+    linkParticleEx: s32'rvn_430Ray'
     Unknown35: 23, s32'End'
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1044,12 +1044,12 @@ startState: s32'rvn430EffRay'
 
 startState: s32'rvn432Eff00'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
     flipDirection: 
-    Unknown450: s32'rvn_432Eff00'
+    linkParticleEx: s32'rvn_432Eff00'
     upon: 35
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'null', 60
@@ -1057,48 +1057,48 @@ startState: s32'rvn432Eff00'
 
 startState: s32'rvn432EffLast'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
     flipDirection: 
-    Unknown450: s32'rvn_432Eff01'
-    Unknown99: 200000
+    linkParticleEx: s32'rvn_432Eff01'
+    addPositionY: 200000
     endUpon: 
   sprite: s32'null', 30
   sprite: s32'null', 30
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   endState: 
 
 startState: s32'rvn432EffBake'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
     flipDirection: 
     endUpon: 
   setMarker: s32'Loop'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_432Eff_bake00'
+  linkParticleEx: s32'rvn_432Eff_bake00'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_432Eff_bake01'
+  linkParticleEx: s32'rvn_432Eff_bake01'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_432Eff_bake02'
+  linkParticleEx: s32'rvn_432Eff_bake02'
   goToMarker: s32'Loop'
   endState: 
 
 startState: s32'rvn432EffBake2'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown457: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
     flipDirection: 
     endUpon: 
   setMarker: s32'Loop'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_432Eff_bake03'
+  linkParticleEx: s32'rvn_432Eff_bake03'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_432Eff_bake04'
+  linkParticleEx: s32'rvn_432Eff_bake04'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_432Eff_bake05'
+  linkParticleEx: s32'rvn_432Eff_bake05'
   goToMarker: s32'Loop'
   endState: 
 
@@ -1114,7 +1114,7 @@ startState: s32'rvn432EffHit'
     Unknown169: -2500, 2500
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'rvn_432Eff_HitEff'
+  linkParticleEx: s32'rvn_432Eff_HitEff'
   endState: 
 
 startState: s32'rvn432EffHit2'
@@ -1122,31 +1122,31 @@ startState: s32'rvn432EffHit2'
     Unknown1769: 1
     Unknown295: 1
     setObjectSize: 1400
-    Unknown94: 150000
+    addPositionX: 150000
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'rvn_432Eff_HitEff2'
+  linkParticleEx: s32'rvn_432Eff_HitEff2'
   endState: 
 
 startState: s32'rvn432Usugura'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     endUpon: 
   sprite: s32'null', 2147483647
-  Unknown450: s32'rvn_433Usugura'
+  linkParticleEx: s32'rvn_433Usugura'
   endState: 
 
 startState: s32'rvn432Kira'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     endUpon: 
   sprite: s32'null', 2147483647
-  Unknown450: s32'rvn_433ScrnAnim'
+  linkParticleEx: s32'rvn_433ScrnAnim'
   endState: 
 
 startState: s32'IKface'
   upon: (IMMEDIATE)
-    Unknown451: s32'ikface', s32'ikface01'
+    linkPawnWithAnim: s32'ikface', s32'ikface01'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 600
@@ -1156,7 +1156,7 @@ startState: s32'rvn451AuraJizoku'
   upon: (IMMEDIATE)
     physicsXImpulse: 1000
     Unknown338: 0
-    Unknown450: s32'rvn_451Eff_AuraJizoku'
+    linkParticleEx: s32'rvn_451Eff_AuraJizoku'
     endUpon: 
   sprite: s32'null', 200
   Unknown341: 3
@@ -1240,7 +1240,7 @@ startState: s32'rvn451Aura7'
 
 startState: s32'rvn451Tanka'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_451Eff_tanka00'
+    linkParticleEx: s32'rvn_451Eff_tanka00'
     endUpon: 
   sprite: s32'null', 60
   endState: 
@@ -1248,14 +1248,14 @@ startState: s32'rvn451Tanka'
 startState: s32'rvn451HandAura'
   upon: (IMMEDIATE)
     physicsXImpulse: 1000
-    Unknown450: s32'rvn_451Eff_AuraJizoku2'
+    linkParticleEx: s32'rvn_451Eff_AuraJizoku2'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'rvn451AuraJizoku2'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_451Eff_AuraJizoku'
+    linkParticleEx: s32'rvn_451Eff_AuraJizoku'
     setObjectSize: 900
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1264,7 +1264,7 @@ startState: s32'rvn451AuraJizoku2'
 startState: s32'rvn451Eye'
   upon: (IMMEDIATE)
     flipDirection: 
-    Unknown450: s32'rvn_451Eff_eyeray'
+    linkParticleEx: s32'rvn_451Eff_eyeray'
     endUpon: 
   sprite: s32'null', 120
   Unknown338: 0
@@ -1275,7 +1275,7 @@ startState: s32'rvn451Eye'
 
 startState: s32'rvn451HibasiraJizoku'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_451Eff_HibasiraJizoku'
+    linkParticleEx: s32'rvn_451Eff_HibasiraJizoku'
     setObjectSize: 3200
     Unknown35: 23, s32'HiroGari'
     endUpon: 
@@ -1289,25 +1289,25 @@ startState: s32'rvn451HibasiraJizoku'
   goToMarker: s32'Loop'
   setMarker: s32'HiroGari'
   sprite: s32'null', 2147483647
-  Unknown450: s32'rvn_451Eff_HibasiraEnd'
+  linkParticleEx: s32'rvn_451Eff_HibasiraEnd'
   Unknown191: 2500
   Unknown3: 
   endState: 
 
 startState: s32'rvn451hai'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_451Eff_hai'
+    linkParticleEx: s32'rvn_451Eff_hai'
     Unknown35: 23, s32'hai2'
     endUpon: 
   sprite: s32'null', 2147483647
   setMarker: s32'hai2'
   sprite: s32'null', 2147483647
-  Unknown450: s32'rvn_451Eff_hai2'
+  linkParticleEx: s32'rvn_451Eff_hai2'
   endState: 
 
 startState: s32'rvn451hai2'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_451Eff_sandshock'
+    linkParticleEx: s32'rvn_451Eff_sandshock'
     setObjectSize: 700
     endUpon: 
   sprite: s32'null', 300
@@ -1315,7 +1315,7 @@ startState: s32'rvn451hai2'
 
 startState: s32'rvn451BG'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_451Eff_BG'
+    linkParticleEx: s32'rvn_451Eff_BG'
     Unknown35: 23, s32'Scale'
     Unknown35: 24, s32'Scale2'
     endUpon: 
@@ -1330,8 +1330,8 @@ startState: s32'rvn451BG'
 
 startState: s32'rvn700BG'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown450: s32'rvn_700_bg00'
+    Unknown457: (PARENT)
+    linkParticleEx: s32'rvn_700_bg00'
     flipDirection: 
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1339,15 +1339,15 @@ startState: s32'rvn700BG'
 
 startState: s32'rvn700_feather'
   upon: (IMMEDIATE)
-    Unknown450: s32'rvn_700_feather'
+    linkParticleEx: s32'rvn_700_feather'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'rvn800BG'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown450: s32'rvn_800_hanefade'
+    Unknown457: (PARENT)
+    linkParticleEx: s32'rvn_800_hanefade'
     flipDirection: 
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1355,7 +1355,7 @@ startState: s32'rvn800BG'
 
 startState: s32'cs800_Craw01'
   upon: (IMMEDIATE)
-    Unknown451: s32'Craw01', s32'rvn800cs_craw01'
+    linkPawnWithAnim: s32'Craw01', s32'rvn800cs_craw01'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1363,7 +1363,7 @@ startState: s32'cs800_Craw01'
 
 startState: s32'cs800_Craw02'
   upon: (IMMEDIATE)
-    Unknown451: s32'Craw02', s32'rvn800cs_craw02'
+    linkPawnWithAnim: s32'Craw02', s32'rvn800cs_craw02'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1371,7 +1371,7 @@ startState: s32'cs800_Craw02'
 
 startState: s32'cs800_Craw03'
   upon: (IMMEDIATE)
-    Unknown451: s32'Craw03', s32'rvn800cs_craw03'
+    linkPawnWithAnim: s32'Craw03', s32'rvn800cs_craw03'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1379,7 +1379,7 @@ startState: s32'cs800_Craw03'
 
 startState: s32'cs800_Craw04'
   upon: (IMMEDIATE)
-    Unknown451: s32'Craw04', s32'rvn800cs_craw04'
+    linkPawnWithAnim: s32'Craw04', s32'rvn800cs_craw04'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1387,208 +1387,208 @@ startState: s32'cs800_Craw04'
 
 startState: s32'200bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_200Atk'
+  linkParticleEx: s32'rvn_200Atk'
   endState: 
 
 startState: s32'202bake1'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_202Atk00'
+  linkParticleEx: s32'rvn_202Atk00'
   endState: 
 
 startState: s32'202bake2'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_202Atk01'
+  linkParticleEx: s32'rvn_202Atk01'
   endState: 
 
 startState: s32'203bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_203Atk'
+  linkParticleEx: s32'rvn_203Atk'
   endState: 
 
 startState: s32'204bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_204Atk'
+  linkParticleEx: s32'rvn_204Atk'
   endState: 
 
 startState: s32'205bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 15
-  Unknown450: s32'rvn_205Atk00'
+  linkParticleEx: s32'rvn_205Atk00'
   endState: 
 
 startState: s32'210bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 3
-  Unknown450: s32'rvn_210Atk00'
+  linkParticleEx: s32'rvn_210Atk00'
   sprite: s32'null', 60
-  Unknown450: s32'rvn_210Atk01'
+  linkParticleEx: s32'rvn_210Atk01'
   Unknown338: 127
-  Unknown454: 0
-  Unknown457: 0
-  Unknown456: 0
+  linkObjPositionTo: (NULL)
+  Unknown457: (NULL)
+  Unknown456: (NULL)
   Unknown295: 1
   Unknown1769: 1
   endState: 
 
 startState: s32'213bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_213Atk'
+  linkParticleEx: s32'rvn_213Atk'
   endState: 
 
 startState: s32'213atk'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown94: 270000
-    Unknown99: 110000
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    addPositionX: 270000
+    addPositionY: 110000
     setObjectSize: 1300
     endUpon: 
   sprite: s32'null', 5
-  Unknown450: s32'rvn_213Atk_col'
+  linkParticleEx: s32'rvn_213Atk_col'
   sprite: s32'null', 60
-  Unknown457: 0
-  Unknown456: 0
+  Unknown457: (NULL)
+  Unknown456: (NULL)
   Unknown295: 1
   Unknown1769: 1
   endState: 
 
 startState: s32'215bake1'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 15
-  Unknown450: s32'rvn_215Atk00'
+  linkParticleEx: s32'rvn_215Atk00'
   endState: 
 
 startState: s32'215bake2'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 15
-  Unknown450: s32'rvn_215Atk01'
+  linkParticleEx: s32'rvn_215Atk01'
   endState: 
 
 startState: s32'230bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 15
-  Unknown450: s32'rvn_230Atk'
+  linkParticleEx: s32'rvn_230Atk'
   endState: 
 
 startState: s32'232bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 15
-  Unknown450: s32'rvn_232Atk'
+  linkParticleEx: s32'rvn_232Atk'
   endState: 
 
 startState: s32'233bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
-    Unknown99: 22500
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
+    addPositionY: 22500
     endUpon: 
   sprite: s32'null', 2
-  Unknown450: s32'rvn_233Atk00'
+  linkParticleEx: s32'rvn_233Atk00'
   sprite: s32'null', 2
-  Unknown450: s32'rvn_233Atk01'
+  linkParticleEx: s32'rvn_233Atk01'
   sprite: s32'null', 3
-  Unknown450: s32'rvn_233Atk02'
+  linkParticleEx: s32'rvn_233Atk02'
   sprite: s32'null', 3
-  Unknown450: s32'rvn_233Atk03'
+  linkParticleEx: s32'rvn_233Atk03'
   sprite: s32'null', 60
-  Unknown450: s32'rvn_233Atk04'
-  Unknown457: 0
-  Unknown456: 0
-  Unknown454: 0
+  linkParticleEx: s32'rvn_233Atk04'
+  Unknown457: (NULL)
+  Unknown456: (NULL)
+  linkObjPositionTo: (NULL)
   Unknown341: -10
   endState: 
 
 startState: s32'250bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_250Atk'
+  linkParticleEx: s32'rvn_250Atk'
   endState: 
 
 startState: s32'252bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_252Atk00'
+  linkParticleEx: s32'rvn_252Atk00'
   endState: 
 
 startState: s32'254bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_254Atk00'
+  linkParticleEx: s32'rvn_254Atk00'
   endState: 
 
 startState: s32'320Eff'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
-    Unknown450: s32'rvn_320Eff'
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
+    linkParticleEx: s32'rvn_320Eff'
     endUpon: 
   sprite: s32'null', 30
   Unknown365: 15000, 15000
@@ -1596,8 +1596,8 @@ startState: s32'320Eff'
 
 startState: s32'320Eff_hit'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown450: s32'rvn_320Eff_hit'
+    linkObjPositionTo: (PARENT)
+    linkParticleEx: s32'rvn_320Eff_hit'
     endUpon: 
   sprite: s32'null', 60
   Unknown365: 20000, 20000
@@ -1605,25 +1605,25 @@ startState: s32'320Eff_hit'
 
 startState: s32'360bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 20
-  Unknown450: s32'rvn_neoblitz_atk'
+  linkParticleEx: s32'rvn_neoblitz_atk'
   endState: 
 
 startState: s32'Zanhit_oku'
   upon: (IMMEDIATE)
-    Unknown450: s32'cmn_slash_s_oku'
+    linkParticleEx: s32'cmn_slash_s_oku'
     endUpon: 
   sprite: s32'null', 55
   endState: 
 
 startState: s32'BG_win'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'rvn_800_bg00'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'rvn_800_bg00'
     endUpon: 
   sprite: s32'null', 1000
   endState: 

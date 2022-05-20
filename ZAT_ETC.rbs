@@ -1,0 +1,2096 @@
+startState: s32'dmy'
+  sprite: s32'null', 1
+  endState: 
+
+startState: s32'AirThrowNyurun'
+  sprite: s32'null', 60
+  linkParticleEx: s32'cmn_fd_end'
+  Unknown457: (PARENT)
+  Unknown456: (PARENT)
+  linkObjPositionTo: (PARENT)
+  Unknown466: (PARENT)
+  endState: 
+
+startState: s32'AirThrowHae'
+  sprite: s32'null', 60
+  linkParticleEx: s32'zat_airthrow_end'
+  Unknown457: (PARENT)
+  Unknown456: (PARENT)
+  linkObjPositionTo: (PARENT)
+  Unknown466: (PARENT)
+  endState: 
+
+startState: s32'UzuStart'
+  sprite: s32'null', 20
+  linkParticleEx: s32'zat_stand_start'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuDelete'
+  sprite: s32'null', 30
+  linkParticleEx: s32'zat_stand_end'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuDeleteNoLink'
+  sprite: s32'null', 30
+  linkParticleEx: s32'zat_stand_end'
+  endState: 
+
+startState: s32'UzuStand'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_stand_loop'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuCrouch'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_crouch_loop'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuStand2Crouch'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_shadow_nakawari1'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuNokezori'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_nokezori_stup'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuFWalk'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_walk_loop'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'Uzu2B'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_walk_loop'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuBWalk'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_walkback_loop'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'Uzu6DStart'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_6duzu_start'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'Uzu6DEnd'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_6duzu_end'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuFDashStop'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_dashstop'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuNokezoriH'
+  sprite: s32'null', 30
+  linkParticleEx: s32'zat_nokezori_stup'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuNokezoriL'
+  sprite: s32'null', 30
+  linkParticleEx: s32'zat_nokezori_stdown'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuNokezoriC'
+  sprite: s32'null', 30
+  linkParticleEx: s32'zat_nokezori_crouch'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'Uzu5B'
+  sprite: s32'null', 30
+  linkParticleEx: s32'zat_5k'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuJitabata'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_yoroke'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuKizetsu'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_kizetsu'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuBreakTheLaw'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_btl_floor'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'UzuBreakTheLawEddie'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_btl_floor'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'HomingEffect'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'zat_homing_mesh'
+  Unknown466: (PARENT)
+  Unknown456: (PARENT)
+  Unknown455: 2
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  endState: 
+
+startState: s32'DamnedFangBall'
+  sprite: s32'null', 41
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown448: s32'zat_damnedball_torikomi', 100
+  sprite: s32'null', 72
+  linkParticleEx: s32'zat_damnedball_roop'
+  sprite: s32'null', 120
+  linkParticleEx: s32'zat_damnedball_end'
+  endState: 
+
+startSubroutine: s32'EddieSukkarakanCheck'
+  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 0
+    storeValue: (VARIABLE), 4, (STATIC), 1
+    endIf: 
+  else: 
+    Unknown59: s32'TRP_ZAT', 2, 157
+    ifOperation: (IS_EQUAL), (VARIABLE), 157, (STATIC), 2
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 999999
+      endIf: 
+    endElse: 
+  endSubroutine: 
+
+startSubroutine: s32'EddieActionReqNeutral'
+  ifNot: (VARIABLE), 57
+    jumpToState: s32'Eddie'
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'EddieInitialize'
+  Unknown1603: 4
+  Unknown2157: 0, 5
+  Unknown268: 1
+  Unknown176: 1
+  Unknown2156: 0
+  storeValue: (VARIABLE), 45, (STATIC), 5
+  storeValue: (VARIABLE), 5, (STATIC), 1
+  storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
+  storeValue: (VARIABLE), 57, (STATIC), 0
+  storeValue: (VARIABLE), 58, (STATIC), 0
+  storeValue: (VARIABLE), 59, (STATIC), 0
+  storeValue: (VARIABLE), 60, (STATIC), 0
+  storeValue: (VARIABLE), 3, (STATIC), 1
+  Unknown2178: 
+  numberOfHits: 1
+  Unknown2189: 1
+  Unknown2185: 1
+  Unknown2186: 1
+  Unknown2191: 1
+  upon: (ON_DESTROY)
+    storeValue: (VARIABLE), 3, (STATIC), 0
+    ifNot: (VARIABLE), 49
+      createObject2: s32'EddieDelete', 100
+      endIf: 
+    deactivateObj: (SELF)
+    storeValue: (VARIABLE), 51, (STATIC), 1
+    storeValue: (VARIABLE), 5, (STATIC), 0
+    endUpon: 
+  upon: 59
+    deactivateObj: (SELF)
+    endUpon: 
+  upon: (RECEIVE_ATTACK)
+    storeValue: (VARIABLE), 25, (STATIC), 0
+    storeValue: (VARIABLE), 4, (STATIC), 1
+    Unknown606: 1
+    playVoice: s16'vxxx204'
+    ifOperation: (IS_EQUAL), (VARIABLE), 93, (STATIC), 1
+      Unknown2320: s32'EddieKesu'
+      endIf: 
+    endUpon: 
+  upon: (ON_HIT_OR_BLOCK)
+    ifNot: (VARIABLE), 58
+      ifNot: (VARIABLE), 51
+        storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
+        storeValue: (VARIABLE), 3, (STATIC), 0
+        ifNot: (VARIABLE), 49
+          createObject2: s32'EddieDelete', 100
+          Unknown606: 1
+          playVoice: s16'vxxx203'
+          endIf: 
+        deactivateObj: (SELF)
+        storeValue: (VARIABLE), 51, (STATIC), 1
+        storeValue: (VARIABLE), 5, (STATIC), 0
+        endIf: 
+      endIf: 
+    endUpon: 
+  upon: 24
+    ifNot: (VARIABLE), 58
+      ifNot: (VARIABLE), 51
+        storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
+        storeValue: (VARIABLE), 3, (STATIC), 0
+        ifNot: (VARIABLE), 49
+          createObject2: s32'EddieDelete', 100
+          Unknown606: 1
+          playVoice: s16'vxxx203'
+          endIf: 
+        deactivateObj: (SELF)
+        storeValue: (VARIABLE), 51, (STATIC), 1
+        storeValue: (VARIABLE), 25, (STATIC), 0
+        storeValue: (VARIABLE), 4, (STATIC), 1
+        storeValue: (VARIABLE), 5, (STATIC), 0
+        endIf: 
+      endIf: 
+    endUpon: 
+  upon: 25
+    ifNot: (VARIABLE), 58
+      storeValue: (VARIABLE), 57, (STATIC), 1
+      Unknown2263: 0
+      endIf: 
+    endUpon: 
+  upon: (BEFORE_EXIT)
+    storeValue: (VARIABLE), 3, (STATIC), 0
+    endUpon: 
+  linkParticleEx: s32''
+  Unknown2233: 0
+  characterEffectOverlay: 0
+  linkPawnWithAnim: s32'edyz_body', s32''
+  Unknown2035: s32'ChangeColor'
+  upon: (FRAME_STEP)
+    storeValue: (VARIABLE), 46, (STATIC), 0
+    ifNot: (VARIABLE), 58
+      ifNot: (VARIABLE), 46
+        if: (VARIABLE), 57
+          storeValue: (VARIABLE), 57, (STATIC), 0
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieMegalithHead'
+          endIf: 
+        endIf: 
+      endIf: 
+    ifNot: (VARIABLE), 5
+      ifOperation: (IS_LESSER), (VARIABLE), 104, (STATIC), 16100
+        Unknown240: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifNot: (VARIABLE), 25
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          Unknown1766: 23, 24
+          endIf: 
+        endIf: 
+      storeValue: (VARIABLE), 69, (STATIC), 0
+      ifNot: (VARIABLE), 46
+        Unknown2266: 121, 2, 32
+        if: (VARIABLE), 0
+          storeValue: (VARIABLE), 69, (STATIC), 8
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        Unknown2266: 95, 2, 32
+        if: (VARIABLE), 0
+          storeValue: (VARIABLE), 69, (STATIC), 7
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        checkInput: 42
+        if: (VARIABLE), 0
+          storeValue: (VARIABLE), 69, (STATIC), 6
+          endIf: 
+        endIf: 
+      Unknown2001: 2, s32'EddieReturn'
+      ifNot: (VARIABLE), 0
+        ifNot: (VARIABLE), 46
+          checkInput: 33
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 5
+            endIf: 
+          endIf: 
+        ifNot: (VARIABLE), 46
+          checkInput: 24
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 4
+            endIf: 
+          endIf: 
+        ifNot: (VARIABLE), 46
+          checkInput: 15
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 3
+            endIf: 
+          endIf: 
+        ifNot: (VARIABLE), 46
+          checkInput: 6
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 2
+            endIf: 
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        checkInput: 42
+        if: (VARIABLE), 0
+          checkInput: 174
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 1
+            endIf: 
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        checkInput: 38
+        if: (VARIABLE), 0
+          checkInput: 174
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 1
+            endIf: 
+          endIf: 
+        endIf: 
+      if: (VARIABLE), 212
+        ifNot: (VARIABLE), 46
+          checkInput: 281
+          if: (VARIABLE), 0
+            storeValue: (VARIABLE), 69, (STATIC), 3
+            endIf: 
+          endIf: 
+        endIf: 
+      callSubroutine: s32'zat_EddieCPU', 0, 0, 0, 0, 0, 0, 0, 0
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieThrow'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieThrow'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieA'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 3
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieB'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 4
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieC'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 5
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieD'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 6
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'EddieE'
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 7
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          ifOperation: (IS_NOT_EQUAL), (VARIABLE), 45, (STATIC), 4
+            jumpToState: s32'Eddie4'
+            endIf: 
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 8
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          ifOperation: (IS_NOT_EQUAL), (VARIABLE), 45, (STATIC), 6
+            jumpToState: s32'Eddie6'
+            endIf: 
+          endIf: 
+        endIf: 
+      ifNot: (VARIABLE), 46
+        ifOperation: (IS_NOT_EQUAL), (VARIABLE), 45, (STATIC), 5
+          storeValue: (VARIABLE), 46, (STATIC), 1
+          jumpToState: s32'Eddie'
+          endIf: 
+        endIf: 
+      endIf: 
+    if: (VARIABLE), 52
+      if: (VARIABLE), 114
+        storeValue: (VARIABLE), 52, (STATIC), 0
+        linkPawnWithAnim: s32'edyz_body', s32''
+        Unknown2035: s32'ChangeColor'
+        Unknown14: s32'hashi'
+        endIf: 
+      endIf: 
+    if: (VARIABLE), 60
+      if: (VARIABLE), 50
+        if: (VARIABLE), 84
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 7
+            Unknown14: s32'End'
+            endIf: 
+          endIf: 
+        else: 
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 5
+            Unknown14: s32'End'
+            endIf: 
+          endElse: 
+        endIf: 
+      else: 
+        if: (VARIABLE), 84
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 5
+            Unknown14: s32'End'
+            endIf: 
+          endIf: 
+        else: 
+          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 3
+            Unknown14: s32'End'
+            endIf: 
+          endElse: 
+        endElse: 
+      endIf: 
+    endUpon: 
+  endSubroutine: 
+
+startState: s32'EddieDelete'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'ZTE4_00', 60
+  linkParticleEx: s32'zat_edy_end'
+  endState: 
+
+startState: s32'Eddie'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 5
+    storeValue: (VARIABLE), 5, (STATIC), 0
+    endUpon: 
+  playCharacterSFX: s32'2'
+  physicsXImpulse: 0
+  setMarker: s32'loop'
+  sprite: s32'zat417_body_01', 4
+  sprite: s32'zat417_body_02', 4
+  sprite: s32'zat417_body_03', 4
+  sprite: s32'zat417_body_04', 4
+  sprite: s32'zat417_body_05', 4
+  sprite: s32'zat417_body_06', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'Eddie6'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 6
+    storeValue: (VARIABLE), 5, (STATIC), 0
+    endUpon: 
+  setMarker: s32'fwalk_loop'
+  sprite: s32'zat418_body_01', 3
+  physicsXImpulse: 12250
+  sprite: s32'zat418_body_02', 3
+  sprite: s32'zat418_body_03', 3
+  sprite: s32'zat418_body_04', 3
+  sprite: s32'zat418_body_05', 3
+  sprite: s32'zat418_body_06', 3
+  sprite: s32'zat418_body_07', 3
+  Unknown3: 
+  Unknown2320: s32'EddieFront'
+  goToMarker: s32'fwalk_loop'
+  endState: 
+
+startState: s32'Eddie4'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 4
+    storeValue: (VARIABLE), 5, (STATIC), 0
+    endUpon: 
+  setMarker: s32'loop'
+  sprite: s32'zat418_body_01', 3
+  physicsXImpulse: -10500
+  sprite: s32'zat418_body_02', 3
+  sprite: s32'zat418_body_03', 3
+  sprite: s32'zat418_body_04', 3
+  sprite: s32'zat418_body_05', 3
+  sprite: s32'zat418_body_06', 3
+  sprite: s32'zat418_body_07', 3
+  Unknown3: 
+  Unknown2320: s32'EddieBack'
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'EddieA'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 100
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    Unknown244: 
+    Unknown1110: 1
+    attackLevel: 1
+    Unknown1028: 0
+    damage: 25
+    Unknown1112: 0
+    Unknown1051: 0
+    Unknown730: 1
+    endUpon: 
+  sprite: s32'zat405_body_01', 2
+  if: (VARIABLE), 84
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -360
+    endIf: 
+  else: 
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -720
+    endElse: 
+  callCmnEfFunc: s32'EddieSukkarakanCheck'
+  sprite: s32'zat405_body_02', 2
+  sprite: s32'zat405_body_03', 2
+  physicsXImpulse: 42000
+  sprite: s32'zat405_body_04', 2
+  hit: 
+  physicsXImpulse: 17500
+  Unknown606: 1
+  playVoice: s16'vxxx205'
+  sprite: s32'zat405_body_05', 6
+  physicsXImpulse: 0
+  recoveryState: 
+  sprite: s32'zat405_body_06', 5
+  sprite: s32'zat405_body_07', 4
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'EddieB'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 101
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    Unknown244: 
+    Unknown1110: 1
+    attackLevel: 2
+    Unknown1028: 0
+    damage: 20
+    Unknown1112: 0
+    riscMinus: 8
+    Unknown1051: 0
+    Unknown725: 1
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat406_body_01', 3
+  if: (VARIABLE), 84
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -900
+    endIf: 
+  else: 
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1800
+    endElse: 
+  callCmnEfFunc: s32'EddieSukkarakanCheck'
+  sprite: s32'zat406_body_02', 2
+  Unknown3: 
+  linkPawnWithAnim: s32'edyz_buzzsaw', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat406_buzzsaw_01ex', 2
+  physicsXImpulse: 3500
+  sprite: s32'zat406_buzzsaw_02ex', 2
+  physicsXImpulse: 7000
+  sprite: s32'zat406_buzzsaw_03ex', 2
+  physicsXImpulse: 12250
+  sprite: s32'zat406_buzzsaw_04ex', 2
+  physicsXImpulse: 17500
+  Unknown606: 1
+  playVoice: s16'vxxx206'
+  Unknown3: 
+  physicsXImpulse: 17500
+  Unknown2159: 3
+  storeValue: (VARIABLE), 52, (STATIC), 1
+  sprite: s32'zat406_buzzsaw_01ex', 2
+  playCharacterSFX: s32'3'
+  hit: 
+  Unknown1058: 0
+  sprite: s32'zat406_buzzsaw_02ex', 2
+  sprite: s32'zat406_buzzsaw_03ex', 2
+  hit: 
+  sprite: s32'zat406_buzzsaw_04ex', 2
+  sprite: s32'zat406_buzzsaw_01ex', 2
+  playCharacterSFX: s32'3'
+  hit: 
+  sprite: s32'zat406_buzzsaw_02ex', 2
+  sprite: s32'zat406_buzzsaw_03ex', 2
+  hit: 
+  sprite: s32'zat406_buzzsaw_04ex', 2
+  sprite: s32'zat406_buzzsaw_01ex', 2
+  playCharacterSFX: s32'3'
+  hit: 
+  sprite: s32'zat406_buzzsaw_02ex', 2
+  sprite: s32'zat406_buzzsaw_03ex', 2
+  hit: 
+  sprite: s32'zat406_buzzsaw_04ex', 2
+  sprite: s32'zat406_buzzsaw_01ex', 2
+  playCharacterSFX: s32'3'
+  hit: 
+  sprite: s32'zat406_buzzsaw_02ex', 2
+  sprite: s32'zat406_buzzsaw_03ex', 1
+  hit: 
+  Unknown3: 
+  linkPawnWithAnim: s32'edyz_body', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat406_body_02', 6
+  recoveryState: 
+  physicsXImpulse: 5250
+  sprite: s32'zat406_body_01', 6
+  physicsXImpulse: 3500
+  sprite: s32'zat417_body_01', 12
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  setMarker: s32'hashi'
+  sprite: s32'zat406_body_02', 2
+  physicsXImpulse: -21000
+  Unknown2159: 4
+  hit: 
+  sprite: s32'zat406_body_02', 10
+  recoveryState: 
+  sprite: s32'zat406_body_01', 12
+  physicsXImpulse: -10500
+  sprite: s32'zat417_body_01', 12
+  physicsXImpulse: 0
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'EddieC'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 102
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    Unknown244: 
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    attackLevel: 4
+    Unknown1028: 0
+    damage: 50
+    Unknown1112: 0
+    hitAirPushbackY: 38500
+    isAirUnblockable: 1
+    Unknown1051: 0
+    Unknown1108: 90
+    endUpon: 
+  sprite: s32'zat408_body_00', 2
+  Unknown2320: s32'EddieCDehazime'
+  Unknown176: 1
+  if: (VARIABLE), 84
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -600
+    endIf: 
+  else: 
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1200
+    endElse: 
+  callCmnEfFunc: s32'EddieSukkarakanCheck'
+  physicsXImpulse: 21000
+  sprite: s32'zat408_body_01', 2
+  sprite: s32'zat408_body_02', 2
+  createObject2: s32'EddieCPartsA', 100
+  Unknown111: 70
+  sprite: s32'zat408_body_03', 2
+  physicsXImpulse: 0
+  Unknown606: 1
+  playVoice: s16'vxxx207'
+  sprite: s32'zat408_body_04ex', 2
+  hit: 
+  Unknown606: 1
+  playVoice: s16'vxxx207'
+  sprite: s32'zat408_body_05', 2
+  sprite: s32'zat408_body_06', 2
+  sprite: s32'zat408_body_07', 6
+  sprite: s32'zat408_body_08', 5
+  recoveryState: 
+  sprite: s32'zat408_body_09', 5
+  sprite: s32'zat408_body_10', 5
+  sprite: s32'zat408_body_11', 5
+  createObject2: s32'EddieCPartsB', 100
+  sprite: s32'zat408_body_12', 5
+  sprite: s32'zat408_body_13', 5
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'EddieCPartsA'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown2271: 1
+    Unknown2267: 1350
+    endUpon: 
+  linkPawnWithAnim: s32'edyz_shark', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat408_shark_02', 2
+  linkParticleEx: s32'zat_edy_sharkfloor'
+  sprite: s32'zat408_shark_03', 2
+  sprite: s32'zat408_shark_04', 2
+  sprite: s32'zat408_shark_05', 2
+  sprite: s32'zat408_shark_06', 2
+  sprite: s32'zat408_shark_07', 6
+  sprite: s32'zat408_shark_08', 5
+  sprite: s32'zat408_shark_09', 5
+  sprite: s32'zat408_shark_10', 5
+  sprite: s32'zat408_shark_11', 5
+  endState: 
+
+startState: s32'EddieCPartsB'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown2271: 1
+    Unknown2267: 1350
+    endUpon: 
+  linkPawnWithAnim: s32'edyz_blob', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat408_blob_11', 5
+  sprite: s32'zat408_blob_12', 5
+  endState: 
+
+startState: s32'EddieD'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 103
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    endUpon: 
+  sprite: s32'zat418_body_01', 3
+  setStrikeInvul: 1
+  sprite: s32'zat418_body_02', 2
+  sprite: s32'zat418_body_03', 30
+  if: (VARIABLE), 84
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -360
+    endIf: 
+  else: 
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -720
+    endElse: 
+  callCmnEfFunc: s32'EddieSukkarakanCheck'
+  Unknown2023: 0
+  physicsXImpulse: 15750
+  createObject2: s32'UzuBreakTheLawEddie', 100
+  Unknown606: 1
+  playVoice: s16'vxxx208'
+  sprite: s32'zat418_body_06', 3
+  Unknown2023: 1
+  setStrikeInvul: 0
+  physicsXImpulse: 0
+  Unknown32: s32'UzuBreakTheLawEddie'
+  Unknown2320: s32'Kagemoguri'
+  Unknown32: s32'KageDamari'
+  createObject2: s32'KageDamari', 123
+  Unknown1771: s32'KageDamari', 25
+  sprite: s32'zat418_body_07', 3
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'EddieE'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 104
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    endUpon: 
+  linkPawnWithAnim: s32'edyz_body', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat405_body_07', 3
+  Unknown3: 
+  linkPawnWithAnim: s32'edyz_blob', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat409_blob_00', 3
+  if: (VARIABLE), 84
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -3000
+    endIf: 
+  else: 
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -6000
+    endElse: 
+  callCmnEfFunc: s32'EddieSukkarakanCheck'
+  sprite: s32'zat409_blob_01', 3
+  sprite: s32'zat409_blob_02', 3
+  sprite: s32'ZTE4_45', 3
+  linkParticleEx: s32'zat_mine_setti'
+  sprite: s32'ZTE4_46', 3
+  sprite: s32'ZTE4_46', 1
+  Unknown2023: 0
+  createObject2: s32'ChouDoriru', 100
+  sprite: s32'keep', 2147483647
+  storeValue: (VARIABLE), 49, (STATIC), 1
+  Unknown1766: 23, 24
+  endState: 
+
+startState: s32'EddieThrow'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 105
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    Unknown244: 
+    Unknown1028: 0
+    tensionGainOnConnect: 10
+    callCmnEfFunc: s32'cmnAtkTemplNageLand'
+    Unknown1160: 0
+    canGrab: 1
+    Unknown1027: 300000, -1, -1, -1
+    throwRange: -1
+    setNoCollision: 1
+    upon: (BEFORE_EXIT)
+      setNoCollision: 0
+      endUpon: 
+    upon: (HIT)
+      Unknown14: s32'hit'
+      Unknown23: 10
+      Unknown2185: 0
+      Unknown2186: 0
+      storeValue: (VARIABLE), 58, (STATIC), 1
+      Unknown1602: 4
+      Unknown2156: 1
+      setNoCollision: 0
+      endUpon: 
+    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3000
+      storeValue: (VARIABLE), 47, (STATIC), 1
+      endIf: 
+    endUpon: 
+  linkPawnWithAnim: s32'edyz_demonhand', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat411_Demonhand_00', 3
+  Unknown2320: s32'EddieThrowSuka'
+  modifyVar: (ADD), (VARIABLE), 25, (STATIC), -2100
+  sprite: s32'zat411_Demonhand_01', 3
+  sprite: s32'zat411_Demonhand_02', 3
+  sprite: s32'zat411_Demonhand_03', 3
+  sprite: s32'zat411_Demonhand_04', 3
+  sprite: s32'zat411_Demonhand_05_rx', 4
+  createObject2: s32'Dhand_atk', 100
+  physicsXImpulse: 7500
+  Unknown606: 1
+  playVoice: s16'vxxx209'
+  sprite: s32'zat411_Demonhand_06_rx', 4
+  physicsXImpulse: 12000
+  sprite: s32'zat411_Demonhand_07_rx', 3
+  physicsXImpulse: 14000
+  sprite: s32'zat411_Demonhand_08_rx', 3
+  physicsXImpulse: 16000
+  sprite: s32'zat411_Demonhand_09_rx', 3
+  physicsXImpulse: 19000
+  hitUnchecked: 
+  sprite: s32'zat411_Demonhand_10_rx', 6
+  physicsXImpulse: 20000
+  sprite: s32'zat410_Demonhand_00', 3
+  physicsXImpulse: 15000
+  Unknown1883: 
+  sprite: s32'zat410_Demonhand_01', 3
+  createObject2: s32'Dhand_miss', 100
+  physicsXImpulse: 0
+  sprite: s32'zat410_Demonhand_02', 3
+  sprite: s32'zat410_Demonhand_03', 3
+  Unknown3: 
+  linkPawnWithAnim: s32'edyz_body', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat410_body_04', 3
+  createObject2: s32'EddieThrowParts', 100
+  sprite: s32'zat410_body_05', 3
+  sprite: s32'zat410_body_06', 3
+  sprite: s32'zat410_body_07', 3
+  sprite: s32'zat410_body_08', 3
+  sprite: s32'zat410_body_09', 3
+  sprite: s32'zat410_body_10', 3
+  sprite: s32'zat410_body_11', 3
+  sprite: s32'zat410_body_12', 3
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  Unknown3: 
+  setMarker: s32'hit'
+  Unknown268: 1
+  Unknown287: 1
+  sprite: s32'zat411_Demonhand_11', 1
+  storeFromObjToObj: (ENEMY), (VARIABLE), 32, (SELF), (VARIABLE), 32
+  Unknown2157: 0, 5
+  Unknown41: 22
+  Unknown2157: 1, 5
+  Unknown40: 
+  Unknown41: 22
+  flipDirection: 
+  Unknown40: 
+  Unknown544: 24
+  Unknown546: 0, 116, 0
+  physicsXImpulse: 0
+  sprite: s32'zat411_Demonhand_11', 21
+  setNoCollision: 1
+  sprite: s32'zat411_Demonhand_12', 5
+  Unknown544: 33
+  Unknown546: 0, 116, 0
+  Unknown2157: 0, 5
+  Unknown41: 22
+  Unknown2157: 1, 5
+  Unknown40: 
+  sprite: s32'zat411_Demonhand_13', 4
+  Unknown544: 27
+  Unknown546: 0, 116, 0
+  Unknown2157: 0, 5
+  Unknown41: 22
+  Unknown2157: 1, 5
+  Unknown40: 
+  sprite: s32'zat411_Demonhand_14', 4
+  Unknown544: 34
+  Unknown546: 0, 116, 0
+  Unknown2157: 0, 5
+  Unknown41: 22
+  Unknown2157: 1, 5
+  Unknown40: 
+  sprite: s32'zat411_Demonhand_15', 3
+  Unknown544: 24
+  Unknown546: 0, 116, 0
+  Unknown2157: 1, 5
+  Unknown41: 22
+  Unknown2157: 0, 5
+  Unknown40: 
+  sprite: s32'zat411_Demonhand_16', 3
+  Unknown708: 18, 1
+  callCmnEfFunc: s32'cmnAtkTemplNageFinishHit'
+  Unknown1160: 0
+  Unknown1142: 1
+  disableHitstop: 1
+  groundHitEffect: (AIR_FACE_UP)
+  Unknown1018: 1
+  Unknown1051: 0
+  damage: 55
+  untechableTime: 46
+  setForcedProration: 50
+  Unknown1028: 0
+  tensionGainOnConnect: 60
+  Unknown1127: 1
+  hitAirPushbackX: -10000
+  hitAirPushbackY: 40000
+  if: (VARIABLE), 47
+    damage: 65
+    endIf: 
+  hitUnchecked: 
+  Unknown606: 1
+  playVoice: s16'vxxx210'
+  sprite: s32'zat411_Demonhand_17', 5
+  sprite: s32'zat411_Demonhand_17', 5
+  Unknown448: s32'zat_411_yoin', 100
+  Unknown2023: 0
+  sprite: s32'zat411_Demonhand_17', 5
+  sprite: s32'zat411_Demonhand_17', 5
+  sprite: s32'zat410_body_12', 5
+  Unknown2023: 1
+  sprite: s32'zat410_body_12', 5
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'EddieThrowExe'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    Unknown2185: 0
+    Unknown2186: 0
+    storeValue: (VARIABLE), 45, (STATIC), 106
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    Unknown244: 
+    callCmnEfFunc: s32'cmnAtkTemplNageFinishHit'
+    linkPawnWithAnim: s32'edyz_demonhand', s32''
+    Unknown2035: s32'ChangeColor'
+    storeValue: (VARIABLE), 58, (STATIC), 1
+    Unknown1602: 4
+    endUpon: 
+  sprite: s32'zat411_Demonhand_04', 4
+  sprite: s32'zat411_Demonhand_05', 4
+  sprite: s32'zat411_Demonhand_06', 4
+  sprite: s32'zat411_Demonhand_07', 4
+  sprite: s32'zat411_Demonhand_08', 4
+  sprite: s32'zat411_Demonhand_09', 4
+  sprite: s32'zat411_Demonhand_10', 4
+  sprite: s32'zat411_Demonhand_11', 4
+  sprite: s32'zat411_Demonhand_12', 4
+  sprite: s32'zat411_Demonhand_13', 4
+  sprite: s32'zat411_Demonhand_14', 4
+  Unknown708: 18, 1
+  callCmnEfFunc: s32'cmnAtkTemplNageFinishHit'
+  groundHitEffect: (AIR_FACE_UP)
+  Unknown1018: 1
+  hitUnchecked: 
+  sprite: s32'zat411_Demonhand_15', 4
+  storeValue: (VARIABLE), 58, (STATIC), 0
+  Unknown1603: 4
+  sprite: s32'zat411_Demonhand_16', 4
+  sprite: s32'zat411_Demonhand_17', 4
+  Unknown448: s32'zat_411_yoin', 100
+  sprite: s32'null', 4
+  sprite: s32'null', 4
+  sprite: s32'zat410_body_12', 4
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'EddieThrowParts'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    endUpon: 
+  sprite: s32'zat410_Demonhand_04', 4
+  linkPawnWithAnim: s32'edyz_demonhand', s32''
+  Unknown2035: s32'ChangeColor'
+  sprite: s32'zat410_Demonhand_05', 4
+  sprite: s32'zat410_Demonhand_06', 4
+  sprite: s32'zat410_Demonhand_07', 4
+  endState: 
+
+startState: s32'ChouDoriru'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    guardType: (LOW)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 2
+    damage: 34
+    setProration: 85
+    riscPlus: 10
+    Unknown725: 1
+    Unknown1108: 90
+    Unknown1058: 1
+    storeFromObjToObj: (PLAYER), (VARIABLE), 55, (SELF), (STATIC), 1
+    endUpon: 
+  sprite: s32'ZTE5_00', 5
+  linkParticleEx: s32'zat_mine_setti'
+  sprite: s32'ZTE5_01', 5
+  sprite: s32'ZTE5_02', 5
+  sprite: s32'ZTE5_01', 5
+  sprite: s32'ZTE5_00', 5
+  sprite: s32'ZTE5_01', 5
+  sprite: s32'ZTE5_02', 5
+  sprite: s32'ZTE5_01', 5
+  sprite: s32'ZTE5_00', 4
+  sprite: s32'ZTE5_01', 4
+  sprite: s32'ZTE5_02', 4
+  sprite: s32'ZTE5_01', 4
+  sprite: s32'ZTE5_00', 4
+  sprite: s32'ZTE5_01', 4
+  sprite: s32'ZTE5_02', 4
+  sprite: s32'ZTE5_01', 4
+  sprite: s32'ZTE5_00', 3
+  sprite: s32'ZTE5_01', 3
+  sprite: s32'ZTE5_02', 3
+  sprite: s32'ZTE5_01', 3
+  sprite: s32'ZTE5_00', 3
+  sprite: s32'ZTE5_01', 3
+  sprite: s32'ZTE5_02', 3
+  sprite: s32'ZTE5_01', 3
+  sprite: s32'ZTE5_00', 2
+  sprite: s32'ZTE5_01', 2
+  sprite: s32'ZTE5_02', 2
+  sprite: s32'ZTE5_01', 2
+  sprite: s32'ZTE5_00', 2
+  sprite: s32'ZTE5_01', 2
+  sprite: s32'ZTE5_02', 2
+  sprite: s32'ZTE5_01', 2
+  sprite: s32'ZTE5_01', 6
+  Unknown448: s32'zat_mine_end', 100
+  sprite: s32'ZTE0_00', 1
+  linkParticleEx: s32'zat_drill_start'
+  Unknown2241: 0, 2000
+  Unknown449: s32'zat_drill_circle', 100
+  setObjectSize: 300
+  Unknown1883: 
+  Unknown98: 0
+  sprite: s32'ZTE0_00', 1
+  setObjectSize: 500
+  sprite: s32'ZTE0_00', 1
+  setObjectSize: 800
+  sprite: s32'ZTE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'ZTE0_00', 1
+  setObjectSize: 2000
+  playCharacterSFX: s32'0'
+  sprite: s32'ZTE0_00', 2
+  Unknown606: 1
+  playVoice: s16'vxxx211'
+  sprite: s32'ZTE0_01', 3
+  sprite: s32'ZTE0_02', 3
+  linkParticleEx: s32'zat_drill_loop'
+  hit: 
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  hit: 
+  guardType: (ANY)
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  hit: 
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'null', 48
+  recoveryState: 
+  linkParticleEx: s32'zat_drill_end'
+  sprite: s32'null', 12
+  storeFromObjToObj: (PLAYER), (VARIABLE), 55, (SELF), (STATIC), 0
+  endState: 
+
+startState: s32'EddieMegalithHead'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'EddieInitialize'
+    storeValue: (VARIABLE), 45, (STATIC), 108
+    storeValue: (VARIABLE), 5, (STATIC), 1
+    Unknown245: 
+    Unknown1110: 1
+    attackLevel: 2
+    Unknown1028: 0
+    damage: 30
+    riscPlus: 10
+    untechableTime: 45
+    setForcedProration: 80
+    hitAirPushbackY: 30000
+    hitAirPushbackX: 0
+    hitGravity: 1700
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    Unknown1112: 0
+    Unknown1051: 0
+    Unknown268: 0
+    Unknown294: 1
+    storeValue: (VARIABLE), 60, (STATIC), 1
+    storeValue: (VARIABLE), 59, (STATIC), 0
+    storeValue: (VARIABLE), 58, (STATIC), 1
+    Unknown1602: 4
+    Unknown2186: 0
+    endUpon: 
+  sprite: s32'zat417_body_01', 60
+  modifyVar: (ADD), (VARIABLE), 25, (STATIC), -3000
+  callCmnEfFunc: s32'EddieSukkarakanCheck'
+  sprite: s32'null', 3
+  Unknown448: s32'zat_shark_jump', 123
+  playSFX: s32'GG2_069'
+  sprite: s32'null', 27
+  Unknown2023: 0
+  sprite: s32'null', 2
+  createObject2: s32'Shark_Tail', 100
+  linkPawnWithAnim: s32'edyz_shark', s32''
+  Unknown2035: s32'ChangeColor'
+  Unknown2157: 0, 5
+  setMarker: s32'Move'
+  sprite: s32'null', 1
+  ifOperation: (IS_LESSER), (VARIABLE), 14, (STATIC), 500000
+    Unknown14: s32'Attack'
+    endIf: 
+  Unknown240: 
+  setStrikeInvul: 1
+  physicsXImpulse: 25000
+  Unknown294: 0
+  Unknown3: 
+  goToMarker: s32'Move'
+  setMarker: s32'Attack'
+  sprite: s32'zat431_shark_01', 2
+  Unknown2023: 1
+  physicsXImpulse: 25000
+  physicsYImpulse: 40000
+  setGravity: 2000
+  playCharacterSFX: s32'5'
+  Unknown32: s32'Shark_Tail'
+  Unknown2241: 0, 1500
+  Unknown449: s32'zat_shark_jump', 123
+  sprite: s32'zat431_shark_02', 3
+  sprite: s32'zat431_shark_03', 3
+  hit: 
+  Unknown111: 110
+  sprite: s32'zat431_shark_04', 8
+  Unknown111: 110
+  sprite: s32'zat431_shark_05', 6
+  sprite: s32'zat431_shark_06', 5
+  Unknown1883: 
+  Unknown111: 80
+  sprite: s32'zat431_shark_07', 5
+  Unknown111: 80
+  sprite: s32'zat431_shark_08', 2147483647
+  Unknown2241: 0, 1500
+  Unknown449: s32'zat_shark_jump', 123
+  Unknown35: 2, s32'landing'
+  setThrowRange: 0
+  setMarker: s32'landing'
+  sprite: s32'null', 12
+  modifyVar: (ADD), (VARIABLE), 59, (STATIC), 1
+  Unknown23: 2
+  physicsXImpulse: 30000
+  createObject2: s32'Shark_Tail', 100
+  playSFX: s32'GG2_070'
+  Unknown2023: 0
+  Unknown3: 
+  goToMarker: s32'Move'
+  setMarker: s32'End'
+  sprite: s32'zat418_body_01', 3
+  storeValue: (VARIABLE), 60, (STATIC), 0
+  sprite: s32'zat418_body_02', 2
+  sprite: s32'keep', 2147483647
+  callCmnEfFunc: s32'EddieActionReqNeutral'
+  endState: 
+
+startState: s32'Shark_Tail'
+  upon: (IMMEDIATE)
+    linkParticleEx: s32'zat_shark_tail'
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    Unknown455: 2
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'DrillC'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    guardType: (LOW)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 1
+    riscMinus: 19
+    damage: 40
+    Unknown725: 1
+    Unknown1108: 90
+    Unknown1105: 3
+    hitAirPushbackY: 27000
+    Unknown1127: 1
+    Unknown2185: 1
+    numberOfHits: 1
+    Unknown2180: 1
+    Unknown2181: 1
+    Unknown2182: 1
+    Unknown2183: 1
+    Unknown35: 45, s32'end2'
+    Unknown35: 47, s32'end'
+    upon: (FRAME_STEP)
+      ifOperation: (IS_GREATER), (VARIABLE), 104, (STATIC), 403200
+        Unknown1058: 1
+        endIf: 
+      else: 
+        Unknown1058: 0
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'ZTE0_00', 1
+  playCharacterSFX: s32'0'
+  addPositionX: 350000
+  Unknown98: 0
+  Unknown1602: 1
+  linkParticleEx: s32'zat_drill_start'
+  Unknown32: s32'KageDamari'
+  createObject2: s32'KageDamari', 123
+  sprite: s32'ZTE0_00', 2
+  sprite: s32'ZTE0_01', 3
+  sprite: s32'ZTE0_02', 3
+  hit: 
+  linkParticleEx: s32'zat_drill_loop'
+  Unknown23: 47
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  setMarker: s32'end'
+  sprite: s32'ZTE0_06', 4
+  Unknown23: 47
+  linkParticleEx: s32'zat_drill_end'
+  recoveryState: 
+  Unknown1771: s32'KageDamari', 25
+  sprite: s32'ZTE0_07', 4
+  sprite: s32'ZTE0_08', 4
+  sprite: s32'ZTE0_09', 4
+  sprite: s32'ZTE0_09', 20
+  Unknown3: 
+  Unknown1603: 1
+  exitState: 
+  setMarker: s32'end2'
+  sprite: s32'null', 20
+  Unknown1771: s32'InviteHellC', 24
+  sprite: s32'ZTE0_06', 4
+  linkParticleEx: s32'zat_drill_end'
+  recoveryState: 
+  Unknown1771: s32'KageDamari', 25
+  sprite: s32'ZTE0_07', 4
+  sprite: s32'ZTE0_08', 4
+  sprite: s32'ZTE0_09', 4
+  sprite: s32'ZTE0_09', 20
+  Unknown3: 
+  Unknown1603: 1
+  endState: 
+
+startState: s32'DrillD'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    guardType: (LOW)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 1
+    riscMinus: 19
+    damage: 40
+    Unknown725: 1
+    Unknown1108: 90
+    Unknown1105: 3
+    hitAirPushbackY: 27000
+    Unknown1127: 1
+    Unknown2185: 1
+    numberOfHits: 1
+    Unknown2180: 1
+    Unknown2181: 1
+    Unknown2182: 1
+    Unknown2183: 1
+    Unknown35: 45, s32'end2'
+    Unknown35: 47, s32'end'
+    upon: (FRAME_STEP)
+      ifOperation: (IS_GREATER), (VARIABLE), 104, (STATIC), 403200
+        Unknown1058: 1
+        endIf: 
+      else: 
+        Unknown1058: 0
+        endElse: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'ZTE0_00', 1
+  playCharacterSFX: s32'0'
+  addPositionX: 787500
+  Unknown98: 0
+  Unknown1602: 2
+  linkParticleEx: s32'zat_drill_start'
+  Unknown32: s32'KageDamari'
+  createObject2: s32'KageDamari', 123
+  sprite: s32'ZTE0_00', 2
+  sprite: s32'ZTE0_01', 3
+  sprite: s32'ZTE0_02', 3
+  hit: 
+  linkParticleEx: s32'zat_drill_loop'
+  Unknown23: 47
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  sprite: s32'ZTE0_02', 3
+  sprite: s32'ZTE0_03', 3
+  sprite: s32'ZTE0_04', 3
+  sprite: s32'ZTE0_05', 3
+  setMarker: s32'end'
+  sprite: s32'ZTE0_06', 4
+  Unknown23: 47
+  linkParticleEx: s32'zat_drill_end'
+  recoveryState: 
+  Unknown1771: s32'KageDamari', 25
+  sprite: s32'ZTE0_07', 4
+  sprite: s32'ZTE0_08', 4
+  sprite: s32'ZTE0_09', 4
+  sprite: s32'ZTE0_09', 20
+  Unknown3: 
+  Unknown1603: 1
+  exitState: 
+  setMarker: s32'end2'
+  sprite: s32'null', 20
+  Unknown1771: s32'InviteHellD', 24
+  sprite: s32'ZTE0_06', 4
+  linkParticleEx: s32'zat_drill_end'
+  recoveryState: 
+  Unknown1771: s32'KageDamari', 25
+  sprite: s32'ZTE0_07', 4
+  sprite: s32'ZTE0_08', 4
+  sprite: s32'ZTE0_09', 4
+  sprite: s32'ZTE0_09', 20
+  Unknown3: 
+  Unknown1603: 1
+  endState: 
+
+startState: s32'KageDamari'
+  upon: (IMMEDIATE)
+    linkParticleEx: s32'zat_kagedamari'
+    upon: (ON_DESTROY)
+      Unknown2161: 123, -130000, 0
+      Unknown448: s32'zat_415shadow_floor', 130
+      playSFX: s32'SE_WATER'
+      deactivateObj: (SELF)
+      Unknown41: 22
+      callSubroutine: s32'q_WEEKLY_ZAT_SHADOW_SHOT', 0, 0, 0, 0, 0, 0, 0, 0
+      Unknown40: 
+      endUpon: 
+    upon: 25
+      Unknown2156: 0
+      Unknown2177: 1
+      endUpon: 
+    upon: (BEFORE_EXIT)
+      storeValue: (VARIABLE), 6, (STATIC), 3000000
+      endUpon: 
+    upon: 59
+      deactivateObj: (SELF)
+      endUpon: 
+    endUpon: 
+  sprite: s32'kageyarareEX', 1
+  sprite: s32'kageyarareEX', 300
+  storeValue: (VARIABLE), 6, (VARIABLE), 17
+  Unknown3: 
+  endState: 
+
+startState: s32'AmorphousObj'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    isAirUnblockable: 1
+    groundHitEffect: (AIR_FACE_UP)
+    disableHitstop: 1
+    attackLevel: 2
+    Unknown1137: 32
+    damage: 72
+    if: (VARIABLE), 115
+      damage: 90
+      stunValue: 72
+      Unknown1177: 1
+      Unknown1179: 1
+      Unknown1086: 50
+      Unknown1165: s32'AmorphousObj_Burst'
+      endIf: 
+    if: (VARIABLE), 84
+      damage: 72
+      hitAirPushbackX: 25000
+      Unknown1137: 64
+      if: (VARIABLE), 115
+        damage: 90
+        stunValue: 50
+        Unknown1177: 1
+        Unknown1179: 1
+        endIf: 
+      endIf: 
+    riscPlus: 10
+    hitAirPushbackY: 17500
+    if: (VARIABLE), 126
+      guardType: (NONE)
+      endIf: 
+    upon: (HIT)
+      if: (VARIABLE), 115
+        ifNot: (VARIABLE), 45
+          storeValue: (VARIABLE), 45, (STATIC), 1
+          Unknown2130: 5000
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'ZTE2_01', 3
+  Unknown2161: 100, 200000, 0
+  createObject2: s32'430Amorphous', 130
+  hitUnchecked: 
+  sprite: s32'ZTE2_02', 3
+  playCharacterSFX: s32'4'
+  sprite: s32'ZTE2_03', 3
+  sprite: s32'ZTE2_04', 3
+  sprite: s32'ZTE2_05', 3
+  if: (VARIABLE), 84
+    hitAirPushbackY: 20000
+    hit: 
+    untechableTime: 60
+    endIf: 
+  else: 
+    hitAirPushbackY: 49000
+    untechableTime: 25
+    hit: 
+    endElse: 
+  sprite: s32'ZTE2_06', 3
+  sprite: s32'ZTE2_07', 3
+  sprite: s32'ZTE2_08', 3
+  sprite: s32'ZTE2_09', 3
+  sprite: s32'ZTE2_10', 3
+  if: (VARIABLE), 84
+    Unknown2247: 2, 164, 2, 45
+    callEtcState: s32'AmorphousObj2', 0
+    Unknown41: 1
+    addPositionX: 500000
+    Unknown40: 
+    endIf: 
+  endState: 
+
+startState: s32'AmorphousObj2'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    isAirUnblockable: 1
+    groundHitEffect: (AIR_FACE_UP)
+    disableHitstop: 1
+    attackLevel: 2
+    Unknown1137: 32
+    damage: 72
+    if: (VARIABLE), 115
+      damage: 90
+      stunValue: 72
+      Unknown1177: 1
+      Unknown1179: 1
+      endIf: 
+    if: (VARIABLE), 84
+      damage: 72
+      hitAirPushbackX: 25000
+      Unknown1137: 64
+      if: (VARIABLE), 115
+        damage: 90
+        stunValue: 50
+        Unknown1177: 1
+        Unknown1179: 1
+        endIf: 
+      endIf: 
+    riscPlus: 10
+    hitAirPushbackY: 17500
+    if: (VARIABLE), 126
+      guardType: (NONE)
+      endIf: 
+    upon: (HIT)
+      if: (VARIABLE), 115
+        ifNot: (VARIABLE), 116
+          ifNot: (VARIABLE), 45
+            storeValue: (VARIABLE), 45, (STATIC), 1
+            Unknown2130: 5000
+            endIf: 
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'ZTE2_01', 3
+  Unknown2161: 100, 200000, 0
+  createObject2: s32'430Amorphous', 130
+  hitUnchecked: 
+  sprite: s32'ZTE2_02', 3
+  playCharacterSFX: s32'4'
+  sprite: s32'ZTE2_03', 3
+  sprite: s32'ZTE2_04', 3
+  sprite: s32'ZTE2_05', 3
+  if: (VARIABLE), 84
+    hitAirPushbackY: 20000
+    hit: 
+    untechableTime: 60
+    endIf: 
+  else: 
+    hitAirPushbackY: 49000
+    untechableTime: 25
+    hit: 
+    endElse: 
+  sprite: s32'ZTE2_06', 3
+  sprite: s32'ZTE2_07', 3
+  sprite: s32'ZTE2_08', 3
+  sprite: s32'ZTE2_09', 3
+  sprite: s32'ZTE2_10', 3
+  endState: 
+
+startState: s32'Hajikare_stand'
+  sprite: s32'null', 60
+  Unknown466: (PARENT)
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'zat_hajikare'
+  endState: 
+
+startState: s32'Hajikare_crouch'
+  sprite: s32'null', 60
+  Unknown466: (PARENT)
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'zat_hajikare_crouch'
+  endState: 
+
+startState: s32'Appear_s'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_appear_s'
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+startState: s32'Appear_m'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_appear_m'
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+startState: s32'204shadowfloor'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_204shadowfloor'
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+startState: s32'231shadow'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_231shadow'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+startState: s32'Air_dust'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_airdust'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Dashbrake'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_dashbrake'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Homingcharge'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_homing_charge'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Dhand_atk'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_dhand_start'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Dhand_miss'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_dhand_miss'
+    linkParticleEx: s32'zat_edy_sharkfloor'
+    Unknown156: 1500
+    setObjectWidth: 1500
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+startState: s32'Drunkershade'
+  upon: (IMMEDIATE)
+    Unknown458: 3
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_drunkershade'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'305Floorr_shadowloop'
+  sprite: s32'null', 2147483647
+  Unknown466: (PARENT)
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'zat_nomal_floorshadow'
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'306Floorr_shadowloop'
+  sprite: s32'null', 2147483647
+  Unknown466: (PARENT)
+  Unknown457: (PARENT)
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'zat_stand_loop'
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'300Floor_shadowloop'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_300floorshadow'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'301Floor_shadowloop'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_301floorshadow'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'413drill'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'zat_413drill'
+    endUpon: 
+  sprite: s32'null', 20
+  endState: 
+
+startState: s32'430Amorphous'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_430amorphous'
+    endUpon: 
+  sprite: s32'null', 120
+  endState: 
+
+startState: s32'432Executor'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_executor'
+    upon: (ON_HIT_OR_BLOCK)
+      Unknown14: s32'End'
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  setMarker: s32'End'
+  sprite: s32'null', 2147483647
+  Unknown448: s32'zat_executor_end', 100
+  deactivateObj: (SELF)
+  endState: 
+
+startState: s32'Edyz_test'
+  upon: (IMMEDIATE)
+    linkPawnWithAnim: s32'edyz_shark', s32''
+    endUpon: 
+  sprite: s32'zat431_shark_01', 3
+  sprite: s32'zat431_shark_02', 3
+  sprite: s32'zat431_shark_03', 3
+  sprite: s32'zat431_shark_04', 3
+  sprite: s32'zat431_shark_05', 3
+  sprite: s32'zat431_shark_06', 3
+  sprite: s32'zat431_shark_07', 3
+  sprite: s32'zat431_shark_08', 3
+  endState: 
+
+startState: s32'Neoblitz_atk'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'zat_neoblitz'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+startState: s32'Edy'
+  upon: (IMMEDIATE)
+    linkPawnWithAnim: s32'edyz_body', s32'zat700cs_body'
+    Unknown2021: 0
+    endUpon: 
+  sprite: s32'null', 1200
+  endState: 
+
+startState: s32'Tojo_eyebloom'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'zat_tojo_edyeye'
+    endUpon: 
+  sprite: s32'null', 800
+  endState: 
+
+startState: s32'BG_ichigeki'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'zat_ichigeki_bg'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'zat_ichigeki_screen'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'zat_ichigeki_screen'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+startState: s32'ACEvtZAT_7A'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_HEIJI1'
+  Unknown2122: 
+  sprite: s32'null', 1
+  Unknown2120: '0x6D61696E0000000000000000000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  sprite: s32'null', 90
+  Unknown2113: '0x4143325F5A41545F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237415F30303200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037415F303100000000000000000000000000000000000001000000'
+  Unknown2106: '0x4143325F5A41545F4237415F30303300000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237415F30303400000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237415F30303500000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037415F303100000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4237415F30303600000000000000000000000000000000001E000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+startState: s32'ACEvtZAT_7B'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, 0, 30
+    Unknown2107: '0x4576656E745A41543037425F303100000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: '0x4845494A4931000000000000000000000000000000000000000000000000000000000000'
+  Unknown2115: 40, 0
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30303100000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037425F303100000000000000000000000000000000000001000000'
+  Unknown2106: '0x4143325F5A41545F4237425F30303200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30303300000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037425F303200000000000000000000000000000000000001000000'
+  Unknown2106: '0x4143325F5A41545F4237425F30303400000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30303500000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30303600000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037425F303200000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4237425F30303700000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30303800000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30303900000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037425F303300000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4237425F30313000000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037425F303300000000000000000000000000000000000001000000'
+  Unknown2106: '0x4143325F5A41545F4237425F30313100000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30313200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543037425F303400000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4237425F30313300000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4237425F30313400000000000000000000000000000000001E000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+startState: s32'ACEvtZAT_8A'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E745A41543038415F303100000000000000000000000000000000000001000000'
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_SeriousTalk'
+  Unknown2123: s32'BGM_Politics'
+  Unknown2122: 
+  sprite: s32'null', 1
+  Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+  Unknown2115: 50, 0
+  sprite: s32'null', 90
+  Unknown2113: '0x4143325F5A41545F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238415F303032000000000000000000000000000000000032000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238415F303033000000000000000000000000000000000032000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238415F303034000000000000000000000000000000000032000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543038415F303100000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4238415F30303500000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238415F303036000000000000000000000000000000000046000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238415F303037000000000000000000000000000000000028000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543038415F303200000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4238415F303038000000000000000000000000000000000028000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543038415F303300000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4238415F303039000000000000000000000000000000000028000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238415F30313000000000000000000000000000000000003C000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543038415F303200000000000000000000000000000000000001000000'
+  Unknown2106: '0x4143325F5A41545F4238415F30313100000000000000000000000000000000001E000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+startState: s32'ACEvtZAT_8B'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, 0, 30
+    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
+    Unknown2107: '0x4576656E745A41543038425F303100000000000000000000000000000000000001000000'
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: '0x506F6C697469637300000000000000000000000000000000000000000000000000000000'
+  Unknown2115: 50, 0
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238425F30303100000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238425F30303200000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543038425F303200000000000000000000000000000000000001000000'
+  Unknown2106: '0x4143325F5A41545F4238425F30303300000000000000000000000000000000003C000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238425F30303400000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2107: '0x4576656E745A41543038425F303100000000000000000000000000000000000000000000'
+  Unknown2106: '0x4143325F5A41545F4238425F30303500000000000000000000000000000000001E000000'
+  sprite: s32'null', 2147483647
+  Unknown2106: '0x4143325F5A41545F4238425F30303600000000000000000000000000000000001E000000'
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+

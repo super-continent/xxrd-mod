@@ -1,0 +1,6494 @@
+startSubroutine: s32'PreInit'
+  Unknown1264: s16'zat'
+  endSubroutine: 
+
+startSubroutine: s32'PreInit2nd'
+  storeValue: (VARIABLE), 61, (STATIC), 0
+  ifNot: (VARIABLE), 61
+    ifOpponentCharacter: s16'mll'
+      Unknown2213: s32'entry_default', s32'entry_default', 1
+      storeValue: (VARIABLE), 61, (STATIC), 1
+      endIf: 
+    endIf: 
+  ifNot: (VARIABLE), 61
+    Unknown2213: s32'entry_default', s32'', 0
+    storeValue: (VARIABLE), 61, (STATIC), 1
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'RoundInit'
+  life: 420
+  walkFSpeed: 4900
+  walkBSpeed: 3850
+  initDashFSpeed: 13562
+  Unknown1215: 14000
+  Unknown1216: 5250
+  Unknown1217: 700
+  forwardJumpXSpeed: 8750
+  backwardJumpXSpeed: 8750
+  jumpYSpeed: 42000
+  gravity: 2275
+  forwardHighJumpXSpeed: 8750
+  backwardHighJumpXSpeed: 8750
+  highJumpYSpeed: 52500
+  highJumpGravity: 1925
+  dashAcceleration: 525
+  dashFriction: 100
+  Unknown1228: 1750
+  Unknown1229: 5250
+  Unknown1230: 16
+  Unknown1231: 52500
+  Unknown1232: 131250
+  Unknown1233: 18
+  Unknown1234: 10
+  stunResistance: 60
+  Unknown1236: 24
+  guts: 0
+  gutsLevel: 0
+  weight: 100
+  airDashCount: 1
+  doubleJumpCount: 1
+  Unknown1242: 6
+  Unknown1243: 5
+  Unknown1244: 12
+  Unknown1245: 10
+  Unknown1246: 25
+  Unknown1247: 25
+  Unknown1248: 32
+  Unknown1249: 5
+  Unknown1250: 50
+  airdashFSpeed: 29750
+  airdashBSpeed: 25375
+  Unknown1253: 105000
+  Unknown1254: 227500
+  Unknown1255: 112000
+  Unknown1256: 175000
+  Unknown1257: 105000
+  airthrowRange: 192500
+  Unknown1259: -70000
+  Unknown1260: 280000
+  Unknown1262: 0
+  Unknown1261: 9, 18, 9, 18, 9, 18
+  Unknown1268: 1
+  Unknown1269: 0
+  Unknown1273: 100
+  Unknown1274: 150000
+  Unknown1275: 100
+  if: (VARIABLE), 84
+    walkFSpeed: 4900
+    walkBSpeed: 3850
+    initDashFSpeed: 13562
+    Unknown1215: 14000
+    Unknown1216: 5250
+    Unknown1217: 700
+    forwardJumpXSpeed: 8750
+    backwardJumpXSpeed: 8750
+    jumpYSpeed: 42000
+    gravity: 2275
+    forwardHighJumpXSpeed: 8750
+    backwardHighJumpXSpeed: 8750
+    highJumpYSpeed: 52500
+    highJumpGravity: 1925
+    dashAcceleration: 875
+    dashFriction: 100
+    Unknown1228: 1750
+    Unknown1229: 5250
+    Unknown1230: 16
+    Unknown1231: 52500
+    Unknown1232: 131250
+    Unknown1233: 12
+    Unknown1234: 10
+    stunResistance: 60
+    Unknown1236: -16
+    guts: 3
+    gutsLevel: 0
+    weight: 100
+    airDashCount: 1
+    doubleJumpCount: 1
+    Unknown1242: 6
+    Unknown1243: 5
+    Unknown1244: 12
+    Unknown1245: 10
+    Unknown1246: 25
+    Unknown1247: 25
+    Unknown1248: 32
+    Unknown1249: 5
+    Unknown1250: 50
+    airdashFSpeed: 40250
+    airdashBSpeed: 25375
+    Unknown1253: 105000
+    Unknown1254: 227500
+    Unknown1255: 112000
+    Unknown1256: 175000
+    Unknown1257: 105000
+    airthrowRange: 192500
+    Unknown1259: -70000
+    Unknown1260: 280000
+    Unknown1262: 0
+    Unknown1261: 9, 18, 9, 18, 9, 18
+    Unknown1268: 1
+    Unknown1269: 0
+    Unknown1273: 100
+    Unknown1274: 150000
+    Unknown1275: 100
+    endIf: 
+  addMove: s32'Fly'
+    moveType: (DUST_FOLLOWUP)
+    characterState: (JUMPING)
+    moveInput: 216
+    addMoveFlag: 6
+    addMoveFlag: 110
+    Unknown1392: 16
+    Unknown1381: 25
+    endMoveRegister: 
+  addMove: s32'NmlAtk5A'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -351, -309, 287, 94
+    Unknown1537: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk6A'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -258, -393, 226, 231
+    Unknown1541: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2A'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -365, -156, 319, 96
+    Unknown1537: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5B'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -336, -63, 283, 70
+    Unknown1537: 
+    Unknown1539: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk6B'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -290, -278, 190, 220
+    Unknown1538: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2B'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -313, -171, 201, 206
+    Unknown1537: 
+    Unknown1539: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5CNear'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_DISALLOW_UP)
+    addMoveFlag: 102
+    Unknown1498: -274, -324, 249, 147
+    Unknown1531: 
+    Unknown1532: 
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5CFar'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_DISALLOW_UP)
+    addMoveFlag: 103
+    Unknown1498: -416, -358, 274, 233
+    Unknown1531: 
+    Unknown1532: 
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2C'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -537, -185, 387, 133
+    Unknown1531: 
+    Unknown1532: 
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5D'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -437, -235, 383, 181
+    Unknown1531: 
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk6D'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -429, -518, 221, 289
+    Unknown1541: 
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2D'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -305, -653, 241, 440
+    Unknown1541: 
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5E'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_D)
+    moveInput: (INPUT_DISALLOW_UP)
+    Unknown1498: -376, -266, 269, 129
+    Unknown1538: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'HomingJump'
+    moveType: (DUST_FOLLOWUP)
+    characterState: (STANDING)
+    Unknown1486: 1
+    moveInput: (INPUT_ANY_UP)
+    isFollowupMove: 1
+    endMoveRegister: 
+  addMove: s32'HomingDash2'
+    moveType: (DUST_FOLLOWUP)
+    characterState: (STANDING)
+    moveInput: (INPUT_6)
+    isFollowupMove: 1
+    endMoveRegister: 
+  addMove: s32'NmlAtk2E'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_D)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -341, -47, 266, 50
+    Unknown1534: 
+    Unknown1539: 
+    Unknown1532: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5F'
+    moveType: (NORMAL)
+    Unknown1387: 1
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_TAUNT)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'NmlAtk6F'
+    moveType: (NORMAL)
+    Unknown1387: 2
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_TAUNT)
+    moveInput: (INPUT_ANY_FORWARD)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5A'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_P)
+    Unknown1498: -261, -309, 184, 203
+    Unknown1534: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5B'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1498: -314, -234, 162, 94
+    Unknown1534: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5C'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -213, -171, 143, 87
+    Unknown1534: 
+    Unknown1538: 
+    Unknown1531: 
+    Unknown1532: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5D'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1498: -312, -341, 239, 233
+    Unknown1534: 
+    Unknown1538: 
+    Unknown1531: 
+    Unknown1532: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5E'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_D)
+    Unknown1498: -367, -563, 334, 231
+    Unknown1534: 
+    Unknown1532: 
+    endMoveRegister: 
+  addMove: s32'DeadAngleAttack'
+    moveType: (DEAD_ANGLE_ATTACK)
+    characterState: (STANDING)
+    Unknown1406: 4
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: 167
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    endMoveRegister: 
+  addMove: s32'CounterGuardStand'
+    moveType: (BLITZ_SHIELD)
+    characterState: (STANDING)
+    Unknown1406: 5
+    moveInput: 107
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_8)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    addMoveFlag: (REQUIRES_25_TENSION)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'CounterGuardCrouch'
+    moveType: (BLITZ_SHIELD)
+    characterState: (CROUCHING)
+    Unknown1406: 5
+    moveInput: (INPUT_2)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_3)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    addMoveFlag: (REQUIRES_25_TENSION)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'CounterGuardAir'
+    moveType: (BLITZ_SHIELD)
+    characterState: (JUMPING)
+    Unknown1406: 5
+    moveInput: 107
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    addMoveFlag: (REQUIRES_25_TENSION)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'IchigekiJunbi'
+    moveType: (INSTANT_KILL_PREPARATION)
+    characterState: (STANDING)
+    addMoveFlag: 106
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'MOMSuki'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: 287
+    disableSpecialCancel: 1
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'DebugSkillEx'
+    moveType: (SPECIAL)
+    characterState: (NONE)
+    moveInput: 47
+    addMoveFlag: 111
+    endMoveRegister: 
+  addMove: s32'InviteHellC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_22)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1392: 1
+    Unknown1498: -460, -346, 142, 333
+    Unknown1536: 
+    Unknown1532: 
+    Unknown1531: 
+    Unknown1550: 
+    endMoveRegister: 
+  addMove: s32'InviteHellD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_22)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1392: 2
+    Unknown1498: -976, -292, 110, 296
+    Unknown1535: 
+    Unknown1532: 
+    Unknown1531: 
+    Unknown1550: 
+    Unknown1511: 120
+    endMoveRegister: 
+  addMove: s32'DrunkerdShade'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -198, -404, 114, 370
+    Unknown1534: 
+    Unknown1555: 
+    endMoveRegister: 
+  addMove: s32'EddieSummonA'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_P)
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1555: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'EddieSummonB'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_K)
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'EddieSummonC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_S)
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'EddieSummonD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_H)
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1555: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'EddieSummonD2'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_H)
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1555: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'EddieReturn'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: 272
+    addMoveFlag: 17
+    addMoveFlag: 12
+    Unknown1555: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'BreakTheLaw'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1511: 80
+    Unknown1555: 
+    endMoveRegister: 
+  addMove: s32'ShadowGallary'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_41236)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -82, -462, 21, 458
+    Unknown1536: 
+    Unknown1555: 
+    Unknown1511: 120
+    endMoveRegister: 
+  addMove: s32'DamnedFang'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_623)
+    moveInput: (INPUT_PRESS_S)
+    disableSpecialCancel: 1
+    Unknown1498: -188, -394, 167, 402
+    Unknown1540: 
+    Unknown1538: 
+    Unknown1539: 
+    Unknown1531: 
+    Unknown1555: 
+    Unknown1511: 150
+    endMoveRegister: 
+  addMove: s32'FBExhaust'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_D)
+    addMoveFlag: (REQUIRES_25_TENSION)
+    endMoveRegister: 
+  addMove: s32'Amorphous'
+    moveType: (OVERDRIVE)
+    characterState: (STANDING)
+    moveInput: (INPUT_632146)
+    moveInput: (INPUT_PRESS_H)
+    addMoveFlag: (REQUIRES_50_TENSION)
+    Unknown1498: -284, -384, 274, 386
+    Unknown1534: 
+    Unknown1536: 
+    Unknown1548: 
+    Unknown1543: 
+    Unknown1557: 
+    endMoveRegister: 
+  addMove: s32'AmorphousBurst'
+    Unknown1394: s32'Amorphous'
+    moveType: (OVERDRIVE)
+    Unknown1387: 4
+    characterState: (STANDING)
+    moveInput: (INPUT_632146)
+    moveInput: (INPUT_PRESS_D)
+    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveFlag: 116
+    Unknown1498: -284, -384, 274, 386
+    Unknown1534: 
+    Unknown1536: 
+    Unknown1548: 
+    Unknown1543: 
+    Unknown1557: 
+    endMoveRegister: 
+  addMove: s32'MegalithHead'
+    moveType: (OVERDRIVE)
+    characterState: (STANDING)
+    moveInput: (INPUT_632146)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1392: 4
+    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveFlag: 17
+    addMoveFlag: 12
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'MegalithHead2'
+    Unknown1394: s32'MegalithHead'
+    moveType: (OVERDRIVE)
+    characterState: (STANDING)
+    moveInput: (INPUT_632146)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1392: 4
+    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'Executer'
+    moveType: (OVERDRIVE)
+    characterState: (JUMPING)
+    moveInput: (INPUT_236236)
+    moveInput: (INPUT_PRESS_S)
+    addMoveFlag: (REQUIRES_50_TENSION)
+    Unknown1498: -364, -238, 343, 134
+    Unknown1534: 
+    Unknown1556: 
+    Unknown1543: 
+    endMoveRegister: 
+  addMove: s32'Ichigeki'
+    moveType: (INSTANT_KILL)
+    characterState: (STANDING)
+    addMoveFlag: 107
+    moveInput: (INPUT_236236)
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  addMove: s32'RC_SetPlay'
+    Unknown1488: 2, 1, 30
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1561: 
+    Unknown1483: s32'CmnStandForce'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 20
+    Unknown1483: s32'EddieSummonB'
+    endMoveRegister: 
+  addMove: s32'RC_HomingJumpCombo'
+    Unknown1488: 2, 1, 30
+    Unknown1561: 
+    Unknown1483: s32'NmlAtkAir5E'
+    Unknown1483: s32'NmlAtkAir5E'
+    Unknown1483: s32'NmlAtkAir5C'
+    Unknown1483: s32'NmlAtkAir5D'
+    Unknown1483: s32'NmlAtkAir5E'
+    endMoveRegister: 
+  addMove: s32'RC_BonusA'
+    Unknown1488: 2, 0, 30
+    Unknown1392: 1
+    Unknown1392: 2
+    Unknown1559: 
+    Unknown1483: s32'InviteHellC'
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'BreakTheLaw'
+    Unknown1482: 36, 10
+    Unknown1482: 40, 30
+    endMoveRegister: 
+  addMove: s32'RC_BonusB'
+    Unknown1488: 2, 0, 30
+    Unknown1559: 
+    Unknown1483: s32'DrunkerdShade'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 8
+    Unknown1483: s32'DrunkerdShade'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 16
+    Unknown1483: s32'DamnedFang'
+    endMoveRegister: 
+  addMove: s32'RC_BonusC'
+    Unknown1488: 2, 0, 30
+    Unknown1559: 
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 0, 8
+    Unknown1482: 9, 1
+    Unknown1482: 10, 10
+    Unknown1482: 9, 20
+    Unknown1482: 10, 2
+    Unknown1482: 9, 20
+    Unknown1483: s32'NmlAtkAir5E'
+    Unknown1483: s32'CmnFJump'
+    Unknown1483: s32'ShadowGallary'
+    endMoveRegister: 
+  addMove: s32'RC_BerserkA'
+    Unknown1488: 2, 0, 30
+    Unknown1560: 
+    Unknown1483: s32'NmlAtk5D'
+    Unknown1482: 0, 2
+    Unknown1482: 32, 2
+    Unknown1482: 0, 2
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'NmlAtk5D'
+    Unknown1482: 0, 2
+    Unknown1482: 32, 2
+    Unknown1482: 0, 2
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'NmlAtk6D'
+    endMoveRegister: 
+  addMove: s32'RC_BerserkB'
+    Unknown1488: 2, 0, 30
+    Unknown1560: 
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 0, 6
+    Unknown1482: 9, 16
+    Unknown1483: s32'NmlAtkAir5B'
+    Unknown1482: 0, 2
+    Unknown1482: 32, 2
+    Unknown1482: 0, 2
+    Unknown1483: s32'NmlAtkAir5C'
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 0, 6
+    Unknown1482: 9, 16
+    Unknown1483: s32'NmlAtkAir5B'
+    Unknown1482: 0, 2
+    Unknown1482: 64, 2
+    Unknown1482: 0, 2
+    Unknown1483: s32'NmlAtkAir5C'
+    Unknown1483: s32'InviteHellC'
+    endMoveRegister: 
+  addMove: s32'RC_BerserkC'
+    Unknown1488: 2, 0, 30
+    Unknown1560: 
+    Unknown1483: s32'CmnFJump'
+    Unknown1483: s32'ShadowGallary'
+    Unknown1482: 0, 2
+    Unknown1482: 32, 2
+    Unknown1482: 0, 2
+    Unknown1483: s32'CmnFHighJump'
+    Unknown1482: 0, 6
+    Unknown1483: s32'ShadowGallary'
+    Unknown1483: s32'CmnFHighJump'
+    Unknown1482: 0, 14
+    Unknown1483: s32'ShadowGallary'
+    endMoveRegister: 
+  addMove: s32'RC_BerserkD'
+    Unknown1488: 2, 0, 30
+    addMoveFlag: 17
+    addMoveFlag: 16
+    Unknown1560: 
+    Unknown1511: 2000
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'EddieSummonD2'
+    Unknown1482: 0, 8
+    Unknown1482: 32, 1
+    Unknown1482: 0, 8
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 14
+    Unknown1483: s32'NmlAtk5E'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss1'
+    Unknown1488: 2, 0, 30
+    Unknown1392: 1
+    Unknown1557: 
+    Unknown1483: s32'EddieSummonC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'InviteHellC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'InviteHellC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'DrunkerdShade'
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss2'
+    Unknown1488: 2, 0, 30
+    Unknown1392: 2
+    Unknown1557: 
+    Unknown1483: s32'EddieSummonB'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'InviteHellC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'DamnedFang'
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss3'
+    Unknown1488: 2, 0, 30
+    Unknown1557: 
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 4
+    Unknown1483: s32'NmlAtk6D'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 8
+    Unknown1483: s32'NmlAtk6D'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 8
+    Unknown1483: s32'NmlAtk6B'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 16
+    Unknown1482: 0, 4
+    Unknown1482: 136, 10
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss4'
+    Unknown1488: 2, 0, 30
+    Unknown1557: 
+    Unknown1483: s32'BreakTheLaw'
+    Unknown1482: 40, 60
+    Unknown1483: s32'BreakTheLaw'
+    Unknown1482: 36, 30
+    Unknown1483: s32'BreakTheLaw'
+    Unknown1482: 40, 60
+    Unknown1483: s32'DamnedFang'
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_Trial0'
+    Unknown1488: 2, 0, 30
+    Unknown1485: 1
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'NmlAtk5B'
+    Unknown1483: s32'NmlAtk5CNear'
+    Unknown1483: s32'NmlAtk5CFar'
+    Unknown1482: 4, 26
+    Unknown1483: s32'NmlAtk2C'
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'EddieSummonD2'
+    Unknown1482: 40, 10
+    Unknown1482: 0, 999
+    endMoveRegister: 
+  addMove: s32'RC_Trial1'
+    Unknown1488: 2, 0, 30
+    Unknown1485: 1
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'NmlAtk5B'
+    Unknown1483: s32'NmlAtk5CNear'
+    Unknown1483: s32'NmlAtk5CFar'
+    Unknown1482: 4, 30
+    Unknown1483: s32'NmlAtk2C'
+    Unknown1483: s32'InviteHellD'
+    Unknown1483: s32'EddieSummonD2'
+    Unknown1482: 40, 10
+    Unknown1482: 0, 999
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot0'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot1'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot2'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot3'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot4'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishEddieSummonC'
+    Unknown1420: s32'EddieSummonC'
+    moveInput: 279
+    Unknown1423: 1
+    endMoveRegister: 
+  addMove: s32'StylishBreakTheLaw'
+    Unknown1420: s32'BreakTheLaw'
+    moveInput: 279
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_6)
+    moveInput: 279
+    endMoveRegister: 
+  addMove: s32'StylishInviteHellC'
+    Unknown1420: s32'InviteHellC'
+    moveInput: (INPUT_ANY_DOWN)
+    moveInput: 279
+    endMoveRegister: 
+  addMove: s32'StylishInviteHellD'
+    Unknown1420: s32'InviteHellD'
+    moveInput: 279
+    moveInput: (INPUT_ANY_FORWARD)
+    endMoveRegister: 
+  addMove: s32'StylishDrunkerdShade'
+    Unknown1420: s32'DrunkerdShade'
+    moveInput: 279
+    moveInput: 95
+    endMoveRegister: 
+  addMove: s32'StylishShadowGallary'
+    Unknown1420: s32'ShadowGallary'
+    moveInput: 279
+    endMoveRegister: 
+  addMove: s32'StylishAmorphous'
+    Unknown1420: s32'Amorphous'
+    moveInput: 279
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: 279
+    moveInput: (INPUT_PRESS_K)
+    endMoveRegister: 
+  addMove: s32'StylishMegalithHead'
+    Unknown1420: s32'MegalithHead'
+    moveInput: 279
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: 279
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  addMove: s32'StylishAmorphousBurst'
+    Unknown1420: s32'AmorphousBurst'
+    moveInput: 279
+    moveInput: (INPUT_PRESS_D)
+    endMoveRegister: 
+  addMove: s32'StylishExecuter'
+    Unknown1420: s32'Executer'
+    moveInput: 279
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: 279
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: 279
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: 279
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  registerFunc: s32'CmnNeutral'
+  registerFunc: s32'CmnStandForce'
+  registerFunc: s32'CmnFWalk'
+  registerFunc: s32'CmnFDash'
+  registerFunc: s32'CmnBWalk'
+  registerFunc: s32'CmnBDash'
+  registerFunc: s32'CmnVJump'
+  registerFunc: s32'CmnBJump'
+  registerFunc: s32'CmnFJump'
+  registerFunc: s32'CmnVHighJump'
+  registerFunc: s32'CmnBHighJump'
+  registerFunc: s32'CmnFHighJump'
+  registerFunc: s32'CmnBAirDash'
+  registerFunc: s32'CmnFAirDash'
+  registerFunc: s32'HomingDash2'
+  registerFunc: s32'HomingJump'
+  registerFunc: s32'NmlAtk5D'
+  registerFunc: s32'NmlAtk6D'
+  registerFunc: s32'NmlAtk2D'
+  registerFunc: s32'NmlAtk5CNear'
+  registerFunc: s32'NmlAtk5CFar'
+  registerFunc: s32'NmlAtk2C'
+  registerFunc: s32'NmlAtk5B'
+  registerFunc: s32'NmlAtk6B'
+  registerFunc: s32'NmlAtk2B'
+  registerFunc: s32'NmlAtk5A'
+  registerFunc: s32'NmlAtk6A'
+  registerFunc: s32'NmlAtk2A'
+  registerFunc: s32'NmlAtk5E'
+  registerFunc: s32'NmlAtk2E'
+  registerFunc: s32'NmlAtk5F'
+  registerFunc: s32'NmlAtk6F'
+  registerFunc: s32'NmlAtkAir5D'
+  registerFunc: s32'NmlAtkAir5C'
+  registerFunc: s32'NmlAtkAir5B'
+  registerFunc: s32'NmlAtkAir5A'
+  registerFunc: s32'NmlAtkAir5E'
+  registerFunc: s32'StylishComboSlot0'
+  registerFunc: s32'StylishComboSlot1'
+  registerFunc: s32'StylishComboSlot2'
+  registerFunc: s32'StylishComboSlot3'
+  registerFunc: s32'StylishComboSlot4'
+  registerFunc: s32'StylishBreakTheLaw'
+  registerFunc: s32'StylishEddieSummonC'
+  registerFunc: s32'StylishInviteHellD'
+  registerFunc: s32'StylishDrunkerdShade'
+  registerFunc: s32'StylishInviteHellC'
+  registerFunc: s32'StylishShadowGallary'
+  registerFunc: s32'StylishAmorphous'
+  registerFunc: s32'StylishMegalithHead'
+  registerFunc: s32'StylishAmorphousBurst'
+  registerFunc: s32'StylishExecuter'
+  registerFunc: s32'Fly'
+  registerFunc: s32'InviteHellD'
+  registerFunc: s32'InviteHellC'
+  registerFunc: s32'EddieSummonD'
+  registerFunc: s32'EddieSummonC'
+  registerFunc: s32'EddieSummonB'
+  registerFunc: s32'EddieSummonA'
+  registerFunc: s32'EddieReturn'
+  registerFunc: s32'EddieSummonD2'
+  registerFunc: s32'BreakTheLaw'
+  registerFunc: s32'DrunkerdShade'
+  registerFunc: s32'DamnedFang'
+  registerFunc: s32'ShadowGallary'
+  registerFunc: s32'FBExhaust'
+  registerFunc: s32'Executer'
+  registerFunc: s32'Amorphous'
+  registerFunc: s32'AmorphousBurst'
+  registerFunc: s32'MegalithHead'
+  registerFunc: s32'MegalithHead2'
+  registerFunc: s32'Ichigeki'
+  registerFunc: s32'FaultlessDefenceStand'
+  registerFunc: s32'FaultlessDefenceCrouch'
+  registerFunc: s32'FaultlessDefenceAir'
+  registerFunc: s32'CmnActItemUse'
+  registerFunc: s32'CounterGuardStand'
+  registerFunc: s32'CounterGuardCrouch'
+  registerFunc: s32'CounterGuardAir'
+  registerFunc: s32'CmnMaximumBurst'
+  registerFunc: s32'CmnDamageBurst'
+  registerFunc: s32'DeadAngleAttack'
+  registerFunc: s32'RedRomanCancel'
+  registerFunc: s32'RomanCancelHit'
+  registerFunc: s32'IchigekiJunbi'
+  registerFunc: s32'MOMSuki'
+  registerFunc: s32'DebugSkillEx'
+  registerFunc: s32'RC_CmnNamepuA'
+  registerFunc: s32'RC_CmnNamepuB'
+  registerFunc: s32'RC_CmnNamepuC'
+  registerFunc: s32'RC_CmnNage'
+  registerFunc: s32'RC_CmnDashShikomiNage'
+  registerFunc: s32'RC_CmnJumpHighSlash'
+  registerFunc: s32'RC_CmnJumpDashHighSlash'
+  registerFunc: s32'RC_SetPlay'
+  registerFunc: s32'RC_HomingJumpCombo'
+  registerFunc: s32'RC_BonusA'
+  registerFunc: s32'RC_BonusB'
+  registerFunc: s32'RC_BonusC'
+  registerFunc: s32'RC_BerserkA'
+  registerFunc: s32'RC_BerserkB'
+  registerFunc: s32'RC_BerserkC'
+  registerFunc: s32'RC_BerserkD'
+  registerFunc: s32'RC_MOMBoss1'
+  registerFunc: s32'RC_MOMBoss2'
+  registerFunc: s32'RC_MOMBoss3'
+  registerFunc: s32'RC_MOMBoss4'
+  registerFunc: s32'RC_Trial0'
+  registerFunc: s32'RC_Trial1'
+  Unknown1286: 0, s32'zat050_00'
+  Unknown1286: 1, s32'zat050_01'
+  Unknown1286: 2, s32'zat050_02'
+  Unknown1286: 3, s32'zat050_03'
+  Unknown1286: 4, s32'zat050_04'
+  Unknown1286: 5, s32'zat050_05'
+  Unknown1286: 6, s32'zat050_06'
+  Unknown1286: 7, s32'zat052_00'
+  Unknown1286: 8, s32'zat052_01'
+  Unknown1286: 9, s32'zat052_02'
+  Unknown1286: 10, s32'zat052_03'
+  Unknown1286: 11, s32'zat052_04'
+  Unknown1286: 12, s32'zat052_05'
+  Unknown1286: 13, s32'zat052_06'
+  Unknown1286: 14, s32'zat054_00'
+  Unknown1286: 15, s32'zat054_01'
+  Unknown1286: 16, s32'zat054_02'
+  Unknown1286: 17, s32'zat054_03'
+  Unknown1286: 18, s32'zat054_04'
+  Unknown1286: 19, s32'zat054_05'
+  Unknown1286: 20, s32'zat054_06'
+  Unknown1286: 21, s32'zat041_03'
+  Unknown1286: 22, s32'zat040_03'
+  Unknown1286: 23, s32'zat045_03'
+  Unknown1286: 24, s32'zat060_00'
+  Unknown1286: 25, s32'zat060_02'
+  Unknown1286: 26, s32'zat060_04'
+  Unknown1286: 27, s32'zat060_06'
+  Unknown1286: 28, s32'zat060_08'
+  Unknown1286: 29, s32'zat060_10'
+  Unknown1286: 30, s32'zat060_11'
+  Unknown1286: 31, s32'zat060_12'
+  Unknown1286: 32, s32'zat062_00'
+  Unknown1286: 33, s32'zat062_01'
+  Unknown1286: 34, s32'zat062_03'
+  Unknown1286: 35, s32'zat062_04'
+  Unknown1286: 36, s32'zat062_06'
+  Unknown1286: 37, s32'zat062_08'
+  Unknown1286: 38, s32'zat062_09'
+  Unknown1286: 39, s32'zat062_11'
+  Unknown1286: 40, s32'zat063_00'
+  Unknown1286: 41, s32'zat063_02'
+  Unknown1286: 42, s32'zat063_03'
+  Unknown1286: 43, s32'zat063_04'
+  Unknown1286: 44, s32'zat077_00'
+  Unknown1286: 45, s32'zat305_06'
+  Unknown1286: 46, s32'zat450_03'
+  Unknown1286: 47, s32'zat090_00'
+  Unknown629: s16'vxxx025', s16'voice_none'
+  Unknown629: s16'vxxx029', s16'voice_none'
+  if: (VARIABLE), 37
+    Unknown1679: s16'vxxx300', s16'r96', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r50', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'c70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx304', s16'r30c45r85', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r46', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx307', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r100', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r100', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  if: (VARIABLE), 38
+    Unknown1679: s16'vxxx300', s16'r60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r50', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx304', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r50', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx307', s16'r120', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  if: (VARIABLE), 39
+    Unknown1679: s16'vxxx300', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r36', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r30', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx304', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r100', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r40', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx307', s16'r50', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown47: s16'mll'
+  if: (VARIABLE), 0
+    Unknown1679: s16'vxxx300', s16'r104', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r40', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r72', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r20c35r75', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r20c35r75', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r120', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx350', s16'r55c35r60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx356', s16'r50c50r112', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx359', s16'r160', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx362', s16'r76c58r34', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown47: s16'ven'
+  if: (VARIABLE), 0
+    Unknown1679: s16'vxxx300', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r100', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r66', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r46c30r66', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r46c30r66', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r52', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx353', s16'r85c35r65', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx357', s16'r64c50r124', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx360', s16'r104c56r60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx362', s16'r74', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown47: s16'sly'
+  if: (VARIABLE), 0
+    Unknown1679: s16'vxxx300', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r34', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r54', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx355', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx358', s16'r110c40r72', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx361', s16'r46c64r92', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx362', s16'r64c30r56', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown1851: 0
+  Unknown1864: 0, 1
+  Unknown1856: 0, 6000
+  Unknown1855: 0, 6000
+  Unknown1865: 0, 1
+  Unknown1862: 0, 1
+  Unknown2012: s32''
+  Unknown2025: s32'headonly'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2027: 
+  Unknown2025: s32'zatoonly'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2027: 
+  Unknown2025: s32'MS_Entry'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'edyx_blob'
+  Unknown2027: 
+  Unknown2025: s32'MS_Entry2'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'edyx_blob'
+  Unknown2027: 
+  Unknown2025: s32'MS_Win'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'coat'
+  Unknown2027: 
+  Unknown2025: s32'MS_Amo'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'edyx_blob'
+  Unknown2026: s32'Zatw_eddyboots'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2027: 
+  Unknown2025: s32'MS_1'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edy_wing'
+  Unknown2027: 
+  Unknown2025: s32'MS_2'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'uphair'
+  Unknown2027: 
+  Unknown2025: s32'MS_3'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2026: s32'Edy_wing'
+  Unknown2027: 
+  Unknown2025: s32'MS_4'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2026: s32'uphair'
+  Unknown2026: s32'Edy_wing'
+  Unknown2027: 
+  Unknown2025: s32'MS_5'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_punch'
+  Unknown2027: 
+  Unknown2025: s32'MS_6'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_provoke02'
+  Unknown2027: 
+  Unknown2025: s32'MS_7'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edy_wing'
+  Unknown2026: s32'Edyw_doragonhead'
+  Unknown2027: 
+  Unknown2025: s32'MS_8'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edy_wing'
+  Unknown2026: s32'Edyw_jaws'
+  Unknown2026: s32'Edyx_shark'
+  Unknown2027: 
+  Unknown2025: s32'MS_9'
+  Unknown2026: s32'Edyx_shark'
+  Unknown2027: 
+  Unknown2025: s32'MS_11'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_snake'
+  Unknown2027: 
+  Unknown2025: s32'MS_12'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_cerberus'
+  Unknown2027: 
+  Unknown2025: s32'MS_13'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Zatw_hammerboots'
+  Unknown2026: s32'edyx_blob'
+  Unknown2026: s32'Zatw_eddyboots'
+  Unknown2027: 
+  Unknown2025: s32'MS_14'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_morningStar'
+  Unknown2027: 
+  Unknown2025: s32'MS_15'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Zatw_scytheboots'
+  Unknown2027: 
+  Unknown2025: s32'MS_16'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_shadowArm'
+  Unknown2027: 
+  Unknown2025: s32'MS_17'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_punch'
+  Unknown2027: 
+  Unknown2025: s32'MS_18'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Zatw_eddyboots'
+  Unknown2027: 
+  Unknown2025: s32'MS_19'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_splash'
+  Unknown2027: 
+  Unknown2025: s32'MS_20'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_snake'
+  Unknown2026: s32'Edyx_shark'
+  Unknown2027: 
+  Unknown2025: s32'MS_21'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'uphair'
+  Unknown2026: s32'Zatw_scytheboots'
+  Unknown2027: 
+  Unknown2025: s32'MS_22'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_provoke01'
+  Unknown2027: 
+  Unknown2025: s32'MS_23'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_respect01'
+  Unknown2026: s32'edyx_blob'
+  Unknown2027: 
+  Unknown2025: s32'MS_24'
+  Unknown2026: s32'Edyx_airthrow'
+  Unknown2027: 
+  Unknown2025: s32'MS_25'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'edyx_blob'
+  Unknown2027: 
+  Unknown2025: s32'MS_26'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_shark'
+  Unknown2027: 
+  Unknown2025: s32'MS_27'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edy_wing'
+  Unknown2026: s32'Edyw_burst'
+  Unknown2027: 
+  Unknown2025: s32'MS_28'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edy_wing'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2027: 
+  Unknown2025: s32'MS_29'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_dragon'
+  Unknown2027: 
+  Unknown2025: s32'MS_30'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_demonhand'
+  Unknown2026: s32'edyx_blob'
+  Unknown2027: 
+  Unknown2025: s32'MS_31'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Edyx_thorn'
+  Unknown2027: 
+  Unknown2025: s32'MS_32'
+  Unknown2026: s32'Edyx_ghost'
+  Unknown2027: 
+  Unknown2025: s32'MS_33'
+  Unknown2026: s32'Edyx_ameba'
+  Unknown2026: s32'Edyx_ghost'
+  Unknown2027: 
+  Unknown2025: s32'MS_34'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Edyx_ameba'
+  Unknown2026: s32'Edyx_ghost'
+  Unknown2027: 
+  Unknown2025: s32'MS_35'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'zatw_guard_horizontal'
+  Unknown2027: 
+  Unknown2025: s32'MS_36'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'zatw_guard_vertical'
+  Unknown2027: 
+  Unknown2025: s32'MS_37'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'zatw_guard_crouch'
+  Unknown2027: 
+  Unknown2025: s32'MS_38'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'coat'
+  Unknown2027: 
+  Unknown2025: s32'high'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamage_Ichigeki'
+  Unknown47: s16'zat'
+  if: (VARIABLE), 0
+    Unknown2026: s32'Body'
+    Unknown2026: s32'hair'
+    Unknown2026: s32'head'
+    Unknown2026: s32'Manpu'
+    Unknown2026: s32'Zat_IKparts'
+    endIf: 
+  Unknown47: s16'fau'
+  if: (VARIABLE), 0
+    Unknown2026: s32'Body'
+    Unknown2026: s32'Head_High'
+    Unknown2026: s32'Zat_Manpu'
+    if: (VARIABLE), 37
+      Unknown2026: s32'FauIKParts_Killer'
+      endIf: 
+    if: (VARIABLE), 38
+      Unknown2026: s32'FauIKParts_Rose'
+      endIf: 
+    if: (VARIABLE), 39
+      Unknown2026: s32'FauIKParts_Cute'
+      endIf: 
+    endIf: 
+  Unknown47: s16'ven'
+  if: (VARIABLE), 0
+    Unknown2026: s32'VenIKBall'
+    endIf: 
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamageHigh'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2027: 
+  Unknown2025: s32'EvtOpening'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Edyx_snake'
+  Unknown2027: 
+  Unknown2025: s32'EvtEnding'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2027: 
+  Unknown2025: s32'MS_ZatHeavenly1'
+  Unknown2026: s32'Edy_Head'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2026: s32'Edyx_ameba'
+  Unknown2027: 
+  Unknown2025: s32'MS_ZatHeavenly2'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2026: s32'Edyx_ameba'
+  Unknown2026: s32'Head_High'
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamage_Kakusei'
+  Unknown47: s16'fau'
+  if: (VARIABLE), 0
+    Unknown2026: s32'Body'
+    Unknown2026: s32'Head_High'
+    Unknown2026: s32'Zat_Manpu'
+    endIf: 
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamageLow'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Hair'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2027: 
+  Unknown2025: s32'MS_Lose'
+  Unknown2026: s32'Zat_Manpu'
+  Unknown2026: s32'Edy_Body'
+  Unknown2026: s32'Edy_head_pattern'
+  Unknown2026: s32'Edyx_ameba'
+  Unknown2026: s32'Head_High'
+  Unknown2027: 
+  Unknown2292: s32'zat001_00', 11
+  Unknown2292: s32'zat001_01', 11
+  Unknown2292: s32'zat001_02', 11
+  Unknown2292: s32'zat001_03', 11
+  Unknown2292: s32'zat001_04', 11
+  Unknown2292: s32'zat001_05', 11
+  Unknown2292: s32'zat001_06', 11
+  Unknown2292: s32'zat001_07', 11
+  Unknown2292: s32'zat001_08', 11
+  Unknown2292: s32'zat001_09', 11
+  Unknown2292: s32'zat001_10', 11
+  Unknown2292: s32'zat001_11', 11
+  Unknown2292: s32'zat001_12', 11
+  Unknown2292: s32'zat001_13', 11
+  Unknown2292: s32'zat001_14', 11
+  Unknown2292: s32'zat001_15', 11
+  Unknown2292: s32'zat001_16', 11
+  Unknown2292: s32'zat001_17', 11
+  Unknown2292: s32'zat020_02', 1
+  Unknown2292: s32'zat020_03', 1
+  Unknown2292: s32'zat020_04', 1
+  Unknown2292: s32'zat020_05', 1
+  Unknown2292: s32'zat023_00', 1
+  Unknown2292: s32'zat023_01', 1
+  Unknown2292: s32'zat023_02', 1
+  Unknown2292: s32'zat023_03', 1
+  Unknown2292: s32'zat025_03', 1
+  Unknown2292: s32'zat026_00', 1
+  Unknown2292: s32'zat026_01', 1
+  Unknown2292: s32'zat026_02', 1
+  Unknown2292: s32'zat026_03', 1
+  Unknown2292: s32'zat026_04', 1
+  Unknown2292: s32'zat026_05', 1
+  Unknown2292: s32'zat031_00', 2
+  Unknown2292: s32'zat031_01', 2
+  Unknown2292: s32'zat031_02', 2
+  Unknown2292: s32'zat031_03', 2
+  Unknown2292: s32'zat031_04', 2
+  Unknown2292: s32'zat031_05', 2
+  Unknown2292: s32'zat031_06', 2
+  Unknown2292: s32'zat031_07', 2
+  Unknown2292: s32'zat032_00', 1
+  Unknown2292: s32'zat032_01', 1
+  Unknown2292: s32'zat034_00', 4
+  Unknown2292: s32'zat034_01', 4
+  Unknown2292: s32'zat034_02', 4
+  Unknown2292: s32'zat035_00', 1
+  Unknown2292: s32'zat035_01', 1
+  Unknown2292: s32'zat035_02', 1
+  Unknown2292: s32'zat035_03', 1
+  Unknown2292: s32'zat035_04', 1
+  Unknown2292: s32'zat035_05', 1
+  Unknown2292: s32'zat035_06', 1
+  Unknown2292: s32'zat035_07', 1
+  Unknown2292: s32'zat036_00', 1
+  Unknown2292: s32'zat036_01', 1
+  Unknown2292: s32'zat036_02', 1
+  Unknown2292: s32'zat036_03', 1
+  Unknown2292: s32'zat041_00', 35
+  Unknown2292: s32'zat041_01', 35
+  Unknown2292: s32'zat041_02', 35
+  Unknown2292: s32'zat041_03', 35
+  Unknown2292: s32'zat041_04', 35
+  Unknown2292: s32'zat041_05', 35
+  Unknown2292: s32'zat041_06', 35
+  Unknown2292: s32'zat040_00', 36
+  Unknown2292: s32'zat040_01', 36
+  Unknown2292: s32'zat040_02', 36
+  Unknown2292: s32'zat040_03', 36
+  Unknown2292: s32'zat040_04', 36
+  Unknown2292: s32'zat040_05', 36
+  Unknown2292: s32'zat040_06', 36
+  Unknown2292: s32'zat043_00', 37
+  Unknown2292: s32'zat043_01', 37
+  Unknown2292: s32'zat043_02', 37
+  Unknown2292: s32'zat043_03', 37
+  Unknown2292: s32'zat043_04', 37
+  Unknown2292: s32'zat043_05', 37
+  Unknown2292: s32'zat043_06', 37
+  Unknown2292: s32'zat045_00', 1
+  Unknown2292: s32'zat045_01', 1
+  Unknown2292: s32'zat045_02', 1
+  Unknown2292: s32'zat045_03', 1
+  Unknown2292: s32'zat045_04', 1
+  Unknown2292: s32'zat045_04ex', 1
+  Unknown2292: s32'zat050_00', 2
+  Unknown2292: s32'zat050_01', 2
+  Unknown2292: s32'zat050_02', 2
+  Unknown2292: s32'zat050_03', 2
+  Unknown2292: s32'zat050_04', 2
+  Unknown2292: s32'zat050_05', 2
+  Unknown2292: s32'zat050_06', 1
+  Unknown2292: s32'zat052_00', 2
+  Unknown2292: s32'zat052_01', 2
+  Unknown2292: s32'zat052_02', 2
+  Unknown2292: s32'zat052_03', 2
+  Unknown2292: s32'zat052_04', 2
+  Unknown2292: s32'zat052_05', 2
+  Unknown2292: s32'zat052_06', 3
+  Unknown2292: s32'zat054_00', 2
+  Unknown2292: s32'zat054_01', 2
+  Unknown2292: s32'zat054_02', 2
+  Unknown2292: s32'zat054_03', 2
+  Unknown2292: s32'zat054_04', 2
+  Unknown2292: s32'zat054_05', 2
+  Unknown2292: s32'zat054_06', 3
+  Unknown2292: s32'zat060_00', 3
+  Unknown2292: s32'zat060_01', 3
+  Unknown2292: s32'zat060_02', 3
+  Unknown2292: s32'zat060_03', 3
+  Unknown2292: s32'zat060_04', 3
+  Unknown2292: s32'zat060_05', 3
+  Unknown2292: s32'zat060_06', 3
+  Unknown2292: s32'zat060_07', 3
+  Unknown2292: s32'zat060_08', 3
+  Unknown2292: s32'zat060_09', 3
+  Unknown2292: s32'zat060_10', 3
+  Unknown2292: s32'zat060_11', 3
+  Unknown2292: s32'zat060_12', 3
+  Unknown2292: s32'zat061_00', 33
+  Unknown2292: s32'zat061_01', 33
+  Unknown2292: s32'zat061_02', 33
+  Unknown2292: s32'zat061_03', 33
+  Unknown2292: s32'zat061_04', 33
+  Unknown2292: s32'zat061_05', 33
+  Unknown2292: s32'zat061_06', 33
+  Unknown2292: s32'zat061_07', 33
+  Unknown2292: s32'zat061_08', 33
+  Unknown2292: s32'zat061_09', 33
+  Unknown2292: s32'zat061_10', 33
+  Unknown2292: s32'zat061_11', 33
+  Unknown2292: s32'zat062_00', 3
+  Unknown2292: s32'zat062_01', 3
+  Unknown2292: s32'zat062_02', 3
+  Unknown2292: s32'zat062_03', 3
+  Unknown2292: s32'zat062_04', 3
+  Unknown2292: s32'zat062_05', 3
+  Unknown2292: s32'zat062_06', 3
+  Unknown2292: s32'zat062_07', 3
+  Unknown2292: s32'zat062_08', 3
+  Unknown2292: s32'zat062_09', 3
+  Unknown2292: s32'zat062_10', 3
+  Unknown2292: s32'zat062_11', 3
+  Unknown2292: s32'zat063_02', 1
+  Unknown2292: s32'zat063_03', 1
+  Unknown2292: s32'zat063_04', 1
+  Unknown2292: s32'zat063_05', 1
+  Unknown2292: s32'zat063_06', 1
+  Unknown2292: s32'zat063_07', 1
+  Unknown2292: s32'zat063_08', 1
+  Unknown2292: s32'zat063_09', 1
+  Unknown2292: s32'zat063_10', 1
+  Unknown2292: s32'zat064_00', 34
+  Unknown2292: s32'zat064_01', 34
+  Unknown2292: s32'zat064_02', 34
+  Unknown2292: s32'zat064_03', 34
+  Unknown2292: s32'zat064_04', 34
+  Unknown2292: s32'zat064_05', 34
+  Unknown2292: s32'zat064_06', 34
+  Unknown2292: s32'zat064_07', 34
+  Unknown2292: s32'zat070_00', 3
+  Unknown2292: s32'zat070_01', 3
+  Unknown2292: s32'zat070_02', 3
+  Unknown2292: s32'zat070_03', 3
+  Unknown2292: s32'zat070_04', 3
+  Unknown2292: s32'zat070_05', 3
+  Unknown2292: s32'zat070_06', 3
+  Unknown2292: s32'zat070_07', 3
+  Unknown2292: s32'zat070_08', 3
+  Unknown2292: s32'zat071_02', 2
+  Unknown2292: s32'zat071_03', 2
+  Unknown2292: s32'zat071_04', 2
+  Unknown2292: s32'zat071_05', 2
+  Unknown2292: s32'zat071_06', 2
+  Unknown2292: s32'zat075_01', 1
+  Unknown2292: s32'zat076_00', 1
+  Unknown2292: s32'zat076_01', 1
+  Unknown2292: s32'zat076_02', 1
+  Unknown2292: s32'zat076_03', 1
+  Unknown2292: s32'zat076_04', 1
+  Unknown2292: s32'zat076_05', 1
+  Unknown2292: s32'zat076_06', 1
+  Unknown2292: s32'zat076_07', 1
+  Unknown2292: s32'zat076_08', 1
+  Unknown2292: s32'zat077_00', 1
+  Unknown2292: s32'zat077_01', 1
+  Unknown2292: s32'zat077_02', 1
+  Unknown2292: s32'zat077_03', 1
+  Unknown2292: s32'zat077_04', 1
+  Unknown2292: s32'zat077_05', 1
+  Unknown2292: s32'zat077_06', 1
+  Unknown2292: s32'zat077_07', 1
+  Unknown2292: s32'zat077_08', 1
+  Unknown2292: s32'zat077_09', 1
+  Unknown2292: s32'zat078_00', 1
+  Unknown2292: s32'zat078_01', 1
+  Unknown2292: s32'zat078_02', 1
+  Unknown2292: s32'zat078_03', 1
+  Unknown2292: s32'zat078_04', 1
+  Unknown2292: s32'zat080_00', 3
+  Unknown2292: s32'zat080_01', 3
+  Unknown2292: s32'zat080_02', 3
+  Unknown2292: s32'zat080_03', 3
+  Unknown2292: s32'zat080_04', 3
+  Unknown2292: s32'zat081_00', 3
+  Unknown2292: s32'zat081_01', 3
+  Unknown2292: s32'zat081_02', 3
+  Unknown2292: s32'zat081_03', 3
+  Unknown2292: s32'zat081_04', 3
+  Unknown2292: s32'zat083_04', 3
+  Unknown2292: s32'zat083_05', 3
+  Unknown2292: s32'zat083_06', 3
+  Unknown2292: s32'zat083_07', 3
+  Unknown2292: s32'zat083_08', 3
+  Unknown2292: s32'zat083_09', 3
+  Unknown2292: s32'zat083_10', 3
+  Unknown2292: s32'zat085_06', 1
+  Unknown2292: s32'zat085_07', 1
+  Unknown2292: s32'zat085_08', 1
+  Unknown2292: s32'zat085_09', 1
+  Unknown2292: s32'zat085_10', 1
+  Unknown2292: s32'zat085_11', 1
+  Unknown2292: s32'zat085_12', 1
+  Unknown2292: s32'zat085_13', 1
+  Unknown2292: s32'zat085_14', 1
+  Unknown2292: s32'zat102_00', 1
+  Unknown2292: s32'zat102_01', 1
+  Unknown2292: s32'zat102_02', 1
+  Unknown2292: s32'zat102_03', 1
+  Unknown2292: s32'zat102_04', 1
+  Unknown2292: s32'zat102_05', 1
+  Unknown2292: s32'zat102_06', 1
+  Unknown2292: s32'zat102_07', 1
+  Unknown2292: s32'zat113_00', 1
+  Unknown2292: s32'zat113_01', 1
+  Unknown2292: s32'zat200_00', 5
+  Unknown2292: s32'zat200_01', 5
+  Unknown2292: s32'zat200_02', 5
+  Unknown2292: s32'zat200_03', 5
+  Unknown2292: s32'zat200_04', 5
+  Unknown2292: s32'zat200_05', 5
+  Unknown2292: s32'zat202_03', 31
+  Unknown2292: s32'zat202_04', 31
+  Unknown2292: s32'zat202_05', 31
+  Unknown2292: s32'zat202_06', 31
+  Unknown2292: s32'zat202_07', 31
+  Unknown2292: s32'zat202_08', 31
+  Unknown2292: s32'zat203_00', 29
+  Unknown2292: s32'zat203_01', 29
+  Unknown2292: s32'zat203_02', 29
+  Unknown2292: s32'zat203_03', 29
+  Unknown2292: s32'zat203_04', 29
+  Unknown2292: s32'zat203_05', 29
+  Unknown2292: s32'zat203_06', 29
+  Unknown2292: s32'zat203_07', 29
+  Unknown2292: s32'zat203_08', 29
+  Unknown2292: s32'zat203_09', 29
+  Unknown2292: s32'zat203_10', 29
+  Unknown2292: s32'zat204_01', 12
+  Unknown2292: s32'zat204_02', 12
+  Unknown2292: s32'zat204_03', 12
+  Unknown2292: s32'zat204_04', 12
+  Unknown2292: s32'zat204_05', 12
+  Unknown2292: s32'zat204_06', 12
+  Unknown2292: s32'zat204_07', 12
+  Unknown2292: s32'zat204_08', 12
+  Unknown2292: s32'zat204_09', 12
+  Unknown2292: s32'zat205_03', 13
+  Unknown2292: s32'zat205_04', 13
+  Unknown2292: s32'zat205_05', 13
+  Unknown2292: s32'zat205_06', 13
+  Unknown2292: s32'zat205_07', 13
+  Unknown2292: s32'zat205_08', 13
+  Unknown2292: s32'zat205_09', 13
+  Unknown2292: s32'zat205_10', 13
+  Unknown2292: s32'zat205_11', 13
+  Unknown2292: s32'zat210_00', 14
+  Unknown2292: s32'zat210_01', 14
+  Unknown2292: s32'zat210_02', 14
+  Unknown2292: s32'zat210_03', 14
+  Unknown2292: s32'zat210_04', 14
+  Unknown2292: s32'zat210_05', 14
+  Unknown2292: s32'zat210_06', 14
+  Unknown2292: s32'zat210_07', 14
+  Unknown2292: s32'zat211_04', 15
+  Unknown2292: s32'zat211_05', 15
+  Unknown2292: s32'zat211_06', 15
+  Unknown2292: s32'zat211_07', 15
+  Unknown2292: s32'zat211_08', 15
+  Unknown2292: s32'zat211_09', 15
+  Unknown2292: s32'zat213_00', 16
+  Unknown2292: s32'zat213_01', 16
+  Unknown2292: s32'zat213_02', 16
+  Unknown2292: s32'zat213_03', 16
+  Unknown2292: s32'zat213_04', 16
+  Unknown2292: s32'zat213_05', 16
+  Unknown2292: s32'zat213_06', 16
+  Unknown2292: s32'zat213_07', 16
+  Unknown2292: s32'zat213_08', 16
+  Unknown2292: s32'zat213_09', 16
+  Unknown2292: s32'zat213_10', 16
+  Unknown2292: s32'zat213_11', 16
+  Unknown2292: s32'zat213_12', 16
+  Unknown2292: s32'zat213_13', 16
+  Unknown2292: s32'zat230_00', 17
+  Unknown2292: s32'zat230_01', 17
+  Unknown2292: s32'zat230_02', 17
+  Unknown2292: s32'zat230_03', 17
+  Unknown2292: s32'zat230_04', 17
+  Unknown2292: s32'zat231_02', 18
+  Unknown2292: s32'zat231_03', 18
+  Unknown2292: s32'zat231_04', 18
+  Unknown2292: s32'zat231_05', 18
+  Unknown2292: s32'zat231_06', 18
+  Unknown2292: s32'zat231_07', 18
+  Unknown2292: s32'zat232_00', 19
+  Unknown2292: s32'zat232_01', 19
+  Unknown2292: s32'zat232_02', 19
+  Unknown2292: s32'zat232_03', 19
+  Unknown2292: s32'zat232_04', 19
+  Unknown2292: s32'zat232_05', 19
+  Unknown2292: s32'zat232_06', 19
+  Unknown2292: s32'zat232_07', 19
+  Unknown2292: s32'zat232_08', 19
+  Unknown2292: s32'zat232_09', 19
+  Unknown2292: s32'zat232_10', 19
+  Unknown2292: s32'zat233_00', 20
+  Unknown2292: s32'zat233_01', 20
+  Unknown2292: s32'zat233_02', 20
+  Unknown2292: s32'zat233_03', 20
+  Unknown2292: s32'zat233_04', 20
+  Unknown2292: s32'zat233_05', 20
+  Unknown2292: s32'zat233_06', 20
+  Unknown2292: s32'zat233_07', 20
+  Unknown2292: s32'zat233_08', 20
+  Unknown2292: s32'zat234_02', 21
+  Unknown2292: s32'zat234_03', 21
+  Unknown2292: s32'zat234_04', 21
+  Unknown2292: s32'zat234_05', 21
+  Unknown2292: s32'zat250_00', 1
+  Unknown2292: s32'zat250_01', 1
+  Unknown2292: s32'zat250_02', 1
+  Unknown2292: s32'zat250_03', 1
+  Unknown2292: s32'zat250_04', 1
+  Unknown2292: s32'zat250_05', 1
+  Unknown2292: s32'zat250_06', 1
+  Unknown2292: s32'zat250_07', 1
+  Unknown2292: s32'zat251_00', 1
+  Unknown2292: s32'zat251_01', 1
+  Unknown2292: s32'zat251_02', 1
+  Unknown2292: s32'zat251_03', 1
+  Unknown2292: s32'zat251_04', 1
+  Unknown2292: s32'zat251_05', 1
+  Unknown2292: s32'zat252_00', 1
+  Unknown2292: s32'zat252_01', 1
+  Unknown2292: s32'zat252_02', 1
+  Unknown2292: s32'zat252_03', 1
+  Unknown2292: s32'zat252_04', 1
+  Unknown2292: s32'zat252_05', 1
+  Unknown2292: s32'zat252_06', 1
+  Unknown2292: s32'zat252_07', 1
+  Unknown2292: s32'zat253_00', 7
+  Unknown2292: s32'zat253_01', 7
+  Unknown2292: s32'zat253_02', 7
+  Unknown2292: s32'zat253_03', 7
+  Unknown2292: s32'zat253_04', 7
+  Unknown2292: s32'zat253_05', 7
+  Unknown2292: s32'zat253_06', 7
+  Unknown2292: s32'zat253_07', 7
+  Unknown2292: s32'zat253_08', 7
+  Unknown2292: s32'zat253_09', 7
+  Unknown2292: s32'zat253_10', 7
+  Unknown2292: s32'zat253_11', 7
+  Unknown2292: s32'zat253_12', 7
+  Unknown2292: s32'zat253_13', 7
+  Unknown2292: s32'zat254_00', 1
+  Unknown2292: s32'zat254_01', 1
+  Unknown2292: s32'zat254_02', 1
+  Unknown2292: s32'zat254_03', 1
+  Unknown2292: s32'zat254_04', 1
+  Unknown2292: s32'zat254_05', 1
+  Unknown2292: s32'zat254_06', 1
+  Unknown2292: s32'zat254_07', 1
+  Unknown2292: s32'zat254_08', 1
+  Unknown2292: s32'zat254_09', 1
+  Unknown2292: s32'zat254_10', 1
+  Unknown2292: s32'zat300_02', 25
+  Unknown2292: s32'zat300_03', 22
+  Unknown2292: s32'zat300_04', 22
+  Unknown2292: s32'zat300_05', 22
+  Unknown2292: s32'zat300_06', 22
+  Unknown2292: s32'zat300_07', 22
+  Unknown2292: s32'zat300_08', 22
+  Unknown2292: s32'zat300_09', 22
+  Unknown2292: s32'zat300_10', 22
+  Unknown2292: s32'zat300_11', 22
+  Unknown2292: s32'zat300_12', 22
+  Unknown2292: s32'zat300_13', 22
+  Unknown2292: s32'zat300_14', 22
+  Unknown2292: s32'zat300_15', 25
+  Unknown2292: s32'zat301_06', 6
+  Unknown2292: s32'zat301_07', 6
+  Unknown2292: s32'zat301_08', 6
+  Unknown2292: s32'zat301_09', 6
+  Unknown2292: s32'zat301_10', 6
+  Unknown2292: s32'zat301_11', 6
+  Unknown2292: s32'zat301_12', 6
+  Unknown2292: s32'zat305_00', 23
+  Unknown2292: s32'zat305_01', 23
+  Unknown2292: s32'zat305_02', 23
+  Unknown2292: s32'zat305_03', 23
+  Unknown2292: s32'zat305_04', 23
+  Unknown2292: s32'zat305_05', 23
+  Unknown2292: s32'zat305_06', 23
+  Unknown2292: s32'zat305_07', 23
+  Unknown2292: s32'zat305_08', 23
+  Unknown2292: s32'zat310_00', 1
+  Unknown2292: s32'zat310_01', 1
+  Unknown2292: s32'zat310_02', 1
+  Unknown2292: s32'zat310_03', 1
+  Unknown2292: s32'zat310_04', 1
+  Unknown2292: s32'zat310_05', 1
+  Unknown2292: s32'zat310_06', 1
+  Unknown2292: s32'zat310_07', 1
+  Unknown2292: s32'zat310_08', 1
+  Unknown2292: s32'zat310_09', 1
+  Unknown2292: s32'zat320_00', 28
+  Unknown2292: s32'zat320_01', 28
+  Unknown2292: s32'zat320_02', 24
+  Unknown2292: s32'zat320_03', 24
+  Unknown2292: s32'zat320_04', 24
+  Unknown2292: s32'zat320_05', 24
+  Unknown2292: s32'zat320_06', 24
+  Unknown2292: s32'zat320_07', 24
+  Unknown2292: s32'zat320_15', 28
+  Unknown2292: s32'zat320_16', 28
+  Unknown2292: s32'zat320_17', 28
+  Unknown2292: s32'zat320_18', 28
+  Unknown2292: s32'zat320_19', 28
+  Unknown2292: s32'zat330_00', 27
+  Unknown2292: s32'zat330_01', 27
+  Unknown2292: s32'zat330_02', 27
+  Unknown2292: s32'zat330_03', 27
+  Unknown2292: s32'zat330_04', 27
+  Unknown2292: s32'zat330_05', 27
+  Unknown2292: s32'zat330_06', 27
+  Unknown2292: s32'zat330_07', 27
+  Unknown2292: s32'zat330_08', 27
+  Unknown2292: s32'zat330_09', 27
+  Unknown2292: s32'zat350_00', 1
+  Unknown2292: s32'zat350_01', 1
+  Unknown2292: s32'zat350_02', 1
+  Unknown2292: s32'zat350_03', 1
+  Unknown2292: s32'zat350_04', 1
+  Unknown2292: s32'zat350_05', 1
+  Unknown2292: s32'zat350_06', 1
+  Unknown2292: s32'zat351_00', 1
+  Unknown2292: s32'zat351_01', 1
+  Unknown2292: s32'zat351_02', 1
+  Unknown2292: s32'zat351_03', 1
+  Unknown2292: s32'zat351_04', 1
+  Unknown2292: s32'zat351_05', 1
+  Unknown2292: s32'zat351_06', 1
+  Unknown2292: s32'zat360_12', 16
+  Unknown2292: s32'zat360_13', 16
+  Unknown2292: s32'zat360_14', 16
+  Unknown2292: s32'zat360_15', 16
+  Unknown2292: s32'zat360_16', 16
+  Unknown2292: s32'zat360_17', 16
+  Unknown2292: s32'zat360_18', 16
+  Unknown2292: s32'zat402_00', 32
+  Unknown2292: s32'zat402_01', 32
+  Unknown2292: s32'zat402_02', 32
+  Unknown2292: s32'zat402_03', 32
+  Unknown2292: s32'zat402_04', 32
+  Unknown2292: s32'zat402_05', 32
+  Unknown2292: s32'zat403_00', 25
+  Unknown2292: s32'zat403_01', 25
+  Unknown2292: s32'zat403_02', 25
+  Unknown2292: s32'zat403_03', 25
+  Unknown2292: s32'zat403_04', 25
+  Unknown2292: s32'zat412_00', 16
+  Unknown2292: s32'zat412_01', 16
+  Unknown2292: s32'zat412_02', 16
+  Unknown2292: s32'zat412_03', 16
+  Unknown2292: s32'zat412_04', 16
+  Unknown2292: s32'zat415_00', 1
+  Unknown2292: s32'zat415_01', 1
+  Unknown2292: s32'zat415_02', 8
+  Unknown2292: s32'zat415_03', 8
+  Unknown2292: s32'zat415_04', 8
+  Unknown2292: s32'zat415_05', 8
+  Unknown2292: s32'zat415_06', 9
+  Unknown2292: s32'zat415_07', 9
+  Unknown2292: s32'zat415_08', 9
+  Unknown2292: s32'zat415_09', 9
+  Unknown2292: s32'zat415_10', 8
+  Unknown2292: s32'zat415_11', 8
+  Unknown2292: s32'zat415_12', 8
+  Unknown2292: s32'zat415_13', 8
+  Unknown2292: s32'zat415_14', 8
+  Unknown2292: s32'zat415_15', 8
+  Unknown2292: s32'zat415_16', 8
+  Unknown2292: s32'zat415_17', 8
+  Unknown2292: s32'zat415_18', 8
+  Unknown2292: s32'zat415_19', 1
+  Unknown2292: s32'zat416_00', 1
+  Unknown2292: s32'zat416_01', 1
+  Unknown2292: s32'zat416_02', 1
+  Unknown2292: s32'zat416_03', 1
+  Unknown2292: s32'zat416_04', 1
+  Unknown2292: s32'zat416_05', 1
+  Unknown2292: s32'zat416_06', 1
+  Unknown2292: s32'zat416_07', 1
+  Unknown2292: s32'zat416_08', 1
+  Unknown2292: s32'zat432_00', 1
+  Unknown2292: s32'zat432_01', 1
+  Unknown2292: s32'zat432_02', 1
+  Unknown2292: s32'zat615_00', 30
+  Unknown2292: s32'zat615_01', 30
+  Unknown2292: s32'zat615_02', 30
+  Unknown2292: s32'zat615_03', 30
+  Unknown2292: s32'zat615_04', 30
+  Unknown2292: s32'zat615_05', 30
+  Unknown2292: s32'zat615_06', 30
+  Unknown2292: s32'zat615_07', 30
+  Unknown2292: s32'zat615_08', 30
+  Unknown2292: s32'zat615_09', 30
+  Unknown2292: s32'zat615_10', 30
+  Unknown2292: s32'zat615_11', 30
+  Unknown2292: s32'zat615_12', 30
+  Unknown2292: s32'zat615_13', 30
+  Unknown2292: s32'zat615_14', 30
+  Unknown2292: s32'zat615_15', 30
+  Unknown2292: s32'zat615_16', 30
+  Unknown2292: s32'zat615_17', 30
+  Unknown2292: s32'zat615_18', 30
+  Unknown2292: s32'zat615_19', 30
+  Unknown2292: s32'zat615_20', 30
+  Unknown2292: s32'zat615_21', 30
+  Unknown2292: s32'zat615_22', 30
+  Unknown2292: s32'zat615_23', 30
+  Unknown2292: s32'zat615_24', 30
+  Unknown2292: s32'zat615_25', 30
+  Unknown2292: s32'zat615_26', 30
+  Unknown2292: s32'zat615_27', 30
+  Unknown2292: s32'zat615_28', 30
+  Unknown2292: s32'zat615_29', 30
+  Unknown2292: s32'zat615_30', 30
+  Unknown2292: s32'zat650_00', 38
+  Unknown2036: 
+  Unknown2032: s32'zatoonly'
+  Unknown2034: 
+  Unknown2126: s32'Base'
+  storeValue: (VARIABLE), 6, (STATIC), 3000000
+  endSubroutine: 
+
+startSubroutine: s32'CPUEstimate'
+  if: (VARIABLE), 213
+    Unknown1999: 22, s32'DamnedFangExe'
+    if: (VARIABLE), 0
+      Unknown1581: s32'RC_SetPlay'
+      endIf: 
+    endIf: 
+  Unknown1999: 22, s32'NmlAtk5E'
+  if: (VARIABLE), 0
+    Unknown1581: s32'RC_HomingJumpCombo'
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'OnActionBeginPre'
+  storeValue: (VARIABLE), 58, (VARIABLE), 59
+  storeValue: (VARIABLE), 59, (STATIC), 0
+  Unknown2035: s32'ChangeColor'
+  endSubroutine: 
+
+startSubroutine: s32'OnFrameStep'
+  Unknown1863: 0, -16744193
+  Unknown1862: 0, 1
+  Unknown59: s32'TRP_ZAT', 2, 157
+  if: (VARIABLE), 3
+    ifNot: (VARIABLE), 5
+      if: (VARIABLE), 16
+        ifNot: (VARIABLE), 139
+          ifOperation: (IS_NOT_EQUAL), (VARIABLE), 157, (STATIC), 2
+            if: (VARIABLE), 84
+              modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+              endIf: 
+            else: 
+              modifyVar: (ADD), (VARIABLE), 25, (STATIC), -10
+              endElse: 
+            endIf: 
+          endIf: 
+        endIf: 
+      endIf: 
+    endIf: 
+  else: 
+    ifNot: (VARIABLE), 53
+      storeValue: (VARIABLE), 61, (STATIC), 0
+      modifyVar: (OR), (VARIABLE), 61, (VARIABLE), 4
+      if: (VARIABLE), 61
+        ifNot: (VARIABLE), 139
+          ifNot: (VARIABLE), 55
+            modifyVar: (ADD), (VARIABLE), 25, (STATIC), 17
+            if: (VARIABLE), 157
+              modifyVar: (ADD), (VARIABLE), 25, (STATIC), 999999
+              endIf: 
+            endIf: 
+          endIf: 
+        Unknown1863: 0, -65536
+        Unknown1862: 0, 2
+        endIf: 
+      else: 
+        modifyVar: (ADD), (VARIABLE), 25, (STATIC), 45
+        if: (VARIABLE), 157
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 999999
+          endIf: 
+        Unknown1863: 0, -1
+        endElse: 
+      endIf: 
+    endElse: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6000
+    storeValue: (VARIABLE), 4, (STATIC), 0
+    endIf: 
+  if: (VARIABLE), 84
+    tensionGain: 2
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'OnDamage'
+  ifOperation: (IS_EQUAL), (VARIABLE), 93, (STATIC), 1
+    Unknown2320: s32'ZatoYarare'
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'_ThrowGripParamLand'
+  Unknown1101: s32'zat310_00'
+  Unknown1042: s32'ThrowExe'
+  throwRange: 85750
+  Unknown1027: -1, -1, -1, -1
+  endSubroutine: 
+
+startSubroutine: s32'_ThrowGripParamAir'
+  Unknown1101: s32'zat320_00'
+  Unknown1042: s32'AirThrowExe'
+  throwRange: 192500
+  Unknown1027: -1, -1, 175000, -52500
+  endSubroutine: 
+
+startState: s32'CmnActStand'
+  createObject2: s32'UzuStand', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  setMarker: s32'loop'
+  sprite: s32'zat000_00', 4
+  sprite: s32'zat000_01', 4
+  sprite: s32'zat000_02', 4
+  sprite: s32'zat000_03', 4
+  sprite: s32'zat000_04', 4
+  sprite: s32'zat000_05', 4
+  sprite: s32'zat000_06', 4
+  sprite: s32'zat000_07', 4
+  sprite: s32'zat000_08', 4
+  sprite: s32'zat000_09', 4
+  sprite: s32'zat000_10', 4
+  sprite: s32'zat000_11', 4
+  Unknown3: 
+  Unknown13: s32'loop', 22, 0, 90, 0, 100
+  Unknown25: s32'loop', 2, 86
+  storeValue: (VARIABLE), 87, (STATIC), 960
+  sprite: s32'zat001_00', 4
+  sprite: s32'zat001_01', 4
+  sprite: s32'zat001_02', 4
+  playCharacterSFX: s32'6'
+  sprite: s32'zat001_03', 4
+  sprite: s32'zat001_04', 4
+  sprite: s32'zat001_05', 4
+  sprite: s32'zat001_06', 4
+  sprite: s32'zat001_07', 4
+  sprite: s32'zat001_08', 3
+  sprite: s32'zat001_09', 4
+  playCharacterSFX: s32'5'
+  sprite: s32'zat001_10', 4
+  sprite: s32'zat001_11', 4
+  sprite: s32'zat001_12', 4
+  sprite: s32'zat001_13', 4
+  sprite: s32'zat001_14', 4
+  sprite: s32'zat001_15', 4
+  sprite: s32'zat001_16', 4
+  sprite: s32'zat001_17', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActStandTurn'
+  createObject2: s32'UzuStand2Crouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat003_03', 3
+  sprite: s32'zat003_02', 2
+  sprite: s32'zat003_01', 2
+  sprite: s32'zat003_00', 2
+  endState: 
+
+startState: s32'CmnActStand2Crouch'
+  createObject2: s32'UzuStand2Crouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat010_00', 3
+  sprite: s32'zat010_01', 3
+  Unknown32: s32'UzuStand2Crouch'
+  createObject2: s32'UzuCrouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat010_02', 3
+  sprite: s32'zat010_03', 3
+  sprite: s32'zat010_04', 3
+  sprite: s32'zat010_05', 3
+  sprite: s32'zat010_06', 3
+  sprite: s32'zat010_07', 3
+  endState: 
+
+startState: s32'CmnActCrouch'
+  createObject2: s32'UzuCrouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  setMarker: s32'loop'
+  sprite: s32'zat010_08', 4
+  sprite: s32'zat010_09', 4
+  sprite: s32'zat010_10', 4
+  sprite: s32'zat010_11', 4
+  sprite: s32'zat010_12', 4
+  sprite: s32'zat010_13', 4
+  sprite: s32'zat010_14', 4
+  sprite: s32'zat010_15', 4
+  Unknown3: 
+  Unknown44: 1, 2, 86
+  Unknown24: s32'loop', 2, 0
+  Unknown13: s32'loop', 22, 0, 80, 0, 100
+  sprite: s32'zat011_00', 6
+  sprite: s32'zat011_01', 6
+  sprite: s32'zat011_02', 6
+  sprite: s32'zat011_03', 6
+  sprite: s32'zat011_04', 6
+  sprite: s32'zat011_05', 6
+  sprite: s32'zat011_06', 6
+  sprite: s32'zat011_07', 6
+  sprite: s32'zat011_08', 6
+  sprite: s32'zat011_09', 6
+  sprite: s32'zat011_10', 6
+  sprite: s32'zat011_11', 6
+  sprite: s32'zat011_12', 6
+  sprite: s32'zat011_13', 6
+  sprite: s32'zat011_14', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActCrouchTurn'
+  createObject2: s32'UzuStand2Crouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat013_03', 3
+  sprite: s32'zat013_02', 2
+  sprite: s32'zat013_01', 2
+  sprite: s32'zat013_00', 2
+  endState: 
+
+startState: s32'CmnActCrouch2Stand'
+  createObject2: s32'UzuStand2Crouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat010_16', 3
+  endState: 
+
+startState: s32'CmnActJumpPre'
+  sprite: s32'zat028_00', 3
+  if: (VARIABLE), 58
+    createObject2: s32'UzuDeleteNoLink', 100
+    endIf: 
+  endState: 
+
+startState: s32'CmnActJump'
+  setMarker: s32'_Upper'
+  setMarker: s32'upperloop'
+  sprite: s32'zat020_00', 3
+  sprite: s32'zat020_01', 3
+  Unknown3: 
+  goToMarker: s32'upperloop'
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_UpperToTop'
+  sprite: s32'zat020_02', 3
+  sprite: s32'zat020_03', 3
+  sprite: s32'zat020_04', 3
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_Top'
+  sprite: s32'zat020_05', 5
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_TopToDown'
+  sprite: s32'zat026_00', 3
+  sprite: s32'zat026_01', 3
+  sprite: s32'zat026_02', 3
+  sprite: s32'zat026_03', 3
+  sprite: s32'zat026_04', 3
+  sprite: s32'zat026_05', 3
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_Down'
+  setMarker: s32'downloop'
+  sprite: s32'zat026_06', 3
+  sprite: s32'zat026_07', 3
+  Unknown3: 
+  goToMarker: s32'downloop'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActJumpLanding'
+  createObject2: s32'UzuStand2Crouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat028_00', 3
+  endState: 
+
+startState: s32'CmnActLandingStiff'
+  createObject2: s32'UzuStand2Crouch', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  sprite: s32'zat028_00', 2147483647
+  Unknown3: 
+  setMarker: s32'_End'
+  sprite: s32'keep', 1
+  exitState: 
+  endState: 
+
+startState: s32'CmnActFWalk'
+  createObject2: s32'UzuFWalk', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  upon: (FRAME_STEP)
+    if: (VARIABLE), 159
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 60
+        jumpToState: s32'CmnActFDash'
+        endIf: 
+      endIf: 
+    endUpon: 
+  setMarker: s32'loop'
+  sprite: s32'zat030_00', 4
+  sprite: s32'zat030_01', 4
+  sprite: s32'zat030_02', 4
+  sprite: s32'zat030_03', 4
+  sprite: s32'zat030_04', 4
+  sprite: s32'zat030_05', 4
+  sprite: s32'zat030_06', 4
+  sprite: s32'zat030_07', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActBWalk'
+  createObject2: s32'UzuBWalk', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  setMarker: s32'loop'
+  sprite: s32'zat031_00', 3
+  sprite: s32'zat031_01', 3
+  sprite: s32'zat031_02', 3
+  sprite: s32'zat031_03', 3
+  sprite: s32'zat031_04', 3
+  sprite: s32'zat031_05', 3
+  sprite: s32'zat031_06', 3
+  sprite: s32'zat031_07', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActFDash'
+  if: (VARIABLE), 58
+    createObject2: s32'UzuDeleteNoLink', 100
+    endIf: 
+  setMarker: s32'loop'
+  sprite: s32'zat032_00', 4
+  sprite: s32'zat032_01', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActFDashStop'
+  createObject2: s32'UzuFDashStop', 100
+  sprite: s32'zat033_00', 3
+  createObject2: s32'Dashbrake', 100
+  sprite: s32'zat033_01', 3
+  sprite: s32'zat033_02', 3
+  sprite: s32'zat033_03', 3
+  sprite: s32'zat033_04', 4
+  sprite: s32'zat033_05', 3
+  sprite: s32'zat033_06', 3
+  sprite: s32'zat033_07', 3
+  sprite: s32'zat033_08', 3
+  endState: 
+
+startState: s32'CmnActBDash'
+  sprite: s32'zat034_00', 4
+  Unknown2155: 7
+  playSFX: s32'SE_SWINGD'
+  setMarker: s32'loop'
+  sprite: s32'zat034_01', 2
+  sprite: s32'zat034_02', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActAirFDash'
+  sprite: s32'zat035_00', 3
+  sprite: s32'zat035_01', 3
+  sprite: s32'zat035_02', 3
+  sprite: s32'zat035_03', 3
+  sprite: s32'zat035_04', 3
+  sprite: s32'zat035_05', 3
+  sprite: s32'zat035_06', 3
+  sprite: s32'zat035_07', 4
+  endState: 
+
+startState: s32'CmnActAirBDash'
+  sprite: s32'zat036_00', 3
+  sprite: s32'zat036_01', 3
+  sprite: s32'zat036_02', 3
+  sprite: s32'zat036_03', 2
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv1'
+  createObject2: s32'UzuNokezoriH', 100
+  sprite: s32'zat050_04', 1
+  sprite: s32'zat050_03', 3
+  sprite: s32'zat050_04', 2
+  sprite: s32'zat050_05', 2
+  sprite: s32'zat050_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv2'
+  createObject2: s32'UzuNokezoriH', 100
+  sprite: s32'zat050_03', 1
+  sprite: s32'zat050_02', 3
+  sprite: s32'zat050_03', 2
+  sprite: s32'zat050_04', 2
+  sprite: s32'zat050_05', 2
+  sprite: s32'zat050_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv3'
+  createObject2: s32'UzuNokezoriH', 100
+  sprite: s32'zat050_03', 2
+  sprite: s32'zat050_02', 4
+  sprite: s32'zat050_03', 2
+  sprite: s32'zat050_04', 2
+  sprite: s32'zat050_05', 2
+  sprite: s32'zat050_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv4'
+  createObject2: s32'UzuNokezoriH', 100
+  sprite: s32'zat050_00', 2
+  sprite: s32'zat050_01', 4
+  sprite: s32'zat050_02', 3
+  sprite: s32'zat050_03', 2
+  sprite: s32'zat050_04', 2
+  sprite: s32'zat050_05', 2
+  sprite: s32'zat050_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv5'
+  createObject2: s32'UzuNokezoriH', 100
+  sprite: s32'zat050_00', 2
+  sprite: s32'zat050_01', 6
+  sprite: s32'zat050_02', 3
+  sprite: s32'zat050_03', 2
+  sprite: s32'zat050_04', 2
+  sprite: s32'zat050_05', 2
+  sprite: s32'zat050_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv1'
+  createObject2: s32'UzuNokezoriL', 100
+  sprite: s32'zat052_04', 1
+  sprite: s32'zat052_03', 3
+  sprite: s32'zat052_04', 2
+  sprite: s32'zat052_05', 2
+  sprite: s32'zat052_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv2'
+  createObject2: s32'UzuNokezoriL', 100
+  sprite: s32'zat052_03', 1
+  sprite: s32'zat052_02', 3
+  sprite: s32'zat052_03', 2
+  sprite: s32'zat052_04', 2
+  sprite: s32'zat052_05', 2
+  sprite: s32'zat052_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv3'
+  createObject2: s32'UzuNokezoriL', 100
+  sprite: s32'zat052_03', 2
+  sprite: s32'zat052_02', 4
+  sprite: s32'zat052_03', 2
+  sprite: s32'zat052_04', 2
+  sprite: s32'zat052_05', 2
+  sprite: s32'zat052_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv4'
+  createObject2: s32'UzuNokezoriL', 100
+  sprite: s32'zat052_00', 2
+  sprite: s32'zat052_01', 4
+  sprite: s32'zat052_02', 3
+  sprite: s32'zat052_03', 2
+  sprite: s32'zat052_04', 2
+  sprite: s32'zat052_05', 2
+  sprite: s32'zat052_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv5'
+  createObject2: s32'UzuNokezoriL', 100
+  sprite: s32'zat052_00', 2
+  sprite: s32'zat052_01', 6
+  sprite: s32'zat052_02', 3
+  sprite: s32'zat052_03', 2
+  sprite: s32'zat052_04', 2
+  sprite: s32'zat052_05', 2
+  sprite: s32'zat052_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv1'
+  createObject2: s32'UzuNokezoriC', 100
+  sprite: s32'zat054_04', 1
+  sprite: s32'zat054_03', 3
+  sprite: s32'zat054_04', 2
+  sprite: s32'zat054_05', 2
+  sprite: s32'zat054_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv2'
+  createObject2: s32'UzuNokezoriC', 100
+  sprite: s32'zat054_03', 2
+  sprite: s32'zat054_02', 3
+  sprite: s32'zat054_03', 2
+  sprite: s32'zat054_04', 2
+  sprite: s32'zat054_05', 2
+  sprite: s32'zat054_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv3'
+  createObject2: s32'UzuNokezoriC', 100
+  sprite: s32'zat054_03', 2
+  sprite: s32'zat054_02', 5
+  sprite: s32'zat054_03', 2
+  sprite: s32'zat054_04', 2
+  sprite: s32'zat054_05', 2
+  sprite: s32'zat054_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv4'
+  createObject2: s32'UzuNokezoriC', 100
+  sprite: s32'zat054_00', 2
+  sprite: s32'zat054_01', 5
+  sprite: s32'zat054_02', 3
+  sprite: s32'zat054_03', 2
+  sprite: s32'zat054_04', 2
+  sprite: s32'zat054_05', 2
+  sprite: s32'zat054_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv5'
+  createObject2: s32'UzuNokezoriC', 100
+  sprite: s32'zat054_00', 2
+  sprite: s32'zat054_01', 6
+  sprite: s32'zat054_02', 3
+  sprite: s32'zat054_03', 3
+  sprite: s32'zat054_04', 2
+  sprite: s32'zat054_05', 2
+  sprite: s32'zat054_06', 2
+  Unknown448: s32'zat_stand_start', 100
+  endState: 
+
+startState: s32'CmnActBDownUpper'
+  sprite: s32'zat060_00', 4
+  sprite: s32'zat060_01', 4
+  setMarker: s32'loop'
+  sprite: s32'zat060_02', 3
+  sprite: s32'zat060_03', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActBDownUpperEnd'
+  sprite: s32'chp060_01', 3
+  endState: 
+
+startState: s32'CmnActBDownDown'
+  sprite: s32'zat060_04', 3
+  sprite: s32'zat060_05', 3
+  sprite: s32'zat060_06', 4
+  sprite: s32'zat060_07', 3
+  sprite: s32'zat060_08', 3
+  setMarker: s32'loop'
+  sprite: s32'zat060_09', 3
+  sprite: s32'zat060_10', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActBDownBound'
+  sprite: s32'zat060_11', 16
+  endState: 
+
+startState: s32'CmnActBDownLoop'
+  sprite: s32'zat060_12', 2147483647
+  endState: 
+
+startState: s32'CmnActBDown2Stand'
+  sprite: s32'zat061_00', 3
+  playCharacterSFX: s32'6'
+  sprite: s32'zat061_01', 3
+  sprite: s32'zat061_02', 1
+  sprite: s32'zat061_03', 1
+  sprite: s32'zat061_04', 1
+  sprite: s32'zat061_05', 2
+  sprite: s32'zat061_06', 2
+  sprite: s32'zat061_07', 2
+  sprite: s32'zat061_08', 2
+  sprite: s32'zat061_09', 2
+  sprite: s32'zat061_10', 2
+  sprite: s32'zat061_11', 4
+  endState: 
+
+startState: s32'CmnActFDownUpper'
+  sprite: s32'zat063_00', 3
+  sprite: s32'zat063_01', 3
+  sprite: s32'zat063_02', 3
+  sprite: s32'zat063_03', 3
+  sprite: s32'zat063_04', 3
+  endState: 
+
+startState: s32'CmnActFDownUpperEnd'
+  sprite: s32'chp063_02', 4
+  sprite: s32'chp063_03', 4
+  endState: 
+
+startState: s32'CmnActFDownDown'
+  sprite: s32'chp063_04', 2
+  sprite: s32'chp063_05', 2
+  Unknown448: s32'zat_down_floor', 123
+  setMarker: s32'loop'
+  sprite: s32'chp063_06', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActFDownBound'
+  sprite: s32'zat063_05', 3
+  Unknown448: s32'zat_down_floor', 123
+  sprite: s32'zat063_06', 3
+  sprite: s32'zat063_07', 3
+  sprite: s32'zat063_08', 3
+  sprite: s32'zat063_09', 3
+  endState: 
+
+startState: s32'CmnActFDownLoop'
+  sprite: s32'zat063_10', 2147483647
+  endState: 
+
+startState: s32'CmnActFDown2Stand'
+  sprite: s32'zat064_00', 2
+  playCharacterSFX: s32'6'
+  sprite: s32'zat064_01', 2
+  sprite: s32'zat064_02', 3
+  sprite: s32'zat064_03', 3
+  sprite: s32'zat064_04', 3
+  sprite: s32'zat064_05', 3
+  sprite: s32'zat064_06', 3
+  sprite: s32'zat064_07', 3
+  endState: 
+
+startState: s32'CmnActVDownUpper'
+  sprite: s32'zat062_00', 6
+  sprite: s32'zat062_01', 3
+  sprite: s32'zat062_02', 3
+  sprite: s32'zat062_03', 2147483647
+  endState: 
+
+startState: s32'CmnActVDownUpperEnd'
+  sprite: s32'chp062_03', 4
+  sprite: s32'chp062_04', 3
+  sprite: s32'chp062_05', 3
+  endState: 
+
+startState: s32'CmnActVDownDown'
+  sprite: s32'zat062_04', 3
+  sprite: s32'zat062_05', 3
+  setMarker: s32'loop'
+  sprite: s32'zat062_06', 3
+  sprite: s32'zat062_07', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActVDownBound'
+  sprite: s32'zat062_08', 3
+  Unknown448: s32'zat_down_floor', 123
+  sprite: s32'zat062_09', 3
+  sprite: s32'zat062_10', 3
+  sprite: s32'zat062_11', 3
+  endState: 
+
+startState: s32'CmnActVDownLoop'
+  sprite: s32'zat062_11', 2147483647
+  endState: 
+
+startState: s32'CmnActBlowoff'
+  sprite: s32'zat075_00', 3
+  sprite: s32'zat075_01', 2147483647
+  endState: 
+
+startState: s32'CmnActKirimomiUpper'
+  setMarker: s32'loop'
+  sprite: s32'zat074_00', 3
+  sprite: s32'zat074_01', 3
+  sprite: s32'zat074_02', 3
+  sprite: s32'zat074_03', 3
+  sprite: s32'zat074_04', 3
+  sprite: s32'zat074_05', 3
+  sprite: s32'zat074_06', 3
+  sprite: s32'zat074_07', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActWallBound'
+  sprite: s32'zat076_00', 3
+  sprite: s32'zat076_01', 2147483647
+  endState: 
+
+startState: s32'CmnActWallBoundDown'
+  sprite: s32'zat076_02', 3
+  sprite: s32'zat076_03', 3
+  sprite: s32'zat076_04', 4
+  sprite: s32'zat076_05', 4
+  sprite: s32'zat076_06', 4
+  sprite: s32'zat076_07', 6
+  sprite: s32'zat076_08', 2147483647
+  endState: 
+
+startState: s32'CmnActWallHaritsuki'
+  sprite: s32'zat077_00', 4
+  Unknown448: s32'zat_harituki', 114
+  sprite: s32'zat077_01', 2147483647
+  setMarker: s32'_Drop'
+  sprite: s32'zat077_02', 6
+  Unknown448: s32'zat_harituki', 114
+  sprite: s32'zat077_03', 15
+  Unknown448: s32'zat_harituki', 114
+  setMarker: s32'loop'
+  sprite: s32'zat077_04', 4
+  Unknown448: s32'zat_harituki', 114
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActWallHaritsukiLand'
+  sprite: s32'zat077_05', 3
+  Unknown448: s32'zat_harituki', 103
+  sprite: s32'zat077_06', 3
+  sprite: s32'zat077_07', 3
+  sprite: s32'zat077_08', 3
+  sprite: s32'zat077_09', 2147483647
+  endState: 
+
+startState: s32'CmnActWallHaritsukiGetUp'
+  sprite: s32'zat078_00', 3
+  Unknown448: s32'zat_harituki_modori', 100
+  sprite: s32'zat078_01', 3
+  sprite: s32'zat078_02', 3
+  sprite: s32'zat078_03', 3
+  sprite: s32'zat078_04', 3
+  endState: 
+
+startState: s32'CmnActJitabataLoop'
+  createObject2: s32'UzuJitabata', 100
+  setMarker: s32'loop'
+  sprite: s32'zat070_00', 4
+  sprite: s32'zat070_01', 4
+  sprite: s32'zat070_02', 4
+  sprite: s32'zat070_03', 4
+  sprite: s32'zat070_04', 4
+  sprite: s32'zat070_05', 4
+  sprite: s32'zat070_06', 4
+  sprite: s32'zat070_07', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_End'
+  sprite: s32'zat070_08', 4
+  endState: 
+
+startState: s32'CmnActKizetsu'
+  createObject2: s32'UzuKizetsu', 100
+  setMarker: s32'loop'
+  sprite: s32'zat071_00', 4
+  sprite: s32'zat071_01', 4
+  sprite: s32'zat071_02', 4
+  sprite: s32'zat071_03', 4
+  sprite: s32'zat071_04', 4
+  sprite: s32'zat071_05', 4
+  sprite: s32'zat071_06', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_End'
+  sprite: s32'zat071_07', 4
+  endState: 
+
+startState: s32'CmnActHizakuzure'
+  callCmnEfFunc: s32'cmn_Hizakuzure'
+  sprite: s32'zat085_00', 7
+  sprite: s32'zat085_01', 8
+  sprite: s32'zat085_02', 10
+  sprite: s32'zat085_03', 8
+  sprite: s32'zat085_04', 8
+  sprite: s32'zat085_05', 8
+  addPositionX: 30000
+  sprite: s32'zat085_06', 5
+  sprite: s32'zat085_07', 5
+  sprite: s32'zat085_08', 4
+  sprite: s32'zat085_09', 4
+  sprite: s32'zat085_10', 3
+  sprite: s32'zat085_11', 3
+  addPositionX: 30000
+  sprite: s32'zat085_12', 3
+  addPositionX: 30000
+  sprite: s32'zat085_13', 2147483647
+  addPositionX: 30000
+  Unknown3: 
+  setMarker: s32'ko'
+  sprite: s32'zat085_00', 6
+  sprite: s32'zat085_01', 6
+  sprite: s32'zat085_02', 8
+  sprite: s32'zat085_03', 6
+  sprite: s32'zat085_04', 6
+  sprite: s32'zat085_05', 6
+  addPositionX: 30000
+  sprite: s32'zat085_06', 7
+  Unknown658: 100, 1, 0
+  Unknown2144: 0, 100
+  Unknown1677: 1
+  sprite: s32'zat085_07', 7
+  sprite: s32'zat085_08', 5
+  sprite: s32'zat085_09', 5
+  sprite: s32'zat085_10', 6
+  sprite: s32'zat085_11', 6
+  addPositionX: 30000
+  sprite: s32'zat085_12', 6
+  addPositionX: 30000
+  sprite: s32'zat085_13', 6
+  addPositionX: 30000
+  Unknown3: 
+  Unknown2144: 1, 100
+  Unknown658: 100, 1, 0
+  jumpToState: s32'CmnActFDownLoop'
+  endState: 
+
+startState: s32'CmnActKorogari'
+  setMarker: s32'loop'
+  sprite: s32'zat080_00', 3
+  sprite: s32'zat080_01', 3
+  sprite: s32'zat080_02', 3
+  sprite: s32'zat080_03', 3
+  sprite: s32'zat080_04', 3
+  sprite: s32'zat081_00', 3
+  sprite: s32'zat081_01', 3
+  sprite: s32'zat081_02', 3
+  sprite: s32'zat081_03', 3
+  sprite: s32'zat081_04', 3
+  sprite: s32'zat082_00', 3
+  sprite: s32'zat082_01', 3
+  sprite: s32'zat082_02', 3
+  sprite: s32'zat082_03', 3
+  sprite: s32'zat082_04', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_ToDown'
+  sprite: s32'zat083_00', 4
+  sprite: s32'zat083_01', 4
+  sprite: s32'zat083_02', 4
+  sprite: s32'zat083_03', 4
+  sprite: s32'zat083_04', 4
+  sprite: s32'zat083_05', 5
+  sprite: s32'zat083_06', 5
+  sprite: s32'zat083_07', 5
+  sprite: s32'zat083_08', 4
+  sprite: s32'zat083_09', 4
+  sprite: s32'zat083_10', 4
+  endState: 
+
+startState: s32'CmnActZSpin'
+  setMarker: s32'loop'
+  sprite: s32'zat080_00', 2
+  sprite: s32'zat080_01', 2
+  sprite: s32'zat080_02', 2
+  sprite: s32'zat080_03', 2
+  sprite: s32'zat080_04', 2
+  sprite: s32'zat081_00', 2
+  sprite: s32'zat081_01', 2
+  sprite: s32'zat081_02', 2
+  sprite: s32'zat081_03', 2
+  sprite: s32'zat081_04', 2
+  sprite: s32'zat082_00', 2
+  sprite: s32'zat082_01', 2
+  sprite: s32'zat082_02', 2
+  sprite: s32'zat082_03', 2
+  sprite: s32'zat082_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActUkemi'
+  sprite: s32'zat113_00', 4
+  sprite: s32'zat113_01', 4
+  endState: 
+
+startState: s32'CmnActMidGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'zat040_00', 2
+  Unknown2161: 100, 100000, 0
+  createObject2: s32'Appear_m', 130
+  sprite: s32'zat040_01', 2
+  sprite: s32'zat040_02', 2
+  sprite: s32'zat040_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'zat040_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'zat040_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'zat040_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'zat040_06', 8
+  sprite: s32'zat040_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActMidGuardEnd'
+  sprite: s32'zat040_02', 2
+  sprite: s32'zat040_01', 2
+  sprite: s32'zat040_00', 2
+  endState: 
+
+startState: s32'CmnActHighGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'zat041_00', 2
+  Unknown2161: 100, 100000, 0
+  createObject2: s32'Appear_m', 130
+  sprite: s32'zat041_01', 2
+  sprite: s32'zat041_02', 2
+  sprite: s32'zat041_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'zat041_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'zat041_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'zat041_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'zat041_06', 8
+  sprite: s32'zat041_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActHighGuardEnd'
+  sprite: s32'zat041_02', 2
+  sprite: s32'zat041_01', 2
+  sprite: s32'zat041_00', 2
+  endState: 
+
+startState: s32'CmnActCrouchGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'zat043_00', 2
+  Unknown2161: 100, 100000, 0
+  createObject2: s32'Appear_s', 130
+  sprite: s32'zat043_01', 2
+  sprite: s32'zat043_02', 2
+  sprite: s32'zat043_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'zat043_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'zat043_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'zat043_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'zat043_06', 8
+  sprite: s32'zat043_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActCrouchGuardEnd'
+  sprite: s32'zat043_02', 2
+  sprite: s32'zat043_01', 2
+  sprite: s32'zat043_00', 2
+  endState: 
+
+startState: s32'CmnActAirGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'zat045_00', 2
+  sprite: s32'zat045_01', 2
+  sprite: s32'zat045_02', 2
+  sprite: s32'zat045_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'zat045_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'zat045_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'zat045_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'zat045_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActAirGuardEnd'
+  sprite: s32'zat045_02', 2
+  sprite: s32'zat045_01', 2
+  sprite: s32'zat045_00', 2
+  endState: 
+
+startState: s32'CmnActHajikareStand'
+  sprite: s32'zat100_00', 7
+  createObject2: s32'Hajikare_stand', 100
+  sprite: s32'zat100_01', 7
+  sprite: s32'zat100_02', 7
+  sprite: s32'zat100_03', 2147483647
+  setMarker: s32'_End'
+  sprite: s32'zat100_04', 3
+  sprite: s32'zat100_05', 3
+  sprite: s32'zat100_06', 2
+  sprite: s32'zat100_07', 2
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActHajikareCrouch'
+  sprite: s32'zat101_00', 7
+  createObject2: s32'Hajikare_crouch', 100
+  sprite: s32'zat101_01', 7
+  sprite: s32'zat101_02', 7
+  sprite: s32'zat101_03', 2147483647
+  setMarker: s32'_End'
+  sprite: s32'zat101_04', 3
+  sprite: s32'zat101_05', 3
+  sprite: s32'zat101_06', 2
+  sprite: s32'zat101_07', 2
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActHajikareAir'
+  sprite: s32'zat102_00', 7
+  sprite: s32'zat102_01', 7
+  sprite: s32'zat102_02', 7
+  sprite: s32'zat102_03', 2147483647
+  setMarker: s32'_End'
+  sprite: s32'zat102_04', 3
+  sprite: s32'zat102_05', 3
+  sprite: s32'zat102_06', 2
+  sprite: s32'zat102_07', 2
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_Landing'
+  sprite: s32'zat100_05', 2
+  sprite: s32'zat100_06', 2
+  sprite: s32'zat100_07', 2
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActAirTurn'
+  sprite: s32'zat023_00', 3
+  sprite: s32'zat023_01', 2
+  sprite: s32'zat023_02', 2
+  sprite: s32'zat023_03', 2
+  endState: 
+
+startState: s32'CmnActLockWait'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActLockReject'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActAirLockWait'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActAirLockReject'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActItemUse'
+  Unknown13: s32'_BeginB', 9, 2, 122, 0, 1
+  Unknown13: s32'_BeginC', 9, 2, 122, 0, 2
+  setMarker: s32'_BeginA'
+  sprite: s32'zat400_00', 4
+  createObject2: s32'UzuDelete', 100
+  sprite: s32'zat400_01', 2
+  sprite: s32'zat400_02', 2
+  sprite: s32'zat400_03', 2
+  sprite: s32'zat400_04', 2
+  sprite: s32'zat400_05', 2
+  Unknown2161: 100, 160000, 260000
+  createObject2: s32'cmn_MOM_AUTO_ITEM', 130
+  Unknown43: 12, 1
+  Unknown2161: 100, 220000, 240000
+  Unknown448: s32'cmn_mom_bun', 130
+  Unknown3: 
+  storeValue: (VARIABLE), 69, (STATIC), 1
+  setMarker: s32'loopA'
+  sprite: s32'zat400_06', 12
+  Unknown3: 
+  goToMarker: s32'loopA'
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_EndA'
+  sprite: s32'zat400_07', 2
+  sprite: s32'zat400_08', 2
+  createObject2: s32'UzuStart', 100
+  sprite: s32'zat400_09', 1
+  sprite: s32'zat400_10', 1
+  Unknown3: 
+  exitState: 
+  setMarker: s32'_BeginB'
+  upon: (ON_HIT_OR_BLOCK)
+    Unknown2161: 100, 0, 320000
+    endUpon: 
+  sprite: s32'zat404_00', 3
+  sprite: s32'zat404_01', 3
+  sprite: s32'zat404_02', 3
+  sprite: s32'zat404_03', 3
+  sprite: s32'zat404_04', 3
+  sprite: s32'zat404_05', 3
+  sprite: s32'zat404_06', 3
+  setMarker: s32'loopB'
+  sprite: s32'zat404_07', 3
+  sprite: s32'zat404_08', 3
+  Unknown3: 
+  goToMarker: s32'loopB'
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_EndB'
+  sprite: s32'zat404_09', 3
+  sprite: s32'zat404_10', 3
+  sprite: s32'zat404_11', 3
+  sprite: s32'zat404_12', 3
+  sprite: s32'zat404_13', 3
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActBurst'
+  sprite: s32'zat330_00', 2
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_Bakuhatsu'
+  sprite: s32'zat330_01', 2
+  sprite: s32'zat330_02', 2
+  sprite: s32'zat330_03', 2
+  sprite: s32'zat330_04', 3
+  sprite: s32'zat330_05', 2147483647
+  setMarker: s32'_Drop'
+  sprite: s32'zat330_06', 3
+  sprite: s32'zat330_07', 3
+  setMarker: s32'downloop'
+  sprite: s32'zat330_08', 5
+  sprite: s32'zat330_09', 5
+  Unknown3: 
+  goToMarker: s32'downloop'
+  endState: 
+
+startState: s32'CmnActRomanCancel'
+  sprite: s32'zat350_00', 4
+  if: (VARIABLE), 30
+    Unknown2234: s32'zat351_00'
+    endIf: 
+  sprite: s32'zat350_01', 5
+  if: (VARIABLE), 30
+    Unknown2234: s32'zat351_01'
+    endIf: 
+  sprite: s32'zat350_02', 5
+  if: (VARIABLE), 30
+    Unknown2234: s32'zat351_02'
+    endIf: 
+  setMarker: s32'loop'
+  sprite: s32'zat350_03', 5
+  if: (VARIABLE), 30
+    Unknown2234: s32'zat351_03'
+    endIf: 
+  sprite: s32'zat350_04', 3
+  if: (VARIABLE), 30
+    Unknown2234: s32'zat351_04'
+    endIf: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_EndLand'
+  sprite: s32'zat350_05', 3
+  sprite: s32'zat350_06', 3
+  sprite: s32'keep', 2147483647
+  Unknown3: 
+  exitState: 
+  setMarker: s32'_EndAir'
+  sprite: s32'zat351_05', 3
+  sprite: s32'zat351_06', 3
+  sprite: s32'keep', 2147483647
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActEntryWait'
+  sprite: s32'null', 2147483647
+  Unknown2023: 0
+  endState: 
+
+startState: s32'entry_default'
+  upon: (IMMEDIATE)
+    Unknown1638: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2013: s32'zat700cs', 0
+  Unknown2020: s32'zat700', 23, 0, -1
+  Unknown2212: 1
+  Unknown2051: 1900
+  Unknown2028: s32'MS_Entry'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown448: s32'zat_tojo_shadow', 100
+      createObject2: s32'Edy', 100
+      playCharacterSFX: s32'ZAT_Entry001'
+      playCharacterSFX: s32'ZAT_Entry002'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 42
+      playCharacterSFX: s32'ZAT_Entry003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 58
+      playCharacterSFX: s32'ZAT_Entry003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 78
+      playCharacterSFX: s32'ZAT_Entry003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 86
+      playCharacterSFX: s32'ZAT_Entry004'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 105
+      playCharacterSFX: s32'ZAT_Entry003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 123
+      playCharacterSFX: s32'ZAT_Entry003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 140
+      playCharacterSFX: s32'ZAT_Entry001'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 145
+      Unknown2028: s32'MS_Entry2'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 154
+      playCharacterSFX: s32'ZAT_Entry003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 182
+      playCharacterSFX: s32'ZAT_Entry006'
+      playCharacterSFX: s32'ZAT_Entry005'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 189
+      playCharacterSFX: s32'ZAT_Entry007'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 198
+      playCharacterSFX: s32'ZAT_Entry008'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 250
+      createObject2: s32'Tojo_eyebloom', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 260
+      ifOpponentCharacter: s16'mll'
+        playVoice: s16'vxxx362'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOpponentCharacter: s16'ven'
+        playVoice: s16'vxxx362'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOpponentCharacter: s16'sly'
+        playVoice: s16'vxxx362'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifNot: (VARIABLE), 45
+        playVoice: s16'vxxx304'
+        endIf: 
+      Unknown2211: s32'prev', -2147483618
+      Unknown1675: 60
+      Unknown1890: 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 280
+      playCharacterSFX: s32'ZAT_Entry001'
+      endIf: 
+    endUpon: 
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActExDamage'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActExDamageLand'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActRoundWin'
+  if: (VARIABLE), 136
+    Unknown14: s32'TypeA'
+    endIf: 
+  Unknown13: s32'TypeA', 9, 2, 153, 0, 1
+  Unknown13: s32'TypeB', 9, 2, 153, 0, 2
+  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  setMarker: s32'TypeA'
+  sprite: s32'zat402_00', 2
+  Unknown2157: 0, 5
+  playCharacterSFX: s32'6'
+  sprite: s32'zat402_01', 2
+  sprite: s32'zat402_02', 2
+  sprite: s32'zat402_03', 2
+  sprite: s32'zat402_04', 2
+  sprite: s32'zat402_05', 2
+  sprite: s32'zat615_00', 4
+  playCharacterSFX: s32'6'
+  sprite: s32'zat615_01', 4
+  sprite: s32'zat615_02', 4
+  sprite: s32'zat615_03', 4
+  sprite: s32'zat615_04', 4
+  sprite: s32'zat615_05', 4
+  sprite: s32'zat615_06', 4
+  sprite: s32'zat615_07', 4
+  sprite: s32'zat615_08', 4
+  sprite: s32'zat615_09', 4
+  sprite: s32'zat615_10', 4
+  sprite: s32'zat615_11', 4
+  sprite: s32'zat615_12', 4
+  sprite: s32'zat615_13', 4
+  sprite: s32'zat615_14', 4
+  sprite: s32'zat615_15', 4
+  playSFX: s32'SE_VEN3'
+  sprite: s32'zat615_16', 4
+  sprite: s32'zat615_17', 4
+  sprite: s32'zat615_18', 4
+  sprite: s32'zat615_19', 4
+  sprite: s32'zat615_20', 4
+  playCharacterSFX: s32'5'
+  sprite: s32'zat615_21', 4
+  sprite: s32'zat615_22', 4
+  sprite: s32'zat615_23', 4
+  sprite: s32'zat615_24', 4
+  sprite: s32'zat615_25', 4
+  sprite: s32'zat615_26', 4
+  playVoice: s16'vxxx305'
+  Unknown1890: 1
+  sprite: s32'zat615_27', 4
+  sprite: s32'zat615_28', 4
+  sprite: s32'zat615_29', 4
+  sprite: s32'zat615_30', 120
+  sprite: s32'zat615_30', 2147483647
+  exitState: 
+  setMarker: s32'TypeB'
+  sprite: s32'zat000_00', 1
+  upon: (FRAME_STEP)
+    ifOperation: (IS_LESSER), (VARIABLE), 14, (STATIC), 300000
+      Unknown14: s32'end'
+      endIf: 
+    endUpon: 
+  Unknown2157: 0, 5
+  sprite: s32'zat402_00', 2
+  playCharacterSFX: s32'6'
+  sprite: s32'zat402_01', 2
+  sprite: s32'zat402_02', 2
+  sprite: s32'zat402_03', 2
+  sprite: s32'zat402_04', 2
+  sprite: s32'zat402_05', 2
+  Unknown3: 
+  createObject2: s32'UzuBreakTheLaw', 100
+  setMarker: s32'down'
+  sprite: s32'ZT56_06', 4
+  Unknown2023: 0
+  Unknown23: 3
+  upon: (FRAME_STEP)
+    ifOperation: (IS_LESSER), (VARIABLE), 14, (STATIC), 300000
+      Unknown14: s32'up'
+      endIf: 
+    endUpon: 
+  physicsXImpulse: 12250
+  sprite: s32'ZT56_07', 4
+  sprite: s32'ZT56_08', 4
+  Unknown3: 
+  goToMarker: s32'down'
+  setMarker: s32'up'
+  sprite: s32'zat402_05', 2
+  Unknown2023: 1
+  Unknown32: s32'UzuBreakTheLaw'
+  Unknown176: 1
+  Unknown23: 3
+  sprite: s32'zat402_04', 2
+  playCharacterSFX: s32'6'
+  sprite: s32'zat402_03', 2
+  sprite: s32'zat402_02', 2
+  sprite: s32'zat402_01', 1
+  sprite: s32'zat402_00', 2
+  setMarker: s32'end'
+  sprite: s32'zat616_00', 6
+  Unknown448: s32'zat_moguri', 100
+  Unknown23: 3
+  sprite: s32'zat616_01', 6
+  playVoice: s16'vxxx306'
+  Unknown1890: 1
+  sprite: s32'zat616_02', 6
+  sprite: s32'zat616_03', 6
+  sprite: s32'zat616_04', 6
+  sprite: s32'zat616_05', 6
+  sprite: s32'zat616_06', 6
+  Unknown2161: 100, 40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat616_07', 120
+  sprite: s32'zat616_07', 2147483647
+  endState: 
+
+startState: s32'CmnActMatchWin'
+  sprite: s32'null', 2147483647
+  Unknown2013: s32'zat800cs', 0
+  Unknown2020: s32'zat800', 23, 0, -1
+  Unknown2212: 1
+  Unknown2051: 1900
+  Unknown2028: s32'MS_Win'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown448: s32'zat_cswin_shadow1', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 109
+      playCharacterSFX: s32'ZAT_Win001'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 135
+      playCharacterSFX: s32'ZAT_Win002'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 244
+      Unknown448: s32'zat_win_wear', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 278
+      playCharacterSFX: s32'ZAT_Win003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 313
+      playCharacterSFX: s32'ZAT_Win003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 405
+      ifOpponentCharacter: s16'mll'
+        playVoice: s16'vxxx356'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOpponentCharacter: s16'ven'
+        playVoice: s16'vxxx357'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOpponentCharacter: s16'sly'
+        playVoice: s16'vxxx362'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifNot: (VARIABLE), 45
+        playVoice: s16'vxxx307'
+        endIf: 
+      Unknown2211: s32'prev', -2147483618
+      Unknown1890: 1
+      Unknown1675: 30
+      endIf: 
+    endUpon: 
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActLose'
+  sprite: s32'zat640_00', 6
+  Unknown448: s32'zat_stand_start', 100
+  sprite: s32'zat640_01', 6
+  sprite: s32'zat640_02', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_03', 6
+  sprite: s32'zat640_04', 12
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 12
+  sprite: s32'zat640_11', 2147483647
+  Unknown1676: 
+  endState: 
+
+startState: s32'CmnActResultWin'
+  sprite: s32'zat650_00', 2147483647
+  Unknown2028: s32'MS_Win'
+  Unknown2062: -165000, 0, -1168000, 0, 0, 0
+  Unknown2036: 
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 0
+      if: (VARIABLE), 138
+        playVoice: s16'vxxx400'
+        Unknown2211: s32'vxxx400', 10000
+        Unknown2313: 1
+        storeValue: (VARIABLE), 69, (STATIC), 1
+        endIf: 
+      endIf: 
+    else: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+        storeValue: (VARIABLE), 69, (STATIC), 2
+        endIf: 
+      else: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
+          ifNot: (VARIABLE), 143
+            storeValue: (VARIABLE), 138, (STATIC), 0
+            storeValue: (VARIABLE), 69, (STATIC), 3
+            endIf: 
+          endIf: 
+        endElse: 
+      endElse: 
+    endUpon: 
+  endState: 
+
+startState: s32'CmnActResultLose'
+  sprite: s32'zat660_00', 2147483647
+  Unknown2028: s32'MS_Lose'
+  Unknown2062: -109000, 36000, -246000, 0, 10000, 0
+  Unknown2036: 
+  endState: 
+
+startState: s32'Fly'
+  upon: (IMMEDIATE)
+    Unknown2437: 3
+    Unknown1320: 1
+    Unknown1321: 1
+    Unknown1337: 1
+    Unknown1314: 1
+    Unknown2140: 1
+    Unknown1325: 1
+    Unknown1335: 1
+    physicsXImpulse: 0
+    physicsYImpulse: 14000
+    setGravity: 1225
+    Unknown1789: -1
+    Unknown1791: -1
+    Unknown1601: 16
+    upon: (FRAME_STEP)
+      Unknown240: 
+      checkInput: 121
+      if: (VARIABLE), 0
+        addVelocityX: 1225
+        endIf: 
+      checkInput: 95
+      if: (VARIABLE), 0
+        addVelocityX: -1225
+        endIf: 
+      checkInput: 147
+      if: (VARIABLE), 0
+        addVelocityY: 700
+        endIf: 
+      checkInput: 69
+      if: (VARIABLE), 0
+        addVelocityY: -1750
+        endIf: 
+      ifOperation: (IS_GREATER), (VARIABLE), 18, (STATIC), 875000
+        addVelocityY: 437
+        endIf: 
+      else: 
+        ifOperation: (IS_GREATER), (VARIABLE), 18, (STATIC), 700000
+          addVelocityY: 787
+          endIf: 
+        else: 
+          addVelocityY: 1050
+          endElse: 
+        endElse: 
+      multiplyYVelocityByPercent: 96
+      Unknown111: 88
+      storeValue: (VARIABLE), 61, (VARIABLE), 7
+      ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
+        modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
+        endIf: 
+      ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 262
+        physicsXImpulse: 0
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 92
+        jumpToState: s32'_NEUTRAL'
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat416_00', 1
+  sprite: s32'zat416_00', 3
+  Unknown1603: 16
+  setMarker: s32'top'
+  sprite: s32'zat416_01', 4
+  sprite: s32'zat416_02', 4
+  playCharacterSFX: s32'5'
+  sprite: s32'zat416_03', 4
+  sprite: s32'zat416_04', 4
+  sprite: s32'zat416_05', 4
+  sprite: s32'zat416_06', 4
+  sprite: s32'zat416_07', 4
+  sprite: s32'zat416_08', 4
+  Unknown3: 
+  goToMarker: s32'top'
+  endState: 
+
+startState: s32'NmlAtk5A'
+  upon: (IMMEDIATE)
+    Unknown730: 1
+    attackLevel: 0
+    enableWhiffCancel: 1
+    damage: 9
+    setProration: 90
+    addWhiffCancelOption: s32'NmlAtk5A'
+    addWhiffCancelOption: s32'NmlAtk2A'
+    addWhiffCancelOption: s32'NmlAtk6A'
+    addWhiffCancelOption: s32'NmlAtk5B'
+    addWhiffCancelOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5B'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2A'
+    addGatlingOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 5
+    endUpon: 
+  sprite: s32'zat200_00', 2
+  Unknown2161: 100, 1500, 0
+  createObject2: s32'Appear_s', 130
+  setJumpCancelable: 1
+  sprite: s32'zat200_01', 2
+  Unknown621: 0, -1
+  sprite: s32'zat200_02', 4
+  hit: 
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'zat200_03', 3
+  Unknown1616: 1
+  recoveryState: 
+  sprite: s32'zat200_04', 2
+  sprite: s32'zat200_05', 2
+  endState: 
+
+startState: s32'NmlAtk6A'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 22
+    stunValue: 44
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'CmnFJump'
+        addMoveFlag: 99
+        addMoveFlag: 117
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 13
+    endUpon: 
+  sprite: s32'zat210_00', 4
+  Unknown2161: 100, 1500, 0
+  createObject2: s32'Appear_s', 130
+  Unknown2157: 0, 5
+  setJumpCancelable: 1
+  sprite: s32'zat210_01', 4
+  Unknown621: 2, -1
+  sprite: s32'zat210_02', 4
+  playSFX: s32'SE_SWINGD'
+  sprite: s32'zat210_03', 4
+  hit: 
+  sprite: s32'zat210_04', 4
+  hit: 
+  sprite: s32'zat210_05', 4
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat210_06', 4
+  recoveryState: 
+  sprite: s32'zat210_07', 4
+  endState: 
+
+startState: s32'NmlAtk2A'
+  upon: (IMMEDIATE)
+    Unknown730: 1
+    attackLevel: 0
+    enableWhiffCancel: 1
+    damage: 8
+    setProration: 80
+    addWhiffCancelOption: s32'NmlAtk5A'
+    addWhiffCancelOption: s32'NmlAtk2A'
+    addWhiffCancelOption: s32'NmlAtk6A'
+    addWhiffCancelOption: s32'NmlAtk5B'
+    addWhiffCancelOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5B'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 6
+    endUpon: 
+  sprite: s32'zat230_00', 1
+  sprite: s32'zat230_00', 2
+  Unknown2161: 100, 1000, 0
+  createObject2: s32'Appear_s', 130
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'zat230_01', 2
+  Unknown621: 0, -1
+  sprite: s32'zat230_02', 4
+  hit: 
+  sprite: s32'zat230_03', 3
+  Unknown1616: 1
+  recoveryState: 
+  sprite: s32'zat230_04', 5
+  endState: 
+
+startState: s32'NmlAtk5B'
+  upon: (IMMEDIATE)
+    guardType: (LOW)
+    attackLevel: 0
+    damage: 12
+    setProration: 70
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 8
+    endUpon: 
+  sprite: s32'zat201_00', 2
+  sprite: s32'zat201_00', 1
+  setJumpCancelable: 1
+  createObject2: s32'Uzu5B', 100
+  sprite: s32'zat201_01', 2
+  Unknown621: 0, -1
+  sprite: s32'zat201_02', 1
+  sprite: s32'zat201_03', 1
+  sprite: s32'zat201_04', 4
+  playSFX: s32'SE_SWINGB'
+  hit: 
+  sprite: s32'zat201_05', 3
+  recoveryState: 
+  sprite: s32'zat201_06', 3
+  sprite: s32'zat201_07', 2
+  endState: 
+
+startState: s32'NmlAtk6B'
+  upon: (IMMEDIATE)
+    guardType: (HIGH)
+    Unknown1108: -90
+    Unknown725: 1
+    groundHitEffect: (STAGGER)
+    staggerDuration: 40
+    attackLevel: 2
+    damage: 30
+    setProration: 75
+    Unknown2331: 23
+    endUpon: 
+  sprite: s32'zat211_00', 3
+  playSFX: s32'SE_SWINGA'
+  Unknown621: 2, -1
+  specialCancelEnabled: 0
+  createObject2: s32'UzuDelete', 100
+  sprite: s32'zat211_01', 3
+  sprite: s32'zat211_02', 3
+  sprite: s32'zat211_03', 3
+  sprite: s32'zat211_04', 4
+  sprite: s32'zat211_05', 3
+  playSFX: s32'SE_SWINGC'
+  sprite: s32'zat211_06', 3
+  sprite: s32'zat211_07', 5
+  hit: 
+  sprite: s32'zat211_08', 5
+  recoveryState: 
+  createObject2: s32'UzuStart', 100
+  sprite: s32'zat211_09', 5
+  sprite: s32'zat211_10', 4
+  endState: 
+
+startState: s32'NmlAtk2B'
+  upon: (IMMEDIATE)
+    createObject2: s32'Uzu2B', 100
+    storeValue: (VARIABLE), 59, (STATIC), 1
+    guardType: (LOW)
+    attackLevel: 2
+    enableWhiffCancel: 1
+    damage: 18
+    setProration: 80
+    Unknown2139: 1
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2C'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2D'
+        Unknown1416: 250000
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'zat231_00', 2
+  Unknown2157: 0, 5
+  sprite: s32'zat231_01', 2
+  createObject2: s32'231shadow', 100
+  sprite: s32'zat231_02', 1
+  sprite: s32'zat231_03', 1
+  Unknown621: 0, -1
+  sprite: s32'zat231_04', 2
+  playSFX: s32'SE_SWINGA'
+  hit: 
+  sprite: s32'zat231_05', 3
+  recoveryState: 
+  sprite: s32'zat231_06', 1
+  sprite: s32'zat231_07', 1
+  sprite: s32'zat231_08', 2
+  sprite: s32'zat231_09', 2
+  endState: 
+
+startState: s32'NmlAtk5CNear'
+  upon: (IMMEDIATE)
+    Unknown725: 1
+    attackLevel: 2
+    damage: 30
+    Unknown2139: 1
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'CmnFHighJump'
+        addMoveFlag: 99
+        addMoveFlag: 117
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'NmlAtk5D'
+        addMoveFlag: 114
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'zat202_00', 2
+  Unknown2161: 100, 1500, 0
+  createObject2: s32'Appear_s', 130
+  setJumpCancelable: 1
+  sprite: s32'zat202_01', 2
+  sprite: s32'zat202_02', 2
+  Unknown621: 1, 0
+  sprite: s32'zat202_03', 2
+  sprite: s32'zat202_04', 2
+  playSFX: s32'SE_SWINGF'
+  hit: 
+  sprite: s32'zat202_05', 3
+  sprite: s32'zat202_06', 3
+  recoveryState: 
+  sprite: s32'zat202_07', 3
+  sprite: s32'zat202_08', 3
+  endState: 
+
+startState: s32'NmlAtk5CFar'
+  upon: (IMMEDIATE)
+    Unknown1108: -90
+    Unknown725: 1
+    Unknown1110: 1
+    attackLevel: 2
+    damage: 20
+    tensionGainOnConnect: 10
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk6D'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2C'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'zat203_00', 3
+  Unknown2161: 100, 1000, 0
+  createObject2: s32'Appear_s', 130
+  sprite: s32'zat203_01', 3
+  Unknown621: 1, 96
+  sprite: s32'zat203_02', 3
+  playSFX: s32'SE_SWINGF'
+  hit: 
+  sprite: s32'zat203_03', 3
+  hit: 
+  sprite: s32'zat203_04', 3
+  hit: 
+  sprite: s32'zat203_05', 3
+  hit: 
+  sprite: s32'zat203_06', 8
+  recoveryState: 
+  sprite: s32'zat203_07', 3
+  Unknown448: s32'zat_203dragon', 100
+  sprite: s32'zat203_08', 3
+  sprite: s32'zat203_09', 3
+  sprite: s32'zat203_10', 3
+  endState: 
+
+startState: s32'NmlAtk2C'
+  upon: (IMMEDIATE)
+    Unknown730: 1
+    attackLevel: 2
+    damage: 24
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'InviteHellD'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5D'
+        Unknown1416: 400000
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'zat232_00', 1
+  Unknown2161: 100, 100000, 0
+  createObject2: s32'Appear_s', 130
+  sprite: s32'zat232_01', 1
+  sprite: s32'zat232_02', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'zat232_03', 2
+  Unknown621: 2, 128
+  sprite: s32'zat232_04', 2
+  sprite: s32'zat232_05', 4
+  hit: 
+  sprite: s32'zat232_06', 4
+  Unknown448: s32'zat_232_yoin', 100
+  recoveryState: 
+  sprite: s32'zat232_07', 3
+  Unknown2161: 100, 50000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat232_08', 3
+  sprite: s32'zat232_09', 3
+  sprite: s32'zat232_10', 3
+  endState: 
+
+startState: s32'NmlAtk5D'
+  upon: (IMMEDIATE)
+    Unknown730: 1
+    Unknown1110: 1
+    attackLevel: 4
+    riscPlus: 10
+    damage: 25
+    hitPushbackX: 90
+    groundCounterHitEffect: (STAGGER)
+    staggerDuration: 41
+    addGatlingOption: s32'NmlAtk5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'InviteHellD'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'InviteHellC'
+        Unknown1416: 400000
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'Amorphous'
+        addMoveFlag: 117
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 13
+    endUpon: 
+  sprite: s32'zat204_00', 2
+  createObject2: s32'204shadowfloor', 100
+  sprite: s32'zat204_01', 2
+  sprite: s32'zat204_02', 2
+  sprite: s32'zat204_03', 2
+  sprite: s32'zat204_04', 2
+  Unknown621: 2, 128
+  sprite: s32'zat204_05', 2
+  sprite: s32'zat204_06', 2
+  playSFX: s32'SE_SWINGC'
+  hit: 
+  sprite: s32'zat204_07', 3
+  hit: 
+  sprite: s32'zat204_08', 3
+  sprite: s32'zat204_09', 3
+  hit: 
+  sprite: s32'zat204_10', 3
+  Unknown448: s32'zat_204shadow', 100
+  recoveryState: 
+  sprite: s32'zat204_11', 3
+  sprite: s32'zat204_12', 3
+  sprite: s32'zat204_13', 3
+  sprite: s32'zat204_14', 3
+  endState: 
+
+startState: s32'NmlAtk6D'
+  upon: (IMMEDIATE)
+    Unknown1108: -90
+    Unknown725: 1
+    groundHitEffect: (AIR_LAUNCH)
+    airHitEffect: (AIR_LAUNCH)
+    attackLevel: 4
+    damage: 60
+    hitAirPushbackY: 42000
+    untechableTime: 28
+    hitAirPushbackX: 14000
+    counterhitAirPushbackX: 7000
+    Unknown2331: 13
+    endUpon: 
+  sprite: s32'zat213_00', 3
+  Unknown2161: 100, 1000, 0
+  createObject2: s32'Appear_s', 130
+  specialCancelEnabled: 0
+  Unknown2157: 0, 5
+  createObject2: s32'Uzu6DStart', 100
+  sprite: s32'zat213_01', 3
+  sprite: s32'zat213_02', 3
+  Unknown32: s32'Uzu6DStart'
+  sprite: s32'zat213_03', 3
+  Unknown621: 2, 0
+  sprite: s32'zat213_04', 3
+  playSFX: s32'SE_SWINGH'
+  hit: 
+  sprite: s32'zat213_05', 3
+  sprite: s32'zat213_06', 3
+  sprite: s32'zat213_07', 3
+  sprite: s32'zat213_08', 3
+  sprite: s32'zat213_09', 4
+  recoveryState: 
+  sprite: s32'zat213_10', 4
+  sprite: s32'zat213_11', 4
+  sprite: s32'zat213_12', 4
+  createObject2: s32'Uzu6DEnd', 100
+  sprite: s32'zat213_13', 4
+  endState: 
+
+startState: s32'NmlAtk2D'
+  upon: (IMMEDIATE)
+    Unknown725: 1
+    Unknown1108: -90
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 4
+    damage: 50
+    hitAirPushbackX: 14000
+    hitAirPushbackY: 31500
+    untechableTime: 26
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'InviteHellD'
+        addMoveFlag: 117
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'Amorphous'
+        addMoveFlag: 117
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 11
+    endUpon: 
+  sprite: s32'zat233_00', 2
+  Unknown2161: 100, 1500, 0
+  createObject2: s32'Appear_s', 130
+  Unknown2157: 0, 5
+  sprite: s32'zat233_01', 2
+  sprite: s32'zat233_02', 2
+  sprite: s32'zat233_03', 2
+  sprite: s32'zat233_04', 2
+  Unknown628: s16'vxxx200', 0
+  sprite: s32'zat233_05', 2
+  playSFX: s32'SE_SWINGF'
+  hit: 
+  sprite: s32'zat233_06', 2
+  sprite: s32'zat233_07', 2
+  sprite: s32'zat233_08', 4
+  recoveryState: 
+  sprite: s32'zat233_09', 3
+  Unknown448: s32'zat_233shadow', 100
+  Unknown2161: 100, 40000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat233_10', 3
+  sprite: s32'zat233_11', 3
+  sprite: s32'zat233_12', 3
+  sprite: s32'zat233_13', 3
+  endState: 
+
+startState: s32'NmlAtk5E'
+  upon: (IMMEDIATE)
+    Unknown2161: 100, 10000, 120000
+    callCmnEfFunc: s32'cmnDustInitialize'
+    attackLevel: 2
+    damage: 22
+    riscMinus: 20
+    setProration: 80
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'HomingJump'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 25
+    endUpon: 
+  sprite: s32'zat205_00', 2
+  sprite: s32'zat205_00', 4
+  playSFX: s32'SE_SWINGA'
+  createObject2: s32'UzuDelete', 100
+  Unknown628: s16'vxxx111', 0
+  sprite: s32'zat205_01', 5
+  sprite: s32'zat205_02', 5
+  sprite: s32'zat205_03', 5
+  sprite: s32'zat205_04', 3
+  playSFX: s32'SE_SWINGD'
+  sprite: s32'zat205_05', 3
+  hit: 
+  sprite: s32'zat205_06', 3
+  sprite: s32'zat205_07', 3
+  recoveryState: 
+  sprite: s32'zat205_08', 3
+  sprite: s32'zat205_09', 3
+  sprite: s32'zat205_10', 3
+  sprite: s32'zat205_11', 3
+  createObject2: s32'UzuStart', 100
+  sprite: s32'zat205_12', 3
+  playSFX: s32'SE_JUMPLANDB'
+  sprite: s32'zat205_13', 3
+  endState: 
+
+startState: s32'HomingDash2'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnHomingDash2Initialize'
+    endUpon: 
+  sprite: s32'zat414_09', 6
+  sprite: s32'zat414_08', 3
+  sprite: s32'zat414_07', 3
+  setMarker: s32'loop'
+  sprite: s32'zat032_00', 4
+  sprite: s32'zat032_01', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'HomingJump'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnHomingJumpInitialize'
+    endUpon: 
+  sprite: s32'zat025_00', 5
+  createObject2: s32'Homingcharge', 100
+  sprite: s32'zat025_01', 5
+  sprite: s32'zat025_02', 10
+  sprite: s32'zat025_03', 2147483647
+  createObject2: s32'HomingEffect', 100
+  Unknown3: 
+  endState: 
+
+startState: s32'NmlAtk2E'
+  upon: (IMMEDIATE)
+    guardType: (LOW)
+    groundHitEffect: (AIR_FACE_DOWN)
+    attackLevel: 2
+    damage: 20
+    Unknown725: 1
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'DrunkerdShade'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'InviteHellC'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'EddieSummonD'
+        addMoveFlag: 117
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot3', s32'EddieSummonB'
+        addMoveFlag: 114
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'zat234_00', 3
+  createObject2: s32'UzuDelete', 100
+  setJumpCancelable: 1
+  sprite: s32'zat234_01', 3
+  sprite: s32'zat234_02', 2
+  Unknown621: 2, 0
+  sprite: s32'zat234_03', 6
+  playSFX: s32'SE_SWINGB'
+  hit: 
+  sprite: s32'zat234_04', 3
+  recoveryState: 
+  sprite: s32'zat234_05', 3
+  sprite: s32'zat234_06', 3
+  createObject2: s32'UzuStart', 100
+  sprite: s32'zat234_07', 3
+  sprite: s32'zat234_08', 3
+  endState: 
+
+startState: s32'NmlAtk5F'
+  upon: (IMMEDIATE)
+    Unknown2160: 61
+    Unknown2215: 
+    recoveryState: 
+    endUpon: 
+  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  setMarker: s32'TypeA'
+  sprite: s32'zat300_00', 5
+  createObject2: s32'300Floor_shadowloop', 100
+  sprite: s32'zat300_01', 6
+  playVoice: s16'vxxx300'
+  sprite: s32'zat300_02', 7
+  sprite: s32'zat300_03', 3
+  sprite: s32'zat300_04', 20
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'zat300_04', 4
+  sprite: s32'zat300_05', 4
+  sprite: s32'zat300_06', 4
+  sprite: s32'zat300_07', 4
+  sprite: s32'zat300_08', 4
+  sprite: s32'zat300_09', 4
+  sprite: s32'zat300_10', 4
+  sprite: s32'zat300_11', 4
+  sprite: s32'zat300_12', 4
+  sprite: s32'zat300_13', 4
+  sprite: s32'zat300_14', 4
+  sprite: s32'zat300_15', 4
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat300_16', 4
+  sprite: s32'zat300_17', 4
+  Unknown3: 
+  exitState: 
+  setMarker: s32'TypeB'
+  sprite: s32'zat301_00', 4
+  createObject2: s32'301Floor_shadowloop', 100
+  sprite: s32'zat301_01', 4
+  sprite: s32'zat301_02', 4
+  sprite: s32'zat301_03', 4
+  sprite: s32'zat301_04', 4
+  sprite: s32'zat301_05', 4
+  sprite: s32'zat301_06', 4
+  playVoice: s16'vxxx301'
+  sprite: s32'zat301_07', 4
+  sprite: s32'zat301_08', 4
+  sprite: s32'zat301_09', 75
+  sprite: s32'zat301_10', 4
+  sprite: s32'zat301_11', 4
+  sprite: s32'zat301_12', 4
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat301_13', 4
+  sprite: s32'zat301_14', 4
+  sprite: s32'zat301_15', 4
+  sprite: s32'zat301_16', 4
+  sprite: s32'zat301_17', 4
+  Unknown3: 
+  endState: 
+
+startState: s32'NmlAtk6F'
+  upon: (IMMEDIATE)
+    Unknown2160: 17
+    recoveryState: 
+    endUpon: 
+  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  setMarker: s32'TypeA'
+  sprite: s32'zat305_00', 6
+  Unknown2161: 100, 40000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat305_01', 6
+  sprite: s32'zat305_02', 6
+  Unknown2161: 100, 160000, 0
+  createObject2: s32'305Floorr_shadowloop', 130
+  playCharacterSFX: s32'6'
+  sprite: s32'zat305_03', 6
+  sprite: s32'zat305_04', 12
+  playSFX: s32'SE_JUMPLANDA'
+  sprite: s32'zat305_05', 8
+  playVoice: s16'vxxx302'
+  sprite: s32'zat305_06', 90
+  sprite: s32'zat305_07', 6
+  Unknown2161: 100, 40000, 0
+  Unknown448: s32'zat_moguri', 130
+  playCharacterSFX: s32'6'
+  sprite: s32'zat305_08', 6
+  Unknown3: 
+  exitState: 
+  setMarker: s32'TypeB'
+  sprite: s32'zat306_00', 6
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat306_01', 6
+  sprite: s32'zat306_02', 6
+  sprite: s32'zat306_03', 6
+  sprite: s32'zat306_04', 6
+  sprite: s32'zat306_05', 6
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  playVoice: s16'vxxx303'
+  sprite: s32'zat306_06', 6
+  sprite: s32'zat306_07', 6
+  sprite: s32'zat306_08', 6
+  sprite: s32'zat306_09', 90
+  sprite: s32'zat306_10', 6
+  sprite: s32'zat306_11', 6
+  Unknown2161: 100, -40000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat306_12', 6
+  sprite: s32'zat306_13', 6
+  sprite: s32'zat306_14', 6
+  sprite: s32'zat306_15', 6
+  Unknown3: 
+  endState: 
+
+startState: s32'NmlAtkAir5A'
+  upon: (IMMEDIATE)
+    attackLevel: 1
+    enableWhiffCancel: 1
+    damage: 13
+    addGatlingOption: s32'NmlAtkAir5A'
+    addGatlingOption: s32'NmlAtkAir5B'
+    addGatlingOption: s32'NmlAtkAir5C'
+    addGatlingOption: s32'NmlAtkAir5D'
+    addGatlingOption: s32'NmlAtkAir5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5B'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 6
+    endUpon: 
+  sprite: s32'zat250_00', 2
+  sprite: s32'zat250_01', 2
+  Unknown621: 0, 48
+  sprite: s32'zat250_02', 1
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'zat250_03', 3
+  hit: 
+  sprite: s32'zat250_04', 1
+  sprite: s32'zat250_04', 2
+  recoveryState: 
+  sprite: s32'zat250_05', 3
+  sprite: s32'zat250_06', 3
+  sprite: s32'zat250_07', 3
+  endState: 
+
+startState: s32'NmlAtkAir5B'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    enableWhiffCancel: 1
+    damage: 18
+    setProration: 90
+    addGatlingOption: s32'NmlAtkAir5A'
+    addGatlingOption: s32'NmlAtkAir5C'
+    addGatlingOption: s32'NmlAtkAir5D'
+    upon: (HIT_OR_GUARD)
+      enableWhiffCancelOptions: 1
+      addWhiffCancelOption: s32'Fly'
+      endUpon: 
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'zat251_00', 3
+  setJumpCancelable: 1
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'zat251_01', 3
+  Unknown621: 1, 64
+  sprite: s32'zat251_02', 3
+  hit: 
+  sprite: s32'zat251_03', 3
+  sprite: s32'zat251_03', 3
+  recoveryState: 
+  sprite: s32'zat251_04', 4
+  sprite: s32'zat251_05', 4
+  endState: 
+
+startState: s32'NmlAtkAir5C'
+  upon: (IMMEDIATE)
+    Unknown730: 1
+    attackLevel: 2
+    damage: 22
+    addGatlingOption: s32'NmlAtkAir5D'
+    upon: (HIT_OR_GUARD)
+      enableWhiffCancelOptions: 1
+      addWhiffCancelOption: s32'Fly'
+      endUpon: 
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5D'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'Executer'
+        addMoveFlag: 117
+        Unknown1416: 350000
+        Unknown1422: -330000, 100000
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'zat252_00', 3
+  setJumpCancelable: 1
+  sprite: s32'zat252_01', 3
+  Unknown621: 1, 64
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'zat252_02', 3
+  hit: 
+  sprite: s32'zat252_03', 3
+  sprite: s32'zat252_04', 6
+  sprite: s32'zat252_05', 4
+  recoveryState: 
+  sprite: s32'zat252_06', 4
+  sprite: s32'zat252_07', 4
+  endState: 
+
+startState: s32'NmlAtkAir5D'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 33
+    SFX_0: s32'SE_HITNIKUC'
+    addGatlingOption: s32'NmlAtkAir5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5E'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'Executer'
+        addMoveFlag: 117
+        Unknown1416: 350000
+        Unknown1422: -330000, 100000
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 11
+    endUpon: 
+  sprite: s32'zat253_00', 2
+  sprite: s32'zat253_01', 2
+  sprite: s32'zat253_02', 2
+  playSFX: s32'SE_SWINGC'
+  sprite: s32'zat253_03', 2
+  Unknown621: 2, 128
+  sprite: s32'zat253_04', 1
+  sprite: s32'zat253_05', 1
+  sprite: s32'zat253_06', 2
+  hit: 
+  sprite: s32'zat253_07', 4
+  sprite: s32'zat253_08', 2
+  recoveryState: 
+  sprite: s32'zat253_09', 2
+  sprite: s32'zat253_10', 2
+  sprite: s32'zat253_11', 2
+  sprite: s32'zat253_12', 2
+  sprite: s32'zat253_13', 2
+  endState: 
+
+startState: s32'NmlAtkAir5E'
+  upon: (IMMEDIATE)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    damage: 40
+    hitAirPushbackY: 35000
+    hitAirPushbackX: 26250
+    untechableTime: 30
+    Unknown725: 1
+    Unknown1108: 90
+    counterHitWallBounceCount: 1
+    counterhitWallBounceInCornerOnly: 1
+    counterhitWallBounceXVelocityPercent: 10
+    counterhitAirPushbackX: 21875
+    setProration: 90
+    Unknown2331: 11
+    endUpon: 
+  sprite: s32'zat254_00', 1
+  sprite: s32'zat254_00', 2
+  createObject2: s32'Air_dust', 100
+  sprite: s32'zat254_00', 1
+  Unknown1792: 4, 1
+  sprite: s32'zat254_01', 3
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'zat254_02', 3
+  Unknown621: 2, -1
+  sprite: s32'zat254_03', 4
+  hit: 
+  playCharacterSFX: s32'7'
+  sprite: s32'zat254_04', 4
+  recoveryState: 
+  sprite: s32'zat254_05', 2
+  sprite: s32'zat254_06', 1
+  sprite: s32'zat254_07', 3
+  sprite: s32'zat254_08', 3
+  sprite: s32'zat254_09', 3
+  sprite: s32'zat254_10', 3
+  endState: 
+
+startState: s32'DeadAngleAttack'
+  upon: (IMMEDIATE)
+    playSFX: s32'SE_GC'
+    Unknown1115: 1
+    Unknown1108: -90
+    Unknown725: 1
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    damage: 25
+    hitAirPushbackX: 15750
+    hitAirPushbackY: 35000
+    untechableTime: 30
+    setProration: 50
+    Unknown1064: s32'CmnNeutral'
+    endUpon: 
+  sprite: s32'zat233_00', 3
+  setThrowInvul: 1
+  setStrikeInvul: 1
+  playVoice: s16'vxxx115'
+  sprite: s32'zat233_01', 3
+  sprite: s32'zat233_02', 2
+  sprite: s32'zat233_03', 2
+  sprite: s32'zat233_04', 2
+  sprite: s32'zat233_05', 3
+  hit: 
+  playSFX: s32'SE_SWINGF'
+  sprite: s32'zat233_06', 3
+  sprite: s32'zat233_07', 3
+  sprite: s32'zat233_08', 3
+  recoveryState: 
+  setStrikeInvul: 0
+  sprite: s32'zat233_09', 3
+  Unknown448: s32'zat_233shadow', 100
+  sprite: s32'zat233_10', 3
+  sprite: s32'zat233_11', 3
+  sprite: s32'zat233_12', 3
+  sprite: s32'zat233_13', 3
+  setThrowInvul: 0
+  endState: 
+
+startState: s32'CounterGuardStand'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnCG_Initialize'
+    upon: 33
+      callCmnEfFunc: s32'cmnCG_OnMuteki'
+      endUpon: 
+    upon: 36
+      callCmnEfFunc: s32'cmnCG_OnFrameStep'
+      endUpon: 
+    upon: (RECEIVE_ATTACK)
+      callCmnEfFunc: s32'cmnCG_OnDamage'
+      endUpon: 
+    upon: (FRAME_STEP)
+      callCmnEfFunc: s32'cmnCG_OnIdling'
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat362_00', 3
+  sprite: s32'zat362_01', 3
+  sprite: s32'zat362_00', 3
+  sprite: s32'zat362_01', 3
+  sprite: s32'zat360_05', 5
+  Unknown2161: 100, 50000, 240000
+  createObject2: s32'cmn_neoblitz_burst', 130
+  sprite: s32'zat360_06', 5
+  sprite: s32'zat360_07', 4
+  sprite: s32'zat360_08', 4
+  setMarker: s32'loop'
+  sprite: s32'zat360_09', 3
+  sprite: s32'zat360_10', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'attack'
+  sprite: s32'keep', 1
+  sprite: s32'zat360_11', 3
+  callCmnEfFunc: s32'cmnCG_Attack'
+  Unknown2157: 0, 5
+  physicsXImpulse: 50000
+  Unknown2197: 90
+  sprite: s32'zat360_12', 3
+  sprite: s32'zat360_13', 4
+  sprite: s32'zat360_14', 3
+  createObject2: s32'Neoblitz_atk', 100
+  hit: 
+  screenShake: 1, 1
+  playSFX: s32'GG2_019'
+  playVoice: s16'vxxx126'
+  damage: 45
+  riscMinus: 6
+  setProration: 60
+  sprite: s32'zat360_15', 3
+  Unknown2197: 60
+  sprite: s32'zat360_16', 3
+  sprite: s32'zat360_17', 3
+  sprite: s32'zat360_18', 3
+  sprite: s32'zat360_19', 3
+  sprite: s32'zat360_20', 3
+  sprite: s32'zat360_21', 3
+  Unknown3: 
+  exitState: 
+  setMarker: s32'end'
+  sprite: s32'zat362_00', 20
+  callCmnEfFunc: s32'cmnCG_MutekiEnd'
+  sprite: s32'zat362_01', 6
+  sprite: s32'zat362_02', 6
+  sprite: s32'zat362_03', 6
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CounterGuardCrouch'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnCG_Initialize'
+    upon: 33
+      callCmnEfFunc: s32'cmnCG_OnMuteki'
+      endUpon: 
+    upon: 36
+      callCmnEfFunc: s32'cmnCG_OnFrameStep'
+      endUpon: 
+    upon: (RECEIVE_ATTACK)
+      callCmnEfFunc: s32'cmnCG_OnDamage'
+      endUpon: 
+    upon: (FRAME_STEP)
+      callCmnEfFunc: s32'cmnCG_OnIdling'
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat363_00', 3
+  sprite: s32'zat363_01', 3
+  sprite: s32'zat363_00', 3
+  sprite: s32'zat363_01', 3
+  sprite: s32'zat360_01', 3
+  Unknown2161: 100, 50000, 240000
+  createObject2: s32'cmn_neoblitz_burst', 130
+  sprite: s32'zat360_02', 3
+  sprite: s32'zat360_03', 3
+  sprite: s32'zat360_04', 3
+  sprite: s32'zat360_05', 5
+  sprite: s32'zat360_06', 5
+  sprite: s32'zat360_07', 4
+  sprite: s32'zat360_08', 4
+  setMarker: s32'loop'
+  sprite: s32'zat360_09', 3
+  sprite: s32'zat360_10', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'attack'
+  sprite: s32'keep', 1
+  sprite: s32'zat360_11', 3
+  callCmnEfFunc: s32'cmnCG_Attack'
+  Unknown2157: 0, 5
+  physicsXImpulse: 50000
+  Unknown2197: 90
+  sprite: s32'zat360_12', 3
+  sprite: s32'zat360_13', 4
+  sprite: s32'zat360_14', 3
+  createObject2: s32'Neoblitz_atk', 100
+  hit: 
+  screenShake: 1, 1
+  playSFX: s32'GG2_019'
+  playVoice: s16'vxxx126'
+  damage: 45
+  riscMinus: 6
+  setProration: 60
+  sprite: s32'zat360_15', 3
+  Unknown2197: 60
+  sprite: s32'zat360_16', 3
+  sprite: s32'zat360_17', 3
+  sprite: s32'zat360_18', 3
+  sprite: s32'zat360_19', 3
+  sprite: s32'zat360_20', 3
+  sprite: s32'zat360_21', 3
+  Unknown3: 
+  exitState: 
+  setMarker: s32'end'
+  sprite: s32'zat363_00', 20
+  callCmnEfFunc: s32'cmnCG_MutekiEnd'
+  sprite: s32'zat363_01', 6
+  sprite: s32'zat363_02', 6
+  sprite: s32'zat363_03', 6
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CounterGuardAir'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnCG_Initialize'
+    upon: 33
+      callCmnEfFunc: s32'cmnCG_OnMuteki'
+      endUpon: 
+    upon: 36
+      callCmnEfFunc: s32'cmnCG_OnFrameStep'
+      endUpon: 
+    upon: (RECEIVE_ATTACK)
+      callCmnEfFunc: s32'cmnCG_OnDamage'
+      endUpon: 
+    upon: (FRAME_STEP)
+      callCmnEfFunc: s32'cmnCG_OnIdling_Air'
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat045_04ex', 12
+  sprite: s32'zat045_03', 4
+  callCmnEfFunc: s32'cmnCG_MutekiEnd'
+  sprite: s32'zat045_02', 4
+  sprite: s32'zat045_01', 4
+  sprite: s32'zat045_00', 4
+  sprite: s32'zat026_00', 3
+  sprite: s32'zat026_01', 3
+  sprite: s32'zat026_02', 3
+  sprite: s32'zat026_03', 3
+  sprite: s32'zat026_04', 3
+  sprite: s32'zat026_05', 3
+  setMarker: s32'droploop'
+  sprite: s32'zat026_06', 3
+  sprite: s32'zat026_07', 3
+  Unknown3: 
+  goToMarker: s32'droploop'
+  setMarker: s32'landing'
+  superArmorEnabled: 0
+  sprite: s32'zat028_00', 3
+  sprite: s32'zat010_16', 9
+  Unknown3: 
+  exitState: 
+  setMarker: s32'guard'
+  sprite: s32'zat045_04', 4
+  sprite: s32'zat045_03', 4
+  sprite: s32'zat045_02', 4
+  sprite: s32'zat045_01', 4
+  sprite: s32'zat045_00', 4
+  endState: 
+
+startState: s32'IchigekiJunbi'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'IchigekiGoldCheck', 0, 0, 0, 0, 0, 0, 0, 0
+    endUpon: 
+  sprite: s32'zat450_00', 4
+  Unknown448: s32'zat_ichigeki_hatudo', 100
+  sprite: s32'zat450_01', 4
+  callSubroutine: s32'IchigekiStop', 0, 58, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  Unknown2161: 100, 0, 0
+  Unknown448: s32'cmn_ichigeki_charge', 130
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  callSubroutine: s32'IchigekiToggle', 0, 0, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_04', 4
+  sprite: s32'zat450_05', 4
+  endState: 
+
+startState: s32'MOMSuki'
+  upon: (IMMEDIATE)
+    recoveryState: 
+    endUpon: 
+  sprite: s32'zat001_00', 4
+  sprite: s32'zat001_01', 4
+  sprite: s32'zat001_02', 4
+  playCharacterSFX: s32'6'
+  sprite: s32'zat001_03', 4
+  sprite: s32'zat001_04', 4
+  sprite: s32'zat001_05', 4
+  sprite: s32'zat001_06', 4
+  sprite: s32'zat001_07', 4
+  sprite: s32'zat001_08', 3
+  sprite: s32'zat001_09', 4
+  playCharacterSFX: s32'5'
+  sprite: s32'zat001_10', 4
+  sprite: s32'zat001_11', 4
+  sprite: s32'zat001_12', 4
+  sprite: s32'zat001_13', 4
+  sprite: s32'zat001_14', 4
+  sprite: s32'zat001_15', 4
+  sprite: s32'zat001_16', 4
+  sprite: s32'zat001_17', 4
+  endState: 
+
+startState: s32'DebugSkillEx'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnDS_Initialize'
+    endUpon: 
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'ThrowExe'
+  upon: (IMMEDIATE)
+    Unknown1641: 17, 1
+    attackLevel: 0
+    damage: 50
+    Unknown725: 1
+    Unknown1108: -80
+    groundHitEffect: (AIR_FACE_UP)
+    riscMinus: 0
+    setForcedProration: 65
+    untechableTime: 60
+    hitAirPushbackY: 31500
+    hitGravity: 1925
+    hitAirPushbackX: 14000
+    Unknown1018: 1
+    disableHitstop: 1
+    Unknown1127: 1
+    Unknown1128: 1
+    hitPushbackX: 0
+    endUpon: 
+  sprite: s32'keep', 1
+  Unknown547: 1
+  sprite: s32'zat310_00', 2
+  Unknown550: 
+  Unknown2161: 100, 120000, 340000
+  Unknown448: s32'cmn_nage', 130
+  Unknown544: 13
+  Unknown2161: 100, 154000, 0
+  Unknown546: 130, 100, 0
+  sprite: s32'zat310_00', 10
+  Unknown544: 6
+  Unknown2161: 100, 154000, 0
+  Unknown546: 130, 100, 0
+  sprite: s32'zat310_01', 1
+  playVoice: s16'vxxx120'
+  sprite: s32'zat310_01', 1
+  sprite: s32'zat310_01', 1
+  sprite: s32'zat310_01', 1
+  playSFX: s32'SE_HITKIRIB'
+  sprite: s32'zat310_02', 1
+  Unknown544: 6
+  Unknown2161: 100, 154000, 14000
+  Unknown546: 130, 100, 0
+  hitUnchecked: 
+  sprite: s32'zat310_02', 1
+  sprite: s32'zat310_02', 1
+  sprite: s32'zat310_02', 1
+  sprite: s32'zat310_03', 1
+  Unknown448: s32'zat_310hit', 100
+  sprite: s32'zat310_03', 1
+  sprite: s32'zat310_03', 1
+  sprite: s32'zat310_03', 1
+  sprite: s32'zat310_04', 1
+  sprite: s32'zat310_04', 1
+  sprite: s32'zat310_04', 1
+  sprite: s32'zat310_04', 1
+  sprite: s32'zat310_05', 4
+  sprite: s32'zat310_06', 4
+  sprite: s32'zat310_07', 18
+  sprite: s32'zat310_08', 6
+  sprite: s32'zat310_09', 6
+  endState: 
+
+startState: s32'AirThrowExe'
+  upon: (IMMEDIATE)
+    Unknown1641: 17, 3
+    damage: 60
+    riscMinus: 0
+    setForcedProration: 65
+    hitAirPushbackY: 17500
+    hitAirPushbackX: 17500
+    groundHitEffect: (AIR_FACE_UP)
+    Unknown1018: 1
+    disableHitstop: 1
+    Unknown1127: 1
+    Unknown1128: 1
+    Unknown1142: 1
+    hitPushbackX: 0
+    endUpon: 
+  sprite: s32'keep', 1
+  Unknown547: 1
+  untechableTime: 60
+  physicsXImpulse: 0
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'zat320_00', 2
+  Unknown550: 
+  Unknown2161: 100, 120000, 340000
+  Unknown448: s32'cmn_nage', 130
+  Unknown544: 32
+  Unknown546: 0, 115, 0
+  sprite: s32'zat320_01', 3
+  playCharacterSFX: s32'6'
+  sprite: s32'zat320_02', 3
+  sprite: s32'zat320_03', 3
+  sprite: s32'zat320_04', 3
+  sprite: s32'zat320_05', 3
+  sprite: s32'zat320_06', 3
+  sprite: s32'zat320_07', 3
+  sprite: s32'zat320_08', 15
+  playSFX: s32'SE_HITKIRIB'
+  screenShake: 1, 1
+  Unknown338: 0
+  sprite: s32'zat320_09', 1
+  hitUnchecked: 
+  Unknown1018: 1
+  createObject2: s32'AirThrowHae', 103
+  sprite: s32'zat320_10', 1
+  physicsXImpulse: -1750
+  physicsYImpulse: -3500
+  sprite: s32'zat320_09', 1
+  sprite: s32'zat320_10', 1
+  physicsYImpulse: 3500
+  sprite: s32'zat320_09', 1
+  sprite: s32'zat320_10', 1
+  physicsYImpulse: -3500
+  sprite: s32'zat320_09', 1
+  sprite: s32'zat320_10', 1
+  physicsYImpulse: 3500
+  sprite: s32'zat320_09', 1
+  sprite: s32'zat320_10', 1
+  physicsYImpulse: -3500
+  sprite: s32'zat320_09', 1
+  sprite: s32'zat320_10', 1
+  physicsYImpulse: 3500
+  sprite: s32'zat320_09', 1
+  sprite: s32'zat320_10', 1
+  physicsYImpulse: -3500
+  sprite: s32'zat320_11', 2
+  physicsYImpulse: 0
+  physicsXImpulse: 0
+  sprite: s32'zat320_12', 2
+  sprite: s32'zat320_13', 2
+  sprite: s32'zat320_14', 2
+  sprite: s32'zat320_15', 2
+  Unknown338: 255
+  Unknown32: s32'AirThrowHae'
+  sprite: s32'zat320_16', 2
+  sprite: s32'zat320_17', 6
+  sprite: s32'zat320_18', 2
+  ifOperation: (IS_GREATER), (VARIABLE), 119, (STATIC), 0
+    playVoice: s16'vxxx116'
+    storeValue: (VARIABLE), 119, (STATIC), 0
+    endIf: 
+  else: 
+    playVoice: s16'vxxx121'
+    endElse: 
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'zat320_19', 12
+  setMarker: s32'drop'
+  sprite: s32'zat320_20', 3
+  setGravity: 2100
+  sprite: s32'zat320_21', 3
+  Unknown3: 
+  goToMarker: s32'drop'
+  endState: 
+
+startState: s32'InviteHellC'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 18
+    Unknown1058: 1
+    upon: 24
+      Unknown1616: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat400_00', 3
+  Unknown2161: 100, 350000, 0
+  Unknown448: s32'zat_drill_circle', 130
+  tensionGain: 40
+  createObject2: s32'UzuDelete', 100
+  sprite: s32'zat400_01', 2
+  sprite: s32'zat400_02', 2
+  sprite: s32'zat400_03', 2
+  playSFX: s32'SE_SWINGB'
+  playVoice: s16'vxxx201'
+  sprite: s32'zat400_04', 2
+  sprite: s32'zat400_05', 3
+  createObject2: s32'DrillC', 100
+  sprite: s32'zat400_06', 12
+  sprite: s32'zat400_07', 4
+  recoveryState: 
+  sprite: s32'zat400_08', 4
+  createObject2: s32'UzuStart', 100
+  sprite: s32'zat400_09', 5
+  whiffCancelOptionBufferTime: s32'EddieSummonA', 5
+  addWhiffCancelOption: s32'EddieSummonA'
+  whiffCancelOptionBufferTime: s32'EddieSummonB', 5
+  addWhiffCancelOption: s32'EddieSummonB'
+  whiffCancelOptionBufferTime: s32'EddieSummonC', 5
+  addWhiffCancelOption: s32'EddieSummonC'
+  whiffCancelOptionBufferTime: s32'EddieSummonD', 5
+  addWhiffCancelOption: s32'EddieSummonD'
+  whiffCancelOptionBufferTime: s32'EddieSummonD2', 5
+  addWhiffCancelOption: s32'EddieSummonD2'
+  sprite: s32'zat400_10', 5
+  endState: 
+
+startState: s32'InviteHellD'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 18
+    Unknown1058: 1
+    upon: 24
+      Unknown1616: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat400_00', 3
+  Unknown2161: 100, 787500, 0
+  Unknown448: s32'zat_drill_circle', 130
+  tensionGain: 40
+  createObject2: s32'UzuDelete', 100
+  sprite: s32'zat400_01', 2
+  sprite: s32'zat400_02', 2
+  sprite: s32'zat400_03', 2
+  playSFX: s32'SE_SWINGB'
+  playVoice: s16'vxxx201'
+  sprite: s32'zat400_04', 2
+  sprite: s32'zat400_05', 3
+  createObject2: s32'DrillD', 100
+  sprite: s32'zat400_06', 12
+  sprite: s32'zat400_07', 4
+  recoveryState: 
+  sprite: s32'zat400_08', 4
+  createObject2: s32'UzuStart', 100
+  sprite: s32'zat400_09', 5
+  whiffCancelOptionBufferTime: s32'EddieSummonA', 5
+  addWhiffCancelOption: s32'EddieSummonA'
+  whiffCancelOptionBufferTime: s32'EddieSummonB', 5
+  addWhiffCancelOption: s32'EddieSummonB'
+  whiffCancelOptionBufferTime: s32'EddieSummonC', 5
+  addWhiffCancelOption: s32'EddieSummonC'
+  whiffCancelOptionBufferTime: s32'EddieSummonD', 5
+  addWhiffCancelOption: s32'EddieSummonD'
+  whiffCancelOptionBufferTime: s32'EddieSummonD2', 5
+  addWhiffCancelOption: s32'EddieSummonD2'
+  sprite: s32'zat400_10', 5
+  endState: 
+
+startState: s32'DrunkerdShade'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 30
+    groundCounterHitEffect: (AIR_FACE_UP)
+    airCounterHitEffect: (AIR_FACE_UP)
+    counterHitWallBounceCount: 1
+    counterhitAirPushbackX: 31500
+    counterhitAirPushbackY: 31500
+    counterHitUntechableTime: 80
+    tensionGainOnConnect: 60
+    hitPushbackX: 130
+    isAirUnblockable: 1
+    hitAirPushbackX: 31500
+    hitAirPushbackY: 7875
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'zat414_00', 2
+  setThrowInvul: 1
+  tensionGain: 30
+  playVoice: s16'vxxx214'
+  playCharacterSFX: s32'1'
+  if: (VARIABLE), 161
+    setThrowInvul: 0
+    endIf: 
+  sprite: s32'zat414_01', 2
+  superArmorEnabled: 1
+  Unknown1808: 0
+  Unknown1825: 0
+  Unknown1827: 1
+  sprite: s32'zat414_02', 2
+  createObject2: s32'Drunkershade', 100
+  sprite: s32'zat414_03', 2
+  sprite: s32'zat414_04', 2
+  hit: 
+  sprite: s32'zat414_05', 2
+  sprite: s32'zat414_06', 2
+  sprite: s32'zat414_07', 2
+  sprite: s32'zat414_08', 2
+  sprite: s32'zat414_09', 2
+  superArmorEnabled: 0
+  setThrowInvul: 0
+  recoveryState: 
+  sprite: s32'zat414_10', 2
+  sprite: s32'zat414_11', 2
+  sprite: s32'zat414_12', 2
+  sprite: s32'zat414_13', 2
+  endState: 
+
+startState: s32'EddieSummonA'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 12
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat403_00', 2
+  Unknown2157: 0, 5
+  tensionGain: 0
+  sprite: s32'zat403_01', 2
+  sprite: s32'zat403_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'zat403_03', 2
+  sprite: s32'zat403_04', 2
+  sprite: s32'zat403_05', 1
+  sprite: s32'zat403_05', 1
+  createObject2: s32'EddieA', 100
+  Unknown43: 4, 1
+  sprite: s32'zat403_05', 6
+  sprite: s32'zat403_06', 4
+  sprite: s32'zat403_07', 4
+  sprite: s32'zat403_08', 4
+  sprite: s32'zat403_09', 4
+  sprite: s32'zat403_10', 4
+  endState: 
+
+startState: s32'EddieSummonB'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 12
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat403_00', 2
+  tensionGain: 0
+  sprite: s32'zat403_01', 2
+  sprite: s32'zat403_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'zat403_03', 2
+  sprite: s32'zat403_04', 2
+  sprite: s32'zat403_05', 1
+  sprite: s32'zat403_05', 1
+  createObject2: s32'EddieB', 100
+  Unknown43: 4, 1
+  sprite: s32'zat403_05', 6
+  sprite: s32'zat403_06', 4
+  sprite: s32'zat403_07', 4
+  sprite: s32'zat403_08', 4
+  sprite: s32'zat403_09', 4
+  sprite: s32'zat403_10', 4
+  endState: 
+
+startState: s32'EddieSummonC'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 12
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat403_00', 2
+  tensionGain: 0
+  sprite: s32'zat403_01', 2
+  sprite: s32'zat403_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'zat403_03', 2
+  sprite: s32'zat403_04', 2
+  sprite: s32'zat403_05', 1
+  sprite: s32'zat403_05', 1
+  createObject2: s32'EddieC', 100
+  Unknown43: 4, 1
+  sprite: s32'zat403_05', 6
+  sprite: s32'zat403_06', 4
+  sprite: s32'zat403_07', 4
+  sprite: s32'zat403_08', 4
+  sprite: s32'zat403_09', 4
+  sprite: s32'zat403_10', 4
+  endState: 
+
+startState: s32'EddieSummonD'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 12
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat403_00', 2
+  tensionGain: 0
+  sprite: s32'zat403_01', 2
+  sprite: s32'zat403_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'zat403_03', 2
+  sprite: s32'zat403_04', 2
+  sprite: s32'zat403_05', 1
+  sprite: s32'zat403_05', 1
+  createObject2: s32'Eddie', 100
+  Unknown43: 4, 1
+  Unknown606: 1
+  playVoice: s16'vxxx202'
+  sprite: s32'zat403_05', 6
+  sprite: s32'zat403_06', 4
+  sprite: s32'zat403_07', 4
+  sprite: s32'zat403_08', 4
+  sprite: s32'zat403_09', 4
+  sprite: s32'zat403_10', 4
+  endState: 
+
+startState: s32'EddieSummonD2'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 12
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat403_00', 2
+  sprite: s32'zat403_01', 2
+  sprite: s32'zat403_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'zat403_03', 2
+  sprite: s32'zat403_04', 2
+  sprite: s32'zat403_05', 1
+  sprite: s32'zat403_05', 1
+  ifOperation: (IS_EQUAL), (VARIABLE), 6, (STATIC), 3000000
+    createObject2: s32'Eddie', 100
+    endIf: 
+  else: 
+    Unknown32: s32'KageDamari'
+    storeValue: (VARIABLE), 102, (VARIABLE), 6
+    createObject2: s32'Eddie', 130
+    storeValue: (VARIABLE), 45, (STATIC), 1
+    endElse: 
+  Unknown43: 4, 1
+  sprite: s32'zat403_05', 6
+  if: (VARIABLE), 45
+    if: (VARIABLE), 84
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -360
+      endIf: 
+    else: 
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -720
+      endElse: 
+    callCmnEfFunc: s32'EddieSukkarakanCheck'
+    endIf: 
+  sprite: s32'zat403_06', 4
+  sprite: s32'zat403_07', 4
+  sprite: s32'zat403_08', 4
+  sprite: s32'zat403_09', 4
+  sprite: s32'zat403_10', 4
+  endState: 
+
+startState: s32'EddieReturn'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 18
+    endUpon: 
+  sprite: s32'zat404_00', 2
+  sprite: s32'zat404_01', 2
+  sprite: s32'zat404_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'zat404_03', 2
+  Unknown1766: 4, 23
+  sprite: s32'zat404_04', 2
+  sprite: s32'zat404_05', 2
+  sprite: s32'zat404_06', 2
+  sprite: s32'zat404_07', 2
+  sprite: s32'zat404_08', 5
+  sprite: s32'zat404_10', 3
+  sprite: s32'zat404_11', 3
+  sprite: s32'zat404_12', 3
+  sprite: s32'zat404_13', 3
+  endState: 
+
+startState: s32'BreakTheLaw'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      if: (VARIABLE), 45
+        Unknown2262: 11
+        if: (VARIABLE), 161
+          checkInput: 276
+          endIf: 
+        else: 
+          checkInput: 10
+          endElse: 
+        ifNot: (VARIABLE), 0
+          Unknown14: s32'up'
+          endIf: 
+        checkInput: 121
+        if: (VARIABLE), 0
+          physicsXImpulse: 12250
+          endIf: 
+        checkInput: 95
+        if: (VARIABLE), 0
+          physicsXImpulse: -12250
+          endIf: 
+        checkInput: 107
+        if: (VARIABLE), 0
+          physicsXImpulse: 0
+          endIf: 
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 71
+        storeValue: (VARIABLE), 46, (STATIC), 1
+        yrcWindowLength: 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 133
+        storeValue: (VARIABLE), 47, (STATIC), 1
+        Unknown14: s32'up'
+        endIf: 
+      endUpon: 
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat402_00', 2
+  playCharacterSFX: s32'6'
+  setThrowInvul: 1
+  Unknown2157: 0, 5
+  if: (VARIABLE), 161
+    setThrowInvul: 0
+    endIf: 
+  sprite: s32'zat402_01', 2
+  sprite: s32'zat402_02', 2
+  sprite: s32'zat402_03', 2
+  sprite: s32'zat402_04', 2
+  playVoice: s16'vxxx216'
+  sprite: s32'zat402_05', 2
+  createObject2: s32'UzuBreakTheLaw', 100
+  setMarker: s32'down'
+  sprite: s32'ZT56_06', 4
+  storeValue: (VARIABLE), 45, (STATIC), 1
+  Unknown2023: 0
+  setNoCollision: 0
+  setStrikeInvul: 1
+  if: (VARIABLE), 161
+    setThrowInvul: 1
+    endIf: 
+  sprite: s32'ZT56_07', 4
+  sprite: s32'ZT56_08', 4
+  Unknown3: 
+  goToMarker: s32'down'
+  setMarker: s32'up'
+  sprite: s32'zat402_05', 2
+  Unknown32: s32'UzuBreakTheLaw'
+  Unknown23: 3
+  overrideSpriteLengthIf: 4, (VARIABLE), 46
+  overrideSpriteLengthIf: 5, (VARIABLE), 47
+  setStrikeInvul: 0
+  Unknown2155: 7
+  Unknown2023: 1
+  if: (VARIABLE), 46
+    Unknown2155: 6
+    endIf: 
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  Unknown176: 1
+  setNoCollision: 1
+  setStrikeInvul: 0
+  sprite: s32'zat402_04', 4
+  overrideSpriteLengthIf: 4, (VARIABLE), 46
+  overrideSpriteLengthIf: 5, (VARIABLE), 47
+  playCharacterSFX: s32'6'
+  setThrowInvul: 0
+  sprite: s32'zat402_03', 2
+  overrideSpriteLengthIf: 5, (VARIABLE), 46
+  overrideSpriteLengthIf: 6, (VARIABLE), 47
+  sprite: s32'zat402_02', 3
+  overrideSpriteLengthIf: 6, (VARIABLE), 47
+  sprite: s32'zat402_01', 3
+  overrideSpriteLengthIf: 4, (VARIABLE), 46
+  overrideSpriteLengthIf: 7, (VARIABLE), 47
+  sprite: s32'zat402_00', 2
+  overrideSpriteLengthIf: 4, (VARIABLE), 46
+  overrideSpriteLengthIf: 7, (VARIABLE), 47
+  endState: 
+
+startState: s32'ShadowGallary'
+  upon: (IMMEDIATE)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 3
+    damage: 40
+    tensionGainOnConnect: 30
+    hitAirPushbackX: 0
+    hitAirPushbackY: 42000
+    untechableTime: 36
+    Unknown2136: 0
+    Unknown2137: 0
+    Unknown1058: 1
+    Unknown35: 2, s32'landing1'
+    Unknown2331: 23
+    endUpon: 
+  sprite: s32'zat415_00', 2
+  tensionGain: 40
+  playCharacterSFX: s32'6'
+  multiplyCarriedMomentum: 0
+  physicsXImpulse: 0
+  physicsYImpulse: 0
+  setGravity: 0
+  Unknown2157: 0, 5
+  sprite: s32'zat415_01', 1
+  sprite: s32'zat415_02', 1
+  Unknown2023: 0
+  Unknown448: s32'zat_415shadow', 100
+  sprite: s32'zat415_03', 1
+  sprite: s32'zat415_04', 1
+  sprite: s32'zat415_05', 1
+  setStrikeInvul: 1
+  sprite: s32'zat415_05', 2147483647
+  setGravity: 3500
+  physicsYImpulse: -35000
+  setMarker: s32'landing1'
+  sprite: s32'zat415_06', 1
+  Unknown23: 2
+  Unknown448: s32'zat_415shadow_floor', 104
+  playVoice: s16'vxxx215'
+  playCharacterSFX: s32'7'
+  Unknown98: 0
+  physicsXImpulse: 140000
+  Unknown2023: 1
+  setStrikeInvul: 0
+  sprite: s32'zat415_06', 1
+  physicsXImpulse: 0
+  sprite: s32'zat415_07', 2
+  sprite: s32'zat415_08', 2
+  sprite: s32'zat415_09', 6
+  tensionGain: 0
+  physicsXImpulse: 0
+  physicsYImpulse: 31500
+  setGravity: 0
+  hit: 
+  Unknown1058: 0
+  yrcWindowLength: 1
+  sprite: s32'zat415_10', 2
+  setGravity: 3150
+  sprite: s32'zat415_11', 2
+  sprite: s32'zat415_12', 2
+  sprite: s32'zat415_13', 2
+  sprite: s32'zat415_14', 4
+  physicsXImpulse: 0
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'zat415_15', 3
+  playSFX: s32'SE_HITNIKUD'
+  groundHitEffect: (AIR_FACE_UP)
+  attackLevel: 3
+  damage: 25
+  hitAirPushbackX: 26250
+  hitAirPushbackY: 14000
+  untechableTime: 45
+  tensionGainOnConnect: 50
+  wallBounceCount: 1
+  wallstickDuration: 20
+  hit: 
+  sprite: s32'zat415_16', 5
+  recoveryState: 
+  sprite: s32'zat415_17', 3
+  setGravity: 2275
+  sprite: s32'zat415_18', 3
+  sprite: s32'zat415_19', 2147483647
+  Unknown35: 2, s32'landing2'
+  setMarker: s32'landing2'
+  sprite: s32'zat028_00', 1
+  playSFX: s32'SE_JUMPLANDB'
+  sprite: s32'zat028_00', 2
+  endState: 
+
+startState: s32'DamnedFang'
+  upon: (IMMEDIATE)
+    Unknown2217: 0
+    callCmnEfFunc: s32'cmnAtkTemplNageLand'
+    canGrab: 1
+    Unknown1042: s32'DamnedFangExe'
+    Unknown1018: 1
+    throwRange: 122500
+    yrcWindowLength: 6
+    Unknown1058: 1
+    endUpon: 
+  sprite: s32'zat412_00', 2
+  sprite: s32'zat412_01', 2
+  sprite: s32'zat412_02', 1
+  sprite: s32'zat412_02', 1
+  hitUnchecked: 
+  sprite: s32'zat412_03', 3
+  playSFX: s32'SE_SWINGA'
+  playVoice: s16'vxxx212'
+  Unknown1883: 
+  sprite: s32'zat412_04', 26
+  sprite: s32'zat412_05', 4
+  Unknown448: s32'zat412_miss', 100
+  sprite: s32'zat412_06', 4
+  endState: 
+
+startState: s32'DamnedFangExe'
+  upon: (IMMEDIATE)
+    Unknown1641: 18, 1
+    damage: 92
+    tensionGainOnConnect: 60
+    riscMinus: 0
+    setForcedProration: 50
+    Unknown725: 1
+    untechableTime: 60
+    hitAirPushbackX: 14000
+    hitAirPushbackY: 34125
+    groundHitEffect: (AIR_FACE_UP)
+    Unknown1018: 1
+    disableHitstop: 1
+    Unknown1127: 1
+    Unknown1128: 1
+    hitPushbackX: 0
+    endUpon: 
+  Unknown544: 13
+  Unknown546: 125, 100, 0
+  sprite: s32'zat412_04', 4
+  Unknown2068: '0x20BF0200000000000000000000000000'
+  Unknown2157: 1, 5
+  playSFX: s32'SE_CATCHA'
+  createObject2: s32'DamnedFangBall', 100
+  sprite: s32'zat412_04', 8
+  playCharacterSFX: s32'6'
+  sprite: s32'zat412_04', 4
+  playCharacterSFX: s32'6'
+  sprite: s32'zat412_04', 8
+  playCharacterSFX: s32'6'
+  sprite: s32'zat412_04', 10
+  Unknown2157: 0, 5
+  Unknown41: 21
+  Unknown2196: 8, 1
+  Unknown40: 
+  Unknown2023: 0
+  sprite: s32'zat413_01', 3
+  playVoice: s16'vxxx213'
+  Unknown2023: 1
+  sprite: s32'zat413_02', 3
+  sprite: s32'zat413_03', 3
+  createObject2: s32'413drill', 100
+  sprite: s32'zat413_04', 3
+  Unknown2246: s32'handR', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  Unknown2246: s32'handL', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  sprite: s32'zat413_05', 3
+  Unknown2246: s32'handR', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  Unknown2246: s32'handL', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  sprite: s32'zat413_06', 3
+  Unknown2246: s32'handR', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  Unknown2246: s32'handL', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  sprite: s32'zat413_07', 3
+  Unknown2246: s32'handR', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  Unknown2246: s32'handL', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  sprite: s32'zat413_08', 2
+  Unknown2246: s32'handR', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  Unknown2246: s32'handL', 0
+  Unknown449: s32'zat_413drill_sub', 100
+  sprite: s32'zat413_09', 2
+  sprite: s32'zat413_10', 2
+  Unknown448: s32'zat_damned_atk', 100
+  sprite: s32'zat413_11', 2
+  sprite: s32'zat413_12', 49
+  playSFX: s32'SE_HITKIRIA'
+  playSFX: s32'SE_HITNIKUA'
+  sprite: s32'zat413_12', 2
+  whiffCancelOptionBufferTime: s32'RomanCancelHit', 10
+  hitUnchecked: 
+  playSFX: s32'SE_HITKIRIB'
+  playSFX: s32'SE_HITNIKUC'
+  sprite: s32'zat020_01', 3
+  physicsXImpulse: -8750
+  physicsYImpulse: 21000
+  setGravity: 1750
+  sprite: s32'zat020_02', 3
+  sprite: s32'zat020_03', 3
+  sprite: s32'zat020_04', 3
+  sprite: s32'zat020_05', 3
+  sprite: s32'zat026_01', 3
+  sprite: s32'zat026_02', 3
+  sprite: s32'zat026_03', 3
+  sprite: s32'zat026_04', 3
+  sprite: s32'zat026_05', 3
+  sprite: s32'zat026_06', 3
+  endState: 
+
+startState: s32'Amorphous'
+  upon: (IMMEDIATE)
+    Unknown1939: 1
+    Unknown1058: 1
+    yrcWindowLength: 137
+    endUpon: 
+  Unknown25: s32'tame_end', 2, 126
+  sprite: s32'zat450_00', 4
+  guardType: (NONE)
+  Unknown2199: 1
+  screenShake: 1, 2
+  Unknown448: s32'cmn_alram_guardfuno', 103
+  playSFX: s32'SE_ITIGEKICHARGE'
+  sprite: s32'zat450_01', 4
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_04', 4
+  sprite: s32'zat450_05', 4
+  Unknown240: 
+  Unknown3: 
+  setMarker: s32'tame_end'
+  sprite: s32'zat430_00', 4
+  setStrikeInvul: 1
+  setThrowInvul: 0
+  if: (VARIABLE), 164
+    setThrowInvul: 1
+    endIf: 
+  if: (VARIABLE), 161
+    setThrowInvul: 0
+    setStrikeInvul: 0
+    Unknown2155: 0
+    endIf: 
+  sprite: s32'zat430_01', 5
+  sprite: s32'zat430_02', 1
+  superFreeze: 1, 119, 109, 116
+  consumeTension: 5000
+  Unknown294: 1
+  Unknown2149: 93
+  Unknown2283: 90
+  upon: (SUPERFREEZE)
+    Unknown2013: s32'zat430cs', 0
+    Unknown2020: s32'zat430', 23, 0, 5
+    Unknown2028: s32'MS_Amo'
+    Unknown2051: 1900
+    Unknown2212: 1
+    if: (VARIABLE), 164
+      Unknown2132: 0
+      Unknown448: s32'cmn_bkakusei_fire', 100
+      storeValue: (VARIABLE), 120, (STATIC), 0
+      Unknown2199: 1
+      endIf: 
+    upon: (FRAME_STEP)
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1
+        playVoice: s16'vxxx217'
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 63
+        playCharacterSFX: s32'ZAT_Kakusei001'
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 80
+        Unknown448: s32'zat_430_floor', 100
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 97
+        playCharacterSFX: s32'ZAT_Kakusei002'
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 100
+        Unknown2212: 0
+        Unknown2051: 0
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat430_02', 4
+  if: (VARIABLE), 161
+    setThrowInvul: 0
+    setStrikeInvul: 0
+    Unknown2155: 0
+    endIf: 
+  sprite: s32'zat430_03', 4
+  sprite: s32'zat430_04', 4
+  sprite: s32'zat430_05', 4
+  sprite: s32'zat430_06', 4
+  sprite: s32'zat430_07', 4
+  sprite: s32'zat430_08', 2
+  Unknown2247: 2, 164, 0, 0
+  callEtcState: s32'AmorphousObj', 0
+  playCharacterSFX: s32'ZAT_Kakusei002'
+  sprite: s32'zat430_09', 2
+  sprite: s32'zat430_10', 2
+  setStrikeInvul: 0
+  sprite: s32'zat430_11', 2
+  sprite: s32'zat430_09', 2
+  playVoice: s16'vxxx218'
+  sprite: s32'zat430_10', 2
+  sprite: s32'zat430_11', 2
+  setThrowInvul: 0
+  recoveryState: 
+  sprite: s32'zat430_09', 2
+  sprite: s32'zat430_10', 2
+  sprite: s32'zat430_11', 2
+  sprite: s32'zat430_09', 2
+  sprite: s32'zat430_10', 2
+  sprite: s32'zat430_11', 2
+  sprite: s32'zat430_09', 2
+  sprite: s32'zat430_12', 3
+  sprite: s32'zat430_13', 3
+  sprite: s32'zat430_14', 3
+  sprite: s32'zat430_15', 3
+  sprite: s32'zat430_16', 3
+  endState: 
+
+startState: s32'MegalithHead'
+  upon: (IMMEDIATE)
+    upon: (SUPERFREEZE)
+      Unknown2199: 1
+      Unknown2286: 1
+      cameraMotion: 91952, 40461, 164291, -1820, -9109, 0, 100, 10, 15, 5, 1
+      endUpon: 
+    Unknown1939: 1
+    endUpon: 
+  sprite: s32'zat431_00', 4
+  Unknown2330: s32'MegalithHead'
+  if: (VARIABLE), 0
+    Unknown1766: 4, 25
+    endIf: 
+  else: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 6, (STATIC), 3000000
+      createObject2: s32'Eddie', 100
+      endIf: 
+    else: 
+      Unknown32: s32'KageDamari'
+      storeValue: (VARIABLE), 102, (VARIABLE), 6
+      createObject2: s32'Eddie', 130
+      endElse: 
+    Unknown43: 4, 1
+    Unknown1766: 4, 25
+    endElse: 
+  romanCancelAvailability: (DISALLOWED)
+  sprite: s32'zat431_01', 4
+  superFreeze: 1, 119, 60, 60
+  consumeTension: 5000
+  Unknown294: 1
+  Unknown2149: 60
+  Unknown2283: 30
+  playVoice: s16'vxxx220'
+  reduceTensionGainForTime: 300
+  sprite: s32'zat431_03', 4
+  romanCancelAvailability: (ALLOWED)
+  sprite: s32'zat431_04', 4
+  sprite: s32'zat431_05', 4
+  sprite: s32'zat431_06', 4
+  sprite: s32'zat431_07', 4
+  sprite: s32'zat431_08', 4
+  sprite: s32'zat431_09', 4
+  recoveryState: 
+  sprite: s32'zat431_10', 4
+  sprite: s32'zat431_11', 4
+  sprite: s32'zat431_12', 4
+  sprite: s32'zat431_13', 4
+  endState: 
+
+startState: s32'Executer'
+  upon: (IMMEDIATE)
+    guardType: (ANY)
+    Unknown730: 1
+    groundHitEffect: (AIR_FACE_UP)
+    Unknown1110: 1
+    attackLevel: 2
+    damage: 14
+    hitPushbackX: 0
+    untechableTime: 90
+    Unknown870: 20
+    hitAirPushbackX: 10500
+    hitAirPushbackY: 7000
+    tensionGainOnConnect: 0
+    riscMinus: 3
+    Unknown2159: 30
+    Unknown1045: 4, s32'cmn_hit_sp_s'
+    upon: (SUPERFREEZE)
+      Unknown2199: 1
+      Unknown2286: 1
+      cameraMotion: 31109, 567004, 47322, 455, 0, 0, 54, 15, 10, 15, 1
+      Unknown2161: 100, -40000, 230000
+      Unknown448: s32'cmn_kakusei_hatudo', 130
+      playVoice: s16'vxxx219'
+      endUpon: 
+    Unknown1939: 1
+    upon: 61
+      storeValue: (VARIABLE), 45, (STATIC), 5
+      endUpon: 
+    upon: (FRAME_STEP)
+      if: (VARIABLE), 45
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), -1
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'zat432_00', 7
+  createObject2: s32'432Executor', 100
+  Unknown43: 7, 1
+  playCharacterSFX: s32'6'
+  physicsXImpulse: 0
+  physicsYImpulse: 1750
+  setGravity: 0
+  setNoCollision: 0
+  multiplyCarriedMomentum: 0
+  sprite: s32'zat432_01', 7
+  superFreeze: 1, 119, 10, 40
+  consumeTension: 5000
+  Unknown2155: 31
+  physicsYImpulse: 0
+  if: (VARIABLE), 161
+    setThrowInvul: 0
+    setStrikeInvul: 0
+    Unknown2155: 0
+    endIf: 
+  sprite: s32'zat432_02', 7
+  sprite: s32'ZT53_03', 7
+  Unknown2023: 0
+  sprite: s32'ZT53_04', 7
+  sprite: s32'ZT53_05', 7
+  sprite: s32'ZT53_06', 1
+  playCharacterSFX: s32'4'
+  hit: 
+  sprite: s32'ZT53_06', 2
+  hit: 
+  sprite: s32'ZT53_06', 2
+  hit: 
+  sprite: s32'ZT53_06', 2
+  hit: 
+  sprite: s32'ZT53_06', 2
+  hit: 
+  sprite: s32'ZT53_06', 2
+  physicsXImpulse: 52500
+  physicsYImpulse: 0
+  setGravity: 0
+  hit: 
+  Unknown3: 
+  storeValue: (VARIABLE), 45, (STATIC), 5
+  setMarker: s32'Attackloop'
+  sprite: s32'ZT53_06', 4
+  disableHitstop: 1
+  hitAirPushbackX: 59500
+  hitAirPushbackY: 4200
+  hit: 
+  upon: 6
+    ifNot: (VARIABLE), 45
+      Unknown14: s32'End'
+      endIf: 
+    endUpon: 
+  Unknown3: 
+  goToMarker: s32'Attackloop'
+  setMarker: s32'End'
+  sprite: s32'zat432_02', 6
+  Unknown23: 6
+  Unknown1771: s32'432Executor', 23
+  recoveryState: 
+  physicsXImpulse: -10500
+  physicsYImpulse: 24500
+  setGravity: 1400
+  Unknown2023: 1
+  sprite: s32'zat432_01', 6
+  sprite: s32'zat432_00', 6
+  sprite: s32'zat026_00', 3
+  sprite: s32'zat026_01', 3
+  sprite: s32'zat026_02', 3
+  sprite: s32'zat026_03', 3
+  sprite: s32'zat026_04', 3
+  sprite: s32'zat026_05', 3
+  setMarker: s32'downloop'
+  sprite: s32'zat026_06', 3
+  sprite: s32'zat026_07', 3
+  Unknown3: 
+  goToMarker: s32'downloop'
+  endState: 
+
+startState: s32'Ichigeki'
+  upon: (IMMEDIATE)
+    storeValue: (VARIABLE), 135, (VARIABLE), 107
+    storeValue: (VARIABLE), 107, (STATIC), 3
+    attackLevel: 3
+    damage: 0
+    Unknown1059: 1
+    groundHitEffect: (NONE)
+    airHitEffect: (NONE)
+    Unknown1149: 10
+    Unknown818: 100000
+    Unknown1103: 0
+    ifOperation: (IS_EQUAL), (VARIABLE), 135, (STATIC), 2
+      Unknown1076: 0
+      canGrabDuringHitstun: 1
+      endIf: 
+    upon: (SUPERFREEZE)
+      Unknown2199: 1
+      Unknown2161: 100, 0, 300000
+      Unknown448: s32'cmn_kakusei_hatudo', 130
+      endUpon: 
+    upon: (HIT)
+      Unknown14: s32'hit'
+      Unknown23: 10
+      endUpon: 
+    callCmnEfFunc: s32'cmn_IchigekiInit'
+    endUpon: 
+  sprite: s32'zat450_00', 2
+  Unknown448: s32'zat_ichigeki_hatudo', 100
+  playSFX: s32'SE_SWINGB'
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat450_01', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat450_02', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat450_03', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat450_03', 13
+  superFreeze: 0, 119, 33, 33
+  setStrikeInvul: 1
+  setThrowInvul: 1
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -2, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat204_04', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'zat204_05', 2
+  sprite: s32'zat204_06', 2
+  playSFX: s32'SE_SWINGC'
+  sprite: s32'zat204_07', 1
+  sprite: s32'zat204_08', 1
+  sprite: s32'zat204_09', 12
+  hit: 
+  specialCancelEnabled: 0
+  sprite: s32'zat204_10', 7
+  Unknown448: s32'zat_204shadow', 100
+  Unknown1883: 
+  setStrikeInvul: 0
+  setThrowInvul: 0
+  sprite: s32'zat204_11', 4
+  recoveryState: 
+  sprite: s32'zat204_12', 4
+  sprite: s32'zat204_13', 4
+  sprite: s32'zat204_14', 4
+  Unknown3: 
+  exitState: 
+  setMarker: s32'hit'
+  Unknown23: 10
+  sprite: s32'null', 2147483647
+  Unknown1940: 1
+  Unknown2058: 
+  Unknown2210: 1
+  Unknown92: 0
+  Unknown176: 1
+  Unknown2013: s32'zat451cs', 0
+  Unknown2020: s32'zat451', 23, 0, -1
+  Unknown2051: 1900
+  Unknown2028: s32'high'
+  Unknown41: 22
+  setNoCollision: 0
+  Unknown178: 22
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
+  Unknown2013: s32'xxx_zat451cs', 0
+  Unknown2028: s32'CmnCutSceneDamage_Ichigeki'
+  Unknown40: 
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2079: 0, 0, 0
+      Unknown2080: 255, 255, 255
+      Unknown2081: 128, 128, 128
+      Unknown2082: 128, 128, 128
+      playCharacterSFX: s32'zat_IK001'
+      Unknown2063: 0, 0
+      createObject2: s32'BG_ichigeki', 100
+      Unknown448: s32'zat_ichigeki_ground', 100
+      Unknown448: s32'zat_ichigeki_screen', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+      playVoice: s16'vxxx223'
+      Unknown2211: s32'prev', 120
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 93
+      Unknown448: s32'zat_ichigeki_atk', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
+      Unknown41: 22
+      playVoice: s16'vxxx040'
+      Unknown2211: s32'prev', 180
+      Unknown40: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 370
+      Unknown448: s32'zat_ichigeki_soulhit', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 580
+      Unknown1018: 1
+      hitUnchecked: 
+      Unknown1059: 3
+      Unknown996: 0, 0, 0
+      hitstop: 0
+      Unknown1139: 1
+      Unknown1142: 1
+      Unknown1063: 1
+      Unknown1678: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 440
+      Unknown2045: s32'DustHit', 250, 1, 8, 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 474
+      Unknown2045: s32'DustHit', 400, 1, 18, 2
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 700
+      if: (VARIABLE), 111
+        playVoice: s16'vxxx310'
+        Unknown2211: s32'prev', -2147483618
+        Unknown1890: 1
+        Unknown1675: 20
+        endIf: 
+      else: 
+        playVoice: s16'vxxx309'
+        Unknown2211: s32'prev', -2147483618
+        Unknown1890: 1
+        Unknown1675: 20
+        endElse: 
+      endIf: 
+    endUpon: 
+  endState: 
+
+startState: s32'EventStand'
+  createObject2: s32'UzuStand', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  setMarker: s32'loop'
+  sprite: s32'zat000_00', 4
+  sprite: s32'zat000_01', 4
+  sprite: s32'zat000_02', 4
+  sprite: s32'zat000_03', 4
+  sprite: s32'zat000_04', 4
+  sprite: s32'zat000_05', 4
+  sprite: s32'zat000_06', 4
+  sprite: s32'zat000_07', 4
+  sprite: s32'zat000_08', 4
+  sprite: s32'zat000_09', 4
+  sprite: s32'zat000_10', 4
+  sprite: s32'zat000_11', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'EventZAT_OP'
+  sprite: s32'null', 2147483647
+  Unknown242: 
+  Unknown2013: s32'Opening', 0
+  Unknown2020: s32'Opening', 23, 0, -1
+  Unknown2028: s32'EvtOpening'
+  Unknown3: 
+  endState: 
+
+startState: s32'EventZAT07A_01'
+  sprite: s32'zat640_00', 6
+  Unknown448: s32'zat_stand_start', 100
+  sprite: s32'zat640_03', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_04', 6
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventZAT07B_01'
+  Unknown2075: 1
+  sprite: s32'zat306_09', 2147483647
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'UzuStand', 130
+  endState: 
+
+startState: s32'EventZAT07B_02'
+  sprite: s32'zat306_08', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat306_07', 6
+  sprite: s32'zat306_06', 6
+  sprite: s32'zat640_02', 6
+  sprite: s32'zat640_03', 6
+  sprite: s32'zat640_04', 6
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventZAT07B_03'
+  sprite: s32'zat640_10', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_08', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_06', 12
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_04', 2147483647
+  endState: 
+
+startState: s32'EventZAT07B_04'
+  sprite: s32'zat640_05', 10
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_06', 10
+  sprite: s32'zat640_07', 10
+  sprite: s32'zat640_08', 16
+  sprite: s32'zat640_09', 10
+  sprite: s32'zat640_10', 10
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventZAT08A_01'
+  createObject2: s32'UzuStand', 100
+  sprite: s32'zat001_00', 4
+  sprite: s32'zat001_01', 4
+  sprite: s32'zat001_02', 4
+  playCharacterSFX: s32'6'
+  sprite: s32'zat001_03', 4
+  sprite: s32'zat001_04', 4
+  sprite: s32'zat001_05', 4
+  sprite: s32'zat001_06', 4
+  sprite: s32'zat001_07', 4
+  sprite: s32'zat001_08', 3
+  sprite: s32'zat001_09', 4
+  playCharacterSFX: s32'5'
+  sprite: s32'zat001_10', 4
+  sprite: s32'zat001_11', 4
+  sprite: s32'zat001_12', 4
+  sprite: s32'zat001_13', 4
+  sprite: s32'zat001_14', 4
+  sprite: s32'zat001_15', 4
+  sprite: s32'zat001_16', 4
+  sprite: s32'zat001_17', 4
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventZAT08A_02'
+  sprite: s32'zat640_00', 6
+  Unknown448: s32'zat_stand_start', 100
+  sprite: s32'zat640_01', 6
+  sprite: s32'zat640_02', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_03', 6
+  sprite: s32'zat640_04', 12
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventZAT08A_03'
+  sprite: s32'zat640_10', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_08', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_04', 2147483647
+  endState: 
+
+startState: s32'EventZAT08B_01'
+  sprite: s32'zat640_00', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_01', 6
+  sprite: s32'zat640_02', 6
+  sprite: s32'zat640_03', 6
+  sprite: s32'zat640_04', 6
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventZAT_ED'
+  sprite: s32'null', 2147483647
+  Unknown242: 
+  Unknown2013: s32'Ending', 0
+  Unknown2020: s32'zat_ed', 23, 0, -1
+  Unknown2028: s32'EvtEnding'
+  Unknown3: 
+  endState: 
+
+startState: s32'EventMLL07A_01'
+  sprite: s32'zat640_00', 6
+  Unknown448: s32'zat_stand_start', 100
+  sprite: s32'zat640_03', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_04', 6
+  sprite: s32'zat640_05', 6
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventMLL07B_01'
+  sprite: s32'zat306_09', 2147483647
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'UzuStand', 130
+  endState: 
+
+startState: s32'EventVEN08A_01'
+  sprite: s32'zat640_04', 2147483647
+  addPositionX: 100000
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  endState: 
+
+startState: s32'EventVEN08A_02'
+  sprite: s32'zat640_05', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_06', 6
+  sprite: s32'zat640_07', 6
+  sprite: s32'zat640_08', 12
+  sprite: s32'zat640_09', 6
+  sprite: s32'zat640_10', 6
+  sprite: s32'zat640_11', 2147483647
+  endState: 
+
+startState: s32'EventVEN08B_01'
+  createObject2: s32'UzuStand', 100
+  storeValue: (VARIABLE), 59, (STATIC), 1
+  addPositionX: 100000
+  setMarker: s32'loop'
+  sprite: s32'zat000_00', 4
+  sprite: s32'zat000_01', 4
+  sprite: s32'zat000_02', 4
+  sprite: s32'zat000_03', 4
+  sprite: s32'zat000_04', 4
+  sprite: s32'zat000_05', 4
+  sprite: s32'zat000_06', 4
+  sprite: s32'zat000_07', 4
+  sprite: s32'zat000_08', 4
+  sprite: s32'zat000_09', 4
+  sprite: s32'zat000_10', 4
+  sprite: s32'zat000_11', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'EventVEN08B_02'
+  sprite: s32'zat616_00', 6
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat616_01', 6
+  sprite: s32'zat616_02', 6
+  sprite: s32'zat616_03', 6
+  sprite: s32'zat616_04', 6
+  sprite: s32'zat616_05', 6
+  sprite: s32'zat616_06', 6
+  Unknown2161: 100, 40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat616_07', 2147483647
+  endState: 
+
+startState: s32'EventVEN08B_03'
+  sprite: s32'zat616_06', 6
+  Unknown2161: 100, 40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat616_05', 6
+  sprite: s32'zat616_04', 6
+  sprite: s32'zat616_03', 6
+  sprite: s32'zat616_02', 6
+  sprite: s32'zat616_01', 6
+  sprite: s32'zat616_00', 6
+  Unknown448: s32'zat_moguri', 100
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventVEN08B_04'
+  sprite: s32'zat306_00', 6
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat306_01', 6
+  sprite: s32'zat306_02', 6
+  sprite: s32'zat306_03', 6
+  sprite: s32'zat306_04', 6
+  sprite: s32'zat306_05', 6
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat306_06', 6
+  sprite: s32'zat306_07', 6
+  sprite: s32'zat306_08', 6
+  sprite: s32'zat306_09', 2147483647
+  endState: 
+
+startState: s32'EventFAU08A_01'
+  sprite: s32'zat306_00', 6
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat306_01', 6
+  sprite: s32'zat306_02', 6
+  sprite: s32'zat306_03', 6
+  sprite: s32'zat306_04', 6
+  sprite: s32'zat306_05', 6
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat306_06', 6
+  sprite: s32'zat306_07', 6
+  sprite: s32'zat306_08', 6
+  sprite: s32'zat306_09', 2147483647
+  endState: 
+
+startState: s32'EventFAU08A_02'
+  sprite: s32'zat306_09', 80
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat306_10', 6
+  sprite: s32'zat306_11', 6
+  Unknown2161: 100, -40000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat306_12', 6
+  sprite: s32'zat306_13', 6
+  sprite: s32'zat306_14', 6
+  sprite: s32'zat306_15', 6
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventFAU08B_01'
+  sprite: s32'zat640_00', 6
+  Unknown448: s32'zat_stand_start', 100
+  sprite: s32'zat640_01', 6
+  sprite: s32'zat640_02', 6
+  Unknown2161: 100, -80000, 0
+  createObject2: s32'UzuStand', 130
+  sprite: s32'zat640_03', 6
+  sprite: s32'zat640_04', 2147483647
+  endState: 
+
+startState: s32'EventSLY08A_01'
+  createObject2: s32'UzuStand', 100
+  sprite: s32'zat001_00', 4
+  sprite: s32'zat001_01', 4
+  sprite: s32'zat001_02', 4
+  playCharacterSFX: s32'6'
+  sprite: s32'zat001_03', 4
+  sprite: s32'zat001_04', 4
+  sprite: s32'zat001_05', 4
+  sprite: s32'zat001_06', 4
+  sprite: s32'zat001_07', 4
+  sprite: s32'zat001_08', 3
+  sprite: s32'zat001_09', 4
+  playCharacterSFX: s32'5'
+  sprite: s32'zat001_10', 4
+  sprite: s32'zat001_11', 4
+  sprite: s32'zat001_12', 4
+  sprite: s32'zat001_13', 4
+  sprite: s32'zat001_14', 4
+  sprite: s32'zat001_15', 4
+  sprite: s32'zat001_16', 4
+  sprite: s32'zat001_17', 4
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventSLY08A_02'
+  sprite: s32'zat306_00', 6
+  Unknown448: s32'zat_moguri', 100
+  sprite: s32'zat306_01', 6
+  sprite: s32'zat306_02', 6
+  sprite: s32'zat306_03', 6
+  sprite: s32'zat306_04', 6
+  sprite: s32'zat306_05', 6
+  Unknown2161: 100, -40000, 0
+  createObject2: s32'306Floorr_shadowloop', 130
+  sprite: s32'zat306_06', 6
+  sprite: s32'zat306_07', 6
+  sprite: s32'zat306_08', 6
+  sprite: s32'zat306_09', 2147483647
+  endState: 
+
+startState: s32'EventSLY08A_03'
+  sprite: s32'zat306_08', 6
+  Unknown2161: 100, 40000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat306_06', 6
+  sprite: s32'zat306_04', 6
+  sprite: s32'zat306_02', 6
+  sprite: s32'zat305_00', 8
+  sprite: s32'zat305_01', 8
+  sprite: s32'zat305_02', 8
+  Unknown2161: 100, 160000, 0
+  createObject2: s32'305Floorr_shadowloop', 130
+  playCharacterSFX: s32'6'
+  sprite: s32'zat305_03', 8
+  sprite: s32'zat305_04', 8
+  playSFX: s32'SE_JUMPLANDA'
+  sprite: s32'zat305_05', 8
+  sprite: s32'zat305_06', 2147483647
+  endState: 
+
+startState: s32'EventSly08B_01'
+  sprite: s32'zat305_00', 8
+  Unknown2161: 100, 40000, 0
+  Unknown448: s32'zat_moguri', 130
+  sprite: s32'zat305_01', 8
+  sprite: s32'zat305_02', 8
+  Unknown2161: 100, 160000, 0
+  createObject2: s32'305Floorr_shadowloop', 130
+  playCharacterSFX: s32'6'
+  sprite: s32'zat305_03', 8
+  sprite: s32'zat305_04', 8
+  playSFX: s32'SE_JUMPLANDA'
+  sprite: s32'zat305_05', 8
+  sprite: s32'zat305_06', 2147483647
+  endState: 
+
+startState: s32'FBExhaust'
+  upon: (IMMEDIATE)
+    consumeTension: 2500
+    endUpon: 
+  playSFX: s32'SE_KAKUSEI'
+  characterEffectOverlay: -1
+  sprite: s32'zat450_00', 4
+  fadeColorRed: -30
+  fadeColorGreen: -30
+  fadeColorBlue: -30
+  sprite: s32'zat450_01', 4
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  modifyVar: (ADD), (VARIABLE), 25, (STATIC), 6000
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_02', 2
+  sprite: s32'zat450_03', 2
+  sprite: s32'zat450_04', 4
+  sprite: s32'zat450_05', 4
+  endState: 
+

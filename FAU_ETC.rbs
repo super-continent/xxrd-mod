@@ -4,11 +4,11 @@ startState: s32'dmy'
 
 startState: s32'fau_guardbake_stand'
   sprite: s32'null', 2147483647
-  Unknown450: s32'fau_guardbake_stand'
-  Unknown454: 2
-  Unknown456: 2
-  Unknown466: 2
-  Unknown457: 2
+  linkParticleEx: s32'fau_guardbake_stand'
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown466: (PARENT)
+  Unknown457: (PARENT)
   upon: 56
     Unknown2218: 2, 0, 23, 100
     endUpon: 
@@ -16,11 +16,11 @@ startState: s32'fau_guardbake_stand'
 
 startState: s32'fau_guardbake_jump'
   sprite: s32'null', 2147483647
-  Unknown450: s32'fau_guardbake_jump'
-  Unknown454: 2
-  Unknown456: 2
-  Unknown466: 2
-  Unknown457: 2
+  linkParticleEx: s32'fau_guardbake_jump'
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown466: (PARENT)
+  Unknown457: (PARENT)
   upon: 56
     Unknown2218: 2, 0, 23, 100
     endUpon: 
@@ -28,47 +28,47 @@ startState: s32'fau_guardbake_jump'
 
 startState: s32'Item_Pre'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown456: 2
-    Unknown454: 2
-    Unknown466: 2
+    Unknown457: (PARENT)
+    Unknown456: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
-      Unknown450: s32'fau_item_oilcan'
+      linkParticleEx: s32'fau_item_oilcan'
       Unknown1700: 200000
       setObjectSize: 850
-      ifNot: 2, 32
+      ifNot: (VARIABLE), 32
         Unknown2018: 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
-      Unknown450: s32'fau_item_blackhole'
+      linkParticleEx: s32'fau_item_blackhole'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
-      Unknown450: s32'fau_item_bomb'
+      linkParticleEx: s32'fau_item_bomb'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
-      Unknown450: s32'fau_item_helium_loop'
+      linkParticleEx: s32'fau_item_helium_loop'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
-      Unknown450: s32'fau_item_meteo_start'
+      linkParticleEx: s32'fau_item_meteo_start'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 5
-      Unknown450: s32'fau_item_hammer'
+      linkParticleEx: s32'fau_item_hammer'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 6
-      Unknown451: s32'chibi', s32'chibi_tojo'
+      linkPawnWithAnim: s32'chibi', s32'chibi_tojo'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 7
-      Unknown450: s32'fau_item_poisonflask_loop'
+      linkParticleEx: s32'fau_item_poisonflask_loop'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 8
-      Unknown450: s32'fau_item_choco'
+      linkParticleEx: s32'fau_item_choco'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 9
-      Unknown450: s32'fau_item_donuts'
+      linkParticleEx: s32'fau_item_donuts'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 10
-      Unknown451: s32'jumpdai', s32'jumpdai001'
+      linkPawnWithAnim: s32'jumpdai', s32'jumpdai001'
       if: (VARIABLE), 32
         Unknown2019: 1
         endIf: 
@@ -76,45 +76,45 @@ startState: s32'Item_Pre'
       setObjectSize: 10000
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 11
-      Unknown450: s32'fau_item_100t'
-      ifNot: 2, 32
+      linkParticleEx: s32'fau_item_100t'
+      ifNot: (VARIABLE), 32
         Unknown2018: 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 12
-      Unknown450: s32'fau_item_hanabidama'
+      linkParticleEx: s32'fau_item_hanabidama'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 13
-      Unknown450: s32'fau_item_meteo_special'
+      linkParticleEx: s32'fau_item_meteo_special'
       setObjectSize: 200
       Unknown164: 120000
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 14
-      Unknown450: s32'fau_item_goldenhammer'
+      linkParticleEx: s32'fau_item_goldenhammer'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 15
-      Unknown451: s32'chibi', s32'chibi_tojo'
+      linkPawnWithAnim: s32'chibi', s32'chibi_tojo'
       setObjectSize: 3000
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 16
-      Unknown450: s32'fau_item_choco_special'
+      linkParticleEx: s32'fau_item_choco_special'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 17
-      Unknown450: s32'fau_item_donuts_special'
-      ifNot: 2, 32
+      linkParticleEx: s32'fau_item_donuts_special'
+      ifNot: (VARIABLE), 32
         Unknown2018: 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 18
-      Unknown450: s32'fau_item_golden100t'
-      ifNot: 2, 32
+      linkParticleEx: s32'fau_item_golden100t'
+      ifNot: (VARIABLE), 32
         Unknown2018: 1
         endIf: 
       endIf: 
     upon: (FRAME_STEP)
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       Unknown2004: 3, 0
-      Unknown454: 2
+      linkObjPositionTo: (PARENT)
       endUpon: 
     endUpon: 
   sprite: s32'null', 2147483647
@@ -122,9 +122,9 @@ startState: s32'Item_Pre'
 
 startState: s32'Item_Oilcan'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_oilcan'
+    linkParticleEx: s32'fau_item_oilcan'
     Unknown2225: 20
-    ifNot: 2, 32
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     setThrowRange: 150000
@@ -185,7 +185,7 @@ startState: s32'Item_Oilcan'
   Unknown98: 0
   Unknown164: 0
   Unknown166: 0
-  Unknown450: s32'fau_item_oilcan_yoko'
+  linkParticleEx: s32'fau_item_oilcan_yoko'
   Unknown176: 1
   sprite: s32'null', 5
   physicsXImpulse: 1000
@@ -203,7 +203,7 @@ startState: s32'Item_Oilcan'
   sprite: s32'null', 90
   createObject2: s32'OilWater', 123
   sprite: s32'null', 8
-  Unknown450: s32'fau_item_oilcan_toumei'
+  linkParticleEx: s32'fau_item_oilcan_toumei'
   Unknown338: 220
   sprite: s32'null', 4
   Unknown338: 200
@@ -226,13 +226,13 @@ startState: s32'Item_Oilcan'
   sprite: s32'null', 4
   Unknown338: 20
   sprite: s32'null', 4
-  Unknown19: 23
+  deactivateObj: (SELF)
   Unknown1603: 1
   endState: 
 
 startState: s32'OilWater'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_oilcan_loop'
+    linkParticleEx: s32'fau_item_oilcan_loop'
     Unknown2221: 320000
     allowHitting: (ALL)
     Unknown2156: 0
@@ -241,16 +241,16 @@ startState: s32'OilWater'
     superArmorEnabled: 1
     Unknown1826: 0
     Unknown2225: 20
-    upon: 45
-      Unknown19: 23
-      Unknown19: 2
+    upon: (ON_DESTROY)
+      deactivateObj: (SELF)
+      deactivateObj: (PARENT)
       createObject2: s32'OilFire', 100
       endUpon: 
     endUpon: 
   sprite: s32'ef_oil', 420
   sprite: s32'ef_oil', 255
   Unknown448: s32'fau_item_oilcan_end', 123
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'OilFire'
@@ -266,7 +266,7 @@ startState: s32'OilFire'
   allowHitting: (ALL)
   callCmnEfFunc: s32'JibakuBlitz'
   sprite: s32'ef_oil', 10
-  Unknown450: s32'fau_item_oil_bomb'
+  linkParticleEx: s32'fau_item_oil_bomb'
   playSFX: s32'SE_EXPLODE'
   sprite: s32'ef_oil2', 20
   hit: 
@@ -276,7 +276,7 @@ startState: s32'OilFire'
 
 startState: s32'Item_BlackHole'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_blackhole'
+    linkParticleEx: s32'fau_item_blackhole'
     setThrowRange: 0
     Unknown2225: 0
     upon: 2
@@ -337,7 +337,7 @@ startState: s32'Item_BlackHole'
 
 startState: s32'Vacuum'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_blackhole_vacuum'
+    linkParticleEx: s32'fau_item_blackhole_vacuum'
     Unknown2225: 0
     endUpon: 
   sprite: s32'null', 180
@@ -346,7 +346,7 @@ startState: s32'Vacuum'
   Unknown176: 1
   playSFX: s32'SE_KAKUSEIFINISH'
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   Unknown448: s32'fau_item_blackhole_end', 123
   endState: 
 
@@ -395,7 +395,7 @@ startState: s32'Item_Bomb'
     setThrowRange: 0
     Unknown2225: 20
     Unknown1602: 1
-    Unknown450: s32'fau_item_bomb'
+    linkParticleEx: s32'fau_item_bomb'
     Unknown2157: 1, 5
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
@@ -495,7 +495,7 @@ startState: s32'Item_Bomb'
   setObjectSize: 1050
   Unknown3: 
   sprite: s32'fae9_00', 4
-  Unknown450: s32'fau_item_bomb_explosion'
+  linkParticleEx: s32'fau_item_bomb_explosion'
   Unknown2271: 1
   setObjectSize: 4000
   Unknown2267: 625
@@ -537,7 +537,7 @@ startState: s32'Item_FireWorks'
     setThrowRange: 0
     Unknown2225: 20
     Unknown1602: 1
-    Unknown450: s32'fau_item_hanabidama'
+    linkParticleEx: s32'fau_item_hanabidama'
     Unknown2157: 1, 5
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
@@ -587,37 +587,37 @@ startState: s32'Item_FireWorks'
   sprite: s32'FAE0_06', 30
   Unknown176: 1
   sprite: s32'FAE0_06', 3
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 3
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 3
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 3
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 3
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 3
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 3
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 3
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 2
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 2
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 2
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 2
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 2
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 2
-  Unknown94: 2000
+  addPositionX: 2000
   sprite: s32'FAE0_06', 2
-  Unknown94: -2000
+  addPositionX: -2000
   sprite: s32'FAE0_06', 2
-  Unknown94: 2000
+  addPositionX: 2000
   Unknown3: 
   sprite: s32'FAE0_06', 3
   physicsYImpulse: 50000
@@ -646,7 +646,7 @@ startState: s32'Item_FireWorks'
   physicsXImpulse: -200
   Unknown3: 
   sprite: s32'fae9_00', 4
-  Unknown450: s32'fau_item_fireworks'
+  linkParticleEx: s32'fau_item_fireworks'
   Unknown2271: 1
   setObjectSize: 3500
   Unknown2267: 625
@@ -666,7 +666,7 @@ startState: s32'Item_FireWorks'
 
 startState: s32'FireWorks_smoke'
   upon: (IMMEDIATE)
-    Unknown450: s32'cmn_jump_default'
+    linkParticleEx: s32'cmn_jump_default'
     setObjectWidth: 200
     Unknown156: 1200
     Unknown164: -2000
@@ -682,8 +682,8 @@ startState: s32'Item_Helium'
       endUpon: 
     setThrowRange: 0
     Unknown2225: 20
-    Unknown450: s32'fau_item_helium_loop'
-    ifNot: 2, 32
+    linkParticleEx: s32'fau_item_helium_loop'
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     upon: 24
@@ -741,16 +741,16 @@ startState: s32'Item_Helium'
   upon: (FRAME_STEP)
     Unknown60: '0x17000000640000001600000064000000'
     ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-      Unknown19: 23
+      deactivateObj: (SELF)
       playSFX: s32'SE_EXPLODE'
-      Unknown53: 22, 2, 112, 23, 0, 1200
+      storeFromObjToObj: (ENEMY), (VARIABLE), 112, (SELF), (STATIC), 1200
       Unknown448: s32'fau_item_helium_hit', 100
       endIf: 
     Unknown60: '0x17000000640000000300000064000000'
     ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-      Unknown19: 23
+      deactivateObj: (SELF)
       playSFX: s32'SE_EXPLODE'
-      Unknown53: 3, 2, 112, 23, 0, 1200
+      storeFromObjToObj: (PLAYER), (VARIABLE), 112, (SELF), (STATIC), 1200
       Unknown448: s32'fau_item_helium_hit', 100
       endIf: 
     endUpon: 
@@ -794,7 +794,7 @@ startState: s32'Item_Helium'
 
 startState: s32'Item_Meteo'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_meteo_start'
+    linkParticleEx: s32'fau_item_meteo_start'
     Unknown2225: 0
     Unknown1602: 1
     endUpon: 
@@ -822,7 +822,7 @@ startState: s32'Item_Meteo'
 
 startState: s32'Item_Armageddon'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_meteo_special'
+    linkParticleEx: s32'fau_item_meteo_special'
     setObjectSize: 200
     Unknown164: 120000
     Unknown2225: 0
@@ -859,7 +859,7 @@ startState: s32'MeteoInseki'
       Unknown14: s32'rakkahit'
       endUpon: 
     setThrowRange: 0
-    Unknown450: s32'fau_item_meteo_loop'
+    linkParticleEx: s32'fau_item_meteo_loop'
     Unknown2225: 10
     Unknown1602: 1
     upon: 24
@@ -877,17 +877,17 @@ startState: s32'MeteoInseki'
           endIf: 
         endElse: 
       endUpon: 
-    Unknown54: 0, 2, 3, 0, 1
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
     upon: (BEFORE_EXIT)
-      Unknown54: 0, 2, 3, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
       endUpon: 
     endUpon: 
   sprite: s32'FAE0_05', 3
   Unknown1889: 100
-  Unknown99: 875000
+  addPositionY: 875000
   Unknown103: 1790250, 0
   Unknown1888: 50
-  Unknown94: 350000
+  addPositionX: 350000
   Unknown102: 0, -894250
   Unknown102: 0, -446250
   hit: 
@@ -918,17 +918,17 @@ startState: s32'MeteoInseki'
   sprite: s32'null', 80
   Unknown176: 1
   screenShake: 1, 1
-  Unknown450: s32'fau_item_meteo_bound'
+  linkParticleEx: s32'fau_item_meteo_bound'
   Unknown1603: 1
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   setMarker: s32'rakkahit'
   sprite: s32'null', 80
   Unknown176: 1
-  Unknown450: s32'fau_item_meteo_hit'
+  linkParticleEx: s32'fau_item_meteo_hit'
   Unknown1603: 1
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'ArmageddonInseki'
@@ -946,30 +946,30 @@ startState: s32'ArmageddonInseki'
       Unknown14: s32'landing'
       endUpon: 
     setThrowRange: -20000
-    Unknown450: s32'fau_item_meteo_special'
+    linkParticleEx: s32'fau_item_meteo_special'
     setObjectSize: 4000
     Unknown2267: 250
     Unknown2225: 10
     Unknown1602: 1
     upon: (FRAME_STEP)
       upon: (HIT_OR_GUARD)
-        Unknown54: 0, 2, 45, 0, 1
+        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
         endUpon: 
       endUpon: 
     Unknown1771: s32'ArmageddonInseki', 25
     upon: 25
       storeValue: (VARIABLE), 46, (STATIC), 1
       endUpon: 
-    Unknown54: 0, 2, 4, 0, 1
+    modifyVar: (ADD), (VARIABLE), 4, (STATIC), 1
     upon: (BEFORE_EXIT)
-      Unknown54: 0, 2, 4, 0, -1
+      modifyVar: (ADD), (VARIABLE), 4, (STATIC), -1
       endUpon: 
     endUpon: 
   sprite: s32'FAE0_05', 3
   Unknown1888: 50
-  Unknown94: 140000
+  addPositionX: 140000
   Unknown1889: 100
-  Unknown99: 1225000
+  addPositionY: 1225000
   hit: 
   physicsXImpulse: 4000
   physicsYImpulse: -4000
@@ -977,7 +977,7 @@ startState: s32'ArmageddonInseki'
   playSFX: s32'SE_GROUNDSHAKE'
   setMarker: s32'loop'
   sprite: s32'FAE0_05', 6
-  ifNot: 2, 46
+  ifNot: (VARIABLE), 46
     screenShake: 0, 1
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 45, (STATIC), 5
@@ -992,13 +992,13 @@ startState: s32'ArmageddonInseki'
   screenShake: 1, 1
   hit: 
   sprite: s32'FAE0_05', 6
-  Unknown450: s32'fau_item_meteo_special_bound'
+  linkParticleEx: s32'fau_item_meteo_special_bound'
   playSFX: s32'SE_EXPLODE2'
   sprite: s32'FAE0_05', 74
   Unknown1603: 1
   recoveryState: 
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Item_ChibiFaust'
@@ -1008,7 +1008,7 @@ startState: s32'Item_ChibiFaust'
     damage: 25
     riscPlus: 10
     Unknown1028: 0
-    Unknown451: s32'chibi', s32''
+    linkPawnWithAnim: s32'chibi', s32''
     Unknown2157: 1, 5
     setThrowRange: 0
     upon: 2
@@ -1150,7 +1150,7 @@ startState: s32'Item_ChibiFaust'
   setMarker: s32'dead_loop'
   sprite: s32'chibi_death_01', 4
   upon: 2
-    Unknown19: 23
+    deactivateObj: (SELF)
     endUpon: 
   sprite: s32'chibi_death_00', 4
   Unknown3: 
@@ -1159,7 +1159,7 @@ startState: s32'Item_ChibiFaust'
 
 startState: s32'Chibi_Balloon'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_chibi_balloon'
+    linkParticleEx: s32'fau_chibi_balloon'
     endUpon: 
   sprite: s32'null', 255
   Unknown117: 0, 4462
@@ -1176,7 +1176,7 @@ startState: s32'Chibi_Balloon'
   sprite: s32'null', 6
   Unknown338: 25
   sprite: s32'null', 6
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Item_BigFaust'
@@ -1186,7 +1186,7 @@ startState: s32'Item_BigFaust'
     damage: 25
     riscPlus: 10
     Unknown1028: 0
-    Unknown451: s32'chibi', s32''
+    linkPawnWithAnim: s32'chibi', s32''
     Unknown2157: 1, 5
     setObjectSize: 3000
     setThrowRange: 0
@@ -1332,7 +1332,7 @@ startState: s32'Item_BigFaust'
   setMarker: s32'dead_loop'
   sprite: s32'chibi_death_01', 4
   upon: 2
-    Unknown19: 23
+    deactivateObj: (SELF)
     endUpon: 
   sprite: s32'chibi_death_00', 4
   Unknown3: 
@@ -1346,7 +1346,7 @@ startState: s32'Item_Hammer'
     damage: 44
     riscPlus: 20
     stunValue: 88
-    Unknown450: s32'fau_item_hammer'
+    linkParticleEx: s32'fau_item_hammer'
     upon: (HIT_OR_GUARD)
       Unknown23: 24
       Unknown23: 2
@@ -1415,7 +1415,7 @@ startState: s32'Item_Hammer'
   Unknown1603: 1
   setThrowRange: -100000
   sprite: s32'FAE0_04', 4
-  Unknown450: s32'fau_item_hammer_end'
+  linkParticleEx: s32'fau_item_hammer_end'
   Unknown338: 220
   sprite: s32'FAE0_04', 4
   Unknown338: 200
@@ -1438,7 +1438,7 @@ startState: s32'Item_Hammer'
   sprite: s32'FAE0_04', 4
   Unknown338: 20
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   setMarker: s32'hit'
   sprite: s32'FAE0_04', 8
   recoveryState: 
@@ -1464,7 +1464,7 @@ startState: s32'Item_Hammer'
   sprite: s32'FAE0_04', 4
   Unknown338: 80
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Item_GoldenHammer'
@@ -1476,7 +1476,7 @@ startState: s32'Item_GoldenHammer'
     stunValue: 132
     hitstop: 20
     Unknown1112: 0
-    Unknown450: s32'fau_item_goldenhammer'
+    linkParticleEx: s32'fau_item_goldenhammer'
     upon: (HIT_OR_GUARD)
       Unknown23: 24
       Unknown23: 2
@@ -1545,7 +1545,7 @@ startState: s32'Item_GoldenHammer'
   Unknown1603: 1
   setThrowRange: -100000
   sprite: s32'FAE0_04', 4
-  Unknown450: s32'fau_item_goldenhammer_end'
+  linkParticleEx: s32'fau_item_goldenhammer_end'
   Unknown338: 220
   sprite: s32'FAE0_04', 4
   Unknown338: 200
@@ -1568,7 +1568,7 @@ startState: s32'Item_GoldenHammer'
   sprite: s32'FAE0_04', 4
   Unknown338: 20
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   setMarker: s32'hit'
   sprite: s32'FAE0_04', 8
   recoveryState: 
@@ -1594,7 +1594,7 @@ startState: s32'Item_GoldenHammer'
   sprite: s32'FAE0_04', 4
   Unknown338: 80
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Item_Frasco'
@@ -1606,7 +1606,7 @@ startState: s32'Item_Frasco'
       Unknown23: 24
       Unknown14: s32'landing'
       endUpon: 
-    Unknown450: s32'fau_item_poisonflask_loop'
+    linkParticleEx: s32'fau_item_poisonflask_loop'
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
       ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
@@ -1663,7 +1663,7 @@ startState: s32'Item_Frasco'
   Unknown176: 1
   Unknown338: 250
   createObject2: s32'SubItem_Poison', 100
-  Unknown450: s32'fau_item_poisonflask_end'
+  linkParticleEx: s32'fau_item_poisonflask_end'
   sprite: s32'FAE1_03', 3
   Unknown338: 200
   sprite: s32'FAE1_03', 3
@@ -1673,7 +1673,7 @@ startState: s32'Item_Frasco'
   sprite: s32'FAE1_03', 3
   Unknown338: 50
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'SubItem_Poison'
@@ -1686,7 +1686,7 @@ startState: s32'SubItem_Poison'
     Unknown1070: 360, 100
     setThrowRange: 0
     Unknown2225: 20
-    Unknown450: s32'fau_item_poison_smoke'
+    linkParticleEx: s32'fau_item_poison_smoke'
     endUpon: 
   sprite: s32'FAE1_20', 5
   sprite: s32'FAE1_21', 5
@@ -1714,8 +1714,8 @@ startState: s32'Item_Chocolate'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 25
-    Unknown450: s32'fau_item_choco'
-    ifNot: 2, 32
+    linkParticleEx: s32'fau_item_choco'
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     Unknown2225: 20
@@ -1728,13 +1728,13 @@ startState: s32'Item_Chocolate'
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 3
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
@@ -1743,17 +1743,17 @@ startState: s32'Item_Chocolate'
               Unknown1759: 16
               Unknown40: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 22
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
@@ -1763,11 +1763,11 @@ startState: s32'Item_Chocolate'
               Unknown40: 
               ifOpponentCharacter: s16'sin'
                 Unknown41: 22
-                Unknown54: 0, 2, 25, 0, 500
+                modifyVar: (ADD), (VARIABLE), 25, (STATIC), 500
                 Unknown40: 
                 endIf: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
@@ -1866,9 +1866,9 @@ startState: s32'Item_BestChocolate'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 25
-    Unknown450: s32'fau_item_choco_special'
+    linkParticleEx: s32'fau_item_choco_special'
     setObjectSize: 1500
-    ifNot: 2, 32
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     Unknown2225: 20
@@ -1881,13 +1881,13 @@ startState: s32'Item_BestChocolate'
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 3
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
@@ -1896,17 +1896,17 @@ startState: s32'Item_BestChocolate'
               Unknown1759: 48
               Unknown40: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 22
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
@@ -1916,11 +1916,11 @@ startState: s32'Item_BestChocolate'
               Unknown40: 
               ifOpponentCharacter: s16'sin'
                 Unknown41: 22
-                Unknown54: 0, 2, 25, 0, 500
+                modifyVar: (ADD), (VARIABLE), 25, (STATIC), 500
                 Unknown40: 
                 endIf: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
@@ -2019,7 +2019,7 @@ startState: s32'Item_Donut'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 25
-    Unknown450: s32'fau_item_donuts'
+    linkParticleEx: s32'fau_item_donuts'
     Unknown2225: 20
     setThrowRange: 0
     recoveryState: 
@@ -2030,13 +2030,13 @@ startState: s32'Item_Donut'
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 3
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
@@ -2048,17 +2048,17 @@ startState: s32'Item_Donut'
                 endIf: 
               Unknown40: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 22
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 84000
@@ -2071,11 +2071,11 @@ startState: s32'Item_Donut'
               Unknown40: 
               ifOpponentCharacter: s16'sin'
                 Unknown41: 22
-                Unknown54: 0, 2, 25, 0, 500
+                modifyVar: (ADD), (VARIABLE), 25, (STATIC), 500
                 Unknown40: 
                 endIf: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
@@ -2174,8 +2174,8 @@ startState: s32'Item_ManyDonut'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 25
-    Unknown450: s32'fau_item_donuts_special'
-    ifNot: 2, 32
+    linkParticleEx: s32'fau_item_donuts_special'
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     Unknown2225: 20
@@ -2188,13 +2188,13 @@ startState: s32'Item_ManyDonut'
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 3
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
@@ -2206,17 +2206,17 @@ startState: s32'Item_ManyDonut'
                 endIf: 
               Unknown40: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
-        ifNot: 2, 50
+        ifNot: (VARIABLE), 50
           Unknown43: 4, 22
-          Unknown53: 23, 2, 61, 4, 2, 17
-          Unknown53: 23, 2, 62, 4, 2, 18
-          Unknown54: 1, 2, 61, 2, 17
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
+          storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
+          modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
           ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 0
-            Unknown54: 2, 2, 61, 0, -1
+            modifyVar: (MUL), (VARIABLE), 61, (STATIC), -1
             endIf: 
           ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 62, (STATIC), 0
             ifOperation: (IS_LESSER), (VARIABLE), 61, (STATIC), 168000
@@ -2229,11 +2229,11 @@ startState: s32'Item_ManyDonut'
               Unknown40: 
               ifOpponentCharacter: s16'sin'
                 Unknown41: 22
-                Unknown54: 0, 2, 25, 0, 500
+                modifyVar: (ADD), (VARIABLE), 25, (STATIC), 500
                 Unknown40: 
                 endIf: 
               storeValue: (VARIABLE), 50, (STATIC), 1
-              Unknown19: 23
+              deactivateObj: (SELF)
               endIf: 
             endIf: 
           endIf: 
@@ -2417,9 +2417,9 @@ startState: s32'Item_JumpStand'
   hit: 
   upon: (HIT_OR_GUARD)
     playSFX: s32'SE_JUMPB'
-    Unknown19: 1
+    deactivateObj: (PREVIOUS)
     createObject2: s32'Jumpdai_Hatudo', 100
-    Unknown19: 23
+    deactivateObj: (SELF)
     endUpon: 
   sprite: s32'ef_jump', 96
   Unknown1766: 1, 23
@@ -2432,9 +2432,9 @@ startState: s32'Item_100t'
     damage: 44
     riscPlus: 20
     stunValue: 88
-    Unknown450: s32'fau_item_100t'
+    linkParticleEx: s32'fau_item_100t'
     Unknown2157: 1, 5
-    ifNot: 2, 32
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     upon: 2
@@ -2526,7 +2526,7 @@ startState: s32'Item_100t'
   sprite: s32'FAE0_04', 4
   sprite: s32'FAE0_04', 4
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Item_Golden100t'
@@ -2537,9 +2537,9 @@ startState: s32'Item_Golden100t'
     riscPlus: 20
     stunValue: 88
     untechableTime: 24
-    Unknown450: s32'fau_item_golden100t'
+    linkParticleEx: s32'fau_item_golden100t'
     Unknown2157: 1, 5
-    ifNot: 2, 32
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     upon: 2
@@ -2624,7 +2624,7 @@ startState: s32'Item_Golden100t'
   Unknown1154: 1
   allowHitting: (ALL)
   Unknown1061: 1
-  Unknown450: s32'fau_item_golden100t_landing'
+  linkParticleEx: s32'fau_item_golden100t_landing'
   hit: 
   physicsXImpulse: 1000
   physicsYImpulse: 10500
@@ -2646,7 +2646,7 @@ startState: s32'Item_Golden100t'
   sprite: s32'FAE0_04', 4
   sprite: s32'FAE0_04', 4
   Unknown3: 
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Ai_Bomb'
@@ -2659,13 +2659,13 @@ startState: s32'Ai_Bomb'
     hitAirPushbackY: 10500
     untechableTime: 30
     hitPushbackX: 0
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown32: s32'Ai_Bomb'
       endUpon: 
     endUpon: 
   sprite: s32'null', 3
   sprite: s32'FAEJ_00', 2147483647
-  Unknown450: s32'fau_ai_headloop'
+  linkParticleEx: s32'fau_ai_headloop'
   physicsXImpulse: 15750
   physicsYImpulse: 0
   setGravity: 1925
@@ -2682,7 +2682,7 @@ startState: s32'Ai_Bomb'
     endUpon: 
   setMarker: s32'touch'
   sprite: s32'FAEJ_01', 2
-  Unknown450: s32'fau_ai_headbomb'
+  linkParticleEx: s32'fau_ai_headbomb'
   physicsXImpulse: 0
   physicsYImpulse: 0
   setGravity: 0
@@ -2756,14 +2756,14 @@ startState: s32'cmn_fd_end_yellow'
   sprite: s32'null', 20
   Unknown363: -256
   characterEffectOverlay: 16776960
-  Unknown450: s32'cmn_fd_end'
+  linkParticleEx: s32'cmn_fd_end'
   endState: 
 
 startState: s32'cmn_fd_end_blue'
   sprite: s32'null', 20
   Unknown363: -16776961
   characterEffectOverlay: 255
-  Unknown450: s32'cmn_fd_end'
+  linkParticleEx: s32'cmn_fd_end'
   endState: 
 
 startState: s32'ShigekiJibakuObj'
@@ -2789,7 +2789,7 @@ startState: s32'ShigekiJibakuObj'
     Unknown1037: 1
     endUpon: 
   sprite: s32'fae9_00', 4
-  Unknown450: s32'fau_item_bomb_explosion'
+  linkParticleEx: s32'fau_item_bomb_explosion'
   Unknown2271: 1
   setObjectSize: 4000
   Unknown2267: 625
@@ -2808,16 +2808,16 @@ startState: s32'ShigekiJibakuObj'
 
 startState: s32'TreasureAngel'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown242: 
-    Unknown450: s32'fau_shigeki_angel'
+    linkParticleEx: s32'fau_shigeki_angel'
     upon: (ON_HIT_OR_BLOCK)
       endUpon: 
     upon: 24
       Unknown14: s32'suka_open'
       endUpon: 
     upon: 29
-      Unknown450: s32'fau_shigeki_devil_s'
+      linkParticleEx: s32'fau_shigeki_devil_s'
       Unknown448: s32'fau_shigeki_smoke', 100
       endUpon: 
     endUpon: 
@@ -2839,9 +2839,9 @@ startState: s32'TreasureAngel'
 
 startState: s32'TreasureDevil1'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown242: 
-    Unknown450: s32'fau_shigeki_devil_s'
+    linkParticleEx: s32'fau_shigeki_devil_s'
     upon: (ON_HIT_OR_BLOCK)
       endUpon: 
     upon: 24
@@ -2866,9 +2866,9 @@ startState: s32'TreasureDevil1'
 
 startState: s32'TreasureDevil2'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown242: 
-    Unknown450: s32'fau_shigeki_devil_m'
+    linkParticleEx: s32'fau_shigeki_devil_m'
     upon: (ON_HIT_OR_BLOCK)
       endUpon: 
     upon: 24
@@ -2893,9 +2893,9 @@ startState: s32'TreasureDevil2'
 
 startState: s32'TreasureDevil3'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown242: 
-    Unknown450: s32'fau_shigeki_devil_l'
+    linkParticleEx: s32'fau_shigeki_devil_l'
     upon: (ON_HIT_OR_BLOCK)
       endUpon: 
     upon: 24
@@ -2920,11 +2920,11 @@ startState: s32'TreasureDevil3'
 
 startState: s32'TreasureBox'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
     Unknown242: 
-    Unknown450: s32'fau_shigeki_kamibukuro'
-    Unknown99: 300000
+    linkParticleEx: s32'fau_shigeki_kamibukuro'
+    addPositionY: 300000
     physicsYImpulse: -60000
     upon: (ON_HIT_OR_BLOCK)
       characterEffectOverlay: -1
@@ -2945,9 +2945,9 @@ startState: s32'TreasureBox'
 
 startState: s32'TreasureYajirushi'
   upon: (IMMEDIATE)
-    Unknown457: 2
+    Unknown457: (PARENT)
     Unknown242: 
-    Unknown450: s32'fau_shigeki_finger'
+    linkParticleEx: s32'fau_shigeki_finger'
     createObject2: s32'TreasureYajirushiLR', 100
     upon: (ON_HIT_OR_BLOCK)
       characterEffectOverlay: -1
@@ -2973,23 +2973,23 @@ startState: s32'TreasureYajirushi'
 
 startState: s32'TreasureYajirushiLR'
   sprite: s32'null', 2147483647
-  Unknown454: 2
-  Unknown457: 2
+  linkObjPositionTo: (PARENT)
+  Unknown457: (PARENT)
   Unknown242: 
   ifOperation: (IS_EQUAL), (VARIABLE), 93, (STATIC), 0
-    Unknown450: s32'fau_shigeki_2p'
+    linkParticleEx: s32'fau_shigeki_2p'
     endIf: 
   else: 
-    Unknown450: s32'fau_shigeki_1p'
+    linkParticleEx: s32'fau_shigeki_1p'
     endElse: 
   endState: 
 
 startState: s32'Jumpdai_Loop'
   upon: (IMMEDIATE)
-    Unknown451: s32'jumpdai', s32'jumpdai001'
+    linkPawnWithAnim: s32'jumpdai', s32'jumpdai001'
     Unknown2021: 0
     setObjectSize: 13000
-    Unknown454: 2
+    linkObjPositionTo: (PARENT)
     Unknown58: 1
     if: (VARIABLE), 32
       Unknown2019: 2
@@ -3041,7 +3041,7 @@ startState: s32'Jumpdai_Loop'
 
 startState: s32'Jumpdai_Hatudo'
   upon: (IMMEDIATE)
-    Unknown451: s32'jumpdai', s32'jumpdai000'
+    linkPawnWithAnim: s32'jumpdai', s32'jumpdai000'
     if: (VARIABLE), 32
       Unknown2019: 2
       endIf: 
@@ -3053,13 +3053,13 @@ startState: s32'Jumpdai_Hatudo'
   Unknown1603: 1
   sprite: s32'null', 1
   createObject2: s32'Jumpdai_Del', 100
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Jumpdai_Del'
   upon: (IMMEDIATE)
-    Unknown450: s32'fau_item_jumpdai_toumei'
-    ifNot: 2, 32
+    linkParticleEx: s32'fau_item_jumpdai_toumei'
+    ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
     endUpon: 
@@ -3086,12 +3086,12 @@ startState: s32'Jumpdai_Del'
   sprite: s32'null', 4
   Unknown338: 20
   sprite: s32'null', 1
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'Treasurebox_Loop'
   upon: (IMMEDIATE)
-    Unknown451: s32'treasurebox', s32'treasurebox001'
+    linkPawnWithAnim: s32'treasurebox', s32'treasurebox001'
     Unknown2021: 0
     setObjectSize: 1500
     endUpon: 
@@ -3100,7 +3100,7 @@ startState: s32'Treasurebox_Loop'
 
 startState: s32'Treasurebox_Open'
   upon: (IMMEDIATE)
-    Unknown451: s32'treasurebox', s32'treasurebox000'
+    linkPawnWithAnim: s32'treasurebox', s32'treasurebox000'
     Unknown2021: 0
     setObjectSize: 1500
     endUpon: 
@@ -3109,169 +3109,169 @@ startState: s32'Treasurebox_Open'
 
 startState: s32'031Bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_031bake'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_031bake'
     endUpon: 
   sprite: s32'null', 16
   endState: 
 
 startState: s32'Down_fukki'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_down_fukki'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_down_fukki'
     endUpon: 
   sprite: s32'null', 10
   endState: 
 
 startState: s32'Dust_tornado'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_dust_tornado'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_dust_tornado'
     endUpon: 
   sprite: s32'null', 10
   endState: 
 
 startState: s32'213Bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_213bake'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_213bake'
     endUpon: 
   sprite: s32'null', 10
   endState: 
 
 startState: s32'233Bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_233bake'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_233bake'
     endUpon: 
   sprite: s32'null', 10
   endState: 
 
 startState: s32'233Atk'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_233atk'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_233atk'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'Mettagiri'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown456: 2
-    Unknown450: s32'fau_mettagiri'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_mettagiri'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'ReReRe'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_rerere'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_rerere'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'ReReRe_modoshi'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown450: s32'fau_rerere_modoshi'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'fau_rerere_modoshi'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'GoingMayWay_eff'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_goingmayway'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_goingmayway'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'Reaction_flower'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown450: s32'fau_reaction_flower'
-    Unknown454: 2
+    Unknown457: (PARENT)
+    linkParticleEx: s32'fau_reaction_flower'
+    linkObjPositionTo: (PARENT)
     endUpon: 
   sprite: s32'null', 200
   endState: 
 
 startState: s32'Reaction_ikari'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown450: s32'fau_reaction_ikari'
+    Unknown457: (PARENT)
+    linkParticleEx: s32'fau_reaction_ikari'
     endUpon: 
   sprite: s32'null', 50
   endState: 
 
 startState: s32'Flashhead'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown456: 2
-    Unknown450: s32'fau_face_flash'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_face_flash'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'Kusudama'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown456: 2
-    Unknown450: s32'fau_kusudama'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_kusudama'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'GrowingFlower'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown454: 2
-    Unknown457: 2
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     endUpon: 
   sprite: s32'null', 22
   ifOperation: 22, (STATIC), 25, (STATIC), 100
-    Unknown450: s32'fau_gflower_a'
+    linkParticleEx: s32'fau_gflower_a'
     endIf: 
   else: 
     ifOperation: 22, (STATIC), 25, (STATIC), 100
-      Unknown450: s32'fau_gflower_b'
+      linkParticleEx: s32'fau_gflower_b'
       endIf: 
     else: 
       ifOperation: 22, (STATIC), 25, (STATIC), 100
-        Unknown450: s32'fau_gflower_c'
+        linkParticleEx: s32'fau_gflower_c'
         endIf: 
       else: 
-        Unknown450: s32'fau_gflower_d'
+        linkParticleEx: s32'fau_gflower_d'
         endElse: 
       endElse: 
     endElse: 
@@ -3279,33 +3279,33 @@ startState: s32'GrowingFlower'
 
 startState: s32'OreHana'
   upon: (IMMEDIATE)
-    Unknown456: 3
+    Unknown456: (PLAYER)
     Unknown458: 3
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
         Unknown23: 3
-        Unknown456: 0
-        Unknown454: 0
+        Unknown456: (NULL)
+        linkObjPositionTo: (NULL)
         endIf: 
       endUpon: 
     endUpon: 
   sprite: s32'null', 6
   sprite: s32'null', 4
   ifOperation: 22, (STATIC), 25, (STATIC), 100
-    Unknown450: s32'fau_gflower_a'
+    linkParticleEx: s32'fau_gflower_a'
     endIf: 
   else: 
     ifOperation: 22, (STATIC), 25, (STATIC), 100
-      Unknown450: s32'fau_gflower_b'
+      linkParticleEx: s32'fau_gflower_b'
       endIf: 
     else: 
       ifOperation: 22, (STATIC), 25, (STATIC), 100
-        Unknown450: s32'fau_gflower_c'
+        linkParticleEx: s32'fau_gflower_c'
         endIf: 
       else: 
-        Unknown450: s32'fau_gflower_d'
+        linkParticleEx: s32'fau_gflower_d'
         endElse: 
       endElse: 
     endElse: 
@@ -3325,17 +3325,17 @@ startState: s32'OreHana_Shot'
     hitAirPushbackX: 3500
     hitAirPushbackY: 35000
     tensionGainOnConnect: 40
-    Unknown456: 3
-    Unknown454: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
     Unknown458: 3
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
-        grabOrRelease: 
+        hitUnchecked: 
         Unknown23: 3
-        Unknown456: 0
-        Unknown454: 0
+        Unknown456: (NULL)
+        linkObjPositionTo: (NULL)
         endIf: 
       endUpon: 
     endUpon: 
@@ -3349,7 +3349,7 @@ startState: s32'OreHana_Shot'
 
 startState: s32'OreHanaBig'
   upon: (IMMEDIATE)
-    Unknown456: 3
+    Unknown456: (PLAYER)
     setObjectSize: 2000
     Unknown458: 3
     Unknown287: 1
@@ -3357,26 +3357,26 @@ startState: s32'OreHanaBig'
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
         Unknown23: 3
-        Unknown456: 0
-        Unknown454: 0
+        Unknown456: (NULL)
+        linkObjPositionTo: (NULL)
         endIf: 
       endUpon: 
     endUpon: 
   sprite: s32'null', 6
   sprite: s32'null', 4
   ifOperation: 22, (STATIC), 25, (STATIC), 100
-    Unknown450: s32'fau_gflower_a'
+    linkParticleEx: s32'fau_gflower_a'
     endIf: 
   else: 
     ifOperation: 22, (STATIC), 25, (STATIC), 100
-      Unknown450: s32'fau_gflower_b'
+      linkParticleEx: s32'fau_gflower_b'
       endIf: 
     else: 
       ifOperation: 22, (STATIC), 25, (STATIC), 100
-        Unknown450: s32'fau_gflower_c'
+        linkParticleEx: s32'fau_gflower_c'
         endIf: 
       else: 
-        Unknown450: s32'fau_gflower_d'
+        linkParticleEx: s32'fau_gflower_d'
         endElse: 
       endElse: 
     endElse: 
@@ -3397,17 +3397,17 @@ startState: s32'OreHanaBig_Shot'
     untechableTime: 46
     tensionGainOnConnect: 60
     setObjectSize: 2000
-    Unknown456: 3
-    Unknown454: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
     Unknown458: 3
     Unknown287: 1
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
-        grabOrRelease: 
+        hitUnchecked: 
         Unknown23: 3
-        Unknown456: 0
-        Unknown454: 0
+        Unknown456: (NULL)
+        linkObjPositionTo: (NULL)
         endIf: 
       endUpon: 
     endUpon: 
@@ -3421,125 +3421,125 @@ startState: s32'OreHanaBig_Shot'
 
 startState: s32'Sudare'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_keii1'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_keii1'
     endUpon: 
   sprite: s32'null', 150
   endState: 
 
 startState: s32'306flower_start'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown466: 2
-    Unknown454: 2
-    Unknown450: s32'fau_306flower_start'
+    Unknown457: (PARENT)
+    Unknown466: (PARENT)
+    linkObjPositionTo: (PARENT)
+    linkParticleEx: s32'fau_306flower_start'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'306flower_loop'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown466: 2
-    Unknown454: 2
-    Unknown450: s32'fau_306flower_loop'
+    Unknown457: (PARENT)
+    Unknown466: (PARENT)
+    linkObjPositionTo: (PARENT)
+    linkParticleEx: s32'fau_306flower_loop'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'306flower_end'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown466: 2
-    Unknown454: 2
-    Unknown450: s32'fau_306flower_end'
+    Unknown457: (PARENT)
+    Unknown466: (PARENT)
+    linkObjPositionTo: (PARENT)
+    linkParticleEx: s32'fau_306flower_end'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
 startState: s32'Souten_bake_front'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_409bake_front'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_409bake_front'
     endUpon: 
   sprite: s32'null', 3
   endState: 
 
 startState: s32'Souten_bake_back'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_409bake_back'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_409bake_back'
     endUpon: 
   sprite: s32'null', 3
   endState: 
 
 startState: s32'414bake'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_414bake_leg'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_414bake_leg'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'Swim_splash'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown450: s32'fau_shigeki_splash'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'fau_shigeki_splash'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'Swim_water'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown450: s32'fau_shigeki_waterloop'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'fau_shigeki_waterloop'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'Swim_water_oku'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown450: s32'fau_shigeki_waterloop2'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'fau_shigeki_waterloop2'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'Kancho_hit'
   upon: (IMMEDIATE)
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_kancho_hit'
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_kancho_hit'
     endUpon: 
   sprite: s32'null', 120
   endState: 
 
 startState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'fau_neoblitz'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'fau_neoblitz'
     endUpon: 
   sprite: s32'null', 80
   endState: 
@@ -3551,7 +3551,7 @@ startState: s32'Shot_HomeRun'
     riscPlus: 3
     damage: 20
     tensionGainOnConnect: 20
-    Unknown450: s32'fau_baseball'
+    linkParticleEx: s32'fau_baseball'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'chibi_hit_00', 4
@@ -3578,7 +3578,7 @@ startState: s32'Shot_Hit'
     riscPlus: 3
     damage: 10
     tensionGainOnConnect: 10
-    Unknown450: s32'fau_baseball'
+    linkParticleEx: s32'fau_baseball'
     endUpon: 
   setMarker: s32'Hit'
   sprite: s32'chibi_hit_00', 4
@@ -3598,56 +3598,56 @@ startState: s32'Shot_Hit'
 
 startState: s32'BG_roka'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_bg_roka'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_bg_roka'
     endUpon: 
   sprite: s32'null', 1000
   endState: 
 
 startState: s32'BG_roka2'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_bg_roka2'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_bg_roka2'
     endUpon: 
   sprite: s32'null', 1000
   endState: 
 
 startState: s32'BG_shigeki'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_bg_shigekiroom'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_bg_shigekiroom'
     endUpon: 
   sprite: s32'null', 1000
   endState: 
 
 startState: s32'BG_sky'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_bg_sky'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_bg_sky'
     endUpon: 
   sprite: s32'null', 1000
   endState: 
 
 startState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_ichigeki_bg'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_ichigeki_bg'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'BG_operate'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_ichigeki_gakudan_move'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_ichigeki_gakudan_move'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'fau_ichigeki_screen'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'fau_ichigeki_screen'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'fau_ichigeki_screen'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
@@ -3669,7 +3669,7 @@ startState: s32'ACEvtFAU_7B'
     Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
     Unknown2109: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000'
     Unknown2121: 0
-    Unknown94: 550000
+    addPositionX: 550000
     Unknown40: 
     Unknown2121: 2
     Unknown232: -45000
@@ -3740,12 +3740,12 @@ startState: s32'ACEvtFAU_8A'
     Unknown40: 
     Unknown2109: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000'
     Unknown2121: 2
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown232: -45000
     Unknown40: 
     Unknown2109: '0x636D6E5F6576745F67746264000000000000000000000000000000000000000047544244000000000000000000000000000000000000000000000000000000006400000003000000'
     Unknown2121: 3
-    Unknown94: 800000
+    addPositionX: 800000
     Unknown1700: -300000
     Unknown232: 45000
     Unknown40: 
@@ -3811,12 +3811,12 @@ startState: s32'ACEvtFAU_8B'
     Unknown2075: 1
     Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
     Unknown2121: 0
-    Unknown94: -1000000
+    addPositionX: -1000000
     Unknown287: 0
     Unknown40: 
     Unknown2109: '0x636D6E5F6576745F63726E73000000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000'
     Unknown2121: 2
-    Unknown94: -100000
+    addPositionX: -100000
     Unknown232: -45000
     Unknown40: 
     endUpon: 

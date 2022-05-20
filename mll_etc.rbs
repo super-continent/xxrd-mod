@@ -1,6 +1,6 @@
 startState: s32'dog'
   upon: (IMMEDIATE)
-    Unknown451: s32'Dog', s32'Dog'
+    linkPawnWithAnim: s32'Dog', s32'Dog'
     Unknown2021: 0
     endUpon: 
   sprite: s32'null', 80
@@ -8,163 +8,163 @@ startState: s32'dog'
 
 startState: s32'430winger_start'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown456: 2
-    Unknown450: s32'mll_winger_start'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'mll_winger_start'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'430winger_atk'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown450: s32'mll_winger_atk'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    linkParticleEx: s32'mll_winger_atk'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'431emerald_hair'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown450: s32'mll_emeraldrain_hair'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'mll_emeraldrain_hair'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'330burst_hair'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown466: 2
-    Unknown450: s32'mll_burst_hair'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'mll_burst_hair'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'Hair_propeller'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
-    Unknown450: s32'mll_hair_propeller'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_hair_propeller'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'253re_bake'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
-    Unknown450: s32'mll_253re_bake'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_253re_bake'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
 startState: s32'253re_yoin'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown457: 3
-    Unknown450: s32'mll_253re_yoin'
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_253re_yoin'
     endUpon: 
   sprite: s32'null', 5
   sprite: s32'null', 60
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   endState: 
 
 startState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown454: 2
-    Unknown456: 2
-    Unknown450: s32'mll_neoblitz'
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'mll_neoblitz'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'LustshakerA'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown466: 2
-    Unknown450: s32'mll_lustshaker1'
+    linkObjPositionTo: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'mll_lustshaker1'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'LustshakerB'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown466: 2
-    Unknown450: s32'mll_lustshaker2'
+    linkObjPositionTo: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'mll_lustshaker2'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'LustshakerC'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown466: 2
-    Unknown450: s32'mll_lustshaker3'
+    linkObjPositionTo: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'mll_lustshaker3'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'Lustshaker_twinkle'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
-    Unknown450: s32'mll_lustshaker_twinkle'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_lustshaker_twinkle'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'Nage_twinkle_yoin'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
-    Unknown450: s32'mll_nage_twinkle2'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_nage_twinkle2'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'Ironsavior_atk'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown457: 3
-    Unknown450: s32'mll_ironsavior_atk'
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_ironsavior_atk'
     endUpon: 
   sprite: s32'null', 20
   endState: 
 
 startState: s32'Ironsavior'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 2147483647
-  Unknown450: s32'mll_ironsavior'
+  linkParticleEx: s32'mll_ironsavior'
   endState: 
 
 startState: s32'DustHair'
   sprite: s32'mle_dust_hair', 16
   upon: (ON_HIT_OR_BLOCK)
-    Unknown457: 0
+    Unknown457: (NULL)
     endUpon: 
-  Unknown456: 3
-  Unknown457: 3
-  Unknown94: 120000
+  Unknown456: (PLAYER)
+  Unknown457: (PLAYER)
+  addPositionX: 120000
   Unknown2267: 3000
   Unknown2023: 0
   sprite: s32'mle_dust_hair', 3
-  Unknown450: s32'mll_dust_obj'
+  linkParticleEx: s32'mll_dust_obj'
   Unknown2023: 1
   sprite: s32'mle_dust_hair', 3
   sprite: s32'mle_dust_hair', 3
@@ -174,10 +174,10 @@ startState: s32'DustHair'
 
 startState: s32'253re_sword'
   upon: (IMMEDIATE)
-    Unknown451: s32'sword', s32''
+    linkPawnWithAnim: s32'sword', s32''
     Unknown2157: 1, 5
-    Unknown454: 2
-    Unknown456: 2
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
     endUpon: 
   sprite: s32'mll253_re_sword_00', 2
   sprite: s32'mll253_re_sword_01', 2
@@ -194,10 +194,10 @@ startState: s32'253re_sword'
 
 startState: s32'Secretgarden_start'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
-    Unknown450: s32'mll_secretgarden_start'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_secretgarden_start'
     endUpon: 
   sprite: s32'null', 80
   endState: 
@@ -209,17 +209,17 @@ startState: s32'SecretGardenBall'
     Unknown1028: 2
     damage: 30
     setForcedProration: 90
-    Unknown457: 3
-    Unknown456: 3
+    Unknown457: (PLAYER)
+    Unknown456: (PLAYER)
     setThrowRange: 0
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: 12
       if: (VARIABLE), 50
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 3
           checkInput: 107
-          ifNot: 2, 0
+          ifNot: (VARIABLE), 0
             checkInput: 29
             if: (VARIABLE), 0
               storeValue: (VARIABLE), 52, (STATIC), 5
@@ -271,7 +271,7 @@ startState: s32'SecretGardenBall'
               ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 3
                 storeValue: (VARIABLE), 48, (VARIABLE), 52
                 endIf: 
-              Unknown54: 0, 2, 51, 0, 1
+              modifyVar: (ADD), (VARIABLE), 51, (STATIC), 1
               playSFX: s32'SE_ENTERB'
               endIf: 
             endIf: 
@@ -291,16 +291,16 @@ startState: s32'SecretGardenBall'
       Unknown191: 0
       setObjectSize: 1000
       Unknown458: 0
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endUpon: 
     endUpon: 
   sprite: s32'mle6_00', 5
   storeValue: (VARIABLE), 50, (STATIC), 1
   Unknown458: 3
-  Unknown454: 3
+  linkObjPositionTo: (PLAYER)
   setObjectSize: 0
   Unknown191: 250
-  Unknown450: s32'mll_secretgarden'
+  linkParticleEx: s32'mll_secretgarden'
   sprite: s32'mle6_00', 2
   Unknown191: -200
   sprite: s32'mle6_00', 3
@@ -309,13 +309,13 @@ startState: s32'SecretGardenBall'
   Unknown191: 0
   setObjectSize: 1000
   sprite: s32'keep', 18
-  Unknown450: s32'mll_secretgarden'
-  Unknown454: 0
+  linkParticleEx: s32'mll_secretgarden'
+  linkObjPositionTo: (NULL)
   sprite: s32'keep', 1
   sprite: s32'keep', 20
-  Unknown457: 0
+  Unknown457: (NULL)
   sprite: s32'keep', 2
-  Unknown456: 0
+  Unknown456: (NULL)
   Unknown201: 17500, 0
   Unknown111: 110
   multiplyYVelocityByPercent: 110
@@ -427,7 +427,7 @@ startState: s32'SecretGardenBall'
   Unknown111: 50
   multiplyYVelocityByPercent: 50
   Unknown3: 
-  Unknown54: 0, 2, 53, 0, 1
+  modifyVar: (ADD), (VARIABLE), 53, (STATIC), 1
   goToMarker: s32'top'
   setMarker: s32'End'
   sprite: s32'keep', 20
@@ -435,7 +435,7 @@ startState: s32'SecretGardenBall'
   Unknown176: 1
   Unknown2197: 0
   Unknown2198: 0
-  Unknown450: s32'mll_secretgarden_end'
+  linkParticleEx: s32'mll_secretgarden_end'
   endState: 
 
 startState: s32'SilentForceKnife'
@@ -466,21 +466,21 @@ startState: s32'SilentForceKnife'
         Unknown60: '0x030000007B000000170000007B000000'
         storeValue: (VARIABLE), 62, (STATIC), 0
         Unknown59: s32'TRP_MLL', 2, 157
-        Unknown54: 6, 2, 62, 2, 157
+        modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 157
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 180000
           Unknown2001: 3, s32'CmnActCrouch'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'CmnActStand2Crouch'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'CmnActCrouchTurn'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'Zenten'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'SaiZenten'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           endIf: 
         if: (VARIABLE), 62
-          Unknown19: 23
+          deactivateObj: (SELF)
           Unknown448: s32'mll_silentforce_get', 100
           playCharacterSFX: s32'1'
           Unknown2320: s32'SilentForceGet'
@@ -489,7 +489,7 @@ startState: s32'SilentForceKnife'
       endUpon: 
     Unknown287: 1
     upon: 46
-      Unknown54: 0, 2, 48, 0, 1
+      modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 2
         Unknown23: 46
         Unknown14: s32'reaction'
@@ -502,19 +502,19 @@ startState: s32'SilentForceKnife'
     numberOfHits: 1
     Unknown2185: 1
     Unknown2183: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown23: 46
       Unknown14: s32'reaction'
       endUpon: 
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'mle9_02', 2
   playCharacterSFX: s32'3'
   physicsXImpulse: 35000
   physicsYImpulse: -35000
-  Unknown450: s32'mll_silentforce'
+  linkParticleEx: s32'mll_silentforce'
   Unknown3: 
   hit: 
   setMarker: s32'atloop'
@@ -541,7 +541,7 @@ startState: s32'SilentForceKnife'
   recoveryState: 
   Unknown2178: 
   Unknown23: 46
-  Unknown99: 1
+  addPositionY: 1
   physicsXImpulse: -8750
   physicsYImpulse: 17500
   setGravity: 1050
@@ -555,10 +555,10 @@ startState: s32'SilentForceKnife'
 
 startState: s32'TandemTop_hs_start'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown457: 3
-    Unknown466: 2
-    Unknown450: s32'mll_tandemtop_hs_start'
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'mll_tandemtop_hs_start'
     endUpon: 
   sprite: s32'null', 90
   endState: 
@@ -576,14 +576,14 @@ startState: s32'TandemTopCRing'
     wallBounceCount: 1
     Unknown725: 1
     setProration: 90
-    Unknown450: s32'mll_tandemtop'
+    linkParticleEx: s32'mll_tandemtop'
     numberOfHits: 1
     Unknown2180: 1
     Unknown2181: 1
     Unknown2182: 1
     Unknown2185: 1
     Unknown2183: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'mll_tandemtop_break', 100
       Unknown32: s32'TandemTopCRing'
       endUpon: 
@@ -622,14 +622,14 @@ startState: s32'TandemTopDRing'
     wallBounceCount: 1
     Unknown1112: 0
     Unknown725: 1
-    Unknown99: 130000
+    addPositionY: 130000
     physicsYImpulse: -4900
-    Unknown450: s32'mll_tandemtop_hs'
+    linkParticleEx: s32'mll_tandemtop_hs'
     Unknown2267: 850
     Unknown1602: 1
-    Unknown454: 3
+    linkObjPositionTo: (PLAYER)
     upon: (AFTER_EXIT)
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endUpon: 
     numberOfHits: 2
     Unknown2180: 1
@@ -638,8 +638,8 @@ startState: s32'TandemTopDRing'
     Unknown2183: 1
     Unknown2185: 1
     Unknown2186: 1
-    upon: 45
-      ifNot: 2, 45
+    upon: (ON_DESTROY)
+      ifNot: (VARIABLE), 45
         Unknown448: s32'mll_tandemtop_hs_break', 100
         Unknown32: s32'TandemTopDRing'
         endIf: 
@@ -650,7 +650,7 @@ startState: s32'TandemTopDRing'
     endUpon: 
   sprite: s32'mle2_00', 8
   sprite: s32'mle2_00', 31
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   Unknown2157: 0, 3
   sprite: s32'mle2_01', 2
   hit: 
@@ -710,7 +710,7 @@ startState: s32'EmeraldRainRing1'
     Unknown725: 1
     wallBounceXVelocityPercent: 15
     setForcedProration: 80
-    Unknown450: s32'mll_emeraldrain_start'
+    linkParticleEx: s32'mll_emeraldrain_start'
     Unknown58: 1
     Unknown2180: 1
     Unknown2181: 1
@@ -724,7 +724,7 @@ startState: s32'EmeraldRainRing1'
   sprite: s32'MLE2_11', 2
   Unknown338: 50
   setObjectSize: 1000
-  Unknown99: 17500
+  addPositionY: 17500
   sprite: s32'MLE2_11', 2
   Unknown338: 100
   sprite: s32'MLE2_11', 2
@@ -734,7 +734,7 @@ startState: s32'EmeraldRainRing1'
   Unknown338: 250
   setObjectSize: 980
   physicsXImpulse: 17500
-  Unknown450: s32'mll_emeraldrain'
+  linkParticleEx: s32'mll_emeraldrain'
   sprite: s32'MLE2_05', 2
   Unknown111: 110
   setObjectSize: 960
@@ -779,7 +779,7 @@ startState: s32'EmeraldRainRing1'
   setMarker: s32'koware'
   sprite: s32'null', 2
   Unknown338: 105
-  Unknown450: s32'mll_emeraldrain_hit'
+  linkParticleEx: s32'mll_emeraldrain_hit'
   Unknown176: 1
   sprite: s32'null', 2
   sprite: s32'null', 2
@@ -817,7 +817,7 @@ startState: s32'EmeraldRainRing2'
     Unknown725: 1
     wallBounceXVelocityPercent: 15
     setForcedProration: 80
-    Unknown450: s32'mll_emeraldrain_start'
+    linkParticleEx: s32'mll_emeraldrain_start'
     Unknown58: 1
     Unknown2180: 1
     Unknown2181: 1
@@ -831,7 +831,7 @@ startState: s32'EmeraldRainRing2'
   sprite: s32'MLE2_11', 2
   Unknown338: 50
   setObjectSize: 1000
-  Unknown99: -17500
+  addPositionY: -17500
   sprite: s32'MLE2_11', 2
   Unknown338: 100
   sprite: s32'MLE2_11', 2
@@ -841,7 +841,7 @@ startState: s32'EmeraldRainRing2'
   Unknown338: 250
   setObjectSize: 980
   physicsXImpulse: 22750
-  Unknown450: s32'mll_emeraldrain'
+  linkParticleEx: s32'mll_emeraldrain'
   sprite: s32'MLE2_05', 2
   Unknown111: 110
   setObjectSize: 960
@@ -886,7 +886,7 @@ startState: s32'EmeraldRainRing2'
   setMarker: s32'koware'
   sprite: s32'null', 2
   Unknown338: 105
-  Unknown450: s32'mll_emeraldrain_hit'
+  linkParticleEx: s32'mll_emeraldrain_hit'
   Unknown176: 1
   sprite: s32'null', 2
   sprite: s32'null', 2
@@ -924,7 +924,7 @@ startState: s32'EmeraldRainRing3'
     Unknown725: 1
     wallBounceXVelocityPercent: 15
     setForcedProration: 80
-    Unknown450: s32'mll_emeraldrain_start'
+    linkParticleEx: s32'mll_emeraldrain_start'
     Unknown58: 1
     Unknown2180: 1
     Unknown2181: 1
@@ -938,7 +938,7 @@ startState: s32'EmeraldRainRing3'
   sprite: s32'MLE2_11', 2
   Unknown338: 50
   setObjectSize: 1000
-  Unknown99: 52500
+  addPositionY: 52500
   sprite: s32'MLE2_11', 2
   Unknown338: 100
   sprite: s32'MLE2_11', 2
@@ -948,7 +948,7 @@ startState: s32'EmeraldRainRing3'
   Unknown338: 250
   setObjectSize: 980
   physicsXImpulse: 28000
-  Unknown450: s32'mll_emeraldrain'
+  linkParticleEx: s32'mll_emeraldrain'
   sprite: s32'MLE2_05', 2
   Unknown111: 110
   setObjectSize: 960
@@ -993,7 +993,7 @@ startState: s32'EmeraldRainRing3'
   setMarker: s32'koware'
   sprite: s32'null', 2
   Unknown338: 105
-  Unknown450: s32'mll_emeraldrain_hit'
+  linkParticleEx: s32'mll_emeraldrain_hit'
   Unknown176: 1
   sprite: s32'null', 2
   sprite: s32'null', 2
@@ -1018,15 +1018,15 @@ startState: s32'EmeraldRainRing3'
 
 startState: s32'EmeraldRainRingEffect'
   sprite: s32'mle2_00', 30
-  Unknown450: s32'mll_emeraldrain_start'
-  Unknown454: 2
-  Unknown456: 2
-  Unknown457: 2
+  linkParticleEx: s32'mll_emeraldrain_start'
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown457: (PARENT)
   endState: 
 
 startState: s32'RoseBody'
   upon: (IMMEDIATE)
-    Unknown454: 2
+    linkObjPositionTo: (PARENT)
     Unknown455: 2
     upon: (ON_HIT_OR_BLOCK)
       Unknown14: s32'koware'
@@ -1071,7 +1071,7 @@ startState: s32'RoseBody'
         endIf: 
       endUpon: 
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1100,7 +1100,7 @@ startState: s32'RoseObj'
     Unknown2181: 1
     Unknown2183: 1
     Unknown2185: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown14: s32'koware'
       endUpon: 
     upon: 26
@@ -1120,7 +1120,7 @@ startState: s32'RoseObj'
       endUpon: 
     endUpon: 
   sprite: s32'mle6_00', 5
-  Unknown54: 0, 2, 6, 0, 1
+  modifyVar: (ADD), (VARIABLE), 6, (STATIC), 1
   playSFX: s32'SE_SWINGE'
   sprite: s32'mle6_00', 1
   Unknown24: s32'BadMoon', 2, 48
@@ -1132,27 +1132,27 @@ startState: s32'RoseObj'
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 50000
     Unknown2176: 23
     endIf: 
-  Unknown450: s32'mll_flower_start'
+  linkParticleEx: s32'mll_flower_start'
   sprite: s32'mle6_00', 40
-  Unknown450: s32'mll_flower_atk'
+  linkParticleEx: s32'mll_flower_atk'
   hit: 
   goToMarker: s32'koware'
   setMarker: s32'BadMoon'
   sprite: s32'mle6_00', 10
-  Unknown94: 50000
-  Unknown99: -50000
-  Unknown450: s32'mll_flower_start'
+  addPositionX: 50000
+  addPositionY: -50000
+  linkParticleEx: s32'mll_flower_start'
   sprite: s32'mle6_00', 40
-  Unknown450: s32'mll_flower_atk'
+  linkParticleEx: s32'mll_flower_atk'
   hit: 
   goToMarker: s32'koware'
   setMarker: s32'IronSavior'
   sprite: s32'mle6_00', 20
-  Unknown94: 250000
-  Unknown99: -20000
-  Unknown450: s32'mll_flower_start'
+  addPositionX: 250000
+  addPositionY: -20000
+  linkParticleEx: s32'mll_flower_start'
   sprite: s32'mle6_00', 40
-  Unknown450: s32'mll_flower_atk'
+  linkParticleEx: s32'mll_flower_atk'
   hit: 
   goToMarker: s32'koware'
   setMarker: s32'KousokuRakka'
@@ -1161,18 +1161,18 @@ startState: s32'RoseObj'
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 50000
     Unknown2176: 23
     endIf: 
-  Unknown450: s32'mll_flower_start'
+  linkParticleEx: s32'mll_flower_start'
   sprite: s32'mle6_00', 40
-  Unknown450: s32'mll_flower_atk'
+  linkParticleEx: s32'mll_flower_atk'
   hit: 
   goToMarker: s32'koware'
   setMarker: s32'BadMoon_rx'
   sprite: s32'mle6_00', 5
-  Unknown94: 200000
-  Unknown99: -50000
-  Unknown450: s32'mll_flower_start'
+  addPositionX: 200000
+  addPositionY: -50000
+  linkParticleEx: s32'mll_flower_start'
   sprite: s32'mle6_00', 40
-  Unknown450: s32'mll_flower_atk'
+  linkParticleEx: s32'mll_flower_atk'
   hit: 
   goToMarker: s32'koware'
   setMarker: s32'koware'
@@ -1180,50 +1180,50 @@ startState: s32'RoseObj'
   recoveryState: 
   Unknown23: 25
   Unknown23: 3
-  Unknown54: 1, 2, 6, 0, 1
+  modifyVar: (SUB), (VARIABLE), 6, (STATIC), 1
   Unknown2241: 0, 800
   Unknown449: s32'mll_flower_end', 100
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'zentenHS'
   upon: (IMMEDIATE)
-    Unknown466: 3
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
-    Unknown450: s32'mll_zentenSpear'
+    Unknown466: (PLAYER)
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_zentenSpear'
     endUpon: 
   sprite: s32'null', 4
   sprite: s32'null', 20
-  Unknown99: 15000
+  addPositionY: 15000
   endState: 
 
 startState: s32'hair432'
   upon: (IMMEDIATE)
-    Unknown466: 3
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
-    Unknown450: s32'mill_hair432_00'
+    Unknown466: (PLAYER)
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mill_hair432_00'
     endUpon: 
   sprite: s32'null', 30
   endState: 
 
 startState: s32'TojoSmoke00'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'mill_tojoeff_smoke00'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mill_tojoeff_smoke00'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
 startState: s32'mll253_re_sword'
   upon: (IMMEDIATE)
-    Unknown451: s32'sword', s32''
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkPawnWithAnim: s32'sword', s32''
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'mll253_re_sword_00', 3
   sprite: s32'mll253_re_sword_01', 2
@@ -1240,8 +1240,8 @@ startState: s32'mll253_re_sword'
 
 startState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'mll_ichigeki_bg'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'mll_ichigeki_bg'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
@@ -1453,13 +1453,13 @@ startState: s32'PrettyMazeRing'
     setProration: 80
     Unknown1112: 0
     Unknown725: 1
-    Unknown99: 13000
-    Unknown450: s32'mll_tandemtop_hs'
+    addPositionY: 13000
+    linkParticleEx: s32'mll_tandemtop_hs'
     Unknown2267: 850
     Unknown1602: 1
-    Unknown454: 3
+    linkObjPositionTo: (PLAYER)
     upon: (AFTER_EXIT)
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endUpon: 
     numberOfHits: 3
     Unknown2180: 1
@@ -1468,8 +1468,8 @@ startState: s32'PrettyMazeRing'
     Unknown2183: 1
     Unknown2185: 1
     Unknown2186: 1
-    upon: 45
-      ifNot: 2, 45
+    upon: (ON_DESTROY)
+      ifNot: (VARIABLE), 45
         Unknown448: s32'mll_tandemtop_hs_break', 100
         Unknown32: s32'PrettyMazeRing'
         endIf: 
@@ -1480,7 +1480,7 @@ startState: s32'PrettyMazeRing'
     endUpon: 
   sprite: s32'mle2_00', 8
   sprite: s32'mle2_01', 31
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   Unknown2157: 0, 3
   sprite: s32'mle2_01', 2
   hit: 
@@ -1560,7 +1560,7 @@ startState: s32'AirMazeRing'
     endUpon: 
   sprite: s32'mle2_00', 3
   sprite: s32'mle2_01', 3
-  Unknown450: s32'mll_tandemtop'
+  linkParticleEx: s32'mll_tandemtop'
   sprite: s32'mle2_00', 2
   sprite: s32'mle2_01', 4
   hit: 
@@ -1603,21 +1603,21 @@ startState: s32'SFHorizontal'
         Unknown60: '0x030000007B000000170000007B000000'
         storeValue: (VARIABLE), 62, (STATIC), 0
         Unknown59: s32'TRP_MLL', 2, 157
-        Unknown54: 6, 2, 62, 2, 157
+        modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 157
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 180000
           Unknown2001: 3, s32'CmnActCrouch'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'CmnActStand2Crouch'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'CmnActCrouchTurn'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'Zenten'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           Unknown2001: 3, s32'SaiZenten'
-          Unknown54: 6, 2, 62, 2, 0
+          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
           endIf: 
         if: (VARIABLE), 62
-          Unknown19: 23
+          deactivateObj: (SELF)
           Unknown448: s32'mll_silentforce_get', 100
           playCharacterSFX: s32'1'
           Unknown2320: s32'SilentForceGet'
@@ -1626,7 +1626,7 @@ startState: s32'SFHorizontal'
       endUpon: 
     Unknown287: 1
     upon: 46
-      Unknown54: 0, 2, 48, 0, 1
+      modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 2
         Unknown23: 46
         Unknown14: s32'reaction'
@@ -1639,18 +1639,18 @@ startState: s32'SFHorizontal'
     numberOfHits: 1
     Unknown2185: 1
     Unknown2183: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown23: 46
       Unknown14: s32'reaction'
       endUpon: 
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'mle9_02', 2
   playCharacterSFX: s32'3'
   physicsXImpulse: 35000
-  Unknown450: s32'mll_silentforce'
+  linkParticleEx: s32'mll_silentforce'
   Unknown3: 
   hit: 
   setMarker: s32'atloop'
@@ -1677,7 +1677,7 @@ startState: s32'SFHorizontal'
   recoveryState: 
   Unknown2178: 
   Unknown23: 46
-  Unknown99: 1
+  addPositionY: 1
   physicsXImpulse: -8750
   physicsYImpulse: 17500
   setGravity: 1050

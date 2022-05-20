@@ -4,7 +4,7 @@ startSubroutine: s32'PreInit'
 
 startSubroutine: s32'PreInit2nd'
   storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     Unknown2213: s32'entry_default', s32'', 0
     storeValue: (VARIABLE), 61, (STATIC), 1
     endIf: 
@@ -1127,8 +1127,8 @@ startSubroutine: s32'_ThrowGripParamAir'
 startSubroutine: s32'OnFrameStep'
   ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 1
     callCmnEfFunc: s32'DamegeCheck'
-    ifNot: 2, 56
-      Unknown54: 0, 2, 55, 0, 1
+    ifNot: (VARIABLE), 56
+      modifyVar: (ADD), (VARIABLE), 55, (STATIC), 1
       endIf: 
     if: (VARIABLE), 4
       storeValue: (VARIABLE), 55, (STATIC), 0
@@ -1137,48 +1137,48 @@ startSubroutine: s32'OnFrameStep'
       storeValue: (VARIABLE), 3, (STATIC), 10
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 600
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 620
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 640
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 660
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 680
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 700
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 720
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 740
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 760
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 780
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 800
-      Unknown54: 0, 2, 3, 0, -1
-      Unknown54: 0, 2, 25, 0, -1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
       endIf: 
     endIf: 
   ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 0
@@ -2140,14 +2140,14 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'rvn085_06', 5
   sprite: s32'rvn085_07', 3
   sprite: s32'rvn085_08', 3
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'rvn085_09', 3
   sprite: s32'rvn085_10', 3
   sprite: s32'rvn085_11', 3
   sprite: s32'rvn085_12', 14
   sprite: s32'rvn085_13', 3
   sprite: s32'rvn085_14', 2
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'rvn085_15', 2
   sprite: s32'rvn085_16', 2
   sprite: s32'rvn085_17', 2
@@ -2163,7 +2163,7 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'rvn085_06', 5
   sprite: s32'rvn085_07', 3
   sprite: s32'rvn085_08', 3
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'rvn085_09', 3
   sprite: s32'rvn085_10', 3
   Unknown658: 100, 1, 0
@@ -2173,7 +2173,7 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'rvn085_12', 15
   sprite: s32'rvn085_13', 3
   sprite: s32'rvn085_14', 3
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'rvn085_15', 3
   sprite: s32'rvn085_16', 3
   sprite: s32'rvn085_17', 3
@@ -2592,7 +2592,7 @@ startState: s32'entry_default'
       storeValue: (VARIABLE), 45, (STATIC), 1
       endIf: 
     if: (VARIABLE), 45
-      ifNot: 2, 95
+      ifNot: (VARIABLE), 95
         storeValue: (VARIABLE), 45, (STATIC), 0
         storeValue: (VARIABLE), 46, (STATIC), 1
         Unknown2070: 
@@ -2759,7 +2759,7 @@ startState: s32'CmnActMatchWin'
         endIf: 
       endElse: 
     if: (VARIABLE), 45
-      ifNot: 2, 95
+      ifNot: (VARIABLE), 95
         storeValue: (VARIABLE), 45, (STATIC), 0
         storeValue: (VARIABLE), 46, (STATIC), 1
         Unknown2070: 
@@ -2854,7 +2854,7 @@ startState: s32'CmnActResultWin'
         endIf: 
       else: 
         ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: 2, 143
+          ifNot: (VARIABLE), 143
             storeValue: (VARIABLE), 138, (STATIC), 0
             storeValue: (VARIABLE), 69, (STATIC), 3
             endIf: 
@@ -3515,7 +3515,7 @@ startState: s32'NmlAtk6D'
   createObject2: s32'Atk6D', 130
   Unknown43: 4, 1
   Unknown467: 4
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_SWINGF'
   sprite: s32'rvn213_11', 3
   sprite: s32'rvn213_12', 1
@@ -3766,7 +3766,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'rvn301_09', 4
   sprite: s32'rvn301_10', 2147483647
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
       Unknown23: 3
       endIf: 
@@ -3915,7 +3915,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'rvn306_22', 2147483647
   playVoice: s16'vxxx305'
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
       Unknown23: 3
       endIf: 
@@ -4531,7 +4531,7 @@ startState: s32'ThrowExe'
   playVoice: s16'vxxx120'
   sprite: s32'rvn310_02', 4
   Unknown546: 0, 114, 0
-  Unknown94: 80000
+  addPositionX: 80000
   sprite: s32'rvn310_03', 6
   sprite: s32'rvn310_04', 6
   sprite: s32'rvn310_05', 6
@@ -4540,7 +4540,7 @@ startState: s32'ThrowExe'
   Unknown2161: 100, 50000, 100000
   Unknown546: 130, 100, 0
   Unknown544: 33
-  Unknown99: 25000
+  addPositionY: 25000
   sprite: s32'rvn310_08', 3
   Unknown2161: 100, 100000, 100000
   Unknown546: 130, 100, 0
@@ -4550,9 +4550,9 @@ startState: s32'ThrowExe'
   Unknown2161: 100, 100000, 50000
   Unknown546: 130, 100, 0
   sprite: s32'rvn310_09', 2
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'rvn310_10', 4
-  Unknown99: -25000
+  addPositionY: -25000
   sprite: s32'rvn310_11', 4
   sprite: s32'rvn310_12', 4
   sprite: s32'rvn310_13', 4
@@ -4853,8 +4853,8 @@ startState: s32'ArmorDance'
     Unknown2384: 1
     upon: (FRAME_STEP)
       if: (VARIABLE), 46
-        Unknown54: 0, 2, 46, 0, -1
-        ifNot: 2, 46
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+        ifNot: (VARIABLE), 46
           Unknown240: 
           Unknown2378: 
           physicsXImpulse: 300
@@ -4863,9 +4863,9 @@ startState: s32'ArmorDance'
       if: (VARIABLE), 45
         if: (VARIABLE), 212
           checkInput: 276
-          ifNot: 2, 0
+          ifNot: (VARIABLE), 0
             checkInput: 10
-            ifNot: 2, 0
+            ifNot: (VARIABLE), 0
               ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
                 Unknown14: s32'End'
                 endIf: 
@@ -4881,7 +4881,7 @@ startState: s32'ArmorDance'
           endIf: 
         else: 
           checkInput: 10
-          ifNot: 2, 0
+          ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
               Unknown14: s32'End'
               endIf: 
@@ -4897,8 +4897,8 @@ startState: s32'ArmorDance'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 0
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4906,8 +4906,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 120
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4915,8 +4915,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4924,8 +4924,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 240
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4933,8 +4933,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4942,8 +4942,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 360
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4951,8 +4951,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 420
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4960,8 +4960,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 480
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4969,8 +4969,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 540
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -4978,8 +4978,8 @@ startState: s32'ArmorDance'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 600
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5015,8 +5015,8 @@ startState: s32'ArmorDance'
   Unknown1818: 0
   upon: 41
     storeValue: (VARIABLE), 49, (STATIC), 1
-    Unknown54: 0, 2, 25, 0, 3
-    Unknown54: 0, 2, 3, 0, 3
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 102, 0, 0, 0, 0
@@ -5024,7 +5024,7 @@ startState: s32'ArmorDance'
       endIf: 
     storeValue: (VARIABLE), 46, (STATIC), 1
     storeValue: (VARIABLE), 48, (VARIABLE), 3
-    Unknown54: 0, 2, 48, 0, 1
+    modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 3
       ifOperation: 22, (STATIC), 50, (STATIC), 100
         playVoice: s16'vxxx209'
@@ -5117,7 +5117,7 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_28', 3
   sprite: s32'rvn406_29', 3
   Unknown3: 
-  ifNot: 2, 48
+  ifNot: (VARIABLE), 48
     playVoice: s16'vxxx215'
     endIf: 
   setMarker: s32'loop'
@@ -5140,8 +5140,8 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_12', 4
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
-      Unknown54: 0, 2, 46, 0, -1
-      ifNot: 2, 46
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+      ifNot: (VARIABLE), 46
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5162,8 +5162,8 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_23', 4
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
-      Unknown54: 0, 2, 46, 0, -1
-      ifNot: 2, 46
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+      ifNot: (VARIABLE), 46
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5183,8 +5183,8 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_26', 3
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
-      Unknown54: 0, 2, 46, 0, -1
-      ifNot: 2, 46
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+      ifNot: (VARIABLE), 46
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5210,8 +5210,8 @@ startState: s32'ArmorDance2'
     Unknown2384: 1
     upon: (FRAME_STEP)
       if: (VARIABLE), 46
-        Unknown54: 0, 2, 46, 0, -1
-        ifNot: 2, 46
+        modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+        ifNot: (VARIABLE), 46
           Unknown240: 
           Unknown2378: 
           physicsXImpulse: 300
@@ -5220,9 +5220,9 @@ startState: s32'ArmorDance2'
       if: (VARIABLE), 45
         if: (VARIABLE), 212
           checkInput: 276
-          ifNot: 2, 0
+          ifNot: (VARIABLE), 0
             checkInput: 10
-            ifNot: 2, 0
+            ifNot: (VARIABLE), 0
               ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
                 Unknown14: s32'End'
                 endIf: 
@@ -5238,7 +5238,7 @@ startState: s32'ArmorDance2'
           endIf: 
         else: 
           checkInput: 10
-          ifNot: 2, 0
+          ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
               Unknown14: s32'End'
               endIf: 
@@ -5254,8 +5254,8 @@ startState: s32'ArmorDance2'
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 0
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 120
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5263,8 +5263,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5272,8 +5272,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 240
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5281,8 +5281,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5290,8 +5290,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 360
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5299,8 +5299,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 420
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5308,8 +5308,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 480
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5317,8 +5317,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 540
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5326,8 +5326,8 @@ startState: s32'ArmorDance2'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 600
-          Unknown54: 0, 2, 25, 0, 1
-          Unknown54: 0, 2, 3, 0, 1
+          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
           storeValue: (VARIABLE), 55, (STATIC), 0
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5372,8 +5372,8 @@ startState: s32'ArmorDance2'
   Unknown1818: 0
   upon: 41
     storeValue: (VARIABLE), 49, (STATIC), 1
-    Unknown54: 0, 2, 25, 0, 3
-    Unknown54: 0, 2, 3, 0, 3
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 102, 0, 0, 0, 0
     storeValue: (VARIABLE), 55, (STATIC), 0
@@ -5381,7 +5381,7 @@ startState: s32'ArmorDance2'
       endIf: 
     storeValue: (VARIABLE), 46, (STATIC), 1
     storeValue: (VARIABLE), 48, (VARIABLE), 3
-    Unknown54: 0, 2, 48, 0, 1
+    modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 3
       ifOperation: 22, (STATIC), 50, (STATIC), 100
         playVoice: s16'vxxx209'
@@ -5471,7 +5471,7 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_28', 3
   sprite: s32'rvn406_29', 3
   Unknown3: 
-  ifNot: 2, 48
+  ifNot: (VARIABLE), 48
     playVoice: s16'vxxx215'
     endIf: 
   setMarker: s32'loop'
@@ -5495,8 +5495,8 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_12', 4
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
-      Unknown54: 0, 2, 46, 0, -1
-      ifNot: 2, 46
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+      ifNot: (VARIABLE), 46
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5518,8 +5518,8 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_23', 4
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
-      Unknown54: 0, 2, 46, 0, -1
-      ifNot: 2, 46
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+      ifNot: (VARIABLE), 46
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5539,8 +5539,8 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_26', 3
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
-      Unknown54: 0, 2, 46, 0, -1
-      ifNot: 2, 46
+      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
+      ifNot: (VARIABLE), 46
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5578,8 +5578,8 @@ startState: s32'LandBlowAttack'
     isAirUnblockable: 1
     Unknown2331: 18
     upon: (HIT)
-      Unknown54: 0, 2, 25, 0, 1
-      Unknown54: 0, 2, 3, 0, 1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
       storeValue: (VARIABLE), 55, (STATIC), 0
       callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
       callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5645,8 +5645,8 @@ startState: s32'AirBlowAttack'
       untechableTime: 47
       endIf: 
     upon: (HIT)
-      Unknown54: 0, 2, 25, 0, 1
-      Unknown54: 0, 2, 3, 0, 1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
       storeValue: (VARIABLE), 55, (STATIC), 0
       callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
       callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5692,8 +5692,8 @@ startState: s32'AirBlowAttack'
   Unknown32: s32'rvn407EffATK'
   createObject2: s32'rvn407EffATK1', 100
   Unknown41: 1
-  Unknown94: 225000
-  Unknown99: 50000
+  addPositionX: 225000
+  addPositionY: 50000
   Unknown40: 
   if: (VARIABLE), 45
     Unknown2234: s32'rvn408_07_rx'
@@ -5702,7 +5702,7 @@ startState: s32'AirBlowAttack'
   Unknown32: s32'rvn407EffATK1'
   createObject2: s32'rvn407EffATK2Air', 100
   Unknown41: 1
-  Unknown94: 225000
+  addPositionX: 225000
   Unknown40: 
   sprite: s32'rvn408_09', 5
   recoveryState: 
@@ -5741,7 +5741,7 @@ startState: s32'CommandThrow'
   sprite: s32'rvn410_06', 3
   sprite: s32'rvn410_07', 2
   sprite: s32'rvn410_08', 1
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_SWINGH'
   Unknown1027: 520000, 330000, -1, -1
   sprite: s32'rvn410_09', 1
@@ -5807,33 +5807,33 @@ startState: s32'CommandThrowEx'
   Unknown2161: 100, 250000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_05', 3
   Unknown546: 0, 100, 0
   Unknown2161: 100, 50000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_06', 3
   Unknown546: 0, 100, 0
   Unknown2161: 100, -150000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_07', 3
   Unknown546: 0, 100, 0
   Unknown2161: 100, -350000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_08', 3
   Unknown546: 0, 100, 0
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_09', 3
   Unknown544: 37
@@ -5895,8 +5895,8 @@ startState: s32'CommandThrowEx'
     hitAirPushbackY: 25000
     endElse: 
   upon: (HIT)
-    Unknown54: 0, 2, 25, 0, 3
-    Unknown54: 0, 2, 3, 0, 3
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -5940,7 +5940,7 @@ startState: s32'AntiAirCommandThrow'
   sprite: s32'rvn412_06', 2
   sprite: s32'rvn412_07', 3
   sprite: s32'rvn412_08', 2
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_SWINGH'
   sprite: s32'rvn412_09', 2
   sprite: s32'rvn412_10', 2
@@ -6000,33 +6000,33 @@ startState: s32'AntiAirCommandThrowEx'
   Unknown2161: 100, 250000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_05', 3
   Unknown546: 0, 100, 0
   Unknown2161: 100, 50000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_06', 3
   Unknown546: 0, 100, 0
   Unknown2161: 100, -150000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_07', 3
   Unknown546: 0, 100, 0
   Unknown2161: 100, -350000, 0
   Unknown2143: 4, 130
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_08', 3
   Unknown546: 0, 100, 0
   Unknown41: 22
-  Unknown94: -150000
+  addPositionX: -150000
   Unknown40: 
   sprite: s32'rvn409_09', 3
   Unknown544: 37
@@ -6055,7 +6055,7 @@ startState: s32'AntiAirCommandThrowEx'
   sprite: s32'rvn409_19', 3
   createObject2: s32'rvn409EffGareki', 100
   Unknown41: 1
-  Unknown94: 300000
+  addPositionX: 300000
   Unknown40: 
   Unknown546: 0, 100, 0
   Unknown544: 37
@@ -6091,8 +6091,8 @@ startState: s32'AntiAirCommandThrowEx'
   Unknown1157: 1
   playSFX: s32'GG2_002'
   upon: (HIT)
-    Unknown54: 0, 2, 25, 0, 3
-    Unknown54: 0, 2, 3, 0, 3
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6168,7 +6168,7 @@ startState: s32'LandDashAttack'
       playVoice: s16'vxxx216'
       endUpon: 
     upon: (HIT)
-      Unknown54: 0, 2, 45, 0, 1
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
         damage: 70
         endIf: 
@@ -6205,7 +6205,7 @@ startState: s32'LandDashAttack'
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 50
         Unknown14: s32'End'
         Unknown23: 6
-        Unknown99: -200000
+        addPositionY: -200000
         endIf: 
       Unknown23: 3
       endUpon: 
@@ -6284,8 +6284,8 @@ startState: s32'LandDashAttack'
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6314,8 +6314,8 @@ startState: s32'LandDashAttack'
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6343,8 +6343,8 @@ startState: s32'LandDashAttack'
   Unknown176: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6372,8 +6372,8 @@ startState: s32'LandDashAttack'
   Unknown176: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6426,7 +6426,7 @@ startState: s32'AirDashAttack'
       playVoice: s16'vxxx216'
       endUpon: 
     upon: (HIT)
-      Unknown54: 0, 2, 45, 0, 1
+      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
         damage: 70
         endIf: 
@@ -6454,8 +6454,8 @@ startState: s32'AirDashAttack'
   createObject2: s32'rvn430Eff', 100
   Unknown41: 1
   Unknown165: -45000
-  Unknown94: -75000
-  Unknown99: -200000
+  addPositionX: -75000
+  addPositionY: -200000
   Unknown40: 
   sprite: s32'rvn431_03', 2
   physicsXImpulse: 45000
@@ -6514,8 +6514,8 @@ startState: s32'AirDashAttack'
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6544,8 +6544,8 @@ startState: s32'AirDashAttack'
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6573,8 +6573,8 @@ startState: s32'AirDashAttack'
   Unknown176: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6602,8 +6602,8 @@ startState: s32'AirDashAttack'
   Unknown176: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
-    Unknown54: 0, 2, 25, 0, 5
-    Unknown54: 0, 2, 3, 0, 5
+    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
+    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
     storeValue: (VARIABLE), 55, (STATIC), 0
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6652,7 +6652,7 @@ startState: s32'RevengeAttack'
     upon: (HIT)
       disableHitstop: 1
       if: (VARIABLE), 164
-        ifNot: 2, 45
+        ifNot: (VARIABLE), 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
           endIf: 
@@ -6731,7 +6731,7 @@ startState: s32'RevengeAttackEx'
       Unknown2199: 1
       endIf: 
     storeValue: (VARIABLE), 45, (VARIABLE), 3
-    Unknown54: 2, 2, 45, 0, 5
+    modifyVar: (MUL), (VARIABLE), 45, (STATIC), 5
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 50
       storeValue: (VARIABLE), 45, (STATIC), 50
       endIf: 
@@ -6987,12 +6987,12 @@ startState: s32'RevengeAttackEx'
   Unknown2051: 1500
   Unknown2028: s32'rvn432'
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   Unknown3: 
   setMarker: s32'loop'
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 8
@@ -7000,109 +7000,109 @@ startState: s32'RevengeAttackEx'
   disableHitstop: 0
   hitstop: 12
   screenShake: 1, 2
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   Unknown544: 10
   Unknown1139: 0
   Unknown1064: s32'RevengeAttackEx'
   sprite: s32'rvn432_08', 10
   sprite: s32'rvn432_09', 8
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 6
   hit: 
   hitstop: 5
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_11', 8
   disableHitstop: 1
   sprite: s32'rvn432_12', 6
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 5
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_08', 7
   sprite: s32'rvn432_09', 5
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 5
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_11', 7
   sprite: s32'rvn432_12', 5
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 4
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_08', 6
   sprite: s32'rvn432_09', 4
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 4
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_11', 6
   sprite: s32'rvn432_12', 4
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 2
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_08', 6
   sprite: s32'rvn432_09', 3
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 2
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_11', 6
   sprite: s32'rvn432_12', 3
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 1
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_08', 5
   sprite: s32'rvn432_09', 2
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 1
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_11', 5
   sprite: s32'rvn432_12', 2
   Unknown3: 
   createObject2: s32'rvn432EffBake', 100
   goToMarker: s32'loop2'
   setMarker: s32'loop2'
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_13', 2
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_14', 2
   sprite: s32'rvn432_15', 2
   Unknown3: 
-  Unknown54: 0, 2, 47, 0, 1
+  modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
   ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 10
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 6
       goToMarker: s32'loop3'
@@ -7112,16 +7112,16 @@ startState: s32'RevengeAttackEx'
     endIf: 
   goToMarker: s32'loop2'
   setMarker: s32'loop3'
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_16', 1
   hit: 
-  Unknown54: 1, 2, 45, 0, 1
+  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn432_17', 1
   sprite: s32'rvn432_18', 1
   Unknown3: 
-  ifNot: 2, 45
+  ifNot: (VARIABLE), 45
     goToMarker: s32'End'
     endIf: 
   goToMarker: s32'loop3'
@@ -7341,7 +7341,7 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  Unknown53: 23, 2, 32, 22, 2, 32
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
   Unknown2013: s32'xxx_rvn451cs', 0
   Unknown2028: s32'CmnCutSceneDamageHigh'
   Unknown40: 
@@ -7415,7 +7415,7 @@ startState: s32'Ichigeki'
       Unknown32: s32'rvn451HandAura'
       createObject2: s32'rvn451AuraJizoku2', 100
       Unknown41: 1
-      Unknown94: -300000
+      addPositionX: -300000
       Unknown1700: 100000
       Unknown40: 
       Unknown41: 22
@@ -7445,7 +7445,7 @@ startState: s32'Ichigeki'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 800
       Unknown1018: 1
-      grabOrRelease: 
+      hitUnchecked: 
       Unknown1059: 3
       Unknown996: 0, 0, 0
       hitstop: 0
@@ -7630,8 +7630,8 @@ startState: s32'FBScratch'
     isAirUnblockable: 1
     Unknown2331: 18
     upon: (HIT)
-      Unknown54: 0, 2, 25, 0, 1
-      Unknown54: 0, 2, 3, 0, 1
+      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
+      modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
       storeValue: (VARIABLE), 55, (STATIC), 0
       callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
       callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0

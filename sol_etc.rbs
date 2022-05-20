@@ -1,11 +1,11 @@
 startState: s32'Fafnircharge'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 3
-  Unknown450: s32'sol_fafnir_charge'
+  linkParticleEx: s32'sol_fafnir_charge'
   Unknown448: s32'sol_smallfire', 100
   sprite: s32'null', 3
   Unknown448: s32'sol_smallfire', 100
@@ -13,8 +13,8 @@ startState: s32'Fafnircharge'
   Unknown448: s32'sol_smallfire', 100
   sprite: s32'null', 3
   Unknown448: s32'sol_smallfire', 100
-  Unknown94: 10000
-  Unknown99: 5000
+  addPositionX: 10000
+  addPositionY: 5000
   sprite: s32'null', 3
   Unknown448: s32'sol_smallfire', 100
   sprite: s32'null', 3
@@ -23,12 +23,12 @@ startState: s32'Fafnircharge'
 
 startState: s32'Fafnircharge_DI'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 3
-  Unknown450: s32'dsl_fafnir_charge'
+  linkParticleEx: s32'dsl_fafnir_charge'
   Unknown448: s32'dsl_smallfire', 100
   sprite: s32'null', 3
   Unknown448: s32'dsl_smallfire', 100
@@ -36,8 +36,8 @@ startState: s32'Fafnircharge_DI'
   Unknown448: s32'dsl_smallfire', 100
   sprite: s32'null', 3
   Unknown448: s32'dsl_smallfire', 100
-  Unknown94: 10000
-  Unknown99: 5000
+  addPositionX: 10000
+  addPositionY: 5000
   sprite: s32'null', 3
   Unknown448: s32'dsl_smallfire', 100
   sprite: s32'null', 3
@@ -46,12 +46,12 @@ startState: s32'Fafnircharge_DI'
 
 startState: s32'Bringercharge'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 2
-  Unknown450: s32'sol_bringer_charge'
+  linkParticleEx: s32'sol_bringer_charge'
   Unknown448: s32'sol_smallfire', 100
   sprite: s32'null', 2
   Unknown448: s32'sol_smallfire', 100
@@ -63,20 +63,20 @@ startState: s32'Bringercharge'
   Unknown448: s32'sol_smallfire', 100
   sprite: s32'null', 2
   Unknown448: s32'sol_smallfire', 100
-  Unknown94: 50000
-  Unknown99: 50000
+  addPositionX: 50000
+  addPositionY: 50000
   sprite: s32'null', 2
   Unknown448: s32'sol_smallfire', 100
   endState: 
 
 startState: s32'Bringercharge_DI'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 2
-  Unknown450: s32'dsl_bringer_charge'
+  linkParticleEx: s32'dsl_bringer_charge'
   Unknown448: s32'dsl_smallfire', 100
   sprite: s32'null', 2
   Unknown448: s32'dsl_smallfire', 100
@@ -88,18 +88,18 @@ startState: s32'Bringercharge_DI'
   Unknown448: s32'dsl_smallfire', 100
   sprite: s32'null', 2
   Unknown448: s32'dsl_smallfire', 100
-  Unknown94: 50000
-  Unknown99: 50000
+  addPositionX: 50000
+  addPositionY: 50000
   sprite: s32'null', 2
   Unknown448: s32'dsl_smallfire', 100
   endState: 
 
 startState: s32'Dust_atk_sol'
   upon: (IMMEDIATE)
-    Unknown94: 60000
+    addPositionX: 60000
     Unknown458: 3
-    Unknown456: 3
-    Unknown450: s32'sol_dust_atk'
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'sol_dust_atk'
     Unknown2024: 0
     endUpon: 
   sprite: s32'null', 100
@@ -145,12 +145,12 @@ startState: s32'GunFlameHibashira'
       damage: 30
       storeValue: (VARIABLE), 45, (STATIC), 1
       endIf: 
-    Unknown450: s32'sol_gunflame'
+    linkParticleEx: s32'sol_gunflame'
     upon: (HIT_OR_GUARD)
       Unknown1771: s32'GunFlameHibashira', 23
       Unknown1883: 
       storeValue: (VARIABLE), 46, (STATIC), 1
-      Unknown19: 4
+      deactivateObj: (STACK_0)
       endUpon: 
     upon: (ON_HIT_OR_BLOCK)
       if: (VARIABLE), 45
@@ -168,7 +168,7 @@ startState: s32'GunFlameHibashira'
       allowHitting: (SELF)
       flipDirection: 
       Unknown178: 2
-      Unknown94: 138000
+      addPositionX: 138000
       Unknown51: 4
       if: (VARIABLE), 0
         Unknown1766: 4, 24
@@ -176,7 +176,7 @@ startState: s32'GunFlameHibashira'
       endUpon: 
     endUpon: 
   sprite: s32'vrsol400_00', 3
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'vrsol400_01', 3
   sprite: s32'vrsol400_02', 3
   sprite: s32'vrsol400_03', 1
@@ -184,9 +184,9 @@ startState: s32'GunFlameHibashira'
   ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
     Unknown458: 0
     endIf: 
-  ifNot: 2, 46
+  ifNot: (VARIABLE), 46
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 115, (STATIC), 3
-      Unknown54: 0, 2, 115, 0, 1
+      modifyVar: (ADD), (VARIABLE), 115, (STATIC), 1
       Unknown2247: 2, 115, 0, 0
       callEtcState: s32'GunFlameHibashira', 0
       Unknown43: 4, 1
@@ -220,11 +220,11 @@ startState: s32'GunFlameHibashira_DI'
     hitAirPushbackX: 17500
     hitAirPushbackY: 43750
     untechableTime: 40
-    Unknown450: s32'dsl_gunflame'
+    linkParticleEx: s32'dsl_gunflame'
     Unknown2271: 1
     endUpon: 
   sprite: s32'sleg_00', 1
-  Unknown94: 70000
+  addPositionX: 70000
   sprite: s32'sleg_01', 1
   sprite: s32'sleg_02', 2
   playSFX: s32'SE_EXPLODE'
@@ -264,7 +264,7 @@ startState: s32'GunFlameHibashira_Ichigeki'
     hitAirPushbackX: 17500
     hitAirPushbackY: 43750
     untechableTime: 40
-    Unknown450: s32'sol_gunflame'
+    linkParticleEx: s32'sol_gunflame'
     setObjectSize: 1400
     setObjectWidth: 2300
     endUpon: 
@@ -292,22 +292,22 @@ startState: s32'GunFlameHibashira_Ichigeki'
 
 startState: s32'BanditBringerPunch'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown456: 3
-    Unknown454: 3
-    Unknown450: s32'sol_banditbringer'
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'sol_banditbringer'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'BanditBringerPunch_DI'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown456: 3
-    Unknown454: 3
-    Unknown450: s32'dsl_banditbringer'
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'dsl_banditbringer'
     setObjectSize: 1500
     endUpon: 
   sprite: s32'null', 100
@@ -315,14 +315,14 @@ startState: s32'BanditBringerPunch_DI'
 
 startState: s32'GroundViperDash'
   upon: (IMMEDIATE)
-    Unknown450: s32'sol_dash_fire'
+    linkParticleEx: s32'sol_dash_fire'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'GroundViperDash_dsl'
   upon: (IMMEDIATE)
-    Unknown450: s32'dsl_dash_fire'
+    linkParticleEx: s32'dsl_dash_fire'
     endUpon: 
   sprite: s32'null', 100
   endState: 
@@ -330,36 +330,36 @@ startState: s32'GroundViperDash_dsl'
 startState: s32'FafnirPunch'
   upon: (IMMEDIATE)
     Unknown458: 3
-    Unknown456: 3
-    Unknown450: s32'sol_fafnir_main'
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'sol_fafnir_main'
     endUpon: 
   sprite: s32'null', 200
-  Unknown94: -80000
-  Unknown99: -20000
+  addPositionX: -80000
+  addPositionY: -20000
   endState: 
 
 startState: s32'FafnirPunch_DI'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown454: 3
-    Unknown450: s32'dsl_fafnir_main'
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'dsl_fafnir_main'
     endUpon: 
   sprite: s32'null', 200
   endState: 
 
 startState: s32'TyrantRavePunch1'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown450: s32'sol_tyrantrave1'
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'sol_tyrantrave1'
     endUpon: 
   sprite: s32'null', 100
   endState: 
 
 startState: s32'TyrantRavePunch1_DI'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown450: s32'dsl_tyrantrave1'
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'dsl_tyrantrave1'
     endUpon: 
   sprite: s32'null', 100
   endState: 
@@ -398,8 +398,8 @@ startState: s32'TyrantRavePunch2'
       endIf: 
     upon: (HIT)
       if: (VARIABLE), 115
-        ifNot: 2, 116
-          ifNot: 2, 45
+        ifNot: (VARIABLE), 116
+          ifNot: (VARIABLE), 45
             storeValue: (VARIABLE), 45, (STATIC), 1
             Unknown2130: 5000
             endIf: 
@@ -411,7 +411,7 @@ startState: s32'TyrantRavePunch2'
   sprite: s32'vrsol432_00', 5
   physicsXImpulse: 7000
   playCharacterSFX: s32'SOL_002'
-  Unknown450: s32'sol_tyrantrave2'
+  linkParticleEx: s32'sol_tyrantrave2'
   sprite: s32'vrsol432_01', 5
   hit: 
   physicsXImpulse: 5250
@@ -442,7 +442,7 @@ startState: s32'TyrantRavePunch2'
   hitAirPushbackY: 10000
   damage: 60
   playCharacterSFX: s32'SOL_002'
-  Unknown450: s32'sol_tyrantrave2'
+  linkParticleEx: s32'sol_tyrantrave2'
   sprite: s32'vrsol432_01', 5
   physicsXImpulse: 40000
   hit: 
@@ -487,15 +487,15 @@ startState: s32'TyrantRavePunch2_DI'
     Unknown2271: 1
     setObjectWidth: 3000
     Unknown156: 600
-    Unknown454: 3
+    linkObjPositionTo: (PLAYER)
     Unknown458: 3
     upon: (AFTER_EXIT)
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endUpon: 
     endUpon: 
   sprite: s32'vrsol432_00', 5
   playCharacterSFX: s32'SOL_002'
-  Unknown450: s32'dsl_tyrantrave2'
+  linkParticleEx: s32'dsl_tyrantrave2'
   sprite: s32'vrsol432_01', 3
   hit: 
   sprite: s32'vrsol432_01', 3
@@ -560,7 +560,7 @@ startState: s32'TyrantRavePunch2_death'
   sprite: s32'vrsol432_00', 5
   physicsXImpulse: 7000
   playCharacterSFX: s32'SOL_002'
-  Unknown450: s32'sol_tyrantrave2'
+  linkParticleEx: s32'sol_tyrantrave2'
   sprite: s32'vrsol432_01', 1
   hit: 
   physicsXImpulse: 5250
@@ -595,7 +595,7 @@ startState: s32'TyrantRavePunch2_death'
 
 startState: s32'TyrantRavePunch2_core'
   upon: (IMMEDIATE)
-    Unknown450: s32'sol_tyrantrave2_core'
+    linkParticleEx: s32'sol_tyrantrave2_core'
     Unknown294: 1
     Unknown1769: 1
     endUpon: 
@@ -607,60 +607,60 @@ startState: s32'TyrantRaveCharge'
     Unknown294: 1
     endUpon: 
   sprite: s32'null', 150
-  Unknown450: s32'sol_tyrantcharge'
+  linkParticleEx: s32'sol_tyrantcharge'
   endState: 
 
 startState: s32'VV_Start'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vvstart'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vvstart'
   endState: 
 
 startState: s32'VV_Start_jp'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vvstart_jp'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vvstart_jp'
   endState: 
 
 startState: s32'VV_Start2'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vvstart2'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vvstart2'
   endState: 
 
 startState: s32'VV_Start2_jp'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vvstart2_jp'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vvstart2_jp'
   endState: 
 
 startState: s32'VV_floor_hs'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vv_hs_floor'
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vv_hs_floor'
   endState: 
 
 startState: s32'VV_Loop'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown450: s32'sol_vvloop'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'sol_vvloop'
     Unknown35: 23, s32'1'
     endUpon: 
   sprite: s32'null', 100
@@ -672,11 +672,11 @@ startState: s32'VV_Loop'
 
 startState: s32'VV_Loop_hs'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown450: s32'sol_vvloop_hs'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'sol_vvloop_hs'
     Unknown35: 23, s32'1'
     endUpon: 
   sprite: s32'null', 100
@@ -688,89 +688,89 @@ startState: s32'VV_Loop_hs'
 
 startState: s32'VV_tail_under'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'sol_vv_tail_under'
+  linkParticleEx: s32'sol_vv_tail_under'
   endState: 
 
 startState: s32'VV_Smoke'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vv_smoke'
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vv_smoke'
   endState: 
 
 startState: s32'VV_Smoke_HS'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown456: 3
-  Unknown450: s32'sol_vv_smoke_hs'
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'sol_vv_smoke_hs'
   endState: 
 
 startState: s32'VV_End'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'sol_vvend'
+  linkParticleEx: s32'sol_vvend'
   endState: 
 
 startState: s32'VV2_End'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'sol_vv2end'
+  linkParticleEx: s32'sol_vv2end'
   endState: 
 
 startState: s32'TEST_MIGI'
   upon: (IMMEDIATE)
-    Unknown450: s32'cmn_migi'
+    linkParticleEx: s32'cmn_migi'
     endUpon: 
   sprite: s32'null', 500
   endState: 
 
 startState: s32'VV_Start_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'dsl_vvtail'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'dsl_vvtail'
   endState: 
 
 startState: s32'VV_Start_jp_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'dsl_vvtail_jp'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'dsl_vvtail_jp'
   endState: 
 
 startState: s32'VV_Start2_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown454: 3
-  Unknown456: 3
-  Unknown450: s32'dsl_vvtail_hs'
+  linkObjPositionTo: (PLAYER)
+  Unknown456: (PLAYER)
+  linkParticleEx: s32'dsl_vvtail_hs'
   endState: 
 
 startState: s32'VV_tail_under_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'dsl_vv_tail_under'
+  linkParticleEx: s32'dsl_vv_tail_under'
   endState: 
 
 startState: s32'VV_Loop_DI'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown450: s32'dsl_vvcore'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'dsl_vvcore'
     Unknown35: 23, s32'1'
     endUpon: 
   sprite: s32'null', 100
@@ -782,11 +782,11 @@ startState: s32'VV_Loop_DI'
 
 startState: s32'VV_Loop_hs_DI'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown458: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown450: s32'dsl_vvcore_hs'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'dsl_vvcore_hs'
     Unknown35: 23, s32'1'
     endUpon: 
   sprite: s32'null', 100
@@ -798,63 +798,63 @@ startState: s32'VV_Loop_hs_DI'
 
 startState: s32'VV_End_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'dsl_vvend'
+  linkParticleEx: s32'dsl_vvend'
   endState: 
 
 startState: s32'VV2_End_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'dsl_vvend_hs'
+  linkParticleEx: s32'dsl_vvend_hs'
   endState: 
 
 startState: s32'VV_floor_hs_DI'
   sprite: s32'null', 50
-  Unknown457: 3
+  Unknown457: (PLAYER)
   Unknown458: 3
-  Unknown450: s32'dsl_vvfloor'
+  linkParticleEx: s32'dsl_vvfloor'
   endState: 
 
 startState: s32'Dsl_startA'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 40
-  Unknown450: s32'dsl_startA'
+  linkParticleEx: s32'dsl_startA'
   endState: 
 
 startState: s32'Dsl_startB'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 100
-  Unknown450: s32'dsl_startB'
+  linkParticleEx: s32'dsl_startB'
   endState: 
 
 startState: s32'Dsl_startC'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 80
-  Unknown450: s32'dsl_startC'
+  linkParticleEx: s32'dsl_startC'
   endState: 
 
 startState: s32'Dsl_startD'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 40
-  Unknown450: s32'dsl_startD'
+  linkParticleEx: s32'dsl_startD'
   endState: 
 
 startState: s32'GroundViperDash_DI'
@@ -871,7 +871,7 @@ startState: s32'GroundViperDash_DI'
     untechableTime: 60
     tensionGainOnConnect: 10
     Unknown1051: 1
-    Unknown450: s32'dsl_grand_hibashira'
+    linkParticleEx: s32'dsl_grand_hibashira'
     Unknown2271: 1
     setObjectSize: 1500
     setObjectWidth: 1000
@@ -926,7 +926,7 @@ startState: s32'RiotStamp_DI_Bomb'
     SFX_0: s32'SE_EXPLODE'
     Unknown1119: s32'SE_EXPLODE'
     tensionGainOnConnect: 12
-    Unknown450: s32'dsl_riot_bomb'
+    linkParticleEx: s32'dsl_riot_bomb'
     setObjectSize: 1500
     endUpon: 
   sprite: s32'solef414_00', 10
@@ -935,9 +935,9 @@ startState: s32'RiotStamp_DI_Bomb'
 
 startState: s32'Bukkira_DI'
   upon: (IMMEDIATE)
-    Unknown450: s32'cmn_impact_default'
+    linkParticleEx: s32'cmn_impact_default'
     setObjectSize: 1500
-    Unknown94: -100000
+    addPositionX: -100000
     endUpon: 
   sprite: s32'null', 100
   endState: 
@@ -945,7 +945,7 @@ startState: s32'Bukkira_DI'
 startState: s32'KudakeroEF'
   upon: (IMMEDIATE)
     Unknown244: 
-    Unknown450: s32'sol_kudakero_atk'
+    linkParticleEx: s32'sol_kudakero_atk'
     attackLevel: 1
     damage: 20
     riscPlus: 6
@@ -968,7 +968,7 @@ startState: s32'KudakeroEF'
 startState: s32'KudakeroEF_DI'
   upon: (IMMEDIATE)
     Unknown244: 
-    Unknown450: s32'dsl_kudakero_atk'
+    linkParticleEx: s32'dsl_kudakero_atk'
     Unknown2271: 1
     attackLevel: 1
     damage: 20
@@ -990,36 +990,36 @@ startState: s32'KudakeroEF_DI'
 
 startState: s32'Ichigeki_hit'
   upon: (IMMEDIATE)
-    Unknown456: 3
+    Unknown456: (PLAYER)
     endUpon: 
   sprite: s32'null', 800
-  Unknown450: s32'sol_ichigeki_impact'
+  linkParticleEx: s32'sol_ichigeki_impact'
   endState: 
 
 startState: s32'Ichigeki_hit_dsl'
   upon: (IMMEDIATE)
-    Unknown456: 3
+    Unknown456: (PLAYER)
     endUpon: 
   sprite: s32'null', 800
-  Unknown450: s32'dsl_ichigeki_impact'
+  linkParticleEx: s32'dsl_ichigeki_impact'
   endState: 
 
 startState: s32'dsl_icigeki_screen'
   upon: (IMMEDIATE)
-    Unknown456: 3
+    Unknown456: (PLAYER)
     endUpon: 
   sprite: s32'null', 800
-  Unknown450: s32'dsl_icigeki_screen'
+  linkParticleEx: s32'dsl_icigeki_screen'
   endState: 
 
 startState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown454: 3
-    Unknown457: 3
+    Unknown456: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 10
-  Unknown450: s32'sol_neoblitz_atk'
+  linkParticleEx: s32'sol_neoblitz_atk'
   Unknown1769: 1
   sprite: s32'null', 80
   Unknown1769: 0
@@ -1027,37 +1027,37 @@ startState: s32'Neoblitz_atk'
 
 startState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
-    Unknown450: s32'sol_ichigeki_bg'
+    linkParticleEx: s32'sol_ichigeki_bg'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'BG_ichigeki_dsl'
   upon: (IMMEDIATE)
-    Unknown450: s32'dsl_ichigeki_bg'
+    linkParticleEx: s32'dsl_ichigeki_bg'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'BG_dslwin'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'dsl_win_bg'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'dsl_win_bg'
     endUpon: 
   sprite: s32'null', 2000
   endState: 
 
 startState: s32'dsl_win_screen'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown450: s32'dsl_win_screen'
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'dsl_win_screen'
     endUpon: 
   sprite: s32'null', 0
   endState: 
 
 startState: s32'dsl_terikaeshi'
   upon: (IMMEDIATE)
-    Unknown450: s32'dsl_floorbloom'
+    linkParticleEx: s32'dsl_floorbloom'
     Unknown2312: 1
     upon: 39
       Unknown2218: 3, 150, 23, 100
@@ -1093,25 +1093,25 @@ startState: s32'ACEvtSOL_7A'
     Unknown2109: '0x636D6E5F6576745F72616D30303000000000000000000000000000000000000052414D00000000000000000000000000000000000000000000000000000000006400000003000000'
     Unknown2109: '0x636D6E5F6576745F7261766E00000000000000000000000000000000000000005241564E000000000000000000000000000000000000000000000000000000006400000004000000'
     Unknown2121: 2
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown1700: -300000
     Unknown40: 
     Unknown2121: 3
-    Unknown94: -500000
+    addPositionX: -500000
     Unknown1700: -200000
     Unknown232: -10000
     Unknown40: 
     Unknown2121: 4
-    Unknown94: -100000
+    addPositionX: -100000
     Unknown1700: -200000
     Unknown232: -40000
     Unknown40: 
     Unknown2121: 0
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown232: -10000
     Unknown40: 
     Unknown2121: 1
-    Unknown94: 200000
+    addPositionX: 200000
     Unknown232: -10000
     Unknown40: 
     endUpon: 
@@ -1170,21 +1170,21 @@ startState: s32'ACEvtSOL_7B'
     Unknown2109: '0x636D6E5F6576745F72616D30303000000000000000000000000000000000000052414D00000000000000000000000000000000000000000000000000000000006400000003000000'
     Unknown2109: '0x636D6E5F6576745F7261766E00000000000000000000000000000000000000005241564E000000000000000000000000000000000000000000000000000000006400000004000000'
     Unknown2121: 2
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown1700: -300000
     Unknown40: 
     Unknown2121: 3
-    Unknown94: -500000
+    addPositionX: -500000
     Unknown1700: -200000
     Unknown232: -10000
     Unknown40: 
     Unknown2121: 4
-    Unknown94: -100000
+    addPositionX: -100000
     Unknown1700: -35000
     Unknown232: -60000
     Unknown40: 
     Unknown2121: 0
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown40: 
     endUpon: 
   sprite: s32'null', 1
@@ -1271,15 +1271,15 @@ startState: s32'ACEvtSOL_8A'
     Unknown2109: '0x636D6E5F6576745F72616D30303000000000000000000000000000000000000052414D00000000000000000000000000000000000000000000000000000000006400000003000000'
     Unknown2109: '0x636D6E5F6576745F7261766E00000000000000000000000000000000000000005241564E000000000000000000000000000000000000000000000000000000006400000004000000'
     Unknown2121: 2
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown40: 
     Unknown2121: 3
-    Unknown94: -200000
+    addPositionX: -200000
     Unknown1700: -200000
     Unknown232: -10000
     Unknown40: 
     Unknown2121: 4
-    Unknown94: 100000
+    addPositionX: 100000
     Unknown1700: -200000
     Unknown232: -40000
     Unknown40: 
@@ -1388,8 +1388,8 @@ startState: s32'FBFefnirPunch'
       endIf: 
     upon: (HIT)
       if: (VARIABLE), 115
-        ifNot: 2, 116
-          ifNot: 2, 45
+        ifNot: (VARIABLE), 116
+          ifNot: (VARIABLE), 45
             storeValue: (VARIABLE), 45, (STATIC), 1
             Unknown2130: 5000
             endIf: 
@@ -1401,7 +1401,7 @@ startState: s32'FBFefnirPunch'
   sprite: s32'vrsol432_00', 5
   physicsXImpulse: 16000
   playCharacterSFX: s32'SOL_002'
-  Unknown450: s32'sol_tyrantrave2'
+  linkParticleEx: s32'sol_tyrantrave2'
   sprite: s32'vrsol432_01', 5
   hit: 
   physicsXImpulse: 12000
@@ -1432,7 +1432,7 @@ startState: s32'FBFefnirPunch'
   hitAirPushbackY: 10000
   damage: 45
   playCharacterSFX: s32'SOL_002'
-  Unknown450: s32'sol_tyrantrave2'
+  linkParticleEx: s32'sol_tyrantrave2'
   sprite: s32'vrsol432_01', 5
   physicsXImpulse: 40000
   hit: 

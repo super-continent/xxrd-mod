@@ -14,29 +14,29 @@ startSubroutine: s32'RandomExPointNum3'
 
 startState: s32'DustEffect'
   upon: (IMMEDIATE)
-    Unknown450: s32'kyk_dust_start'
-    Unknown454: 2
-    Unknown456: 2
-    Unknown466: 3
+    linkParticleEx: s32'kyk_dust_start'
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown466: (PLAYER)
     Unknown2178: 
     Unknown2184: 1
-    upon: 45
-      Unknown454: 0
+    upon: (ON_DESTROY)
+      linkObjPositionTo: (NULL)
       Unknown2001: 3, s32'CmnActRomanCancel'
-      ifNot: 2, 0
+      ifNot: (VARIABLE), 0
         Unknown14: s32'End'
         endIf: 
       else: 
         ifOperation: (IS_GREATER), (VARIABLE), 13, (STATIC), 6
           Unknown448: s32'kyk_dust_end', 100
           endIf: 
-        Unknown19: 23
+        deactivateObj: (SELF)
         endElse: 
       endUpon: 
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
-        Unknown456: 0
+        Unknown456: (NULL)
         Unknown23: 3
         endIf: 
       endUpon: 
@@ -48,7 +48,7 @@ startState: s32'DustEffect'
   sprite: s32'null', 5
   sprite: s32'null', 1
   Unknown448: s32'kyk_dust_end', 100
-  Unknown19: 23
+  deactivateObj: (SELF)
   endState: 
 
 startState: s32'DustEffectShot'
@@ -60,17 +60,17 @@ startState: s32'DustEffectShot'
     Unknown1108: 90
     hitEffectLightning: 1
     Unknown1028: 2
-    Unknown454: 0
-    Unknown456: 2
-    Unknown466: 3
+    linkObjPositionTo: (NULL)
+    Unknown456: (PARENT)
+    Unknown466: (PLAYER)
     endUpon: 
   sprite: s32'dust_atk', 7
   sprite: s32'dust_atk', 13
   upon: (FRAME_STEP)
     Unknown2001: 3, s32'CmnActRomanCancel'
     if: (VARIABLE), 0
-      grabOrRelease: 
-      Unknown456: 0
+      hitUnchecked: 
+      Unknown456: (NULL)
       Unknown41: 2
       Unknown1766: 5, 24
       Unknown2161: 100, 300000, 220000
@@ -108,7 +108,7 @@ startState: s32'AirDustAttackObj'
     Unknown458: 3
     endUpon: 
   sprite: s32'KYEL_00', 3
-  Unknown450: s32'kyk_airdust_start'
+  linkParticleEx: s32'kyk_airdust_start'
   sprite: s32'KYEL_13', 3
   sprite: s32'KYEL_00', 3
   sprite: s32'KYEL_13', 3
@@ -118,7 +118,7 @@ startState: s32'AirDustAttackObj'
   sprite: s32'KYEL_13', 3
   sprite: s32'KYEL_00', 3
   sprite: s32'KYEL_01_rx', 2
-  Unknown450: s32'kyk_airdust_loop'
+  linkParticleEx: s32'kyk_airdust_loop'
   hit: 
   sprite: s32'KYEL_02_rx', 2
   sprite: s32'KYEL_01_rx', 2
@@ -127,7 +127,7 @@ startState: s32'AirDustAttackObj'
   sprite: s32'KYEL_02_rx', 2
   sprite: s32'KYEL_01_rx', 1
   sprite: s32'KYEL_03', 3
-  Unknown450: s32'kyk_airdust_end'
+  linkParticleEx: s32'kyk_airdust_end'
   recoveryState: 
   sprite: s32'KYEL_04', 3
   sprite: s32'KYEL_05', 3
@@ -147,30 +147,30 @@ startState: s32'Mahojin'
     Unknown2156: 0
     superArmorEnabled: 1
     Unknown1824: 0
-    Unknown454: 2
-    upon: 45
+    linkObjPositionTo: (PARENT)
+    upon: (ON_DESTROY)
       playSFX: s32'GG2_073'
       Unknown449: s32'kyk_mahojin_end', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (ON_HIT_OR_BLOCK)
       Unknown448: s32'kyk_mahojin_powerup', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: 24
       Unknown2176: 23
       endUpon: 
     upon: 26
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endUpon: 
     upon: 59
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'mahojin', 10
-  Unknown450: s32'kyk_mahojin_start'
+  linkParticleEx: s32'kyk_mahojin_start'
   sprite: s32'mahojin', 90
-  Unknown450: s32'kyk_mahojin_loop'
+  linkParticleEx: s32'kyk_mahojin_loop'
   storeValue: (VARIABLE), 45, (STATIC), 1
   sprite: s32'mahojin', 110
   Unknown3: 
@@ -197,9 +197,9 @@ startState: s32'StunEdgeObj'
     upon: 2
       Unknown2176: 23
       endUpon: 
-    upon: 45
+    upon: (ON_DESTROY)
       createObject2: s32'StunEdgeDelete', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
@@ -214,21 +214,21 @@ startState: s32'StunEdgeObj'
         storeValue: (VARIABLE), 51, (STATIC), 0
         Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
         if: (VARIABLE), 0
-          Unknown53: 23, 2, 61, 4, 2, 45
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 45
           if: (VARIABLE), 61
             storeValue: (VARIABLE), 51, (STATIC), 1
             Unknown60: '0x17000000670000000400000067000000'
-            Unknown53: 23, 2, 62, 23, 2, 17
-            Unknown53: 23, 2, 63, 4, 2, 17
-            Unknown54: 1, 2, 62, 2, 63
+            storeFromObjToObj: (SELF), (VARIABLE), 62, (SELF), (VARIABLE), 17
+            storeFromObjToObj: (SELF), (VARIABLE), 63, (STACK_0), (VARIABLE), 17
+            modifyVar: (SUB), (VARIABLE), 62, (VARIABLE), 63
             ifOperation: (IS_LESSER), (VARIABLE), 62, (STATIC), 0
-              Unknown54: 2, 2, 62, 0, -1
+              modifyVar: (MUL), (VARIABLE), 62, (STATIC), -1
               endIf: 
-            Unknown53: 23, 2, 64, 23, 2, 18
-            Unknown53: 23, 2, 65, 4, 2, 18
-            Unknown54: 1, 2, 64, 2, 65
+            storeFromObjToObj: (SELF), (VARIABLE), 64, (SELF), (VARIABLE), 18
+            storeFromObjToObj: (SELF), (VARIABLE), 65, (STACK_0), (VARIABLE), 18
+            modifyVar: (SUB), (VARIABLE), 64, (VARIABLE), 65
             ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 0
-              Unknown54: 2, 2, 64, 0, -1
+              modifyVar: (MUL), (VARIABLE), 64, (STATIC), -1
               endIf: 
             ifOperation: (IS_LESSER), (VARIABLE), 62, (STATIC), 80000
               ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 160000
@@ -237,7 +237,7 @@ startState: s32'StunEdgeObj'
                 Unknown1766: 4, 23
                 Unknown2247: 2, 115, 0, 0
                 callEtcState: s32'SPStunEdgeObj', 100
-                Unknown19: 23
+                deactivateObj: (SELF)
                 endIf: 
               endIf: 
             endIf: 
@@ -249,12 +249,12 @@ startState: s32'StunEdgeObj'
     Unknown58: 1
     endUpon: 
   sprite: s32'null', 6
-  Unknown450: s32'kyk_se_start'
+  linkParticleEx: s32'kyk_se_start'
   if: (VARIABLE), 49
     overrideSpriteLengthIf: 8, (STATIC), 1
     endIf: 
-  Unknown454: 2
-  Unknown456: 2
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
   Unknown458: 2
   ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
     hitEffectLightning: 1
@@ -304,11 +304,11 @@ startState: s32'StunEdgeObj'
     endIf: 
   Unknown2150: 1
   Unknown3: 
-  Unknown450: s32'kyk_se_loop'
-  grabOrRelease: 
+  linkParticleEx: s32'kyk_se_loop'
+  hitUnchecked: 
   storeValue: (VARIABLE), 45, (STATIC), 1
-  Unknown454: 0
-  Unknown456: 0
+  linkObjPositionTo: (NULL)
+  Unknown456: (NULL)
   Unknown458: 0
   setMarker: s32'top'
   sprite: s32'KYE3_05', 1
@@ -344,8 +344,8 @@ startState: s32'StunEdgeObj'
 startState: s32'StunEdgeDelete'
   upon: (IMMEDIATE)
     Unknown1602: 1
-    Unknown450: s32'kyk_se_end'
-    Unknown53: 23, 2, 1, 2, 2, 1
+    linkParticleEx: s32'kyk_se_end'
+    storeFromObjToObj: (SELF), (VARIABLE), 1, (PARENT), (VARIABLE), 1
     endUpon: 
   sprite: s32'KYE3_09', 4
   sprite: s32'KYE3_10', 4
@@ -396,8 +396,8 @@ startState: s32'SPStunEdgeObj'
       Unknown14: s32'AirHSStunEdge'
       endIf: 
     Unknown2150: 1
-    Unknown53: 23, 2, 7, 2, 2, 7
-    Unknown53: 23, 2, 8, 2, 2, 8
+    storeFromObjToObj: (SELF), (VARIABLE), 7, (PARENT), (VARIABLE), 7
+    storeFromObjToObj: (SELF), (VARIABLE), 8, (PARENT), (VARIABLE), 8
     Unknown200: 0
     Unknown176: 1
     endUpon: 
@@ -405,7 +405,7 @@ startState: s32'SPStunEdgeObj'
   sprite: s32'null', 7
   Unknown449: s32'kyk_mahojin_end', 100
   sprite: s32'atk_line', 3
-  Unknown450: s32'kyk_spse'
+  linkParticleEx: s32'kyk_spse'
   playCharacterSFX: s32'2'
   hit: 
   sprite: s32'atk_line', 10
@@ -415,7 +415,7 @@ startState: s32'SPStunEdgeObj'
   sprite: s32'null', 7
   Unknown449: s32'kyk_mahojin_end', 100
   sprite: s32'atk_line', 3
-  Unknown450: s32'kyk_spse'
+  linkParticleEx: s32'kyk_spse'
   hit: 
   playCharacterSFX: s32'2'
   sprite: s32'atk_line', 10
@@ -425,7 +425,7 @@ startState: s32'SPStunEdgeObj'
   sprite: s32'null', 7
   Unknown449: s32'kyk_mahojin_end', 100
   sprite: s32'atk_line', 3
-  Unknown450: s32'kyk_spse'
+  linkParticleEx: s32'kyk_spse'
   hit: 
   playCharacterSFX: s32'2'
   sprite: s32'atk_line', 10
@@ -461,9 +461,9 @@ startState: s32'ChargedStunEdgeObj'
     upon: 35
       Unknown2176: 23
       endUpon: 
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'kyk_secharge_end', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
@@ -477,21 +477,21 @@ startState: s32'ChargedStunEdgeObj'
         storeValue: (VARIABLE), 51, (STATIC), 0
         Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
         if: (VARIABLE), 0
-          Unknown53: 23, 2, 61, 4, 2, 45
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 45
           if: (VARIABLE), 61
             storeValue: (VARIABLE), 51, (STATIC), 1
             Unknown60: '0x17000000670000000400000067000000'
-            Unknown53: 23, 2, 62, 23, 2, 17
-            Unknown53: 23, 2, 63, 4, 2, 17
-            Unknown54: 1, 2, 62, 2, 63
+            storeFromObjToObj: (SELF), (VARIABLE), 62, (SELF), (VARIABLE), 17
+            storeFromObjToObj: (SELF), (VARIABLE), 63, (STACK_0), (VARIABLE), 17
+            modifyVar: (SUB), (VARIABLE), 62, (VARIABLE), 63
             ifOperation: (IS_LESSER), (VARIABLE), 62, (STATIC), 0
-              Unknown54: 2, 2, 62, 0, -1
+              modifyVar: (MUL), (VARIABLE), 62, (STATIC), -1
               endIf: 
-            Unknown53: 23, 2, 64, 23, 2, 18
-            Unknown53: 23, 2, 65, 4, 2, 18
-            Unknown54: 1, 2, 64, 2, 65
+            storeFromObjToObj: (SELF), (VARIABLE), 64, (SELF), (VARIABLE), 18
+            storeFromObjToObj: (SELF), (VARIABLE), 65, (STACK_0), (VARIABLE), 18
+            modifyVar: (SUB), (VARIABLE), 64, (VARIABLE), 65
             ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 0
-              Unknown54: 2, 2, 64, 0, -1
+              modifyVar: (MUL), (VARIABLE), 64, (STATIC), -1
               endIf: 
             ifOperation: (IS_LESSER), (VARIABLE), 62, (STATIC), 60000
               ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 120000
@@ -499,7 +499,7 @@ startState: s32'ChargedStunEdgeObj'
                 storeValue: (VARIABLE), 45, (STATIC), 0
                 Unknown1766: 4, 23
                 createObject2: s32'SPChargedStunEdgeObj', 100
-                Unknown19: 23
+                deactivateObj: (SELF)
                 endIf: 
               endIf: 
             endIf: 
@@ -511,22 +511,22 @@ startState: s32'ChargedStunEdgeObj'
     Unknown58: 1
     endUpon: 
   sprite: s32'null', 15
-  Unknown450: s32'kyk_secharge_start'
-  Unknown454: 2
-  Unknown456: 2
+  linkParticleEx: s32'kyk_secharge_start'
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
   Unknown458: 2
   Unknown3: 
-  Unknown450: s32'kyk_secharge_loop'
-  grabOrRelease: 
+  linkParticleEx: s32'kyk_secharge_loop'
+  hitUnchecked: 
   storeValue: (VARIABLE), 45, (STATIC), 1
-  Unknown454: 0
-  Unknown456: 0
+  linkObjPositionTo: (NULL)
+  Unknown456: (NULL)
   Unknown458: 0
   Unknown2149: 2
   sprite: s32'KYE4_00', 3
-  Unknown454: 0
+  linkObjPositionTo: (NULL)
   Unknown458: 0
-  Unknown456: 0
+  Unknown456: (NULL)
   physicsXImpulse: 10500
   hit: 
   setMarker: s32'loop'
@@ -589,14 +589,14 @@ startState: s32'SPChargedStunEdgeObj'
     Unknown2180: 1
     Unknown2181: 1
     Unknown2185: 1
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown14: s32'koware'
       endUpon: 
     endUpon: 
   sprite: s32'null', 8
   Unknown449: s32'kyk_mahojin_end', 100
   sprite: s32'sp_chargestun2_00', 2
-  Unknown450: s32'kyk_spsechargesord_loop'
+  linkParticleEx: s32'kyk_spsechargesord_loop'
   hit: 
   playSFX: s32'GG2_014'
   sprite: s32'sp_chargestun2_01', 2
@@ -620,13 +620,13 @@ startState: s32'SPChargedStunEdgeObj'
   setMarker: s32'koware'
   sprite: s32'null', 20
   recoveryState: 
-  Unknown450: s32'kyk_spsechargesord_end'
+  linkParticleEx: s32'kyk_spsechargesord_end'
   endState: 
 
 startState: s32'obj_kyk_secharge_power'
   sprite: s32'null', 30
-  Unknown454: 2
-  Unknown450: s32'kyk_secharge_power'
+  linkObjPositionTo: (PARENT)
+  linkParticleEx: s32'kyk_secharge_power'
   endState: 
 
 startState: s32'SacredEdgeObj'
@@ -640,7 +640,7 @@ startState: s32'SacredEdgeObj'
     setAttachOpponent: 0
     untechableTime: 30
     Unknown58: 1
-    Unknown450: s32'kyk_sacred_loop'
+    linkParticleEx: s32'kyk_sacred_loop'
     Unknown2178: 
     numberOfHits: 5
     Unknown2189: 1
@@ -652,9 +652,9 @@ startState: s32'SacredEdgeObj'
     upon: 2
       Unknown2176: 23
       endUpon: 
-    upon: 45
+    upon: (ON_DESTROY)
       Unknown448: s32'kyk_sacred_end', 100
-      Unknown19: 23
+      deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
       ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 250000
@@ -668,21 +668,21 @@ startState: s32'SacredEdgeObj'
         storeValue: (VARIABLE), 51, (STATIC), 0
         Unknown33: '0x4D61686F6A696E00000000000000000000000000000000000000000000000000040000000200000034000000'
         if: (VARIABLE), 0
-          Unknown53: 23, 2, 61, 4, 2, 45
+          storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 45
           if: (VARIABLE), 61
             storeValue: (VARIABLE), 51, (STATIC), 1
             Unknown60: '0x17000000670000000400000067000000'
-            Unknown53: 23, 2, 62, 23, 2, 17
-            Unknown53: 23, 2, 63, 4, 2, 17
-            Unknown54: 1, 2, 62, 2, 63
+            storeFromObjToObj: (SELF), (VARIABLE), 62, (SELF), (VARIABLE), 17
+            storeFromObjToObj: (SELF), (VARIABLE), 63, (STACK_0), (VARIABLE), 17
+            modifyVar: (SUB), (VARIABLE), 62, (VARIABLE), 63
             ifOperation: (IS_LESSER), (VARIABLE), 62, (STATIC), 0
-              Unknown54: 2, 2, 62, 0, -1
+              modifyVar: (MUL), (VARIABLE), 62, (STATIC), -1
               endIf: 
-            Unknown53: 23, 2, 64, 23, 2, 18
-            Unknown53: 23, 2, 65, 4, 2, 18
-            Unknown54: 1, 2, 64, 2, 65
+            storeFromObjToObj: (SELF), (VARIABLE), 64, (SELF), (VARIABLE), 18
+            storeFromObjToObj: (SELF), (VARIABLE), 65, (STACK_0), (VARIABLE), 18
+            modifyVar: (SUB), (VARIABLE), 64, (VARIABLE), 65
             ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 0
-              Unknown54: 2, 2, 64, 0, -1
+              modifyVar: (MUL), (VARIABLE), 64, (STATIC), -1
               endIf: 
             ifOperation: (IS_LESSER), (VARIABLE), 62, (STATIC), 40000
               ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 120000
@@ -690,7 +690,7 @@ startState: s32'SacredEdgeObj'
                 storeValue: (VARIABLE), 45, (STATIC), 0
                 Unknown1766: 4, 23
                 createObject2: s32'SPSacredEdgeObj', 100
-                Unknown19: 23
+                deactivateObj: (SELF)
                 endIf: 
               endIf: 
             endIf: 
@@ -733,7 +733,7 @@ startState: s32'SPSacredEdgeObj'
     hitAirPushbackY: 25000
     untechableTime: 40
     riscMinus: 15
-    Unknown450: s32'kyk_sacredsp'
+    linkParticleEx: s32'kyk_sacredsp'
     endUpon: 
   sprite: s32'atk_line01', 3
   hit: 
@@ -746,8 +746,8 @@ startState: s32'RideAura'
   upon: (IMMEDIATE)
     Unknown245: 
     Unknown1152: 1
-    Unknown454: 2
-    Unknown457: 2
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
     setObjectSize: 1600
     endUpon: 
   setMarker: s32'loop'
@@ -759,102 +759,102 @@ startState: s32'RideAura'
 
 startState: s32'obj_kyk_greedsever'
   sprite: s32'null', 120
-  Unknown450: s32'kyk_greedsever'
-  Unknown454: 2
-  Unknown456: 2
-  Unknown457: 2
+  linkParticleEx: s32'kyk_greedsever'
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown457: (PARENT)
   endState: 
 
 startState: s32'greed_long2F'
   Unknown294: 1
-  Unknown456: 2
-  Unknown454: 2
+  Unknown456: (PARENT)
+  linkObjPositionTo: (PARENT)
   Unknown458: 2
   upon: (AFTER_EXIT)
-    Unknown454: 0
-    Unknown456: 0
+    linkObjPositionTo: (NULL)
+    Unknown456: (NULL)
     endUpon: 
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 3
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endIf: 
     endUpon: 
   sprite: s32'null', 2
-  Unknown450: s32'kyk_greedsever_one'
+  linkParticleEx: s32'kyk_greedsever_one'
   sprite: s32'null', 80
-  Unknown450: s32'kyk_greedsever_one'
+  linkParticleEx: s32'kyk_greedsever_one'
   endState: 
 
 startState: s32'greed_long1F'
   Unknown294: 1
-  Unknown456: 2
-  Unknown454: 2
+  Unknown456: (PARENT)
+  linkObjPositionTo: (PARENT)
   Unknown458: 2
   upon: (AFTER_EXIT)
-    Unknown454: 0
-    Unknown456: 0
+    linkObjPositionTo: (NULL)
+    Unknown456: (NULL)
     endUpon: 
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 3
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endIf: 
     endUpon: 
   sprite: s32'null', 1
-  Unknown450: s32'kyk_greedsever_one'
+  linkParticleEx: s32'kyk_greedsever_one'
   sprite: s32'null', 80
-  Unknown450: s32'kyk_greedsever_one'
+  linkParticleEx: s32'kyk_greedsever_one'
   endState: 
 
 startState: s32'greed_long0F'
   Unknown294: 1
-  Unknown456: 2
-  Unknown454: 2
+  Unknown456: (PARENT)
+  linkObjPositionTo: (PARENT)
   Unknown458: 2
   upon: (AFTER_EXIT)
-    Unknown454: 0
-    Unknown456: 0
+    linkObjPositionTo: (NULL)
+    Unknown456: (NULL)
     endUpon: 
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 3
-      Unknown454: 0
+      linkObjPositionTo: (NULL)
       endIf: 
     endUpon: 
   sprite: s32'null', 80
-  Unknown450: s32'kyk_greedsever_one'
+  linkParticleEx: s32'kyk_greedsever_one'
   endState: 
 
 startState: s32'Thunder_stand'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown450: s32'kyk_thunder_sword_stand'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'kyk_thunder_sword_stand'
     endUpon: 
   sprite: s32'null', 50
   endState: 
 
 startState: s32'Thunder_walk'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown450: s32'kyk_thunder_sword_walk'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'kyk_thunder_sword_walk'
     endUpon: 
   sprite: s32'null', 50
   endState: 
 
 startState: s32'Thunder_chargestun'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown450: s32'kyk_thunder_chargestun'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    linkParticleEx: s32'kyk_thunder_chargestun'
     endUpon: 
   sprite: s32'null', 50
   endState: 
 
 startState: s32'Nage_thunder'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown456: 3
-    Unknown450: s32'kyk_nage_slash'
+    Unknown457: (PLAYER)
+    Unknown456: (PLAYER)
+    linkParticleEx: s32'kyk_nage_slash'
     Unknown1769: 1
     endUpon: 
   sprite: s32'null', 80
@@ -862,45 +862,45 @@ startState: s32'Nage_thunder'
 
 startState: s32'Slash_5HS'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_slash_5hs'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_slash_5hs'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'Slash_3HS'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_slash_3hs'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_slash_3hs'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'Slash_6HS'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_slash_6hs1'
+    Unknown457: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_slash_6hs1'
     endUpon: 
   sprite: s32'null', 120
   endState: 
 
 startState: s32'Slash_6HS_re1'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_slash_6hs_re1'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_slash_6hs_re1'
     upon: (AFTER_EXIT)
-      Unknown454: 0
-      Unknown456: 0
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
       endUpon: 
     endUpon: 
   sprite: s32'null', 40
@@ -908,13 +908,13 @@ startState: s32'Slash_6HS_re1'
 
 startState: s32'Slash_6HS_re2'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_slash_6hs_re2'
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_slash_6hs_re2'
     upon: (AFTER_EXIT)
-      Unknown454: 0
-      Unknown456: 0
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
       endUpon: 
     endUpon: 
   sprite: s32'null', 40
@@ -922,44 +922,44 @@ startState: s32'Slash_6HS_re2'
 
 startState: s32'Slash_JS'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_slash_js'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_slash_js'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
 startState: s32'Stundipper'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_stundipper'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_stundipper'
     endUpon: 
   sprite: s32'null', 50
   endState: 
 
 startState: s32'Vaporthrust'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_vaporthrust_atk'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_vaporthrust_atk'
     endUpon: 
   sprite: s32'null', 80
   endState: 
 
 startState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
-    Unknown456: 3
-    Unknown466: 2
-    Unknown450: s32'kyk_neoblitz'
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown466: (PARENT)
+    linkParticleEx: s32'kyk_neoblitz'
     endUpon: 
   sprite: s32'null', 80
   endState: 
@@ -969,7 +969,7 @@ startState: s32'Scn_Rtl_start'
     Unknown294: 1
     endUpon: 
   sprite: s32'null', 150
-  Unknown450: s32'kyk_rtl_start'
+  linkParticleEx: s32'kyk_rtl_start'
   endState: 
 
 startState: s32'Scn_Rtl_spark'
@@ -977,14 +977,14 @@ startState: s32'Scn_Rtl_spark'
     Unknown294: 1
     endUpon: 
   sprite: s32'null', 150
-  Unknown450: s32'kyk_rtl_spark'
+  linkParticleEx: s32'kyk_rtl_spark'
   endState: 
 
 startState: s32'Scn_Rtl_core'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     if: (VARIABLE), 84
       upon: (FRAME_STEP)
         Unknown1879: 
@@ -993,21 +993,21 @@ startState: s32'Scn_Rtl_core'
     endUpon: 
   Unknown24: s32'Boss', 2, 84
   sprite: s32'null', 60
-  Unknown450: s32'kyk_rtl_core'
+  linkParticleEx: s32'kyk_rtl_core'
   Unknown3: 
   exitState: 
   setMarker: s32'Boss'
   sprite: s32'null', 2147483647
-  Unknown450: s32'kyk_rtl_core'
+  linkParticleEx: s32'kyk_rtl_core'
   Unknown3: 
   exitState: 
   endState: 
 
 startState: s32'Scn_Rtl_coreair'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown456: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown456: (PLAYER)
+    Unknown457: (PLAYER)
     if: (VARIABLE), 84
       upon: (FRAME_STEP)
         Unknown1879: 
@@ -1016,97 +1016,97 @@ startState: s32'Scn_Rtl_coreair'
     endUpon: 
   Unknown24: s32'Boss', 2, 84
   sprite: s32'null', 60
-  Unknown450: s32'kyk_rtl_coreair'
+  linkParticleEx: s32'kyk_rtl_coreair'
   Unknown3: 
   exitState: 
   setMarker: s32'Boss'
   sprite: s32'null', 2147483647
-  Unknown450: s32'kyk_rtl_coreair'
+  linkParticleEx: s32'kyk_rtl_coreair'
   Unknown3: 
   exitState: 
   endState: 
 
 startState: s32'Scn_Rtl_sub'
   upon: (IMMEDIATE)
-    Unknown454: 3
-    Unknown457: 3
+    linkObjPositionTo: (PLAYER)
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'kyk_rtl_sub'
+  linkParticleEx: s32'kyk_rtl_sub'
   endState: 
 
 startState: s32'Sacred_start1'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown294: 1
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'kyk_sacred_start1'
+  linkParticleEx: s32'kyk_sacred_start1'
   endState: 
 
 startState: s32'Sacred_start2'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     Unknown294: 1
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'kyk_sacred_start2'
+  linkParticleEx: s32'kyk_sacred_start2'
   endState: 
 
 startState: s32'SpChargeStanSord'
   upon: (IMMEDIATE)
-    Unknown99: 300000
-    Unknown94: 150000
+    addPositionY: 300000
+    addPositionX: 150000
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'kyk_spsechargesord_loop'
+  linkParticleEx: s32'kyk_spsechargesord_loop'
   sprite: s32'null', 20
-  Unknown450: s32'kyk_spsechargesord_end'
+  linkParticleEx: s32'kyk_spsechargesord_end'
   endState: 
 
 startState: s32'TojoEff00'
   upon: (IMMEDIATE)
-    Unknown457: 3
+    Unknown457: (PLAYER)
     endUpon: 
   sprite: s32'null', 50
   playCharacterSFX: s32'1'
-  Unknown450: s32'kyk_tojo_anim00'
+  linkParticleEx: s32'kyk_tojo_anim00'
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'TojoEff01'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
     endUpon: 
   sprite: s32'null', 60
-  Unknown450: s32'kyk_tojo_anim01'
+  linkParticleEx: s32'kyk_tojo_anim01'
   endState: 
 
 startState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
-    Unknown457: 2
-    Unknown450: s32'kyk_ichigeki_bg'
+    Unknown457: (PARENT)
+    linkParticleEx: s32'kyk_ichigeki_bg'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
 startState: s32'Ichigeki_atk'
   upon: (IMMEDIATE)
-    Unknown456: 3
-    Unknown457: 2
-    Unknown450: s32'kyk_ichigeki_tuki'
+    Unknown456: (PLAYER)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'kyk_ichigeki_tuki'
     endUpon: 
   sprite: s32'null', 1200
   endState: 
 
 startState: s32'kyk_ichigeki_screen'
   upon: (IMMEDIATE)
-    Unknown457: 3
-    Unknown454: 3
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
     endUpon: 
   sprite: s32'null', 1200
-  Unknown450: s32'kyk_ichigeki_screen'
+  linkParticleEx: s32'kyk_ichigeki_screen'
   endState: 
 
 startState: s32'ACEvtKYK_7A'
@@ -1253,11 +1253,11 @@ startState: s32'ACEvtKYK_8A'
     Unknown2114: -16777216, -16777216, 1
     Unknown2107: '0x4576656E74504F543038415F303100000000000000000000000000000000000000000000'
     Unknown2121: 0
-    Unknown94: 300000
+    addPositionX: 300000
     Unknown40: 
     Unknown2109: '0x636D6E5F6576745F706F74303030000000000000000000000000000000000000504F5400000000000000000000000000000000000000000000000000000000006400000002000000'
     Unknown2121: 2
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown40: 
     endUpon: 
   sprite: s32'null', 1
@@ -1335,7 +1335,7 @@ startState: s32'ACEvtKYK_8B'
     Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
     Unknown2109: '0x636D6E5F6576745F706F74303030000000000000000000000000000000000000504F5400000000000000000000000000000000000000000000000000000000006400000002000000'
     Unknown2121: 2
-    Unknown94: -300000
+    addPositionX: -300000
     Unknown40: 
     endUpon: 
   sprite: s32'null', 1
@@ -1410,7 +1410,7 @@ startState: s32'JavelinObj'
   sprite: s32'null', 8
   Unknown449: s32'kyk_mahojin_end', 100
   sprite: s32'sp_chargestun2_00', 3
-  Unknown450: s32'kyk_spsechargesord_loop'
+  linkParticleEx: s32'kyk_spsechargesord_loop'
   hit: 
   playSFX: s32'GG2_014'
   sprite: s32'sp_chargestun2_01', 4
@@ -1421,7 +1421,7 @@ startState: s32'JavelinObj'
   setMarker: s32'koware'
   sprite: s32'null', 10
   recoveryState: 
-  Unknown450: s32'kyk_spsechargesord_end'
+  linkParticleEx: s32'kyk_spsechargesord_end'
   endState: 
 
 startState: s32'SnowflakeObj'
@@ -1442,7 +1442,7 @@ startState: s32'SnowflakeObj'
     Unknown458: 3
     endUpon: 
   sprite: s32'KYEL_00', 1
-  Unknown450: s32'kyk_airdust_start'
+  linkParticleEx: s32'kyk_airdust_start'
   sprite: s32'KYEL_13', 1
   sprite: s32'KYEL_00', 1
   sprite: s32'KYEL_13', 1
@@ -1452,22 +1452,22 @@ startState: s32'SnowflakeObj'
   sprite: s32'KYEL_13', 2
   sprite: s32'KYEL_00', 2
   sprite: s32'KYEL_01_rx', 3
-  Unknown450: s32'kyk_airdust_loop'
+  linkParticleEx: s32'kyk_airdust_loop'
   hit: 
   sprite: s32'KYEL_02_rx', 16
-  Unknown450: s32'kyk_airdust_end'
+  linkParticleEx: s32'kyk_airdust_end'
   hit: 
   sprite: s32'KYEL_01_rx', 16
-  Unknown450: s32'kyk_airdust_end'
+  linkParticleEx: s32'kyk_airdust_end'
   hit: 
   sprite: s32'KYEL_02_rx', 16
-  Unknown450: s32'kyk_airdust_end'
+  linkParticleEx: s32'kyk_airdust_end'
   hit: 
   sprite: s32'KYEL_01_rx', 16
-  Unknown450: s32'kyk_airdust_end'
+  linkParticleEx: s32'kyk_airdust_end'
   hit: 
   sprite: s32'KYEL_01_rx', 16
-  Unknown450: s32'kyk_airdust_end'
+  linkParticleEx: s32'kyk_airdust_end'
   hit: 
   sprite: s32'KYEL_01_rx', 2
   recoveryState: 

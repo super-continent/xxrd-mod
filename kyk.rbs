@@ -4,7 +4,7 @@ startSubroutine: s32'PreInit'
 
 startSubroutine: s32'PreInit2nd'
   storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     ifOpponentCharacter: s16'sol'
       Unknown2213: s32'entry_default', s32'entry_default', 2
       storeValue: (VARIABLE), 61, (STATIC), 1
@@ -18,7 +18,7 @@ startSubroutine: s32'PreInit2nd'
       storeValue: (VARIABLE), 61, (STATIC), 1
       endIf: 
     endIf: 
-  ifNot: 2, 61
+  ifNot: (VARIABLE), 61
     Unknown2213: s32'entry_default', s32'', 0
     storeValue: (VARIABLE), 61, (STATIC), 1
     endIf: 
@@ -829,7 +829,6 @@ startSubroutine: s32'RoundInit'
     Unknown1498: -328, -348, 202, 352
     Unknown1511: 120
     endMoveRegister: 
-  registerFunc: s32'RedRomanCancel'
   registerFunc: s32'FBJavelin'
   registerFunc: s32'FBSnowflake'
   registerFunc: s32'CmnNeutral'
@@ -918,6 +917,7 @@ startSubroutine: s32'RoundInit'
   registerFunc: s32'CmnMaximumBurst'
   registerFunc: s32'CmnDamageBurst'
   registerFunc: s32'DeadAngleAttack'
+  registerFunc: s32'RedRomanCancel'
   registerFunc: s32'RomanCancelHit'
   registerFunc: s32'IchigekiJunbi'
   registerFunc: s32'MOMSuki'
@@ -1866,7 +1866,7 @@ startState: s32'CmnActBDownLoop'
   Unknown2323: s32'No20Miss'
   sprite: s32'kyk060_09', 10
   if: (VARIABLE), 133
-    Unknown54: 0, 2, 123, 0, 1
+    modifyVar: (ADD), (VARIABLE), 123, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 123, (STATIC), 6
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (STATIC), 252
         Unknown2246: s32'head', 0
@@ -1937,7 +1937,7 @@ startState: s32'CmnActFDownLoop'
   Unknown2323: s32'No20Miss'
   sprite: s32'kyk063_11', 10
   if: (VARIABLE), 133
-    Unknown54: 0, 2, 123, 0, 1
+    modifyVar: (ADD), (VARIABLE), 123, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 123, (STATIC), 6
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (STATIC), 252
         Unknown2246: s32'head', 0
@@ -2010,7 +2010,7 @@ startState: s32'CmnActVDownLoop'
   Unknown2323: s32'No20Miss'
   sprite: s32'kyk062_15', 2147483647
   if: (VARIABLE), 133
-    Unknown54: 0, 2, 123, 0, 1
+    modifyVar: (ADD), (VARIABLE), 123, (STATIC), 1
     ifOperation: (IS_EQUAL), (VARIABLE), 123, (STATIC), 6
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 77, (STATIC), 252
         Unknown2246: s32'head', 0
@@ -2143,9 +2143,9 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'kyk085_09', 6
   sprite: s32'kyk085_10', 3
   sprite: s32'kyk085_11', 3
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'kyk085_12', 4
-  Unknown94: 30000
+  addPositionX: 30000
   Unknown3: 
   setMarker: s32'ko'
   sprite: s32'kyk085_00', 10
@@ -2163,9 +2163,9 @@ startState: s32'CmnActHizakuzure'
   sprite: s32'kyk085_09', 9
   sprite: s32'kyk085_10', 6
   sprite: s32'kyk085_11', 6
-  Unknown94: 30000
+  addPositionX: 30000
   sprite: s32'kyk085_12', 6
-  Unknown94: 30000
+  addPositionX: 30000
   Unknown3: 
   Unknown2144: 1, 100
   Unknown658: 100, 1, 0
@@ -2625,7 +2625,7 @@ startState: s32'entry_default'
         playVoice: s16'vxxx353'
         storeValue: (VARIABLE), 45, (STATIC), 1
         endIf: 
-      ifNot: 2, 45
+      ifNot: (VARIABLE), 45
         Unknown618: s16'vxxx304', 100, s16'vxxx305', 100, s16'', 0, s16'', 0
         endIf: 
       Unknown2211: s32'prev', -2147483618
@@ -2787,7 +2787,7 @@ startState: s32'CmnActResultWin'
         endIf: 
       else: 
         ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: 2, 143
+          ifNot: (VARIABLE), 143
             storeValue: (VARIABLE), 138, (STATIC), 0
             storeValue: (VARIABLE), 69, (STATIC), 3
             endIf: 
@@ -3404,7 +3404,7 @@ startState: s32'NmlAtk5E'
   sprite: s32'kyk205_05', 2
   sprite: s32'kyk205_06', 2
   sprite: s32'kyk205_07', 1
-  grabOrRelease: 
+  hitUnchecked: 
   Unknown1766: 5, 24
   Unknown2161: 100, 300000, 220000
   createObject2: s32'Mahojin', 130
@@ -3593,7 +3593,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'kyk305_11', 2147483647
   playVoice: s16'vxxx303'
   upon: (FRAME_STEP)
-    ifNot: 2, 95
+    ifNot: (VARIABLE), 95
       Unknown14: s32'TypeANext'
       Unknown23: 3
       endIf: 
@@ -4123,7 +4123,7 @@ startState: s32'ThrowExe'
   sprite: s32'kyk310_01', 20
   playSFX: s32'SE_CATCHA'
   sprite: s32'kyk310_02', 4
-  grabOrRelease: 
+  hitUnchecked: 
   playSFX: s32'SE_SWINGB'
   physicsYImpulse: 32900
   setGravity: 2100
@@ -4143,7 +4143,7 @@ startState: s32'ThrowExe'
   createObject2: s32'Nage_thunder', 130
   playSFX: s32'SE_SWINGF'
   sprite: s32'kyk310_09', 4
-  grabOrRelease: 
+  hitUnchecked: 
   groundHitEffect: (NORMAL_UPPER)
   Unknown1157: 0
   hitPushbackX: 100
@@ -4241,7 +4241,7 @@ startState: s32'AirThrowExe'
   Unknown546: 0, 115, 0
   sprite: s32'kyk320_07', 3
   Unknown546: 0, 115, 0
-  grabOrRelease: 
+  hitUnchecked: 
   sprite: s32'kyk320_08', 5
   sprite: s32'kyk320_09', 5
   setGravity: 1925
@@ -4456,7 +4456,7 @@ startState: s32'VaporThrustD'
   sprite: s32'kyk407_00', 1
   setThrowInvul: 1
   tensionGain: 50
-  Unknown94: 10500
+  addPositionX: 10500
   setStrikeInvul: 1
   if: (VARIABLE), 161
     setThrowInvul: 0
@@ -4464,9 +4464,9 @@ startState: s32'VaporThrustD'
     Unknown2155: 0
     endIf: 
   sprite: s32'kyk407_00', 1
-  Unknown94: 10500
+  addPositionX: 10500
   sprite: s32'kyk407_01', 1
-  Unknown94: 10500
+  addPositionX: 10500
   sprite: s32'kyk407_01', 1
   sprite: s32'kyk407_01', 1
   sprite: s32'kyk407_01', 1
@@ -4709,50 +4709,50 @@ startState: s32'GreedSaber'
   sprite: s32'kyk405_02', 4
   if: (VARIABLE), 45
     createObject2: s32'greed_long2F', 0
-    Unknown53: 1, 2, 1, 23, 0, -56250
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -56250
     endIf: 
   sprite: s32'kyk405_03', 4
   if: (VARIABLE), 45
     createObject2: s32'greed_long2F', 0
-    Unknown53: 1, 2, 1, 23, 0, -67500
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -67500
     endIf: 
   sprite: s32'kyk405_04_rx', 3
   if: (VARIABLE), 45
     createObject2: s32'greed_long0F', 2
-    Unknown53: 1, 2, 1, 23, 0, -90000
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -90000
     createObject2: s32'greed_long1F', 1
-    Unknown53: 1, 2, 1, 23, 0, -112500
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -112500
     createObject2: s32'greed_long2F', 0
-    Unknown53: 1, 2, 1, 23, 0, -135000
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -135000
     endIf: 
   hit: 
   sprite: s32'kyk405_05', 2
   if: (VARIABLE), 45
     createObject2: s32'greed_long0F', 2
-    Unknown53: 1, 2, 1, 23, 0, -164531
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -164531
     createObject2: s32'greed_long1F', 1
-    Unknown53: 1, 2, 1, 23, 0, -194062
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -194062
     createObject2: s32'greed_long2F', 0
-    Unknown53: 1, 2, 1, 23, 0, -225000
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -225000
     endIf: 
   setGravity: 1400
   sprite: s32'kyk405_06_rx', 3
   if: (VARIABLE), 45
     createObject2: s32'greed_long0F', 2
-    Unknown53: 1, 2, 1, 23, 0, -257343
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -257343
     createObject2: s32'greed_long1F', 1
-    Unknown53: 1, 2, 1, 23, 0, -282656
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -282656
     createObject2: s32'greed_long2F', 0
-    Unknown53: 1, 2, 1, 23, 0, -300937
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -300937
     endIf: 
   sprite: s32'kyk405_07_rx', 1
   if: (VARIABLE), 45
     createObject2: s32'greed_long0F', 2
-    Unknown53: 1, 2, 1, 23, 0, -322031
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -322031
     createObject2: s32'greed_long1F', 1
-    Unknown53: 1, 2, 1, 23, 0, -338906
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -338906
     createObject2: s32'greed_long2F', 0
-    Unknown53: 1, 2, 1, 23, 0, -350156
+    storeFromObjToObj: (PREVIOUS), (VARIABLE), 1, (SELF), (STATIC), -350156
     endIf: 
   sprite: s32'kyk405_08_rx', 5
   Unknown2161: 100, 12000, -150000
@@ -4858,7 +4858,7 @@ startState: s32'RideTheLightning'
     Unknown176: 1
     upon: (HIT)
       if: (VARIABLE), 164
-        ifNot: 2, 45
+        ifNot: (VARIABLE), 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
           endIf: 
@@ -5086,7 +5086,7 @@ startState: s32'AirRideTheLightning'
     Unknown1939: 1
     upon: (HIT)
       if: (VARIABLE), 164
-        ifNot: 2, 45
+        ifNot: (VARIABLE), 45
           storeValue: (VARIABLE), 45, (STATIC), 1
           Unknown2130: 5000
           endIf: 
@@ -5424,7 +5424,7 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  Unknown53: 23, 2, 32, 22, 2, 32
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
   Unknown2013: s32'xxx_kyk451cs', 0
   Unknown2028: s32'CmnCutSceneDamageLow'
   Unknown40: 
@@ -5471,7 +5471,7 @@ startState: s32'Ichigeki'
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 525
       Unknown1018: 1
-      grabOrRelease: 
+      hitUnchecked: 
       Unknown1059: 3
       Unknown996: 0, 0, 0
       hitstop: 0
