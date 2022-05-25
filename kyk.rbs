@@ -4361,6 +4361,7 @@ startState: s32'AirStunEdge2'
 startState: s32'VaporThrustC'
   upon: (IMMEDIATE)
     Unknown725: 1
+    addGatlingOption: s32'RedRomanCancel'
     hitEffectLightning: 1
     groundHitEffect: (AIR_LAUNCH)
     airHitEffect: (AIR_LAUNCH)
@@ -4431,6 +4432,7 @@ startState: s32'VaporThrustD'
   upon: (IMMEDIATE)
     Unknown725: 1
     hitEffectLightning: 1
+    addGatlingOption: s32'RedRomanCancel'
     groundHitEffect: (AIR_LAUNCH)
     airHitEffect: (AIR_LAUNCH)
     attackLevel: 2
@@ -4516,6 +4518,7 @@ startState: s32'AirVaporThrust'
   upon: (IMMEDIATE)
     Unknown725: 1
     hitEffectLightning: 1
+    addGatlingOption: s32'RedRomanCancel'
     groundHitEffect: (AIR_LAUNCH)
     airHitEffect: (AIR_LAUNCH)
     attackLevel: 2
@@ -4596,6 +4599,7 @@ startState: s32'StunDipper'
     guardType: (LOW)
     attackLevel: 3
     damage: 12
+    addGatlingOption: s32'RedRomanCancel'
     tensionGainOnConnect: 40
     hitAirPushbackX: 12250
     hitAirPushbackY: 10500
@@ -4669,6 +4673,7 @@ startState: s32'GreedSaber'
   upon: (IMMEDIATE)
     Unknown725: 1
     hitEffectLightning: 1
+    addGatlingOption: s32'RedRomanCancel'
     guardType: (HIGH)
     groundHitEffect: (AIR_LAUNCH)
     airHitEffect: (AIR_LAUNCH)
@@ -4775,6 +4780,7 @@ startState: s32'HolyBrand'
     attackLevel: 3
     damage: 40
     hitEffectLightning: 1
+    addGatlingOption: s32'RedRomanCancel'
     groundHitEffect: (STAGGER)
     staggerDuration: 62
     hitAirPushbackX: 20000
@@ -4840,6 +4846,7 @@ startState: s32'RideTheLightning'
     groundHitEffect: (AIR_FACE_UP)
     Unknown1110: 1
     attackLevel: 2
+    addGatlingOption: s32'RedRomanCancel'
     damage: 36
     stunValue: 0
     if: (VARIABLE), 164
@@ -5066,6 +5073,7 @@ startState: s32'AirRideTheLightning'
     hitEffectLightning: 1
     groundHitEffect: (AIR_FACE_UP)
     Unknown1110: 1
+    addGatlingOption: s32'RedRomanCancel'
     attackLevel: 2
     damage: 36
     Unknown1051: 1
