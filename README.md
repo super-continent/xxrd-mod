@@ -54,3 +54,5 @@ A mod for Guilty Gear Xrd: Rev2 to add features similar to the Guilty Gear XX Se
 - FB Grausam Impuls: 236D (grounded only)
 ### FRC Points
 - Shmerz Berg/Gebrechlich Licht: The moment the projectile appears
+- Give it to me HERE: Any point during the move
+- Scharf Kugel: The moment the projectile appears
