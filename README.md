@@ -50,6 +50,7 @@ A mod for Guilty Gear Xrd: Rev2 to add features similar to the Guilty Gear XX Se
 
 ## Raven
 ### New Moves
-- FB Gebrechlich Licht: 236D
+- FB Gebrechlich Licht: 236D (in air)
+- FB Grausam Impuls: 236D (grounded only)
 ### FRC Points
 - Shmerz Berg/Gebrechlich Licht: The moment the projectile appears
