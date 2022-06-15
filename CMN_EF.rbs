@@ -20,7 +20,7 @@ startSubroutine: s32'cmn_IchigekiInit'
   upon: 78
     screenShake: 1, 3
     hitstop: 22
-    Unknown23: 78
+    clearUpon: 78
     endUpon: 
   endSubroutine: 
 
@@ -44,37 +44,37 @@ startSubroutine: s32'cmn_SkillInit'
   addMove: s32'CmnFWalk'
     moveType: 1
     characterState: (STANDING)
-    addMoveFlag: 1
+    addMoveCondition: 1
     moveInput: (INPUT_6)
     Unknown1394: s32'CmnActFWalk'
     endMoveRegister: 
   addMove: s32'CmnFDash'
     moveType: 3
     characterState: (STANDING)
-    addMoveFlag: 1
-    moveInput: 217
+    addMoveCondition: 1
+    moveInput: (INPUT_DASH_TRG)
     Unknown1394: s32'CmnActFDash'
     endMoveRegister: 
   addMove: s32'CmnBWalk'
     moveType: 2
     characterState: (STANDING)
-    addMoveFlag: 1
+    addMoveCondition: 1
     moveInput: (INPUT_4)
     Unknown1394: s32'CmnActBWalk'
     endMoveRegister: 
   addMove: s32'CmnBDash'
     moveType: 4
     characterState: (STANDING)
-    addMoveFlag: 1
-    addMoveFlag: 97
-    moveInput: 289
+    addMoveCondition: 1
+    addMoveCondition: 97
+    moveInput: (INP_BDASH_TRG_2F)
     Unknown1394: s32'CmnActBDash'
     endMoveRegister: 
   addMove: s32'CmnVJump'
     moveType: 7
     characterState: (STANDING)
     moveInput: (INPUT_ANY_UP)
-    addMoveFlag: 6
+    addMoveCondition: (JUMP_COUNT_OK)
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 16388
     Unknown1547: 
@@ -83,8 +83,8 @@ startSubroutine: s32'cmn_SkillInit'
     moveType: 6
     characterState: (STANDING)
     moveInput: (INPUT_ANY_UP)
-    moveInput: 95
-    addMoveFlag: 6
+    moveInput: (INPUT_ANY_BACK)
+    addMoveCondition: (JUMP_COUNT_OK)
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 65540
     Unknown1547: 
@@ -94,7 +94,7 @@ startSubroutine: s32'cmn_SkillInit'
     characterState: (STANDING)
     moveInput: (INPUT_ANY_UP)
     moveInput: (INPUT_ANY_FORWARD)
-    addMoveFlag: 6
+    addMoveCondition: (JUMP_COUNT_OK)
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 32772
     Unknown1547: 
@@ -103,9 +103,9 @@ startSubroutine: s32'cmn_SkillInit'
     moveType: 10
     characterState: (STANDING)
     moveInput: (INPUT_ANY_UP)
-    moveInput: 215
-    addMoveFlag: 6
-    addMoveFlag: 1
+    moveInput: (INPUT_SUPERJUMP)
+    addMoveCondition: (JUMP_COUNT_OK)
+    addMoveCondition: 1
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 16386
     Unknown1547: 
@@ -114,10 +114,10 @@ startSubroutine: s32'cmn_SkillInit'
     moveType: 9
     characterState: (STANDING)
     moveInput: (INPUT_ANY_UP)
-    moveInput: 95
-    moveInput: 215
-    addMoveFlag: 6
-    addMoveFlag: 1
+    moveInput: (INPUT_ANY_BACK)
+    moveInput: (INPUT_SUPERJUMP)
+    addMoveCondition: (JUMP_COUNT_OK)
+    addMoveCondition: 1
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 65538
     Unknown1547: 
@@ -127,9 +127,9 @@ startSubroutine: s32'cmn_SkillInit'
     characterState: (STANDING)
     moveInput: (INPUT_ANY_UP)
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: 215
-    addMoveFlag: 6
-    addMoveFlag: 1
+    moveInput: (INPUT_SUPERJUMP)
+    addMoveCondition: (JUMP_COUNT_OK)
+    addMoveCondition: 1
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 32770
     Unknown1547: 
@@ -137,66 +137,66 @@ startSubroutine: s32'cmn_SkillInit'
   addMove: s32'CmnVAirJump'
     moveType: 13
     characterState: (JUMPING)
-    moveInput: 216
-    addMoveFlag: 6
-    addMoveFlag: 110
+    moveInput: (INPUT_JUMP)
+    addMoveCondition: (JUMP_COUNT_OK)
+    addMoveCondition: 110
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 16388
     endMoveRegister: 
   addMove: s32'CmnBAirJump'
     moveType: 12
     characterState: (JUMPING)
-    moveInput: 216
-    moveInput: 95
-    addMoveFlag: 6
-    addMoveFlag: 110
+    moveInput: (INPUT_JUMP)
+    moveInput: (INPUT_ANY_BACK)
+    addMoveCondition: (JUMP_COUNT_OK)
+    addMoveCondition: 110
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 65540
     endMoveRegister: 
   addMove: s32'CmnFAirJump'
     moveType: 11
     characterState: (JUMPING)
-    moveInput: 216
+    moveInput: (INPUT_JUMP)
     moveInput: (INPUT_ANY_FORWARD)
-    addMoveFlag: 6
-    addMoveFlag: 110
+    addMoveCondition: (JUMP_COUNT_OK)
+    addMoveCondition: 110
     Unknown1394: s32'CmnActJumpPre'
     Unknown1395: 32772
     endMoveRegister: 
   addMove: s32'CmnBAirDash'
     moveType: 15
     characterState: (JUMPING)
-    moveInput: 218
-    addMoveFlag: 7
-    addMoveFlag: 2
-    addMoveFlag: 77
-    addMoveFlag: 97
+    moveInput: (INPUT_BDASH_TRG)
+    addMoveCondition: (AIRDASH_COUNT_OK)
+    addMoveCondition: (AIR)
+    addMoveCondition: 77
+    addMoveCondition: 97
     Unknown1394: s32'CmnActAirBDash'
     endMoveRegister: 
   addMove: s32'CmnFAirDash'
     moveType: 14
     characterState: (JUMPING)
-    moveInput: 217
-    addMoveFlag: 7
-    addMoveFlag: 2
-    addMoveFlag: 77
+    moveInput: (INPUT_DASH_TRG)
+    addMoveCondition: (AIRDASH_COUNT_OK)
+    addMoveCondition: (AIR)
+    addMoveCondition: 77
     Unknown1394: s32'CmnActAirFDash'
     endMoveRegister: 
   addMove: s32'CmnActItemUse'
     moveType: (SPECIAL)
-    Unknown1387: 3
+    moveSubCategory: (ITEM_USE)
     characterState: (NONE)
     Unknown1394: s32'CmnActItemUse'
-    moveInput: 275
+    moveInput: (INPUT_ITEM)
     Unknown1511: 400
     endMoveRegister: 
   addMove: s32'CmnMaximumBurst'
     moveType: 24
     characterState: (NONE)
     Unknown1394: s32'CmnActBurst'
-    moveInput: 268
-    addMoveFlag: 104
-    addMoveFlag: 96
+    moveInput: (INPUT_BURST)
+    addMoveCondition: 104
+    addMoveCondition: 96
     Unknown1498: -272, -559, 535, 471
     Unknown1548: 
     Unknown1511: 0
@@ -205,9 +205,9 @@ startSubroutine: s32'cmn_SkillInit'
     moveType: 23
     characterState: (NONE)
     Unknown1394: s32'CmnActBurst'
-    moveInput: 268
-    addMoveFlag: 104
-    addMoveFlag: 96
+    moveInput: (INPUT_BURST)
+    addMoveCondition: 104
+    addMoveCondition: 96
     Unknown1406: 2
     Unknown1511: 200
     Unknown1513: 1440
@@ -218,18 +218,18 @@ startSubroutine: s32'cmn_SkillInit'
     Unknown1395: 65
     characterState: (NONE)
     Unknown1394: s32'_NEUTRAL'
-    moveInput: 214
-    addMoveFlag: (REQUIRES_25_TENSION)
+    moveInput: (INPUT_ROMAN_CANCEL)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'FaultlessDefenceStand'
     moveType: 26
     characterState: (STANDING)
     Unknown1394: s32'CmnActMidGuardLoop'
-    moveInput: (INPUT_DISALLOW_UP)
-    moveInput: 219
-    moveInput: 269
-    addMoveFlag: 105
+    moveInput: (INPUT_NOT_UP)
+    moveInput: (INPUT_EASYGUARD_BACK)
+    moveInput: (INPUT_HOLD_2BUTTON)
+    addMoveCondition: 105
     Unknown1511: 10
     endMoveRegister: 
   addMove: s32'FaultlessDefenceCrouch'
@@ -237,18 +237,18 @@ startSubroutine: s32'cmn_SkillInit'
     characterState: (CROUCHING)
     Unknown1394: s32'CmnActCrouchGuardLoop'
     moveInput: (INPUT_ANY_DOWN)
-    moveInput: 219
-    moveInput: 269
-    addMoveFlag: 105
+    moveInput: (INPUT_EASYGUARD_BACK)
+    moveInput: (INPUT_HOLD_2BUTTON)
+    addMoveCondition: 105
     Unknown1511: 10
     endMoveRegister: 
   addMove: s32'FaultlessDefenceAir'
     moveType: 26
     characterState: (JUMPING)
     Unknown1394: s32'CmnActAirGuardLoop'
-    moveInput: 219
-    moveInput: 269
-    addMoveFlag: 105
+    moveInput: (INPUT_EASYGUARD_BACK)
+    moveInput: (INPUT_HOLD_2BUTTON)
+    addMoveCondition: 105
     Unknown1511: 10
     endMoveRegister: 
   addMove: s32'RC_CmnNamepuA'
@@ -322,9 +322,9 @@ startSubroutine: s32'cmn_SkillInit'
   addMove: s32'RedRomanCancel'
     moveType: (SPECIAL)
     characterState: (NONE)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     Unknown1394: s32'CmnActRomanCancel'
-    moveInput: 214
+    moveInput: (INPUT_ROMAN_CANCEL)
     Unknown1510: 30
     Unknown1511: 160
     Unknown1514: 1
@@ -467,7 +467,7 @@ startState: s32'cmnHomingDash2Camera'
   endState: 
 
 startSubroutine: s32'cmnHomingDash2Initialize'
-  Unknown176: 1
+  resetVelocity: 1
   createObject2: s32'cmnHomingDash2Camera', 100
   storeFromObjToObj: (SELF), (VARIABLE), 0, (ENEMY), (VARIABLE), 158
   if: (VARIABLE), 0
@@ -687,8 +687,8 @@ startState: s32'cmn_Kirakira'
   Unknown111: 200
   multiplyYVelocityByPercent: 200
   Unknown1708: 200
-  Unknown109: 
-  Unknown114: 
+  setXPushToXSpeed: 
+  setYPushToYSpeed: 
   Unknown1706: 
   Unknown294: 1
   Unknown1769: 1
@@ -701,8 +701,8 @@ startState: s32'cmn_Kirakira'
   Unknown111: 2000
   multiplyYVelocityByPercent: 2000
   Unknown1708: 2000
-  Unknown110: 
-  Unknown115: 
+  setXSpeedToXPush: 
+  setYSpeedToYPush: 
   Unknown1707: 
   endState: 
 
@@ -892,12 +892,12 @@ startSubroutine: s32'cmnCG_Initialize'
   fadeColorBlue: 20
   playSFX: s32'GG2_027'
   Unknown2137: 0
-  upon: 2
-    Unknown23: 3
-    Unknown23: 33
-    Unknown23: 36
-    Unknown23: 11
-    Unknown23: 56
+  upon: (LANDING)
+    clearUpon: (FRAME_STEP)
+    clearUpon: 33
+    clearUpon: 36
+    clearUpon: (RECEIVE_ATTACK)
+    clearUpon: 56
     Unknown14: s32'landing'
     ifNot: (VARIABLE), 69
       storeValue: (VARIABLE), 69, (STATIC), 1
@@ -948,7 +948,7 @@ startSubroutine: s32'cmnCG_OnMuteki'
     Unknown14: s32'guard'
     endIf: 
   else: 
-    Unknown176: 1
+    resetVelocity: 1
     endElse: 
   Unknown1964: 255
   Unknown240: 
@@ -970,7 +970,7 @@ startSubroutine: s32'cmnCG_OnFrameStep'
       endIf: 
     endIf: 
   ifNot: (VARIABLE), 45
-    checkInput: 28
+    checkInput: (INPUT_HOLD_H)
     if: (VARIABLE), 0
       modifyVar: (ADD), (VARIABLE), 51, (STATIC), 1
       endIf: 
@@ -1092,10 +1092,10 @@ startState: s32'cmn_blitz_shield'
   endState: 
 
 startSubroutine: s32'cmnCG_MutekiEnd'
-  Unknown23: 3
-  Unknown23: 33
-  Unknown23: 36
-  Unknown23: 11
+  clearUpon: (FRAME_STEP)
+  clearUpon: 33
+  clearUpon: 36
+  clearUpon: (RECEIVE_ATTACK)
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 20
       if: (VARIABLE), 30
@@ -1125,7 +1125,7 @@ startSubroutine: s32'cmnCG_OnFrameStepAfter'
       Unknown41: 22
       Unknown2285: 2
       Unknown40: 
-      Unknown23: 42
+      clearUpon: 42
       endUpon: 
     endIf: 
   else: 
@@ -1145,7 +1145,7 @@ startSubroutine: s32'cmnCG_OnFrameStepAfter'
             Unknown41: 22
             Unknown2285: 2
             Unknown40: 
-            Unknown23: 42
+            clearUpon: 42
             endUpon: 
           endIf: 
         endIf: 
@@ -1180,11 +1180,11 @@ startSubroutine: s32'cmnCG_CancelReady'
 
 startSubroutine: s32'cmnCG_Attack'
   Unknown707: 
-  Unknown23: 3
-  Unknown23: 33
-  Unknown23: 36
-  Unknown23: 11
-  Unknown23: 56
+  clearUpon: (FRAME_STEP)
+  clearUpon: 33
+  clearUpon: 36
+  clearUpon: (RECEIVE_ATTACK)
+  clearUpon: 56
   callSubroutine: s32'CardDataIncrement', 0, 1, 0, 0, 0, 0, 0, 0
   callCmnEfFunc: s32'cmnCG_MutekiEnd'
   romanCancelAvailability: (DISALLOWED_ON_WHIFF_WITH_X_MARK)
@@ -1306,7 +1306,7 @@ startSubroutine: s32'cmn_Hizakuzure'
       endIf: 
     else: 
       ifNot: (VARIABLE), 16
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown14: s32'ko'
         endIf: 
       endElse: 
@@ -1318,7 +1318,7 @@ startState: s32'cmn_neoblitz_idling'
     linkObjPositionTo: (PLAYER)
     Unknown457: (PLAYER)
     Unknown458: 3
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       linkObjPositionTo: (NULL)
       endUpon: 
     endUpon: 
@@ -1364,19 +1364,19 @@ startState: s32'cmn_blitz_shield'
 
 startSubroutine: s32'cmnMOMFly'
   Unknown240: 
-  checkInput: 121
+  checkInput: (INPUT_ANY_FORWARD)
   if: (VARIABLE), 0
     addVelocityX: 1225
     endIf: 
-  checkInput: 95
+  checkInput: (INPUT_ANY_BACK)
   if: (VARIABLE), 0
     addVelocityX: -1225
     endIf: 
-  checkInput: 147
+  checkInput: (INPUT_ANY_UP)
   if: (VARIABLE), 0
     addVelocityY: 700
     endIf: 
-  checkInput: 69
+  checkInput: (INPUT_ANY_DOWN)
   if: (VARIABLE), 0
     addVelocityY: -1750
     endIf: 
@@ -1455,7 +1455,7 @@ startState: s32'cmnDebug1'
   sprite: s32'null', 420
   Unknown2220: 6000, 500, 1000
   Unknown2219: 1500000, 100
-  Unknown176: 1
+  resetVelocity: 1
   playSFX: s32'SE_KAKUSEIFINISH'
   sprite: s32'null', 1
   deactivateObj: (SELF)
@@ -1806,7 +1806,7 @@ startState: s32'cmn_BurstObjGoldHontai'
     upon: (HIT_OR_GUARD)
       Unknown1771: s32'cmn_BurstObjGoldObject', 23
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       recoveryState: 
       endUpon: 
     upon: 60
@@ -1860,7 +1860,7 @@ startState: s32'cmn_BurstObjGoldObject'
     upon: (HIT_OR_GUARD)
       Unknown1771: s32'cmn_BurstObjGoldHontai', 23
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       recoveryState: 
       endUpon: 
     upon: 60
@@ -1930,7 +1930,7 @@ startState: s32'cmn_BurstObjBlueHontai'
     upon: (HIT_OR_GUARD)
       Unknown1771: s32'cmn_BurstObjBlueObject', 23
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       recoveryState: 
       endUpon: 
     upon: (HIT)
@@ -1990,7 +1990,7 @@ startState: s32'cmn_BurstObjBlueObject'
     upon: (HIT_OR_GUARD)
       Unknown1771: s32'cmn_BurstObjBlueHontai', 23
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       recoveryState: 
       endUpon: 
     upon: (HIT)
@@ -2055,67 +2055,67 @@ startState: s32'cmn_KizetsuGenerator'
 startState: s32'cmn_KizetsuLoop'
   upon: (IMMEDIATE)
     storeValue: (VARIABLE), 45, (STATIC), 0
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 0
-        Unknown23: 23
+        clearUpon: (HIT_OR_BLOCK)
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 24
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
-        Unknown23: 24
+        clearUpon: 24
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 25
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
-        Unknown23: 25
+        clearUpon: 25
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 26
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 3
-        Unknown23: 26
+        clearUpon: 26
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 27
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 4
-        Unknown23: 27
+        clearUpon: 27
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 28
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 5
-        Unknown23: 28
+        clearUpon: 28
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 29
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 6
-        Unknown23: 29
+        clearUpon: 29
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
     upon: 30
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 7
-        Unknown23: 30
+        clearUpon: 30
         storeValue: (VARIABLE), 69, (STATIC), 1
-        Unknown23: 36
+        clearUpon: 36
         Unknown14: s32'dead'
         endIf: 
       endUpon: 
@@ -2618,7 +2618,7 @@ startState: s32'cmn_MOM_no022'
   setMarker: s32'landing'
   sprite: s32'null', 3
   Unknown2271: 0
-  Unknown176: 1
+  resetVelocity: 1
   setObjectSize: 900
   sprite: s32'null', 3
   setObjectSize: 800
@@ -2681,18 +2681,18 @@ startState: s32'cmn_MOM_no023'
           modifyAccumulator: (PERCENT), (STATIC), 1, (STATIC), 100
           if: (VARIABLE), 0
             Unknown14: s32'Bakuha'
-            Unknown23: 36
-            Unknown176: 1
-            Unknown23: 2
+            clearUpon: 36
+            resetVelocity: 1
+            clearUpon: (LANDING)
             endIf: 
           endIf: 
         else: 
-          checkInput: 275
+          checkInput: (INPUT_ITEM)
           if: (VARIABLE), 0
             Unknown14: s32'Bakuha'
-            Unknown23: 36
-            Unknown176: 1
-            Unknown23: 2
+            clearUpon: 36
+            resetVelocity: 1
+            clearUpon: (LANDING)
             endIf: 
           endElse: 
         endIf: 
@@ -2706,13 +2706,13 @@ startState: s32'cmn_MOM_no023'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 360
-  Unknown176: 1
+  resetVelocity: 1
   Unknown3: 
   setMarker: s32'Bakuha'
   sprite: s32'mom_sphere', 4
   Unknown363: -1
-  Unknown176: 1
-  Unknown23: 36
+  resetVelocity: 1
+  clearUpon: 36
   Unknown458: 0
   linkParticleEx: s32'mom_fau_item_bomb_explosion'
   setObjectSize: 1800
@@ -2763,7 +2763,7 @@ startState: s32'cmn_MOM_no024'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_06', 4
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'FAE0_06', 4
   setObjectSize: 1100
   sprite: s32'FAE0_06', 4
@@ -2966,7 +2966,7 @@ startState: s32'cmn_MOM_no026'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 4
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'null', 4
   setObjectSize: 1100
   sprite: s32'null', 4
@@ -3122,7 +3122,7 @@ startState: s32'cmn_MOM_no029'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     upon: 36
       if: (VARIABLE), 31
@@ -3163,7 +3163,7 @@ startState: s32'cmn_MOM_no029'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_MOM_no030'
@@ -3368,7 +3368,7 @@ startState: s32'cmn_MOM_no037'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'landing'
       endUpon: 
     storeValue: (VARIABLE), 99, (VARIABLE), 146
@@ -3461,7 +3461,7 @@ startState: s32'cmn_GunFlameHibashira'
       storeValue: (VARIABLE), 46, (STATIC), 1
       deactivateObj: (STACK_0)
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown1883: 
       storeValue: (VARIABLE), 46, (STATIC), 1
       endUpon: 
@@ -3479,7 +3479,7 @@ startState: s32'cmn_GunFlameHibashira'
       Unknown2247: 2, 115, 0, 0
       Unknown2161: 100, 100000, 0
       callEtcState: s32'cmn_GunFlameHibashira', 130
-      Unknown43: 4, 1
+      setObjectToStackSlot: (STACK_0), (PREVIOUS)
       endIf: 
     endIf: 
   sprite: s32'vrsol400_04', 3
@@ -3696,7 +3696,7 @@ startState: s32'cmn_MOM_no044'
     linkParticleEx: s32'mom_onpu_core'
     upon: (HIT_OR_GUARD)
       Unknown14: s32'hit'
-      Unknown23: 8
+      clearUpon: (HIT_OR_GUARD)
       storeValue: (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 0
         storeValue: (VARIABLE), 46, (STATIC), 1
@@ -3727,11 +3727,11 @@ startState: s32'cmn_MOM_no044'
       endUpon: 
     upon: (FRAME_STEP)
       ifNot: (VARIABLE), 45
-        checkInput: 147
+        checkInput: (INPUT_ANY_UP)
         if: (VARIABLE), 0
           addVelocityY: 280
           endIf: 
-        checkInput: 69
+        checkInput: (INPUT_ANY_DOWN)
         if: (VARIABLE), 0
           addVelocityY: -280
           endIf: 
@@ -3798,7 +3798,7 @@ startState: s32'cmn_MOM_no044'
   sprite: s32'INE0_00', 2
   Unknown338: 0
   createObject2: s32'cmn_OnpuHaretsu', 100
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'INE0_00', 2
   sprite: s32'INE0_00', 2
   sprite: s32'INE0_00', 2
@@ -3951,7 +3951,7 @@ startState: s32'cmn_MOM_no045'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -4043,7 +4043,7 @@ startState: s32'cmn_MOM_no047'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -4130,7 +4130,7 @@ startState: s32'cmn_MOM_no048'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -4359,7 +4359,7 @@ startState: s32'cmn_MOM_Eme'
   sprite: s32'MLE2_04', 2
   Unknown338: 105
   linkParticleEx: s32'mom_emeraldrain_hit'
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'MLE2_05', 2
   sprite: s32'MLE2_06', 2
   sprite: s32'MLE2_07', 2
@@ -4566,7 +4566,7 @@ startState: s32'cmn_MOM_no053'
   setMarker: s32'hit'
   sprite: s32'FAE0_04', 8
   recoveryState: 
-  Unknown23: 2
+  clearUpon: (LANDING)
   setThrowRange: -100000
   physicsXImpulse: -8750
   physicsYImpulse: 8750
@@ -4644,14 +4644,14 @@ startState: s32'cmn_MeteoInseki'
   sprite: s32'FAE0_05', 2147483647
   setMarker: s32'landing'
   sprite: s32'null', 80
-  Unknown176: 1
+  resetVelocity: 1
   screenShake: 1, 1
   linkParticleEx: s32'mom_fau_item_meteo_bound'
   sprite: s32'null', 1
   deactivateObj: (SELF)
   setMarker: s32'hit'
   sprite: s32'null', 80
-  Unknown176: 1
+  resetVelocity: 1
   linkParticleEx: s32'mom_fau_item_meteo_hit'
   sprite: s32'null', 1
   deactivateObj: (SELF)
@@ -4676,7 +4676,7 @@ startState: s32'cmn_MOM_no055'
   sprite: s32'FAE1_01', 2147483647
   setMarker: s32'landing'
   sprite: s32'FAE1_03', 20
-  Unknown176: 1
+  resetVelocity: 1
   Unknown338: 250
   createObject2: s32'cmn_SubItem_Poison', 100
   linkParticleEx: s32'mom_fau_item_poisonflask_end'
@@ -4752,7 +4752,7 @@ startState: s32'cmn_MOM_no056'
   Unknown164: 0
   Unknown166: 0
   linkParticleEx: s32'mom_fau_item_oilcan_yoko'
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'null', 5
   physicsXImpulse: 1000
   physicsYImpulse: 10000
@@ -4765,7 +4765,7 @@ startState: s32'cmn_MOM_no056'
   sprite: s32'null', 5
   physicsYImpulse: -5000
   sprite: s32'null', 29
-  Unknown176: 0
+  resetVelocity: 0
   sprite: s32'null', 90
   createObject2: s32'cmn_OilWater', 123
   sprite: s32'null', 8
@@ -4815,7 +4815,7 @@ startState: s32'cmn_OilWater'
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (VARIABLE), 146
         deactivateObj: (SELF)
         Unknown14: s32'end'
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         endIf: 
       endUpon: 
     endUpon: 
@@ -4864,7 +4864,7 @@ startState: s32'cmn_MOM_no057'
   deactivateObj: (SELF)
   Unknown448: s32'mom_fau_item_blackhole_end', 123
   createObject2: s32'cmn_Vacuum', 123
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_Vacuum'
@@ -4881,7 +4881,7 @@ startState: s32'cmn_Vacuum'
   sprite: s32'null', 2147483647
   Unknown2220: 600, 50, 100
   Unknown2219: 1500000, 100
-  Unknown176: 1
+  resetVelocity: 1
   playSFX: s32'SE_KAKUSEIFINISH'
   endState: 
 
@@ -5003,44 +5003,44 @@ startState: s32'cmn_MOM_no061'
     upon: 12
       if: (VARIABLE), 50
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 3
-          checkInput: 107
+          checkInput: (INPUT_5)
           ifNot: (VARIABLE), 0
             checkInput: 29
             if: (VARIABLE), 0
               storeValue: (VARIABLE), 52, (STATIC), 5
-              checkInput: 55
+              checkInput: (INPUT_1)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 1
                 endIf: 
-              checkInput: 68
+              checkInput: (INPUT_2)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 2
                 endIf: 
-              checkInput: 81
+              checkInput: (INPUT_3)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 3
                 endIf: 
-              checkInput: 94
+              checkInput: (INPUT_4)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 4
                 endIf: 
-              checkInput: 107
+              checkInput: (INPUT_5)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 5
                 endIf: 
-              checkInput: 120
+              checkInput: (INPUT_6)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 6
                 endIf: 
-              checkInput: 133
+              checkInput: (INPUT_7)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 7
                 endIf: 
-              checkInput: 146
+              checkInput: (INPUT_8)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 8
                 endIf: 
-              checkInput: 159
+              checkInput: (INPUT_9)
               if: (VARIABLE), 0
                 storeValue: (VARIABLE), 52, (STATIC), 9
                 endIf: 
@@ -5063,12 +5063,12 @@ startState: s32'cmn_MOM_no061'
           endIf: 
         endIf: 
       endUpon: 
-    upon: 2
+    upon: (LANDING)
       Unknown14: s32'End'
       endUpon: 
     upon: (AFTER_EXIT)
       storeValue: (VARIABLE), 50, (STATIC), 0
-      Unknown23: 47
+      clearUpon: (AFTER_EXIT)
       Unknown191: 0
       setObjectSize: 1000
       Unknown458: 0
@@ -5202,7 +5202,7 @@ startState: s32'cmn_MOM_no061'
   setMarker: s32'End'
   sprite: s32'keep', 20
   recoveryState: 
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2197: 0
   Unknown2198: 0
   linkParticleEx: s32'mom_secretgarden_end'
@@ -5283,7 +5283,7 @@ startState: s32'cmn_MOM_no062'
       endIf: 
     endIf: 
   sprite: s32'mom_crosswise', 2
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   Unknown448: s32'mom_sly_croswise01', 100
   sprite: s32'mom_crosswise', 7
   endState: 
@@ -5912,7 +5912,7 @@ startState: s32'cmn_MOM_no073'
           endIf: 
         endIf: 
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), -40
       endUpon: 
     endUpon: 
@@ -5948,7 +5948,7 @@ startState: s32'cmn_GunFlameHibashiraBoss'
     damage: 60
     linkParticleEx: s32'mom_gunflame'
     upon: (HIT_OR_GUARD)
-      Unknown1766: 2, 23
+      deactivateObjectFromSlot: (PARENT), (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'vrsol400_00', 3
@@ -6023,7 +6023,7 @@ startState: s32'cmn_MOM_no079'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     upon: 36
       if: (VARIABLE), 31
@@ -6064,7 +6064,7 @@ startState: s32'cmn_MOM_no079'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_MOM_no080'
@@ -6100,7 +6100,7 @@ startState: s32'cmn_MOM_no083'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2248: 0, 255
       Unknown2249: 0, -16776961
       callEtcState: s32'cmn_MOM_hanni', 100
@@ -6135,7 +6135,7 @@ startState: s32'cmn_MOM_no084'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2248: 0, 16711680
       Unknown2249: 0, -65536
       callEtcState: s32'cmn_MOM_hanni', 100
@@ -6170,7 +6170,7 @@ startState: s32'cmn_MOM_no085'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2249: 0, -256
       callEtcState: s32'cmn_MOM_hanni', 100
       playSFX: s32'GG2_021'
@@ -6203,7 +6203,7 @@ startState: s32'cmn_MOM_no086'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2248: 0, 8388608
       Unknown2249: 0, -32640
       callEtcState: s32'cmn_MOM_hanni', 100
@@ -6274,7 +6274,7 @@ startState: s32'cmn_MOM_no090'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2248: 0, -16711936
       Unknown2241: 0, 300
       callEtcState: s32'cmn_MOM_hanni', 100
@@ -6617,7 +6617,7 @@ startState: s32'cmn_MOM_no093_Attack'
   setMarker: s32'landing'
   sprite: s32'null', 3
   Unknown2271: 0
-  Unknown176: 1
+  resetVelocity: 1
   setObjectSize: 900
   sprite: s32'null', 3
   setObjectSize: 800
@@ -6761,8 +6761,8 @@ startState: s32'cmn_MOM_no094_Attack'
   hit: 
   setMarker: s32'bomb'
   sprite: s32'null', 30
-  Unknown23: 3
-  Unknown23: 8
+  clearUpon: (FRAME_STEP)
+  clearUpon: (HIT_OR_GUARD)
   playSFX: s32'SE_EXPLODE'
   Unknown2241: 0, 600
   Unknown449: s32'bb_explosion', 100
@@ -6778,7 +6778,7 @@ startState: s32'cmn_MOM_no095'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     Unknown2156: 0
     Unknown2178: 
@@ -6831,7 +6831,7 @@ startState: s32'cmn_MOM_no098'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2248: 0, 16527
       callEtcState: s32'cmn_MOM_hanni', 100
       playSFX: s32'GG2_021'
@@ -6876,7 +6876,7 @@ startState: s32'cmn_MOM_no101'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     upon: 36
       if: (VARIABLE), 31
@@ -6916,7 +6916,7 @@ startState: s32'cmn_MOM_no101'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_MOM_no102'
@@ -6969,7 +6969,7 @@ startState: s32'cmn_MOM_no106'
     setThrowRange: 0
     Unknown287: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       Unknown2249: 0, -2162433
       callEtcState: s32'cmn_MOM_hanni', 100
       playSFX: s32'GG2_021'
@@ -7172,11 +7172,11 @@ startState: s32'cmn_MOM_no110'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 3
-  Unknown176: 1
+  resetVelocity: 1
   Unknown3: 
   sprite: s32'FAE1_03', 6
   Unknown338: 0
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2248: 0, 16711935
   Unknown449: s32'cmn_mom_lightbulet_hit', 100
   createObject2: s32'cmn_SubItem_Poison2', 100
@@ -7393,7 +7393,7 @@ startState: s32'cmn_Meishi'
       endElse: 
     endIf: 
   sprite: s32'mom_Meishi_Obj', 5
-  Unknown176: 1
+  resetVelocity: 1
   ifNot: (VARIABLE), 50
     hit: 
     endIf: 
@@ -7803,7 +7803,7 @@ startState: s32'cmn_MOM_no115'
   setObjectWidth: 2000
   upon: (HIT_OR_GUARD)
     storeValue: (VARIABLE), 46, (STATIC), 1
-    Unknown23: 8
+    clearUpon: (HIT_OR_GUARD)
     endUpon: 
   upon: (FRAME_STEP)
     if: (VARIABLE), 46
@@ -7961,7 +7961,7 @@ startState: s32'cmn431Beam'
   sprite: s32'null', 3
   createObject2: s32'cmn431Shake', 100
   createObject2: s32'cmn431Sentan', 100
-  Unknown43: 6, 1
+  setObjectToStackSlot: (STACK_2), (PREVIOUS)
   createObject2: s32'cmn431JizokuHassei', 100
   sprite: s32'null', 1
   createObject2: s32'cmn431JizokuTyukan', 100
@@ -8304,7 +8304,7 @@ startState: s32'cmn_MOM_no120'
     groundBounceYVelocityPercent: 10
     hitEffectFlame: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -8547,12 +8547,12 @@ startState: s32'cmn_MOM_no123'
       storeFromObjToObj: (SELF), (VARIABLE), 32, (PLAYER), (VARIABLE), 33
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 7, (STATIC), 40000
-          checkInput: 121
+          checkInput: (INPUT_ANY_FORWARD)
           if: (VARIABLE), 0
             addVelocityX: 600
             endIf: 
           endIf: 
-        checkInput: 95
+        checkInput: (INPUT_ANY_BACK)
         if: (VARIABLE), 0
           addVelocityX: -700
           endIf: 
@@ -8623,10 +8623,10 @@ startState: s32'cmn_yudodanSP_hikari'
     Unknown456: (PARENT)
     linkObjPositionTo: (PARENT)
     Unknown338: 150
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown456: (NULL)
-      Unknown23: 3
-      Unknown176: 1
+      clearUpon: (FRAME_STEP)
+      resetVelocity: 1
       Unknown14: s32'End'
       endIf: 
     endUpon: 
@@ -9045,7 +9045,7 @@ startState: s32'cmn_MOM_no127'
       setThrowInvul: 0
       Unknown338: 255
       fadeColorRed: -20
-      Unknown176: 1
+      resetVelocity: 1
       Unknown40: 
       endIf: 
     endIf: 
@@ -9115,7 +9115,7 @@ startState: s32'cmn_MOM_no128'
       createObject2: s32'cmn_HanashiKoware', 100
       deactivateObj: (SELF)
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       createObject2: s32'cmn_HanashiKoware', 100
       deactivateObj: (SELF)
       endUpon: 
@@ -9141,16 +9141,16 @@ startState: s32'cmn_MOM_no128'
   sprite: s32'mom_DZE7_15', 15
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 110000
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       Unknown1771: s32'cmn_hanasiEff', 23
       Unknown14: s32'kamituki'
       endIf: 
     endUpon: 
   setMarker: s32'kamituki'
   sprite: s32'mom_DZE7_10', 3
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   hit: 
-  Unknown176: 1
+  resetVelocity: 1
   modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
   Unknown1771: s32'cmn_hanasiEff', 24
   sprite: s32'mom_DZE7_07', 3
@@ -9179,7 +9179,7 @@ startState: s32'cmn_MOM_no128'
   Unknown1771: s32'cmn_hanasiEff', 23
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), 110000
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       Unknown14: s32'kamituki'
       endIf: 
     endUpon: 
@@ -9191,7 +9191,7 @@ startState: s32'cmn_MOM_no128'
   Unknown1883: 
   sprite: s32'mom_DZE7_07', 5
   Unknown2156: 1
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'mom_DZE7_07', 10
   sprite: s32'mom_DZE7_07', 5
   Unknown1771: s32'cmn_hanasiEff', 25
@@ -9201,7 +9201,7 @@ startState: s32'cmn_MOM_no128'
 startState: s32'cmn_HanashiKoware'
   sprite: s32'mom_DZE7_07', 5
   Unknown2156: 1
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'mom_DZE7_07', 5
   Unknown1771: s32'cmn_hanasiEff', 26
   sprite: s32'mom_DZE7_07', 15
@@ -9551,8 +9551,8 @@ startState: s32'cmn_MOM_Takarabako'
     Unknown2156: 1
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     addVelocityY: 30000
     addVelocityX: 4000
@@ -9569,8 +9569,8 @@ startState: s32'cmn_MOM_TakarabakoBroken'
     Unknown2156: 1
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     addVelocityY: 30000
     addVelocityX: 4000
@@ -9608,10 +9608,10 @@ startState: s32'cmn_MOM_TB_Normal'
       storeValue: (VARIABLE), 45, (STATIC), 1
       callSubroutine: s32'MOMItemPut', 2, 47, 0, 0, 0, 0, 0, 0
       Unknown2156: 1
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'Koware'
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 47, (STATIC), 1
       Unknown2176: 23
       createObject2: s32'cmn_MOM_MasterKey', 100
@@ -9627,8 +9627,8 @@ startState: s32'cmn_MOM_TB_Normal'
     Unknown2156: 0
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     Unknown118: 30000, 60000
     Unknown117: 0, 6000
@@ -9660,10 +9660,10 @@ startState: s32'cmn_MOM_TB_Katai'
       storeValue: (VARIABLE), 45, (STATIC), 1
       callSubroutine: s32'MOMItemPut', 2, 47, 0, 0, 0, 0, 0, 0
       Unknown2156: 1
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'Koware'
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 47, (STATIC), 1
       Unknown2176: 23
       createObject2: s32'cmn_MOM_MasterKey', 100
@@ -9679,8 +9679,8 @@ startState: s32'cmn_MOM_TB_Katai'
     Unknown2156: 0
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     Unknown118: 30000, 60000
     Unknown117: 0, 6000
@@ -9712,10 +9712,10 @@ startState: s32'cmn_MOM_TB_Kusari'
       storeValue: (VARIABLE), 45, (STATIC), 1
       callSubroutine: s32'MOMItemPut', 2, 47, 0, 0, 0, 0, 0, 0
       Unknown2156: 1
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'Koware'
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 47, (STATIC), 1
       Unknown2176: 23
       createObject2: s32'cmn_MOM_MasterKey', 100
@@ -9731,8 +9731,8 @@ startState: s32'cmn_MOM_TB_Kusari'
     Unknown2156: 0
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     Unknown118: 30000, 60000
     Unknown117: 0, 6000
@@ -9764,10 +9764,10 @@ startState: s32'cmn_MOM_TB_Moeru'
       storeValue: (VARIABLE), 45, (STATIC), 1
       callSubroutine: s32'MOMItemPut', 2, 47, 0, 0, 0, 0, 0, 0
       Unknown2156: 1
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'Koware'
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 47, (STATIC), 1
       Unknown2176: 23
       createObject2: s32'cmn_MOM_MasterKey', 100
@@ -9783,8 +9783,8 @@ startState: s32'cmn_MOM_TB_Moeru'
     Unknown2156: 0
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     Unknown118: 30000, 60000
     Unknown117: 0, 6000
@@ -9822,10 +9822,10 @@ startState: s32'cmn_MOM_TB_Huttobu'
       storeValue: (VARIABLE), 45, (STATIC), 1
       callSubroutine: s32'MOMItemPut', 2, 47, 0, 0, 0, 0, 0, 0
       Unknown2156: 1
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'Koware'
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 47, (STATIC), 1
       Unknown2176: 23
       createObject2: s32'cmn_MOM_MasterKey', 100
@@ -9846,7 +9846,7 @@ startState: s32'cmn_MOM_TB_Huttobu'
     Unknown287: 1
     Unknown268: 1
     upon: 5
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     Unknown118: 30000, 60000
     Unknown117: 0, 6000
@@ -9878,10 +9878,10 @@ startState: s32'cmn_MOM_TB_Uiteru'
       storeValue: (VARIABLE), 45, (STATIC), 1
       callSubroutine: s32'MOMItemPut', 2, 47, 0, 0, 0, 0, 0, 0
       Unknown2156: 1
-      Unknown176: 1
+      resetVelocity: 1
       Unknown14: s32'Koware'
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 47, (STATIC), 1
       Unknown2176: 23
       createObject2: s32'cmn_MOM_MasterKey', 100
@@ -9897,8 +9897,8 @@ startState: s32'cmn_MOM_TB_Uiteru'
     Unknown2156: 0
     setThrowRange: 0
     Unknown287: 1
-    upon: 2
-      Unknown176: 1
+    upon: (LANDING)
+      resetVelocity: 1
       endUpon: 
     Unknown118: 48000, 48000
     Unknown117: 0, 6000
@@ -9908,7 +9908,7 @@ startState: s32'cmn_MOM_TB_Uiteru'
     endUpon: 
   sprite: s32'mom_cube_on_land', 30
   Unknown3: 
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'mom_cube_on_land', 20
   setGravity: 150
   setMarker: s32'loop'
@@ -9981,7 +9981,7 @@ startState: s32'cmn_MOM_Medal'
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
         storeValue: (VARIABLE), 46, (STATIC), 1
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       endUpon: 
     ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
@@ -10114,11 +10114,11 @@ startState: s32'cmn_MOM_Medal'
   Unknown3: 
   setMarker: s32'float'
   sprite: s32'mom_cube_on_land', 10
-  Unknown176: 1
+  resetVelocity: 1
   physicsYImpulse: 30000
   setGravity: 3000
   sprite: s32'mom_cube_on_land', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_MOM_Tabemono'
@@ -10144,7 +10144,7 @@ startState: s32'cmn_MOM_Tabemono'
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
         storeValue: (VARIABLE), 46, (STATIC), 1
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       endUpon: 
     upon: 36
@@ -10186,11 +10186,11 @@ startState: s32'cmn_MOM_Tabemono'
   Unknown3: 
   setMarker: s32'float'
   sprite: s32'mom_cube_on_land', 10
-  Unknown176: 1
+  resetVelocity: 1
   physicsYImpulse: 30000
   setGravity: 3000
   sprite: s32'mom_cube_on_land', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_MOM_TabemonoHomingSoda'
@@ -10203,7 +10203,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
     setGravity: 1500
     upon: (FRAME_STEP)
       ifOperation: (IS_EQUAL), (VARIABLE), 13, (STATIC), 30
-        Unknown176: 1
+        resetVelocity: 1
         Unknown1997: '0x0200000016000000670000000000000000000000000000000000000000000000307500000000000010270000'
         endIf: 
       endUpon: 
@@ -10214,7 +10214,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
       modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 2
         storeValue: (VARIABLE), 46, (STATIC), 1
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       endUpon: 
     upon: 36
@@ -10238,7 +10238,7 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
             Unknown1757: 22, 2, 116
             storeValue: (VARIABLE), 47, (STATIC), 1
             Unknown1993: 
-            Unknown23: 3
+            clearUpon: (FRAME_STEP)
             Unknown14: s32'float'
             Unknown2190: 0, 30
             Unknown2248: 0, 16728175
@@ -10258,11 +10258,11 @@ startState: s32'cmn_MOM_TabemonoHomingSoda'
   Unknown3: 
   setMarker: s32'float'
   sprite: s32'mom_cube_on_land', 10
-  Unknown176: 1
+  resetVelocity: 1
   physicsYImpulse: 30000
   setGravity: 3000
   sprite: s32'mom_cube_on_land', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_hijump_obj'
@@ -10282,7 +10282,7 @@ startState: s32'cmn_hijump_obj'
           storeFromObjToObj: (SELF), (VARIABLE), 7, (PARENT), (VARIABLE), 7
           storeFromObjToObj: (SELF), (VARIABLE), 8, (PARENT), (VARIABLE), 8
           Unknown200: 90000
-          Unknown176: 1
+          resetVelocity: 1
           endIf: 
         endIf: 
       endIf: 
@@ -10317,7 +10317,7 @@ startState: s32'cmn_TutStunGranade'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 4
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'null', 4
   setObjectSize: 1100
   sprite: s32'null', 4
@@ -10404,7 +10404,7 @@ startState: s32'cmn_DebugBomb'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 3
-  Unknown176: 1
+  resetVelocity: 1
   setObjectSize: 900
   sprite: s32'null', 3
   setObjectSize: 800
@@ -10863,7 +10863,7 @@ startState: s32'cmn_evt_may006'
   sprite: s32'may063_04', 10
   Unknown1700: -5000
   sprite: s32'may063_05', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_evt_may007'
@@ -11161,7 +11161,7 @@ startState: s32'cmn_evt_jhn010'
   Unknown3: 
   sprite: s32'jhn003_00', 6
   flipDirection: 
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn003_01', 6
   sprite: s32'jhn003_02', 6
   sprite: s32'jhn003_03', 6
@@ -11217,7 +11217,7 @@ startState: s32'cmn_evt_sol001'
   sprite: s32'sol041_04', 4
   sprite: s32'sol041_01', 4
   sprite: s32'sol041_00', 4
-  Unknown176: 1
+  resetVelocity: 1
   setMarker: s32'loop'
   sprite: s32'sol000_00', 9
   sprite: s32'sol000_01', 9
@@ -11408,7 +11408,7 @@ startState: s32'cmn_evt_kumac'
     Unknown2023: 0
     endUpon: 
   sprite: s32'null', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'cmn_evt_kumac_2'
@@ -11420,7 +11420,7 @@ startState: s32'cmn_evt_kumac_2'
     endUpon: 
   sprite: s32'null', 2147483647
   physicsYImpulse: -100000
-  upon: 2
+  upon: (LANDING)
     Unknown14: s32'landing'
     endUpon: 
   setMarker: s32'landing'
@@ -11529,7 +11529,7 @@ startState: s32'cmn_opas_document'
     linkParticleEx: s32'opas_document'
     addPositionX: -200000
     addPositionY: -200000
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown14: s32'end'
       endUpon: 
     endUpon: 
@@ -11551,7 +11551,7 @@ startState: s32'cmn_avatar_tuusin_ans'
     addPositionX: 100000
     addPositionY: 400000
     flipDirection: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown14: s32'end'
       endUpon: 
     endUpon: 
@@ -11597,7 +11597,7 @@ startState: s32'cmn_opas_document_chp'
     linkParticleEx: s32'opas_document'
     addPositionX: 200000
     addPositionY: -200000
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown14: s32'end'
       endUpon: 
     endUpon: 
@@ -11619,7 +11619,7 @@ startState: s32'cmn_avatar_tuusin_jhn'
     addPositionX: -100000
     addPositionY: 500000
     flipDirection: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown14: s32'end'
       endUpon: 
     endUpon: 
@@ -11665,7 +11665,7 @@ startState: s32'cmn_evt_jko000'
     linkPawnWithAnim: s32'EVT_JKO', s32''
     endUpon: 
   Unknown2041: -1, 0, 1000
-  upon: (ON_HIT_OR_BLOCK)
+  upon: (HIT_OR_BLOCK)
     Unknown14: s32'reverse'
     endUpon: 
   setMarker: s32'loop'
@@ -11744,8 +11744,8 @@ startState: s32'cmn_evt_jko002'
     Unknown1734: 1
     flipDirection: 
     storeValue: (VARIABLE), 45, (STATIC), 0
-    upon: (ON_HIT_OR_BLOCK)
-      Unknown23: 23
+    upon: (HIT_OR_BLOCK)
+      clearUpon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 45, (STATIC), 1
       endUpon: 
     Unknown92: -500000
@@ -11796,23 +11796,23 @@ startState: s32'cmn_evt_jko003'
     upon: (FRAME_STEP)
       if: (VARIABLE), 32
         ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 17, (STATIC), 50000
-          Unknown23: 3
-          Unknown176: 1
+          clearUpon: (FRAME_STEP)
+          resetVelocity: 1
           Unknown1734: 0
           Unknown14: s32'loop2'
           endIf: 
         endIf: 
       else: 
         ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 17, (STATIC), -50000
-          Unknown23: 3
-          Unknown176: 1
+          clearUpon: (FRAME_STEP)
+          resetVelocity: 1
           Unknown1734: 0
           Unknown14: s32'loop2'
           endIf: 
         endElse: 
       endUpon: 
     upon: (BEFORE_EXIT)
-      Unknown176: 1
+      resetVelocity: 1
       Unknown92: -50000
       endUpon: 
     endUpon: 
@@ -11876,8 +11876,8 @@ startState: s32'cmn_evt_jko003'
 startState: s32'cmn_evt_jko004'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'EVT_JKO', s32''
-    upon: (ON_HIT_OR_BLOCK)
-      Unknown23: 23
+    upon: (HIT_OR_BLOCK)
+      clearUpon: (HIT_OR_BLOCK)
       Unknown14: s32'thinkEnd'
       endUpon: 
     endUpon: 
@@ -11915,17 +11915,17 @@ startState: s32'cmn_evt_jko005'
     Unknown2210: 1
     physicsXImpulse: 2000
     upon: (BEFORE_EXIT)
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     endUpon: 
-  upon: (ON_HIT_OR_BLOCK)
-    Unknown23: 23
-    Unknown176: 1
+  upon: (HIT_OR_BLOCK)
+    clearUpon: (HIT_OR_BLOCK)
+    resetVelocity: 1
     Unknown14: s32'stand'
     endUpon: 
   upon: 24
-    Unknown23: 24
-    Unknown176: 1
+    clearUpon: 24
+    resetVelocity: 1
     Unknown14: s32'down'
     endUpon: 
   sprite: s32'jko900_06', 5
@@ -12200,13 +12200,13 @@ startState: s32'cmn_evt_jko011'
     upon: (FRAME_STEP)
       modifyAccumulator: (IS_GREATER), (VARIABLE), 17, (STATIC), 252000
       if: (VARIABLE), 0
-        Unknown23: 3
-        Unknown176: 1
+        clearUpon: (FRAME_STEP)
+        resetVelocity: 1
         Unknown14: s32'loop2'
         endIf: 
       endUpon: 
     upon: (BEFORE_EXIT)
-      Unknown176: 1
+      resetVelocity: 1
       Unknown92: 252000
       endUpon: 
     physicsXImpulse: 2000
@@ -12270,7 +12270,7 @@ startState: s32'cmn_evt_jko013'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'EVT_JKO', s32''
     upon: (BEFORE_EXIT)
-      Unknown176: 1
+      resetVelocity: 1
       endUpon: 
     endUpon: 
   sprite: s32'jko003_00', 6
@@ -12299,7 +12299,7 @@ startState: s32'cmn_evt_jko013'
   Unknown2145: 0, 100
   Unknown2143: 1, 100
   sprite: s32'jko900_00', 6
-  Unknown176: 1
+  resetVelocity: 1
   Unknown3: 
   sprite: s32'jko003_00', 6
   flipDirection: 
@@ -12668,7 +12668,7 @@ startState: s32'cmn_filmnoise_2'
     linkParticleEx: s32'filmnoise2'
     Unknown92: 0
     Unknown98: 0
-    Unknown176: 1
+    resetVelocity: 1
     Unknown242: 
     endUpon: 
   sprite: s32'null', 2147483647
@@ -12699,7 +12699,7 @@ startState: s32'cmn_evt_telephoneOPR000'
   setMarker: s32'stop'
   sprite: s32'null', 2147483647
   linkPawnWithAnim: s32'EVT_telephoneOPR', s32'telephoneopr_p001'
-  Unknown176: 1
+  resetVelocity: 1
   Unknown1771: s32'cmn_telOPR_phone01', 23
   Unknown1771: s32'cmn_telOPR_phone02', 23
   Unknown3: 
@@ -12720,34 +12720,34 @@ startState: s32'cmn_telOPR_phone01'
         physicsYImpulse: -200
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 17
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 29
         physicsYImpulse: 200
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 33
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 48
         physicsYImpulse: -300
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 52
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 57
         physicsYImpulse: 300
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 61
-        Unknown176: 1
+        resetVelocity: 1
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 63
         storeValue: (VARIABLE), 45, (STATIC), 0
         endIf: 
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
-      Unknown23: 23
-      Unknown23: 3
-      Unknown176: 1
+    upon: (HIT_OR_BLOCK)
+      clearUpon: (HIT_OR_BLOCK)
+      clearUpon: (FRAME_STEP)
+      resetVelocity: 1
       addPositionX: 11000
       addPositionY: -11000
       endUpon: 
@@ -12765,8 +12765,8 @@ startState: s32'cmn_telOPR_phone02'
     setObjectSize: 3000
     Unknown164: 180000
     Unknown232: 30000
-    upon: (ON_HIT_OR_BLOCK)
-      Unknown23: 23
+    upon: (HIT_OR_BLOCK)
+      clearUpon: (HIT_OR_BLOCK)
       addPositionX: 11000
       addPositionY: -11000
       endUpon: 
@@ -12788,7 +12788,7 @@ startState: s32'cmn_TrialTokeiMain'
       Unknown2247: 2, 115, 2, 116
       callEtcState: s32'cmn_TrialTokeiHari', 100
       endIf: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       storeValue: (VARIABLE), 46, (STATIC), 1
       ifNot: (VARIABLE), 48
         if: (VARIABLE), 116

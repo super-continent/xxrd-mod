@@ -72,7 +72,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_P)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -260, -369, 182, 89
     Unknown1541: 
     Unknown1544: 
@@ -82,7 +82,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_P)
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -304, -318, 199, 157
     Unknown1541: 
     endMoveRegister: 
@@ -113,7 +113,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_K)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -285, -234, 301, 94
     Unknown1537: 
     Unknown1534: 
@@ -132,8 +132,8 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_S)
-    moveInput: (INPUT_DISALLOW_UP)
-    addMoveFlag: 102
+    moveInput: (INPUT_NOT_UP)
+    addMoveCondition: (CLOSE_SLASH)
     Unknown1498: -337, -252, 259, 140
     Unknown1537: 
     Unknown1534: 
@@ -145,8 +145,8 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_S)
-    moveInput: (INPUT_DISALLOW_UP)
-    addMoveFlag: 103
+    moveInput: (INPUT_NOT_UP)
+    addMoveCondition: (FAR_SLASH)
     Unknown1498: -464, -376, 254, 250
     Unknown1533: 
     endMoveRegister: 
@@ -163,7 +163,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_H)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -376, -297, 377, 97
     Unknown1534: 
     Unknown1532: 
@@ -174,7 +174,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_H)
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -478, -480, 329, 460
     Unknown1536: 
     Unknown1541: 
@@ -192,7 +192,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_D)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -549, -274, 343, 180
     Unknown1538: 
     Unknown1531: 
@@ -223,14 +223,14 @@ startSubroutine: s32'RoundInit'
     endMoveRegister: 
   addMove: s32'NmlAtk5F'
     moveType: (NORMAL)
-    Unknown1387: 1
+    moveSubCategory: (TAUNT)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_TAUNT)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'NmlAtk6F'
     moveType: (NORMAL)
-    Unknown1387: 2
+    moveSubCategory: (RESPECT)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_TAUNT)
     moveInput: (INPUT_ANY_FORWARD)
@@ -292,21 +292,21 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     Unknown1406: 4
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: 167
+    moveInput: (INPUT_NOT_9)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     endMoveRegister: 
   addMove: s32'CounterGuardStand'
     moveType: (BLITZ_SHIELD)
     characterState: (STANDING)
     Unknown1406: 5
-    moveInput: 107
+    moveInput: (INPUT_5)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
     moveInput: (INPUT_BOOLEAN_OR)
     moveInput: (INPUT_8)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'CounterGuardCrouch'
@@ -320,23 +320,23 @@ startSubroutine: s32'RoundInit'
     moveInput: (INPUT_3)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'CounterGuardAir'
     moveType: (BLITZ_SHIELD)
     characterState: (JUMPING)
     Unknown1406: 5
-    moveInput: 107
+    moveInput: (INPUT_5)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'IchigekiJunbi'
     moveType: (INSTANT_KILL_PREPARATION)
     characterState: (STANDING)
-    addMoveFlag: 106
+    addMoveCondition: (INSTANT_KILL_READY)
     moveInput: (INPUT_PRESS_P)
     moveInput: (INPUT_PRESS_K)
     moveInput: (INPUT_PRESS_S)
@@ -345,23 +345,23 @@ startSubroutine: s32'RoundInit'
   addMove: s32'MOMSuki'
     moveType: (SPECIAL)
     characterState: (STANDING)
-    moveInput: 287
+    moveInput: (INPUT_MOM_TAUNT)
     disableSpecialCancel: 1
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'DebugSkillEx'
     moveType: (SPECIAL)
     characterState: (NONE)
-    moveInput: 47
-    addMoveFlag: 111
+    moveInput: (INPUT_F_TRG_ON)
+    addMoveCondition: 111
     endMoveRegister: 
   addMove: s32'Kakkuu'
     moveType: 14
     characterState: (JUMPING)
-    moveInput: 217
-    addMoveFlag: 7
-    addMoveFlag: 2
-    addMoveFlag: 77
+    moveInput: (INPUT_DASH_TRG)
+    addMoveCondition: (AIRDASH_COUNT_OK)
+    addMoveCondition: (AIR)
+    addMoveCondition: 77
     minimumHeightRequirement: 90000
     endMoveRegister: 
   addMove: s32'LandSlowNeedle'
@@ -442,36 +442,36 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_S)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     endMoveRegister: 
   addMove: s32'AirDashAttack'
     moveType: (OVERDRIVE)
     characterState: (JUMPING)
     moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_S)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     endMoveRegister: 
   addMove: s32'RevengeAttack'
     moveType: (OVERDRIVE)
     characterState: (STANDING)
     moveInput: (INPUT_214214)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     endMoveRegister: 
   addMove: s32'RevengeAttackBurst'
     Unknown1394: s32'RevengeAttack'
     moveType: (OVERDRIVE)
-    Unknown1387: 4
+    moveSubCategory: (BURST_OVERDRIVE)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_50_TENSION)
-    addMoveFlag: 116
+    addMoveCondition: (REQUIRES_50_TENSION)
+    addMoveCondition: 116
     moveInput: (INPUT_214214)
     moveInput: (INPUT_PRESS_D)
     endMoveRegister: 
   addMove: s32'Ichigeki'
     moveType: (INSTANT_KILL)
     characterState: (STANDING)
-    addMoveFlag: 107
+    addMoveCondition: 107
     moveInput: (INPUT_236236)
     moveInput: (INPUT_PRESS_H)
     endMoveRegister: 
@@ -661,100 +661,99 @@ startSubroutine: s32'RoundInit'
     endMoveRegister: 
   addMove: s32'StylishLandSlowNeedle'
     Unknown1420: s32'LandSlowNeedle'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     Unknown1423: 1
     endMoveRegister: 
   addMove: s32'StylishLandSettingTypeNeedle'
     Unknown1420: s32'LandSettingTypeNeedle'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_DOWN)
     endMoveRegister: 
   addMove: s32'StylishCommandThrow'
     Unknown1420: s32'CommandThrow'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_FORWARD)
     endMoveRegister: 
   addMove: s32'StylishAntiAirCommandThrow'
     Unknown1420: s32'AntiAirCommandThrow'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_3)
     endMoveRegister: 
   addMove: s32'StylishArmorDance'
     Unknown1420: s32'ArmorDance'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_1)
     endMoveRegister: 
   addMove: s32'StylishLandBlowAttack'
     Unknown1420: s32'LandBlowAttack'
-    moveInput: 279
-    moveInput: 95
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_BACK)
     endMoveRegister: 
   addMove: s32'StylishAirSlowNeedleA'
     Unknown1420: s32'AirSlowNeedleA'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     Unknown1423: 1
     endMoveRegister: 
   addMove: s32'StylishAirSettingTypeNeedle'
     Unknown1420: s32'AirSettingTypeNeedle'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_DOWN)
     endMoveRegister: 
   addMove: s32'StylishAirSlowNeedleB'
     Unknown1420: s32'AirSlowNeedleB'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_FORWARD)
     endMoveRegister: 
   addMove: s32'StylishAirBlowAttack'
     Unknown1420: s32'AirBlowAttack'
-    moveInput: 279
-    moveInput: 95
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_BACK)
     endMoveRegister: 
   addMove: s32'StylishRevengeAttack'
     Unknown1420: s32'RevengeAttack'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_P)
     moveInput: (INPUT_BOOLEAN_OR)
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_K)
     endMoveRegister: 
   addMove: s32'StylishLandDashAttack'
     Unknown1420: s32'LandDashAttack'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_S)
     moveInput: (INPUT_BOOLEAN_OR)
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_H)
     endMoveRegister: 
   addMove: s32'StylishAirDashAttack'
     Unknown1420: s32'AirDashAttack'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_S)
     moveInput: (INPUT_BOOLEAN_OR)
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_H)
     endMoveRegister: 
   addMove: s32'StylishRevengeAttackBurst'
     Unknown1420: s32'RevengeAttackBurst'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_D)
     endMoveRegister: 
   addMove: s32'FBScratch'
     moveType: (SPECIAL)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     moveInput: (INPUT_236)
     moveInput: (INPUT_PRESS_D)
     endMoveRegister: 
   addMove: s32'FBTripleNeedle'
     moveType: (SPECIAL)
     characterState: (JUMPING)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     moveInput: (INPUT_236)
     moveInput: (INPUT_PRESS_D)
     Unknown1392: 1
     minimumHeightRequirement: 96000
     endMoveRegister: 
-  registerFunc: s32'RedRomanCancel'
   registerFunc: s32'FBScratch'
   registerFunc: s32'FBTripleNeedle'
   registerFunc: s32'CmnNeutral'
@@ -844,6 +843,7 @@ startSubroutine: s32'RoundInit'
   registerFunc: s32'CmnMaximumBurst'
   registerFunc: s32'CmnDamageBurst'
   registerFunc: s32'DeadAngleAttack'
+  registerFunc: s32'RedRomanCancel'
   registerFunc: s32'RomanCancelHit'
   registerFunc: s32'IchigekiJunbi'
   registerFunc: s32'MOMSuki'
@@ -2447,7 +2447,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'rvn210_03', 4
   Unknown2161: 100, 230000, 230000
   createObject2: s32'cmn_MOM_AUTO_ITEM', 130
-  Unknown43: 12, 1
+  setObjectToStackSlot: (STACK_FOR_CMN_ACT), (PREVIOUS)
   Unknown3: 
   storeValue: (VARIABLE), 69, (STATIC), 1
   sprite: s32'rvn210_04', 2
@@ -2467,7 +2467,7 @@ startState: s32'CmnActItemUse'
   Unknown3: 
   exitState: 
   setMarker: s32'_BeginB'
-  upon: (ON_HIT_OR_BLOCK)
+  upon: (HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
     endUpon: 
   sprite: s32'rvn305_00', 4
@@ -2601,7 +2601,7 @@ startState: s32'entry_default'
     if: (VARIABLE), 46
       if: (VARIABLE), 131
         Unknown2020: s32'rvn700_02', 23, 0, -1
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown14: s32'Next'
         endIf: 
       endIf: 
@@ -2768,7 +2768,7 @@ startState: s32'CmnActMatchWin'
     if: (VARIABLE), 46
       if: (VARIABLE), 131
         Unknown2020: s32'rvn800_02', 23, 0, -1
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown14: s32'next'
         endIf: 
       endIf: 
@@ -2907,7 +2907,7 @@ startState: s32'Kakkuu'
     endUpon: 
   sprite: s32'rvn400_00', 3
   playSFX: s32'GG2_018'
-  Unknown176: 1
+  resetVelocity: 1
   physicsXImpulse: 0
   storeValue: (VARIABLE), 45, (STATIC), 1
   sprite: s32'rvn400_01', 3
@@ -2938,7 +2938,7 @@ startState: s32'Kakkuu'
   sprite: s32'rvn400_09', 3
   Unknown2217: 0
   storeValue: (VARIABLE), 45, (STATIC), 0
-  Unknown23: 2
+  clearUpon: (LANDING)
   Unknown2197: 90
   Unknown135: 
   Unknown2136: 1
@@ -2949,7 +2949,7 @@ startState: s32'Kakkuu'
   sprite: s32'rvn400_10', 3
   sprite: s32'rvn400_11', 3
   Unknown3: 
-  Unknown23: 1
+  clearUpon: (BEFORE_EXIT)
   jumpToState: s32'_NEUTRAL'
   endState: 
 
@@ -2977,7 +2977,7 @@ startState: s32'NmlAtk5A'
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot3', s32'CmnFJump'
-        addMoveFlag: 99
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 7
@@ -3018,7 +3018,7 @@ startState: s32'NmlAtk6A'
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'CmnFJump'
-        addMoveFlag: 99
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 9
@@ -3073,8 +3073,8 @@ startState: s32'NmlAtk4A'
     addGatlingOption: s32'NmlAtk2E'
     if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk6A'
-        addMoveFlag: 99
-        addMoveFlag: 129
+        addMoveCondition: 99
+        addMoveCondition: 129
         endMoveRegister: 
       endIf: 
     Unknown2331: 5
@@ -3124,8 +3124,8 @@ startState: s32'NmlAtk4AHasei'
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2C'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk6A'
-        addMoveFlag: 99
-        addMoveFlag: 129
+        addMoveCondition: 99
+        addMoveCondition: 129
         endMoveRegister: 
       endIf: 
     Unknown2331: 5
@@ -3176,11 +3176,11 @@ startState: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk2E'
     if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2B'
-        addMoveFlag: 129
+        addMoveCondition: 129
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5A'
-        addMoveFlag: 129
-        addMoveFlag: 99
+        addMoveCondition: 129
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 6
@@ -3218,7 +3218,7 @@ startState: s32'NmlAtk5B'
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'CmnFJump'
-        addMoveFlag: 99
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 7
@@ -3323,7 +3323,7 @@ startState: s32'NmlAtk5CNear'
     setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5D'
-      addMoveFlag: 99
+      addMoveCondition: 99
       endMoveRegister: 
     endIf: 
   sprite: s32'rvn202_08', 3
@@ -3348,17 +3348,17 @@ startState: s32'NmlAtk5CFar'
       setStylishCombo: s32'StylishComboSlot0', s32'LandSlowNeedle'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2D'
-        addMoveFlag: 115
+        addMoveCondition: 115
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'CommandThrow'
-        addMoveFlag: 114
+        addMoveCondition: 114
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot3', s32'LandDashAttack'
-        addMoveFlag: 117
-        addMoveFlag: (REQUIRES_50_TENSION)
+        addMoveCondition: 117
+        addMoveCondition: (REQUIRES_50_TENSION)
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot4', s32'NmlAtk5D'
-        addMoveFlag: 99
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 10
@@ -3451,10 +3451,10 @@ startState: s32'NmlAtk5D'
     setStylishCombo: s32'StylishComboSlot0', s32'LandBlowAttack'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'LandSettingTypeNeedle'
-      addMoveFlag: 114
+      addMoveCondition: 114
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot4', s32'CmnFJump'
-      addMoveFlag: 99
+      addMoveCondition: 99
       endMoveRegister: 
     endIf: 
   sprite: s32'rvn204_06', 4
@@ -3513,7 +3513,7 @@ startState: s32'NmlAtk6D'
   createObject2: s32'213atk', 100
   Unknown2161: 100, 250000, 150000
   createObject2: s32'Atk6D', 130
-  Unknown43: 4, 1
+  setObjectToStackSlot: (STACK_0), (PREVIOUS)
   Unknown467: 4
   hitUnchecked: 
   playSFX: s32'SE_SWINGF'
@@ -3674,11 +3674,11 @@ startState: s32'NmlAtk2E'
       setStylishCombo: s32'StylishComboSlot0', s32'LandSettingTypeNeedle'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'LandSlowNeedle'
-        addMoveFlag: 114
+        addMoveCondition: 114
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'LandDashAttack'
-        addMoveFlag: 117
-        addMoveFlag: (REQUIRES_50_TENSION)
+        addMoveCondition: 117
+        addMoveCondition: (REQUIRES_50_TENSION)
         endMoveRegister: 
       endIf: 
     Unknown2331: 9
@@ -3768,7 +3768,7 @@ startState: s32'NmlAtk5F'
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   setMarker: s32'TypeBNext'
@@ -3917,7 +3917,7 @@ startState: s32'NmlAtk6F'
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   setMarker: s32'TypeBNext'
@@ -3946,7 +3946,7 @@ startState: s32'NmlAtkAir5A'
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5B'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5A'
-        addMoveFlag: 114
+        addMoveCondition: 114
         endMoveRegister: 
       endIf: 
     Unknown2331: 6
@@ -3981,7 +3981,7 @@ startState: s32'NmlAtkAir5B'
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5A'
-        addMoveFlag: 114
+        addMoveCondition: 114
         endMoveRegister: 
       endIf: 
     Unknown2331: 8
@@ -4052,11 +4052,11 @@ startState: s32'NmlAtkAir5C'
       setStylishCombo: s32'StylishComboSlot0', s32'AirBlowAttack'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5A'
-        addMoveFlag: 114
+        addMoveCondition: 114
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'CmnFAirJump'
-        addMoveFlag: 99
-        addMoveFlag: 117
+        addMoveCondition: 99
+        addMoveCondition: 117
         Unknown1422: 0, 1000000
         endMoveRegister: 
       endIf: 
@@ -4111,7 +4111,7 @@ startState: s32'NmlAtkAir5D'
     setStylishCombo: s32'StylishComboSlot0', s32'AirBlowAttack'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'AirSettingTypeNeedle'
-      addMoveFlag: 114
+      addMoveCondition: 114
       endMoveRegister: 
     endIf: 
   sprite: s32'rvn253_08', 3
@@ -4159,7 +4159,7 @@ startState: s32'NmlAtkAir5E'
     setStylishCombo: s32'StylishComboSlot0', s32'AirSettingTypeNeedle'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'AirSlowNeedleA'
-      addMoveFlag: 114
+      addMoveCondition: 114
       endMoveRegister: 
     endIf: 
   sprite: s32'rvn254_06', 2
@@ -4678,7 +4678,7 @@ startState: s32'AirSlowNeedleA'
     endUpon: 
   sprite: s32'rvn402_00', 2
   tensionGain: 40
-  Unknown176: 1
+  resetVelocity: 1
   physicsXImpulse: -4000
   physicsYImpulse: 25000
   setGravity: 1200
@@ -4718,7 +4718,7 @@ startState: s32'AirSlowNeedleB'
     endUpon: 
   sprite: s32'rvn402_00', 2
   tensionGain: 40
-  Unknown176: 1
+  resetVelocity: 1
   physicsXImpulse: -4000
   physicsYImpulse: 25000
   setGravity: 1200
@@ -4787,7 +4787,7 @@ startState: s32'AirSettingTypeNeedle'
     endUpon: 
   sprite: s32'rvn404_00', 3
   tensionGain: 45
-  Unknown176: 1
+  resetVelocity: 1
   playVoice: s16'vxxx202'
   physicsXImpulse: -4000
   physicsYImpulse: 12000
@@ -4862,9 +4862,9 @@ startState: s32'ArmorDance'
         endIf: 
       if: (VARIABLE), 45
         if: (VARIABLE), 212
-          checkInput: 276
+          checkInput: (INPUT_G_HOLD)
           ifNot: (VARIABLE), 0
-            checkInput: 10
+            checkInput: (INPUT_HOLD_K)
             ifNot: (VARIABLE), 0
               ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
                 Unknown14: s32'End'
@@ -4875,12 +4875,12 @@ startState: s32'ArmorDance'
               ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
                 Unknown14: s32'End3'
                 endIf: 
-              Unknown23: 3
+              clearUpon: (FRAME_STEP)
               endIf: 
             endIf: 
           endIf: 
         else: 
-          checkInput: 10
+          checkInput: (INPUT_HOLD_K)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
               Unknown14: s32'End'
@@ -4891,7 +4891,7 @@ startState: s32'ArmorDance'
             ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
               Unknown14: s32'End3'
               endIf: 
-            Unknown23: 3
+            clearUpon: (FRAME_STEP)
             endIf: 
           endElse: 
         endIf: 
@@ -5154,7 +5154,7 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_31', 3
   sprite: s32'rvn406_32', 2
   superArmorEnabled: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'rvn406_33', 2
   Unknown3: 
   exitState: 
@@ -5175,7 +5175,7 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_31', 3
   sprite: s32'rvn406_32', 2
   superArmorEnabled: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'rvn406_33', 2
   Unknown3: 
   exitState: 
@@ -5197,7 +5197,7 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_31', 3
   sprite: s32'rvn406_32', 2
   superArmorEnabled: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'rvn406_33', 2
   endState: 
 
@@ -5219,9 +5219,9 @@ startState: s32'ArmorDance2'
         endIf: 
       if: (VARIABLE), 45
         if: (VARIABLE), 212
-          checkInput: 276
+          checkInput: (INPUT_G_HOLD)
           ifNot: (VARIABLE), 0
-            checkInput: 10
+            checkInput: (INPUT_HOLD_K)
             ifNot: (VARIABLE), 0
               ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
                 Unknown14: s32'End'
@@ -5232,12 +5232,12 @@ startState: s32'ArmorDance2'
               ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
                 Unknown14: s32'End3'
                 endIf: 
-              Unknown23: 3
+              clearUpon: (FRAME_STEP)
               endIf: 
             endIf: 
           endIf: 
         else: 
-          checkInput: 10
+          checkInput: (INPUT_HOLD_K)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
               Unknown14: s32'End'
@@ -5248,7 +5248,7 @@ startState: s32'ArmorDance2'
             ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
               Unknown14: s32'End3'
               endIf: 
-            Unknown23: 3
+            clearUpon: (FRAME_STEP)
             endIf: 
           endElse: 
         endIf: 
@@ -5509,7 +5509,7 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_31', 3
   sprite: s32'rvn406_32', 2
   superArmorEnabled: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'rvn406_33', 2
   Unknown3: 
   jumpToState: s32'_NEUTRAL'
@@ -5531,7 +5531,7 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_31', 3
   sprite: s32'rvn406_32', 2
   superArmorEnabled: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'rvn406_33', 2
   Unknown3: 
   jumpToState: s32'_NEUTRAL'
@@ -5553,7 +5553,7 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_31', 3
   sprite: s32'rvn406_32', 2
   superArmorEnabled: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'rvn406_33', 2
   jumpToState: s32'_NEUTRAL'
   endState: 
@@ -5654,14 +5654,14 @@ startState: s32'AirBlowAttack'
         endIf: 
       endUpon: 
     Unknown2137: 0
-    upon: 2
+    upon: (LANDING)
       Unknown14: s32'landing'
       endUpon: 
     endUpon: 
   sprite: s32'rvn408_00', 2
   playVoice: s16'vxxx205'
   ifOperation: (IS_LESSER), (VARIABLE), 7, (STATIC), 44400
-    Unknown176: 1
+    resetVelocity: 1
     physicsXImpulse: -3000
     physicsYImpulse: 15000
     endIf: 
@@ -5866,7 +5866,6 @@ startState: s32'CommandThrowEx'
   playSFX: s32'SE_SWINGA'
   Unknown2045: s32'DustHit', 400, 1, 15, 1
   createObject2: s32'rvn409EffGareki', 100
-  whiffCancelOptionBufferTime: s32'RomanCancelHit', 20
   sprite: s32'rvn409_20', 3
   hit: 
   damage: 0
@@ -6141,6 +6140,7 @@ startState: s32'Warp'
 
 startState: s32'LandDashAttack'
   upon: (IMMEDIATE)
+    addGatlingOption: s32'RedRomanCancel'
     Unknown1939: 1
     attackLevel: 4
     damage: 60
@@ -6183,7 +6183,7 @@ startState: s32'LandDashAttack'
       endUpon: 
     endUpon: 
   sprite: s32'rvn430_00', 2
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'rvn430_01', 3
   sprite: s32'rvn430_02', 20
   superFreeze: 1, 119, 30, 50
@@ -6204,30 +6204,30 @@ startState: s32'LandDashAttack'
     upon: 6
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 50
         Unknown14: s32'End'
-        Unknown23: 6
+        clearUpon: 6
         addPositionY: -200000
         endIf: 
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endUpon: 
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 2
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 3
         Unknown14: s32'Hit'
-        Unknown23: 3
-        Unknown23: 6
+        clearUpon: (FRAME_STEP)
+        clearUpon: 6
         endIf: 
       endIf: 
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 5
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 5
         Unknown14: s32'Hit'
-        Unknown23: 3
-        Unknown23: 6
+        clearUpon: (FRAME_STEP)
+        clearUpon: 6
         endIf: 
       endIf: 
     ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 7
         Unknown14: s32'Hit'
-        Unknown23: 3
-        Unknown23: 6
+        clearUpon: (FRAME_STEP)
+        clearUpon: 6
         endIf: 
       endIf: 
     endUpon: 
@@ -6280,7 +6280,7 @@ startState: s32'LandDashAttack'
   Unknown13: s32'TypeC', 22, 0, 33, 0, 100
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
   sprite: s32'rvn430_11', 2
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
@@ -6310,7 +6310,7 @@ startState: s32'LandDashAttack'
   exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn430_18', 2
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
@@ -6340,7 +6340,7 @@ startState: s32'LandDashAttack'
   exitState: 
   setMarker: s32'TypeC'
   sprite: s32'rvn430_25', 2
-  Unknown176: 1
+  resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
     modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
@@ -6369,7 +6369,7 @@ startState: s32'LandDashAttack'
   exitState: 
   setMarker: s32'TypeD'
   sprite: s32'rvn430_32', 2
-  Unknown176: 1
+  resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
     modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
@@ -6400,6 +6400,7 @@ startState: s32'LandDashAttack'
 
 startState: s32'AirDashAttack'
   upon: (IMMEDIATE)
+    addGatlingOption: s32'RedRomanCancel'
     Unknown1939: 1
     attackLevel: 4
     damage: 33
@@ -6440,12 +6441,12 @@ startState: s32'AirDashAttack'
         endUpon: 
       endUpon: 
     Unknown2137: 0
-    upon: 2
+    upon: (LANDING)
       Unknown14: s32'End'
       endUpon: 
     endUpon: 
   sprite: s32'rvn431_00', 2
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'rvn431_01', 3
   sprite: s32'rvn431_02', 20
   superFreeze: 1, 119, 20, 40
@@ -6510,7 +6511,7 @@ startState: s32'AirDashAttack'
   Unknown13: s32'TypeC', 22, 0, 33, 0, 100
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
   sprite: s32'rvn430_11', 2
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
@@ -6540,7 +6541,7 @@ startState: s32'AirDashAttack'
   exitState: 
   setMarker: s32'TypeB'
   sprite: s32'rvn430_18', 2
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
   if: (VARIABLE), 45
@@ -6570,7 +6571,7 @@ startState: s32'AirDashAttack'
   exitState: 
   setMarker: s32'TypeC'
   sprite: s32'rvn430_25', 2
-  Unknown176: 1
+  resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
     modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
@@ -6599,7 +6600,7 @@ startState: s32'AirDashAttack'
   exitState: 
   setMarker: s32'TypeD'
   sprite: s32'rvn430_32', 2
-  Unknown176: 1
+  resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
   if: (VARIABLE), 45
     modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
@@ -6630,6 +6631,7 @@ startState: s32'AirDashAttack'
 
 startState: s32'RevengeAttack'
   upon: (IMMEDIATE)
+    addGatlingOption: s32'RedRomanCancel'
     Unknown1939: 1
     canGrab: 1
     Unknown1042: s32'RevengeAttackEx'
@@ -6704,6 +6706,7 @@ startState: s32'RevengeAttack'
 
 startState: s32'RevengeAttackEx'
   upon: (IMMEDIATE)
+    addGatlingOption: s32'RedRomanCancel'
     Unknown1641: 20, 1
     Unknown1018: 0
     disableHitstop: 1
@@ -6971,7 +6974,7 @@ startState: s32'RevengeAttackEx'
     romanCancelAvailability: (DISALLOWED)
     endUpon: 
   sprite: s32'rvn432_04', 3
-  Unknown176: 1
+  resetVelocity: 1
   Unknown544: 11
   Unknown2161: 100, 220000, 0
   Unknown546: 130, 100, 0
@@ -7126,7 +7129,7 @@ startState: s32'RevengeAttackEx'
     endIf: 
   goToMarker: s32'loop3'
   setMarker: s32'End'
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   Unknown32: s32'rvn432EffBake'
   Unknown32: s32'rvn432EffBake2'
   sprite: s32'rvn432_19', 3
@@ -7229,7 +7232,7 @@ startState: s32'RevengeAttackEx'
       stunValue: 1480
       endIf: 
     endIf: 
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   whiffCancelOptionBufferTime: s32'RomanCancelHit', 5
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 2
@@ -7279,7 +7282,7 @@ startState: s32'Ichigeki'
       endUpon: 
     upon: (HIT)
       Unknown14: s32'hit'
-      Unknown23: 10
+      clearUpon: (HIT)
       endUpon: 
     callCmnEfFunc: s32'cmn_IchigekiInit'
     endUpon: 
@@ -7327,13 +7330,13 @@ startState: s32'Ichigeki'
   Unknown3: 
   exitState: 
   setMarker: s32'hit'
-  Unknown23: 10
+  clearUpon: (HIT)
   sprite: s32'null', 2147483647
   Unknown1940: 1
   Unknown2058: 
   Unknown2210: 1
   Unknown92: 0
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2013: s32'rvn451cs', 0
   Unknown2020: s32'rvn451', 23, 0, -1
   Unknown2051: 1400
@@ -7694,7 +7697,7 @@ startState: s32'FBTripleNeedle'
     endUpon: 
   sprite: s32'rvn402_00', 2
   tensionGain: 40
-  Unknown176: 1
+  resetVelocity: 1
   physicsXImpulse: -4000
   physicsYImpulse: 25000
   setGravity: 1200

@@ -269,7 +269,7 @@ startSubroutine: s32'EddieInitialize'
   Unknown1603: 4
   Unknown2157: 0, 5
   Unknown268: 1
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2156: 0
   storeValue: (VARIABLE), 45, (STATIC), 5
   storeValue: (VARIABLE), 5, (STATIC), 1
@@ -306,7 +306,7 @@ startSubroutine: s32'EddieInitialize'
       Unknown2320: s32'EddieKesu'
       endIf: 
     endUpon: 
-  upon: (ON_HIT_OR_BLOCK)
+  upon: (HIT_OR_BLOCK)
     ifNot: (VARIABLE), 58
       ifNot: (VARIABLE), 51
         storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
@@ -372,7 +372,7 @@ startSubroutine: s32'EddieInitialize'
       ifNot: (VARIABLE), 46
         ifNot: (VARIABLE), 25
           storeValue: (VARIABLE), 46, (STATIC), 1
-          Unknown1766: 23, 24
+          deactivateObjectFromSlot: (SELF), 24
           endIf: 
         endIf: 
       storeValue: (VARIABLE), 69, (STATIC), 0
@@ -424,7 +424,7 @@ startSubroutine: s32'EddieInitialize'
       ifNot: (VARIABLE), 46
         checkInput: 42
         if: (VARIABLE), 0
-          checkInput: 174
+          checkInput: (INPUT_214)
           if: (VARIABLE), 0
             storeValue: (VARIABLE), 69, (STATIC), 1
             endIf: 
@@ -433,7 +433,7 @@ startSubroutine: s32'EddieInitialize'
       ifNot: (VARIABLE), 46
         checkInput: 38
         if: (VARIABLE), 0
-          checkInput: 174
+          checkInput: (INPUT_214)
           if: (VARIABLE), 0
             storeValue: (VARIABLE), 69, (STATIC), 1
             endIf: 
@@ -770,7 +770,7 @@ startState: s32'EddieC'
     endUpon: 
   sprite: s32'zat408_body_00', 2
   Unknown2320: s32'EddieCDehazime'
-  Unknown176: 1
+  resetVelocity: 1
   if: (VARIABLE), 84
     modifyVar: (ADD), (VARIABLE), 25, (STATIC), -600
     endIf: 
@@ -911,7 +911,7 @@ startState: s32'EddieE'
   createObject2: s32'ChouDoriru', 100
   sprite: s32'keep', 2147483647
   storeValue: (VARIABLE), 49, (STATIC), 1
-  Unknown1766: 23, 24
+  deactivateObjectFromSlot: (SELF), 24
   endState: 
 
 startState: s32'EddieThrow'
@@ -933,7 +933,7 @@ startState: s32'EddieThrow'
       endUpon: 
     upon: (HIT)
       Unknown14: s32'hit'
-      Unknown23: 10
+      clearUpon: (HIT)
       Unknown2185: 0
       Unknown2186: 0
       storeValue: (VARIABLE), 58, (STATIC), 1
@@ -1309,7 +1309,7 @@ startState: s32'EddieMegalithHead'
   setMarker: s32'landing'
   sprite: s32'null', 12
   modifyVar: (ADD), (VARIABLE), 59, (STATIC), 1
-  Unknown23: 2
+  clearUpon: (LANDING)
   physicsXImpulse: 30000
   createObject2: s32'Shark_Tail', 100
   playSFX: s32'GG2_070'
@@ -1378,7 +1378,7 @@ startState: s32'DrillC'
   sprite: s32'ZTE0_02', 3
   hit: 
   linkParticleEx: s32'zat_drill_loop'
-  Unknown23: 47
+  clearUpon: (AFTER_EXIT)
   sprite: s32'ZTE0_03', 3
   sprite: s32'ZTE0_04', 3
   sprite: s32'ZTE0_05', 3
@@ -1396,7 +1396,7 @@ startState: s32'DrillC'
   sprite: s32'ZTE0_05', 3
   setMarker: s32'end'
   sprite: s32'ZTE0_06', 4
-  Unknown23: 47
+  clearUpon: (AFTER_EXIT)
   linkParticleEx: s32'zat_drill_end'
   recoveryState: 
   Unknown1771: s32'KageDamari', 25
@@ -1466,7 +1466,7 @@ startState: s32'DrillD'
   sprite: s32'ZTE0_02', 3
   hit: 
   linkParticleEx: s32'zat_drill_loop'
-  Unknown23: 47
+  clearUpon: (AFTER_EXIT)
   sprite: s32'ZTE0_03', 3
   sprite: s32'ZTE0_04', 3
   sprite: s32'ZTE0_05', 3
@@ -1484,7 +1484,7 @@ startState: s32'DrillD'
   sprite: s32'ZTE0_05', 3
   setMarker: s32'end'
   sprite: s32'ZTE0_06', 4
-  Unknown23: 47
+  clearUpon: (AFTER_EXIT)
   linkParticleEx: s32'zat_drill_end'
   recoveryState: 
   Unknown1771: s32'KageDamari', 25
@@ -1865,7 +1865,7 @@ startState: s32'432Executor'
     Unknown466: (PARENT)
     Unknown456: (PARENT)
     linkParticleEx: s32'zat_executor'
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown14: s32'End'
       endUpon: 
     endUpon: 

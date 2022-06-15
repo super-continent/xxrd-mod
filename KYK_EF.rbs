@@ -37,7 +37,7 @@ startState: s32'DustEffect'
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
         Unknown456: (NULL)
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         endIf: 
       endUpon: 
     endUpon: 
@@ -72,18 +72,18 @@ startState: s32'DustEffectShot'
       hitUnchecked: 
       Unknown456: (NULL)
       Unknown41: 2
-      Unknown1766: 5, 24
+      deactivateObjectFromSlot: (STACK_1), 24
       Unknown2161: 100, 300000, 220000
       createObject2: s32'Mahojin', 130
-      Unknown43: 5, 1
-      Unknown1766: 5, 26
+      setObjectToStackSlot: (STACK_1), (PREVIOUS)
+      deactivateObjectFromSlot: (STACK_1), 26
       Unknown40: 
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   sprite: s32'dust_atk', 10
   recoveryState: 
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'dust_atk', 30
   Unknown2176: 23
   endState: 
@@ -102,7 +102,7 @@ startState: s32'AirDustAttackObj'
     counterhitAirPushbackY: 33250
     counterhitAirPushbackX: 7000
     Unknown1602: 2
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown1603: 2
       endUpon: 
     Unknown458: 3
@@ -153,7 +153,7 @@ startState: s32'Mahojin'
       Unknown449: s32'kyk_mahojin_end', 100
       deactivateObj: (SELF)
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown448: s32'kyk_mahojin_powerup', 100
       deactivateObj: (SELF)
       endUpon: 
@@ -194,7 +194,7 @@ startState: s32'StunEdgeObj'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -234,7 +234,7 @@ startState: s32'StunEdgeObj'
               ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 160000
                 storeValue: (VARIABLE), 51, (STATIC), 0
                 storeValue: (VARIABLE), 45, (STATIC), 0
-                Unknown1766: 4, 23
+                deactivateObjectFromSlot: (STACK_0), (SELF)
                 Unknown2247: 2, 115, 0, 0
                 callEtcState: s32'SPStunEdgeObj', 100
                 deactivateObj: (SELF)
@@ -399,7 +399,7 @@ startState: s32'SPStunEdgeObj'
     storeFromObjToObj: (SELF), (VARIABLE), 7, (PARENT), (VARIABLE), 7
     storeFromObjToObj: (SELF), (VARIABLE), 8, (PARENT), (VARIABLE), 8
     Unknown200: 0
-    Unknown176: 1
+    resetVelocity: 1
     endUpon: 
   setMarker: s32'StunEdge'
   sprite: s32'null', 7
@@ -455,10 +455,10 @@ startState: s32'ChargedStunEdgeObj'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -497,7 +497,7 @@ startState: s32'ChargedStunEdgeObj'
               ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 120000
                 storeValue: (VARIABLE), 51, (STATIC), 0
                 storeValue: (VARIABLE), 45, (STATIC), 0
-                Unknown1766: 4, 23
+                deactivateObjectFromSlot: (STACK_0), (SELF)
                 createObject2: s32'SPChargedStunEdgeObj', 100
                 deactivateObj: (SELF)
                 endIf: 
@@ -649,7 +649,7 @@ startState: s32'SacredEdgeObj'
     Unknown2182: 1
     Unknown2183: 1
     setThrowRange: 0
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     upon: (ON_DESTROY)
@@ -688,7 +688,7 @@ startState: s32'SacredEdgeObj'
               ifOperation: (IS_LESSER), (VARIABLE), 64, (STATIC), 120000
                 storeValue: (VARIABLE), 51, (STATIC), 0
                 storeValue: (VARIABLE), 45, (STATIC), 0
-                Unknown1766: 4, 23
+                deactivateObjectFromSlot: (STACK_0), (SELF)
                 createObject2: s32'SPSacredEdgeObj', 100
                 deactivateObj: (SELF)
                 endIf: 
@@ -1274,7 +1274,7 @@ startState: s32'ACEvtKYK_8A'
   sprite: s32'null', 2147483647
   Unknown2106: '0x4143325F4B594B5F4238415F30303200000000000000000000000000000000001E000000'
   createObject2: s32'cmn_opas_document', 131
-  Unknown43: 4, 1
+  setObjectToStackSlot: (STACK_0), (PREVIOUS)
   sprite: s32'null', 2147483647
   Unknown2106: '0x4143325F4B594B5F4238415F30303300000000000000000000000000000000001E000000'
   Unknown2107: '0x636D6E5F6576745F706F7430303100000000000000000000000000000000000002000000'
@@ -1292,7 +1292,7 @@ startState: s32'ACEvtKYK_8A'
       Unknown1734: 0
       Unknown2107: '0x4576656E744B594B3038415F303100000000000000000000000000000000000000000000'
       Unknown2107: '0x636D6E5F6576745F706F7430303200000000000000000000000000000000000002000000'
-      Unknown1766: 4, 23
+      deactivateObjectFromSlot: (STACK_0), (SELF)
       endIf: 
     endUpon: 
   sprite: s32'null', 2147483647
@@ -1402,7 +1402,7 @@ startState: s32'JavelinObj'
     hitAirPushbackY: 4500
     hitAirPushbackX: 43000
     Unknown1602: 2
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown1603: 2
       endUpon: 
     Unknown458: 3
@@ -1436,7 +1436,7 @@ startState: s32'SnowflakeObj'
     groundCounterHitEffect: (AIR_LAUNCH)
     airCounterHitEffect: (AIR_LAUNCH)
     Unknown1602: 2
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown1603: 2
       endUpon: 
     Unknown458: 3

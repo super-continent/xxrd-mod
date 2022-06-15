@@ -128,21 +128,21 @@ startState: s32'Item_Oilcan'
       Unknown2018: 1
       endIf: 
     setThrowRange: 150000
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
       ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-        Unknown23: 24
+        clearUpon: 24
         callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
         Unknown14: s32'HomeRun'
         endIf: 
       else: 
         Unknown60: '0x17000000640000000300000000000000'
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
-          Unknown23: 24
+          clearUpon: 24
           Unknown14: s32'Hit'
           endIf: 
         endElse: 
@@ -186,7 +186,7 @@ startState: s32'Item_Oilcan'
   Unknown164: 0
   Unknown166: 0
   linkParticleEx: s32'fau_item_oilcan_yoko'
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'null', 5
   physicsXImpulse: 1000
   physicsYImpulse: 10000
@@ -199,7 +199,7 @@ startState: s32'Item_Oilcan'
   sprite: s32'null', 5
   physicsYImpulse: -5000
   sprite: s32'null', 29
-  Unknown176: 0
+  resetVelocity: 0
   sprite: s32'null', 90
   createObject2: s32'OilWater', 123
   sprite: s32'null', 8
@@ -279,21 +279,21 @@ startState: s32'Item_BlackHole'
     linkParticleEx: s32'fau_item_blackhole'
     setThrowRange: 0
     Unknown2225: 0
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
       ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-        Unknown23: 24
+        clearUpon: 24
         callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
         Unknown14: s32'HomeRun'
         endIf: 
       else: 
         Unknown60: '0x17000000640000000300000000000000'
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
-          Unknown23: 24
+          clearUpon: 24
           Unknown14: s32'Hit'
           endIf: 
         endElse: 
@@ -331,7 +331,7 @@ startState: s32'Item_BlackHole'
   setMarker: s32'landing'
   sprite: s32'null', 180
   createObject2: s32'Vacuum', 123
-  Unknown176: 1
+  resetVelocity: 1
   Unknown1603: 1
   endState: 
 
@@ -343,7 +343,7 @@ startState: s32'Vacuum'
   sprite: s32'null', 180
   Unknown2220: 600, 50, 100
   Unknown2219: 1500000, 100
-  Unknown176: 1
+  resetVelocity: 1
   playSFX: s32'SE_KAKUSEIFINISH'
   sprite: s32'null', 1
   deactivateObj: (SELF)
@@ -388,8 +388,8 @@ startState: s32'Item_Bomb'
     Unknown1154: 1
     allowHitting: (ALL)
     Unknown1058: 1
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     setThrowRange: 0
@@ -400,14 +400,14 @@ startState: s32'Item_Bomb'
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
       ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-        Unknown23: 24
+        clearUpon: 24
         callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
         Unknown14: s32'HomeRun'
         endIf: 
       else: 
         Unknown60: '0x17000000640000000300000000000000'
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
-          Unknown23: 24
+          clearUpon: 24
           Unknown14: s32'Hit'
           endIf: 
         endElse: 
@@ -443,7 +443,7 @@ startState: s32'Item_Bomb'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_06', 4
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'FAE0_06', 4
   setObjectSize: 1100
   sprite: s32'FAE0_06', 4
@@ -530,8 +530,8 @@ startState: s32'Item_FireWorks'
     Unknown1154: 1
     allowHitting: (ALL)
     Unknown1058: 1
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     setThrowRange: 0
@@ -542,14 +542,14 @@ startState: s32'Item_FireWorks'
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
       ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-        Unknown23: 24
+        clearUpon: 24
         callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
         Unknown14: s32'HomeRun'
         endIf: 
       else: 
         Unknown60: '0x17000000640000000300000000000000'
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
-          Unknown23: 24
+          clearUpon: 24
           Unknown14: s32'Hit'
           endIf: 
         endElse: 
@@ -585,7 +585,7 @@ startState: s32'Item_FireWorks'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_06', 30
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'FAE0_06', 3
   addPositionX: -2000
   sprite: s32'FAE0_06', 3
@@ -676,8 +676,8 @@ startState: s32'FireWorks_smoke'
 
 startState: s32'Item_Helium'
   upon: (IMMEDIATE)
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     setThrowRange: 0
@@ -713,7 +713,7 @@ startState: s32'Item_Helium'
   Unknown3: 
   setMarker: s32'HomeRun'
   sprite: s32'null', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -724,7 +724,7 @@ startState: s32'Item_Helium'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'null', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -733,11 +733,11 @@ startState: s32'Item_Helium'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 328
-  Unknown23: 24
+  clearUpon: 24
   Unknown1603: 1
   Unknown98: 0
   playSFX: s32'SE_DOWNA'
-  Unknown176: 1
+  resetVelocity: 1
   upon: (FRAME_STEP)
     Unknown60: '0x17000000640000001600000064000000'
     ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
@@ -850,12 +850,12 @@ startState: s32'MeteoInseki'
     riscPlus: 20
     riscMinus: 10
     stunValue: 18
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: (HIT_OR_GUARD)
-      Unknown23: 24
+      clearUpon: 24
       Unknown14: s32'rakkahit'
       endUpon: 
     setThrowRange: 0
@@ -865,14 +865,14 @@ startState: s32'MeteoInseki'
     upon: 24
       Unknown60: '0x17000000640000000300000000000000'
       ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 100000
-        Unknown23: 24
+        clearUpon: 24
         callSubroutine: s32'Acv_Homerun', 0, 0, 0, 0, 0, 0, 0, 0
         Unknown14: s32'HomeRun'
         endIf: 
       else: 
         Unknown60: '0x17000000640000000300000000000000'
         ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 300000
-          Unknown23: 24
+          clearUpon: 24
           Unknown14: s32'Hit'
           endIf: 
         endElse: 
@@ -916,7 +916,7 @@ startState: s32'MeteoInseki'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'null', 80
-  Unknown176: 1
+  resetVelocity: 1
   screenShake: 1, 1
   linkParticleEx: s32'fau_item_meteo_bound'
   Unknown1603: 1
@@ -924,7 +924,7 @@ startState: s32'MeteoInseki'
   deactivateObj: (SELF)
   setMarker: s32'rakkahit'
   sprite: s32'null', 80
-  Unknown176: 1
+  resetVelocity: 1
   linkParticleEx: s32'fau_item_meteo_hit'
   Unknown1603: 1
   sprite: s32'null', 1
@@ -941,8 +941,8 @@ startState: s32'ArmageddonInseki'
     riscPlus: 10
     riscMinus: 10
     stunValue: 18
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     setThrowRange: -20000
@@ -988,7 +988,7 @@ startState: s32'ArmageddonInseki'
   goToMarker: s32'loop'
   setMarker: s32'landing'
   sprite: s32'FAE0_05', 20
-  Unknown176: 1
+  resetVelocity: 1
   screenShake: 1, 1
   hit: 
   sprite: s32'FAE0_05', 6
@@ -1011,12 +1011,12 @@ startState: s32'Item_ChibiFaust'
     linkPawnWithAnim: s32'chibi', s32''
     Unknown2157: 1, 5
     setThrowRange: 0
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'walk'
       endUpon: 
     upon: (HIT_OR_GUARD)
-      Unknown23: 2
+      clearUpon: (LANDING)
       Unknown14: s32'dead'
       endUpon: 
     upon: 24
@@ -1090,7 +1090,7 @@ startState: s32'Item_ChibiFaust'
   goToMarker: s32'fall_loop'
   setMarker: s32'HomeRun'
   sprite: s32'chibi_hit_00', 4
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1103,7 +1103,7 @@ startState: s32'Item_ChibiFaust'
   goToMarker: s32'Hit_loop'
   setMarker: s32'Hit'
   sprite: s32'chibi_hit_00', 4
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -1120,7 +1120,7 @@ startState: s32'Item_ChibiFaust'
   attackLevel: 2
   Unknown1028: 1
   Unknown1603: 1
-  Unknown23: 24
+  clearUpon: 24
   sprite: s32'chibi_walk_00', 4
   physicsXImpulse: 3500
   Unknown2161: 100, 0, 100000
@@ -1145,11 +1145,11 @@ startState: s32'Item_ChibiFaust'
   physicsYImpulse: 17500
   setGravity: 875
   setThrowRange: -300000
-  Unknown23: 24
+  clearUpon: 24
   Unknown1603: 1
   setMarker: s32'dead_loop'
   sprite: s32'chibi_death_01', 4
-  upon: 2
+  upon: (LANDING)
     deactivateObj: (SELF)
     endUpon: 
   sprite: s32'chibi_death_00', 4
@@ -1190,12 +1190,12 @@ startState: s32'Item_BigFaust'
     Unknown2157: 1, 5
     setObjectSize: 3000
     setThrowRange: 0
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'walk'
       endUpon: 
     upon: (HIT_OR_GUARD)
-      Unknown23: 2
+      clearUpon: (LANDING)
       Unknown14: s32'dead'
       endUpon: 
     upon: 24
@@ -1270,7 +1270,7 @@ startState: s32'Item_BigFaust'
   goToMarker: s32'fall_loop'
   setMarker: s32'HomeRun'
   sprite: s32'chibi_hit_00', 4
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1283,7 +1283,7 @@ startState: s32'Item_BigFaust'
   goToMarker: s32'Hit_loop'
   setMarker: s32'Hit'
   sprite: s32'chibi_hit_00', 4
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -1301,7 +1301,7 @@ startState: s32'Item_BigFaust'
   Unknown1028: 1
   damage: 25
   Unknown1603: 1
-  Unknown23: 24
+  clearUpon: 24
   sprite: s32'chibi_walk_00', 4
   physicsXImpulse: 3500
   Unknown2161: 100, 0, 100000
@@ -1327,11 +1327,11 @@ startState: s32'Item_BigFaust'
   physicsYImpulse: 17500
   setGravity: 875
   setThrowRange: -300000
-  Unknown23: 24
+  clearUpon: 24
   Unknown1603: 1
   setMarker: s32'dead_loop'
   sprite: s32'chibi_death_01', 4
-  upon: 2
+  upon: (LANDING)
     deactivateObj: (SELF)
     endUpon: 
   sprite: s32'chibi_death_00', 4
@@ -1348,13 +1348,13 @@ startState: s32'Item_Hammer'
     stunValue: 88
     linkParticleEx: s32'fau_item_hammer'
     upon: (HIT_OR_GUARD)
-      Unknown23: 24
-      Unknown23: 2
+      clearUpon: 24
+      clearUpon: (LANDING)
       Unknown14: s32'hit'
       endUpon: 
-    upon: 2
-      Unknown23: 24
-      Unknown23: 8
+    upon: (LANDING)
+      clearUpon: 24
+      clearUpon: (HIT_OR_GUARD)
       Unknown14: s32'bound'
       endUpon: 
     setThrowRange: 0
@@ -1387,7 +1387,7 @@ startState: s32'Item_Hammer'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1478,13 +1478,13 @@ startState: s32'Item_GoldenHammer'
     Unknown1112: 0
     linkParticleEx: s32'fau_item_goldenhammer'
     upon: (HIT_OR_GUARD)
-      Unknown23: 24
-      Unknown23: 2
+      clearUpon: 24
+      clearUpon: (LANDING)
       Unknown14: s32'hit'
       endUpon: 
-    upon: 2
-      Unknown23: 24
-      Unknown23: 8
+    upon: (LANDING)
+      clearUpon: 24
+      clearUpon: (HIT_OR_GUARD)
       Unknown14: s32'bound'
       endUpon: 
     setThrowRange: 0
@@ -1517,7 +1517,7 @@ startState: s32'Item_GoldenHammer'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1602,8 +1602,8 @@ startState: s32'Item_Frasco'
     setThrowRange: 60000
     Unknown2225: 20
     Unknown1058: 1
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     linkParticleEx: s32'fau_item_poisonflask_loop'
@@ -1637,7 +1637,7 @@ startState: s32'Item_Frasco'
   sprite: s32'FAE1_01', 2147483647
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1649,7 +1649,7 @@ startState: s32'Item_Frasco'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -1660,7 +1660,7 @@ startState: s32'Item_Frasco'
   setMarker: s32'landing'
   sprite: s32'FAE1_03', 20
   Unknown1603: 1
-  Unknown176: 1
+  resetVelocity: 1
   Unknown338: 250
   createObject2: s32'SubItem_Poison', 100
   linkParticleEx: s32'fau_item_poisonflask_end'
@@ -1721,15 +1721,15 @@ startState: s32'Item_Chocolate'
     Unknown2225: 20
     setThrowRange: 0
     recoveryState: 
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 3
+          setObjectToStackSlot: (STACK_0), (PLAYER)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -1748,7 +1748,7 @@ startState: s32'Item_Chocolate'
             endIf: 
           endIf: 
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 22
+          setObjectToStackSlot: (STACK_0), (ENEMY)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -1799,7 +1799,7 @@ startState: s32'Item_Chocolate'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1811,7 +1811,7 @@ startState: s32'Item_Chocolate'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -1821,8 +1821,8 @@ startState: s32'Item_Chocolate'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_02', 120
-  Unknown23: 24
-  Unknown176: 1
+  clearUpon: 24
+  resetVelocity: 1
   sprite: s32'FAE0_02', 8
   Unknown2023: 0
   sprite: s32'FAE0_02', 8
@@ -1874,15 +1874,15 @@ startState: s32'Item_BestChocolate'
     Unknown2225: 20
     setThrowRange: 0
     recoveryState: 
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 3
+          setObjectToStackSlot: (STACK_0), (PLAYER)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -1901,7 +1901,7 @@ startState: s32'Item_BestChocolate'
             endIf: 
           endIf: 
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 22
+          setObjectToStackSlot: (STACK_0), (ENEMY)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -1952,7 +1952,7 @@ startState: s32'Item_BestChocolate'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -1964,7 +1964,7 @@ startState: s32'Item_BestChocolate'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -1974,8 +1974,8 @@ startState: s32'Item_BestChocolate'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_02', 120
-  Unknown23: 24
-  Unknown176: 1
+  clearUpon: 24
+  resetVelocity: 1
   sprite: s32'FAE0_02', 8
   Unknown2023: 0
   sprite: s32'FAE0_02', 8
@@ -2023,15 +2023,15 @@ startState: s32'Item_Donut'
     Unknown2225: 20
     setThrowRange: 0
     recoveryState: 
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 3
+          setObjectToStackSlot: (STACK_0), (PLAYER)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -2053,7 +2053,7 @@ startState: s32'Item_Donut'
             endIf: 
           endIf: 
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 22
+          setObjectToStackSlot: (STACK_0), (ENEMY)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -2107,7 +2107,7 @@ startState: s32'Item_Donut'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -2119,7 +2119,7 @@ startState: s32'Item_Donut'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -2129,8 +2129,8 @@ startState: s32'Item_Donut'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_03', 120
-  Unknown23: 24
-  Unknown176: 1
+  clearUpon: 24
+  resetVelocity: 1
   sprite: s32'FAE0_03', 8
   Unknown2023: 0
   sprite: s32'FAE0_03', 8
@@ -2181,15 +2181,15 @@ startState: s32'Item_ManyDonut'
     Unknown2225: 20
     setThrowRange: 0
     recoveryState: 
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
       if: (VARIABLE), 31
         storeValue: (VARIABLE), 50, (STATIC), 0
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 3
+          setObjectToStackSlot: (STACK_0), (PLAYER)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -2211,7 +2211,7 @@ startState: s32'Item_ManyDonut'
             endIf: 
           endIf: 
         ifNot: (VARIABLE), 50
-          Unknown43: 4, 22
+          setObjectToStackSlot: (STACK_0), (ENEMY)
           storeFromObjToObj: (SELF), (VARIABLE), 61, (STACK_0), (VARIABLE), 17
           storeFromObjToObj: (SELF), (VARIABLE), 62, (STACK_0), (VARIABLE), 18
           modifyVar: (SUB), (VARIABLE), 61, (VARIABLE), 17
@@ -2265,7 +2265,7 @@ startState: s32'Item_ManyDonut'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -2277,7 +2277,7 @@ startState: s32'Item_ManyDonut'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 30000
   physicsYImpulse: 30000
@@ -2287,8 +2287,8 @@ startState: s32'Item_ManyDonut'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'FAE0_03', 120
-  Unknown23: 24
-  Unknown176: 1
+  clearUpon: 24
+  resetVelocity: 1
   sprite: s32'FAE0_03', 8
   Unknown2023: 0
   sprite: s32'FAE0_03', 8
@@ -2345,8 +2345,8 @@ startState: s32'Item_JumpStand'
     Unknown1154: 1
     allowHitting: (ALL)
     setThrowRange: 0
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     Unknown2225: 20
@@ -2382,7 +2382,7 @@ startState: s32'Item_JumpStand'
   Unknown3: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   physicsXImpulse: 100000
   physicsYImpulse: 50000
   Unknown448: s32'fau_batting', 100
@@ -2394,7 +2394,7 @@ startState: s32'Item_JumpStand'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   physicsXImpulse: 30000
   physicsYImpulse: 30000
   setGravity: 2000
@@ -2403,7 +2403,7 @@ startState: s32'Item_JumpStand'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'ef_jump', 5
-  Unknown23: 24
+  clearUpon: 24
   physicsXImpulse: 1000
   physicsYImpulse: 10000
   sprite: s32'ef_jump', 5
@@ -2413,7 +2413,7 @@ startState: s32'Item_JumpStand'
   sprite: s32'ef_jump', 5
   physicsYImpulse: -5000
   sprite: s32'ef_jump', 100
-  Unknown176: 0
+  resetVelocity: 0
   hit: 
   upon: (HIT_OR_GUARD)
     playSFX: s32'SE_JUMPB'
@@ -2422,7 +2422,7 @@ startState: s32'Item_JumpStand'
     deactivateObj: (SELF)
     endUpon: 
   sprite: s32'ef_jump', 96
-  Unknown1766: 1, 23
+  deactivateObjectFromSlot: (PREVIOUS), (SELF)
   endState: 
 
 startState: s32'Item_100t'
@@ -2437,8 +2437,8 @@ startState: s32'Item_100t'
     ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
-    upon: 2
-      Unknown23: 24
+    upon: (LANDING)
+      clearUpon: 24
       Unknown14: s32'landing'
       endUpon: 
     Unknown2225: 20
@@ -2471,7 +2471,7 @@ startState: s32'Item_100t'
     endUpon: 
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -2483,7 +2483,7 @@ startState: s32'Item_100t'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
+  clearUpon: 24
   Unknown58: 1
   physicsXImpulse: 20000
   physicsYImpulse: 20000
@@ -2493,7 +2493,7 @@ startState: s32'Item_100t'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'ef_100t', 1
-  Unknown23: 24
+  clearUpon: 24
   damage: 0
   stunValue: 0
   Unknown1142: 1
@@ -2542,9 +2542,9 @@ startState: s32'Item_Golden100t'
     ifNot: (VARIABLE), 32
       Unknown2018: 1
       endIf: 
-    upon: 2
-      Unknown23: 24
-      Unknown23: 3
+    upon: (LANDING)
+      clearUpon: 24
+      clearUpon: (FRAME_STEP)
       Unknown14: s32'landing'
       endUpon: 
     Unknown2225: 20
@@ -2582,14 +2582,14 @@ startState: s32'Item_Golden100t'
     endUpon: 
   setMarker: s32'Fall'
   sprite: s32'FAE0_04', 2147483647
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   hit: 
   hitAirPushbackY: -50000
   untechableTime: 60
   setMarker: s32'HomeRun'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
-  Unknown23: 3
+  clearUpon: 24
+  clearUpon: (FRAME_STEP)
   Unknown58: 1
   physicsXImpulse: 100000
   physicsYImpulse: 50000
@@ -2601,8 +2601,8 @@ startState: s32'Item_Golden100t'
   Unknown3: 
   setMarker: s32'Hit'
   sprite: s32'FAEH_01', 2147483647
-  Unknown23: 24
-  Unknown23: 3
+  clearUpon: 24
+  clearUpon: (FRAME_STEP)
   Unknown58: 1
   physicsXImpulse: 20000
   physicsYImpulse: 20000
@@ -2612,8 +2612,8 @@ startState: s32'Item_Golden100t'
   Unknown3: 
   setMarker: s32'landing'
   sprite: s32'ef_100t', 1
-  Unknown23: 24
-  Unknown23: 3
+  clearUpon: 24
+  clearUpon: (FRAME_STEP)
   damage: 0
   stunValue: 0
   Unknown1142: 1
@@ -2673,11 +2673,11 @@ startState: s32'Ai_Bomb'
   setThrowRange: 0
   Unknown1602: 2
   upon: (HIT_OR_GUARD)
-    Unknown23: 2
+    clearUpon: (LANDING)
     Unknown14: s32'touch'
     endUpon: 
-  upon: 2
-    Unknown23: 8
+  upon: (LANDING)
+    clearUpon: (HIT_OR_GUARD)
     Unknown14: s32'touch'
     endUpon: 
   setMarker: s32'touch'
@@ -2811,7 +2811,7 @@ startState: s32'TreasureAngel'
     Unknown457: (PARENT)
     Unknown242: 
     linkParticleEx: s32'fau_shigeki_angel'
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       endUpon: 
     upon: 24
       Unknown14: s32'suka_open'
@@ -2842,7 +2842,7 @@ startState: s32'TreasureDevil1'
     Unknown457: (PARENT)
     Unknown242: 
     linkParticleEx: s32'fau_shigeki_devil_s'
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       endUpon: 
     upon: 24
       Unknown14: s32'suka_open'
@@ -2869,7 +2869,7 @@ startState: s32'TreasureDevil2'
     Unknown457: (PARENT)
     Unknown242: 
     linkParticleEx: s32'fau_shigeki_devil_m'
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       endUpon: 
     upon: 24
       Unknown14: s32'suka_open'
@@ -2896,7 +2896,7 @@ startState: s32'TreasureDevil3'
     Unknown457: (PARENT)
     Unknown242: 
     linkParticleEx: s32'fau_shigeki_devil_l'
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       endUpon: 
     upon: 24
       Unknown14: s32'suka_open'
@@ -2926,7 +2926,7 @@ startState: s32'TreasureBox'
     linkParticleEx: s32'fau_shigeki_kamibukuro'
     addPositionY: 300000
     physicsYImpulse: -60000
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       characterEffectOverlay: -1
       fadeColorBlue: -30
       fadeColorGreen: -30
@@ -2938,7 +2938,7 @@ startState: s32'TreasureBox'
     endUpon: 
   sprite: s32'null', 5
   sprite: s32'null', 10
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'null', 10
   sprite: s32'null', 2147483647
   endState: 
@@ -2949,7 +2949,7 @@ startState: s32'TreasureYajirushi'
     Unknown242: 
     linkParticleEx: s32'fau_shigeki_finger'
     createObject2: s32'TreasureYajirushiLR', 100
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       characterEffectOverlay: -1
       fadeColorBlue: -30
       fadeColorGreen: -30
@@ -2994,7 +2994,7 @@ startState: s32'Jumpdai_Loop'
     if: (VARIABLE), 32
       Unknown2019: 2
       endIf: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       Unknown14: s32'Del'
       endUpon: 
     endUpon: 
@@ -3285,7 +3285,7 @@ startState: s32'OreHana'
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown456: (NULL)
         linkObjPositionTo: (NULL)
         endIf: 
@@ -3333,7 +3333,7 @@ startState: s32'OreHana_Shot'
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
         hitUnchecked: 
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown456: (NULL)
         linkObjPositionTo: (NULL)
         endIf: 
@@ -3343,7 +3343,7 @@ startState: s32'OreHana_Shot'
   sprite: s32'null', 4
   sprite: s32'fau412_07ef', 2
   sprite: s32'null', 16
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   recoveryState: 
   endState: 
 
@@ -3356,7 +3356,7 @@ startState: s32'OreHanaBig'
     upon: (FRAME_STEP)
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown456: (NULL)
         linkObjPositionTo: (NULL)
         endIf: 
@@ -3405,7 +3405,7 @@ startState: s32'OreHanaBig_Shot'
       Unknown2001: 3, s32'CmnActRomanCancel'
       if: (VARIABLE), 0
         hitUnchecked: 
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         Unknown456: (NULL)
         linkObjPositionTo: (NULL)
         endIf: 
@@ -3415,7 +3415,7 @@ startState: s32'OreHanaBig_Shot'
   sprite: s32'null', 4
   sprite: s32'fau412_07efex', 10
   sprite: s32'null', 16
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   recoveryState: 
   endState: 
 
@@ -3839,7 +3839,7 @@ startState: s32'ACEvtFAU_8B'
   sprite: s32'null', 2147483647
   Unknown2106: '0x4143325F4641555F4238425F30303500000000000000000000000000000000001E000000'
   createObject2: s32'cmn_avatar_tuusin_jhn', 131
-  Unknown43: 4, 1
+  setObjectToStackSlot: (STACK_0), (PREVIOUS)
   sprite: s32'null', 2147483647
   Unknown2106: '0x4143325F4641555F4238425F30303600000000000000000000000000000000001E000000'
   sprite: s32'null', 2147483647

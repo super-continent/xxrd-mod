@@ -1,0 +1,6268 @@
+startSubroutine: s32'PreInit'
+  Unknown1264: s16'ven'
+  endSubroutine: 
+
+startSubroutine: s32'PreInit2nd'
+  storeValue: (VARIABLE), 61, (STATIC), 0
+  ifNot: (VARIABLE), 61
+    ifOpponentCharacter: s16'mll'
+      Unknown2213: s32'entry_default', s32'entry_default', 2
+      storeValue: (VARIABLE), 61, (STATIC), 1
+      endIf: 
+    ifOpponentCharacter: s16'zat'
+      Unknown2213: s32'entry_default', s32'entry_default', 2
+      storeValue: (VARIABLE), 61, (STATIC), 1
+      endIf: 
+    ifOpponentCharacter: s16'sly'
+      Unknown2213: s32'entry_default', s32'entry_default', 2
+      storeValue: (VARIABLE), 61, (STATIC), 1
+      endIf: 
+    endIf: 
+  ifNot: (VARIABLE), 61
+    Unknown2213: s32'entry_default', s32'', 0
+    storeValue: (VARIABLE), 61, (STATIC), 1
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'RoundInit'
+  life: 420
+  walkFSpeed: 6037
+  walkBSpeed: 4812
+  initDashFSpeed: 14210
+  Unknown1215: 15750
+  Unknown1216: 5250
+  Unknown1217: 875
+  forwardJumpXSpeed: 8750
+  backwardJumpXSpeed: 8750
+  jumpYSpeed: 38500
+  gravity: 1925
+  forwardHighJumpXSpeed: 8750
+  backwardHighJumpXSpeed: 8750
+  highJumpYSpeed: 45500
+  highJumpGravity: 1925
+  dashAcceleration: 595
+  dashFriction: 100
+  Unknown1228: 1750
+  Unknown1229: 5250
+  Unknown1230: 16
+  Unknown1231: 52500
+  Unknown1232: 140000
+  Unknown1233: 20
+  Unknown1234: 10
+  stunResistance: 60
+  Unknown1236: 8
+  guts: 1
+  gutsLevel: 0
+  weight: 100
+  airDashCount: 1
+  doubleJumpCount: 1
+  Unknown1242: 6
+  Unknown1243: 5
+  Unknown1244: 12
+  Unknown1245: 10
+  Unknown1246: 25
+  Unknown1247: 25
+  Unknown1248: 32
+  Unknown1249: 5
+  Unknown1250: 50
+  airdashFSpeed: 28875
+  airdashBSpeed: 22750
+  Unknown1253: 105000
+  Unknown1254: 227500
+  Unknown1255: 112000
+  Unknown1256: 157500
+  Unknown1257: 105000
+  airthrowRange: 192500
+  Unknown1259: -70000
+  Unknown1260: 245000
+  Unknown1261: 12, 12, 12, 12, 12, 12
+  Unknown1262: 0
+  Unknown1268: 1
+  Unknown1269: 0
+  Unknown1273: 100
+  Unknown1274: 800000
+  Unknown1275: 100
+  addMove: s32'NmlAtk5A'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_NOT_UP)
+    Unknown1498: -320, -328, 326, 96
+    Unknown1534: 
+    Unknown1537: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk6A'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: (INPUT_NOT_UP)
+    Unknown1498: -432, -395, 255, 122
+    Unknown1541: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2A'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -288, -189, 238, 47
+    Unknown1534: 
+    Unknown1537: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5B'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_NOT_UP)
+    Unknown1498: -262, -281, 257, 190
+    Unknown1534: 
+    Unknown1537: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2B'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -278, -33, 255, 40
+    Unknown1534: 
+    Unknown1539: 
+    Unknown1537: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5CNear'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_NOT_UP)
+    addMoveCondition: (CLOSE_SLASH)
+    Unknown1498: -254, -484, 192, 346
+    Unknown1534: 
+    Unknown1532: 
+    Unknown1511: 120
+    endMoveRegister: 
+  addMove: s32'NmlAtk5CFar'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_NOT_UP)
+    addMoveCondition: (FAR_SLASH)
+    Unknown1498: -637, -227, 435, 43
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2C'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -483, -124, 360, 38
+    Unknown1534: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5D'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_NOT_UP)
+    Unknown1498: -348, -297, 316, 112
+    Unknown1534: 
+    Unknown1532: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk6D'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: (INPUT_NOT_UP)
+    Unknown1498: -530, -518, 338, 402
+    Unknown1536: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk2D'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -434, -402, 394, 208
+    Unknown1541: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5E'
+    moveType: (NORMAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_D)
+    moveInput: (INPUT_NOT_UP)
+    Unknown1498: -330, -336, 356, 226
+    Unknown1538: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'HomingJump'
+    moveType: (DUST_FOLLOWUP)
+    characterState: (STANDING)
+    Unknown1486: 1
+    moveInput: (INPUT_ANY_UP)
+    isFollowupMove: 1
+    endMoveRegister: 
+  addMove: s32'HomingDash2'
+    moveType: (DUST_FOLLOWUP)
+    characterState: (STANDING)
+    moveInput: (INPUT_6)
+    isFollowupMove: 1
+    endMoveRegister: 
+  addMove: s32'NmlAtk2E'
+    moveType: (NORMAL)
+    characterState: (CROUCHING)
+    moveInput: (INPUT_PRESS_D)
+    moveInput: (INPUT_ANY_DOWN)
+    Unknown1498: -328, -110, 304, 96
+    Unknown1534: 
+    Unknown1539: 
+    Unknown1532: 
+    endMoveRegister: 
+  addMove: s32'NmlAtk5F'
+    moveType: (NORMAL)
+    moveSubCategory: (TAUNT)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_TAUNT)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'NmlAtk6F'
+    moveType: (NORMAL)
+    moveSubCategory: (RESPECT)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_TAUNT)
+    moveInput: (INPUT_ANY_FORWARD)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5A'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_P)
+    Unknown1498: -308, -360, 266, 142
+    Unknown1534: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5B'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1498: -235, -250, 257, 176
+    Unknown1534: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5C'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -238, -394, 314, 344
+    Unknown1534: 
+    Unknown1532: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5D'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1498: -294, -318, 224, 300
+    Unknown1534: 
+    Unknown1532: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'NmlAtkAir5E'
+    moveType: (NORMAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_PRESS_D)
+    Unknown1498: -172, -616, 312, 444
+    Unknown1534: 
+    Unknown1538: 
+    endMoveRegister: 
+  addMove: s32'DeadAngleAttack'
+    moveType: (DEAD_ANGLE_ATTACK)
+    characterState: (STANDING)
+    Unknown1406: 4
+    moveInput: (INPUT_ANY_FORWARD)
+    moveInput: (INPUT_NOT_9)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    endMoveRegister: 
+  addMove: s32'CounterGuardStand'
+    moveType: (BLITZ_SHIELD)
+    characterState: (STANDING)
+    Unknown1406: 5
+    moveInput: (INPUT_5)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_8)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    addMoveCondition: (REQUIRES_25_TENSION)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'CounterGuardCrouch'
+    moveType: (BLITZ_SHIELD)
+    characterState: (CROUCHING)
+    Unknown1406: 5
+    moveInput: (INPUT_2)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_3)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    addMoveCondition: (REQUIRES_25_TENSION)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'CounterGuardAir'
+    moveType: (BLITZ_SHIELD)
+    characterState: (JUMPING)
+    Unknown1406: 5
+    moveInput: (INPUT_5)
+    moveInput: (INPUT_ANY_TWO_OF_PKSH)
+    moveInput: (INPUT_PRESS_H)
+    addMoveCondition: (REQUIRES_25_TENSION)
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'IchigekiJunbi'
+    moveType: (INSTANT_KILL_PREPARATION)
+    characterState: (STANDING)
+    addMoveCondition: (INSTANT_KILL_READY)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  addMove: s32'MOMSuki'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_MOM_TAUNT)
+    disableSpecialCancel: 1
+    Unknown1511: 0
+    endMoveRegister: 
+  addMove: s32'DebugSkillEx'
+    moveType: (SPECIAL)
+    characterState: (NONE)
+    moveInput: (INPUT_F_TRG_ON)
+    addMoveCondition: 111
+    endMoveRegister: 
+  addMove: s32'BallSeiseiA'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_P)
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiB'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiA_Hold'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_HOLD_P)
+    Unknown1394: s32'BallSeiseiA'
+    isFollowupMove: 1
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiB_Hold'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_HOLD_K)
+    Unknown1394: s32'BallSeiseiB'
+    isFollowupMove: 1
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiC_Hold'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_HOLD_S)
+    Unknown1394: s32'BallSeiseiC'
+    isFollowupMove: 1
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'BallSeiseiD_Hold'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_HOLD_H)
+    Unknown1394: s32'BallSeiseiD'
+    isFollowupMove: 1
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'AirBallSeiseiA'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_P)
+    Unknown1535: 
+    Unknown1511: 70
+    endMoveRegister: 
+  addMove: s32'AirBallSeiseiB'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1535: 
+    Unknown1511: 70
+    endMoveRegister: 
+  addMove: s32'AirBallSeiseiC'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1535: 
+    Unknown1511: 70
+    endMoveRegister: 
+  addMove: s32'AirBallSeiseiD'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_214)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1535: 
+    Unknown1511: 70
+    endMoveRegister: 
+  addMove: s32'DubiousCurveA'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_41236)
+    moveInput: (INPUT_PRESS_P)
+    Unknown1498: -320, -329, 224, 187
+    Unknown1533: 
+    Unknown1531: 
+    Unknown1549: 
+    endMoveRegister: 
+  addMove: s32'DubiousCurveB'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_41236)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1498: -320, -329, 224, 187
+    Unknown1533: 
+    Unknown1531: 
+    Unknown1549: 
+    endMoveRegister: 
+  addMove: s32'DubiousCurveC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_41236)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -320, -329, 224, 187
+    Unknown1533: 
+    Unknown1531: 
+    Unknown1549: 
+    endMoveRegister: 
+  addMove: s32'DubiousCurveD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_41236)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1498: -320, -329, 224, 187
+    Unknown1533: 
+    Unknown1531: 
+    Unknown1549: 
+    endMoveRegister: 
+  addMove: s32'DebugKamae'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_D)
+    addMoveCondition: (CPU)
+    endMoveRegister: 
+  addMove: s32'DebugKamaeE'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_D)
+    addMoveCondition: (CPU)
+    isFollowupMove: 1
+    endMoveRegister: 
+  addMove: s32'DebugKamaeD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_PRESS_H)
+    addMoveCondition: (CPU)
+    isFollowupMove: 1
+    endMoveRegister: 
+  addMove: s32'Warp'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_623)
+    moveInput: (INPUT_PRESS_K)
+    Unknown1533: 
+    endMoveRegister: 
+  addMove: s32'WarpB'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_HOLD_P)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_HOLD_K)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_HOLD_S)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_HOLD_H)
+    isFollowupMove: 1
+    Unknown1533: 
+    endMoveRegister: 
+  addMove: s32'StingerAimC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_CHARGE_BACK_FORWARD_40F)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -738, -308, 630, 126
+    Unknown1536: 
+    Unknown1546: 
+    Unknown1544: 
+    Unknown1550: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'StingerAimD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_CHARGE_BACK_FORWARD_40F)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1498: -858, -308, 716, 128
+    Unknown1535: 
+    Unknown1544: 
+    Unknown1550: 
+    endMoveRegister: 
+  addMove: s32'CarcassRaidC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_CHARGE_DOWN_UP_40F)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -642, -398, 286, 402
+    Unknown1533: 
+    Unknown1550: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'CarcassRaidD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_CHARGE_DOWN_UP_40F)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1392: 1
+    Unknown1498: -330, -732, 183, 734
+    Unknown1533: 
+    Unknown1550: 
+    Unknown1531: 
+    endMoveRegister: 
+  addMove: s32'DoubleHeadMorbidC'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_623)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -478, -460, 348, 276
+    Unknown1536: 
+    Unknown1532: 
+    endMoveRegister: 
+  addMove: s32'DoubleHeadMorbidD'
+    moveType: (SPECIAL)
+    characterState: (STANDING)
+    moveInput: (INPUT_623)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1498: -793, -464, 657, 278
+    Unknown1535: 
+    endMoveRegister: 
+  addMove: s32'MadStrugguleC'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -336, -276, 256, 485
+    Unknown1534: 
+    Unknown1538: 
+    Unknown1531: 
+    Unknown1556: 
+    endMoveRegister: 
+  addMove: s32'MadStrugguleD'
+    moveType: (SPECIAL)
+    characterState: (JUMPING)
+    moveInput: (INPUT_236)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1498: -336, -276, 256, 485
+    Unknown1534: 
+    Unknown1538: 
+    Unknown1556: 
+    endMoveRegister: 
+  addMove: s32'RedHail'
+    moveType: (OVERDRIVE)
+    characterState: (JUMPING)
+    moveInput: (INPUT_236236)
+    moveInput: (INPUT_PRESS_H)
+    addMoveCondition: (REQUIRES_50_TENSION)
+    Unknown1498: -590, -322, 512, 706
+    Unknown1534: 
+    Unknown1532: 
+    Unknown1543: 
+    Unknown1550: 
+    endMoveRegister: 
+  addMove: s32'DarkAngel'
+    moveType: (OVERDRIVE)
+    characterState: (STANDING)
+    addMoveCondition: (REQUIRES_50_TENSION)
+    moveInput: (INPUT_236214)
+    moveInput: (INPUT_PRESS_S)
+    Unknown1498: -884, -423, 666, 429
+    Unknown1536: 
+    Unknown1531: 
+    Unknown1546: 
+    Unknown1557: 
+    endMoveRegister: 
+  addMove: s32'DarkAngelBurst'
+    Unknown1394: s32'DarkAngel'
+    moveType: (OVERDRIVE)
+    moveSubCategory: (BURST_OVERDRIVE)
+    characterState: (STANDING)
+    addMoveCondition: (REQUIRES_50_TENSION)
+    addMoveCondition: 116
+    moveInput: (INPUT_236214)
+    moveInput: (INPUT_PRESS_D)
+    Unknown1498: -884, -423, 666, 429
+    Unknown1536: 
+    Unknown1531: 
+    Unknown1546: 
+    Unknown1557: 
+    endMoveRegister: 
+  addMove: s32'SummonGoldBall'
+    moveType: (OVERDRIVE)
+    characterState: (STANDING)
+    addMoveCondition: (REQUIRES_50_TENSION)
+    moveInput: (INPUT_236214)
+    moveInput: (INPUT_PRESS_H)
+    Unknown1392: 2
+    Unknown1536: 
+    Unknown1511: 140
+    endMoveRegister: 
+  addMove: s32'Ichigeki'
+    moveType: (INSTANT_KILL)
+    characterState: (STANDING)
+    addMoveCondition: 107
+    moveInput: (INPUT_236236)
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  addMove: s32'RC_HomingJumpCombo'
+    Unknown1488: 2, 1, 30
+    Unknown1561: 
+    Unknown1483: s32'NmlAtkAir5E'
+    Unknown1483: s32'NmlAtkAir5E'
+    Unknown1483: s32'NmlAtkAir5C'
+    Unknown1483: s32'NmlAtkAir5D'
+    endMoveRegister: 
+  addMove: s32'RC_BonusA'
+    Unknown1488: 2, 0, 30
+    Unknown1559: 
+    Unknown1483: s32'DubiousCurveA'
+    Unknown1483: s32'DubiousCurveB'
+    Unknown1483: s32'DubiousCurveC'
+    Unknown1482: 64, 120
+    endMoveRegister: 
+  addMove: s32'RC_BonusB'
+    Unknown1488: 2, 0, 30
+    Unknown1559: 
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 64, 8
+    Unknown1483: s32'MadStrugguleC'
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 64, 16
+    Unknown1483: s32'MadStrugguleC'
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 64, 24
+    Unknown1483: s32'MadStrugguleD'
+    endMoveRegister: 
+  addMove: s32'RC_BonusC'
+    Unknown1488: 2, 0, 30
+    Unknown1559: 
+    Unknown1483: s32'BallSeiseiB'
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiD'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'StingerAimD'
+    endMoveRegister: 
+  addMove: s32'RC_BerserkA'
+    Unknown1488: 2, 0, 30
+    Unknown1560: 
+    Unknown1483: s32'CarcassRaidC'
+    Unknown1483: s32'CarcassRaidD'
+    Unknown1483: s32'StingerAimD'
+    Unknown1482: 128, 120
+    endMoveRegister: 
+  addMove: s32'RC_BerserkB'
+    Unknown1488: 2, 0, 30
+    Unknown1560: 
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1482: 0, 30
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'StingerAimD'
+    Unknown1483: s32'Warp'
+    Unknown1483: s32'CmnBAirDash'
+    Unknown1483: s32'MadStrugguleD'
+    endMoveRegister: 
+  addMove: s32'RC_BerserkC'
+    Unknown1488: 2, 0, 30
+    Unknown1560: 
+    Unknown1483: s32'BallSeiseiB'
+    Unknown1483: s32'Warp'
+    Unknown1483: s32'NmlAtkAir5E'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 10
+    Unknown1483: s32'NmlAtk2E'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss1'
+    Unknown1488: 2, 0, 30
+    Unknown1557: 
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 0, 6
+    Unknown1483: s32'DubiousCurveD'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 0, 6
+    Unknown1483: s32'DubiousCurveC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 0, 6
+    Unknown1483: s32'DubiousCurveB'
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 0, 6
+    Unknown1483: s32'DubiousCurveA'
+    Unknown1483: s32'NmlAtk6D'
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss2'
+    Unknown1488: 2, 0, 30
+    Unknown1557: 
+    Unknown1483: s32'DoubleHeadMorbidC'
+    Unknown1483: s32'DoubleHeadMorbidC'
+    Unknown1483: s32'DoubleHeadMorbidD'
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss3'
+    Unknown1488: 2, 0, 30
+    Unknown1557: 
+    Unknown1483: s32'StingerAimC'
+    Unknown1483: s32'CarcassRaidC'
+    Unknown1483: s32'StingerAimD'
+    Unknown1482: 128, 90
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_MOMBoss4'
+    Unknown1488: 2, 0, 30
+    Unknown1557: 
+    Unknown1483: s32'CmnFDash'
+    Unknown1483: s32'CmnVHighJump'
+    Unknown1482: 0, 4
+    Unknown1483: s32'MadStrugguleC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1483: s32'CmnVHighJump'
+    Unknown1482: 0, 6
+    Unknown1483: s32'MadStrugguleC'
+    Unknown1483: s32'CmnFDash'
+    Unknown1483: s32'CmnVHighJump'
+    Unknown1482: 0, 6
+    Unknown1483: s32'MadStrugguleD'
+    Unknown1483: s32'MOMSuki'
+    endMoveRegister: 
+  addMove: s32'RC_Shot2WAY'
+    Unknown1488: 2, 3, 30
+    Unknown1511: 100
+    Unknown1535: 
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    endMoveRegister: 
+  addMove: s32'RC_ShotLinear'
+    Unknown1488: 2, 3, 30
+    Unknown1511: 100
+    Unknown1535: 
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiD'
+    Unknown1483: s32'StingerAimC'
+    Unknown1483: s32'NmlAtk5A'
+    endMoveRegister: 
+  addMove: s32'RC_ShotStinger'
+    Unknown1488: 2, 3, 30
+    Unknown1511: 100
+    Unknown1535: 
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'StingerAimD'
+    Unknown1483: s32'Warp'
+    Unknown1483: s32'NmlAtkAir5B'
+    endMoveRegister: 
+  addMove: s32'RC_Trial0'
+    Unknown1488: 2, 0, 30
+    Unknown1485: 1
+    Unknown1483: s32'BallSeiseiD'
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiB'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'BallSeiseiB'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'BallSeiseiD'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'BallSeiseiB'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'BallSeiseiC'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    Unknown1483: s32'BallSeiseiD'
+    Unknown1483: s32'BallSeiseiA'
+    Unknown1483: s32'NmlAtk5A'
+    endMoveRegister: 
+  addMove: s32'RC_Trial1'
+    Unknown1488: 2, 0, 30
+    Unknown1485: 1
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 6
+    Unknown1483: s32'NmlAtk5CNear'
+    Unknown1482: 0, 26
+    Unknown1483: s32'CmnFJump'
+    Unknown1482: 0, 4
+    Unknown1483: s32'MadStrugguleC'
+    Unknown1483: s32'NmlAtk2E'
+    endMoveRegister: 
+  addMove: s32'RC_Trial2'
+    Unknown1488: 2, 0, 30
+    Unknown1485: 1
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 6
+    Unknown1483: s32'NmlAtk5CNear'
+    Unknown1482: 0, 26
+    Unknown1483: s32'CmnFJump'
+    Unknown1483: s32'MadStrugguleC'
+    Unknown1483: s32'NmlAtk2E'
+    endMoveRegister: 
+  addMove: s32'RC_Trial3'
+    Unknown1488: 2, 0, 30
+    Unknown1485: 1
+    Unknown1483: s32'CmnFDash'
+    Unknown1482: 8, 6
+    Unknown1483: s32'NmlAtk5CNear'
+    Unknown1482: 0, 26
+    Unknown1483: s32'NmlAtk2E'
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot0'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot1'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot2'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot3'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishComboSlot4'
+    Unknown1421: 
+    endMoveRegister: 
+  addMove: s32'StylishBallSeiseiA'
+    Unknown1420: s32'BallSeiseiA'
+    moveInput: (INPUT_G_EASY_ON)
+    Unknown1423: 1
+    endMoveRegister: 
+  addMove: s32'StylishBallSeiseiB_Hold'
+    Unknown1420: s32'BallSeiseiB_Hold'
+    moveInput: (INPUT_G_HOLD)
+    endMoveRegister: 
+  addMove: s32'StylishBallSeiseiC_Hold'
+    Unknown1420: s32'BallSeiseiC_Hold'
+    moveInput: (INPUT_G_HOLD)
+    endMoveRegister: 
+  addMove: s32'StylishBallSeiseiD_Hold'
+    Unknown1420: s32'BallSeiseiD_Hold'
+    moveInput: (INPUT_G_HOLD)
+    endMoveRegister: 
+  addMove: s32'StylishWarpB'
+    Unknown1420: s32'WarpB'
+    moveInput: (INPUT_G_HOLD)
+    endMoveRegister: 
+  addMove: s32'StylishCarcassRaidD'
+    Unknown1420: s32'CarcassRaidD'
+    moveInput: (INPUT_ANY_DOWN)
+    moveInput: (INPUT_G_EASY_ON)
+    endMoveRegister: 
+  addMove: s32'StylishStingerAimD'
+    Unknown1420: s32'StingerAimD'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_FORWARD)
+    endMoveRegister: 
+  addMove: s32'StylishDoubleHeadMorbidD'
+    Unknown1420: s32'DoubleHeadMorbidD'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_3)
+    endMoveRegister: 
+  addMove: s32'StylishDubiousCurveA'
+    Unknown1420: s32'DubiousCurveA'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_BACK)
+    endMoveRegister: 
+  addMove: s32'StylishAirBallSeiseiA'
+    Unknown1420: s32'AirBallSeiseiA'
+    moveInput: (INPUT_G_EASY_ON)
+    Unknown1423: 1
+    endMoveRegister: 
+  addMove: s32'StylishMadStrugguleC'
+    Unknown1420: s32'MadStrugguleC'
+    moveInput: (INPUT_ANY_DOWN)
+    moveInput: (INPUT_G_EASY_ON)
+    Unknown1423: 1
+    endMoveRegister: 
+  addMove: s32'StylishMadStrugguleD'
+    Unknown1420: s32'MadStrugguleD'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_FORWARD)
+    endMoveRegister: 
+  addMove: s32'StylishDarkAngel'
+    Unknown1420: s32'DarkAngel'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_K)
+    endMoveRegister: 
+  addMove: s32'StylishSummonGoldBall'
+    Unknown1420: s32'SummonGoldBall'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  addMove: s32'StylishDarkAngelBurst'
+    Unknown1420: s32'DarkAngelBurst'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_D)
+    endMoveRegister: 
+  addMove: s32'StylishRedHail'
+    Unknown1420: s32'RedHail'
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_P)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_K)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_S)
+    moveInput: (INPUT_BOOLEAN_OR)
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_PRESS_H)
+    endMoveRegister: 
+  registerFunc: s32'CmnNeutral'
+  registerFunc: s32'CmnStandForce'
+  registerFunc: s32'CmnFWalk'
+  registerFunc: s32'CmnFDash'
+  registerFunc: s32'CmnBWalk'
+  registerFunc: s32'CmnBDash'
+  registerFunc: s32'CmnVJump'
+  registerFunc: s32'CmnBJump'
+  registerFunc: s32'CmnFJump'
+  registerFunc: s32'CmnVHighJump'
+  registerFunc: s32'CmnBHighJump'
+  registerFunc: s32'CmnFHighJump'
+  registerFunc: s32'CmnBAirDash'
+  registerFunc: s32'CmnFAirDash'
+  registerFunc: s32'HomingDash2'
+  registerFunc: s32'HomingJump'
+  registerFunc: s32'NmlAtk5D'
+  registerFunc: s32'NmlAtk6D'
+  registerFunc: s32'NmlAtk2D'
+  registerFunc: s32'NmlAtk5CNear'
+  registerFunc: s32'NmlAtk5CFar'
+  registerFunc: s32'NmlAtk2C'
+  registerFunc: s32'NmlAtk5B'
+  registerFunc: s32'NmlAtk2B'
+  registerFunc: s32'NmlAtk5A'
+  registerFunc: s32'NmlAtk6A'
+  registerFunc: s32'NmlAtk2A'
+  registerFunc: s32'NmlAtk5E'
+  registerFunc: s32'NmlAtk2E'
+  registerFunc: s32'NmlAtk5F'
+  registerFunc: s32'NmlAtk6F'
+  registerFunc: s32'NmlAtkAir5D'
+  registerFunc: s32'NmlAtkAir5C'
+  registerFunc: s32'NmlAtkAir5B'
+  registerFunc: s32'NmlAtkAir5A'
+  registerFunc: s32'NmlAtkAir5E'
+  registerFunc: s32'StylishComboSlot0'
+  registerFunc: s32'StylishComboSlot1'
+  registerFunc: s32'StylishComboSlot2'
+  registerFunc: s32'StylishComboSlot3'
+  registerFunc: s32'StylishComboSlot4'
+  registerFunc: s32'StylishBallSeiseiA'
+  registerFunc: s32'StylishWarpB'
+  registerFunc: s32'StylishBallSeiseiD_Hold'
+  registerFunc: s32'StylishBallSeiseiC_Hold'
+  registerFunc: s32'StylishBallSeiseiB_Hold'
+  registerFunc: s32'StylishStingerAimD'
+  registerFunc: s32'StylishDubiousCurveA'
+  registerFunc: s32'StylishCarcassRaidD'
+  registerFunc: s32'StylishDoubleHeadMorbidD'
+  registerFunc: s32'StylishAirBallSeiseiA'
+  registerFunc: s32'StylishMadStrugguleD'
+  registerFunc: s32'StylishMadStrugguleC'
+  registerFunc: s32'StylishDarkAngel'
+  registerFunc: s32'StylishSummonGoldBall'
+  registerFunc: s32'StylishDarkAngelBurst'
+  registerFunc: s32'StylishRedHail'
+  registerFunc: s32'CmnVAirJump'
+  registerFunc: s32'CmnBAirJump'
+  registerFunc: s32'CmnFAirJump'
+  registerFunc: s32'DebugKamae'
+  registerFunc: s32'DebugKamaeE'
+  registerFunc: s32'DebugKamaeD'
+  registerFunc: s32'BallSeiseiD_Hold'
+  registerFunc: s32'BallSeiseiC_Hold'
+  registerFunc: s32'BallSeiseiB_Hold'
+  registerFunc: s32'BallSeiseiA_Hold'
+  registerFunc: s32'BallSeiseiD'
+  registerFunc: s32'BallSeiseiC'
+  registerFunc: s32'BallSeiseiB'
+  registerFunc: s32'BallSeiseiA'
+  registerFunc: s32'AirBallSeiseiD'
+  registerFunc: s32'AirBallSeiseiC'
+  registerFunc: s32'AirBallSeiseiB'
+  registerFunc: s32'AirBallSeiseiA'
+  registerFunc: s32'MadStrugguleD'
+  registerFunc: s32'MadStrugguleC'
+  registerFunc: s32'Warp'
+  registerFunc: s32'WarpB'
+  registerFunc: s32'DoubleHeadMorbidD'
+  registerFunc: s32'DoubleHeadMorbidC'
+  registerFunc: s32'StingerAimD'
+  registerFunc: s32'StingerAimC'
+  registerFunc: s32'CarcassRaidD'
+  registerFunc: s32'CarcassRaidC'
+  registerFunc: s32'DubiousCurveD'
+  registerFunc: s32'DubiousCurveC'
+  registerFunc: s32'DubiousCurveB'
+  registerFunc: s32'DubiousCurveA'
+  registerFunc: s32'RedHail'
+  registerFunc: s32'DarkAngel'
+  registerFunc: s32'DarkAngelBurst'
+  registerFunc: s32'SummonGoldBall'
+  registerFunc: s32'Ichigeki'
+  registerFunc: s32'FaultlessDefenceStand'
+  registerFunc: s32'FaultlessDefenceCrouch'
+  registerFunc: s32'FaultlessDefenceAir'
+  registerFunc: s32'CmnActItemUse'
+  registerFunc: s32'CounterGuardStand'
+  registerFunc: s32'CounterGuardCrouch'
+  registerFunc: s32'CounterGuardAir'
+  registerFunc: s32'CmnMaximumBurst'
+  registerFunc: s32'CmnDamageBurst'
+  registerFunc: s32'DeadAngleAttack'
+  registerFunc: s32'RomanCancelHit'
+  registerFunc: s32'IchigekiJunbi'
+  registerFunc: s32'MOMSuki'
+  registerFunc: s32'DebugSkillEx'
+  registerFunc: s32'RC_CmnNamepuA'
+  registerFunc: s32'RC_CmnNamepuB'
+  registerFunc: s32'RC_CmnNamepuC'
+  registerFunc: s32'RC_CmnNage'
+  registerFunc: s32'RC_CmnDashShikomiNage'
+  registerFunc: s32'RC_CmnJumpHighSlash'
+  registerFunc: s32'RC_CmnJumpDashHighSlash'
+  registerFunc: s32'RC_HomingJumpCombo'
+  registerFunc: s32'RC_BonusA'
+  registerFunc: s32'RC_BonusB'
+  registerFunc: s32'RC_BonusC'
+  registerFunc: s32'RC_BerserkA'
+  registerFunc: s32'RC_BerserkB'
+  registerFunc: s32'RC_BerserkC'
+  registerFunc: s32'RC_MOMBoss1'
+  registerFunc: s32'RC_MOMBoss2'
+  registerFunc: s32'RC_MOMBoss3'
+  registerFunc: s32'RC_MOMBoss4'
+  registerFunc: s32'RC_Trial0'
+  registerFunc: s32'RC_Trial1'
+  registerFunc: s32'RC_Trial2'
+  registerFunc: s32'RC_Trial3'
+  Unknown1286: 0, s32'ven050_00'
+  Unknown1286: 1, s32'ven050_01'
+  Unknown1286: 2, s32'ven050_02'
+  Unknown1286: 3, s32'ven050_03'
+  Unknown1286: 4, s32'ven050_04'
+  Unknown1286: 5, s32'ven050_05'
+  Unknown1286: 6, s32'ven050_06'
+  Unknown1286: 7, s32'ven052_00'
+  Unknown1286: 8, s32'ven052_01'
+  Unknown1286: 9, s32'ven052_02'
+  Unknown1286: 10, s32'ven052_03'
+  Unknown1286: 11, s32'ven052_04'
+  Unknown1286: 12, s32'ven052_05'
+  Unknown1286: 13, s32'ven052_06'
+  Unknown1286: 14, s32'ven054_00'
+  Unknown1286: 15, s32'ven054_01'
+  Unknown1286: 16, s32'ven054_02'
+  Unknown1286: 17, s32'ven054_03'
+  Unknown1286: 18, s32'ven054_04'
+  Unknown1286: 19, s32'ven054_05'
+  Unknown1286: 20, s32'ven054_06'
+  Unknown1286: 21, s32'ven041_03'
+  Unknown1286: 22, s32'ven040_03'
+  Unknown1286: 23, s32'ven045_02'
+  Unknown1286: 24, s32'ven060_00'
+  Unknown1286: 25, s32'ven060_01'
+  Unknown1286: 26, s32'ven060_02'
+  Unknown1286: 27, s32'ven060_03'
+  Unknown1286: 28, s32'ven060_04'
+  Unknown1286: 29, s32'ven060_06'
+  Unknown1286: 30, s32'ven060_08'
+  Unknown1286: 31, s32'ven060_10'
+  Unknown1286: 32, s32'ven062_00'
+  Unknown1286: 33, s32'ven062_01'
+  Unknown1286: 34, s32'ven062_04'
+  Unknown1286: 35, s32'ven062_05'
+  Unknown1286: 36, s32'ven062_08'
+  Unknown1286: 37, s32'ven062_10'
+  Unknown1286: 38, s32'ven062_13'
+  Unknown1286: 39, s32'ven062_14'
+  Unknown1286: 40, s32'ven063_00'
+  Unknown1286: 41, s32'ven063_01'
+  Unknown1286: 42, s32'ven063_02'
+  Unknown1286: 43, s32'ven063_04'
+  Unknown1286: 44, s32'ven083_00'
+  Unknown1286: 45, s32'ven306_07'
+  Unknown1286: 46, s32'ven075_00'
+  Unknown1286: 47, s32'ven090_00'
+  Unknown629: s16'vxxx029', s16'voice_none'
+  if: (VARIABLE), 37
+    Unknown1679: s16'vxxx300', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r72', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r48', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r56c22r30', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx304', s16'r34', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r106', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'o100', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx307', s16'r120', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx308', s16'r52', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r126', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  if: (VARIABLE), 38
+    Unknown1679: s16'vxxx300', s16'r52', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r98', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r36', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx304', s16'r102', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'o70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx307', s16'r86', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx308', s16'r66', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r110', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r104', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  if: (VARIABLE), 39
+    Unknown1679: s16'vxxx300', s16'r62', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r102', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx304', s16'r86', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r124', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'o106', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx307', s16'r126', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx308', s16'r104', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r90', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r140', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown47: s16'mll'
+  if: (VARIABLE), 0
+    Unknown1679: s16'vxxx350', s16'r60c32r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx356', s16'r26c48r86', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown47: s16'zat'
+  if: (VARIABLE), 0
+    Unknown1679: s16'vxxx300', s16'r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx301', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx302', s16'r62', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx303', s16'r36c22r50', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx305', s16'r140', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx306', s16'r162', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx308', s16'r108', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx309', s16'r66c22r60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx310', s16'r126', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx352', s16'r70c25r70', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx354', s16'r70c65r125', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx355', s16'r54c32r100c40r11', s16'6', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    Unknown1679: s16'vxxx356', s16'r44c60r102c44r56', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown47: s16'sly'
+  if: (VARIABLE), 0
+    Unknown1679: s16'vxxx356', s16'r142c52r56', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+    endIf: 
+  Unknown2012: s32''
+  Unknown2025: s32'high'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Weapon'
+  Unknown2027: 
+  Unknown2025: s32'MSEntry1'
+  Unknown2026: s32'suit'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Weapon'
+  Unknown2026: s32'Case'
+  Unknown2027: 
+  Unknown2025: s32'MSEntry2'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Weapon'
+  Unknown2027: 
+  Unknown2025: s32'MSWin'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'ball'
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamage_Kakusei'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Weapon'
+  Unknown2026: s32'Manpu'
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamage_Ichigeki'
+  Unknown47: s16'zat'
+  if: (VARIABLE), 0
+    Unknown2026: s32'Body'
+    Unknown2026: s32'head'
+    Unknown2026: s32'Weapon'
+    Unknown2026: s32'Manpu'
+    Unknown2026: s32'Zat_IKparts'
+    endIf: 
+  Unknown47: s16'fau'
+  if: (VARIABLE), 0
+    Unknown2026: s32'Body'
+    Unknown2026: s32'Head_High'
+    Unknown2026: s32'Manpu'
+    if: (VARIABLE), 37
+      Unknown2026: s32'FauIKParts_Killer'
+      endIf: 
+    if: (VARIABLE), 38
+      Unknown2026: s32'FauIKParts_Rose'
+      endIf: 
+    if: (VARIABLE), 39
+      Unknown2026: s32'FauIKParts_Cute'
+      endIf: 
+    endIf: 
+  Unknown47: s16'ven'
+  if: (VARIABLE), 0
+    Unknown2026: s32'VenIKBall'
+    endIf: 
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamageHigh'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Weapon'
+  Unknown2026: s32'Manpu'
+  Unknown2027: 
+  Unknown2025: s32'CmnCutSceneDamageLow'
+  Unknown2026: s32'Body'
+  Unknown2026: s32'Head'
+  Unknown2026: s32'Weapon'
+  Unknown2026: s32'Manpu'
+  Unknown2027: 
+  Unknown2025: s32'EvtOpening'
+  Unknown2026: s32'suit'
+  Unknown2026: s32'Head_High'
+  Unknown2026: s32'Weapon'
+  Unknown2026: s32'Manpu'
+  Unknown2026: s32'ball'
+  Unknown2026: s32'Case'
+  Unknown2027: 
+  Unknown2025: s32'headonly'
+  Unknown2026: s32'head'
+  Unknown2027: 
+  Unknown2036: 
+  Unknown2034: 
+  endSubroutine: 
+
+startSubroutine: s32'OnDamage2'
+  Unknown51: 11
+  if: (VARIABLE), 0
+    if: (VARIABLE), 216
+      Unknown41: 22
+      callSubroutine: s32'q_WEEKLY_VEN_BSHOP_THROW', 0, 0, 0, 0, 0, 0, 0, 0
+      Unknown40: 
+      endIf: 
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'CPUEstimate'
+  Unknown1999: 22, s32'NmlAtk5E'
+  if: (VARIABLE), 0
+    Unknown1581: s32'RC_HomingJumpCombo'
+    endIf: 
+  endSubroutine: 
+
+startSubroutine: s32'_ThrowGripParamLand'
+  Unknown1101: s32'ven310_00'
+  Unknown1042: s32'ThrowExe'
+  throwRange: 75250
+  Unknown1027: -1, -1, -1, -1
+  endSubroutine: 
+
+startSubroutine: s32'_ThrowGripParamAir'
+  Unknown1101: s32'ven320_00'
+  Unknown1042: s32'AirThrowExe'
+  throwRange: 192500
+  Unknown1027: -1, -1, 175000, -52500
+  endSubroutine: 
+
+startState: s32'CmnActStand'
+  Unknown2041: -1, 1, 1000
+  setMarker: s32'loop'
+  sprite: s32'ven000_00', 8
+  sprite: s32'ven000_01', 8
+  sprite: s32'ven000_02', 8
+  sprite: s32'ven000_03', 8
+  sprite: s32'ven000_04', 8
+  sprite: s32'ven000_05', 8
+  sprite: s32'ven000_06', 8
+  sprite: s32'ven000_07', 8
+  sprite: s32'ven000_08', 8
+  sprite: s32'ven000_09', 8
+  sprite: s32'ven000_10', 8
+  sprite: s32'ven000_11', 8
+  Unknown3: 
+  Unknown13: s32'loop', 22, 0, 90, 0, 100
+  Unknown25: s32'loop', 2, 86
+  storeValue: (VARIABLE), 87, (STATIC), 960
+  sprite: s32'ven001_00', 6
+  sprite: s32'ven001_01', 6
+  sprite: s32'ven001_02', 6
+  sprite: s32'ven001_03', 8
+  sprite: s32'ven001_04', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven001_05', 8
+  sprite: s32'ven001_06', 8
+  sprite: s32'ven001_07', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven001_08', 8
+  sprite: s32'ven001_09', 8
+  sprite: s32'ven001_10', 8
+  sprite: s32'ven001_11', 6
+  sprite: s32'ven001_12', 6
+  sprite: s32'ven001_13', 6
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActStandTurn'
+  sprite: s32'ven003_00', 3
+  sprite: s32'ven003_01', 2
+  sprite: s32'ven003_02', 2
+  sprite: s32'ven003_03', 2
+  endState: 
+
+startState: s32'CmnActStand2Crouch'
+  sprite: s32'ven010_00', 3
+  sprite: s32'ven010_01', 3
+  sprite: s32'ven010_02', 3
+  sprite: s32'ven010_03', 3
+  sprite: s32'ven010_04', 3
+  sprite: s32'ven010_05', 3
+  sprite: s32'ven010_06', 3
+  sprite: s32'ven010_07', 3
+  endState: 
+
+startState: s32'CmnActCrouch'
+  Unknown2041: -1, 1, 1000
+  setMarker: s32'loop'
+  sprite: s32'ven010_08', 7
+  sprite: s32'ven010_09', 7
+  sprite: s32'ven010_10', 7
+  sprite: s32'ven010_11', 7
+  sprite: s32'ven010_12', 7
+  sprite: s32'ven010_13', 7
+  sprite: s32'ven010_14', 7
+  sprite: s32'ven010_15', 7
+  sprite: s32'ven010_16', 7
+  sprite: s32'ven010_17', 7
+  sprite: s32'ven010_18', 7
+  sprite: s32'ven010_19', 7
+  sprite: s32'ven010_20', 7
+  sprite: s32'ven010_21', 3
+  Unknown3: 
+  Unknown44: 1, 2, 86
+  Unknown24: s32'loop', 2, 0
+  Unknown44: 2, 0, 80
+  Unknown24: s32'loop', 2, 0
+  sprite: s32'ven011_00', 8
+  sprite: s32'ven011_01', 8
+  sprite: s32'ven011_02', 12
+  sprite: s32'ven011_03', 8
+  sprite: s32'ven011_04', 8
+  sprite: s32'ven011_05', 8
+  sprite: s32'ven011_06', 8
+  sprite: s32'ven011_07', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven011_08', 8
+  sprite: s32'ven011_09', 8
+  sprite: s32'ven011_10', 8
+  sprite: s32'ven011_11', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven011_12', 8
+  sprite: s32'ven011_13', 8
+  sprite: s32'ven011_14', 8
+  sprite: s32'ven011_15', 8
+  sprite: s32'ven011_16', 8
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActCrouchTurn'
+  sprite: s32'ven013_00', 3
+  sprite: s32'ven013_01', 2
+  sprite: s32'ven013_02', 2
+  sprite: s32'ven013_03', 2
+  endState: 
+
+startState: s32'CmnActCrouch2Stand'
+  sprite: s32'ven010_22', 3
+  endState: 
+
+startState: s32'CmnActJumpPre'
+  sprite: s32'ven010_00', 4
+  endState: 
+
+startState: s32'CmnActJump'
+  setMarker: s32'_Upper'
+  setMarker: s32'upperloop'
+  sprite: s32'ven020_00', 3
+  sprite: s32'ven020_01', 3
+  Unknown3: 
+  goToMarker: s32'upperloop'
+  setMarker: s32'_UpperToTop'
+  sprite: s32'ven020_02', 3
+  sprite: s32'ven020_03', 3
+  sprite: s32'ven020_04', 3
+  sprite: s32'ven020_05', 2147483647
+  setMarker: s32'_Top'
+  sprite: s32'ven020_05', 2147483647
+  setMarker: s32'_TopToDown'
+  sprite: s32'ven020_05', 4
+  sprite: s32'ven026_00', 4
+  sprite: s32'ven026_01', 2147483647
+  setMarker: s32'_Down'
+  setMarker: s32'downloop'
+  sprite: s32'ven026_02', 3
+  sprite: s32'ven026_03', 3
+  Unknown3: 
+  goToMarker: s32'downloop'
+  endState: 
+
+startState: s32'CmnActJumpLanding'
+  sprite: s32'ven010_00', 3
+  endState: 
+
+startState: s32'CmnActLandingStiff'
+  sprite: s32'ven010_00', 2147483647
+  Unknown3: 
+  setMarker: s32'_End'
+  sprite: s32'keep', 1
+  exitState: 
+  endState: 
+
+startState: s32'CmnActFWalk'
+  upon: (FRAME_STEP)
+    if: (VARIABLE), 159
+      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 60
+        jumpToState: s32'CmnActFDash'
+        endIf: 
+      endIf: 
+    endUpon: 
+  setMarker: s32'loop'
+  sprite: s32'ven030_00', 6
+  sprite: s32'ven030_01', 6
+  sprite: s32'ven030_02', 6
+  Unknown669: 100, 1, 1
+  sprite: s32'ven030_03', 6
+  sprite: s32'ven030_04', 6
+  sprite: s32'ven030_05', 6
+  sprite: s32'ven030_06', 6
+  sprite: s32'ven030_07', 6
+  sprite: s32'ven030_08', 6
+  Unknown669: 100, 1, 1
+  sprite: s32'ven030_09', 6
+  sprite: s32'ven030_10', 6
+  sprite: s32'ven030_11', 6
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActBWalk'
+  setMarker: s32'loop'
+  sprite: s32'ven031_00', 6
+  sprite: s32'ven031_01', 6
+  sprite: s32'ven031_02', 6
+  Unknown2145: 0, 100
+  Unknown2143: 1, 100
+  sprite: s32'ven031_03', 6
+  sprite: s32'ven031_04', 6
+  sprite: s32'ven031_05', 6
+  sprite: s32'ven031_06', 6
+  sprite: s32'ven031_07', 6
+  Unknown2145: 0, 100
+  Unknown2143: 1, 100
+  sprite: s32'ven031_08', 6
+  sprite: s32'ven031_09', 6
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActFDash'
+  sprite: s32'ven032_00', 3
+  sprite: s32'ven032_01', 3
+  setMarker: s32'loop'
+  sprite: s32'ven032_02', 3
+  sprite: s32'ven032_03', 3
+  sprite: s32'ven032_04', 3
+  sprite: s32'ven032_05', 3
+  sprite: s32'ven032_06', 3
+  sprite: s32'ven032_07', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActFDashStop'
+  sprite: s32'ven033_00', 3
+  sprite: s32'ven033_01', 3
+  sprite: s32'ven033_02', 3
+  sprite: s32'ven033_03', 3
+  sprite: s32'ven033_04', 3
+  sprite: s32'ven033_05', 3
+  sprite: s32'ven033_06', 3
+  sprite: s32'ven033_07', 3
+  sprite: s32'ven033_08', 3
+  endState: 
+
+startState: s32'CmnActBDash'
+  sprite: s32'ven034_00', 3
+  Unknown2155: 7
+  playSFX: s32'SE_SWINGD'
+  sprite: s32'ven034_01', 6
+  sprite: s32'ven034_02', 2147483647
+  endState: 
+
+startState: s32'CmnActAirFDash'
+  sprite: s32'ven035_00', 3
+  sprite: s32'ven035_01', 3
+  sprite: s32'ven035_00', 3
+  sprite: s32'ven035_01', 3
+  sprite: s32'ven035_00', 3
+  sprite: s32'ven035_01', 3
+  sprite: s32'ven035_00', 3
+  endState: 
+
+startState: s32'CmnActAirBDash'
+  sprite: s32'ven036_00', 3
+  sprite: s32'ven036_01', 4
+  sprite: s32'ven036_02', 4
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv1'
+  sprite: s32'ven050_04', 1
+  sprite: s32'ven050_03', 3
+  sprite: s32'ven050_04', 2
+  sprite: s32'ven050_05', 2
+  sprite: s32'ven050_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv2'
+  sprite: s32'ven050_03', 1
+  sprite: s32'ven050_02', 3
+  sprite: s32'ven050_03', 2
+  sprite: s32'ven050_04', 2
+  sprite: s32'ven050_05', 2
+  sprite: s32'ven050_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv3'
+  sprite: s32'ven050_03', 2
+  sprite: s32'ven050_02', 4
+  sprite: s32'ven050_03', 2
+  sprite: s32'ven050_04', 2
+  sprite: s32'ven050_05', 2
+  sprite: s32'ven050_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv4'
+  sprite: s32'ven050_00', 2
+  sprite: s32'ven050_01', 4
+  sprite: s32'ven050_02', 3
+  sprite: s32'ven050_03', 2
+  sprite: s32'ven050_04', 2
+  sprite: s32'ven050_05', 2
+  sprite: s32'ven050_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriHighLv5'
+  sprite: s32'ven050_00', 2
+  sprite: s32'ven050_01', 6
+  sprite: s32'ven050_02', 3
+  sprite: s32'ven050_03', 2
+  sprite: s32'ven050_04', 2
+  sprite: s32'ven050_05', 2
+  sprite: s32'ven050_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv1'
+  sprite: s32'ven052_04', 1
+  sprite: s32'ven052_03', 3
+  sprite: s32'ven052_04', 2
+  sprite: s32'ven052_05', 2
+  sprite: s32'ven052_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv2'
+  sprite: s32'ven052_03', 1
+  sprite: s32'ven052_02', 3
+  sprite: s32'ven052_03', 2
+  sprite: s32'ven052_04', 2
+  sprite: s32'ven052_05', 2
+  sprite: s32'ven052_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv3'
+  sprite: s32'ven052_03', 2
+  sprite: s32'ven052_02', 4
+  sprite: s32'ven052_03', 2
+  sprite: s32'ven052_04', 2
+  sprite: s32'ven052_05', 2
+  sprite: s32'ven052_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv4'
+  sprite: s32'ven052_00', 2
+  sprite: s32'ven052_01', 4
+  sprite: s32'ven052_02', 3
+  sprite: s32'ven052_03', 2
+  sprite: s32'ven052_04', 2
+  sprite: s32'ven052_05', 2
+  sprite: s32'ven052_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriLowLv5'
+  sprite: s32'ven052_00', 2
+  sprite: s32'ven052_01', 6
+  sprite: s32'ven052_02', 3
+  sprite: s32'ven052_03', 2
+  sprite: s32'ven052_04', 2
+  sprite: s32'ven052_05', 2
+  sprite: s32'ven052_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv1'
+  sprite: s32'ven054_04', 1
+  sprite: s32'ven054_03', 3
+  sprite: s32'ven054_04', 2
+  sprite: s32'ven054_05', 2
+  sprite: s32'ven054_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv2'
+  sprite: s32'ven054_03', 2
+  sprite: s32'ven054_02', 3
+  sprite: s32'ven054_03', 2
+  sprite: s32'ven054_04', 2
+  sprite: s32'ven054_05', 2
+  sprite: s32'ven054_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv3'
+  sprite: s32'ven054_03', 2
+  sprite: s32'ven054_02', 5
+  sprite: s32'ven054_03', 2
+  sprite: s32'ven054_04', 2
+  sprite: s32'ven054_05', 2
+  sprite: s32'ven054_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv4'
+  sprite: s32'ven054_00', 2
+  sprite: s32'ven054_01', 5
+  sprite: s32'ven054_02', 3
+  sprite: s32'ven054_03', 2
+  sprite: s32'ven054_04', 2
+  sprite: s32'ven054_05', 2
+  sprite: s32'ven054_06', 2
+  endState: 
+
+startState: s32'CmnActNokezoriCrouchLv5'
+  sprite: s32'ven054_00', 2
+  sprite: s32'ven054_01', 6
+  sprite: s32'ven054_02', 3
+  sprite: s32'ven054_03', 3
+  sprite: s32'ven054_04', 2
+  sprite: s32'ven054_05', 2
+  sprite: s32'ven054_06', 2
+  endState: 
+
+startState: s32'CmnActBDownUpper'
+  sprite: s32'ven060_00', 3
+  sprite: s32'ven060_01', 4
+  sprite: s32'ven060_02', 4
+  endState: 
+
+startState: s32'CmnActBDownUpperEnd'
+  sprite: s32'chp060_01', 3
+  endState: 
+
+startState: s32'CmnActBDownDown'
+  sprite: s32'ven060_03', 4
+  sprite: s32'ven060_04', 4
+  sprite: s32'ven060_05', 4
+  endState: 
+
+startState: s32'CmnActBDownBound'
+  sprite: s32'ven060_06', 6
+  sprite: s32'ven060_07', 3
+  sprite: s32'ven060_08', 3
+  sprite: s32'ven060_09', 3
+  endState: 
+
+startState: s32'CmnActBDownLoop'
+  sprite: s32'ven060_10', 11
+  endState: 
+
+startState: s32'CmnActBDown2Stand'
+  sprite: s32'ven061_00', 2
+  sprite: s32'ven061_01', 2
+  sprite: s32'ven061_02', 2
+  sprite: s32'ven061_03', 2
+  sprite: s32'ven061_04', 2
+  sprite: s32'ven061_05', 2
+  sprite: s32'ven061_06', 3
+  sprite: s32'ven061_07', 3
+  sprite: s32'ven061_08', 3
+  endState: 
+
+startState: s32'CmnActFDownUpper'
+  sprite: s32'ven063_00', 3
+  sprite: s32'ven063_01', 3
+  sprite: s32'ven063_02', 3
+  sprite: s32'ven063_03', 3
+  sprite: s32'ven063_04', 3
+  endState: 
+
+startState: s32'CmnActFDownUpperEnd'
+  sprite: s32'chp063_02', 4
+  sprite: s32'chp063_03', 4
+  endState: 
+
+startState: s32'CmnActFDownDown'
+  sprite: s32'chp063_04', 2
+  sprite: s32'chp063_05', 2
+  setMarker: s32'loop'
+  sprite: s32'chp063_06', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActFDownBound'
+  sprite: s32'ven063_05', 3
+  sprite: s32'ven063_06', 3
+  sprite: s32'ven063_07', 3
+  sprite: s32'ven063_08', 3
+  endState: 
+
+startState: s32'CmnActFDownLoop'
+  sprite: s32'ven063_09', 11
+  endState: 
+
+startState: s32'CmnActFDown2Stand'
+  sprite: s32'ven064_00', 2
+  sprite: s32'ven064_01', 3
+  sprite: s32'ven064_02', 3
+  sprite: s32'ven064_03', 3
+  sprite: s32'ven064_04', 3
+  sprite: s32'ven064_05', 3
+  sprite: s32'ven064_06', 3
+  sprite: s32'ven064_07', 3
+  sprite: s32'ven064_08', 3
+  endState: 
+
+startState: s32'CmnActVDownUpper'
+  sprite: s32'ven062_00', 3
+  sprite: s32'ven062_01', 3
+  endState: 
+
+startState: s32'CmnActVDownUpperEnd'
+  sprite: s32'chp062_03', 3
+  sprite: s32'chp062_04', 3
+  sprite: s32'chp062_05', 3
+  endState: 
+
+startState: s32'CmnActVDownDown'
+  sprite: s32'ven062_02', 3
+  sprite: s32'ven062_03', 3
+  sprite: s32'ven062_04', 3
+  sprite: s32'ven062_05', 3
+  sprite: s32'ven062_06', 3
+  sprite: s32'ven062_07', 3
+  setMarker: s32'loop'
+  sprite: s32'ven062_08', 3
+  sprite: s32'ven062_09', 3
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActVDownBound'
+  sprite: s32'ven062_10', 3
+  sprite: s32'ven062_11', 3
+  sprite: s32'ven062_12', 3
+  endState: 
+
+startState: s32'CmnActVDownLoop'
+  sprite: s32'ven062_14', 3
+  endState: 
+
+startState: s32'CmnActBlowoff'
+  sprite: s32'ven075_00', 3
+  setMarker: s32'loop'
+  sprite: s32'ven075_01', 3
+  sprite: s32'ven075_02', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActKirimomiUpper'
+  sprite: s32'ven074_00', 3
+  setMarker: s32'loop'
+  sprite: s32'ven074_01', 3
+  sprite: s32'ven074_02', 3
+  sprite: s32'ven074_03', 3
+  sprite: s32'ven074_04', 3
+  sprite: s32'ven074_05', 3
+  sprite: s32'ven074_06', 3
+  sprite: s32'ven074_07', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActWallBound'
+  sprite: s32'ven076_00', 3
+  sprite: s32'ven076_01', 3
+  sprite: s32'ven076_02', 2147483647
+  endState: 
+
+startState: s32'CmnActWallBoundDown'
+  sprite: s32'ven076_03', 3
+  sprite: s32'ven076_04', 4
+  sprite: s32'ven076_05', 4
+  sprite: s32'ven076_06', 4
+  setMarker: s32'loop'
+  sprite: s32'ven076_07', 3
+  sprite: s32'ven076_08', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActWallHaritsuki'
+  sprite: s32'ven077_00', 4
+  sprite: s32'ven077_01', 2147483647
+  setMarker: s32'_Drop'
+  sprite: s32'ven077_02', 6
+  Unknown448: s32'cmn_harituki', 114
+  setMarker: s32'loop'
+  sprite: s32'ven077_03', 8
+  Unknown448: s32'cmn_harituki', 114
+  sprite: s32'ven077_04', 9
+  Unknown448: s32'cmn_harituki', 114
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActWallHaritsukiLand'
+  sprite: s32'ven077_05', 3
+  Unknown448: s32'cmn_harituki', 114
+  sprite: s32'ven077_06', 3
+  sprite: s32'ven077_07', 3
+  sprite: s32'ven077_08', 3
+  sprite: s32'ven077_09', 3
+  endState: 
+
+startState: s32'CmnActWallHaritsukiGetUp'
+  sprite: s32'ven078_00', 3
+  sprite: s32'ven078_01', 3
+  sprite: s32'ven078_02', 3
+  sprite: s32'ven078_03', 3
+  sprite: s32'ven078_04', 3
+  sprite: s32'ven078_05', 3
+  endState: 
+
+startState: s32'CmnActJitabataLoop'
+  setMarker: s32'loop'
+  sprite: s32'ven070_00', 4
+  sprite: s32'ven070_01', 4
+  sprite: s32'ven070_02', 4
+  sprite: s32'ven070_03', 4
+  sprite: s32'ven070_04', 4
+  sprite: s32'ven070_05', 4
+  sprite: s32'ven070_06', 4
+  sprite: s32'ven070_07', 4
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_End'
+  sprite: s32'ven070_08', 4
+  endState: 
+
+startState: s32'CmnActKizetsu'
+  sprite: s32'ven071_00', 6
+  sprite: s32'ven071_01', 6
+  sprite: s32'ven071_02', 6
+  setMarker: s32'loop'
+  sprite: s32'ven071_03', 6
+  sprite: s32'ven071_04', 6
+  sprite: s32'ven071_05', 6
+  sprite: s32'ven071_06', 6
+  sprite: s32'ven071_07', 6
+  sprite: s32'ven071_08', 6
+  sprite: s32'ven071_09', 6
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_End'
+  sprite: s32'ven071_10', 6
+  sprite: s32'ven071_11', 6
+  endState: 
+
+startState: s32'CmnActHizakuzure'
+  callCmnEfFunc: s32'cmn_Hizakuzure'
+  sprite: s32'ven085_00', 8
+  sprite: s32'ven085_01', 8
+  sprite: s32'ven085_02', 9
+  sprite: s32'ven085_03', 8
+  sprite: s32'ven085_04', 8
+  sprite: s32'ven085_05', 8
+  sprite: s32'ven085_06', 6
+  sprite: s32'ven085_07', 6
+  sprite: s32'ven085_08', 3
+  sprite: s32'ven085_09', 3
+  sprite: s32'ven085_10', 3
+  sprite: s32'ven085_11', 3
+  addPositionX: 30000
+  sprite: s32'ven085_12', 3
+  addPositionX: 30000
+  sprite: s32'ven085_13', 2147483647
+  addPositionX: 30000
+  Unknown3: 
+  setMarker: s32'ko'
+  sprite: s32'ven085_00', 6
+  sprite: s32'ven085_01', 6
+  sprite: s32'ven085_02', 8
+  sprite: s32'ven085_03', 6
+  sprite: s32'ven085_04', 6
+  sprite: s32'ven085_05', 6
+  sprite: s32'ven085_06', 6
+  Unknown658: 100, 1, 0
+  Unknown2144: 0, 100
+  Unknown1677: 1
+  sprite: s32'ven085_07', 6
+  sprite: s32'ven085_08', 6
+  sprite: s32'ven085_09', 6
+  sprite: s32'ven085_10', 6
+  sprite: s32'ven085_11', 6
+  addPositionX: 30000
+  sprite: s32'ven085_12', 6
+  addPositionX: 30000
+  sprite: s32'ven085_13', 6
+  addPositionX: 30000
+  Unknown3: 
+  Unknown2144: 1, 100
+  Unknown658: 100, 1, 0
+  jumpToState: s32'CmnActFDownLoop'
+  endState: 
+
+startState: s32'CmnActKorogari'
+  setMarker: s32'loop'
+  sprite: s32'ven080_00', 3
+  sprite: s32'ven080_01', 3
+  sprite: s32'ven080_02', 3
+  sprite: s32'ven080_03', 3
+  sprite: s32'ven080_04', 3
+  sprite: s32'ven081_00', 3
+  sprite: s32'ven081_01', 3
+  sprite: s32'ven081_02', 3
+  sprite: s32'ven081_03', 3
+  sprite: s32'ven081_04', 3
+  sprite: s32'ven082_00', 3
+  sprite: s32'ven082_01', 3
+  sprite: s32'ven082_02', 3
+  sprite: s32'ven082_03', 3
+  sprite: s32'ven082_04', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_ToDown'
+  sprite: s32'ven083_00', 4
+  sprite: s32'ven083_01', 4
+  sprite: s32'ven083_02', 4
+  sprite: s32'ven083_03', 4
+  sprite: s32'ven083_04', 4
+  sprite: s32'ven083_05', 5
+  sprite: s32'ven083_06', 5
+  sprite: s32'ven083_07', 5
+  sprite: s32'ven083_08', 4
+  sprite: s32'ven083_09', 4
+  sprite: s32'ven083_10', 4
+  endState: 
+
+startState: s32'CmnActZSpin'
+  setMarker: s32'loop'
+  sprite: s32'ven082_04', 2
+  sprite: s32'ven080_00', 2
+  sprite: s32'ven080_01', 2
+  sprite: s32'ven080_02', 2
+  sprite: s32'ven080_03', 2
+  sprite: s32'ven080_04', 2
+  sprite: s32'ven081_00', 2
+  sprite: s32'ven081_01', 2
+  sprite: s32'ven081_02', 2
+  sprite: s32'ven081_03', 2
+  sprite: s32'ven081_04', 2
+  sprite: s32'ven082_00', 2
+  sprite: s32'ven082_01', 2
+  sprite: s32'ven082_02', 2
+  sprite: s32'ven082_03', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'CmnActUkemi'
+  sprite: s32'ven113_00', 4
+  sprite: s32'ven113_01', 4
+  endState: 
+
+startState: s32'CmnActMidGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'ven040_00', 2
+  sprite: s32'ven040_01', 2
+  sprite: s32'ven040_02', 2
+  sprite: s32'ven040_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'ven040_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'ven040_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'ven040_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'ven040_06', 8
+  sprite: s32'ven040_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActMidGuardEnd'
+  sprite: s32'ven040_02', 2
+  sprite: s32'ven040_01', 2
+  sprite: s32'ven040_00', 2
+  endState: 
+
+startState: s32'CmnActHighGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'ven041_00', 2
+  sprite: s32'ven041_01', 2
+  sprite: s32'ven041_02', 2
+  sprite: s32'ven041_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'ven041_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'ven041_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'ven041_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'ven041_06', 8
+  sprite: s32'ven041_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActHighGuardEnd'
+  sprite: s32'ven041_02', 2
+  sprite: s32'ven041_01', 2
+  sprite: s32'ven041_00', 2
+  endState: 
+
+startState: s32'CmnActCrouchGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'ven043_00', 2
+  sprite: s32'ven043_01', 2
+  sprite: s32'ven043_02', 2
+  sprite: s32'ven043_03', 2
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'ven043_04', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'ven043_04', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'ven043_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'ven043_06', 8
+  sprite: s32'ven043_05', 5
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActCrouchGuardEnd'
+  sprite: s32'ven043_02', 2
+  sprite: s32'ven043_01', 2
+  sprite: s32'ven043_00', 2
+  endState: 
+
+startState: s32'CmnActAirGuardLoop'
+  setMarker: s32'_Pre'
+  sprite: s32'ven045_00', 3
+  sprite: s32'ven045_01', 3
+  sprite: s32'ven045_02', 3
+  setMarker: s32'_Top'
+  setMarker: s32'loop'
+  sprite: s32'ven045_03', 2
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Lv1'
+  sprite: s32'ven045_03', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv2'
+  sprite: s32'ven045_03', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  setMarker: s32'_Lv3'
+  sprite: s32'ven045_03', 1
+  Unknown3: 
+  goToMarker: s32'_Top'
+  endState: 
+
+startState: s32'CmnActAirGuardEnd'
+  sprite: s32'ven045_01', 3
+  sprite: s32'ven045_00', 3
+  endState: 
+
+startState: s32'CmnActHajikareStand'
+  sprite: s32'ven100_00', 5
+  sprite: s32'ven100_01', 5
+  sprite: s32'ven100_02', 5
+  sprite: s32'ven100_03', 6
+  sprite: s32'ven100_04', 2147483647
+  setMarker: s32'_End'
+  sprite: s32'ven100_05', 4
+  sprite: s32'ven100_06', 3
+  sprite: s32'ven100_07', 3
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActHajikareCrouch'
+  sprite: s32'ven101_00', 5
+  sprite: s32'ven101_01', 5
+  sprite: s32'ven101_02', 5
+  sprite: s32'ven101_03', 6
+  sprite: s32'ven101_04', 2147483647
+  setMarker: s32'_End'
+  sprite: s32'ven101_05', 4
+  sprite: s32'ven101_06', 3
+  sprite: s32'ven101_07', 3
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActHajikareAir'
+  sprite: s32'ven102_00', 5
+  sprite: s32'ven102_01', 5
+  sprite: s32'ven102_02', 5
+  sprite: s32'ven102_03', 6
+  sprite: s32'ven102_04', 2147483647
+  setMarker: s32'_End'
+  sprite: s32'ven102_05', 4
+  sprite: s32'ven102_06', 3
+  sprite: s32'ven102_07', 3
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_Landing'
+  sprite: s32'ven100_06', 3
+  sprite: s32'ven100_07', 3
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActAirTurn'
+  sprite: s32'ven023_00', 3
+  sprite: s32'ven023_01', 3
+  sprite: s32'ven023_02', 3
+  sprite: s32'ven023_03', 3
+  endState: 
+
+startState: s32'CmnActLockWait'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActLockReject'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActAirLockWait'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActAirLockReject'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActItemUse'
+  Unknown13: s32'_BeginB', 9, 2, 122, 0, 1
+  Unknown13: s32'_BeginC', 9, 2, 122, 0, 2
+  setMarker: s32'_BeginA'
+  sprite: s32'ven202_00', 2
+  sprite: s32'ven202_01', 2
+  sprite: s32'ven202_02', 2
+  sprite: s32'ven202_03', 2
+  sprite: s32'ven202_04', 2
+  sprite: s32'ven202_05', 2
+  Unknown2161: 100, 260000, 280000
+  createObject2: s32'cmn_MOM_AUTO_ITEM', 130
+  setObjectToStackSlot: (STACK_FOR_CMN_ACT), (PREVIOUS)
+  Unknown2161: 100, 260000, 240000
+  Unknown448: s32'cmn_mom_bun', 130
+  Unknown3: 
+  storeValue: (VARIABLE), 69, (STATIC), 1
+  setMarker: s32'loopA'
+  sprite: s32'ven202_06', 2
+  Unknown3: 
+  goToMarker: s32'loopA'
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_EndA'
+  sprite: s32'ven202_07', 2
+  sprite: s32'ven202_08', 2
+  sprite: s32'ven202_09', 2
+  sprite: s32'ven202_10', 2
+  sprite: s32'ven202_11', 2
+  sprite: s32'ven202_12', 2
+  Unknown3: 
+  exitState: 
+  setMarker: s32'_BeginB'
+  upon: (HIT_OR_BLOCK)
+    Unknown2161: 100, 160000, 320000
+    endUpon: 
+  sprite: s32'ven409_00', 3
+  sprite: s32'ven409_01', 3
+  sprite: s32'ven409_02', 3
+  setMarker: s32'loopB'
+  sprite: s32'ven409_03', 3
+  sprite: s32'ven409_04', 3
+  Unknown3: 
+  goToMarker: s32'loopB'
+  sprite: s32'keep', 2147483647
+  setMarker: s32'_EndB'
+  sprite: s32'ven409_05', 2
+  sprite: s32'ven409_06', 2
+  sprite: s32'ven409_07', 2
+  sprite: s32'ven409_08', 2
+  sprite: s32'ven409_09', 2
+  sprite: s32'ven409_10', 2
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActBurst'
+  sprite: s32'ven330_00', 2
+  sprite: s32'ven330_01', 2
+  sprite: s32'ven330_02', 2147483647
+  setMarker: s32'_Bakuhatsu'
+  setMarker: s32'loop'
+  sprite: s32'ven330_03', 3
+  sprite: s32'ven330_04', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_Drop'
+  sprite: s32'ven330_05', 5
+  sprite: s32'ven330_06', 5
+  sprite: s32'ven330_07', 2147483647
+  endState: 
+
+startState: s32'CmnActRomanCancel'
+  sprite: s32'ven350_00', 3
+  if: (VARIABLE), 30
+    Unknown2234: s32'ven351_00'
+    endIf: 
+  sprite: s32'ven350_01', 4
+  if: (VARIABLE), 30
+    Unknown2234: s32'ven351_01'
+    endIf: 
+  sprite: s32'ven350_02', 4
+  if: (VARIABLE), 30
+    Unknown2234: s32'ven351_02'
+    endIf: 
+  setMarker: s32'loop'
+  sprite: s32'ven350_03', 4
+  if: (VARIABLE), 30
+    Unknown2234: s32'ven351_03'
+    endIf: 
+  sprite: s32'ven350_04', 4
+  if: (VARIABLE), 30
+    Unknown2234: s32'ven351_04'
+    endIf: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'_EndLand'
+  sprite: s32'ven350_05', 3
+  sprite: s32'ven350_06', 2147483647
+  Unknown3: 
+  exitState: 
+  setMarker: s32'_EndAir'
+  sprite: s32'ven351_05', 3
+  sprite: s32'ven351_06', 2147483647
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActEntryWait'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2023: 0
+  endState: 
+
+startState: s32'entry_default'
+  upon: (IMMEDIATE)
+    Unknown1638: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2013: s32'ven700cs', 0
+  Unknown2020: s32'ven700', 23, 0, -1
+  Unknown2212: 1
+  Unknown2051: 1900
+  Unknown2028: s32'MSEntry1'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      playCharacterSFX: s32'VEN_Entry_001'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 15
+      playCharacterSFX: s32'VEN_Entry_002'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 19
+      Unknown448: s32'ven_open', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 17
+      playCharacterSFX: s32'VEN_Entry_003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 46
+      playCharacterSFX: s32'VEN_Entry_004'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 131
+      playCharacterSFX: s32'VEN_Entry_005'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 184
+      playCharacterSFX: s32'VEN_Entry_006'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 199
+      playCharacterSFX: s32'VEN_Entry_007'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 209
+      playCharacterSFX: s32'VEN_Entry_008'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 216
+      playCharacterSFX: s32'VEN_Entry_009'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 246
+      playCharacterSFX: s32'VEN_Entry_010'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 273
+      Unknown448: s32'ven_tojo_cueroll', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 265
+      playCharacterSFX: s32'VEN_Entry_011'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 288
+      playCharacterSFX: s32'VEN_Entry_012'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 317
+      Unknown448: s32'ven_tojo_finishline', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 339
+      playCharacterSFX: s32'VEN_Entry_013'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 379
+      Unknown448: s32'ven_tojo_flash', 100
+      Unknown2028: s32'MSEntry2'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 380
+      Unknown448: s32'ven_tojo_wear', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 389
+      playCharacterSFX: s32'VEN_Entry_014'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 490
+      ifOpponentCharacter: s16'mll'
+        playVoice: s16'vxxx356'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOpponentCharacter: s16'zat'
+        playVoice: s16'vxxx356'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifOpponentCharacter: s16'sly'
+        playVoice: s16'vxxx356'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifNot: (VARIABLE), 45
+        playVoice: s16'vxxx304'
+        endIf: 
+      Unknown2211: s32'prev', -2147483618
+      Unknown1890: 1
+      Unknown1675: 30
+      endIf: 
+    endUpon: 
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'entry_ven_vs_mll'
+  upon: (IMMEDIATE)
+    Unknown1638: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  flipDirection: 
+  Unknown92: 0
+  Unknown2051: 1200
+  Unknown2013: s32'ven605cs', 0
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 60
+      playVoice: s16'vxxx350'
+      Unknown1671: '0x7232306333307231323000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+      Unknown2211: s32'!vxxx350', -2147483628
+      Unknown1890: 1
+      Unknown1675: 20
+      endIf: 
+    endUpon: 
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActExDamage'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActExDamageLand'
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'CmnActRoundWin'
+  Unknown13: s32'TypeA', 9, 2, 153, 0, 1
+  Unknown13: s32'TypeB', 9, 2, 153, 0, 2
+  Unknown13: s32'TypeB', 22, 0, 50, 0, 100
+  setMarker: s32'TypeA'
+  sprite: s32'ven615_00', 3
+  Unknown2173: -56250, 20, 4
+  sprite: s32'ven615_01', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_02', 2
+  sprite: s32'ven615_03', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_04', 2
+  sprite: s32'ven615_05', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_06', 2
+  sprite: s32'ven615_07', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_08', 2
+  sprite: s32'ven615_09', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_10', 2
+  sprite: s32'ven615_11', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_12', 2
+  sprite: s32'ven615_13', 2
+  playSFX: s32'SE_SWINGF'
+  sprite: s32'ven615_14', 2
+  sprite: s32'ven615_15', 4
+  sprite: s32'ven615_16', 4
+  sprite: s32'ven615_17', 4
+  sprite: s32'ven615_18', 4
+  sprite: s32'ven615_19', 4
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven615_20', 4
+  playVoice: s16'vxxx305'
+  Unknown1890: 1
+  sprite: s32'ven615_21', 4
+  sprite: s32'ven615_22', 4
+  sprite: s32'ven615_23', 4
+  sprite: s32'ven615_24', 4
+  sprite: s32'ven615_25', 4
+  sprite: s32'ven615_26', 2147483647
+  setMarker: s32'TypeB'
+  sprite: s32'ven616_00', 6
+  sprite: s32'ven616_01', 6
+  sprite: s32'ven616_02', 6
+  sprite: s32'ven616_03', 6
+  sprite: s32'ven616_04', 6
+  sprite: s32'ven616_05', 6
+  sprite: s32'ven616_06', 6
+  sprite: s32'ven616_07', 6
+  playVoice: s16'vxxx306'
+  Unknown1890: 1
+  sprite: s32'ven616_08', 6
+  sprite: s32'ven616_09', 6
+  sprite: s32'ven616_10', 6
+  sprite: s32'ven616_11', 6
+  sprite: s32'ven616_12', 6
+  sprite: s32'ven616_13', 6
+  sprite: s32'ven616_14', 6
+  sprite: s32'ven616_15', 6
+  sprite: s32'ven616_16', 2147483647
+  exitState: 
+  endState: 
+
+startState: s32'CmnActMatchWin'
+  sprite: s32'null', 2147483647
+  Unknown2013: s32'ven800cs', 0
+  Unknown2020: s32'ven800cs_01', 23, 0, -1
+  Unknown2212: 1
+  Unknown2051: 1900
+  Unknown2028: s32'MSWin'
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 39
+      playCharacterSFX: s32'VEN_Win_001'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 84
+      Unknown448: s32'ven_winhandball_screen', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 100
+      ifOpponentCharacter: s16'zat'
+        playVoice: s16'vxxx354'
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      ifNot: (VARIABLE), 45
+        playVoice: s16'vxxx307'
+        endIf: 
+      Unknown2211: s32'prev', -2147483618
+      storeValue: (VARIABLE), 45, (STATIC), 1
+      endIf: 
+    if: (VARIABLE), 45
+      ifNot: (VARIABLE), 95
+        storeValue: (VARIABLE), 45, (STATIC), 0
+        storeValue: (VARIABLE), 46, (STATIC), 1
+        Unknown2070: 
+        endIf: 
+      endIf: 
+    if: (VARIABLE), 46
+      if: (VARIABLE), 131
+        Unknown2020: s32'ven800cs_02', 23, 0, -1
+        storeValue: (VARIABLE), 46, (STATIC), 1
+        Unknown14: s32'next'
+        clearUpon: (FRAME_STEP)
+        endIf: 
+      endIf: 
+    endUpon: 
+  setMarker: s32'next'
+  sprite: s32'null', 2147483647
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown448: s32'ven_win_ballchange', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
+      playCharacterSFX: s32'VEN_Win_002'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 70
+      playCharacterSFX: s32'VEN_Win_003'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 195
+      Unknown448: s32'ven_winball_shadow', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 200
+      playCharacterSFX: s32'VEN_Win_004'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 284
+      Unknown1676: 
+      endIf: 
+    endUpon: 
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CmnActLose'
+  sprite: s32'ven640_00', 6
+  playVoice: s16'vxxx308'
+  Unknown1890: 1
+  sprite: s32'ven640_01', 6
+  sprite: s32'ven640_02', 4
+  sprite: s32'ven640_03', 4
+  sprite: s32'ven640_04', 6
+  sprite: s32'ven640_05', 6
+  sprite: s32'ven640_06', 5
+  sprite: s32'ven640_07', 5
+  sprite: s32'ven640_08', 2147483647
+  endState: 
+
+startState: s32'CmnActResultWin'
+  sprite: s32'ven650_00', 2147483647
+  Unknown2062: -180000, 0, -1296000, 0, 351000, 0
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 0
+      if: (VARIABLE), 138
+        playVoice: s16'vxxx400'
+        Unknown2211: s32'vxxx400', 10000
+        Unknown2313: 1
+        storeValue: (VARIABLE), 69, (STATIC), 1
+        endIf: 
+      endIf: 
+    else: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+        storeValue: (VARIABLE), 69, (STATIC), 2
+        endIf: 
+      else: 
+        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
+          ifNot: (VARIABLE), 143
+            storeValue: (VARIABLE), 138, (STATIC), 0
+            storeValue: (VARIABLE), 69, (STATIC), 3
+            endIf: 
+          endIf: 
+        endElse: 
+      endElse: 
+    endUpon: 
+  endState: 
+
+startState: s32'CmnActResultLose'
+  sprite: s32'ven660_00', 2147483647
+  Unknown2062: -115000, 28000, -279000, 0, 0, 0
+  endState: 
+
+startState: s32'NmlAtk5A'
+  upon: (IMMEDIATE)
+    attackLevel: 0
+    damage: 6
+    enableWhiffCancel: 1
+    setProration: 85
+    addGatlingOption: s32'NmlAtk5A'
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5B'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk2A'
+    addGatlingOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 6
+    endUpon: 
+  sprite: s32'ven200_00', 2
+  setJumpCancelable: 1
+  Unknown2173: 0, 6, 4
+  sprite: s32'ven200_01', 3
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven200_02', 3
+  hit: 
+  sprite: s32'ven200_03', 3
+  recoveryState: 
+  sprite: s32'ven200_04', 3
+  sprite: s32'ven200_05', 3
+  endState: 
+
+startState: s32'NmlAtk6A'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 28
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    setJumpCancelable: 1
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'NmlAtk6D'
+        addMoveCondition: 118
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'ven210_00', 1
+  Unknown2173: -337500, 16, 4
+  sprite: s32'ven210_01', 2
+  Unknown621: 1, 100
+  sprite: s32'ven210_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven210_03', 1
+  sprite: s32'ven210_04', 4
+  hit: 
+  sprite: s32'ven210_05', 3
+  sprite: s32'ven210_06', 4
+  recoveryState: 
+  sprite: s32'ven210_07', 3
+  sprite: s32'ven210_08', 3
+  sprite: s32'ven210_09', 3
+  sprite: s32'ven210_10', 3
+  endState: 
+
+startState: s32'NmlAtk2A'
+  upon: (IMMEDIATE)
+    attackLevel: 0
+    damage: 6
+    enableWhiffCancel: 1
+    setProration: 80
+    addGatlingOption: s32'NmlAtk5A'
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5B'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2A'
+    addGatlingOption: s32'NmlAtk2B'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'ven230_00', 2
+  setJumpCancelable: 1
+  Unknown2173: 0, 6, 4
+  sprite: s32'ven230_01', 2
+  sprite: s32'ven230_02', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven230_03', 4
+  hit: 
+  sprite: s32'ven230_04', 2
+  recoveryState: 
+  sprite: s32'ven230_02', 3
+  sprite: s32'ven230_01', 3
+  sprite: s32'ven230_00', 2
+  endState: 
+
+startState: s32'NmlAtk5B'
+  upon: (IMMEDIATE)
+    attackLevel: 0
+    damage: 12
+    setProration: 90
+    hitPushbackX: 50
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk6D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'ven201_00', 2
+  setJumpCancelable: 1
+  Unknown2173: 0, 12, 4
+  sprite: s32'ven201_01', 2
+  sprite: s32'ven201_02', 1
+  sprite: s32'ven201_03', 1
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven201_04', 3
+  hit: 
+  sprite: s32'ven201_05', 5
+  recoveryState: 
+  sprite: s32'ven201_06', 3
+  sprite: s32'ven201_07', 3
+  sprite: s32'ven201_08', 2
+  sprite: s32'ven201_09', 2
+  endState: 
+
+startState: s32'NmlAtk2B'
+  upon: (IMMEDIATE)
+    guardType: (LOW)
+    attackLevel: 0
+    damage: 8
+    enableWhiffCancel: 1
+    setProration: 70
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CNear'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 5
+    endUpon: 
+  sprite: s32'ven231_00', 2
+  Unknown2173: 0, 10, 4
+  sprite: s32'ven231_01', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven231_02', 3
+  hit: 
+  sprite: s32'ven231_03', 2
+  recoveryState: 
+  sprite: s32'ven231_04', 2
+  sprite: s32'ven231_05', 3
+  sprite: s32'ven231_06', 2
+  endState: 
+
+startState: s32'NmlAtk5CNear'
+  upon: (IMMEDIATE)
+    attackLevel: 4
+    damage: 16
+    Unknown1108: 20
+    hitPushbackX: 50
+    riscMinus: 8
+    Unknown2139: 1
+    addGatlingOption: s32'NmlAtk6A'
+    addGatlingOption: s32'NmlAtk5CFar'
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'CmnFJump'
+        addMoveCondition: 117
+        addMoveCondition: 99
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 5
+    endUpon: 
+  sprite: s32'ven202_00', 2
+  setJumpCancelable: 1
+  Unknown2173: -281250, 12, 4
+  sprite: s32'ven202_01', 2
+  Unknown621: 1, 100
+  sprite: s32'ven202_02', 2
+  playSFX: s32'SE_SWINGB'
+  hit: 
+  Unknown1108: -45
+  sprite: s32'ven202_03', 2
+  hit: 
+  Unknown1108: -10
+  sprite: s32'ven202_04', 2
+  hit: 
+  Unknown1108: 45
+  groundHitEffect: (AIR_FACE_UP)
+  hitAirPushbackY: 32000
+  hitAirPushbackX: 3500
+  sprite: s32'ven202_05', 5
+  sprite: s32'ven202_06', 2
+  recoveryState: 
+  sprite: s32'ven202_07', 3
+  sprite: s32'ven202_08', 3
+  sprite: s32'ven202_09', 3
+  sprite: s32'ven202_10', 3
+  sprite: s32'ven202_11', 3
+  sprite: s32'ven202_12', 3
+  endState: 
+
+startState: s32'NmlAtk5CFar'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 24
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2C'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'ven203_00', 2
+  Unknown2173: 0, 18, 4
+  sprite: s32'ven203_01', 2
+  Unknown621: 1, 100
+  sprite: s32'ven203_02', 2
+  sprite: s32'ven203_03', 1
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven203_04', 1
+  sprite: s32'ven203_05', 2
+  hit: 
+  sprite: s32'ven203_06', 4
+  recoveryState: 
+  sprite: s32'ven203_07', 4
+  sprite: s32'ven203_08', 4
+  sprite: s32'ven203_09', 3
+  sprite: s32'ven203_10', 3
+  endState: 
+
+startState: s32'NmlAtk2C'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 22
+    addGatlingOption: s32'NmlAtk5D'
+    addGatlingOption: s32'NmlAtk2D'
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 6
+    endUpon: 
+  sprite: s32'ven232_00', 2
+  Unknown2173: 0, 14, 4
+  sprite: s32'ven232_01', 1
+  Unknown621: 1, 100
+  sprite: s32'ven232_02', 1
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven232_03', 1
+  sprite: s32'ven232_04', 2
+  hit: 
+  sprite: s32'ven232_05', 6
+  recoveryState: 
+  sprite: s32'ven232_06', 4
+  sprite: s32'ven232_07', 3
+  sprite: s32'ven232_08', 3
+  sprite: s32'ven232_09', 3
+  endState: 
+
+startState: s32'NmlAtk5D'
+  upon: (IMMEDIATE)
+    attackLevel: 4
+    damage: 42
+    groundCounterHitEffect: (STAGGER)
+    SFX_0: s32'SE_HITNIKUC'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'DoubleHeadMorbidD'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'DoubleHeadMorbidC'
+        addMoveCondition: 99
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'CarcassRaidC'
+        addMoveCondition: 114
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 10
+    endUpon: 
+  sprite: s32'ven204_00', 1
+  Unknown2173: 0, 22, 4
+  sprite: s32'ven204_01', 1
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven204_02', 2
+  sprite: s32'ven204_03', 2
+  Unknown621: 2, 160
+  sprite: s32'ven204_04', 2
+  sprite: s32'ven204_05', 1
+  sprite: s32'ven204_06', 4
+  hit: 
+  playSFX: s32'SE_SWINGD'
+  sprite: s32'ven204_07', 3
+  sprite: s32'ven204_08', 3
+  endCounterHitState: 
+  sprite: s32'ven204_09', 3
+  sprite: s32'ven204_10', 3
+  sprite: s32'ven204_11', 3
+  recoveryState: 
+  sprite: s32'ven204_12', 3
+  endState: 
+
+startState: s32'NmlAtk6D'
+  upon: (IMMEDIATE)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 4
+    damage: 52
+    SFX_0: s32'SE_HITNIKUC'
+    hitAirPushbackX: 14000
+    hitAirPushbackY: 5250
+    untechableTime: 32
+    Unknown1108: -45
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'BallSeiseiA'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 15
+    endUpon: 
+  sprite: s32'ven213_00', 2
+  Unknown2173: -60000, 28, 4
+  sprite: s32'ven213_01', 2
+  sprite: s32'ven213_02', 2
+  Unknown621: 2, 160
+  sprite: s32'ven213_03', 2
+  sprite: s32'ven213_04', 2
+  sprite: s32'ven213_05', 2
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven213_06', 2
+  playSFX: s32'SE_SWINGC'
+  sprite: s32'ven213_07', 2
+  hit: 
+  sprite: s32'ven213_08', 2
+  Unknown1108: -90
+  Unknown249: 140000
+  sprite: s32'ven213_09', 2
+  sprite: s32'ven213_10', 2
+  sprite: s32'ven213_11', 2
+  Unknown249: -1
+  recoveryState: 
+  sprite: s32'ven213_12', 2
+  sprite: s32'ven213_13', 5
+  sprite: s32'ven213_14', 4
+  sprite: s32'ven213_15', 4
+  sprite: s32'ven213_16', 4
+  endState: 
+
+startState: s32'NmlAtk2D'
+  upon: (IMMEDIATE)
+    attackLevel: 3
+    damage: 20
+    SFX_0: s32'SE_HITNIKUC'
+    riscMinus: 6
+    Unknown1108: -20
+    hitPushbackX: 80
+    guardType: (LOW)
+    addGatlingOption: s32'NmlAtk5E'
+    addGatlingOption: s32'NmlAtk2E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'CarcassRaidC'
+        addMoveCondition: 114
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'ven233_re_00', 3
+  playSFX: s32'SE_SWINGA'
+  Unknown2173: -45000, 22, 4
+  sprite: s32'ven233_re_01', 3
+  sprite: s32'ven233_re_02', 3
+  sprite: s32'ven233_re_03', 3
+  hit: 
+  playSFX: s32'SE_SWINGE'
+  Unknown621: 2, 160
+  sprite: s32'ven233_re_04', 3
+  hit: 
+  Unknown2173: -337500, 22, 4
+  hitPushbackX: 100
+  Unknown1108: 20
+  guardType: (ANY)
+  sprite: s32'ven233_re_05', 2
+  sprite: s32'ven233_re_06', 2
+  recoveryState: 
+  sprite: s32'ven233_re_07', 3
+  sprite: s32'ven233_re_08', 3
+  sprite: s32'ven233_re_09', 3
+  sprite: s32'ven233_re_10', 3
+  sprite: s32'ven233_re_11', 3
+  sprite: s32'ven233_re_12', 3
+  endState: 
+
+startState: s32'NmlAtk5E'
+  upon: (IMMEDIATE)
+    Unknown2161: 100, -120000, 270000
+    callCmnEfFunc: s32'cmnDustInitialize'
+    attackLevel: 2
+    damage: 25
+    setProration: 80
+    riscMinus: 20
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'HomingJump'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 25
+    endUpon: 
+  sprite: s32'ven205_00', 3
+  Unknown2173: 0, 30, 2308
+  sprite: s32'ven205_01', 3
+  sprite: s32'ven205_02', 3
+  sprite: s32'ven205_03', 4
+  sprite: s32'ven205_04', 4
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven205_04', 4
+  playVoice: s16'vxxx111'
+  sprite: s32'ven205_05', 3
+  playSFX: s32'SE_SWINGF'
+  sprite: s32'ven205_06', 3
+  hit: 
+  sprite: s32'ven205_07', 2
+  sprite: s32'ven205_08', 3
+  sprite: s32'ven205_10', 3
+  sprite: s32'ven205_11', 3
+  sprite: s32'ven205_12', 3
+  sprite: s32'ven205_13', 3
+  sprite: s32'ven205_14', 3
+  endState: 
+
+startState: s32'HomingDash2'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnHomingDash2Initialize'
+    endUpon: 
+  sprite: s32'ven406_02', 6
+  sprite: s32'ven406_03', 3
+  sprite: s32'ven406_04', 3
+  sprite: s32'ven033_00', 6
+  setMarker: s32'loop'
+  sprite: s32'ven032_02', 3
+  sprite: s32'ven032_03', 3
+  sprite: s32'ven032_04', 3
+  sprite: s32'ven032_05', 3
+  sprite: s32'ven032_06', 3
+  sprite: s32'ven032_07', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'HomingJump'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnHomingJumpInitialize'
+    endUpon: 
+  sprite: s32'ven406_00', 5
+  sprite: s32'ven406_01', 5
+  sprite: s32'ven406_02', 10
+  setMarker: s32'loop'
+  sprite: s32'ven025_00', 3
+  sprite: s32'ven025_01', 3
+  sprite: s32'ven025_02', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'NmlAtk2E'
+  upon: (IMMEDIATE)
+    guardType: (LOW)
+    groundHitEffect: (AIR_FACE_DOWN)
+    airHitEffect: (AIR_FACE_DOWN)
+    hitAirPushbackX: 3250
+    attackLevel: 2
+    damage: 20
+    Unknown1127: 1
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'BallSeiseiB'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'CarcassRaidC'
+        addMoveCondition: 114
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 6
+    endUpon: 
+  sprite: s32'ven234_00', 3
+  Unknown2173: 0, 12, 4
+  Unknown2060: 1000
+  sprite: s32'ven234_01', 2
+  playSFX: s32'SE_SWINGD'
+  sprite: s32'ven234_02', 2
+  Unknown621: 1, 100
+  hit: 
+  sprite: s32'ven234_03', 1
+  sprite: s32'ven234_04', 7
+  sprite: s32'ven234_05', 3
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven234_06', 3
+  sprite: s32'ven234_07', 8
+  airHitEffect: (AIR_NORMAL)
+  untechableTime: 30
+  hitGravity: 2800
+  hitAirPushbackX: 12500
+  hit: 
+  sprite: s32'ven234_08', 3
+  Unknown2320: s32'NmlAtk2E_End'
+  sprite: s32'ven234_09', 3
+  sprite: s32'ven234_10', 4
+  sprite: s32'ven234_11', 4
+  endState: 
+
+startState: s32'NmlAtk5F'
+  upon: (IMMEDIATE)
+    Unknown2160: 61
+    Unknown2215: 
+    recoveryState: 
+    endUpon: 
+  Unknown44: 2, 0, 50
+  Unknown24: s32'TypeB', 2, 0
+  sprite: s32'ven300_00', 6
+  sprite: s32'ven300_01', 6
+  sprite: s32'ven300_02', 6
+  sprite: s32'ven300_03', 6
+  playCharacterSFX: s32'6'
+  sprite: s32'ven300_04', 6
+  playVoice: s16'vxxx300'
+  sprite: s32'ven300_05', 40
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven300_06', 6
+  sprite: s32'ven300_07', 6
+  sprite: s32'ven300_08', 6
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven300_09', 6
+  sprite: s32'ven300_10', 6
+  Unknown3: 
+  exitState: 
+  setMarker: s32'TypeB'
+  sprite: s32'ven301_00', 6
+  sprite: s32'ven301_01', 6
+  sprite: s32'ven301_02', 6
+  sprite: s32'ven301_03', 6
+  sprite: s32'ven301_04', 6
+  sprite: s32'ven301_05', 6
+  sprite: s32'ven301_06', 6
+  sprite: s32'ven301_08', 6
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven301_09', 6
+  sprite: s32'ven301_10', 6
+  sprite: s32'ven301_11', 6
+  sprite: s32'ven301_12', 6
+  playVoice: s16'vxxx301'
+  sprite: s32'ven301_13', 6
+  sprite: s32'ven301_14', 6
+  sprite: s32'ven301_15', 6
+  sprite: s32'ven301_16', 46
+  sprite: s32'ven301_17', 6
+  sprite: s32'ven301_18', 6
+  sprite: s32'ven301_19', 6
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'NmlAtk6F'
+  upon: (IMMEDIATE)
+    Unknown2160: 17
+    recoveryState: 
+    endUpon: 
+  Unknown44: 2, 0, 50
+  Unknown24: s32'TypeB', 2, 0
+  sprite: s32'ven305_00', 6
+  sprite: s32'ven305_01', 7
+  sprite: s32'ven305_02', 8
+  playVoice: s16'vxxx302'
+  sprite: s32'ven305_03', 6
+  sprite: s32'ven305_04', 6
+  sprite: s32'ven305_05', 6
+  sprite: s32'ven305_06', 6
+  sprite: s32'ven305_07', 6
+  sprite: s32'ven305_08', 6
+  sprite: s32'ven305_09', 6
+  sprite: s32'ven305_10', 3
+  sprite: s32'ven305_11', 19
+  sprite: s32'ven305_12', 6
+  Unknown3: 
+  exitState: 
+  setMarker: s32'TypeB'
+  sprite: s32'ven306_00', 5
+  sprite: s32'ven306_01', 5
+  sprite: s32'ven306_02', 5
+  sprite: s32'ven306_03', 5
+  sprite: s32'ven306_04', 4
+  sprite: s32'ven306_05', 4
+  sprite: s32'ven306_06', 4
+  sprite: s32'ven306_07', 60
+  playVoice: s16'vxxx303'
+  sprite: s32'ven306_08', 5
+  sprite: s32'ven306_09', 5
+  sprite: s32'ven306_10', 5
+  sprite: s32'ven306_11', 5
+  Unknown3: 
+  endState: 
+
+startState: s32'NmlAtkAir5A'
+  upon: (IMMEDIATE)
+    attackLevel: 0
+    enableWhiffCancel: 1
+    damage: 10
+    addWhiffCancelOption: s32'NmlAtkAir5A'
+    addWhiffCancelOption: s32'NmlAtkAir5B'
+    addWhiffCancelOption: s32'NmlAtkAir5C'
+    addWhiffCancelOption: s32'NmlAtkAir5D'
+    addGatlingOption: s32'NmlAtkAir5A'
+    addGatlingOption: s32'NmlAtkAir5B'
+    addGatlingOption: s32'NmlAtkAir5C'
+    addGatlingOption: s32'NmlAtkAir5D'
+    addGatlingOption: s32'NmlAtkAir5E'
+    setJumpCancelable: 1
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5B'
+        addMoveCondition: 129
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'ven250_00', 2
+  Unknown2173: 0, 8, 4
+  sprite: s32'ven250_01', 2
+  sprite: s32'ven250_02', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven250_03', 6
+  hit: 
+  sprite: s32'ven250_04', 3
+  recoveryState: 
+  sprite: s32'ven250_05', 3
+  Unknown1616: 1
+  sprite: s32'ven250_06', 3
+  endState: 
+
+startState: s32'NmlAtkAir5B'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    enableWhiffCancel: 1
+    damage: 12
+    addGatlingOption: s32'NmlAtkAir5A'
+    addGatlingOption: s32'NmlAtkAir5C'
+    addGatlingOption: s32'NmlAtkAir5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'ven251_00', 2
+  Unknown2173: -33750, 12, 4
+  sprite: s32'ven251_01', 2
+  sprite: s32'ven251_02', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven251_03', 2
+  sprite: s32'ven251_04', 3
+  hit: 
+  sprite: s32'ven251_05', 3
+  sprite: s32'ven251_06', 6
+  sprite: s32'ven251_07', 3
+  recoveryState: 
+  sprite: s32'ven251_08', 3
+  sprite: s32'ven251_09', 3
+  sprite: s32'ven251_10', 3
+  endState: 
+
+startState: s32'NmlAtkAir5C'
+  upon: (IMMEDIATE)
+    attackLevel: 2
+    damage: 22
+    Unknown1108: -90
+    addGatlingOption: s32'NmlAtkAir5A'
+    addGatlingOption: s32'NmlAtkAir5D'
+    addGatlingOption: s32'NmlAtkAir5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5D'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5E'
+        addMoveCondition: 99
+        Unknown1422: -200000, -100000
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot2', s32'NmlAtkAir5E'
+        addMoveCondition: 99
+        Unknown1422: 100000, 400000
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot3', s32'CmnFAirJump'
+        addMoveCondition: 99
+        addMoveCondition: 117
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 7
+    endUpon: 
+  sprite: s32'ven252_00', 2
+  setJumpCancelable: 1
+  Unknown2173: -22500, 17, 4
+  sprite: s32'ven252_01', 2
+  Unknown621: 1, 100
+  sprite: s32'ven252_02', 2
+  playSFX: s32'SE_SWINGD'
+  sprite: s32'ven252_03', 2
+  hit: 
+  sprite: s32'ven252_04', 3
+  sprite: s32'ven252_05', 3
+  sprite: s32'ven252_06', 5
+  recoveryState: 
+  sprite: s32'ven252_07', 3
+  sprite: s32'ven252_08', 5
+  sprite: s32'ven252_09', 5
+  endState: 
+
+startState: s32'NmlAtkAir5D'
+  upon: (IMMEDIATE)
+    Unknown730: 1
+    Unknown1108: -53
+    attackLevel: 2
+    damage: 32
+    hitAirPushbackX: 14000
+    hitAirPushbackY: -17500
+    hitGravity: 1925
+    Unknown1127: 1
+    SFX_0: s32'SE_HITKIRIB'
+    Unknown2173: -56250, 26, 4
+    untechableTime: 16
+    addGatlingOption: s32'NmlAtkAir5E'
+    if: (VARIABLE), 212
+      setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5E'
+        endMoveRegister: 
+      setStylishCombo: s32'StylishComboSlot1', s32'RedHail'
+        addMoveCondition: 117
+        addMoveCondition: 99
+        Unknown1422: -50000, 300000
+        endMoveRegister: 
+      endIf: 
+    Unknown2331: 10
+    endUpon: 
+  sprite: s32'ven253_00', 2
+  sprite: s32'ven253_01', 2
+  Unknown621: 2, 160
+  sprite: s32'ven253_02', 3
+  sprite: s32'ven253_03', 1
+  playSFX: s32'SE_SWINGH'
+  sprite: s32'ven253_04', 1
+  sprite: s32'ven253_05', 4
+  hit: 
+  sprite: s32'ven253_06', 4
+  sprite: s32'ven253_07', 3
+  recoveryState: 
+  sprite: s32'ven253_08', 3
+  sprite: s32'ven253_09', 3
+  sprite: s32'ven253_10', 3
+  sprite: s32'ven253_11', 3
+  sprite: s32'ven253_12', 3
+  endState: 
+
+startState: s32'NmlAtkAir5E'
+  upon: (IMMEDIATE)
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 3
+    damage: 36
+    hitAirPushbackX: 17500
+    hitAirPushbackY: 35000
+    untechableTime: 26
+    Unknown1108: 70
+    Unknown2331: 12
+    endUpon: 
+  sprite: s32'ven254_00', 2
+  playVoice: s16'vxxx111'
+  Unknown2173: 70000, 28, 2564
+  sprite: s32'ven254_01', 1
+  sprite: s32'ven254_01', 2
+  Unknown1792: 5, 1
+  sprite: s32'ven254_02', 3
+  playSFX: s32'SE_SWINGF'
+  sprite: s32'ven254_03', 3
+  sprite: s32'ven254_04', 3
+  createObject2: s32'Airdust_bake', 100
+  hit: 
+  sprite: s32'ven254_05', 3
+  sprite: s32'ven254_06', 3
+  recoveryState: 
+  sprite: s32'ven254_07', 3
+  sprite: s32'ven254_08', 3
+  sprite: s32'ven254_09', 3
+  sprite: s32'ven254_10', 3
+  sprite: s32'ven254_11', 3
+  sprite: s32'ven254_12', 4
+  endState: 
+
+startState: s32'DeadAngleAttack'
+  upon: (IMMEDIATE)
+    playSFX: s32'SE_GC'
+    Unknown1115: 1
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    damage: 20
+    hitAirPushbackX: 19250
+    wallBounceCount: 1
+    setProration: 50
+    Unknown1064: s32'CmnNeutral'
+    endUpon: 
+  sprite: s32'ven201_00', 3
+  setThrowInvul: 1
+  setStrikeInvul: 1
+  sprite: s32'ven201_01', 3
+  playSFX: s32'SE_SWINGB'
+  playVoice: s16'vxxx115'
+  sprite: s32'ven201_02', 3
+  sprite: s32'ven201_03', 3
+  sprite: s32'ven201_04', 3
+  hit: 
+  sprite: s32'ven201_05', 8
+  recoveryState: 
+  setStrikeInvul: 0
+  sprite: s32'ven201_06', 4
+  sprite: s32'ven201_07', 4
+  sprite: s32'ven201_08', 4
+  sprite: s32'ven201_09', 4
+  setThrowInvul: 0
+  endState: 
+
+startState: s32'CounterGuardStand'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnCG_Initialize'
+    upon: 33
+      callCmnEfFunc: s32'cmnCG_OnMuteki'
+      endUpon: 
+    upon: 36
+      callCmnEfFunc: s32'cmnCG_OnFrameStep'
+      endUpon: 
+    upon: (RECEIVE_ATTACK)
+      callCmnEfFunc: s32'cmnCG_OnDamage'
+      endUpon: 
+    upon: (FRAME_STEP)
+      callCmnEfFunc: s32'cmnCG_OnIdling'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven362_00', 3
+  sprite: s32'ven362_01', 3
+  sprite: s32'ven362_00', 3
+  sprite: s32'ven362_01', 3
+  sprite: s32'ven360_05', 5
+  Unknown2161: 100, 50000, 240000
+  createObject2: s32'cmn_neoblitz_burst', 130
+  sprite: s32'ven360_06', 5
+  sprite: s32'ven360_07', 4
+  sprite: s32'ven360_08', 4
+  setMarker: s32'loop'
+  sprite: s32'ven360_09', 3
+  sprite: s32'ven360_10', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'attack'
+  sprite: s32'keep', 1
+  sprite: s32'ven360_11', 3
+  callCmnEfFunc: s32'cmnCG_Attack'
+  physicsXImpulse: 55000
+  Unknown2197: 90
+  sprite: s32'ven360_12', 3
+  sprite: s32'ven360_13', 4
+  sprite: s32'ven360_14', 3
+  createObject2: s32'Neoblitz_atk', 100
+  hit: 
+  screenShake: 1, 1
+  playSFX: s32'GG2_019'
+  playVoice: s16'vxxx126'
+  damage: 50
+  riscMinus: 6
+  setProration: 60
+  Unknown1999: 22, s32'ThrowExe'
+  if: (VARIABLE), 0
+    wallBounceInCornerOnly: 0
+    endIf: 
+  sprite: s32'ven360_15', 2
+  Unknown2197: 60
+  sprite: s32'ven360_16', 6
+  sprite: s32'ven360_17', 3
+  sprite: s32'ven360_18', 3
+  sprite: s32'ven360_19', 3
+  sprite: s32'ven360_20', 3
+  Unknown3: 
+  exitState: 
+  setMarker: s32'end'
+  sprite: s32'ven362_00', 20
+  callCmnEfFunc: s32'cmnCG_MutekiEnd'
+  sprite: s32'ven362_01', 6
+  sprite: s32'ven362_02', 6
+  sprite: s32'ven362_03', 6
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CounterGuardCrouch'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnCG_Initialize'
+    upon: 33
+      callCmnEfFunc: s32'cmnCG_OnMuteki'
+      endUpon: 
+    upon: 36
+      callCmnEfFunc: s32'cmnCG_OnFrameStep'
+      endUpon: 
+    upon: (RECEIVE_ATTACK)
+      callCmnEfFunc: s32'cmnCG_OnDamage'
+      endUpon: 
+    upon: (FRAME_STEP)
+      callCmnEfFunc: s32'cmnCG_OnIdling'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven363_00', 3
+  sprite: s32'ven363_01', 3
+  sprite: s32'ven363_00', 3
+  sprite: s32'ven363_01', 3
+  sprite: s32'ven360_01', 3
+  Unknown2161: 100, 50000, 240000
+  createObject2: s32'cmn_neoblitz_burst', 130
+  sprite: s32'ven360_02', 3
+  sprite: s32'ven360_03', 3
+  sprite: s32'ven360_04', 3
+  sprite: s32'ven360_05', 5
+  sprite: s32'ven360_06', 5
+  sprite: s32'ven360_07', 4
+  sprite: s32'ven360_08', 4
+  setMarker: s32'loop'
+  sprite: s32'ven360_09', 3
+  sprite: s32'ven360_10', 3
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'attack'
+  sprite: s32'keep', 1
+  sprite: s32'ven360_11', 3
+  callCmnEfFunc: s32'cmnCG_Attack'
+  physicsXImpulse: 55000
+  Unknown2197: 90
+  sprite: s32'ven360_12', 3
+  sprite: s32'ven360_13', 4
+  sprite: s32'ven360_14', 3
+  createObject2: s32'Neoblitz_atk', 100
+  hit: 
+  screenShake: 1, 1
+  playSFX: s32'GG2_019'
+  playVoice: s16'vxxx126'
+  damage: 50
+  riscMinus: 6
+  setProration: 60
+  Unknown1999: 22, s32'ThrowExe'
+  if: (VARIABLE), 0
+    wallBounceInCornerOnly: 0
+    endIf: 
+  sprite: s32'ven360_15', 2
+  Unknown2197: 60
+  sprite: s32'ven360_16', 6
+  sprite: s32'ven360_17', 3
+  sprite: s32'ven360_18', 3
+  sprite: s32'ven360_19', 3
+  sprite: s32'ven360_20', 3
+  Unknown3: 
+  exitState: 
+  setMarker: s32'end'
+  sprite: s32'ven363_00', 20
+  callCmnEfFunc: s32'cmnCG_MutekiEnd'
+  sprite: s32'ven363_01', 6
+  sprite: s32'ven363_02', 6
+  sprite: s32'ven363_03', 6
+  Unknown3: 
+  exitState: 
+  endState: 
+
+startState: s32'CounterGuardAir'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnCG_Initialize'
+    upon: 33
+      callCmnEfFunc: s32'cmnCG_OnMuteki'
+      endUpon: 
+    upon: 36
+      callCmnEfFunc: s32'cmnCG_OnFrameStep'
+      endUpon: 
+    upon: (RECEIVE_ATTACK)
+      callCmnEfFunc: s32'cmnCG_OnDamage'
+      endUpon: 
+    upon: (FRAME_STEP)
+      callCmnEfFunc: s32'cmnCG_OnIdling_Air'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven045_03ex', 12
+  sprite: s32'ven045_02', 4
+  callCmnEfFunc: s32'cmnCG_MutekiEnd'
+  sprite: s32'ven045_01', 4
+  sprite: s32'ven045_00', 4
+  sprite: s32'ven026_00', 3
+  sprite: s32'ven026_01', 3
+  setMarker: s32'droploop'
+  sprite: s32'ven026_02', 3
+  sprite: s32'ven026_03', 3
+  Unknown3: 
+  goToMarker: s32'droploop'
+  setMarker: s32'landing'
+  superArmorEnabled: 0
+  sprite: s32'ven010_00', 6
+  sprite: s32'ven010_22', 6
+  Unknown3: 
+  exitState: 
+  setMarker: s32'guard'
+  sprite: s32'ven045_03', 4
+  sprite: s32'ven045_02', 4
+  sprite: s32'ven045_01', 4
+  sprite: s32'ven045_00', 4
+  endState: 
+
+startState: s32'IchigekiJunbi'
+  upon: (IMMEDIATE)
+    callSubroutine: s32'IchigekiGoldCheck', 0, 0, 0, 0, 0, 0, 0, 0
+    endUpon: 
+  sprite: s32'ven450_00', 3
+  sprite: s32'ven450_01', 1
+  sprite: s32'ven450_01', 2
+  callSubroutine: s32'IchigekiStop', 0, 42, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  Unknown2161: 100, 0, 0
+  Unknown448: s32'cmn_ichigeki_charge', 130
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  callSubroutine: s32'IchigekiToggle', 0, 0, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_06', 3
+  sprite: s32'ven450_07', 3
+  endState: 
+
+startState: s32'MOMSuki'
+  upon: (IMMEDIATE)
+    recoveryState: 
+    endUpon: 
+  sprite: s32'ven001_00', 6
+  sprite: s32'ven001_01', 6
+  sprite: s32'ven001_02', 6
+  sprite: s32'ven001_03', 8
+  sprite: s32'ven001_04', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven001_05', 8
+  sprite: s32'ven001_06', 8
+  sprite: s32'ven001_07', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven001_08', 8
+  sprite: s32'ven001_09', 8
+  sprite: s32'ven001_10', 8
+  sprite: s32'ven001_11', 6
+  sprite: s32'ven001_12', 6
+  sprite: s32'ven001_13', 6
+  endState: 
+
+startState: s32'DebugSkillEx'
+  upon: (IMMEDIATE)
+    callCmnEfFunc: s32'cmnDS_Initialize'
+    endUpon: 
+  sprite: s32'keep', 2147483647
+  endState: 
+
+startState: s32'ThrowExe'
+  upon: (IMMEDIATE)
+    Unknown1641: 17, 1
+    attackLevel: 0
+    damage: 6
+    Unknown1108: -90
+    disableHitstop: 1
+    airHitEffect: 16
+    groundHitEffect: 16
+    hitAirPushbackX: 0
+    hitAirPushbackY: 0
+    hitGravity: 0
+    Unknown1127: 1
+    riscMinus: 0
+    setForcedProration: 50
+    untechableTime: 44
+    Unknown1139: 1
+    Unknown1141: 1
+    Unknown1140: 1
+    Unknown1018: 1
+    hitPushbackX: 0
+    Unknown1142: 1
+    Unknown1059: 1
+    Unknown1018: 1
+    disableHitstop: 1
+    Unknown1127: 1
+    Unknown1128: 1
+    Unknown1142: 1
+    hitPushbackX: 0
+    endUpon: 
+  sprite: s32'keep', 1
+  Unknown547: 1
+  sprite: s32'ven310_00', 2
+  Unknown550: 
+  Unknown2161: 100, 190000, 340000
+  Unknown448: s32'cmn_nage', 130
+  Unknown544: 13
+  Unknown2161: 100, 236250, 0
+  Unknown546: 130, 100, 0
+  playVoice: s16'vxxx120'
+  hitUnchecked: 
+  sprite: s32'ven310_01', 3
+  createObject2: s32'ThrowBallEffect', 100
+  sprite: s32'ven310_02', 3
+  sprite: s32'ven310_03', 3
+  sprite: s32'ven310_04', 3
+  sprite: s32'ven310_05', 3
+  Unknown544: 12
+  sprite: s32'ven310_06', 3
+  Unknown544: 11
+  sprite: s32'ven310_07', 3
+  Unknown544: 10
+  hitUnchecked: 
+  tensionGainOnConnect: 0
+  sprite: s32'ven310_08', 3
+  Unknown544: 9
+  hitUnchecked: 
+  sprite: s32'ven310_09', 3
+  Unknown544: 8
+  hitUnchecked: 
+  sprite: s32'ven310_06', 3
+  hitUnchecked: 
+  sprite: s32'ven310_07', 3
+  hitUnchecked: 
+  sprite: s32'ven310_08', 3
+  hitUnchecked: 
+  Unknown1059: 0
+  Unknown1139: 0
+  Unknown41: 22
+  physicsYImpulse: 875
+  Unknown40: 
+  hitAirPushbackY: 875
+  sprite: s32'ven310_09', 4
+  sprite: s32'ven310_10', 5
+  sprite: s32'ven310_11', 5
+  endState: 
+
+startState: s32'AirThrowExe'
+  upon: (IMMEDIATE)
+    Unknown1641: 17, 3
+    attackLevel: 0
+    damage: 6
+    Unknown1108: -90
+    disableHitstop: 1
+    airHitEffect: 16
+    groundHitEffect: 16
+    hitAirPushbackX: 0
+    hitAirPushbackY: 0
+    hitGravity: 0
+    Unknown1127: 1
+    setForcedProration: 50
+    riscMinus: 0
+    untechableTime: 44
+    Unknown1139: 1
+    Unknown1141: 1
+    Unknown1140: 1
+    Unknown1018: 1
+    hitPushbackX: 0
+    Unknown1142: 1
+    Unknown1059: 1
+    Unknown1018: 1
+    disableHitstop: 1
+    Unknown1127: 1
+    Unknown1128: 1
+    Unknown1142: 1
+    hitPushbackX: 0
+    endUpon: 
+  sprite: s32'keep', 1
+  Unknown547: 1
+  sprite: s32'ven320_00', 2
+  Unknown550: 
+  Unknown2161: 100, 190000, 340000
+  Unknown448: s32'cmn_nage', 130
+  Unknown544: 13
+  Unknown2161: 100, 155750, 0
+  Unknown546: 130, 100, 0
+  ifOperation: (IS_GREATER), (VARIABLE), 119, (STATIC), 0
+    playVoice: s16'vxxx116'
+    storeValue: (VARIABLE), 119, (STATIC), 0
+    endIf: 
+  else: 
+    playVoice: s16'vxxx120'
+    endElse: 
+  hitUnchecked: 
+  sprite: s32'ven320_01', 3
+  createObject2: s32'ThrowBallEffect', 100
+  sprite: s32'ven320_02', 3
+  sprite: s32'ven320_03', 3
+  sprite: s32'ven320_04', 3
+  Unknown544: 12
+  hitUnchecked: 
+  tensionGainOnConnect: 0
+  sprite: s32'ven320_05', 3
+  Unknown544: 11
+  hitUnchecked: 
+  sprite: s32'ven320_06', 3
+  Unknown544: 10
+  hitUnchecked: 
+  sprite: s32'ven320_07', 2
+  Unknown544: 9
+  hitUnchecked: 
+  sprite: s32'ven320_04', 3
+  Unknown544: 8
+  hitUnchecked: 
+  sprite: s32'ven320_05', 1
+  sprite: s32'ven320_05', 1
+  sprite: s32'ven320_05', 1
+  sprite: s32'ven320_06', 1
+  hitUnchecked: 
+  Unknown1059: 0
+  Unknown1139: 0
+  Unknown41: 22
+  physicsYImpulse: 875
+  Unknown40: 
+  hitAirPushbackY: 875
+  sprite: s32'ven320_06', 2
+  frcWindow: 3
+  sprite: s32'ven320_08', 3
+  sprite: s32'ven320_09', 3
+  sprite: s32'ven320_10', 3
+  setGravity: 1925
+  sprite: s32'ven320_11', 3
+  setMarker: s32'downloop'
+  sprite: s32'ven026_02', 3
+  sprite: s32'ven026_03', 3
+  Unknown3: 
+  goToMarker: s32'downloop'
+  endState: 
+
+startSubroutine: s32'BallSeisei_Hold'
+  checkInput: (INPUT_HOLD_P)
+  if: (VARIABLE), 0
+    modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
+    endIf: 
+  checkInput: (INPUT_HOLD_K)
+  if: (VARIABLE), 0
+    modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
+    endIf: 
+  checkInput: (INPUT_HOLD_S)
+  if: (VARIABLE), 0
+    modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
+    endIf: 
+  checkInput: (INPUT_HOLD_H)
+  if: (VARIABLE), 0
+    modifyVar: (ADD), (VARIABLE), 49, (STATIC), 1
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 1
+    checkInput: (INPUT_RELEASE_P)
+    if: (VARIABLE), 0
+      modifyVar: (MUL), (VARIABLE), 46, (STATIC), -1
+      endIf: 
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 1
+    checkInput: (INPUT_RELEASE_K)
+    if: (VARIABLE), 0
+      modifyVar: (MUL), (VARIABLE), 47, (STATIC), -1
+      endIf: 
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 1
+    checkInput: (INPUT_RELEASE_S)
+    if: (VARIABLE), 0
+      modifyVar: (MUL), (VARIABLE), 48, (STATIC), -1
+      endIf: 
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 49, (STATIC), 1
+    checkInput: (INPUT_RELEASE_H)
+    if: (VARIABLE), 0
+      modifyVar: (MUL), (VARIABLE), 49, (STATIC), -1
+      endIf: 
+    endIf: 
+  endSubroutine: 
+
+startState: s32'BallSeiseiA'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 262500, 0, 182875, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 455000, 0, 140000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 560000, 0, 280000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 612500, 0, 420000, 0, 0, 0, 0
+      addWhiffCancelOption: s32'DarkAngel'
+      addWhiffCancelOption: s32'DarkAngelBurst'
+      addWhiffCancelOption: s32'SummonGoldBall'
+      callCmnEfFunc: s32'BallSeisei_Hold'
+      checkInput: (INPUT_HOLD_P)
+      ifNot: (VARIABLE), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven407_00', 2
+  tensionGain: 15
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven407_01', 2
+  playVoice: s16'vxxx206'
+  sprite: s32'ven407_02', 2
+  sprite: s32'ven407_03', 2
+  sprite: s32'ven407_04', 2
+  sprite: s32'ven407_05', 2
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_0), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_0), (PREVIOUS)
+  sprite: s32'ven407_06', 4
+  sprite: s32'ven407_07', 2
+  sprite: s32'ven407_08', 2
+  sprite: s32'ven407_09', 2
+  sprite: s32'ven407_10', 2
+  sprite: s32'ven407_11', 2
+  enableWhiffCancelOptions: 1
+  ifNot: (VARIABLE), 45
+    addWhiffCancelOption: s32'WarpB'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiB_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiC_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 49, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiD_Hold'
+    endIf: 
+  addWhiffCancelOption: s32'BallSeiseiA'
+  addWhiffCancelOption: s32'BallSeiseiB'
+  addWhiffCancelOption: s32'BallSeiseiC'
+  addWhiffCancelOption: s32'BallSeiseiD'
+  if: (VARIABLE), 161
+    checkInput: (INPUT_G_HOLD)
+    if: (VARIABLE), 0
+      addWhiffCancelOption: s32'BallSeiseiB_Hold'
+      endIf: 
+    endIf: 
+  Unknown3: 
+  jumpToState: s32'_NEUTRAL'
+  endState: 
+
+startState: s32'BallSeiseiB'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 175000, 0, 315000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 315000, 0, 455000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 455000, 0, 315000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 595000, 0, 455000, 0, 0, 0, 0
+      addWhiffCancelOption: s32'DarkAngel'
+      addWhiffCancelOption: s32'DarkAngelBurst'
+      addWhiffCancelOption: s32'SummonGoldBall'
+      checkInput: (INPUT_HOLD_K)
+      ifNot: (VARIABLE), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      callCmnEfFunc: s32'BallSeisei_Hold'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven407_00', 2
+  tensionGain: 15
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven407_01', 2
+  playVoice: s16'vxxx206'
+  sprite: s32'ven407_02', 2
+  sprite: s32'ven407_03', 2
+  sprite: s32'ven407_04', 2
+  sprite: s32'ven407_05', 2
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_1), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_1), (PREVIOUS)
+  sprite: s32'ven407_06', 4
+  sprite: s32'ven407_07', 2
+  sprite: s32'ven407_08', 2
+  sprite: s32'ven407_09', 2
+  sprite: s32'ven407_10', 2
+  sprite: s32'ven407_11', 2
+  enableWhiffCancelOptions: 1
+  ifNot: (VARIABLE), 45
+    addWhiffCancelOption: s32'WarpB'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiA_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiC_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 49, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiD_Hold'
+    endIf: 
+  addWhiffCancelOption: s32'BallSeiseiA'
+  addWhiffCancelOption: s32'BallSeiseiB'
+  addWhiffCancelOption: s32'BallSeiseiC'
+  addWhiffCancelOption: s32'BallSeiseiD'
+  if: (VARIABLE), 161
+    checkInput: (INPUT_G_HOLD)
+    if: (VARIABLE), 0
+      addWhiffCancelOption: s32'BallSeiseiC_Hold'
+      endIf: 
+    endIf: 
+  Unknown3: 
+  jumpToState: s32'_NEUTRAL'
+  endState: 
+
+startState: s32'BallSeiseiC'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 490000, 0, 227500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 210000, 0, 525000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, -122500, 0, 437500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 157500, 0, 140000, 0, 0, 0, 0
+      addWhiffCancelOption: s32'DarkAngel'
+      addWhiffCancelOption: s32'DarkAngelBurst'
+      addWhiffCancelOption: s32'SummonGoldBall'
+      checkInput: (INPUT_HOLD_S)
+      ifNot: (VARIABLE), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      callCmnEfFunc: s32'BallSeisei_Hold'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven407_00', 2
+  tensionGain: 15
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven407_01', 2
+  playVoice: s16'vxxx206'
+  sprite: s32'ven407_02', 2
+  sprite: s32'ven407_03', 2
+  sprite: s32'ven407_04', 2
+  sprite: s32'ven407_05', 2
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_2), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_2), (PREVIOUS)
+  sprite: s32'ven407_06', 4
+  sprite: s32'ven407_07', 2
+  sprite: s32'ven407_08', 2
+  sprite: s32'ven407_09', 2
+  sprite: s32'ven407_10', 2
+  sprite: s32'ven407_11', 2
+  enableWhiffCancelOptions: 1
+  ifNot: (VARIABLE), 45
+    addWhiffCancelOption: s32'WarpB'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiA_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiB_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 49, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiD_Hold'
+    endIf: 
+  addWhiffCancelOption: s32'BallSeiseiA'
+  addWhiffCancelOption: s32'BallSeiseiB'
+  addWhiffCancelOption: s32'BallSeiseiC'
+  addWhiffCancelOption: s32'BallSeiseiD'
+  if: (VARIABLE), 161
+    checkInput: (INPUT_G_HOLD)
+    if: (VARIABLE), 0
+      addWhiffCancelOption: s32'BallSeiseiD_Hold'
+      endIf: 
+    endIf: 
+  Unknown3: 
+  jumpToState: s32'_NEUTRAL'
+  endState: 
+
+startState: s32'BallSeiseiD'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 560000, 0, 542500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 875000, 0, 113750, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 350000, 0, 367500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 630000, 0, 262500, 0, 0, 0, 0
+      addWhiffCancelOption: s32'DarkAngel'
+      addWhiffCancelOption: s32'DarkAngelBurst'
+      addWhiffCancelOption: s32'SummonGoldBall'
+      checkInput: (INPUT_HOLD_H)
+      ifNot: (VARIABLE), 0
+        storeValue: (VARIABLE), 45, (STATIC), 1
+        endIf: 
+      callCmnEfFunc: s32'BallSeisei_Hold'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven407_00', 2
+  tensionGain: 15
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven407_01', 2
+  playVoice: s16'vxxx206'
+  sprite: s32'ven407_02', 2
+  sprite: s32'ven407_03', 2
+  sprite: s32'ven407_04', 2
+  sprite: s32'ven407_05', 2
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_3), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_3), (PREVIOUS)
+  sprite: s32'ven407_06', 4
+  sprite: s32'ven407_07', 2
+  sprite: s32'ven407_08', 2
+  sprite: s32'ven407_09', 2
+  sprite: s32'ven407_10', 2
+  sprite: s32'ven407_11', 2
+  enableWhiffCancelOptions: 1
+  ifNot: (VARIABLE), 45
+    addWhiffCancelOption: s32'WarpB'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiA_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiB_Hold'
+    endIf: 
+  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 6
+    addWhiffCancelOption: s32'BallSeiseiC_Hold'
+    endIf: 
+  addWhiffCancelOption: s32'BallSeiseiA'
+  addWhiffCancelOption: s32'BallSeiseiB'
+  addWhiffCancelOption: s32'BallSeiseiC'
+  addWhiffCancelOption: s32'BallSeiseiD'
+  if: (VARIABLE), 161
+    checkInput: (INPUT_G_HOLD)
+    if: (VARIABLE), 0
+      addWhiffCancelOption: s32'WarpB'
+      endIf: 
+    endIf: 
+  Unknown3: 
+  jumpToState: s32'_NEUTRAL'
+  endState: 
+
+startState: s32'AirBallSeiseiA'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 262500, 0, 210000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 455000, 0, 157500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 560000, 0, 297500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 612500, 0, 437500, 0, 0, 0, 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven408_00', 2
+  setXPushToXSpeed: 
+  setYPushToYSpeed: 
+  resetVelocity: 1
+  tensionGain: 15
+  sprite: s32'ven408_00', 2
+  playVoice: s16'vxxx207'
+  sprite: s32'ven408_01', 4
+  sprite: s32'ven408_02', 10
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_0), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_0), (PREVIOUS)
+  sprite: s32'ven408_03', 4
+  sprite: s32'ven408_04', 4
+  clearUpon: (FRAME_STEP)
+  sprite: s32'ven408_05', 9
+  setXSpeedToXPush: 
+  setYSpeedToYPush: 
+  setGravity: 1925
+  endState: 
+
+startState: s32'AirBallSeiseiB'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 175000, 0, 332500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 315000, 0, 472500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 455000, 0, 332500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 595000, 0, 472500, 0, 0, 0, 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven408_00', 2
+  setXPushToXSpeed: 
+  setYPushToYSpeed: 
+  resetVelocity: 1
+  tensionGain: 15
+  sprite: s32'ven408_00', 2
+  playVoice: s16'vxxx207'
+  sprite: s32'ven408_01', 4
+  sprite: s32'ven408_02', 10
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_1), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_1), (PREVIOUS)
+  sprite: s32'ven408_03', 4
+  sprite: s32'ven408_04', 4
+  clearUpon: (FRAME_STEP)
+  sprite: s32'ven408_05', 9
+  setXSpeedToXPush: 
+  setYSpeedToYPush: 
+  setGravity: 1925
+  endState: 
+
+startState: s32'AirBallSeiseiC'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 490000, 0, 245000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 210000, 0, 542500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, -122500, 0, 455000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 157500, 0, 157500, 0, 0, 0, 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven408_00', 2
+  setXPushToXSpeed: 
+  setYPushToYSpeed: 
+  resetVelocity: 1
+  tensionGain: 15
+  sprite: s32'ven408_00', 2
+  playVoice: s16'vxxx207'
+  sprite: s32'ven408_01', 4
+  sprite: s32'ven408_02', 10
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_2), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_2), (PREVIOUS)
+  sprite: s32'ven408_03', 4
+  sprite: s32'ven408_04', 4
+  clearUpon: (FRAME_STEP)
+  sprite: s32'ven408_05', 9
+  setXSpeedToXPush: 
+  setYSpeedToYPush: 
+  setGravity: 1925
+  endState: 
+
+startState: s32'AirBallSeiseiD'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 560000, 0, 560000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 875000, 0, 131250, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 350000, 0, 385000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 630000, 0, 280000, 0, 0, 0, 0
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven408_00', 2
+  setXPushToXSpeed: 
+  setYPushToYSpeed: 
+  resetVelocity: 1
+  tensionGain: 15
+  sprite: s32'ven408_00', 2
+  playVoice: s16'vxxx207'
+  sprite: s32'ven408_01', 4
+  sprite: s32'ven408_02', 10
+  playCharacterSFX: s32'3'
+  deactivateObjectFromSlot: (STACK_3), (SELF)
+  createObject2: s32'Ball', 0
+  setObjectToStackSlot: (STACK_3), (PREVIOUS)
+  sprite: s32'ven408_03', 4
+  sprite: s32'ven408_04', 4
+  clearUpon: (FRAME_STEP)
+  sprite: s32'ven408_05', 9
+  setXSpeedToXPush: 
+  setYSpeedToYPush: 
+  setGravity: 1925
+  endState: 
+
+startState: s32'DubiousCurveA'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 332500, 0, 227500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 455000, 0, 140000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 560000, 0, 280000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 612500, 0, 420000, 0, 0, 0, 0
+      if: (VARIABLE), 45
+        if: (VARIABLE), 161
+          checkInput: (INPUT_G_HOLD)
+          endIf: 
+        else: 
+          checkInput: (INPUT_HOLD_P)
+          endElse: 
+        ifNot: (VARIABLE), 0
+          Unknown14: s32'End'
+          endIf: 
+        endIf: 
+      upon: (PLAYER_DAMAGE)
+        deactivateObj: (STACK_0)
+        Unknown32: s32'Barrier'
+        endUpon: 
+      endUpon: 
+    upon: (AFTER_EXIT)
+      deactivateObj: (STACK_0)
+      Unknown32: s32'Barrier'
+      Unknown32: s32'Debious_AttackBall'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven409_00', 4
+  sprite: s32'ven409_01', 1
+  sprite: s32'ven409_01', 3
+  tensionGain: 40
+  Unknown2161: 100, 332500, 227500
+  createObject2: s32'Barrier', 130
+  Unknown448: s32'ven_barrier_start', 130
+  sprite: s32'ven409_02', 3
+  sprite: s32'ven409_02', 1
+  sprite: s32'ven409_03', 2
+  deactivateObjectFromSlot: (STACK_0), (SELF)
+  createObject2: s32'Ball', 130
+  setObjectToStackSlot: (STACK_0), (PREVIOUS)
+  storeValue: (VARIABLE), 45, (STATIC), 1
+  playCharacterSFX: s32'3'
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_0), 25
+  storeValue: (VARIABLE), 46, (STATIC), 1
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_0), 26
+  storeValue: (VARIABLE), 46, (STATIC), 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  deactivateObjectFromSlot: (STACK_0), 27
+  storeValue: (VARIABLE), 46, (STATIC), 3
+  setMarker: s32'End'
+  sprite: s32'ven409_05', 2
+  clearUpon: (FRAME_STEP)
+  upon: (FRAME_STEP)
+    callSubroutine: s32'VeBallTargetA', 0, 262500, 0, 182875, 0, 0, 0, 0
+    endUpon: 
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  playSFX: s32'GG2_068'
+  playVoice: s16'vxxx208'
+  screenShake: 1, 1
+  sprite: s32'ven409_06', 5
+  Unknown2161: 100, 332500, 227500
+  Unknown2247: 2, 46, 0, 0
+  callEtcState: s32'Debious_AttackBall', 130
+  Unknown1771: s32'Barrier', 30
+  sprite: s32'ven409_07', 6
+  frcWindow: 6
+  yrcWindowLength: 6
+  clearUpon: (AFTER_EXIT)
+  sprite: s32'ven409_08', 4
+  sprite: s32'ven409_09', 4
+  recoveryState: 
+  sprite: s32'ven409_10', 4
+  endState: 
+
+startState: s32'DubiousCurveB'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 175000, 0, 315000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 332500, 0, 227500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 455000, 0, 315000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 595000, 0, 455000, 0, 0, 0, 0
+      if: (VARIABLE), 45
+        checkInput: (INPUT_HOLD_K)
+        ifNot: (VARIABLE), 0
+          Unknown14: s32'End'
+          endIf: 
+        endIf: 
+      upon: (PLAYER_DAMAGE)
+        deactivateObj: (STACK_1)
+        Unknown32: s32'Barrier'
+        endUpon: 
+      endUpon: 
+    upon: (AFTER_EXIT)
+      deactivateObj: (STACK_1)
+      Unknown32: s32'Barrier'
+      Unknown32: s32'Debious_AttackBall'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven409_00', 4
+  sprite: s32'ven409_01', 1
+  sprite: s32'ven409_01', 3
+  tensionGain: 40
+  Unknown2161: 100, 332500, 227500
+  createObject2: s32'Barrier', 130
+  Unknown448: s32'ven_barrier_start', 130
+  sprite: s32'ven409_02', 3
+  sprite: s32'ven409_02', 1
+  sprite: s32'ven409_03', 2
+  deactivateObjectFromSlot: (STACK_1), (SELF)
+  createObject2: s32'Ball', 130
+  setObjectToStackSlot: (STACK_1), (PREVIOUS)
+  storeValue: (VARIABLE), 45, (STATIC), 1
+  playCharacterSFX: s32'3'
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_1), 25
+  storeValue: (VARIABLE), 46, (STATIC), 1
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_1), 26
+  storeValue: (VARIABLE), 46, (STATIC), 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  deactivateObjectFromSlot: (STACK_1), 27
+  storeValue: (VARIABLE), 46, (STATIC), 3
+  setMarker: s32'End'
+  sprite: s32'ven409_05', 2
+  clearUpon: (FRAME_STEP)
+  upon: (FRAME_STEP)
+    callSubroutine: s32'VeBallTargetB', 0, 315000, 0, 455000, 0, 0, 0, 0
+    endUpon: 
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  playSFX: s32'GG2_068'
+  playVoice: s16'vxxx208'
+  screenShake: 1, 1
+  sprite: s32'ven409_06', 5
+  Unknown2161: 100, 332500, 227500
+  Unknown2247: 2, 46, 0, 0
+  callEtcState: s32'Debious_AttackBall', 130
+  Unknown1771: s32'Barrier', 30
+  sprite: s32'ven409_07', 6
+  frcWindow: 6
+  yrcWindowLength: 6
+  clearUpon: (AFTER_EXIT)
+  sprite: s32'ven409_08', 4
+  sprite: s32'ven409_09', 4
+  recoveryState: 
+  sprite: s32'ven409_10', 4
+  endState: 
+
+startState: s32'DubiousCurveC'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 490000, 0, 227500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 210000, 0, 525000, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 332500, 0, 227500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 157500, 0, 140000, 0, 0, 0, 0
+      if: (VARIABLE), 45
+        checkInput: (INPUT_HOLD_S)
+        ifNot: (VARIABLE), 0
+          Unknown14: s32'End'
+          endIf: 
+        endIf: 
+      upon: (PLAYER_DAMAGE)
+        deactivateObj: (STACK_2)
+        Unknown32: s32'Barrier'
+        endUpon: 
+      endUpon: 
+    upon: (AFTER_EXIT)
+      deactivateObj: (STACK_2)
+      Unknown32: s32'Barrier'
+      Unknown32: s32'Debious_AttackBall'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven409_00', 4
+  sprite: s32'ven409_01', 1
+  sprite: s32'ven409_01', 3
+  tensionGain: 40
+  Unknown2161: 100, 332500, 227500
+  createObject2: s32'Barrier', 130
+  Unknown448: s32'ven_barrier_start', 130
+  sprite: s32'ven409_02', 3
+  sprite: s32'ven409_02', 1
+  sprite: s32'ven409_03', 2
+  deactivateObjectFromSlot: (STACK_2), (SELF)
+  createObject2: s32'Ball', 130
+  setObjectToStackSlot: (STACK_2), (PREVIOUS)
+  storeValue: (VARIABLE), 45, (STATIC), 1
+  playCharacterSFX: s32'3'
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_2), 25
+  storeValue: (VARIABLE), 46, (STATIC), 1
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_2), 26
+  storeValue: (VARIABLE), 46, (STATIC), 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  deactivateObjectFromSlot: (STACK_2), 27
+  storeValue: (VARIABLE), 46, (STATIC), 3
+  setMarker: s32'End'
+  sprite: s32'ven409_05', 2
+  clearUpon: (FRAME_STEP)
+  upon: (FRAME_STEP)
+    callSubroutine: s32'VeBallTargetC', 0, -122500, 0, 437500, 0, 0, 0, 0
+    endUpon: 
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  playSFX: s32'GG2_068'
+  playVoice: s16'vxxx208'
+  screenShake: 1, 1
+  sprite: s32'ven409_06', 5
+  Unknown2161: 100, 332500, 227500
+  Unknown2247: 2, 46, 0, 0
+  callEtcState: s32'Debious_AttackBall', 130
+  Unknown1771: s32'Barrier', 30
+  sprite: s32'ven409_07', 6
+  frcWindow: 6
+  yrcWindowLength: 6
+  clearUpon: (AFTER_EXIT)
+  sprite: s32'ven409_08', 4
+  sprite: s32'ven409_09', 4
+  recoveryState: 
+  sprite: s32'ven409_10', 4
+  endState: 
+
+startState: s32'DubiousCurveD'
+  upon: (IMMEDIATE)
+    upon: (FRAME_STEP)
+      callSubroutine: s32'VeBallTargetA', 0, 560000, 0, 542500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetB', 0, 875000, 0, 113750, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetC', 0, 350000, 0, 367500, 0, 0, 0, 0
+      callSubroutine: s32'VeBallTargetD', 0, 332500, 0, 227500, 0, 0, 0, 0
+      if: (VARIABLE), 45
+        checkInput: (INPUT_HOLD_H)
+        ifNot: (VARIABLE), 0
+          Unknown14: s32'End'
+          endIf: 
+        endIf: 
+      upon: (PLAYER_DAMAGE)
+        deactivateObj: (STACK_3)
+        Unknown32: s32'Barrier'
+        endUpon: 
+      endUpon: 
+    upon: (AFTER_EXIT)
+      deactivateObj: (STACK_3)
+      Unknown32: s32'Barrier'
+      Unknown32: s32'Debious_AttackBall'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven409_00', 4
+  sprite: s32'ven409_01', 1
+  sprite: s32'ven409_01', 3
+  tensionGain: 40
+  Unknown2161: 100, 332500, 227500
+  createObject2: s32'Barrier', 130
+  Unknown448: s32'ven_barrier_start', 130
+  sprite: s32'ven409_02', 3
+  sprite: s32'ven409_02', 1
+  sprite: s32'ven409_03', 2
+  deactivateObjectFromSlot: (STACK_3), (SELF)
+  createObject2: s32'Ball', 130
+  setObjectToStackSlot: (STACK_3), (PREVIOUS)
+  storeValue: (VARIABLE), 45, (STATIC), 1
+  playCharacterSFX: s32'3'
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_3), (SELF)
+  storeValue: (VARIABLE), 46, (STATIC), 1
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 1
+  sprite: s32'ven409_03', 1
+  deactivateObjectFromSlot: (STACK_3), (SELF)
+  storeValue: (VARIABLE), 46, (STATIC), 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  sprite: s32'ven409_03', 2
+  sprite: s32'ven409_04', 2
+  deactivateObjectFromSlot: (STACK_3), (SELF)
+  storeValue: (VARIABLE), 46, (STATIC), 3
+  setMarker: s32'End'
+  sprite: s32'ven409_05', 2
+  clearUpon: (FRAME_STEP)
+  upon: (FRAME_STEP)
+    callSubroutine: s32'VeBallTargetD', 0, 630000, 0, 262500, 0, 0, 0, 0
+    endUpon: 
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  playSFX: s32'GG2_068'
+  playVoice: s16'vxxx208'
+  screenShake: 1, 1
+  sprite: s32'ven409_06', 5
+  Unknown2161: 100, 332500, 227500
+  Unknown2247: 2, 46, 0, 0
+  callEtcState: s32'Debious_AttackBall', 130
+  Unknown1771: s32'Barrier', 30
+  sprite: s32'ven409_07', 6
+  frcWindow: 6
+  yrcWindowLength: 6
+  clearUpon: (AFTER_EXIT)
+  sprite: s32'ven409_08', 4
+  sprite: s32'ven409_09', 4
+  recoveryState: 
+  sprite: s32'ven409_10', 4
+  endState: 
+
+startState: s32'DebugKamae'
+  upon: (IMMEDIATE)
+    addWhiffCancelOption: s32'DebugKamaeE'
+    addWhiffCancelOption: s32'DebugKamaeD'
+    endUpon: 
+  sprite: s32'ven252_07', 3
+  sprite: s32'ven252_08', 30
+  enableWhiffCancelOptions: 1
+  sprite: s32'ven252_09', 5
+  endState: 
+
+startState: s32'DebugKamaeE'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'ven407_00', 2
+  sprite: s32'ven407_01', 2
+  sprite: s32'ven407_02', 17
+  sprite: s32'ven407_03', 2
+  sprite: s32'ven407_04', 2
+  Unknown2161: 100, 400000, 0
+  createObject2: s32'DebugDustEffect', 130
+  Unknown467: 1
+  sprite: s32'ven407_05', 2
+  sprite: s32'ven407_06', 5
+  hitUnchecked: 
+  sprite: s32'ven407_06', 8
+  Unknown2161: 100, 400000, 150000
+  createObject2: s32'DebugDustMahojin', 130
+  sprite: s32'ven407_07', 2
+  recoveryState: 
+  sprite: s32'ven407_08', 2
+  sprite: s32'ven407_09', 2
+  sprite: s32'ven407_10', 2
+  sprite: s32'ven407_11', 2
+  endState: 
+
+startState: s32'DebugKamaeD'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'ven407_00', 2
+  sprite: s32'ven407_01', 2
+  sprite: s32'ven407_02', 2
+  sprite: s32'ven407_03', 2
+  sprite: s32'ven407_04', 2
+  createObject2: s32'DebugStunEdge', 103
+  sprite: s32'ven407_05', 2
+  sprite: s32'ven407_06', 2
+  sprite: s32'ven407_07', 2
+  recoveryState: 
+  sprite: s32'ven407_08', 2
+  sprite: s32'ven407_09', 2
+  sprite: s32'ven407_10', 2
+  sprite: s32'ven407_11', 2
+  endState: 
+
+startState: s32'Warp'
+  upon: (IMMEDIATE)
+    recoveryState: 
+    upon: (AFTER_EXIT)
+      Unknown2023: 1
+      endUpon: 
+    Unknown2301: 1
+    restoreAirDash: 
+    endUpon: 
+  sprite: s32'ven406_00', 2
+  playCharacterSFX: s32'3'
+  sprite: s32'ven406_01', 2
+  sprite: s32'ven406_02', 2
+  sprite: s32'ven406_03', 2
+  setStrikeInvul: 1
+  sprite: s32'ven406_04', 2
+  sprite: s32'ven406_05', 2
+  createObject2: s32'Warpmodel1', 100
+  Unknown2023: 0
+  setThrowInvul: 1
+  sprite: s32'ven406_06', 2
+  createObject2: s32'Warpmodel2', 100
+  sprite: s32'ven406_07', 2
+  Unknown2023: 1
+  setThrowInvul: 0
+  callSubroutine: s32'WarpToBall', 0, 0, 0, 0, 0, 0, 0, 0
+  physicsYImpulse: 3500
+  physicsXImpulse: -5250
+  setGravity: 175
+  playVoice: s16'vxxx205'
+  setStrikeInvul: 0
+  sprite: s32'ven406_08', 2
+  sprite: s32'ven406_09', 1
+  physicsXImpulse: -3500
+  sprite: s32'ven406_09', 1
+  physicsXImpulse: -1750
+  setGravity: 1925
+  endState: 
+
+startState: s32'WarpB'
+  upon: (IMMEDIATE)
+    recoveryState: 
+    upon: (AFTER_EXIT)
+      Unknown2023: 1
+      endUpon: 
+    Unknown2301: 1
+    restoreAirDash: 
+    endUpon: 
+  sprite: s32'ven406_00', 2
+  playCharacterSFX: s32'3'
+  sprite: s32'ven406_01', 2
+  sprite: s32'ven406_02', 2
+  sprite: s32'ven406_03', 2
+  setStrikeInvul: 1
+  sprite: s32'ven406_04', 2
+  sprite: s32'ven406_05', 2
+  createObject2: s32'Warpmodel1', 100
+  Unknown2023: 0
+  setThrowInvul: 1
+  sprite: s32'ven406_06', 2
+  createObject2: s32'Warpmodel2', 100
+  sprite: s32'ven406_07', 2
+  Unknown2023: 1
+  setThrowInvul: 0
+  callSubroutine: s32'WarpToBall', 0, 0, 0, 0, 0, 0, 0, 0
+  physicsYImpulse: 3500
+  physicsXImpulse: -5250
+  setGravity: 175
+  playVoice: s16'vxxx205'
+  setStrikeInvul: 0
+  sprite: s32'ven406_08', 2
+  sprite: s32'ven406_09', 1
+  physicsXImpulse: -3500
+  sprite: s32'ven406_09', 1
+  physicsXImpulse: -1750
+  setGravity: 1925
+  endState: 
+
+startState: s32'StingerAimC'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'ven400_00', 3
+  tensionGain: 50
+  Unknown2173: 0, 10, 148
+  sprite: s32'ven400_01', 3
+  sprite: s32'ven400_02', 3
+  sprite: s32'ven400_03', 3
+  Unknown2247: 0, 1, 0, 1
+  callEtcState: s32'Ball', 0
+  setObjectToStackSlot: (STACK_4), (PREVIOUS)
+  upon: (FRAME_STEP)
+    checkInput: (INPUT_HOLD_S)
+    ifNot: (VARIABLE), 0
+      Unknown14: s32'Shot'
+      endIf: 
+    endUpon: 
+  checkInput: (INPUT_ANY_DOWN)
+  if: (VARIABLE), 0
+    Unknown2173: 0, 10, 164
+    endIf: 
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  deactivateObjectFromSlot: (STACK_4), 25
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  deactivateObjectFromSlot: (STACK_4), 26
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  deactivateObjectFromSlot: (STACK_4), 27
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  setMarker: s32'Shot'
+  clearUpon: (FRAME_STEP)
+  sprite: s32'ven400_06', 1
+  playVoice: s16'vxxx200'
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven400_07', 2
+  sprite: s32'ven400_08', 2
+  Unknown2243: 0, 0
+  Unknown449: s32'ven_ballhit1', 0
+  sprite: s32'ven400_09', 2
+  frcWindow: 6
+  sprite: s32'ven400_10', 5
+  sprite: s32'ven400_11', 4
+  sprite: s32'ven400_12', 4
+  sprite: s32'ven400_13', 4
+  sprite: s32'ven400_14', 3
+  sprite: s32'ven400_15', 3
+  sprite: s32'ven400_16', 3
+  endState: 
+
+startState: s32'StingerAimD'
+  upon: (IMMEDIATE)
+    endUpon: 
+  sprite: s32'ven400_00', 1
+  tensionGain: 50
+  Unknown2173: 0, 22, 148
+  sprite: s32'ven400_01', 1
+  sprite: s32'ven400_02', 1
+  sprite: s32'ven400_03', 3
+  Unknown2247: 0, 1, 0, 1
+  callEtcState: s32'Ball', 0
+  setObjectToStackSlot: (STACK_4), (PREVIOUS)
+  upon: (FRAME_STEP)
+    if: (VARIABLE), 161
+      checkInput: (INPUT_G_HOLD)
+      ifNot: (VARIABLE), 0
+        Unknown14: s32'Shot'
+        endIf: 
+      endIf: 
+    else: 
+      checkInput: (INPUT_HOLD_H)
+      ifNot: (VARIABLE), 0
+        Unknown14: s32'Shot'
+        endIf: 
+      endElse: 
+    endUpon: 
+  checkInput: (INPUT_ANY_DOWN)
+  if: (VARIABLE), 0
+    Unknown2173: 0, 22, 164
+    endIf: 
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  deactivateObjectFromSlot: (STACK_4), 25
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  deactivateObjectFromSlot: (STACK_4), 26
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  deactivateObjectFromSlot: (STACK_4), 27
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  sprite: s32'ven400_03', 3
+  sprite: s32'ven400_04', 3
+  sprite: s32'ven400_05', 3
+  setMarker: s32'Shot'
+  clearUpon: (FRAME_STEP)
+  sprite: s32'ven400_06', 1
+  playVoice: s16'vxxx200'
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven400_07', 2
+  sprite: s32'ven400_08', 2
+  Unknown2320: s32'StingerAimD_Roman'
+  Unknown2243: 0, 0
+  Unknown449: s32'ven_ballhit1', 0
+  sprite: s32'ven400_09', 2
+  frcWindow: 6
+  sprite: s32'ven400_10', 12
+  sprite: s32'ven400_11', 4
+  sprite: s32'ven400_12', 4
+  sprite: s32'ven400_13', 4
+  sprite: s32'ven400_14', 3
+  sprite: s32'ven400_15', 3
+  sprite: s32'ven400_16', 3
+  endState: 
+
+startState: s32'CarcassRaidC'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 21
+    endUpon: 
+  sprite: s32'ven402_00', 3
+  tensionGain: 40
+  Unknown2173: -50625, 16, 148
+  sprite: s32'ven402_01', 3
+  sprite: s32'ven402_02', 6
+  playVoice: s16'vxxx201'
+  Unknown2247: 0, 2, 0, 1
+  callEtcState: s32'Ball', 0
+  checkInput: (INPUT_ANY_BACK)
+  if: (VARIABLE), 0
+    Unknown2173: -50625, 16, 164
+    Unknown2320: s32'CarcassBS'
+    endIf: 
+  else: 
+    Unknown2320: s32'CarcassTS'
+    endElse: 
+  sprite: s32'ven402_03', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven402_04', 2
+  Unknown2243: 0, -60000
+  Unknown449: s32'ven_ballhit1', 0
+  sprite: s32'ven402_05', 5
+  overrideSpriteLengthIf: 15, (VARIABLE), 159
+  sprite: s32'ven402_06', 6
+  sprite: s32'ven402_07', 5
+  endState: 
+
+startState: s32'CarcassRaidD'
+  upon: (IMMEDIATE)
+    yrcWindowLength: 18
+    endUpon: 
+  sprite: s32'ven402_00', 3
+  tensionGain: 40
+  Unknown2173: -84375, 30, 2708
+  sprite: s32'ven402_01', 3
+  sprite: s32'ven402_02', 3
+  playSFX: s32'SE_SWINGB'
+  Unknown2247: 0, 3, 0, 1
+  callEtcState: s32'Ball', 0
+  checkInput: (INPUT_ANY_BACK)
+  if: (VARIABLE), 0
+    Unknown2173: -84375, 30, 2724
+    Unknown2320: s32'CarcassBS'
+    endIf: 
+  else: 
+    Unknown2320: s32'CarcassTS'
+    endElse: 
+  sprite: s32'ven402_03', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven402_04', 2
+  sprite: s32'ven402_05', 23
+  Unknown2243: 0, -60000
+  Unknown449: s32'ven_ballhit1', 0
+  playVoice: s16'vxxx201'
+  sprite: s32'ven402_06', 6
+  sprite: s32'ven402_07', 6
+  endState: 
+
+startState: s32'DoubleHeadMorbidC'
+  upon: (IMMEDIATE)
+    groundHitEffect: 13
+    airHitEffect: 13
+    isAirUnblockable: 1
+    Unknown1110: 1
+    attackLevel: 2
+    damage: 15
+    tensionGainOnConnect: 18
+    hitAirPushbackX: 17500
+    hitAirPushbackY: 15750
+    untechableTime: 28
+    riscMinus: 7
+    Unknown2331: 9
+    endUpon: 
+  sprite: s32'ven404_00', 2
+  playSFX: s32'SE_DASHENDA'
+  Unknown2159: 4
+  Unknown2173: 90000, 22, 2564
+  Unknown2143: 2, 100
+  tensionGain: 40
+  sprite: s32'ven404_01', 2
+  sprite: s32'ven404_02', 1
+  physicsXImpulse: 6125
+  sprite: s32'ven404_03', 1
+  playVoice: s16'vxxx203'
+  sprite: s32'ven404_04', 1
+  sprite: s32'ven404_05', 1
+  physicsXImpulse: 8750
+  Unknown2143: 2, 100
+  sprite: s32'ven404_06_rx', 2
+  playSFX: s32'SE_SWINGG'
+  physicsXImpulse: 7437
+  hit: 
+  sprite: s32'ven404_07_rx', 2
+  createObject2: s32'Dhm01', 100
+  sprite: s32'ven404_08_rx', 2
+  createObject2: s32'Dhm02', 100
+  physicsXImpulse: 6125
+  hit: 
+  sprite: s32'ven404_09_rx', 2
+  createObject2: s32'Dhm03', 100
+  Unknown2143: 2, 100
+  playSFX: s32'SE_SWINGG'
+  sprite: s32'ven404_10_rx', 2
+  createObject2: s32'Dhm01', 100
+  physicsXImpulse: 4812
+  hit: 
+  sprite: s32'ven404_11_rx', 2
+  createObject2: s32'Dhm02', 100
+  sprite: s32'ven404_12_rx', 2
+  createObject2: s32'Dhm03', 100
+  playSFX: s32'SE_SWINGG'
+  hit: 
+  physicsXImpulse: 3500
+  sprite: s32'ven404_13_rx', 2
+  createObject2: s32'Dhm01', 100
+  sprite: s32'ven404_14', 6
+  physicsXImpulse: 1750
+  recoveryState: 
+  sprite: s32'ven404_15', 6
+  physicsXImpulse: 0
+  sprite: s32'ven404_16', 6
+  endState: 
+
+startState: s32'DoubleHeadMorbidD'
+  upon: (IMMEDIATE)
+    groundHitEffect: 13
+    airHitEffect: 13
+    isAirUnblockable: 1
+    Unknown1110: 1
+    attackLevel: 2
+    damage: 18
+    tensionGainOnConnect: 22
+    hitAirPushbackX: 24500
+    hitAirPushbackY: 21000
+    untechableTime: 28
+    riscMinus: 7
+    hitPushbackX: 120
+    upon: 78
+      hitPushbackX: 100
+      endUpon: 
+    upon: (FRAME_STEP)
+      if: (VARIABLE), 45
+        ifOperation: (IS_LESSER), (VARIABLE), 106, (STATIC), 315000
+          Unknown14: s32'attack'
+          endIf: 
+        endIf: 
+      endUpon: 
+    Unknown2331: 15
+    endUpon: 
+  sprite: s32'ven405_00', 2
+  playSFX: s32'SE_DASHENDA'
+  physicsXImpulse: 1750
+  tensionGain: 40
+  Unknown2143: 2, 100
+  sprite: s32'ven405_01', 2
+  sprite: s32'ven405_02', 2
+  Unknown2143: 2, 100
+  physicsXImpulse: 5250
+  sprite: s32'ven405_03', 2
+  sprite: s32'ven405_04', 1
+  playVoice: s16'vxxx203'
+  physicsXImpulse: 35000
+  Unknown2143: 2, 100
+  sprite: s32'ven405_04', 2
+  storeValue: (VARIABLE), 45, (STATIC), 1
+  sprite: s32'ven405_04', 3
+  Unknown2143: 2, 100
+  sprite: s32'ven405_04', 3
+  Unknown2143: 2, 100
+  sprite: s32'ven405_04', 3
+  Unknown2143: 2, 100
+  sprite: s32'ven405_04', 3
+  Unknown2143: 2, 100
+  sprite: s32'ven405_04', 3
+  Unknown2143: 2, 100
+  sprite: s32'ven405_04', 3
+  Unknown2143: 2, 100
+  setMarker: s32'attack'
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  sprite: s32'ven405_05', 2
+  playSFX: s32'SE_SWINGG'
+  Unknown2173: 70000, 28, 2564
+  Unknown2159: 4
+  physicsXImpulse: 26250
+  Unknown2143: 2, 100
+  sprite: s32'ven405_05', 2
+  physicsXImpulse: 21000
+  sprite: s32'ven405_06_rx', 2
+  createObject2: s32'Dhm01', 100
+  Unknown2143: 2, 100
+  hit: 
+  sprite: s32'ven405_07_rx', 2
+  createObject2: s32'Dhm02', 100
+  playSFX: s32'SE_SWINGG'
+  physicsXImpulse: 15750
+  sprite: s32'ven405_08_rx', 2
+  createObject2: s32'Dhm03', 100
+  Unknown2143: 2, 100
+  hit: 
+  sprite: s32'ven405_09_rx', 2
+  createObject2: s32'Dhm01', 100
+  physicsXImpulse: 14000
+  sprite: s32'ven405_10_rx', 2
+  createObject2: s32'Dhm02', 100
+  Unknown2143: 2, 100
+  hit: 
+  playSFX: s32'SE_SWINGG'
+  sprite: s32'ven405_11_rx', 2
+  playSFX: s32'SE_SWINGG'
+  physicsXImpulse: 12250
+  sprite: s32'ven405_12_rx', 2
+  Unknown2143: 2, 100
+  hit: 
+  sprite: s32'ven405_13_rx', 2
+  physicsXImpulse: 10500
+  sprite: s32'ven405_10_rx', 2
+  createObject2: s32'Dhm02', 100
+  playSFX: s32'SE_SWINGG'
+  hit: 
+  sprite: s32'ven405_11_rx', 2
+  physicsXImpulse: 8750
+  sprite: s32'ven405_12_rx', 2
+  Unknown2143: 2, 100
+  hit: 
+  sprite: s32'ven405_13_rx', 2
+  sprite: s32'ven405_14', 6
+  recoveryState: 
+  physicsXImpulse: 5250
+  sprite: s32'ven405_15', 6
+  physicsXImpulse: 1750
+  sprite: s32'ven405_16', 6
+  physicsXImpulse: 0
+  endState: 
+
+startState: s32'MadStrugguleC'
+  upon: (IMMEDIATE)
+    guardType: (HIGH)
+    Unknown1110: 1
+    attackLevel: 2
+    damage: 12
+    hitPushbackX: 50
+    SFX_0: s32'SE_HITNIKUC'
+    tensionGainOnConnect: 20
+    Unknown1108: -60
+    Unknown2137: 0
+    Unknown35: 2, s32'landing'
+    Unknown2331: 18
+    endUpon: 
+  sprite: s32'ven410_00', 3
+  playVoice: s16'vxxx209'
+  playSFX: s32'SE_SWINGA'
+  Unknown2159: 4
+  tensionGain: 40
+  physicsXImpulse: 0
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'ven410_01', 12
+  sprite: s32'ven410_02', 2
+  physicsXImpulse: 9625
+  physicsYImpulse: -8750
+  setGravity: 3500
+  setMarker: s32'loop'
+  sprite: s32'ven410_03', 1
+  hit: 
+  playSFX: s32'SE_SWINGA'
+  addVelocityX: 525
+  addVelocityY: -875
+  sprite: s32'ven410_04', 1
+  Unknown2173: -33750, 17, 4
+  hit: 
+  sprite: s32'ven410_05', 1
+  Unknown2173: -45000, 17, 4
+  hit: 
+  sprite: s32'ven410_06', 1
+  Unknown2173: -56250, 17, 4
+  hit: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'landing'
+  sprite: s32'ven410_07', 2
+  sprite: s32'ven410_08', 2
+  sprite: s32'ven410_09', 2
+  endState: 
+
+startState: s32'MadStrugguleD'
+  upon: (IMMEDIATE)
+    guardType: (HIGH)
+    Unknown1110: 1
+    attackLevel: 2
+    damage: 15
+    hitPushbackX: 50
+    SFX_0: s32'SE_HITNIKUC'
+    tensionGainOnConnect: 20
+    Unknown1108: -60
+    Unknown2137: 0
+    Unknown35: 2, s32'landing'
+    Unknown2331: 16
+    endUpon: 
+  sprite: s32'ven411_00', 3
+  playVoice: s16'vxxx209'
+  playSFX: s32'SE_SWINGA'
+  Unknown2159: 4
+  tensionGain: 40
+  physicsXImpulse: 0
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'ven411_01', 10
+  sprite: s32'ven411_02', 2
+  physicsXImpulse: 9625
+  physicsYImpulse: -8750
+  setGravity: 3500
+  setMarker: s32'loop'
+  sprite: s32'ven411_03', 1
+  hit: 
+  playSFX: s32'SE_SWINGA'
+  addVelocityX: 525
+  addVelocityY: -875
+  sprite: s32'ven411_04', 1
+  Unknown2173: -33750, 17, 4
+  hit: 
+  sprite: s32'ven411_05', 1
+  Unknown2173: -45000, 17, 4
+  hit: 
+  sprite: s32'ven411_06', 1
+  Unknown2173: -56250, 17, 4
+  hit: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'landing'
+  Unknown2159: -1
+  Unknown707: 
+  isAirUnblockable: 1
+  groundHitEffect: (AIR_LAUNCH)
+  airHitEffect: (AIR_LAUNCH)
+  attackLevel: 2
+  damage: 25
+  untechableTime: 80
+  hitAirPushbackY: 31500
+  hitAirPushbackX: 7000
+  hitPushbackX: 70
+  Unknown1108: 90
+  sprite: s32'ven411_07', 1
+  resetVelocity: 1
+  Unknown2173: -337500, 20, 4
+  setStrikeInvul: 1
+  sprite: s32'ven411_08', 1
+  sprite: s32'ven411_09', 1
+  sprite: s32'ven411_10', 2
+  sprite: s32'ven411_11', 2
+  hit: 
+  sprite: s32'ven411_12', 2
+  hit: 
+  setStrikeInvul: 0
+  sprite: s32'ven411_13', 1
+  Unknown2173: -315000, 20, 4
+  sprite: s32'ven411_13', 1
+  sprite: s32'ven411_14', 1
+  Unknown2173: -292500, 20, 4
+  sprite: s32'ven411_14', 1
+  playCharacterSFX: s32'2'
+  sprite: s32'ven411_15', 1
+  hit: 
+  hitAirPushbackX: 10500
+  sprite: s32'ven411_15', 1
+  sprite: s32'ven411_16', 1
+  sprite: s32'ven411_16', 1
+  sprite: s32'ven411_17', 2
+  sprite: s32'ven411_18', 2
+  sprite: s32'ven411_19', 2
+  sprite: s32'ven411_20', 2
+  sprite: s32'ven411_21', 2
+  sprite: s32'ven411_22', 2
+  sprite: s32'ven411_23', 2
+  sprite: s32'ven411_24', 2
+  endState: 
+
+startState: s32'RedHail'
+  upon: (IMMEDIATE)
+    Unknown2137: 0
+    Unknown35: 2, s32'landing'
+    Unknown1939: 1
+    yrcWindowLength: 45
+    upon: (SUPERFREEZE)
+      Unknown2161: 100, -10000, 330000
+      Unknown448: s32'cmn_kakusei_hatudo', 130
+      Unknown2199: 1
+      Unknown2286: 1
+      Unknown2048: 23, 22, 0, 200000, 100000, 0, 100000, 0, -130000, 50, 90, 5, 20, 10, 0, 2, '0x00000000'
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven431_00', 2
+  playVoice: s16'vxxx213'
+  playSFX: s32'SE_SWINGA'
+  resetVelocity: 1
+  sprite: s32'ven431_01', 2
+  sprite: s32'ven431_02', 2
+  sprite: s32'ven431_03', 1
+  Unknown2155: 4
+  superFreeze: 1, 119, 35, 41
+  consumeTension: 5000
+  if: (VARIABLE), 161
+    setStrikeInvul: 0
+    Unknown2155: 0
+    endIf: 
+  sprite: s32'ven431_03', 3
+  physicsXImpulse: -5250
+  physicsYImpulse: 5250
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  playSFX: s32'SE_SWINGA'
+  Unknown2173: -56250, 28, 140
+  Unknown2161: 100, 269000, 106000
+  Unknown2243: 0, -50000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_04', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  Unknown2173: -45000, 28, 140
+  Unknown2161: 100, 292000, 140000
+  Unknown2243: 0, -43000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_05', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  Unknown2173: -56250, 28, 140
+  Unknown2161: 100, 262000, 113000
+  Unknown2243: 0, -50000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_03', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  Unknown2173: -67500, 28, 140
+  Unknown2161: 100, 230000, 81000
+  Unknown2243: 0, -57000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_04', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  playSFX: s32'SE_SWINGA'
+  Unknown2173: -56250, 28, 140
+  Unknown2161: 100, 269000, 106000
+  Unknown2243: 0, -50000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_05', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  Unknown2173: -45000, 28, 140
+  Unknown2161: 100, 292000, 140000
+  Unknown2243: 0, -43000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_03', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  Unknown2173: -56250, 28, 140
+  Unknown2161: 100, 262000, 113000
+  Unknown2243: 0, -50000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_04', 4
+  createObject2: s32'Ball', 0
+  Unknown41: 1
+  callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
+  storeValue: (VARIABLE), 47, (STATIC), 20
+  storeValue: (VARIABLE), 45, (STATIC), 0
+  resetVelocity: 1
+  Unknown1165: s32'Ball_RedHail'
+  Unknown40: 
+  sprite: s32'ven431_06', 4
+  Unknown2173: -45000, 28, 140
+  Unknown2161: 100, 230000, 81000
+  Unknown2243: 0, -57000
+  Unknown449: s32'ven_ballhit2', 130
+  sprite: s32'ven431_07', 3
+  physicsYImpulse: 10500
+  setGravity: 1925
+  physicsXImpulse: -5250
+  recoveryState: 
+  sprite: s32'ven431_08', 3
+  setMarker: s32'downloop'
+  sprite: s32'ven431_09', 4
+  sprite: s32'ven431_10', 4
+  Unknown3: 
+  goToMarker: s32'downloop'
+  setMarker: s32'landing'
+  sprite: s32'ven431_11', 3
+  recoveryState: 
+  sprite: s32'ven431_12', 3
+  sprite: s32'ven431_13', 3
+  endState: 
+
+startState: s32'DarkAngel'
+  upon: (IMMEDIATE)
+    Unknown1939: 1
+    endUpon: 
+  Unknown25: s32'tame_end', 2, 126
+  sprite: s32'ven450_00', 3
+  guardType: (NONE)
+  Unknown2199: 1
+  screenShake: 1, 2
+  Unknown448: s32'cmn_alram_guardfuno', 103
+  playSFX: s32'SE_ITIGEKICHARGE'
+  sprite: s32'ven450_01', 1
+  sprite: s32'ven450_01', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_02', 2
+  sprite: s32'ven450_03', 2
+  sprite: s32'ven450_04', 2
+  sprite: s32'ven450_05', 2
+  sprite: s32'ven450_06', 3
+  sprite: s32'ven450_07', 3
+  Unknown240: 
+  Unknown3: 
+  setMarker: s32'tame_end'
+  sprite: s32'ven430_00', 3
+  playVoice: s16'vxxx211'
+  if: (VARIABLE), 164
+    setStrikeInvul: 1
+    setThrowInvul: 1
+    endIf: 
+  if: (VARIABLE), 161
+    setStrikeInvul: 0
+    setThrowInvul: 0
+    endIf: 
+  sprite: s32'ven430_01', 3
+  sprite: s32'ven430_01', 1
+  upon: (SUPERFREEZE)
+    Unknown2013: s32'ven430cs', 0
+    Unknown2020: s32'ven430', 23, 0, 5
+    Unknown2051: 1900
+    Unknown2212: 1
+    yrcWindowLength: 147
+    if: (VARIABLE), 164
+      Unknown2132: 0
+      Unknown448: s32'cmn_bkakusei_fire', 100
+      storeValue: (VARIABLE), 120, (STATIC), 0
+      Unknown2199: 1
+      endIf: 
+    else: 
+      Unknown1940: 1
+      endElse: 
+    upon: (FRAME_STEP)
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 2
+        Unknown448: s32'ven_darkangel_scene', 100
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 65
+        Unknown2161: 100, 283000, 0
+        Unknown448: s32'ven_darkangel_start', 130
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+        endIf: 
+      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 105
+        Unknown2212: 0
+        Unknown2051: 0
+        Unknown1940: 0
+        endIf: 
+      endUpon: 
+    endUpon: 
+  Unknown2155: 25
+  superFreeze: 1, 119, 100, 116
+  consumeTension: 5000
+  Unknown294: 1
+  Unknown2149: 100
+  Unknown2285: 100
+  Unknown2284: 100
+  Unknown2283: 100
+  Unknown2161: 100, 283000, 0
+  Unknown2247: 2, 164, 0, 0
+  callEtcState: s32'DarkAngelBallStart', 130
+  if: (VARIABLE), 161
+    setThrowInvul: 0
+    Unknown2154: 0
+    setStrikeInvul: 0
+    Unknown2155: 0
+    endIf: 
+  sprite: s32'ven430_01', 2
+  sprite: s32'ven430_01', 6
+  sprite: s32'ven430_02', 11
+  sprite: s32'ven430_03', 4
+  sprite: s32'ven430_04', 4
+  sprite: s32'ven430_05', 1
+  sprite: s32'ven430_05', 3
+  recoveryState: 
+  sprite: s32'ven430_06', 4
+  playCharacterSFX: s32'0'
+  sprite: s32'ven430_07', 4
+  setStrikeInvul: 0
+  setThrowInvul: 0
+  playVoice: s16'vxxx212'
+  sprite: s32'ven430_08', 4
+  sprite: s32'ven430_09', 3
+  sprite: s32'ven430_10', 3
+  sprite: s32'ven430_11', 3
+  endState: 
+
+startState: s32'SummonGoldBall'
+  upon: (IMMEDIATE)
+    Unknown1939: 1
+    upon: (SUPERFREEZE)
+      Unknown2199: 1
+      Unknown2286: 1
+      cameraMotion: 12779, 454202, 89872, 455, 0, 0, 54, 9, 20, 9, 1
+      Unknown448: s32'cmn_kakusei_hatudo', 119
+      endUpon: 
+    endUpon: 
+  sprite: s32'ven432_00', 2
+  playVoice: s16'vxxx214'
+  sprite: s32'ven432_01', 7
+  sprite: s32'ven432_01', 1
+  setStrikeInvul: 1
+  superFreeze: 1, 119, 40, 60
+  consumeTension: 5000
+  reduceTensionGainForTime: 240
+  if: (VARIABLE), 161
+    setStrikeInvul: 0
+    Unknown2155: 0
+    endIf: 
+  sprite: s32'ven432_02', 3
+  sprite: s32'ven432_03', 2
+  sprite: s32'ven432_03', 1
+  Unknown2161: 0, 250000, 250000
+  Unknown2247: 0, 4, 0, 0
+  callEtcState: s32'Ball', 130
+  setObjectToStackSlot: (STACK_7), (PREVIOUS)
+  setStrikeInvul: 0
+  playCharacterSFX: s32'0'
+  sprite: s32'ven432_04', 3
+  callSubroutine: s32'VeBallAllGold', 0, 0, 0, 0, 0, 0, 0, 0
+  recoveryState: 
+  sprite: s32'ven432_05', 5
+  sprite: s32'ven432_06', 3
+  sprite: s32'ven432_07', 3
+  sprite: s32'ven432_08', 3
+  endState: 
+
+startState: s32'Ichigeki'
+  upon: (IMMEDIATE)
+    storeValue: (VARIABLE), 135, (VARIABLE), 107
+    storeValue: (VARIABLE), 107, (STATIC), 3
+    attackLevel: 3
+    damage: 0
+    Unknown1059: 1
+    groundHitEffect: (NONE)
+    airHitEffect: (NONE)
+    Unknown1149: 10
+    Unknown818: 100000
+    Unknown1103: 0
+    ifOperation: (IS_EQUAL), (VARIABLE), 135, (STATIC), 2
+      Unknown1076: 0
+      canGrabDuringHitstun: 1
+      endIf: 
+    upon: (SUPERFREEZE)
+      Unknown2199: 1
+      Unknown2161: 100, 0, 300000
+      Unknown448: s32'cmn_kakusei_hatudo', 130
+      endUpon: 
+    upon: (HIT)
+      Unknown14: s32'hit'
+      clearUpon: (HIT)
+      endUpon: 
+    callCmnEfFunc: s32'cmn_IchigekiInit'
+    endUpon: 
+  sprite: s32'ven409_00', 4
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -2, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven409_01', 4
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -2, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven409_01', 5
+  superFreeze: 0, 119, 30, 30
+  setStrikeInvul: 1
+  setThrowInvul: 1
+  sprite: s32'ven400_02', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven400_03', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven400_04', 2
+  callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
+  sprite: s32'ven400_05', 2
+  sprite: s32'ven400_06', 2
+  playSFX: s32'SE_SWINGB'
+  sprite: s32'ven400_07', 2
+  sprite: s32'ven400_08', 2
+  hit: 
+  Unknown2243: 0, 0
+  Unknown449: s32'ven_ballhit1', 0
+  sprite: s32'ven400_09', 2
+  sprite: s32'ven400_10', 12
+  frcWindow: 3
+  sprite: s32'ven400_11', 4
+  sprite: s32'ven400_12', 4
+  recoveryState: 
+  setStrikeInvul: 0
+  setThrowInvul: 0
+  sprite: s32'ven400_13', 4
+  sprite: s32'ven400_14', 3
+  sprite: s32'ven400_15', 3
+  sprite: s32'ven400_16', 3
+  Unknown3: 
+  exitState: 
+  setMarker: s32'hit'
+  clearUpon: (HIT)
+  sprite: s32'null', 2147483647
+  Unknown1940: 1
+  Unknown2058: 
+  Unknown2210: 1
+  Unknown92: 0
+  resetVelocity: 1
+  Unknown2013: s32'ven451cs', 0
+  Unknown2020: s32'ven451', 23, 0, -1
+  Unknown2051: 1900
+  Unknown2028: s32'high'
+  Unknown41: 22
+  setNoCollision: 0
+  Unknown178: 22
+  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
+  Unknown2013: s32'xxx_ven451cs', 0
+  Unknown2028: s32'CmnCutSceneDamage_Ichigeki'
+  Unknown40: 
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+      Unknown2079: 0, 0, 0
+      Unknown2080: 255, 255, 255
+      Unknown2081: 128, 128, 128
+      Unknown2082: 128, 128, 128
+      Unknown2063: 0, 0
+      createObject2: s32'BG_ichigeki', 100
+      createObject2: s32'IchigekiBall', 100
+      playCharacterSFX: s32'ven_IK001'
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 160
+      playVoice: s16'vxxx215'
+      Unknown2211: s32'prev', 120
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
+      Unknown41: 22
+      playVoice: s16'vxxx040'
+      Unknown2211: s32'prev', 90
+      Unknown40: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 395
+      createObject2: s32'BG_ichigeki_hole', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 400
+      playVoice: s16'vxxx216'
+      Unknown2211: s32'prev', 120
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 485
+      Unknown2045: s32'DustHit', 700, 1, 20, 1
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 505
+      Unknown1018: 1
+      hitUnchecked: 
+      Unknown1059: 3
+      Unknown996: 0, 0, 0
+      hitstop: 0
+      Unknown1139: 1
+      Unknown1142: 1
+      Unknown1678: 
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 507
+      Unknown448: s32'ven_ichigeki_flash_fin', 100
+      endIf: 
+    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 640
+      if: (VARIABLE), 111
+        playVoice: s16'vxxx310'
+        Unknown2211: s32'prev', -2147483618
+        Unknown1890: 1
+        Unknown1675: 20
+        endIf: 
+      else: 
+        playVoice: s16'vxxx309'
+        Unknown2211: s32'prev', -2147483618
+        Unknown1890: 1
+        Unknown1675: 20
+        endElse: 
+      endIf: 
+    endUpon: 
+  endState: 
+
+startState: s32'EventStand'
+  Unknown2041: -1, 1, 1000
+  setMarker: s32'loop'
+  sprite: s32'ven000_00', 8
+  sprite: s32'ven000_01', 8
+  sprite: s32'ven000_02', 8
+  sprite: s32'ven000_03', 8
+  sprite: s32'ven000_04', 8
+  sprite: s32'ven000_05', 8
+  sprite: s32'ven000_06', 8
+  sprite: s32'ven000_07', 8
+  sprite: s32'ven000_08', 8
+  sprite: s32'ven000_09', 8
+  sprite: s32'ven000_10', 8
+  sprite: s32'ven000_11', 8
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'EventVEN_OP'
+  sprite: s32'null', 2147483647
+  Unknown242: 
+  Unknown2013: s32'Opening', 0
+  Unknown2020: s32'Opening', 23, 0, -1
+  Unknown2028: s32'EvtOpening'
+  Unknown3: 
+  endState: 
+
+startState: s32'EventVEN07A_01'
+  sprite: s32'ven615_00', 3
+  sprite: s32'ven615_01', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_02', 2
+  sprite: s32'ven615_03', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_04', 2
+  sprite: s32'ven615_05', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_06', 2
+  sprite: s32'ven615_07', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_08', 2
+  sprite: s32'ven615_09', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_10', 2
+  sprite: s32'ven615_11', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_12', 2
+  sprite: s32'ven615_13', 2
+  playSFX: s32'SE_SWINGF'
+  sprite: s32'ven615_14', 2
+  sprite: s32'ven615_15', 4
+  sprite: s32'ven615_16', 4
+  sprite: s32'ven615_17', 4
+  sprite: s32'ven615_18', 4
+  sprite: s32'ven615_19', 4
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven615_20', 4
+  sprite: s32'ven615_21', 4
+  sprite: s32'ven615_22', 4
+  sprite: s32'ven615_23', 4
+  sprite: s32'ven615_24', 4
+  sprite: s32'ven615_25', 4
+  sprite: s32'ven615_26', 2147483647
+  endState: 
+
+startState: s32'EventVEN07B_01'
+  sprite: s32'ven615_26', 2147483647
+  endState: 
+
+startState: s32'EventVEN07B_02'
+  sprite: s32'ven615_25', 6
+  sprite: s32'ven615_23', 6
+  sprite: s32'ven615_21', 6
+  sprite: s32'ven450_07', 6
+  setMarker: s32'loop'
+  sprite: s32'ven000_00', 8
+  sprite: s32'ven000_01', 8
+  sprite: s32'ven000_02', 8
+  sprite: s32'ven000_03', 8
+  sprite: s32'ven000_04', 8
+  sprite: s32'ven000_05', 8
+  sprite: s32'ven000_06', 8
+  sprite: s32'ven000_07', 8
+  sprite: s32'ven000_08', 8
+  sprite: s32'ven000_09', 8
+  sprite: s32'ven000_10', 8
+  sprite: s32'ven000_11', 8
+  Unknown3: 
+  goToMarker: s32'loop'
+  endState: 
+
+startState: s32'EventVEN07B_03'
+  sprite: s32'ven301_00', 6
+  sprite: s32'ven301_01', 6
+  sprite: s32'ven301_02', 6
+  sprite: s32'ven301_03', 6
+  sprite: s32'ven301_04', 6
+  sprite: s32'ven301_05', 6
+  sprite: s32'ven301_06', 6
+  sprite: s32'ven301_07', 6
+  sprite: s32'ven301_08', 6
+  Unknown3: 
+  endState: 
+
+startState: s32'EventVEN07B_04'
+  sprite: s32'ven306_02', 8
+  sprite: s32'ven306_03', 8
+  sprite: s32'ven306_04', 6
+  sprite: s32'ven306_05', 6
+  sprite: s32'ven306_06', 6
+  sprite: s32'ven306_07', 2147483647
+  Unknown3: 
+  endState: 
+
+startState: s32'EventVEN08A_01'
+  sprite: s32'ven615_00', 3
+  sprite: s32'ven615_01', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_02', 2
+  sprite: s32'ven615_03', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_04', 2
+  sprite: s32'ven615_05', 2
+  playSFX: s32'SE_SWINGA'
+  sprite: s32'ven615_06', 2
+  sprite: s32'ven615_07', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_08', 2
+  sprite: s32'ven615_09', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_10', 2
+  sprite: s32'ven615_11', 2
+  playSFX: s32'SE_SWINGE'
+  sprite: s32'ven615_12', 2
+  sprite: s32'ven615_13', 2
+  playSFX: s32'SE_SWINGF'
+  sprite: s32'ven615_14', 2
+  sprite: s32'ven615_15', 4
+  sprite: s32'ven615_16', 4
+  sprite: s32'ven615_17', 4
+  sprite: s32'ven615_18', 4
+  sprite: s32'ven615_19', 4
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven615_20', 4
+  sprite: s32'ven615_21', 4
+  sprite: s32'ven615_22', 4
+  sprite: s32'ven615_23', 4
+  sprite: s32'ven615_24', 4
+  sprite: s32'ven615_25', 4
+  sprite: s32'ven615_26', 2147483647
+  endState: 
+
+startState: s32'EventVEN_ED'
+  sprite: s32'null', 2147483647
+  Unknown242: 
+  Unknown2013: s32'Ending', 0
+  Unknown2020: s32'ven_ed', 23, 0, -1
+  Unknown2028: s32'high'
+  Unknown3: 
+  endState: 
+
+startState: s32'EventMLL07A_01'
+  sprite: s32'ven301_09', 2147483647
+  Unknown268: 0
+  endState: 
+
+startState: s32'EventMLL07A_02'
+  sprite: s32'ven301_08', 6
+  sprite: s32'ven301_07', 6
+  sprite: s32'ven301_06', 6
+  sprite: s32'ven301_05', 6
+  sprite: s32'ven301_04', 6
+  sprite: s32'ven301_03', 6
+  sprite: s32'ven301_02', 6
+  sprite: s32'ven301_01', 6
+  sprite: s32'ven301_00', 6
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventMLL07A_03'
+  sprite: s32'ven640_00', 8
+  sprite: s32'ven640_01', 8
+  sprite: s32'ven640_02', 6
+  sprite: s32'ven640_03', 6
+  sprite: s32'ven640_04', 8
+  sprite: s32'ven640_05', 8
+  sprite: s32'ven640_06', 7
+  sprite: s32'ven640_07', 7
+  sprite: s32'ven640_08', 2147483647
+  endState: 
+
+startState: s32'EventMLL07A_04'
+  sprite: s32'ven640_07', 7
+  sprite: s32'ven640_06', 7
+  sprite: s32'ven640_05', 8
+  sprite: s32'ven640_04', 8
+  sprite: s32'ven640_03', 6
+  sprite: s32'ven640_02', 6
+  sprite: s32'ven640_01', 8
+  sprite: s32'ven640_00', 8
+  sprite: s32'ven001_00', 6
+  sprite: s32'ven001_01', 6
+  sprite: s32'ven001_02', 6
+  sprite: s32'ven001_03', 8
+  sprite: s32'ven001_04', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven001_05', 8
+  sprite: s32'ven001_06', 8
+  sprite: s32'ven001_07', 8
+  playSFX: s32'XRD_Kyu'
+  sprite: s32'ven001_08', 8
+  sprite: s32'ven001_09', 8
+  sprite: s32'ven001_10', 8
+  sprite: s32'ven001_11', 6
+  sprite: s32'ven001_12', 6
+  sprite: s32'ven001_13', 6
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventMLL07B_01'
+  sprite: s32'ven071_00', 6
+  sprite: s32'ven071_01', 6
+  sprite: s32'ven071_02', 6
+  sprite: s32'ven071_03', 6
+  sprite: s32'ven071_04', 6
+  sprite: s32'ven071_05', 6
+  sprite: s32'ven071_06', 2147483647
+  endState: 
+
+startState: s32'EventMLL07B_02'
+  sprite: s32'ven071_06', 16
+  sprite: s32'ven071_07', 16
+  sprite: s32'ven071_08', 16
+  sprite: s32'ven071_09', 16
+  sprite: s32'ven071_08', 16
+  sprite: s32'ven071_07', 16
+  sprite: s32'ven071_06', 2147483647
+  endState: 
+
+startState: s32'EventMLL07B_03'
+  sprite: s32'ven071_06', 4
+  sprite: s32'ven071_07', 4
+  sprite: s32'ven071_08', 4
+  sprite: s32'ven071_09', 4
+  sprite: s32'ven071_08', 4
+  sprite: s32'ven071_07', 4
+  sprite: s32'ven071_06', 2147483647
+  endState: 
+
+startState: s32'EventMLL07B_04'
+  sprite: s32'ven071_07', 4
+  sprite: s32'ven071_08', 4
+  sprite: s32'ven071_09', 4
+  sprite: s32'ven071_10', 4
+  sprite: s32'ven071_11', 4
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventMLL07B_05'
+  sprite: s32'ven003_00', 3
+  flipDirection: 
+  sprite: s32'ven003_01', 2
+  sprite: s32'ven003_02', 2
+  sprite: s32'ven003_03', 2
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventSLY07A_01'
+  sprite: s32'ven301_09', 2147483647
+  endState: 
+
+startState: s32'EventSLY07A_02'
+  sprite: s32'ven301_08', 6
+  sprite: s32'ven301_07', 6
+  sprite: s32'ven301_06', 6
+  sprite: s32'ven301_05', 6
+  sprite: s32'ven301_04', 6
+  sprite: s32'ven301_03', 6
+  sprite: s32'ven301_02', 6
+  sprite: s32'ven301_01', 6
+  sprite: s32'ven301_00', 6
+  sprite: s32'ven305_00', 8
+  sprite: s32'ven305_01', 9
+  sprite: s32'ven305_02', 10
+  sprite: s32'ven305_03', 8
+  sprite: s32'ven305_04', 8
+  sprite: s32'ven305_05', 8
+  sprite: s32'ven305_06', 8
+  sprite: s32'ven305_07', 8
+  sprite: s32'ven305_08', 8
+  sprite: s32'ven305_09', 8
+  sprite: s32'ven305_10', 5
+  sprite: s32'ven305_11', 2147483647
+  endState: 
+
+startState: s32'EventSLY07A_03'
+  sprite: s32'ven305_10', 3
+  sprite: s32'ven305_09', 6
+  sprite: s32'ven305_08', 6
+  sprite: s32'ven305_07', 6
+  sprite: s32'ven305_06', 6
+  sprite: s32'ven305_05', 6
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventSLY07A_04'
+  sprite: s32'ven301_00', 6
+  sprite: s32'ven301_01', 6
+  sprite: s32'ven301_02', 6
+  sprite: s32'ven301_03', 6
+  sprite: s32'ven301_04', 6
+  sprite: s32'ven301_05', 6
+  sprite: s32'ven301_06', 6
+  sprite: s32'ven301_07', 6
+  sprite: s32'ven301_08', 6
+  playSFX: s32'SE_CATCHA'
+  sprite: s32'ven301_09', 2147483647
+  endState: 
+
+startState: s32'EventSLY07A_05'
+  sprite: s32'ven301_10', 6
+  sprite: s32'ven301_11', 6
+  sprite: s32'ven301_12', 6
+  sprite: s32'ven301_13', 6
+  sprite: s32'ven301_14', 6
+  sprite: s32'ven301_15', 6
+  sprite: s32'ven301_16', 2147483647
+  endState: 
+
+startState: s32'EventSLY07A_06'
+  sprite: s32'ven301_17', 6
+  sprite: s32'ven301_18', 6
+  sprite: s32'ven301_19', 6
+  Unknown3: 
+  jumpToState: s32'EventStand'
+  endState: 
+
+startState: s32'EventSLY07B_01'
+  sprite: s32'ven071_00', 6
+  sprite: s32'ven071_01', 6
+  sprite: s32'ven071_02', 6
+  sprite: s32'ven071_03', 6
+  sprite: s32'ven071_04', 6
+  sprite: s32'ven071_05', 6
+  sprite: s32'ven071_06', 2147483647
+  endState: 
+

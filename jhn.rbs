@@ -72,7 +72,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_P)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -231, -459, 195, 152
     Unknown1537: 
     Unknown1541: 
@@ -82,7 +82,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_P)
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -265, -510, 213, 296
     Unknown1533: 
     Unknown1534: 
@@ -100,7 +100,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_K)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -325, -322, 297, 199
     Unknown1537: 
     Unknown1533: 
@@ -111,7 +111,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_K)
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1498: -708, -611, 646, 429
     Unknown1533: 
     Unknown1541: 
@@ -131,8 +131,8 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_S)
-    moveInput: (INPUT_DISALLOW_UP)
-    addMoveFlag: 102
+    moveInput: (INPUT_NOT_UP)
+    addMoveCondition: (CLOSE_SLASH)
     Unknown1498: -263, -381, 238, 335
     Unknown1532: 
     Unknown1531: 
@@ -143,8 +143,8 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_S)
-    moveInput: (INPUT_DISALLOW_UP)
-    addMoveFlag: 103
+    moveInput: (INPUT_NOT_UP)
+    addMoveCondition: (FAR_SLASH)
     Unknown1498: -502, -417, 487, 252
     Unknown1531: 
     Unknown1532: 
@@ -167,7 +167,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_H)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1511: 110
     Unknown1498: -486, -498, 436, 446
     Unknown1531: 
@@ -181,7 +181,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_H)
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1511: 80
     Unknown1498: -748, -342, 679, 262
     Unknown1531: 
@@ -206,7 +206,7 @@ startSubroutine: s32'RoundInit'
     moveType: (NORMAL)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_D)
-    moveInput: (INPUT_DISALLOW_UP)
+    moveInput: (INPUT_NOT_UP)
     Unknown1511: 90
     Unknown1498: -329, -411, 269, 367
     Unknown1531: 
@@ -242,14 +242,14 @@ startSubroutine: s32'RoundInit'
     endMoveRegister: 
   addMove: s32'NmlAtk5F'
     moveType: (NORMAL)
-    Unknown1387: 1
+    moveSubCategory: (TAUNT)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_TAUNT)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'NmlAtk6F'
     moveType: (NORMAL)
-    Unknown1387: 2
+    moveSubCategory: (RESPECT)
     characterState: (STANDING)
     moveInput: (INPUT_PRESS_TAUNT)
     moveInput: (INPUT_ANY_FORWARD)
@@ -314,21 +314,21 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     Unknown1406: 4
     moveInput: (INPUT_ANY_FORWARD)
-    moveInput: 167
+    moveInput: (INPUT_NOT_9)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     endMoveRegister: 
   addMove: s32'CounterGuardStand'
     moveType: (BLITZ_SHIELD)
     characterState: (STANDING)
     Unknown1406: 5
-    moveInput: 107
+    moveInput: (INPUT_5)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
     moveInput: (INPUT_BOOLEAN_OR)
     moveInput: (INPUT_8)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'CounterGuardCrouch'
@@ -342,23 +342,23 @@ startSubroutine: s32'RoundInit'
     moveInput: (INPUT_3)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'CounterGuardAir'
     moveType: (BLITZ_SHIELD)
     characterState: (JUMPING)
     Unknown1406: 5
-    moveInput: 107
+    moveInput: (INPUT_5)
     moveInput: (INPUT_ANY_TWO_OF_PKSH)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'IchigekiJunbi'
     moveType: (INSTANT_KILL_PREPARATION)
     characterState: (STANDING)
-    addMoveFlag: 106
+    addMoveCondition: (INSTANT_KILL_READY)
     moveInput: (INPUT_PRESS_P)
     moveInput: (INPUT_PRESS_K)
     moveInput: (INPUT_PRESS_S)
@@ -367,22 +367,22 @@ startSubroutine: s32'RoundInit'
   addMove: s32'MOMSuki'
     moveType: (SPECIAL)
     characterState: (STANDING)
-    moveInput: 287
+    moveInput: (INPUT_MOM_TAUNT)
     disableSpecialCancel: 1
     Unknown1511: 0
     endMoveRegister: 
   addMove: s32'DebugSkillEx'
     moveType: (SPECIAL)
     characterState: (NONE)
-    moveInput: 47
-    addMoveFlag: 111
+    moveInput: (INPUT_F_TRG_ON)
+    addMoveCondition: 111
     endMoveRegister: 
   addMove: s32'GlitterIsGold'
     moveType: (SPECIAL)
     characterState: (STANDING)
     moveInput: (INPUT_236)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: 72
+    addMoveCondition: 72
     Unknown1511: 110
     Unknown1550: 
     Unknown1532: 
@@ -395,7 +395,7 @@ startSubroutine: s32'RoundInit'
     characterState: (STANDING)
     moveInput: (INPUT_214)
     moveInput: (INPUT_PRESS_H)
-    addMoveFlag: 72
+    addMoveCondition: 72
     Unknown1511: 110
     Unknown1550: 
     Unknown1532: 
@@ -522,37 +522,37 @@ startSubroutine: s32'RoundInit'
   addMove: s32'MistFinerBWalk'
     moveType: (DUST_FOLLOWUP)
     characterState: (STANDING)
-    moveInput: 95
+    moveInput: (INPUT_ANY_BACK)
     isFollowupMove: 1
     endMoveRegister: 
   addMove: s32'MistFinerFDash'
     moveType: (DUST_FOLLOWUP)
     characterState: (STANDING)
-    moveInput: 217
+    moveInput: (INPUT_DASH_TRG)
     isFollowupMove: 1
     Unknown1535: 
     endMoveRegister: 
   addMove: s32'MistFinerBDash'
     moveType: (DUST_FOLLOWUP)
     characterState: (STANDING)
-    moveInput: 218
+    moveInput: (INPUT_BDASH_TRG)
     isFollowupMove: 1
     Unknown1534: 
     endMoveRegister: 
   addMove: s32'MistFinerFDashAir'
     moveType: (DUST_FOLLOWUP)
     characterState: (JUMPING)
-    moveInput: 217
+    moveInput: (INPUT_DASH_TRG)
     isFollowupMove: 1
-    addMoveFlag: 7
+    addMoveCondition: (AIRDASH_COUNT_OK)
     Unknown1535: 
     endMoveRegister: 
   addMove: s32'MistFinerBDashAir'
     moveType: (DUST_FOLLOWUP)
     characterState: (JUMPING)
-    moveInput: 218
+    moveInput: (INPUT_BDASH_TRG)
     isFollowupMove: 1
-    addMoveFlag: 7
+    addMoveCondition: (AIRDASH_COUNT_OK)
     Unknown1534: 
     endMoveRegister: 
   addMove: s32'MistFinerCancel'
@@ -601,7 +601,7 @@ startSubroutine: s32'RoundInit'
     endMoveRegister: 
   addMove: s32'FB_Killerjoker'
     moveType: (SPECIAL)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     characterState: (JUMPING)
     moveInput: (INPUT_623)
     moveInput: (INPUT_PRESS_D)
@@ -654,20 +654,20 @@ startSubroutine: s32'RoundInit'
   addMove: s32'XXMistFinerBWalk'
     moveType: (DUST_FOLLOWUP)
     characterState: (STANDING)
-    moveInput: 95
+    moveInput: (INPUT_ANY_BACK)
     isFollowupMove: 1
     endMoveRegister: 
   addMove: s32'XXMistFinerFDash'
     moveType: (DUST_FOLLOWUP)
     characterState: (STANDING)
-    moveInput: 217
+    moveInput: (INPUT_DASH_TRG)
     isFollowupMove: 1
     Unknown1535: 
     endMoveRegister: 
   addMove: s32'XXMistFinerBDash'
     moveType: (DUST_FOLLOWUP)
     characterState: (STANDING)
-    moveInput: 218
+    moveInput: (INPUT_BDASH_TRG)
     isFollowupMove: 1
     Unknown1534: 
     endMoveRegister: 
@@ -680,7 +680,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'Orenona'
     moveType: (OVERDRIVE)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_H)
     Unknown1511: 90
@@ -695,10 +695,10 @@ startSubroutine: s32'RoundInit'
   addMove: s32'OrenonaBurst'
     Unknown1394: s32'Orenona'
     moveType: (OVERDRIVE)
-    Unknown1387: 4
+    moveSubCategory: (BURST_OVERDRIVE)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_50_TENSION)
-    addMoveFlag: 116
+    addMoveCondition: (REQUIRES_50_TENSION)
+    addMoveCondition: 116
     moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_D)
     Unknown1511: 90
@@ -713,7 +713,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'FB_Jackhound'
     moveType: (SPECIAL)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     moveInput: (INPUT_214)
     moveInput: (INPUT_PRESS_D)
     Unknown1511: 80
@@ -726,7 +726,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'FB_Jackhound_Stance'
     moveType: (SPECIAL)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_25_TENSION)
+    addMoveCondition: (REQUIRES_25_TENSION)
     moveInput: (INPUT_214)
     moveInput: (INPUT_PRESS_D)
     Unknown1511: 80
@@ -740,7 +740,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'TreasureHunt'
     moveType: (OVERDRIVE)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_S)
     Unknown1511: 80
@@ -753,7 +753,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'StepTreasureHunt'
     moveType: (OVERDRIVE)
     characterState: (STANDING)
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     moveInput: (INPUT_632146)
     moveInput: (INPUT_PRESS_S)
     isFollowupMove: 1
@@ -767,7 +767,7 @@ startSubroutine: s32'RoundInit'
   addMove: s32'Ichigeki'
     moveType: (INSTANT_KILL)
     characterState: (STANDING)
-    addMoveFlag: 107
+    addMoveCondition: 107
     moveInput: (INPUT_236236)
     moveInput: (INPUT_PRESS_H)
     endMoveRegister: 
@@ -874,7 +874,7 @@ startSubroutine: s32'RoundInit'
     endMoveRegister: 
   addMove: s32'TreasureHunt_Gafu'
     Unknown1488: 2, 0, 30
-    addMoveFlag: (REQUIRES_50_TENSION)
+    addMoveCondition: (REQUIRES_50_TENSION)
     Unknown1512: 70
     Unknown1511: 80
     Unknown1498: -915, -367, 901, 292
@@ -904,81 +904,81 @@ startSubroutine: s32'RoundInit'
     endMoveRegister: 
   addMove: s32'StylishGlitterIsGold'
     Unknown1420: s32'GlitterIsGold'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     Unknown1423: 1
     endMoveRegister: 
   addMove: s32'StylishMistFinerB_NotCoin'
     Unknown1420: s32'MistFinerB'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     Unknown1423: 1
     endMoveRegister: 
   addMove: s32'StylishMistFinerA'
     Unknown1420: s32'MistFinerA'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_FORWARD)
     endMoveRegister: 
   addMove: s32'StylishMistFinerB'
     Unknown1420: s32'MistFinerB'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_3)
     endMoveRegister: 
   addMove: s32'StylishMistFinerC'
     Unknown1420: s32'MistFinerC'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_DOWN)
     endMoveRegister: 
   addMove: s32'StylishSinwaza'
     Unknown1420: s32'Sinwaza'
-    moveInput: 279
-    moveInput: 95
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_BACK)
     endMoveRegister: 
   addMove: s32'StylishSinwaza_Shot'
     Unknown1420: s32'Sinwaza_Shot'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     endMoveRegister: 
   addMove: s32'StylishAirMistFinerB'
     Unknown1420: s32'AirMistFinerB'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     endMoveRegister: 
   addMove: s32'StylishAirMistFinerB_3'
     Unknown1420: s32'AirMistFinerB'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_3)
     endMoveRegister: 
   addMove: s32'StylishAirMistFinerA'
     Unknown1420: s32'AirMistFinerA'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_FORWARD)
     endMoveRegister: 
   addMove: s32'StylishAirMistFinerC'
     Unknown1420: s32'AirMistFinerC'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_ANY_DOWN)
     endMoveRegister: 
   addMove: s32'StylishSinwaza_Air'
     Unknown1420: s32'Sinwaza_Air'
-    moveInput: 279
-    moveInput: 95
+    moveInput: (INPUT_G_EASY_ON)
+    moveInput: (INPUT_ANY_BACK)
     endMoveRegister: 
   addMove: s32'StylishOrenona'
     Unknown1420: s32'Orenona'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_P)
     moveInput: (INPUT_BOOLEAN_OR)
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_K)
     endMoveRegister: 
   addMove: s32'StylishTreasureHunt'
     Unknown1420: s32'TreasureHunt'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_S)
     moveInput: (INPUT_BOOLEAN_OR)
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_H)
     endMoveRegister: 
   addMove: s32'StylishOrenonaBurst'
     Unknown1420: s32'OrenonaBurst'
-    moveInput: 279
+    moveInput: (INPUT_G_EASY_ON)
     moveInput: (INPUT_PRESS_D)
     endMoveRegister: 
   registerFunc: s32'RedRomanCancel'
@@ -1776,7 +1776,7 @@ startState: s32'CmnActFDash'
     callSubroutine: s32'CheckNormalDash', 0, 0, 0, 0, 0, 0, 0, 0
     ifNot: (VARIABLE), 0
       Unknown276: 1
-      Unknown176: 0
+      resetVelocity: 0
       playSFX: s32'SE_DASHD'
       upon: (FRAME_STEP)
         Unknown2324: 1
@@ -1805,7 +1805,7 @@ startState: s32'CmnActFDash'
   sprite: s32'jhn032_03', 2
   sprite: s32'jhn032_01', 2
   sprite: s32'jhn032_04', 1
-  Unknown176: 0
+  resetVelocity: 0
   physicsXImpulseIfVelocityMatchesSign: 0
   storeValue: (VARIABLE), 45, (STATIC), 0
   sprite: s32'jhn032_04', 2
@@ -1817,7 +1817,7 @@ startState: s32'CmnActFDash'
   sprite: s32'jhn000_07', 1
   Unknown2143: 6, 123
   sprite: s32'jhn000_07', 2
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'jhn000_08', 1
   sprite: s32'keep', 2147483647
   jumpToState: s32'_NEUTRAL'
@@ -2563,7 +2563,7 @@ startState: s32'CmnActItemUse'
   sprite: s32'jhn413_03', 3
   Unknown2161: 100, 150000, 310000
   createObject2: s32'cmn_MOM_AUTO_ITEM', 130
-  Unknown43: 12, 1
+  setObjectToStackSlot: (STACK_FOR_CMN_ACT), (PREVIOUS)
   Unknown3: 
   storeValue: (VARIABLE), 69, (STATIC), 1
   setMarker: s32'loopA'
@@ -2577,7 +2577,7 @@ startState: s32'CmnActItemUse'
   Unknown3: 
   exitState: 
   setMarker: s32'_BeginB'
-  upon: (ON_HIT_OR_BLOCK)
+  upon: (HIT_OR_BLOCK)
     Unknown2161: 100, 0, 320000
     endUpon: 
   sprite: s32'jhn300_00', 3
@@ -2777,7 +2777,7 @@ startState: s32'CmnActRoundWin'
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   sprite: s32'jhn616_02', 3
@@ -2874,7 +2874,7 @@ startState: s32'CmnActMatchWin'
   setMarker: s32'SecondAction'
   sprite: s32'null', 2147483647
   Unknown2070: 
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   upon: (FRAME_STEP)
     if: (VARIABLE), 131
       Unknown14: s32'SecondActionWait'
@@ -2884,7 +2884,7 @@ startState: s32'CmnActMatchWin'
   setMarker: s32'SecondActionWait'
   sprite: s32'null', 60
   Unknown2020: s32'jhn800_02', 23, 0, -1
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   Unknown3: 
   Unknown2073: 1
   Unknown2072: 
@@ -2967,8 +2967,8 @@ startState: s32'NmlAtk5A'
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'MistFinerA'
-        addMoveFlag: 99
-        addMoveFlag: 117
+        addMoveCondition: 99
+        addMoveCondition: 117
         endMoveRegister: 
       endIf: 
     Unknown2331: 5
@@ -3005,7 +3005,7 @@ startState: s32'NmlAtk6A'
         Unknown1422: 320000, 500000
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'GlitterIsGold'
-        addMoveFlag: 114
+        addMoveCondition: 114
         endMoveRegister: 
       endIf: 
     Unknown2331: 11
@@ -3081,16 +3081,16 @@ startState: s32'NmlAtk5B'
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CFar'
-        addMoveFlag: 115
+        addMoveCondition: 115
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'NmlAtk5CNear'
         Unknown1416: 180000
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot3', s32'NmlAtk5D'
-        addMoveFlag: 99
+        addMoveCondition: 99
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot4', s32'NmlAtk6A'
-        addMoveFlag: 99
+        addMoveCondition: 99
         Unknown1422: 200000, 350000
         Unknown1416: 250000
         endMoveRegister: 
@@ -3205,11 +3205,11 @@ startState: s32'NmlAtk5CNear'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2E'
         Unknown1416: 400000
-        addMoveFlag: 119
+        addMoveCondition: 119
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'NmlAtk2E'
         Unknown1416: 400000
-        addMoveFlag: 115
+        addMoveCondition: 115
         endMoveRegister: 
       endIf: 
     Unknown2331: 6
@@ -3245,16 +3245,16 @@ startState: s32'NmlAtk5CFar'
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk6D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'MistFinerA'
-        addMoveFlag: 117
-        addMoveFlag: 99
+        addMoveCondition: 117
+        addMoveCondition: 99
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'MistFinerB'
-        addMoveFlag: 117
-        addMoveFlag: 119
+        addMoveCondition: 117
+        addMoveCondition: 119
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot3', s32'TreasureHunt'
-        addMoveFlag: 117
-        addMoveFlag: 119
+        addMoveCondition: 117
+        addMoveCondition: 119
         endMoveRegister: 
       endIf: 
     Unknown2331: 8
@@ -3335,12 +3335,12 @@ startState: s32'NmlAtk5D'
       setStylishCombo: s32'StylishComboSlot0', s32'MistFinerB'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'MistFinerA'
-        addMoveFlag: 117
-        addMoveFlag: 99
+        addMoveCondition: 117
+        addMoveCondition: 99
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'Orenona'
         Unknown1422: 0, 300000
-        addMoveFlag: 117
+        addMoveCondition: 117
         endMoveRegister: 
       endIf: 
     Unknown2331: 11
@@ -3387,16 +3387,16 @@ startState: s32'NmlAtk6D'
       setStylishCombo: s32'StylishComboSlot1', s32'GlitterIsGold'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'MistFinerB'
-        addMoveFlag: 117
-        addMoveFlag: 115
+        addMoveCondition: 117
+        addMoveCondition: 115
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot3', s32'TreasureHunt'
-        addMoveFlag: 117
-        addMoveFlag: 119
+        addMoveCondition: 117
+        addMoveCondition: 119
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot4', s32'TreasureHunt'
-        addMoveFlag: 117
-        addMoveFlag: 115
+        addMoveCondition: 117
+        addMoveCondition: 115
         endMoveRegister: 
       endIf: 
     Unknown2331: 18
@@ -3594,7 +3594,7 @@ startState: s32'NmlAtk2E'
       setStylishCombo: s32'StylishComboSlot0', s32'GlitterIsGold'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Orenona'
-        addMoveFlag: 117
+        addMoveCondition: 117
         endMoveRegister: 
       endIf: 
     Unknown2331: 12
@@ -3621,7 +3621,7 @@ startState: s32'NmlAtk2E'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot2', s32'BucchusSigh'
       Unknown1416: 300000
-      addMoveFlag: 117
+      addMoveCondition: 117
       endMoveRegister: 
     endIf: 
   createObject2: s32'234atk2', 100
@@ -3745,7 +3745,7 @@ startState: s32'NmlAtk6F'
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
       Unknown14: s32'TypeANext'
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   sprite: s32'jhn305_02', 3
@@ -3771,7 +3771,7 @@ startState: s32'NmlAtk6F'
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
       Unknown14: s32'TypeANext2'
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   sprite: s32'jhn305_19', 3
@@ -3802,7 +3802,7 @@ startState: s32'NmlAtk6F'
   upon: (FRAME_STEP)
     ifNot: (VARIABLE), 95
       Unknown14: s32'TypeBNext'
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       endIf: 
     endUpon: 
   sprite: s32'jhn306_02', 3
@@ -3919,8 +3919,8 @@ startState: s32'NmlAtkAir5C'
         Unknown1416: 400000
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'CmnFAirJump'
-        addMoveFlag: 117
-        addMoveFlag: 99
+        addMoveCondition: 117
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 10
@@ -4014,19 +4014,19 @@ startState: s32'NmlAtkAir5E'
     untechableTime: 24
     if: (VARIABLE), 212
       setStylishCombo: s32'StylishComboSlot0', s32'AirMistFinerA'
-        addMoveFlag: 117
-        addMoveFlag: 99
+        addMoveCondition: 117
+        addMoveCondition: 99
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'AirMistFinerB'
         Unknown1422: -200000, 200000
-        addMoveFlag: 117
-        addMoveFlag: 99
+        addMoveCondition: 117
+        addMoveCondition: 99
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot2', s32'Sinwaza_Air'
         Unknown1422: -400000, 300000
         Unknown1416: 180000
-        addMoveFlag: 117
-        addMoveFlag: 99
+        addMoveCondition: 117
+        addMoveCondition: 99
         endMoveRegister: 
       endIf: 
     Unknown2331: 8
@@ -4570,7 +4570,7 @@ startState: s32'DivineBladeLand'
   setMarker: s32'landing'
   sprite: s32'JY02_00', 1
   recoveryState: 
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'JY02_01', 2
   sprite: s32'JY02_00', 1
   endState: 
@@ -4616,7 +4616,7 @@ startState: s32'DivineBladeLandShot'
   goToMarker: s32'loop'
   setMarker: s32'landing'
   sprite: s32'JY02_00', 3
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'JY02_01', 8
   sprite: s32'JY02_00', 3
   endState: 
@@ -4650,7 +4650,7 @@ startState: s32'DivineBladeAir'
   sprite: s32'keep', 2147483647
   setMarker: s32'landing'
   sprite: s32'JY02_00', 3
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'JY02_01', 7
   sprite: s32'JY02_00', 3
   endState: 
@@ -4761,15 +4761,15 @@ startState: s32'Sinwaza'
   setMarker: s32'landing'
   sprite: s32'jhn415_12', 4
   recoveryState: 
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn415_13', 2
   sprite: s32'jhn415_14', 1
   endState: 
 
 startState: s32'Sinwaza_Shot'
   upon: (IMMEDIATE)
-    disableHitstop: 1
     tensionGainOnConnect: 30
+    addGatlingOption: s32'RedRomanCancel'
     damage: 35
     groundHitEffect: 12
     airHitEffect: 12
@@ -4835,10 +4835,10 @@ startState: s32'Sinwaza_Shot'
   createObject2: s32'Sinwaza_Shot2', 130
   frcWindow: 7
   sprite: s32'jhn416_07', 2
-  Unknown114: 
+  setYPushToYSpeed: 
   Unknown111: 50
   sprite: s32'jhn416_08', 2
-  Unknown115: 
+  setYSpeedToYPush: 
   multiplyYVelocityByPercent: 20
   addVelocityY: 34000
   setGravity: 1400
@@ -4863,7 +4863,7 @@ startState: s32'Sinwaza_Shot'
   goToMarker: s32'loop'
   setMarker: s32'landing'
   sprite: s32'jhn416_13', 3
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn416_14', 3
   sprite: s32'jhn416_15', 2
   sprite: s32'jhn416_16', 2
@@ -4872,6 +4872,7 @@ startState: s32'Sinwaza_Shot'
 startState: s32'Sinwaza_Air'
   upon: (IMMEDIATE)
     tensionGainOnConnect: 0
+    addGatlingOption: s32'RedRomanCancel'
     damage: 35
     groundHitEffect: 12
     airHitEffect: 12
@@ -4904,7 +4905,7 @@ startState: s32'Sinwaza_Air'
   sprite: s32'jhn416_04', 3
   sprite: s32'jhn416_05', 1
   createObject2: s32'416DB_atk1st', 100
-  Unknown176: 1
+  resetVelocity: 1
   hitUnchecked: 
   sprite: s32'jhn416_06', 2
   recoveryState: 
@@ -4937,7 +4938,7 @@ startState: s32'Sinwaza_Air'
   goToMarker: s32'loop'
   setMarker: s32'landing'
   sprite: s32'jhn416_13', 1
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn416_14', 2
   sprite: s32'jhn416_15', 1
   sprite: s32'jhn416_16', 1
@@ -4945,7 +4946,7 @@ startState: s32'Sinwaza_Air'
 
 startState: s32'Sinwaza2'
   upon: (IMMEDIATE)
-    Unknown176: 0
+    resetVelocity: 0
     playSFX: s32'SE_DASHD'
     Unknown35: 2, s32'landing'
     groundHitEffect: (AIR_FACE_UP)
@@ -4975,7 +4976,7 @@ startState: s32'Sinwaza2'
   sprite: s32'JY06_13', 2147483647
   setMarker: s32'landing'
   sprite: s32'JY06_11', 6
-  Unknown176: 0
+  resetVelocity: 0
   physicsXImpulse: 35000
   physicsYImpulse: 78750
   setGravity: 1050
@@ -5197,11 +5198,11 @@ startState: s32'MistFinerLoop'
       Unknown2161: 100, -115000, 245000
       Unknown448: s32'jhn_misthatudo_lv2', 130
       endIf: 
-    Unknown176: 0
+    resetVelocity: 0
     upon: (FRAME_STEP)
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 2
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-          checkInput: 1
+          checkInput: (INPUT_HOLD_P)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'MistFinerALv0'
@@ -5217,7 +5218,7 @@ startState: s32'MistFinerLoop'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-          checkInput: 10
+          checkInput: (INPUT_HOLD_K)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'MistFinerBLv0'
@@ -5233,7 +5234,7 @@ startState: s32'MistFinerLoop'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-          checkInput: 19
+          checkInput: (INPUT_HOLD_S)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'MistFinerCLv0'
@@ -5274,26 +5275,26 @@ startState: s32'MistFinerFWalk'
   upon: (IMMEDIATE)
     recoveryState: 
     upon: (FRAME_STEP)
-      checkInput: 121
+      checkInput: (INPUT_ANY_FORWARD)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-        checkInput: 1
+        checkInput: (INPUT_HOLD_P)
         ifNot: (VARIABLE), 0
           jumpToState: s32'MistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-        checkInput: 10
+        checkInput: (INPUT_HOLD_K)
         ifNot: (VARIABLE), 0
           jumpToState: s32'MistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-        checkInput: 19
+        checkInput: (INPUT_HOLD_S)
         ifNot: (VARIABLE), 0
           jumpToState: s32'MistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
@@ -5322,26 +5323,26 @@ startState: s32'MistFinerBWalk'
   upon: (IMMEDIATE)
     recoveryState: 
     upon: (FRAME_STEP)
-      checkInput: 95
+      checkInput: (INPUT_ANY_BACK)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-        checkInput: 1
+        checkInput: (INPUT_HOLD_P)
         ifNot: (VARIABLE), 0
           jumpToState: s32'MistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-        checkInput: 10
+        checkInput: (INPUT_HOLD_K)
         ifNot: (VARIABLE), 0
           jumpToState: s32'MistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-        checkInput: 19
+        checkInput: (INPUT_HOLD_S)
         ifNot: (VARIABLE), 0
           jumpToState: s32'MistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
@@ -5396,7 +5397,7 @@ startState: s32'MistFinerFDash'
   physicsXImpulse: 61250
   sprite: s32'jhn400_10', 1
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    checkInput: 1
+    checkInput: (INPUT_HOLD_P)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 60000
@@ -5405,7 +5406,7 @@ startState: s32'MistFinerFDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    checkInput: 10
+    checkInput: (INPUT_HOLD_K)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 60000
@@ -5414,7 +5415,7 @@ startState: s32'MistFinerFDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 60000
@@ -5428,21 +5429,21 @@ startState: s32'MistFinerFDash'
   physicsXImpulse: 14000
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-      checkInput: 1
+      checkInput: (INPUT_HOLD_P)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-      checkInput: 10
+      checkInput: (INPUT_HOLD_K)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-      checkInput: 19
+      checkInput: (INPUT_HOLD_S)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -5488,7 +5489,7 @@ startState: s32'MistFinerBDash'
   physicsXImpulse: -61250
   sprite: s32'jhn400_00', 1
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    checkInput: 1
+    checkInput: (INPUT_HOLD_P)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -30000
@@ -5497,7 +5498,7 @@ startState: s32'MistFinerBDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    checkInput: 10
+    checkInput: (INPUT_HOLD_K)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -30000
@@ -5506,7 +5507,7 @@ startState: s32'MistFinerBDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -30000
@@ -5520,21 +5521,21 @@ startState: s32'MistFinerBDash'
   physicsXImpulse: -14000
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-      checkInput: 1
+      checkInput: (INPUT_HOLD_P)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-      checkInput: 10
+      checkInput: (INPUT_HOLD_K)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-      checkInput: 19
+      checkInput: (INPUT_HOLD_S)
       ifNot: (VARIABLE), 0
         jumpToState: s32'MistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -6358,7 +6359,7 @@ startState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 4, (STATIC), 0
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 40
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         jumpToState: s32'AirMistFinerCancel'
         endIf: 
       endElse: 
@@ -6373,7 +6374,7 @@ startState: s32'AirMistFinerLoop'
     upon: (FRAME_STEP)
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 2
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-          checkInput: 1
+          checkInput: (INPUT_HOLD_P)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'AirMistFinerALv0'
@@ -6389,7 +6390,7 @@ startState: s32'AirMistFinerLoop'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-          checkInput: 10
+          checkInput: (INPUT_HOLD_K)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'AirMistFinerBLv0'
@@ -6405,7 +6406,7 @@ startState: s32'AirMistFinerLoop'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-          checkInput: 19
+          checkInput: (INPUT_HOLD_S)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'AirMistFinerCLv0'
@@ -6422,7 +6423,7 @@ startState: s32'AirMistFinerLoop'
           endIf: 
         endIf: 
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 40
-        Unknown23: 3
+        clearUpon: (FRAME_STEP)
         jumpToState: s32'AirMistFinerCancel'
         endIf: 
       callSubroutine: s32'jhn_DispMistFinerLevel', 0, 0, 0, 0, 0, 0, 0, 0
@@ -6475,31 +6476,31 @@ startState: s32'MistFinerFDashAir'
   physicsXImpulse: 140000
   sprite: s32'jhn408_05', 1
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    checkInput: 1
+    checkInput: (INPUT_HOLD_P)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 50000
-      Unknown176: 0
+      resetVelocity: 0
       jumpToState: s32'AirMistFinerLoop'
       storeValue: (VARIABLE), 54, (STATIC), 1
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    checkInput: 10
+    checkInput: (INPUT_HOLD_K)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 50000
-      Unknown176: 0
+      resetVelocity: 0
       jumpToState: s32'AirMistFinerLoop'
       storeValue: (VARIABLE), 54, (STATIC), 1
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 50000
-      Unknown176: 0
+      resetVelocity: 0
       jumpToState: s32'AirMistFinerLoop'
       storeValue: (VARIABLE), 54, (STATIC), 1
       endIf: 
@@ -6510,21 +6511,21 @@ startState: s32'MistFinerFDashAir'
   physicsXImpulse: 14000
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-      checkInput: 1
+      checkInput: (INPUT_HOLD_P)
       ifNot: (VARIABLE), 0
         jumpToState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-      checkInput: 10
+      checkInput: (INPUT_HOLD_K)
       ifNot: (VARIABLE), 0
         jumpToState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-      checkInput: 19
+      checkInput: (INPUT_HOLD_S)
       ifNot: (VARIABLE), 0
         jumpToState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -6545,7 +6546,7 @@ startState: s32'MistFinerFDashAir'
   sprite: s32'jhn010_00', 2
   Unknown338: 255
   Unknown1677: 1
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'jhn010_01', 2
   sprite: s32'jhn010_02', 2
   sprite: s32'jhn010_03', 2
@@ -6587,31 +6588,31 @@ startState: s32'MistFinerBDashAir'
   physicsXImpulse: -140000
   sprite: s32'jhn400_00', 1
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    checkInput: 1
+    checkInput: (INPUT_HOLD_P)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -40000
-      Unknown176: 0
+      resetVelocity: 0
       jumpToState: s32'AirMistFinerLoop'
       storeValue: (VARIABLE), 54, (STATIC), 1
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    checkInput: 10
+    checkInput: (INPUT_HOLD_K)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -40000
-      Unknown176: 0
+      resetVelocity: 0
       jumpToState: s32'AirMistFinerLoop'
       storeValue: (VARIABLE), 54, (STATIC), 1
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -40000
-      Unknown176: 0
+      resetVelocity: 0
       jumpToState: s32'AirMistFinerLoop'
       storeValue: (VARIABLE), 54, (STATIC), 1
       endIf: 
@@ -6622,21 +6623,21 @@ startState: s32'MistFinerBDashAir'
   physicsXImpulse: -14000
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-      checkInput: 1
+      checkInput: (INPUT_HOLD_P)
       ifNot: (VARIABLE), 0
         jumpToState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-      checkInput: 10
+      checkInput: (INPUT_HOLD_K)
       ifNot: (VARIABLE), 0
         jumpToState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-      checkInput: 19
+      checkInput: (INPUT_HOLD_S)
       ifNot: (VARIABLE), 0
         jumpToState: s32'AirMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -6657,7 +6658,7 @@ startState: s32'MistFinerBDashAir'
   sprite: s32'jhn010_00', 2
   Unknown338: 255
   Unknown1677: 1
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   sprite: s32'jhn010_01', 2
   sprite: s32'jhn010_02', 2
   sprite: s32'jhn010_03', 2
@@ -7507,7 +7508,7 @@ startState: s32'Orenona'
     endIf: 
   sprite: s32'jhn430_01', 1
   playVoice: s16'vxxx210'
-  Unknown176: 1
+  resetVelocity: 1
   upon: (SUPERFREEZE)
     Unknown2013: s32'jhn430cs', 0
     Unknown2020: s32'jhn430', 23, 0, 5
@@ -7847,7 +7848,7 @@ startState: s32'TreasureHunt'
       endUpon: 
     endUpon: 
   sprite: s32'jhn431_00', 3
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn431_01', 2
   sprite: s32'jhn431_02', 2
   sprite: s32'jhn431_03', 4
@@ -7864,13 +7865,13 @@ startState: s32'TreasureHunt'
   sprite: s32'jhn431_05', 3
   sprite: s32'jhn431_05', 1
   upon: (FRAME_STEP)
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       Unknown14: s32'Run'
       endIf: 
     ifOperation: (IS_GREATER), (VARIABLE), 13, (STATIC), 120
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       guardType: (NONE)
       damage: 60
       upon: (HIT)
@@ -7916,7 +7917,7 @@ startState: s32'TreasureHunt'
   sprite: s32'jhn431_08', 2
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -500000
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       physicsXImpulse: 10000
       Unknown2197: 90
       endIf: 
@@ -7936,7 +7937,7 @@ startState: s32'TreasureHunt'
   setStrikeInvul: 0
   setThrowInvul: 0
   Unknown2199: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   physicsXImpulse: 10000
   Unknown2197: 90
   sprite: s32'jhn432_00', 6
@@ -8042,7 +8043,7 @@ startState: s32'StepTreasureHunt'
       endUpon: 
     endUpon: 
   sprite: s32'jhn431_00', 1
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn431_01', 1
   sprite: s32'jhn431_02', 1
   sprite: s32'jhn431_03', 4
@@ -8059,13 +8060,13 @@ startState: s32'StepTreasureHunt'
   sprite: s32'jhn431_05', 3
   sprite: s32'jhn431_05', 1
   upon: (FRAME_STEP)
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       Unknown14: s32'Run'
       endIf: 
     ifOperation: (IS_GREATER), (VARIABLE), 13, (STATIC), 120
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       guardType: (NONE)
       damage: 70
       upon: (HIT)
@@ -8096,7 +8097,7 @@ startState: s32'StepTreasureHunt'
   sprite: s32'jhn431_08', 2
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -500000
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       physicsXImpulse: 10000
       Unknown2197: 90
       endIf: 
@@ -8116,7 +8117,7 @@ startState: s32'StepTreasureHunt'
   setStrikeInvul: 0
   setThrowInvul: 0
   Unknown2199: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   physicsXImpulse: 10000
   Unknown2197: 90
   sprite: s32'jhn432_00', 6
@@ -8199,7 +8200,7 @@ startState: s32'Ichigeki'
       endUpon: 
     upon: (HIT)
       Unknown14: s32'hit'
-      Unknown23: 10
+      clearUpon: (HIT)
       endUpon: 
     Unknown2131: 2
     callCmnEfFunc: s32'cmn_IchigekiInit'
@@ -8246,13 +8247,13 @@ startState: s32'Ichigeki'
   Unknown3: 
   exitState: 
   setMarker: s32'hit'
-  Unknown23: 10
+  clearUpon: (HIT)
   sprite: s32'null', 2147483647
   Unknown1940: 1
   Unknown2058: 
   Unknown2210: 1
   Unknown92: 0
-  Unknown176: 1
+  resetVelocity: 1
   Unknown2013: s32'jhn451cs', 0
   Unknown2020: s32'jhn451', 23, 0, -1
   Unknown2051: 1500
@@ -8594,7 +8595,7 @@ startState: s32'EventLEO08A_02'
   Unknown2197: 90
   sprite: s32'jhn040_04', 2
   sprite: s32'jhn040_04', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   endState: 
 
 startState: s32'EventLEO08A_03'
@@ -8709,7 +8710,7 @@ startState: s32'EventLEO08B_01'
   sprite: s32'jhn100_07', 3
   sprite: s32'jhn100_08', 3
   sprite: s32'jhn431_00', 3
-  Unknown176: 1
+  resetVelocity: 1
   sprite: s32'jhn431_01', 2
   sprite: s32'jhn431_02', 2
   sprite: s32'jhn431_03', 2
@@ -8720,7 +8721,7 @@ startState: s32'EventLEO08B_01'
   createObject2: s32'Treasure_dash', 100
   physicsXImpulse: 80000
   sprite: s32'jhn430_07', 2147483647
-  Unknown176: 1
+  resetVelocity: 1
   Unknown3: 
   jumpToState: s32'EventStand'
   endState: 
@@ -8966,11 +8967,11 @@ startState: s32'XXMistFinerLoop'
       Unknown2161: 100, -115000, 245000
       Unknown448: s32'jhn_misthatudo_lv2', 130
       endIf: 
-    Unknown176: 0
+    resetVelocity: 0
     upon: (FRAME_STEP)
       ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 2
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-          checkInput: 1
+          checkInput: (INPUT_HOLD_P)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'XXMistFinerALv0'
@@ -8986,7 +8987,7 @@ startState: s32'XXMistFinerLoop'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-          checkInput: 10
+          checkInput: (INPUT_HOLD_K)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'XXMistFinerBLv0'
@@ -9002,7 +9003,7 @@ startState: s32'XXMistFinerLoop'
             endIf: 
           endIf: 
         ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-          checkInput: 19
+          checkInput: (INPUT_HOLD_S)
           ifNot: (VARIABLE), 0
             ifOperation: (IS_EQUAL), (VARIABLE), 4, (STATIC), 0
               jumpToState: s32'XXMistFinerCLv0'
@@ -9043,26 +9044,26 @@ startState: s32'XXMistFinerFWalk'
   upon: (IMMEDIATE)
     recoveryState: 
     upon: (FRAME_STEP)
-      checkInput: 121
+      checkInput: (INPUT_ANY_FORWARD)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-        checkInput: 1
+        checkInput: (INPUT_HOLD_P)
         ifNot: (VARIABLE), 0
           jumpToState: s32'XXMistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-        checkInput: 10
+        checkInput: (INPUT_HOLD_K)
         ifNot: (VARIABLE), 0
           jumpToState: s32'XXMistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-        checkInput: 19
+        checkInput: (INPUT_HOLD_S)
         ifNot: (VARIABLE), 0
           jumpToState: s32'XXMistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
@@ -9092,26 +9093,26 @@ startState: s32'XXMistFinerBWalk'
   upon: (IMMEDIATE)
     recoveryState: 
     upon: (FRAME_STEP)
-      checkInput: 95
+      checkInput: (INPUT_ANY_BACK)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-        checkInput: 1
+        checkInput: (INPUT_HOLD_P)
         ifNot: (VARIABLE), 0
           jumpToState: s32'XXMistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-        checkInput: 10
+        checkInput: (INPUT_HOLD_K)
         ifNot: (VARIABLE), 0
           jumpToState: s32'XXMistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
           endIf: 
         endIf: 
       ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-        checkInput: 19
+        checkInput: (INPUT_HOLD_S)
         ifNot: (VARIABLE), 0
           jumpToState: s32'XXMistFinerLoop'
           storeValue: (VARIABLE), 54, (STATIC), 1
@@ -9168,7 +9169,7 @@ startState: s32'XXMistFinerFDash'
   physicsXImpulse: 61250
   sprite: s32'jhn400_10', 1
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    checkInput: 1
+    checkInput: (INPUT_HOLD_P)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 60000
@@ -9177,7 +9178,7 @@ startState: s32'XXMistFinerFDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    checkInput: 10
+    checkInput: (INPUT_HOLD_K)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 60000
@@ -9186,7 +9187,7 @@ startState: s32'XXMistFinerFDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: 60000
@@ -9200,21 +9201,21 @@ startState: s32'XXMistFinerFDash'
   physicsXImpulse: 14000
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-      checkInput: 1
+      checkInput: (INPUT_HOLD_P)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-      checkInput: 10
+      checkInput: (INPUT_HOLD_K)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-      checkInput: 19
+      checkInput: (INPUT_HOLD_S)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -9261,7 +9262,7 @@ startState: s32'XXMistFinerBDash'
   physicsXImpulse: -61250
   sprite: s32'jhn400_00', 1
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    checkInput: 1
+    checkInput: (INPUT_HOLD_P)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -30000
@@ -9270,7 +9271,7 @@ startState: s32'XXMistFinerBDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    checkInput: 10
+    checkInput: (INPUT_HOLD_K)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -30000
@@ -9279,7 +9280,7 @@ startState: s32'XXMistFinerBDash'
       endIf: 
     endIf: 
   ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    checkInput: 19
+    checkInput: (INPUT_HOLD_S)
     ifNot: (VARIABLE), 0
       Unknown338: 255
       momentumPush: -30000
@@ -9293,21 +9294,21 @@ startState: s32'XXMistFinerBDash'
   physicsXImpulse: -14000
   upon: (FRAME_STEP)
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-      checkInput: 1
+      checkInput: (INPUT_HOLD_P)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-      checkInput: 10
+      checkInput: (INPUT_HOLD_K)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
         endIf: 
       endIf: 
     ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-      checkInput: 19
+      checkInput: (INPUT_HOLD_S)
       ifNot: (VARIABLE), 0
         jumpToState: s32'XXMistFinerLoop'
         storeValue: (VARIABLE), 54, (STATIC), 1
@@ -9945,6 +9946,7 @@ startState: s32'FB_Jackhound'
   upon: (IMMEDIATE)
     consumeTension: 2500
     reduceTensionGainForTime: 240
+    addGatlingOption: s32'RedRomanCancel'
     setForcedProration: 70
     Unknown1045: 1, s32''
     Unknown1108: 40
@@ -9971,7 +9973,7 @@ startState: s32'FB_Jackhound'
   playSFX: s32'SE_KAKUSEI'
   characterEffectOverlay: -1
   sprite: s32'jhn431_00', 3
-  Unknown176: 1
+  resetVelocity: 1
   fadeColorRed: -30
   fadeColorGreen: -30
   fadeColorBlue: -30
@@ -9983,7 +9985,7 @@ startState: s32'FB_Jackhound'
   sprite: s32'jhn431_08', 1
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -410000
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       physicsXImpulse: 1000
       Unknown2197: 90
       endIf: 
@@ -10000,7 +10002,7 @@ startState: s32'FB_Jackhound'
   recoveryState: 
   setNoCollision: 1
   Unknown2199: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   physicsXImpulse: 1000
   Unknown2197: 90
   sprite: s32'jhn432_00', 2
@@ -10047,6 +10049,7 @@ startState: s32'FB_Jackhound_Stance'
     consumeTension: 2500
     reduceTensionGainForTime: 240
     setForcedProration: 70
+    addGatlingOption: s32'RedRomanCancel'
     Unknown1045: 1, s32''
     Unknown1108: 40
     Unknown1112: 1
@@ -10072,7 +10075,7 @@ startState: s32'FB_Jackhound_Stance'
   playSFX: s32'SE_KAKUSEI'
   characterEffectOverlay: -1
   sprite: s32'jhn431_00', 1
-  Unknown176: 1
+  resetVelocity: 1
   fadeColorRed: -30
   fadeColorGreen: -30
   fadeColorBlue: -30
@@ -10084,7 +10087,7 @@ startState: s32'FB_Jackhound_Stance'
   sprite: s32'jhn431_08', 1
   upon: (FRAME_STEP)
     ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -410000
-      Unknown23: 3
+      clearUpon: (FRAME_STEP)
       physicsXImpulse: 1000
       Unknown2197: 90
       endIf: 
@@ -10101,7 +10104,7 @@ startState: s32'FB_Jackhound_Stance'
   recoveryState: 
   setNoCollision: 1
   Unknown2199: 0
-  Unknown23: 3
+  clearUpon: (FRAME_STEP)
   physicsXImpulse: 1000
   Unknown2197: 90
   sprite: s32'jhn432_00', 2
@@ -10145,6 +10148,8 @@ startState: s32'FB_Jackhound_Stance'
 
 startState: s32'FB_Killerjoker'
   upon: (IMMEDIATE)
+    reduceTensionGainForTime: 240
+    addGatlingOption: s32'RedRomanCancel'
     tensionGainOnConnect: 0
     damage: 35
     groundHitEffect: 12
@@ -10185,7 +10190,7 @@ startState: s32'FB_Killerjoker'
   sprite: s32'jhn416_04', 2
   sprite: s32'jhn416_05', 2
   createObject2: s32'416DB_atk1st', 100
-  Unknown176: 1
+  resetVelocity: 1
   hitUnchecked: 
   sprite: s32'jhn416_06', 2
   recoveryState: 
@@ -10207,6 +10212,7 @@ startState: s32'FB_Killerjoker'
 
 startState: s32'FB_Killerjoker2'
   upon: (IMMEDIATE)
+    reduceTensionGainForTime: 240
     Unknown708: 18, 3
     consumeTension: 2500
     setJumpCancelable: 1

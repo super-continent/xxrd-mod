@@ -22,7 +22,7 @@ startState: s32'SlowNeeldeObjLand'
       Unknown448: s32'rvn_401EffEnd', 100
       Unknown14: s32'End'
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       Unknown2176: 23
       endUpon: 
     upon: (HIT)
@@ -40,7 +40,7 @@ startState: s32'SlowNeeldeObjLand'
     upon: 66
       storeValue: (VARIABLE), 45, (STATIC), 1
       endUpon: 
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     Unknown1602: 1
@@ -74,7 +74,7 @@ startState: s32'SlowNeeldeObjLand'
   goToMarker: s32'Jizoku'
   setMarker: s32'End'
   sprite: s32'null', 14
-  Unknown176: 1
+  resetVelocity: 1
   linkParticleEx: s32'CN_Null'
   endState: 
 
@@ -97,7 +97,7 @@ startState: s32'SlowNeeldeObjAir'
       Unknown448: s32'rvn_401EffEnd', 100
       Unknown14: s32'End'
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       Unknown2176: 23
       endUpon: 
     upon: (HIT)
@@ -115,7 +115,7 @@ startState: s32'SlowNeeldeObjAir'
     upon: 66
       storeValue: (VARIABLE), 45, (STATIC), 1
       endUpon: 
-    upon: 2
+    upon: (LANDING)
       Unknown2176: 23
       endUpon: 
     Unknown1602: 1
@@ -151,7 +151,7 @@ startState: s32'SlowNeeldeObjAir'
   goToMarker: s32'Jizoku'
   setMarker: s32'End'
   sprite: s32'null', 14
-  Unknown176: 1
+  resetVelocity: 1
   linkParticleEx: s32'CN_Null'
   endState: 
 
@@ -188,7 +188,7 @@ startState: s32'SlowEffect'
           endElse: 
         endElse: 
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       Unknown41: 22
       storeValue: (VARIABLE), 229, (STATIC), 100
       Unknown40: 
@@ -270,7 +270,7 @@ startState: s32'LandSettingTypeNeedleObj'
       addVelocityX: 25
       addVelocityY: 50
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       Unknown2176: 23
       endUpon: 
     upon: 59
@@ -356,7 +356,7 @@ startState: s32'AirSettingTypeNeedleObj'
         Unknown2176: 23
         endIf: 
       endUpon: 
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       Unknown2176: 23
       endUpon: 
     upon: 59
@@ -494,7 +494,7 @@ startState: s32'AntiAirNeedleObj3'
 
 startState: s32'Atk6D'
   sprite: s32'atk6D_00', 7
-  upon: (ON_HIT_OR_BLOCK)
+  upon: (HIT_OR_BLOCK)
     Unknown457: (NULL)
     endUpon: 
   Unknown456: (PLAYER)
@@ -715,7 +715,7 @@ startState: s32'401EffDebuff'
   upon: (IMMEDIATE)
     linkObjPositionTo: (ENEMY)
     linkParticleEx: s32'rvn_401EffDebuff'
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       deactivateObj: (SELF)
       endIf: 
     endUpon: 
@@ -1048,7 +1048,7 @@ startState: s32'rvn432Eff00'
     Unknown456: (PARENT)
     flipDirection: 
     linkParticleEx: s32'rvn_432Eff00'
-    upon: 35
+    upon: (PLAYER_DAMAGE)
       deactivateObj: (SELF)
       endUpon: 
     endUpon: 
@@ -1733,7 +1733,7 @@ startState: s32'ACEvtRVN_8B'
   Unknown2107: '0x4576656E7452564E3038425F303600000000000000000000000000000000000001000000'
   sprite: s32'null', 2147483647
   Unknown2106: '0x4143325F52564E5F4238425F303132000000000000000000000000000000000069000000'
-  Unknown1766: 22, 23
+  deactivateObjectFromSlot: (ENEMY), (SELF)
   Unknown2115: 0, 30
   sprite: s32'null', 2147483647
   Unknown2106: '0x4143325F52564E5F4238425F30313400000000000000000000000000000000005A000000'

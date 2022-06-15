@@ -152,7 +152,7 @@ startState: s32'GunFlameHibashira'
       storeValue: (VARIABLE), 46, (STATIC), 1
       deactivateObj: (STACK_0)
       endUpon: 
-    upon: (ON_HIT_OR_BLOCK)
+    upon: (HIT_OR_BLOCK)
       if: (VARIABLE), 45
         Unknown1883: 
         storeValue: (VARIABLE), 46, (STATIC), 1
@@ -161,7 +161,7 @@ startState: s32'GunFlameHibashira'
     upon: 66
       Unknown51: 4
       if: (VARIABLE), 0
-        Unknown1766: 4, 24
+        deactivateObjectFromSlot: (STACK_0), 24
         endIf: 
       endUpon: 
     upon: 24
@@ -171,7 +171,7 @@ startState: s32'GunFlameHibashira'
       addPositionX: 138000
       Unknown51: 4
       if: (VARIABLE), 0
-        Unknown1766: 4, 24
+        deactivateObjectFromSlot: (STACK_0), 24
         endIf: 
       endUpon: 
     endUpon: 
@@ -189,7 +189,7 @@ startState: s32'GunFlameHibashira'
       modifyVar: (ADD), (VARIABLE), 115, (STATIC), 1
       Unknown2247: 2, 115, 0, 0
       callEtcState: s32'GunFlameHibashira', 0
-      Unknown43: 4, 1
+      setObjectToStackSlot: (STACK_0), (PREVIOUS)
       endIf: 
     endIf: 
   sprite: s32'vrsol400_04', 3
