@@ -1,7 +1,10 @@
 # XXrd
 A mod for Guilty Gear Xrd: Rev2 to add features similar to the Guilty Gear XX Series
 
-
+## Installation
+- Download the repository as a zip file
+- Install [ggxrd-mod](https://github.com/super-continent/ggxrd-mod/releases/latest)
+- Copy all files in the `rebuilt_scripts` folder into the `Mods` folder located in your `GUILTY GEAR XRD -REVELATOR-` install folder (this should appear after you run the game once with ggxrd-mod installed)
 # Character Changes
 
 ## Sol
