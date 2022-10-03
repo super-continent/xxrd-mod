@@ -1,4 +1,4 @@
-startState: s32'dog'
+beginState: s32'dog'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'Dog', s32'Dog'
     Unknown2021: 0
@@ -6,7 +6,7 @@ startState: s32'dog'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'430winger_start'
+beginState: s32'430winger_start'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -17,7 +17,7 @@ startState: s32'430winger_start'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'430winger_atk'
+beginState: s32'430winger_atk'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -26,7 +26,7 @@ startState: s32'430winger_atk'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'431emerald_hair'
+beginState: s32'431emerald_hair'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -36,7 +36,7 @@ startState: s32'431emerald_hair'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'330burst_hair'
+beginState: s32'330burst_hair'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -46,7 +46,7 @@ startState: s32'330burst_hair'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'Hair_propeller'
+beginState: s32'Hair_propeller'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -56,7 +56,7 @@ startState: s32'Hair_propeller'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'253re_bake'
+beginState: s32'253re_bake'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -66,7 +66,7 @@ startState: s32'253re_bake'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'253re_yoin'
+beginState: s32'253re_yoin'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown457: (PLAYER)
@@ -77,7 +77,7 @@ startState: s32'253re_yoin'
   linkObjPositionTo: (NULL)
   endState: 
 
-startState: s32'Neoblitz_atk'
+beginState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -87,7 +87,7 @@ startState: s32'Neoblitz_atk'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'LustshakerA'
+beginState: s32'LustshakerA'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown466: (PARENT)
@@ -96,7 +96,7 @@ startState: s32'LustshakerA'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'LustshakerB'
+beginState: s32'LustshakerB'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown466: (PARENT)
@@ -105,7 +105,7 @@ startState: s32'LustshakerB'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'LustshakerC'
+beginState: s32'LustshakerC'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown466: (PARENT)
@@ -114,7 +114,7 @@ startState: s32'LustshakerC'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'Lustshaker_twinkle'
+beginState: s32'Lustshaker_twinkle'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -124,7 +124,7 @@ startState: s32'Lustshaker_twinkle'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Nage_twinkle_yoin'
+beginState: s32'Nage_twinkle_yoin'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -134,7 +134,7 @@ startState: s32'Nage_twinkle_yoin'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Ironsavior_atk'
+beginState: s32'Ironsavior_atk'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown457: (PLAYER)
@@ -143,7 +143,7 @@ startState: s32'Ironsavior_atk'
   sprite: s32'null', 20
   endState: 
 
-startState: s32'Ironsavior'
+beginState: s32'Ironsavior'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -153,7 +153,7 @@ startState: s32'Ironsavior'
   linkParticleEx: s32'mll_ironsavior'
   endState: 
 
-startState: s32'DustHair'
+beginState: s32'DustHair'
   sprite: s32'mle_dust_hair', 16
   upon: (HIT_OR_BLOCK)
     Unknown457: (NULL)
@@ -172,7 +172,7 @@ startState: s32'DustHair'
   sprite: s32'mle_dust_hair', 30
   endState: 
 
-startState: s32'253re_sword'
+beginState: s32'253re_sword'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'sword', s32''
     Unknown2157: 1, 5
@@ -192,7 +192,7 @@ startState: s32'253re_sword'
   sprite: s32'mll253_re_sword_10', 2
   endState: 
 
-startState: s32'Secretgarden_start'
+beginState: s32'Secretgarden_start'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -202,7 +202,7 @@ startState: s32'Secretgarden_start'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'SecretGardenBall'
+beginState: s32'SecretGardenBall'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -216,62 +216,62 @@ startState: s32'SecretGardenBall'
       deactivateObj: (SELF)
       endUpon: 
     upon: 12
-      if: (VARIABLE), 50
-        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 51, (STATIC), 3
+      if: Mem(50)
+        ifOperation: (IS_LESSER_OR_EQUAL), Mem(51), Val(3)
           checkInput: (INPUT_5)
-          ifNot: (VARIABLE), 0
+          ifNot: Mem(ACCUMULATOR)
             checkInput: 29
-            if: (VARIABLE), 0
-              storeValue: (VARIABLE), 52, (STATIC), 5
+            if: Mem(ACCUMULATOR)
+              storeValue: Mem(52), Val(5)
               checkInput: (INPUT_1)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 1
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(1)
                 endIf: 
               checkInput: (INPUT_2)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 2
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(2)
                 endIf: 
               checkInput: (INPUT_3)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 3
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(3)
                 endIf: 
               checkInput: (INPUT_4)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 4
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(4)
                 endIf: 
               checkInput: (INPUT_5)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 5
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(5)
                 endIf: 
               checkInput: (INPUT_6)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 6
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(6)
                 endIf: 
               checkInput: (INPUT_7)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 7
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(7)
                 endIf: 
               checkInput: (INPUT_8)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 8
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(8)
                 endIf: 
               checkInput: (INPUT_9)
-              if: (VARIABLE), 0
-                storeValue: (VARIABLE), 52, (STATIC), 9
+              if: Mem(ACCUMULATOR)
+                storeValue: Mem(52), Val(9)
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 0
-                storeValue: (VARIABLE), 45, (VARIABLE), 52
+              ifOperation: (IS_EQUAL), Mem(51), Val(0)
+                storeValue: Mem(45), Mem(52)
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 1
-                storeValue: (VARIABLE), 46, (VARIABLE), 52
+              ifOperation: (IS_EQUAL), Mem(51), Val(1)
+                storeValue: Mem(46), Mem(52)
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 2
-                storeValue: (VARIABLE), 47, (VARIABLE), 52
+              ifOperation: (IS_EQUAL), Mem(51), Val(2)
+                storeValue: Mem(47), Mem(52)
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 51, (STATIC), 3
-                storeValue: (VARIABLE), 48, (VARIABLE), 52
+              ifOperation: (IS_EQUAL), Mem(51), Val(3)
+                storeValue: Mem(48), Mem(52)
                 endIf: 
-              modifyVar: (ADD), (VARIABLE), 51, (STATIC), 1
+              modifyVar: (ADD), Mem(51), Val(1)
               playSFX: s32'SE_ENTERB'
               endIf: 
             endIf: 
@@ -286,7 +286,7 @@ startState: s32'SecretGardenBall'
       Unknown1603: 1
       endUpon: 
     upon: (AFTER_EXIT)
-      storeValue: (VARIABLE), 50, (STATIC), 0
+      storeValue: Mem(50), Val(0)
       clearUpon: (AFTER_EXIT)
       Unknown191: 0
       setObjectSize: 1000
@@ -295,7 +295,7 @@ startState: s32'SecretGardenBall'
       endUpon: 
     endUpon: 
   sprite: s32'mle6_00', 5
-  storeValue: (VARIABLE), 50, (STATIC), 1
+  storeValue: Mem(50), Val(1)
   Unknown458: 3
   linkObjPositionTo: (PLAYER)
   setObjectSize: 0
@@ -329,7 +329,7 @@ startState: s32'SecretGardenBall'
   Unknown111: 110
   multiplyYVelocityByPercent: 110
   sprite: s32'keep', 10
-  storeValue: (VARIABLE), 50, (STATIC), 0
+  storeValue: Mem(50), Val(0)
   sprite: s32'keep', 2
   Unknown111: 75
   multiplyYVelocityByPercent: 75
@@ -352,50 +352,50 @@ startState: s32'SecretGardenBall'
   Unknown13: s32'End', 13, 2, 18, 0, 0
   setMarker: s32'Attack'
   sprite: s32'keep', 2
-  ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 0
-    storeValue: (VARIABLE), 54, (VARIABLE), 45
+  ifOperation: (IS_EQUAL), Mem(53), Val(0)
+    storeValue: Mem(54), Mem(45)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 1
-    storeValue: (VARIABLE), 54, (VARIABLE), 46
+  ifOperation: (IS_EQUAL), Mem(53), Val(1)
+    storeValue: Mem(54), Mem(46)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 2
-    storeValue: (VARIABLE), 54, (VARIABLE), 47
+  ifOperation: (IS_EQUAL), Mem(53), Val(2)
+    storeValue: Mem(54), Mem(47)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 53, (STATIC), 3
-    storeValue: (VARIABLE), 54, (VARIABLE), 48
+  ifOperation: (IS_EQUAL), Mem(53), Val(3)
+    storeValue: Mem(54), Mem(48)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 1
+  ifOperation: (IS_EQUAL), Mem(54), Val(1)
     Unknown201: 17500, -135000
     Unknown2320: s32'SecretGarden1'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(54), Val(2)
     Unknown201: 17500, -90000
     Unknown2320: s32'SecretGarden2'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 3
+  ifOperation: (IS_EQUAL), Mem(54), Val(3)
     Unknown201: 17500, -45000
     Unknown2320: s32'SecretGarden3'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 4
+  ifOperation: (IS_EQUAL), Mem(54), Val(4)
     Unknown201: 17500, -180000
     Unknown2320: s32'SecretGarden4'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 5
+  ifOperation: (IS_EQUAL), Mem(54), Val(5)
     Unknown201: 17500, 0
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 6
+  ifOperation: (IS_EQUAL), Mem(54), Val(6)
     Unknown201: 17500, 0
     Unknown2320: s32'SecretGarden6'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 7
+  ifOperation: (IS_EQUAL), Mem(54), Val(7)
     Unknown201: 17500, 135000
     Unknown2320: s32'SecretGarden7'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 8
+  ifOperation: (IS_EQUAL), Mem(54), Val(8)
     Unknown201: 17500, 90000
     Unknown2320: s32'SecretGarden8'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 54, (STATIC), 9
+  ifOperation: (IS_EQUAL), Mem(54), Val(9)
     Unknown201: 17500, 45000
     Unknown2320: s32'SecretGarden9'
     endIf: 
@@ -427,7 +427,7 @@ startState: s32'SecretGardenBall'
   Unknown111: 50
   multiplyYVelocityByPercent: 50
   Unknown3: 
-  modifyVar: (ADD), (VARIABLE), 53, (STATIC), 1
+  modifyVar: (ADD), Mem(53), Val(1)
   goToMarker: s32'top'
   setMarker: s32'End'
   sprite: s32'keep', 20
@@ -438,7 +438,7 @@ startState: s32'SecretGardenBall'
   linkParticleEx: s32'mll_secretgarden_end'
   endState: 
 
-startState: s32'SilentForceKnife'
+beginState: s32'SilentForceKnife'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 1
@@ -454,7 +454,7 @@ startState: s32'SilentForceKnife'
     hitGravity: 2100
     hitAirPushbackY: 5000
     Unknown730: 1
-    if: (VARIABLE), 115
+    if: Mem(115)
       Unknown1165: s32'SilentForceKnifeD'
       endIf: 
     setThrowRange: 0
@@ -462,24 +462,24 @@ startState: s32'SilentForceKnife'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (VARIABLE), 52
-        Unknown60: '0x030000007B000000170000007B000000'
-        storeValue: (VARIABLE), 62, (STATIC), 0
+      if: Mem(52)
+        Unknown60: 0x030000007B000000170000007B000000
+        storeValue: Mem(62), Val(0)
         Unknown59: s32'TRP_MLL', 2, 157
-        modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 157
-        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 180000
+        modifyVar: (OR), Mem(62), Mem(157)
+        ifOperation: (IS_LESSER), Mem(ACCUMULATOR), Val(180000)
           Unknown2001: 3, s32'CmnActCrouch'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'CmnActStand2Crouch'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'CmnActCrouchTurn'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'Zenten'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'SaiZenten'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           endIf: 
-        if: (VARIABLE), 62
+        if: Mem(62)
           deactivateObj: (SELF)
           Unknown448: s32'mll_silentforce_get', 100
           playCharacterSFX: s32'1'
@@ -489,8 +489,8 @@ startState: s32'SilentForceKnife'
       endUpon: 
     Unknown287: 1
     upon: 46
-      modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 2
+      modifyVar: (ADD), Mem(48), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(48), Val(2)
         clearUpon: 46
         Unknown14: s32'reaction'
         endIf: 
@@ -520,7 +520,7 @@ startState: s32'SilentForceKnife'
   setMarker: s32'atloop'
   sprite: s32'mle9_02', 1
   Unknown2161: 100, 0, 0
-  Unknown2162: '0x0000000050C3000000000000B03CFFFF0000000050C3000000000000B03CFFFF'
+  Unknown2162: 0x0000000050C3000000000000B03CFFFF0000000050C3000000000000B03CFFFF
   Unknown448: s32'mll_twinkle', 130
   Unknown3: 
   goToMarker: s32'atloop'
@@ -531,10 +531,10 @@ startState: s32'SilentForceKnife'
   Unknown98: 0
   recoveryState: 
   resetVelocity: 1
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   Unknown166: 0
   Unknown164: 0
-  storeValue: (VARIABLE), 52, (STATIC), 1
+  storeValue: Mem(52), Val(1)
   Unknown3: 
   setMarker: s32'reaction'
   sprite: s32'mle9_02', 2
@@ -553,7 +553,7 @@ startState: s32'SilentForceKnife'
   Unknown3: 
   endState: 
 
-startState: s32'TandemTop_hs_start'
+beginState: s32'TandemTop_hs_start'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown457: (PLAYER)
@@ -563,7 +563,7 @@ startState: s32'TandemTop_hs_start'
   sprite: s32'null', 90
   endState: 
 
-startState: s32'TandemTopCRing'
+beginState: s32'TandemTopCRing'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -608,7 +608,7 @@ startState: s32'TandemTopCRing'
   clearUpon: (ON_DESTROY)
   endState: 
 
-startState: s32'TandemTopDRing'
+beginState: s32'TandemTopDRing'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -639,7 +639,7 @@ startState: s32'TandemTopDRing'
     Unknown2185: 1
     Unknown2186: 1
     upon: (ON_DESTROY)
-      ifNot: (VARIABLE), 45
+      ifNot: Mem(45)
         Unknown448: s32'mll_tandemtop_hs_break', 100
         Unknown32: s32'TandemTopDRing'
         endIf: 
@@ -690,12 +690,12 @@ startState: s32'TandemTopDRing'
   sprite: s32'mle2_03', 1
   recoveryState: 
   physicsYImpulse: -175
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   clearUpon: (ON_DESTROY)
   sprite: s32'null', 41
   endState: 
 
-startState: s32'EmeraldRainRing1'
+beginState: s32'EmeraldRainRing1'
   upon: (IMMEDIATE)
     Unknown245: 
     hitAirPushbackX: 22750
@@ -802,7 +802,7 @@ startState: s32'EmeraldRainRing1'
   Unknown338: 15
   endState: 
 
-startState: s32'EmeraldRainRing2'
+beginState: s32'EmeraldRainRing2'
   upon: (IMMEDIATE)
     Unknown245: 
     hitAirPushbackX: 26250
@@ -909,7 +909,7 @@ startState: s32'EmeraldRainRing2'
   Unknown338: 15
   endState: 
 
-startState: s32'EmeraldRainRing3'
+beginState: s32'EmeraldRainRing3'
   upon: (IMMEDIATE)
     Unknown245: 
     hitAirPushbackX: 29750
@@ -1016,7 +1016,7 @@ startState: s32'EmeraldRainRing3'
   Unknown338: 15
   endState: 
 
-startState: s32'EmeraldRainRingEffect'
+beginState: s32'EmeraldRainRingEffect'
   sprite: s32'mle2_00', 30
   linkParticleEx: s32'mll_emeraldrain_start'
   linkObjPositionTo: (PARENT)
@@ -1024,7 +1024,7 @@ startState: s32'EmeraldRainRingEffect'
   Unknown457: (PARENT)
   endState: 
 
-startState: s32'RoseBody'
+beginState: s32'RoseBody'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown455: 2
@@ -1032,41 +1032,41 @@ startState: s32'RoseBody'
       Unknown14: s32'koware'
       endUpon: 
     upon: 24
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 6, (STATIC), 7
-        Unknown1772: '0x526F73654F626A0000000000000000000000000000000000000000000000000019000000'
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(6), Val(7)
+        Unknown1772: 0x526F73654F626A0000000000000000000000000000000000000000000000000019000000
         endIf: 
       createObject2: s32'RoseObj', 103
       endUpon: 
     upon: 26
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 6, (STATIC), 7
-        Unknown1772: '0x526F73654F626A0000000000000000000000000000000000000000000000000019000000'
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(6), Val(7)
+        Unknown1772: 0x526F73654F626A0000000000000000000000000000000000000000000000000019000000
         endIf: 
       createObject2: s32'RoseObj', 103
       deactivateObjectFromSlot: (PREVIOUS), 26
       endUpon: 
     upon: 27
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 6, (STATIC), 7
-        Unknown1772: '0x526F73654F626A0000000000000000000000000000000000000000000000000019000000'
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(6), Val(7)
+        Unknown1772: 0x526F73654F626A0000000000000000000000000000000000000000000000000019000000
         endIf: 
       createObject2: s32'RoseObj', 103
       deactivateObjectFromSlot: (PREVIOUS), 27
       endUpon: 
     upon: 28
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 6, (STATIC), 7
-        Unknown1772: '0x526F73654F626A0000000000000000000000000000000000000000000000000019000000'
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(6), Val(7)
+        Unknown1772: 0x526F73654F626A0000000000000000000000000000000000000000000000000019000000
         endIf: 
       createObject2: s32'RoseObj', 103
       deactivateObjectFromSlot: (PREVIOUS), 28
       endUpon: 
     upon: 29
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 6, (STATIC), 7
-        Unknown1772: '0x526F73654F626A0000000000000000000000000000000000000000000000000019000000'
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(6), Val(7)
+        Unknown1772: 0x526F73654F626A0000000000000000000000000000000000000000000000000019000000
         endIf: 
       createObject2: s32'RoseObj', 103
       deactivateObjectFromSlot: (PREVIOUS), 29
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: 16, (VARIABLE), 13, (STATIC), 10
+      ifOperation: 16, Mem(13), Val(10)
         Unknown448: s32'mll_jumprakka_twinkle', 105
         endIf: 
       endUpon: 
@@ -1081,7 +1081,7 @@ startState: s32'RoseBody'
   sprite: s32'null', 1
   endState: 
 
-startState: s32'RoseObj'
+beginState: s32'RoseObj'
   upon: (IMMEDIATE)
     Unknown245: 
     attackLevel: 0
@@ -1104,23 +1104,23 @@ startState: s32'RoseObj'
       Unknown14: s32'koware'
       endUpon: 
     upon: 26
-      storeValue: (VARIABLE), 48, (STATIC), 1
+      storeValue: Mem(48), Val(1)
       endUpon: 
     upon: 27
-      storeValue: (VARIABLE), 49, (STATIC), 1
+      storeValue: Mem(49), Val(1)
       endUpon: 
     upon: 28
-      storeValue: (VARIABLE), 50, (STATIC), 1
+      storeValue: Mem(50), Val(1)
       endUpon: 
     upon: 29
-      storeValue: (VARIABLE), 51, (STATIC), 1
+      storeValue: Mem(51), Val(1)
       endUpon: 
     upon: 25
       Unknown2176: 23
       endUpon: 
     endUpon: 
   sprite: s32'mle6_00', 5
-  modifyVar: (ADD), (VARIABLE), 6, (STATIC), 1
+  modifyVar: (ADD), Mem(6), Val(1)
   playSFX: s32'SE_SWINGE'
   sprite: s32'mle6_00', 1
   Unknown24: s32'BadMoon', 2, 48
@@ -1128,8 +1128,8 @@ startState: s32'RoseObj'
   Unknown24: s32'KousokuRakka', 2, 50
   Unknown24: s32'BadMoon_rx', 2, 51
   sprite: s32'mle6_00', 24
-  Unknown60: '0x17000000670000000300000067000000'
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 50000
+  Unknown60: 0x17000000670000000300000067000000
+  ifOperation: (IS_LESSER_OR_EQUAL), Mem(ACCUMULATOR), Val(50000)
     Unknown2176: 23
     endIf: 
   linkParticleEx: s32'mll_flower_start'
@@ -1157,8 +1157,8 @@ startState: s32'RoseObj'
   goToMarker: s32'koware'
   setMarker: s32'KousokuRakka'
   sprite: s32'mle6_00', 5
-  Unknown60: '0x17000000670000000300000067000000'
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 50000
+  Unknown60: 0x17000000670000000300000067000000
+  ifOperation: (IS_LESSER_OR_EQUAL), Mem(ACCUMULATOR), Val(50000)
     Unknown2176: 23
     endIf: 
   linkParticleEx: s32'mll_flower_start'
@@ -1180,13 +1180,13 @@ startState: s32'RoseObj'
   recoveryState: 
   clearUpon: 25
   clearUpon: (FRAME_STEP)
-  modifyVar: (SUB), (VARIABLE), 6, (STATIC), 1
+  modifyVar: (SUB), Mem(6), Val(1)
   Unknown2241: 0, 800
   Unknown449: s32'mll_flower_end', 100
   deactivateObj: (SELF)
   endState: 
 
-startState: s32'zentenHS'
+beginState: s32'zentenHS'
   upon: (IMMEDIATE)
     Unknown466: (PLAYER)
     Unknown456: (PLAYER)
@@ -1199,7 +1199,7 @@ startState: s32'zentenHS'
   addPositionY: 15000
   endState: 
 
-startState: s32'hair432'
+beginState: s32'hair432'
   upon: (IMMEDIATE)
     Unknown466: (PLAYER)
     Unknown456: (PLAYER)
@@ -1210,7 +1210,7 @@ startState: s32'hair432'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'TojoSmoke00'
+beginState: s32'TojoSmoke00'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkParticleEx: s32'mill_tojoeff_smoke00'
@@ -1218,7 +1218,7 @@ startState: s32'TojoSmoke00'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'mll253_re_sword'
+beginState: s32'mll253_re_sword'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'sword', s32''
     linkObjPositionTo: (PLAYER)
@@ -1238,7 +1238,7 @@ startState: s32'mll253_re_sword'
   sprite: s32'mll253_re_sword_10', 3
   endState: 
 
-startState: s32'BG_ichigeki'
+beginState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkParticleEx: s32'mll_ichigeki_bg'
@@ -1246,37 +1246,37 @@ startState: s32'BG_ichigeki'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'ACEvtMLL_7A'
+beginState: s32'ACEvtMLL_7A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_HEIJI1'
   Unknown2122: 
   sprite: s32'null', 1
-  Unknown2120: '0x6D61696E0000000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x6D61696E0000000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 40, 0
   sprite: s32'null', 90
-  Unknown2113: '0x4143325F4D4C4C5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  Unknown2113: 0x4143325F4D4C4C5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
   sprite: s32'null', 140
   Unknown2114: -16777216, 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237415F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237415F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237415F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237415F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237415F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237415F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037415F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037415F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4237415F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037415F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237415F30303600000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037415F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4237415F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037415F303100000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237415F30303700000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037415F303100000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F4D4C4C5F4237415F30303700000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -1284,51 +1284,51 @@ startState: s32'ACEvtMLL_7A'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtMLL_7B'
+beginState: s32'ACEvtMLL_7B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, 0, 30
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E744D4C4C3037425F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E744D4C4C3037425F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
-  Unknown2120: '0x4845494A4931000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x4845494A4931000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037425F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303200000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037425F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303500000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303600000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F303037000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F303037000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037425F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303800000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037425F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303800000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30303900000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30303900000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313000000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313000000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037425F303300000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313100000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037425F303300000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313500000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3037425F303400000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4237425F30313600000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3037425F303400000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4237425F30313600000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -1336,51 +1336,51 @@ startState: s32'ACEvtMLL_7B'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtMLL_8A'
+beginState: s32'ACEvtMLL_8A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E744D4C4C3038415F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E744D4C4C3038415F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_SeriousTalk'
   Unknown2123: s32'BGM_Politics'
   Unknown2122: 
   sprite: s32'null', 1
-  Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x536572696F757354616C6B00000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 90
-  Unknown2113: '0x4143325F4D4C4C5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  Unknown2113: 0x4143325F4D4C4C5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
   sprite: s32'null', 140
   Unknown2114: -16777216, 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038415F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303300000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038415F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038415F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038415F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303600000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303700000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303700000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30303800000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30303800000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038415F303300000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238415F303039000000000000000000000000000000000046000000'
+  Unknown2107: 0x4576656E744D4C4C3038415F303300000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4238415F303039000000000000000000000000000000000046000000
   sprite: s32'null', 90
-  Unknown2107: '0x4576656E744D4C4C3038415F303200000000000000000000000000000000000001000000'
+  Unknown2107: 0x4576656E744D4C4C3038415F303200000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30313000000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30313000000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30313100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30313100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038415F303300000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238415F30313200000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038415F303300000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F4D4C4C5F4238415F30313200000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -1388,56 +1388,56 @@ startState: s32'ACEvtMLL_8A'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtMLL_8B'
+beginState: s32'ACEvtMLL_8B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, 0, 30
-    Unknown2107: '0x4576656E744D4C4C3038425F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E744D4C4C3038425F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E744D4C4C3038425F303100000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E744D4C4C3038425F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
-  Unknown2120: '0x506F6C697469637300000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x506F6C697469637300000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038425F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238425F303034000000000000000000000000000000000050000000'
+  Unknown2107: 0x4576656E744D4C4C3038425F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4238425F303034000000000000000000000000000000000050000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038425F303300000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038425F303300000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038425F303200000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303600000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038425F303200000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303700000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303700000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038425F303300000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30303800000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038425F303300000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30303800000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F303039000000000000000000000000000000000046000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F303039000000000000000000000000000000000046000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038425F303400000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30313000000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038425F303400000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30313000000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30313100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30313100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30313200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30313200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E744D4C4C3038425F303400000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30313300000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E744D4C4C3038425F303400000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30313300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F4D4C4C5F4238425F30313400000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F4D4C4C5F4238425F30313400000000000000000000000000000000003C000000
   sprite: s32'null', 180
   Unknown2114: 0, -16777216, 180
   sprite: s32'null', 1
   Unknown2108: 
   endState: 
 
-startState: s32'PrettyMazeRing'
+beginState: s32'PrettyMazeRing'
   upon: (IMMEDIATE)
     setObjectSize: 1200
     fadeColorBlue: 100
@@ -1469,7 +1469,7 @@ startState: s32'PrettyMazeRing'
     Unknown2185: 1
     Unknown2186: 1
     upon: (ON_DESTROY)
-      ifNot: (VARIABLE), 45
+      ifNot: Mem(45)
         Unknown448: s32'mll_tandemtop_hs_break', 100
         Unknown32: s32'PrettyMazeRing'
         endIf: 
@@ -1525,12 +1525,12 @@ startState: s32'PrettyMazeRing'
   sprite: s32'mle2_03', 2
   hit: 
   recoveryState: 
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   clearUpon: (ON_DESTROY)
   sprite: s32'null', 41
   endState: 
 
-startState: s32'AirMazeRing'
+beginState: s32'AirMazeRing'
   upon: (IMMEDIATE)
     setObjectSize: 1300
     fadeColorBlue: 100
@@ -1574,7 +1574,7 @@ startState: s32'AirMazeRing'
   clearUpon: (ON_DESTROY)
   endState: 
 
-startState: s32'SFHorizontal'
+beginState: s32'SFHorizontal'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 1
@@ -1591,7 +1591,7 @@ startState: s32'SFHorizontal'
     hitGravity: 2100
     hitAirPushbackY: 7500
     Unknown730: 1
-    if: (VARIABLE), 115
+    if: Mem(115)
       Unknown1165: s32'SilentForceKnifeD'
       endIf: 
     setThrowRange: 0
@@ -1599,24 +1599,24 @@ startState: s32'SFHorizontal'
       Unknown14: s32'landing'
       endUpon: 
     upon: 12
-      if: (VARIABLE), 52
-        Unknown60: '0x030000007B000000170000007B000000'
-        storeValue: (VARIABLE), 62, (STATIC), 0
+      if: Mem(52)
+        Unknown60: 0x030000007B000000170000007B000000
+        storeValue: Mem(62), Val(0)
         Unknown59: s32'TRP_MLL', 2, 157
-        modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 157
-        ifOperation: (IS_LESSER), (VARIABLE), 0, (STATIC), 180000
+        modifyVar: (OR), Mem(62), Mem(157)
+        ifOperation: (IS_LESSER), Mem(ACCUMULATOR), Val(180000)
           Unknown2001: 3, s32'CmnActCrouch'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'CmnActStand2Crouch'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'CmnActCrouchTurn'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'Zenten'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           Unknown2001: 3, s32'SaiZenten'
-          modifyVar: (OR), (VARIABLE), 62, (VARIABLE), 0
+          modifyVar: (OR), Mem(62), Mem(ACCUMULATOR)
           endIf: 
-        if: (VARIABLE), 62
+        if: Mem(62)
           deactivateObj: (SELF)
           Unknown448: s32'mll_silentforce_get', 100
           playCharacterSFX: s32'1'
@@ -1626,8 +1626,8 @@ startState: s32'SFHorizontal'
       endUpon: 
     Unknown287: 1
     upon: 46
-      modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 2
+      modifyVar: (ADD), Mem(48), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(48), Val(2)
         clearUpon: 46
         Unknown14: s32'reaction'
         endIf: 
@@ -1656,7 +1656,7 @@ startState: s32'SFHorizontal'
   setMarker: s32'atloop'
   sprite: s32'mle9_02', 1
   Unknown2161: 100, 0, 0
-  Unknown2162: '0x0000000050C3000000000000B03CFFFF0000000050C3000000000000B03CFFFF'
+  Unknown2162: 0x0000000050C3000000000000B03CFFFF0000000050C3000000000000B03CFFFF
   Unknown448: s32'mll_twinkle', 130
   Unknown3: 
   goToMarker: s32'atloop'
@@ -1667,10 +1667,10 @@ startState: s32'SFHorizontal'
   Unknown98: 0
   recoveryState: 
   resetVelocity: 1
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   Unknown166: 0
   Unknown164: 0
-  storeValue: (VARIABLE), 52, (STATIC), 1
+  storeValue: Mem(52), Val(1)
   Unknown3: 
   setMarker: s32'reaction'
   sprite: s32'mle9_02', 2

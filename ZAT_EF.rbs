@@ -1,8 +1,8 @@
-startState: s32'dmy'
+beginState: s32'dmy'
   sprite: s32'null', 1
   endState: 
 
-startState: s32'AirThrowNyurun'
+beginState: s32'AirThrowNyurun'
   sprite: s32'null', 60
   linkParticleEx: s32'cmn_fd_end'
   Unknown457: (PARENT)
@@ -11,7 +11,7 @@ startState: s32'AirThrowNyurun'
   Unknown466: (PARENT)
   endState: 
 
-startState: s32'AirThrowHae'
+beginState: s32'AirThrowHae'
   sprite: s32'null', 60
   linkParticleEx: s32'zat_airthrow_end'
   Unknown457: (PARENT)
@@ -20,7 +20,7 @@ startState: s32'AirThrowHae'
   Unknown466: (PARENT)
   endState: 
 
-startState: s32'UzuStart'
+beginState: s32'UzuStart'
   sprite: s32'null', 20
   linkParticleEx: s32'zat_stand_start'
   Unknown466: (PARENT)
@@ -30,7 +30,7 @@ startState: s32'UzuStart'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuDelete'
+beginState: s32'UzuDelete'
   sprite: s32'null', 30
   linkParticleEx: s32'zat_stand_end'
   Unknown466: (PARENT)
@@ -40,12 +40,12 @@ startState: s32'UzuDelete'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuDeleteNoLink'
+beginState: s32'UzuDeleteNoLink'
   sprite: s32'null', 30
   linkParticleEx: s32'zat_stand_end'
   endState: 
 
-startState: s32'UzuStand'
+beginState: s32'UzuStand'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_stand_loop'
   Unknown466: (PARENT)
@@ -55,7 +55,7 @@ startState: s32'UzuStand'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuCrouch'
+beginState: s32'UzuCrouch'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_crouch_loop'
   Unknown466: (PARENT)
@@ -65,7 +65,7 @@ startState: s32'UzuCrouch'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuStand2Crouch'
+beginState: s32'UzuStand2Crouch'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_shadow_nakawari1'
   Unknown466: (PARENT)
@@ -75,7 +75,7 @@ startState: s32'UzuStand2Crouch'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuNokezori'
+beginState: s32'UzuNokezori'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_nokezori_stup'
   Unknown466: (PARENT)
@@ -85,7 +85,7 @@ startState: s32'UzuNokezori'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuFWalk'
+beginState: s32'UzuFWalk'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_walk_loop'
   Unknown466: (PARENT)
@@ -95,7 +95,7 @@ startState: s32'UzuFWalk'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'Uzu2B'
+beginState: s32'Uzu2B'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_walk_loop'
   Unknown466: (PARENT)
@@ -105,7 +105,7 @@ startState: s32'Uzu2B'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuBWalk'
+beginState: s32'UzuBWalk'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_walkback_loop'
   Unknown466: (PARENT)
@@ -115,7 +115,7 @@ startState: s32'UzuBWalk'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'Uzu6DStart'
+beginState: s32'Uzu6DStart'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_6duzu_start'
   Unknown466: (PARENT)
@@ -125,7 +125,7 @@ startState: s32'Uzu6DStart'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'Uzu6DEnd'
+beginState: s32'Uzu6DEnd'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_6duzu_end'
   Unknown466: (PARENT)
@@ -135,7 +135,7 @@ startState: s32'Uzu6DEnd'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuFDashStop'
+beginState: s32'UzuFDashStop'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_dashstop'
   Unknown466: (PARENT)
@@ -145,7 +145,7 @@ startState: s32'UzuFDashStop'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuNokezoriH'
+beginState: s32'UzuNokezoriH'
   sprite: s32'null', 30
   linkParticleEx: s32'zat_nokezori_stup'
   Unknown466: (PARENT)
@@ -155,7 +155,7 @@ startState: s32'UzuNokezoriH'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuNokezoriL'
+beginState: s32'UzuNokezoriL'
   sprite: s32'null', 30
   linkParticleEx: s32'zat_nokezori_stdown'
   Unknown466: (PARENT)
@@ -165,7 +165,7 @@ startState: s32'UzuNokezoriL'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuNokezoriC'
+beginState: s32'UzuNokezoriC'
   sprite: s32'null', 30
   linkParticleEx: s32'zat_nokezori_crouch'
   Unknown466: (PARENT)
@@ -175,7 +175,7 @@ startState: s32'UzuNokezoriC'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'Uzu5B'
+beginState: s32'Uzu5B'
   sprite: s32'null', 30
   linkParticleEx: s32'zat_5k'
   Unknown466: (PARENT)
@@ -185,7 +185,7 @@ startState: s32'Uzu5B'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuJitabata'
+beginState: s32'UzuJitabata'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_yoroke'
   Unknown466: (PARENT)
@@ -195,7 +195,7 @@ startState: s32'UzuJitabata'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuKizetsu'
+beginState: s32'UzuKizetsu'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_kizetsu'
   Unknown466: (PARENT)
@@ -205,7 +205,7 @@ startState: s32'UzuKizetsu'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuBreakTheLaw'
+beginState: s32'UzuBreakTheLaw'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_btl_floor'
   Unknown466: (PARENT)
@@ -215,7 +215,7 @@ startState: s32'UzuBreakTheLaw'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'UzuBreakTheLawEddie'
+beginState: s32'UzuBreakTheLawEddie'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_btl_floor'
   Unknown466: (PARENT)
@@ -225,7 +225,7 @@ startState: s32'UzuBreakTheLawEddie'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'HomingEffect'
+beginState: s32'HomingEffect'
   sprite: s32'null', 2147483647
   linkParticleEx: s32'zat_homing_mesh'
   Unknown466: (PARENT)
@@ -235,7 +235,7 @@ startState: s32'HomingEffect'
   linkObjPositionTo: (PARENT)
   endState: 
 
-startState: s32'DamnedFangBall'
+beginState: s32'DamnedFangBall'
   sprite: s32'null', 41
   Unknown457: (PARENT)
   linkObjPositionTo: (PARENT)
@@ -248,19 +248,19 @@ startState: s32'DamnedFangBall'
   endState: 
 
 startSubroutine: s32'EddieSukkarakanCheck'
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 0
-    storeValue: (VARIABLE), 4, (STATIC), 1
+  ifOperation: (IS_LESSER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(0)
+    storeValue: Mem(4), Val(1)
     endIf: 
   else: 
     Unknown59: s32'TRP_ZAT', 2, 157
-    ifOperation: (IS_EQUAL), (VARIABLE), 157, (STATIC), 2
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 999999
+    ifOperation: (IS_EQUAL), Mem(157), Val(2)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(999999)
       endIf: 
     endElse: 
   endSubroutine: 
 
 startSubroutine: s32'EddieActionReqNeutral'
-  ifNot: (VARIABLE), 57
+  ifNot: Mem(57)
     jumpToState: s32'Eddie'
     endIf: 
   endSubroutine: 
@@ -271,14 +271,14 @@ startSubroutine: s32'EddieInitialize'
   Unknown268: 1
   resetVelocity: 1
   Unknown2156: 0
-  storeValue: (VARIABLE), 45, (STATIC), 5
-  storeValue: (VARIABLE), 5, (STATIC), 1
-  storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
-  storeValue: (VARIABLE), 57, (STATIC), 0
-  storeValue: (VARIABLE), 58, (STATIC), 0
-  storeValue: (VARIABLE), 59, (STATIC), 0
-  storeValue: (VARIABLE), 60, (STATIC), 0
-  storeValue: (VARIABLE), 3, (STATIC), 1
+  storeValue: Mem(45), Val(5)
+  storeValue: Mem(5), Val(1)
+  storeFromObjToObj: (PLAYER), Mem(53), (SELF), Val(0)
+  storeValue: Mem(57), Val(0)
+  storeValue: Mem(58), Val(0)
+  storeValue: Mem(59), Val(0)
+  storeValue: Mem(60), Val(0)
+  storeValue: Mem(3), Val(1)
   Unknown2178: 
   numberOfHits: 1
   Unknown2189: 1
@@ -286,68 +286,68 @@ startSubroutine: s32'EddieInitialize'
   Unknown2186: 1
   Unknown2191: 1
   upon: (ON_DESTROY)
-    storeValue: (VARIABLE), 3, (STATIC), 0
-    ifNot: (VARIABLE), 49
+    storeValue: Mem(3), Val(0)
+    ifNot: Mem(49)
       createObject2: s32'EddieDelete', 100
       endIf: 
     deactivateObj: (SELF)
-    storeValue: (VARIABLE), 51, (STATIC), 1
-    storeValue: (VARIABLE), 5, (STATIC), 0
+    storeValue: Mem(51), Val(1)
+    storeValue: Mem(5), Val(0)
     endUpon: 
   upon: 59
     deactivateObj: (SELF)
     endUpon: 
   upon: (RECEIVE_ATTACK)
-    storeValue: (VARIABLE), 25, (STATIC), 0
-    storeValue: (VARIABLE), 4, (STATIC), 1
+    storeValue: Mem(RESOURCE_AMOUNT), Val(0)
+    storeValue: Mem(4), Val(1)
     Unknown606: 1
     playVoice: s16'vxxx204'
-    ifOperation: (IS_EQUAL), (VARIABLE), 93, (STATIC), 1
+    ifOperation: (IS_EQUAL), Mem(93), Val(1)
       Unknown2320: s32'EddieKesu'
       endIf: 
     endUpon: 
   upon: (HIT_OR_BLOCK)
-    ifNot: (VARIABLE), 58
-      ifNot: (VARIABLE), 51
-        storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
-        storeValue: (VARIABLE), 3, (STATIC), 0
-        ifNot: (VARIABLE), 49
+    ifNot: Mem(58)
+      ifNot: Mem(51)
+        storeFromObjToObj: (PLAYER), Mem(53), (SELF), Val(0)
+        storeValue: Mem(3), Val(0)
+        ifNot: Mem(49)
           createObject2: s32'EddieDelete', 100
           Unknown606: 1
           playVoice: s16'vxxx203'
           endIf: 
         deactivateObj: (SELF)
-        storeValue: (VARIABLE), 51, (STATIC), 1
-        storeValue: (VARIABLE), 5, (STATIC), 0
+        storeValue: Mem(51), Val(1)
+        storeValue: Mem(5), Val(0)
         endIf: 
       endIf: 
     endUpon: 
   upon: 24
-    ifNot: (VARIABLE), 58
-      ifNot: (VARIABLE), 51
-        storeFromObjToObj: (PLAYER), (VARIABLE), 53, (SELF), (STATIC), 0
-        storeValue: (VARIABLE), 3, (STATIC), 0
-        ifNot: (VARIABLE), 49
+    ifNot: Mem(58)
+      ifNot: Mem(51)
+        storeFromObjToObj: (PLAYER), Mem(53), (SELF), Val(0)
+        storeValue: Mem(3), Val(0)
+        ifNot: Mem(49)
           createObject2: s32'EddieDelete', 100
           Unknown606: 1
           playVoice: s16'vxxx203'
           endIf: 
         deactivateObj: (SELF)
-        storeValue: (VARIABLE), 51, (STATIC), 1
-        storeValue: (VARIABLE), 25, (STATIC), 0
-        storeValue: (VARIABLE), 4, (STATIC), 1
-        storeValue: (VARIABLE), 5, (STATIC), 0
+        storeValue: Mem(51), Val(1)
+        storeValue: Mem(RESOURCE_AMOUNT), Val(0)
+        storeValue: Mem(4), Val(1)
+        storeValue: Mem(5), Val(0)
         endIf: 
       endIf: 
     endUpon: 
   upon: 25
-    ifNot: (VARIABLE), 58
-      storeValue: (VARIABLE), 57, (STATIC), 1
+    ifNot: Mem(58)
+      storeValue: Mem(57), Val(1)
       Unknown2263: 0
       endIf: 
     endUpon: 
   upon: (BEFORE_EXIT)
-    storeValue: (VARIABLE), 3, (STATIC), 0
+    storeValue: Mem(3), Val(0)
     endUpon: 
   linkParticleEx: s32''
   Unknown2233: 0
@@ -355,193 +355,193 @@ startSubroutine: s32'EddieInitialize'
   linkPawnWithAnim: s32'edyz_body', s32''
   Unknown2035: s32'ChangeColor'
   upon: (FRAME_STEP)
-    storeValue: (VARIABLE), 46, (STATIC), 0
-    ifNot: (VARIABLE), 58
-      ifNot: (VARIABLE), 46
-        if: (VARIABLE), 57
-          storeValue: (VARIABLE), 57, (STATIC), 0
-          storeValue: (VARIABLE), 46, (STATIC), 1
+    storeValue: Mem(46), Val(0)
+    ifNot: Mem(58)
+      ifNot: Mem(46)
+        if: Mem(57)
+          storeValue: Mem(57), Val(0)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieMegalithHead'
           endIf: 
         endIf: 
       endIf: 
-    ifNot: (VARIABLE), 5
-      ifOperation: (IS_LESSER), (VARIABLE), 104, (STATIC), 16100
+    ifNot: Mem(5)
+      ifOperation: (IS_LESSER), Mem(104), Val(16100)
         Unknown240: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifNot: (VARIABLE), 25
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifNot: Mem(RESOURCE_AMOUNT)
+          storeValue: Mem(46), Val(1)
           deactivateObjectFromSlot: (SELF), 24
           endIf: 
         endIf: 
-      storeValue: (VARIABLE), 69, (STATIC), 0
-      ifNot: (VARIABLE), 46
+      storeValue: Mem(69), Val(0)
+      ifNot: Mem(46)
         Unknown2266: 121, 2, 32
-        if: (VARIABLE), 0
-          storeValue: (VARIABLE), 69, (STATIC), 8
+        if: Mem(ACCUMULATOR)
+          storeValue: Mem(69), Val(8)
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
+      ifNot: Mem(46)
         Unknown2266: 95, 2, 32
-        if: (VARIABLE), 0
-          storeValue: (VARIABLE), 69, (STATIC), 7
+        if: Mem(ACCUMULATOR)
+          storeValue: Mem(69), Val(7)
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
+      ifNot: Mem(46)
         checkInput: 42
-        if: (VARIABLE), 0
-          storeValue: (VARIABLE), 69, (STATIC), 6
+        if: Mem(ACCUMULATOR)
+          storeValue: Mem(69), Val(6)
           endIf: 
         endIf: 
       Unknown2001: 2, s32'EddieReturn'
-      ifNot: (VARIABLE), 0
-        ifNot: (VARIABLE), 46
+      ifNot: Mem(ACCUMULATOR)
+        ifNot: Mem(46)
           checkInput: 33
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 5
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(5)
             endIf: 
           endIf: 
-        ifNot: (VARIABLE), 46
+        ifNot: Mem(46)
           checkInput: 24
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 4
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(4)
             endIf: 
           endIf: 
-        ifNot: (VARIABLE), 46
+        ifNot: Mem(46)
           checkInput: 15
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 3
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(3)
             endIf: 
           endIf: 
-        ifNot: (VARIABLE), 46
+        ifNot: Mem(46)
           checkInput: 6
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 2
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(2)
             endIf: 
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
+      ifNot: Mem(46)
         checkInput: 42
-        if: (VARIABLE), 0
+        if: Mem(ACCUMULATOR)
           checkInput: (INPUT_214)
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 1
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(1)
             endIf: 
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
+      ifNot: Mem(46)
         checkInput: 38
-        if: (VARIABLE), 0
+        if: Mem(ACCUMULATOR)
           checkInput: (INPUT_214)
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 1
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(1)
             endIf: 
           endIf: 
         endIf: 
-      if: (VARIABLE), 212
-        ifNot: (VARIABLE), 46
+      if: Mem(212)
+        ifNot: Mem(46)
           checkInput: 281
-          if: (VARIABLE), 0
-            storeValue: (VARIABLE), 69, (STATIC), 3
+          if: Mem(ACCUMULATOR)
+            storeValue: Mem(69), Val(3)
             endIf: 
           endIf: 
         endIf: 
       callSubroutine: s32'zat_EddieCPU', 0, 0, 0, 0, 0, 0, 0, 0
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(1)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieThrow'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(1)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieThrow'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(2)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieA'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 3
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(3)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieB'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 4
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(4)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieC'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 5
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(5)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieD'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 6
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(6)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'EddieE'
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 7
-          storeValue: (VARIABLE), 46, (STATIC), 1
-          ifOperation: (IS_NOT_EQUAL), (VARIABLE), 45, (STATIC), 4
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(7)
+          storeValue: Mem(46), Val(1)
+          ifOperation: (IS_NOT_EQUAL), Mem(45), Val(4)
             jumpToState: s32'Eddie4'
             endIf: 
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 8
-          storeValue: (VARIABLE), 46, (STATIC), 1
-          ifOperation: (IS_NOT_EQUAL), (VARIABLE), 45, (STATIC), 6
+      ifNot: Mem(46)
+        ifOperation: (IS_EQUAL), Mem(69), Val(8)
+          storeValue: Mem(46), Val(1)
+          ifOperation: (IS_NOT_EQUAL), Mem(45), Val(6)
             jumpToState: s32'Eddie6'
             endIf: 
           endIf: 
         endIf: 
-      ifNot: (VARIABLE), 46
-        ifOperation: (IS_NOT_EQUAL), (VARIABLE), 45, (STATIC), 5
-          storeValue: (VARIABLE), 46, (STATIC), 1
+      ifNot: Mem(46)
+        ifOperation: (IS_NOT_EQUAL), Mem(45), Val(5)
+          storeValue: Mem(46), Val(1)
           jumpToState: s32'Eddie'
           endIf: 
         endIf: 
       endIf: 
-    if: (VARIABLE), 52
-      if: (VARIABLE), 114
-        storeValue: (VARIABLE), 52, (STATIC), 0
+    if: Mem(52)
+      if: Mem(114)
+        storeValue: Mem(52), Val(0)
         linkPawnWithAnim: s32'edyz_body', s32''
         Unknown2035: s32'ChangeColor'
         Unknown14: s32'hashi'
         endIf: 
       endIf: 
-    if: (VARIABLE), 60
-      if: (VARIABLE), 50
-        if: (VARIABLE), 84
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 7
+    if: Mem(60)
+      if: Mem(50)
+        if: Mem(84)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(59), Val(7)
             Unknown14: s32'End'
             endIf: 
           endIf: 
         else: 
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 5
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(59), Val(5)
             Unknown14: s32'End'
             endIf: 
           endElse: 
         endIf: 
       else: 
-        if: (VARIABLE), 84
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 5
+        if: Mem(84)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(59), Val(5)
             Unknown14: s32'End'
             endIf: 
           endIf: 
         else: 
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 59, (STATIC), 3
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(59), Val(3)
             Unknown14: s32'End'
             endIf: 
           endElse: 
@@ -550,18 +550,18 @@ startSubroutine: s32'EddieInitialize'
     endUpon: 
   endSubroutine: 
 
-startState: s32'EddieDelete'
+beginState: s32'EddieDelete'
   upon: (IMMEDIATE)
     endUpon: 
   sprite: s32'ZTE4_00', 60
   linkParticleEx: s32'zat_edy_end'
   endState: 
 
-startState: s32'Eddie'
+beginState: s32'Eddie'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 5
-    storeValue: (VARIABLE), 5, (STATIC), 0
+    storeValue: Mem(45), Val(5)
+    storeValue: Mem(5), Val(0)
     endUpon: 
   playCharacterSFX: s32'2'
   physicsXImpulse: 0
@@ -576,11 +576,11 @@ startState: s32'Eddie'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'Eddie6'
+beginState: s32'Eddie6'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 6
-    storeValue: (VARIABLE), 5, (STATIC), 0
+    storeValue: Mem(45), Val(6)
+    storeValue: Mem(5), Val(0)
     endUpon: 
   setMarker: s32'fwalk_loop'
   sprite: s32'zat418_body_01', 3
@@ -596,11 +596,11 @@ startState: s32'Eddie6'
   goToMarker: s32'fwalk_loop'
   endState: 
 
-startState: s32'Eddie4'
+beginState: s32'Eddie4'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 4
-    storeValue: (VARIABLE), 5, (STATIC), 0
+    storeValue: Mem(45), Val(4)
+    storeValue: Mem(5), Val(0)
     endUpon: 
   setMarker: s32'loop'
   sprite: s32'zat418_body_01', 3
@@ -616,11 +616,11 @@ startState: s32'Eddie4'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EddieA'
+beginState: s32'EddieA'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 100
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(100)
+    storeValue: Mem(5), Val(1)
     Unknown244: 
     Unknown1110: 1
     attackLevel: 1
@@ -631,11 +631,11 @@ startState: s32'EddieA'
     Unknown730: 1
     endUpon: 
   sprite: s32'zat405_body_01', 2
-  if: (VARIABLE), 84
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -360
+  if: Mem(84)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-360)
     endIf: 
   else: 
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -720
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-720)
     endElse: 
   callCmnEfFunc: s32'EddieSukkarakanCheck'
   sprite: s32'zat405_body_02', 2
@@ -655,11 +655,11 @@ startState: s32'EddieA'
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'EddieB'
+beginState: s32'EddieB'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 101
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(101)
+    storeValue: Mem(5), Val(1)
     Unknown244: 
     Unknown1110: 1
     attackLevel: 2
@@ -672,11 +672,11 @@ startState: s32'EddieB'
     Unknown1058: 1
     endUpon: 
   sprite: s32'zat406_body_01', 3
-  if: (VARIABLE), 84
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -900
+  if: Mem(84)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-900)
     endIf: 
   else: 
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1800
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1800)
     endElse: 
   callCmnEfFunc: s32'EddieSukkarakanCheck'
   sprite: s32'zat406_body_02', 2
@@ -696,7 +696,7 @@ startState: s32'EddieB'
   Unknown3: 
   physicsXImpulse: 17500
   Unknown2159: 3
-  storeValue: (VARIABLE), 52, (STATIC), 1
+  storeValue: Mem(52), Val(1)
   sprite: s32'zat406_buzzsaw_01ex', 2
   playCharacterSFX: s32'3'
   hit: 
@@ -751,11 +751,11 @@ startState: s32'EddieB'
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'EddieC'
+beginState: s32'EddieC'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 102
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(102)
+    storeValue: Mem(5), Val(1)
     Unknown244: 
     groundHitEffect: (AIR_LAUNCH)
     airHitEffect: (AIR_LAUNCH)
@@ -771,11 +771,11 @@ startState: s32'EddieC'
   sprite: s32'zat408_body_00', 2
   Unknown2320: s32'EddieCDehazime'
   resetVelocity: 1
-  if: (VARIABLE), 84
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -600
+  if: Mem(84)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-600)
     endIf: 
   else: 
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1200
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1200)
     endElse: 
   callCmnEfFunc: s32'EddieSukkarakanCheck'
   physicsXImpulse: 21000
@@ -806,7 +806,7 @@ startState: s32'EddieC'
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'EddieCPartsA'
+beginState: s32'EddieCPartsA'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -830,7 +830,7 @@ startState: s32'EddieCPartsA'
   sprite: s32'zat408_shark_11', 5
   endState: 
 
-startState: s32'EddieCPartsB'
+beginState: s32'EddieCPartsB'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -845,21 +845,21 @@ startState: s32'EddieCPartsB'
   sprite: s32'zat408_blob_12', 5
   endState: 
 
-startState: s32'EddieD'
+beginState: s32'EddieD'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 103
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(103)
+    storeValue: Mem(5), Val(1)
     endUpon: 
   sprite: s32'zat418_body_01', 3
   setStrikeInvul: 1
   sprite: s32'zat418_body_02', 2
   sprite: s32'zat418_body_03', 30
-  if: (VARIABLE), 84
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -360
+  if: Mem(84)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-360)
     endIf: 
   else: 
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -720
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-720)
     endElse: 
   callCmnEfFunc: s32'EddieSukkarakanCheck'
   Unknown2023: 0
@@ -881,11 +881,11 @@ startState: s32'EddieD'
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'EddieE'
+beginState: s32'EddieE'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 104
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(104)
+    storeValue: Mem(5), Val(1)
     endUpon: 
   linkPawnWithAnim: s32'edyz_body', s32''
   Unknown2035: s32'ChangeColor'
@@ -894,11 +894,11 @@ startState: s32'EddieE'
   linkPawnWithAnim: s32'edyz_blob', s32''
   Unknown2035: s32'ChangeColor'
   sprite: s32'zat409_blob_00', 3
-  if: (VARIABLE), 84
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -3000
+  if: Mem(84)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-3000)
     endIf: 
   else: 
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), -6000
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-6000)
     endElse: 
   callCmnEfFunc: s32'EddieSukkarakanCheck'
   sprite: s32'zat409_blob_01', 3
@@ -910,15 +910,15 @@ startState: s32'EddieE'
   Unknown2023: 0
   createObject2: s32'ChouDoriru', 100
   sprite: s32'keep', 2147483647
-  storeValue: (VARIABLE), 49, (STATIC), 1
+  storeValue: Mem(49), Val(1)
   deactivateObjectFromSlot: (SELF), 24
   endState: 
 
-startState: s32'EddieThrow'
+beginState: s32'EddieThrow'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 105
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(105)
+    storeValue: Mem(5), Val(1)
     Unknown244: 
     Unknown1028: 0
     tensionGainOnConnect: 10
@@ -936,20 +936,20 @@ startState: s32'EddieThrow'
       clearUpon: (HIT)
       Unknown2185: 0
       Unknown2186: 0
-      storeValue: (VARIABLE), 58, (STATIC), 1
+      storeValue: Mem(58), Val(1)
       Unknown1602: 4
       Unknown2156: 1
       setNoCollision: 0
       endUpon: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3000
-      storeValue: (VARIABLE), 47, (STATIC), 1
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3000)
+      storeValue: Mem(47), Val(1)
       endIf: 
     endUpon: 
   linkPawnWithAnim: s32'edyz_demonhand', s32''
   Unknown2035: s32'ChangeColor'
   sprite: s32'zat411_Demonhand_00', 3
   Unknown2320: s32'EddieThrowSuka'
-  modifyVar: (ADD), (VARIABLE), 25, (STATIC), -2100
+  modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-2100)
   sprite: s32'zat411_Demonhand_01', 3
   sprite: s32'zat411_Demonhand_02', 3
   sprite: s32'zat411_Demonhand_03', 3
@@ -998,7 +998,7 @@ startState: s32'EddieThrow'
   Unknown268: 1
   Unknown287: 1
   sprite: s32'zat411_Demonhand_11', 1
-  storeFromObjToObj: (ENEMY), (VARIABLE), 32, (SELF), (VARIABLE), 32
+  storeFromObjToObj: (ENEMY), Mem(32), (SELF), Mem(32)
   Unknown2157: 0, 5
   Unknown41: 22
   Unknown2157: 1, 5
@@ -1056,7 +1056,7 @@ startState: s32'EddieThrow'
   Unknown1127: 1
   hitAirPushbackX: -10000
   hitAirPushbackY: 40000
-  if: (VARIABLE), 47
+  if: Mem(47)
     damage: 65
     endIf: 
   hitUnchecked: 
@@ -1075,18 +1075,18 @@ startState: s32'EddieThrow'
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'EddieThrowExe'
+beginState: s32'EddieThrowExe'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
     Unknown2185: 0
     Unknown2186: 0
-    storeValue: (VARIABLE), 45, (STATIC), 106
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(106)
+    storeValue: Mem(5), Val(1)
     Unknown244: 
     callCmnEfFunc: s32'cmnAtkTemplNageFinishHit'
     linkPawnWithAnim: s32'edyz_demonhand', s32''
     Unknown2035: s32'ChangeColor'
-    storeValue: (VARIABLE), 58, (STATIC), 1
+    storeValue: Mem(58), Val(1)
     Unknown1602: 4
     endUpon: 
   sprite: s32'zat411_Demonhand_04', 4
@@ -1106,7 +1106,7 @@ startState: s32'EddieThrowExe'
   Unknown1018: 1
   hitUnchecked: 
   sprite: s32'zat411_Demonhand_15', 4
-  storeValue: (VARIABLE), 58, (STATIC), 0
+  storeValue: Mem(58), Val(0)
   Unknown1603: 4
   sprite: s32'zat411_Demonhand_16', 4
   sprite: s32'zat411_Demonhand_17', 4
@@ -1118,7 +1118,7 @@ startState: s32'EddieThrowExe'
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'EddieThrowParts'
+beginState: s32'EddieThrowParts'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1133,7 +1133,7 @@ startState: s32'EddieThrowParts'
   sprite: s32'zat410_Demonhand_07', 4
   endState: 
 
-startState: s32'ChouDoriru'
+beginState: s32'ChouDoriru'
   upon: (IMMEDIATE)
     Unknown244: 
     guardType: (LOW)
@@ -1146,7 +1146,7 @@ startState: s32'ChouDoriru'
     Unknown725: 1
     Unknown1108: 90
     Unknown1058: 1
-    storeFromObjToObj: (PLAYER), (VARIABLE), 55, (SELF), (STATIC), 1
+    storeFromObjToObj: (PLAYER), Mem(55), (SELF), Val(1)
     endUpon: 
   sprite: s32'ZTE5_00', 5
   linkParticleEx: s32'zat_mine_setti'
@@ -1224,14 +1224,14 @@ startState: s32'ChouDoriru'
   recoveryState: 
   linkParticleEx: s32'zat_drill_end'
   sprite: s32'null', 12
-  storeFromObjToObj: (PLAYER), (VARIABLE), 55, (SELF), (STATIC), 0
+  storeFromObjToObj: (PLAYER), Mem(55), (SELF), Val(0)
   endState: 
 
-startState: s32'EddieMegalithHead'
+beginState: s32'EddieMegalithHead'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'EddieInitialize'
-    storeValue: (VARIABLE), 45, (STATIC), 108
-    storeValue: (VARIABLE), 5, (STATIC), 1
+    storeValue: Mem(45), Val(108)
+    storeValue: Mem(5), Val(1)
     Unknown245: 
     Unknown1110: 1
     attackLevel: 2
@@ -1249,14 +1249,14 @@ startState: s32'EddieMegalithHead'
     Unknown1051: 0
     Unknown268: 0
     Unknown294: 1
-    storeValue: (VARIABLE), 60, (STATIC), 1
-    storeValue: (VARIABLE), 59, (STATIC), 0
-    storeValue: (VARIABLE), 58, (STATIC), 1
+    storeValue: Mem(60), Val(1)
+    storeValue: Mem(59), Val(0)
+    storeValue: Mem(58), Val(1)
     Unknown1602: 4
     Unknown2186: 0
     endUpon: 
   sprite: s32'zat417_body_01', 60
-  modifyVar: (ADD), (VARIABLE), 25, (STATIC), -3000
+  modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-3000)
   callCmnEfFunc: s32'EddieSukkarakanCheck'
   sprite: s32'null', 3
   Unknown448: s32'zat_shark_jump', 123
@@ -1270,7 +1270,7 @@ startState: s32'EddieMegalithHead'
   Unknown2157: 0, 5
   setMarker: s32'Move'
   sprite: s32'null', 1
-  ifOperation: (IS_LESSER), (VARIABLE), 14, (STATIC), 500000
+  ifOperation: (IS_LESSER), Mem(14), Val(500000)
     Unknown14: s32'Attack'
     endIf: 
   Unknown240: 
@@ -1308,7 +1308,7 @@ startState: s32'EddieMegalithHead'
   setThrowRange: 0
   setMarker: s32'landing'
   sprite: s32'null', 12
-  modifyVar: (ADD), (VARIABLE), 59, (STATIC), 1
+  modifyVar: (ADD), Mem(59), Val(1)
   clearUpon: (LANDING)
   physicsXImpulse: 30000
   createObject2: s32'Shark_Tail', 100
@@ -1318,13 +1318,13 @@ startState: s32'EddieMegalithHead'
   goToMarker: s32'Move'
   setMarker: s32'End'
   sprite: s32'zat418_body_01', 3
-  storeValue: (VARIABLE), 60, (STATIC), 0
+  storeValue: Mem(60), Val(0)
   sprite: s32'zat418_body_02', 2
   sprite: s32'keep', 2147483647
   callCmnEfFunc: s32'EddieActionReqNeutral'
   endState: 
 
-startState: s32'Shark_Tail'
+beginState: s32'Shark_Tail'
   upon: (IMMEDIATE)
     linkParticleEx: s32'zat_shark_tail'
     linkObjPositionTo: (PARENT)
@@ -1334,7 +1334,7 @@ startState: s32'Shark_Tail'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'DrillC'
+beginState: s32'DrillC'
   upon: (IMMEDIATE)
     Unknown244: 
     guardType: (LOW)
@@ -1357,7 +1357,7 @@ startState: s32'DrillC'
     Unknown35: 45, s32'end2'
     Unknown35: 47, s32'end'
     upon: (FRAME_STEP)
-      ifOperation: (IS_GREATER), (VARIABLE), 104, (STATIC), 403200
+      ifOperation: (IS_GREATER), Mem(104), Val(403200)
         Unknown1058: 1
         endIf: 
       else: 
@@ -1422,7 +1422,7 @@ startState: s32'DrillC'
   Unknown1603: 1
   endState: 
 
-startState: s32'DrillD'
+beginState: s32'DrillD'
   upon: (IMMEDIATE)
     Unknown244: 
     guardType: (LOW)
@@ -1445,7 +1445,7 @@ startState: s32'DrillD'
     Unknown35: 45, s32'end2'
     Unknown35: 47, s32'end'
     upon: (FRAME_STEP)
-      ifOperation: (IS_GREATER), (VARIABLE), 104, (STATIC), 403200
+      ifOperation: (IS_GREATER), Mem(104), Val(403200)
         Unknown1058: 1
         endIf: 
       else: 
@@ -1510,7 +1510,7 @@ startState: s32'DrillD'
   Unknown1603: 1
   endState: 
 
-startState: s32'KageDamari'
+beginState: s32'KageDamari'
   upon: (IMMEDIATE)
     linkParticleEx: s32'zat_kagedamari'
     upon: (ON_DESTROY)
@@ -1527,7 +1527,7 @@ startState: s32'KageDamari'
       Unknown2177: 1
       endUpon: 
     upon: (BEFORE_EXIT)
-      storeValue: (VARIABLE), 6, (STATIC), 3000000
+      storeValue: Mem(6), Val(3000000)
       endUpon: 
     upon: 59
       deactivateObj: (SELF)
@@ -1535,11 +1535,11 @@ startState: s32'KageDamari'
     endUpon: 
   sprite: s32'kageyarareEX', 1
   sprite: s32'kageyarareEX', 300
-  storeValue: (VARIABLE), 6, (VARIABLE), 17
+  storeValue: Mem(6), Mem(17)
   Unknown3: 
   endState: 
 
-startState: s32'AmorphousObj'
+beginState: s32'AmorphousObj'
   upon: (IMMEDIATE)
     Unknown245: 
     isAirUnblockable: 1
@@ -1548,7 +1548,7 @@ startState: s32'AmorphousObj'
     attackLevel: 2
     Unknown1137: 32
     damage: 72
-    if: (VARIABLE), 115
+    if: Mem(115)
       damage: 90
       stunValue: 72
       Unknown1177: 1
@@ -1556,11 +1556,11 @@ startState: s32'AmorphousObj'
       Unknown1086: 50
       Unknown1165: s32'AmorphousObj_Burst'
       endIf: 
-    if: (VARIABLE), 84
+    if: Mem(84)
       damage: 72
       hitAirPushbackX: 25000
       Unknown1137: 64
-      if: (VARIABLE), 115
+      if: Mem(115)
         damage: 90
         stunValue: 50
         Unknown1177: 1
@@ -1569,13 +1569,13 @@ startState: s32'AmorphousObj'
       endIf: 
     riscPlus: 10
     hitAirPushbackY: 17500
-    if: (VARIABLE), 126
+    if: Mem(126)
       guardType: (NONE)
       endIf: 
     upon: (HIT)
-      if: (VARIABLE), 115
-        ifNot: (VARIABLE), 45
-          storeValue: (VARIABLE), 45, (STATIC), 1
+      if: Mem(115)
+        ifNot: Mem(45)
+          storeValue: Mem(45), Val(1)
           Unknown2130: 5000
           endIf: 
         endIf: 
@@ -1590,7 +1590,7 @@ startState: s32'AmorphousObj'
   sprite: s32'ZTE2_03', 3
   sprite: s32'ZTE2_04', 3
   sprite: s32'ZTE2_05', 3
-  if: (VARIABLE), 84
+  if: Mem(84)
     hitAirPushbackY: 20000
     hit: 
     untechableTime: 60
@@ -1605,7 +1605,7 @@ startState: s32'AmorphousObj'
   sprite: s32'ZTE2_08', 3
   sprite: s32'ZTE2_09', 3
   sprite: s32'ZTE2_10', 3
-  if: (VARIABLE), 84
+  if: Mem(84)
     Unknown2247: 2, 164, 2, 45
     callEtcState: s32'AmorphousObj2', 0
     Unknown41: 1
@@ -1614,7 +1614,7 @@ startState: s32'AmorphousObj'
     endIf: 
   endState: 
 
-startState: s32'AmorphousObj2'
+beginState: s32'AmorphousObj2'
   upon: (IMMEDIATE)
     Unknown245: 
     isAirUnblockable: 1
@@ -1623,17 +1623,17 @@ startState: s32'AmorphousObj2'
     attackLevel: 2
     Unknown1137: 32
     damage: 72
-    if: (VARIABLE), 115
+    if: Mem(115)
       damage: 90
       stunValue: 72
       Unknown1177: 1
       Unknown1179: 1
       endIf: 
-    if: (VARIABLE), 84
+    if: Mem(84)
       damage: 72
       hitAirPushbackX: 25000
       Unknown1137: 64
-      if: (VARIABLE), 115
+      if: Mem(115)
         damage: 90
         stunValue: 50
         Unknown1177: 1
@@ -1642,14 +1642,14 @@ startState: s32'AmorphousObj2'
       endIf: 
     riscPlus: 10
     hitAirPushbackY: 17500
-    if: (VARIABLE), 126
+    if: Mem(126)
       guardType: (NONE)
       endIf: 
     upon: (HIT)
-      if: (VARIABLE), 115
-        ifNot: (VARIABLE), 116
-          ifNot: (VARIABLE), 45
-            storeValue: (VARIABLE), 45, (STATIC), 1
+      if: Mem(115)
+        ifNot: Mem(116)
+          ifNot: Mem(45)
+            storeValue: Mem(45), Val(1)
             Unknown2130: 5000
             endIf: 
           endIf: 
@@ -1665,7 +1665,7 @@ startState: s32'AmorphousObj2'
   sprite: s32'ZTE2_03', 3
   sprite: s32'ZTE2_04', 3
   sprite: s32'ZTE2_05', 3
-  if: (VARIABLE), 84
+  if: Mem(84)
     hitAirPushbackY: 20000
     hit: 
     untechableTime: 60
@@ -1682,7 +1682,7 @@ startState: s32'AmorphousObj2'
   sprite: s32'ZTE2_10', 3
   endState: 
 
-startState: s32'Hajikare_stand'
+beginState: s32'Hajikare_stand'
   sprite: s32'null', 60
   Unknown466: (PARENT)
   Unknown457: (PARENT)
@@ -1690,7 +1690,7 @@ startState: s32'Hajikare_stand'
   linkParticleEx: s32'zat_hajikare'
   endState: 
 
-startState: s32'Hajikare_crouch'
+beginState: s32'Hajikare_crouch'
   sprite: s32'null', 60
   Unknown466: (PARENT)
   Unknown457: (PARENT)
@@ -1698,7 +1698,7 @@ startState: s32'Hajikare_crouch'
   linkParticleEx: s32'zat_hajikare_crouch'
   endState: 
 
-startState: s32'Appear_s'
+beginState: s32'Appear_s'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1709,7 +1709,7 @@ startState: s32'Appear_s'
   sprite: s32'null', 50
   endState: 
 
-startState: s32'Appear_m'
+beginState: s32'Appear_m'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1720,7 +1720,7 @@ startState: s32'Appear_m'
   sprite: s32'null', 50
   endState: 
 
-startState: s32'204shadowfloor'
+beginState: s32'204shadowfloor'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1731,7 +1731,7 @@ startState: s32'204shadowfloor'
   sprite: s32'null', 50
   endState: 
 
-startState: s32'231shadow'
+beginState: s32'231shadow'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown466: (PARENT)
@@ -1740,7 +1740,7 @@ startState: s32'231shadow'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'Air_dust'
+beginState: s32'Air_dust'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1751,7 +1751,7 @@ startState: s32'Air_dust'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Dashbrake'
+beginState: s32'Dashbrake'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown466: (PARENT)
@@ -1760,7 +1760,7 @@ startState: s32'Dashbrake'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Homingcharge'
+beginState: s32'Homingcharge'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown466: (PARENT)
@@ -1769,7 +1769,7 @@ startState: s32'Homingcharge'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Dhand_atk'
+beginState: s32'Dhand_atk'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown466: (PARENT)
@@ -1778,7 +1778,7 @@ startState: s32'Dhand_atk'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Dhand_miss'
+beginState: s32'Dhand_miss'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown466: (PARENT)
@@ -1790,7 +1790,7 @@ startState: s32'Dhand_miss'
   sprite: s32'null', 30
   endState: 
 
-startState: s32'Drunkershade'
+beginState: s32'Drunkershade'
   upon: (IMMEDIATE)
     Unknown458: 3
     Unknown466: (PARENT)
@@ -1800,7 +1800,7 @@ startState: s32'Drunkershade'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'305Floorr_shadowloop'
+beginState: s32'305Floorr_shadowloop'
   sprite: s32'null', 2147483647
   Unknown466: (PARENT)
   Unknown457: (PARENT)
@@ -1809,7 +1809,7 @@ startState: s32'305Floorr_shadowloop'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'306Floorr_shadowloop'
+beginState: s32'306Floorr_shadowloop'
   sprite: s32'null', 2147483647
   Unknown466: (PARENT)
   Unknown457: (PARENT)
@@ -1818,7 +1818,7 @@ startState: s32'306Floorr_shadowloop'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'300Floor_shadowloop'
+beginState: s32'300Floor_shadowloop'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1828,7 +1828,7 @@ startState: s32'300Floor_shadowloop'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'301Floor_shadowloop'
+beginState: s32'301Floor_shadowloop'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1838,7 +1838,7 @@ startState: s32'301Floor_shadowloop'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'413drill'
+beginState: s32'413drill'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1848,7 +1848,7 @@ startState: s32'413drill'
   sprite: s32'null', 20
   endState: 
 
-startState: s32'430Amorphous'
+beginState: s32'430Amorphous'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown466: (PARENT)
@@ -1858,7 +1858,7 @@ startState: s32'430Amorphous'
   sprite: s32'null', 120
   endState: 
 
-startState: s32'432Executor'
+beginState: s32'432Executor'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -1876,7 +1876,7 @@ startState: s32'432Executor'
   deactivateObj: (SELF)
   endState: 
 
-startState: s32'Edyz_test'
+beginState: s32'Edyz_test'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'edyz_shark', s32''
     endUpon: 
@@ -1890,7 +1890,7 @@ startState: s32'Edyz_test'
   sprite: s32'zat431_shark_08', 3
   endState: 
 
-startState: s32'Neoblitz_atk'
+beginState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1899,7 +1899,7 @@ startState: s32'Neoblitz_atk'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'Edy'
+beginState: s32'Edy'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'edyz_body', s32'zat700cs_body'
     Unknown2021: 0
@@ -1907,7 +1907,7 @@ startState: s32'Edy'
   sprite: s32'null', 1200
   endState: 
 
-startState: s32'Tojo_eyebloom'
+beginState: s32'Tojo_eyebloom'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkParticleEx: s32'zat_tojo_edyeye'
@@ -1915,7 +1915,7 @@ startState: s32'Tojo_eyebloom'
   sprite: s32'null', 800
   endState: 
 
-startState: s32'BG_ichigeki'
+beginState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkParticleEx: s32'zat_ichigeki_bg'
@@ -1923,7 +1923,7 @@ startState: s32'BG_ichigeki'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'zat_ichigeki_screen'
+beginState: s32'zat_ichigeki_screen'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkParticleEx: s32'zat_ichigeki_screen'
@@ -1931,34 +1931,34 @@ startState: s32'zat_ichigeki_screen'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'ACEvtZAT_7A'
+beginState: s32'ACEvtZAT_7A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_HEIJI1'
   Unknown2122: 
   sprite: s32'null', 1
-  Unknown2120: '0x6D61696E0000000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x6D61696E0000000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 40, 0
   sprite: s32'null', 90
-  Unknown2113: '0x4143325F5A41545F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  Unknown2113: 0x4143325F5A41545F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
   sprite: s32'null', 140
   Unknown2114: -16777216, 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237415F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237415F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037415F303100000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F5A41545F4237415F30303300000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037415F303100000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F5A41545F4237415F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237415F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237415F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237415F30303500000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237415F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037415F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4237415F30303600000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037415F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4237415F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -1966,49 +1966,49 @@ startState: s32'ACEvtZAT_7A'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtZAT_7B'
+beginState: s32'ACEvtZAT_7B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, 0, 30
-    Unknown2107: '0x4576656E745A41543037425F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745A41543037425F303100000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
-  Unknown2120: '0x4845494A4931000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x4845494A4931000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 40, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30303100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30303100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037425F303100000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F5A41545F4237425F30303200000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037425F303100000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F5A41545F4237425F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037425F303200000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F5A41545F4237425F30303400000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037425F303200000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F5A41545F4237425F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30303500000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30303600000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037425F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4237425F30303700000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037425F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4237425F30303700000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30303800000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30303800000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30303900000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30303900000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037425F303300000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4237425F30313000000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037425F303300000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4237425F30313000000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037425F303300000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F5A41545F4237425F30313100000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037425F303300000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F5A41545F4237425F30313100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30313200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30313200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543037425F303400000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4237425F30313300000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543037425F303400000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4237425F30313300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4237425F30313400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4237425F30313400000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -2016,47 +2016,47 @@ startState: s32'ACEvtZAT_7B'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtZAT_8A'
+beginState: s32'ACEvtZAT_8A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745A41543038415F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745A41543038415F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_SeriousTalk'
   Unknown2123: s32'BGM_Politics'
   Unknown2122: 
   sprite: s32'null', 1
-  Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x536572696F757354616C6B00000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 90
-  Unknown2113: '0x4143325F5A41545F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  Unknown2113: 0x4143325F5A41545F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
   sprite: s32'null', 140
   Unknown2114: -16777216, 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238415F303032000000000000000000000000000000000032000000'
+  Unknown2106: 0x4143325F5A41545F4238415F303032000000000000000000000000000000000032000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238415F303033000000000000000000000000000000000032000000'
+  Unknown2106: 0x4143325F5A41545F4238415F303033000000000000000000000000000000000032000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238415F303034000000000000000000000000000000000032000000'
+  Unknown2106: 0x4143325F5A41545F4238415F303034000000000000000000000000000000000032000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543038415F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4238415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543038415F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4238415F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238415F303036000000000000000000000000000000000046000000'
+  Unknown2106: 0x4143325F5A41545F4238415F303036000000000000000000000000000000000046000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238415F303037000000000000000000000000000000000028000000'
+  Unknown2106: 0x4143325F5A41545F4238415F303037000000000000000000000000000000000028000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543038415F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4238415F303038000000000000000000000000000000000028000000'
+  Unknown2107: 0x4576656E745A41543038415F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4238415F303038000000000000000000000000000000000028000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543038415F303300000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4238415F303039000000000000000000000000000000000028000000'
+  Unknown2107: 0x4576656E745A41543038415F303300000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4238415F303039000000000000000000000000000000000028000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238415F30313000000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F5A41545F4238415F30313000000000000000000000000000000000003C000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543038415F303200000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F5A41545F4238415F30313100000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543038415F303200000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F5A41545F4238415F30313100000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -2064,29 +2064,29 @@ startState: s32'ACEvtZAT_8A'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtZAT_8B'
+beginState: s32'ACEvtZAT_8B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, 0, 30
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745A41543038425F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745A41543038425F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
-  Unknown2120: '0x506F6C697469637300000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x506F6C697469637300000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238425F30303100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4238425F30303100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238425F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4238425F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543038425F303200000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F5A41545F4238425F30303300000000000000000000000000000000003C000000'
+  Unknown2107: 0x4576656E745A41543038425F303200000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F5A41545F4238425F30303300000000000000000000000000000000003C000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238425F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4238425F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E745A41543038425F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F5A41545F4238425F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E745A41543038425F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F5A41545F4238425F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F5A41545F4238425F30303600000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F5A41545F4238425F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10

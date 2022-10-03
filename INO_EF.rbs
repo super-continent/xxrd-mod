@@ -1,0 +1,2399 @@
+beginState: s32'dmy'
+  sprite: s32'null', 1
+  endState: 
+
+beginState: s32'ino_5s_hatudo'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown458: 2
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 30
+  linkParticleEx: s32'ino_5s_hatudo'
+  endState: 
+
+beginState: s32'FarSlashObjShot'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 2
+    damage: 28
+    Unknown725: 1
+    Unknown731: 1
+    groundCounterHitEffect: (STAGGER)
+    Unknown1028: 0
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    endUpon: 
+  sprite: s32'INE2_00', 2
+  sprite: s32'INE2_00', 2
+  sprite: s32'INE2_01', 2
+  sprite: s32'INE2_02', 2
+  upon: (FRAME_STEP)
+    Unknown2001: 3, s32'CmnActRomanCancel'
+    if: Mem(ACCUMULATOR)
+      hit: 
+      clearUpon: (FRAME_STEP)
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE2_03', 2
+  sprite: s32'INE2_04', 2
+  sprite: s32'INE2_05', 2
+  recoveryState: 
+  clearUpon: (FRAME_STEP)
+  sprite: s32'INE2_06', 2
+  sprite: s32'INE2_07', 2
+  sprite: s32'INE2_08', 2
+  sprite: s32'INE2_09', 2
+  sprite: s32'INE2_10', 2
+  sprite: s32'INE2_11', 2
+  sprite: s32'INE2_12', 2
+  sprite: s32'INE2_13', 2
+  sprite: s32'INE2_14', 2
+  endState: 
+
+beginState: s32'FarSlashObj'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'INE2_00', 2
+  sprite: s32'INE2_00', 2
+  linkParticleEx: s32'ino_5s_atk'
+  sprite: s32'INE2_01', 2
+  sprite: s32'INE2_02_rx', 2
+  sprite: s32'INE2_03', 2
+  sprite: s32'INE2_04_rx', 2
+  sprite: s32'INE2_05', 2
+  sprite: s32'INE2_06', 2
+  sprite: s32'INE2_07', 2
+  sprite: s32'INE2_08', 2
+  sprite: s32'INE2_09', 2
+  sprite: s32'INE2_10', 2
+  sprite: s32'INE2_11', 2
+  sprite: s32'INE2_12', 2
+  sprite: s32'INE2_13', 2
+  sprite: s32'INE2_14', 2
+  endState: 
+
+beginState: s32'ino_5s_hatudo6s'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown458: 2
+    Unknown457: (PARENT)
+    Unknown164: 30000
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 30
+  linkParticleEx: s32'ino_5s_hatudo'
+  endState: 
+
+beginState: s32'FarSlashObjShot6s'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 2
+    damage: 28
+    Unknown725: 1
+    Unknown731: 1
+    groundCounterHitEffect: (STAGGER)
+    Unknown1028: 0
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    endUpon: 
+  sprite: s32'INE2_6s_00', 2
+  sprite: s32'INE2_6s_00', 2
+  sprite: s32'INE2_6s_01', 2
+  sprite: s32'INE2_6s_02', 2
+  upon: (FRAME_STEP)
+    Unknown2001: 3, s32'CmnActRomanCancel'
+    if: Mem(ACCUMULATOR)
+      hit: 
+      clearUpon: (FRAME_STEP)
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE2_6s_03', 2
+  sprite: s32'INE2_6s_04', 2
+  sprite: s32'INE2_6s_05', 2
+  recoveryState: 
+  clearUpon: (FRAME_STEP)
+  sprite: s32'INE2_6s_06', 2
+  sprite: s32'INE2_6s_07', 2
+  sprite: s32'INE2_6s_08', 2
+  sprite: s32'INE2_6s_09', 2
+  sprite: s32'INE2_6s_10', 2
+  sprite: s32'INE2_6s_11', 2
+  sprite: s32'INE2_6s_12', 2
+  sprite: s32'INE2_6s_13', 2
+  sprite: s32'INE2_6s_14', 2
+  endState: 
+
+beginState: s32'FarSlashObj6s'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'INE2_6s_00', 2
+  sprite: s32'INE2_6s_00', 2
+  sprite: s32'INE2_6s_01', 2
+  sprite: s32'INE2_6s_02_rx', 2
+  sprite: s32'INE2_6s_03_rx', 2
+  sprite: s32'INE2_6s_04_rx', 2
+  sprite: s32'INE2_6s_05_rx', 2
+  sprite: s32'INE2_6s_06', 2
+  sprite: s32'INE2_6s_07', 2
+  sprite: s32'INE2_6s_08', 2
+  sprite: s32'INE2_6s_09', 2
+  sprite: s32'INE2_6s_10', 2
+  sprite: s32'INE2_6s_11', 2
+  sprite: s32'INE2_6s_12', 2
+  sprite: s32'INE2_6s_13', 2
+  sprite: s32'INE2_6s_14', 2
+  endState: 
+
+beginState: s32'FarSlashObjEff6s'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    upon: (AFTER_EXIT)
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
+      endUpon: 
+    Unknown164: 30000
+    endUpon: 
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  linkParticleEx: s32'ino_5s_atk'
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  sprite: s32'null', 2
+  endState: 
+
+beginState: s32'DustObj_hatudo'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown458: 2
+    upon: (AFTER_EXIT)
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  playCharacterSFX: s32'5'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_dust_onpa'
+  physicsXImpulse: 21000
+  physicsYImpulse: 7875
+  sprite: s32'null', 3
+  setObjectSize: 1120
+  sprite: s32'null', 3
+  setObjectSize: 1240
+  sprite: s32'null', 3
+  setObjectSize: 1360
+  sprite: s32'null', 2
+  setObjectSize: 1440
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'null', 2
+  setObjectSize: 1500
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'null', 2
+  setObjectSize: 1560
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'null', 2
+  setObjectSize: 1620
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'null', 2
+  setObjectSize: 1680
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'null', 2
+  setObjectSize: 1740
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  endState: 
+
+beginState: s32'DustObjShot'
+  upon: (IMMEDIATE)
+    Unknown243: 
+    attackLevel: 2
+    damage: 25
+    setProration: 80
+    Unknown1028: 2
+    Unknown731: 1
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown458: 2
+    endUpon: 
+  sprite: s32'null', 6
+  sprite: s32'INE9_01', 3
+  physicsXImpulse: 21000
+  physicsYImpulse: 7875
+  upon: (FRAME_STEP)
+    Unknown2001: 3, s32'CmnActRomanCancel'
+    if: Mem(ACCUMULATOR)
+      hit: 
+      clearUpon: (FRAME_STEP)
+      linkObjPositionTo: (NULL)
+      Unknown456: (NULL)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE9_02', 3
+  setObjectSize: 1120
+  sprite: s32'INE9_03', 3
+  setObjectSize: 1240
+  sprite: s32'INE9_04', 3
+  setObjectSize: 1360
+  sprite: s32'INE9_05', 2
+  setObjectSize: 1440
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  recoveryState: 
+  clearUpon: (FRAME_STEP)
+  sprite: s32'INE9_05', 2
+  setObjectSize: 1500
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_06', 2
+  setObjectSize: 1560
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_06', 2
+  setObjectSize: 1620
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_07', 2
+  setObjectSize: 1680
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_07', 2
+  setObjectSize: 1740
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  endState: 
+
+beginState: s32'DustObj'
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown458: 2
+  sprite: s32'null', 3
+  sprite: s32'null', 3
+  sprite: s32'INE9_01', 3
+  physicsXImpulse: 21000
+  physicsYImpulse: 7875
+  sprite: s32'INE9_02', 3
+  setObjectSize: 1120
+  sprite: s32'INE9_03', 3
+  setObjectSize: 1240
+  sprite: s32'INE9_04', 3
+  setObjectSize: 1360
+  sprite: s32'INE9_05', 2
+  setObjectSize: 1440
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_05', 2
+  setObjectSize: 1500
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_06', 2
+  setObjectSize: 1560
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_06', 2
+  setObjectSize: 1620
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_07', 2
+  setObjectSize: 1680
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  sprite: s32'INE9_07', 2
+  setObjectSize: 1740
+  Unknown111: 75
+  multiplyYVelocityByPercent: 75
+  endState: 
+
+beginState: s32'BChemiLaser'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 4
+    Unknown1028: 2
+    damage: 35
+    setAttachOpponent: 1
+    untechableTime: 22
+    hitAirPushbackX: 14000
+    hitAirPushbackY: 10500
+    Unknown731: 1
+    upon: (HIT_OR_GUARD)
+      deactivateObjectFromSlot: (PLAYER), (SELF)
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 3
+  Unknown458: 3
+  upon: (HIT_OR_BLOCK)
+    physicsYImpulse: 14000
+    physicsXImpulse: 0
+    setGravity: 1400
+    endUpon: 
+  upon: 24
+    physicsYImpulse: 7000
+    physicsXImpulse: 0
+    setGravity: 700
+    endUpon: 
+  sprite: s32'null', 2
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'INE1_00', 2
+  Unknown458: 0
+  linkParticleEx: s32'ino_chemical_yoko'
+  createObject2: s32'ChemiYoko_Nokosi', 100
+  Unknown2271: 1
+  physicsXImpulse: 10500
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE1_01', 2
+  hit: 
+  sprite: s32'INE1_02', 2
+  sprite: s32'INE1_03', 2
+  sprite: s32'INE1_04', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_04', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  hitAirPushbackY: 17500
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  recoveryState: 
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  recoveryState: 
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  endState: 
+
+beginState: s32'ChemiYoko_Nokosi'
+  upon: (IMMEDIATE)
+    Unknown294: 1
+    Unknown1769: 1
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 30
+  linkParticleEx: s32'ino_chemikcal_yoko_nokosi'
+  endState: 
+
+beginState: s32'CChemiLaser'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 2
+    Unknown1028: 2
+    damage: 40
+    setAttachOpponent: 1
+    untechableTime: 24
+    hitAirPushbackX: 14000
+    hitAirPushbackY: 10500
+    Unknown1108: 90
+    Unknown731: 1
+    endUpon: 
+  sprite: s32'null', 5
+  Unknown458: 3
+  upon: (HIT_OR_BLOCK)
+    physicsXImpulse: 4375
+    physicsYImpulse: 14000
+    setGravity: 787
+    endUpon: 
+  upon: 24
+    physicsXImpulse: 4375
+    physicsYImpulse: 14000
+    setGravity: 787
+    endUpon: 
+  sprite: s32'INE1_29', 2
+  Unknown458: 0
+  linkParticleEx: s32'ino_chemical_tate'
+  createObject2: s32'ChemiTate_Nokosi', 100
+  Unknown2271: 1
+  physicsXImpulse: 7875
+  physicsYImpulse: 0
+  setGravity: 0
+  setObjectSize: 2000
+  Unknown156: 1000
+  sprite: s32'INE1_19', 2
+  hit: 
+  sprite: s32'INE1_20', 2
+  setObjectSize: 1000
+  sprite: s32'INE1_21', 2
+  sprite: s32'INE1_22', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_22', 1
+  hitAirPushbackY: 14000
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  hitAirPushbackY: 17500
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  recoveryState: 
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  endState: 
+
+beginState: s32'ChemiTate_Nokosi'
+  upon: (IMMEDIATE)
+    Unknown294: 1
+    Unknown1769: 1
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 30
+  linkParticleEx: s32'ino_chemical_tate_nokosi'
+  endState: 
+
+beginState: s32'AddChemiLaser'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 0
+    Unknown1028: 2
+    damage: 25
+    setAttachOpponent: 1
+    untechableTime: 40
+    hitAirPushbackX: 7000
+    hitAirPushbackY: 10500
+    hitPushbackX: 50
+    Unknown1108: 90
+    Unknown731: 1
+    linkParticleEx: s32'ino_chemical_tate'
+    createObject2: s32'ChemiTate_Nokosi', 100
+    Unknown2271: 1
+    Unknown165: 180000
+    endUpon: 
+  sprite: s32'INE1_29', 2
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE1_19', 2
+  hit: 
+  sprite: s32'INE1_20', 2
+  sprite: s32'INE1_21', 2
+  sprite: s32'INE1_22', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_22', 1
+  hitAirPushbackY: -14000
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  hitAirPushbackY: -17500
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  recoveryState: 
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  sprite: s32'INE1_23', 1
+  Unknown158: 110
+  Unknown190: 90
+  endState: 
+
+beginState: s32'Onpu'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 0
+    riscPlus: 3
+    damage: 12
+    setAttachOpponent: 1
+    Unknown731: 1
+    linkParticleEx: s32'ino_onpu_core'
+    Unknown58: 1
+    setThrowRange: 0
+    createObject2: s32'OnpuHige', 100
+    Unknown1602: 1
+    upon: (HIT_OR_GUARD)
+      Unknown14: s32'hit'
+      clearUpon: (HIT_OR_GUARD)
+      storeValue: Mem(45), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(0)
+        storeValue: Mem(46), Val(1)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(32)
+        storeValue: Mem(46), Val(2)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(44)
+        storeValue: Mem(46), Val(3)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(56)
+        storeValue: Mem(46), Val(4)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(68)
+        storeValue: Mem(46), Val(5)
+        endIf: 
+      Unknown32: s32'OnpuHige'
+      Unknown1603: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 8
+  Unknown458: 3
+  sprite: s32'INE0_00', 3
+  Unknown458: 0
+  hit: 
+  hitPushbackX: 30
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    physicsXImpulse: 12250
+    endIf: 
+  else: 
+    physicsXImpulse: 3500
+    endElse: 
+  upon: 42
+    checkInput: (INPUT_UP_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(1)
+      endIf: 
+    checkInput: (INPUT_DOWN_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(2)
+      endIf: 
+    endUpon: 
+  upon: (FRAME_STEP)
+    ifNot: Mem(45)
+      checkInput: (INPUT_ANY_UP)
+      if: Mem(ACCUMULATOR)
+        ifOperation: (IS_EQUAL), Mem(115), Val(1)
+          addVelocityY: 280
+          endIf: 
+        else: 
+          addVelocityY: 350
+          endElse: 
+        endIf: 
+      checkInput: (INPUT_ANY_DOWN)
+      if: Mem(ACCUMULATOR)
+        ifOperation: (IS_EQUAL), Mem(115), Val(1)
+          addVelocityY: -280
+          endIf: 
+        else: 
+          addVelocityY: -350
+          endElse: 
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(1)
+        addVelocityY: 4480
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(2)
+        addVelocityY: -4480
+        endIf: 
+      storeValue: Mem(48), Val(0)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  Unknown3: 
+  setMarker: s32'loop'
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1330
+  Unknown156: 730
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  addVelocityX: 1750
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 730
+  Unknown156: 1330
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    addVelocityX: 875
+    endIf: 
+  else: 
+    addVelocityX: 1750
+    endElse: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'hit'
+  sprite: s32'INE0_00', 2
+  Unknown338: 0
+  createObject2: s32'OnpuHaretsu', 100
+  resetVelocity: 1
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  Unknown3: 
+  Unknown708: 18, 3
+  Unknown1110: 1
+  hitPushbackX: 40
+  attackLevel: 1
+  riscPlus: 3
+  damage: 12
+  setAttachOpponent: 1
+  Unknown13: s32'lv1', 9, 2, 46, 0, 1
+  Unknown13: s32'lv2', 9, 2, 46, 0, 2
+  Unknown13: s32'lv3', 9, 2, 46, 0, 3
+  Unknown13: s32'lv4', 9, 2, 46, 0, 4
+  Unknown13: s32'lv5', 9, 2, 46, 0, 5
+  setMarker: s32'lv5'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv4'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv3'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv2'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3500
+  sprite: s32'INE0_00', 2
+  setObjectSize: 3800
+  setMarker: s32'lv1'
+  sprite: s32'INE0_00', 1
+  recoveryState: 
+  deactivateObj: (SELF)
+  endState: 
+
+beginState: s32'Onpu2'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 0
+    riscPlus: 3
+    damage: 12
+    setAttachOpponent: 1
+    Unknown731: 1
+    linkParticleEx: s32'ino_onpu_core'
+    Unknown58: 1
+    setThrowRange: 0
+    createObject2: s32'OnpuHige2', 100
+    Unknown1602: 1
+    upon: (HIT_OR_GUARD)
+      Unknown14: s32'hit'
+      clearUpon: (HIT_OR_GUARD)
+      storeValue: Mem(45), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(0)
+        storeValue: Mem(46), Val(1)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(32)
+        storeValue: Mem(46), Val(2)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(44)
+        storeValue: Mem(46), Val(3)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(56)
+        storeValue: Mem(46), Val(4)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(68)
+        storeValue: Mem(46), Val(5)
+        endIf: 
+      Unknown32: s32'OnpuHige2'
+      Unknown1603: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 8
+  Unknown458: 3
+  sprite: s32'INE0_00', 3
+  Unknown458: 0
+  hit: 
+  hitPushbackX: 30
+  ifOperation: (IS_EQUAL), Mem(115), Val(0)
+    physicsXImpulse: 12250
+    endIf: 
+  else: 
+    physicsXImpulse: 3500
+    endElse: 
+  physicsYImpulse: 8000
+  upon: 42
+    checkInput: (INPUT_UP_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(1)
+      endIf: 
+    checkInput: (INPUT_DOWN_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(2)
+      endIf: 
+    endUpon: 
+  upon: (FRAME_STEP)
+    ifNot: Mem(45)
+      checkInput: (INPUT_ANY_UP)
+      if: Mem(ACCUMULATOR)
+        addVelocityY: 280
+        endIf: 
+      checkInput: (INPUT_ANY_DOWN)
+      if: Mem(ACCUMULATOR)
+        addVelocityY: -280
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(1)
+        addVelocityY: 4480
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(2)
+        addVelocityY: -4480
+        endIf: 
+      storeValue: Mem(48), Val(0)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  Unknown3: 
+  setMarker: s32'loop'
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1330
+  Unknown156: 730
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  addVelocityX: 1750
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 730
+  Unknown156: 1330
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    addVelocityX: 875
+    endIf: 
+  else: 
+    addVelocityX: 1750
+    endElse: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'hit'
+  sprite: s32'INE0_00', 2
+  Unknown338: 0
+  createObject2: s32'OnpuHaretsu', 100
+  resetVelocity: 1
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  Unknown3: 
+  Unknown708: 18, 3
+  Unknown1110: 1
+  hitPushbackX: 40
+  attackLevel: 1
+  riscPlus: 3
+  damage: 12
+  setAttachOpponent: 1
+  Unknown13: s32'lv1', 9, 2, 46, 0, 1
+  Unknown13: s32'lv2', 9, 2, 46, 0, 2
+  Unknown13: s32'lv3', 9, 2, 46, 0, 3
+  Unknown13: s32'lv4', 9, 2, 46, 0, 4
+  Unknown13: s32'lv5', 9, 2, 46, 0, 5
+  setMarker: s32'lv5'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv4'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv3'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv2'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3500
+  sprite: s32'INE0_00', 2
+  setObjectSize: 3800
+  setMarker: s32'lv1'
+  sprite: s32'INE0_00', 1
+  recoveryState: 
+  deactivateObj: (SELF)
+  endState: 
+
+beginState: s32'Onpu3'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 0
+    riscPlus: 3
+    damage: 12
+    setAttachOpponent: 1
+    Unknown731: 1
+    linkParticleEx: s32'ino_onpu_core'
+    Unknown58: 1
+    setThrowRange: 0
+    createObject2: s32'OnpuHige2', 100
+    Unknown1602: 1
+    upon: (HIT_OR_GUARD)
+      Unknown14: s32'hit'
+      clearUpon: (HIT_OR_GUARD)
+      storeValue: Mem(45), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(0)
+        storeValue: Mem(46), Val(1)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(32)
+        storeValue: Mem(46), Val(2)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(44)
+        storeValue: Mem(46), Val(3)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(56)
+        storeValue: Mem(46), Val(4)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(68)
+        storeValue: Mem(46), Val(5)
+        endIf: 
+      Unknown32: s32'OnpuHige2'
+      Unknown1603: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 8
+  Unknown458: 3
+  sprite: s32'INE0_00', 3
+  Unknown458: 0
+  hit: 
+  hitPushbackX: 30
+  ifOperation: (IS_EQUAL), Mem(115), Val(0)
+    physicsXImpulse: 12250
+    endIf: 
+  else: 
+    physicsXImpulse: 3500
+    endElse: 
+  physicsYImpulse: 14000
+  upon: 42
+    checkInput: (INPUT_UP_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(1)
+      endIf: 
+    checkInput: (INPUT_DOWN_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(2)
+      endIf: 
+    endUpon: 
+  upon: (FRAME_STEP)
+    ifNot: Mem(45)
+      checkInput: (INPUT_ANY_UP)
+      if: Mem(ACCUMULATOR)
+        addVelocityY: 280
+        endIf: 
+      checkInput: (INPUT_ANY_DOWN)
+      if: Mem(ACCUMULATOR)
+        addVelocityY: -280
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(1)
+        addVelocityY: 4480
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(2)
+        addVelocityY: -4480
+        endIf: 
+      storeValue: Mem(48), Val(0)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  Unknown3: 
+  setMarker: s32'loop'
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1330
+  Unknown156: 730
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  addVelocityX: 1750
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 730
+  Unknown156: 1330
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    addVelocityX: 875
+    endIf: 
+  else: 
+    addVelocityX: 1750
+    endElse: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'hit'
+  sprite: s32'INE0_00', 2
+  Unknown338: 0
+  createObject2: s32'OnpuHaretsu', 100
+  resetVelocity: 1
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  Unknown3: 
+  Unknown708: 18, 3
+  Unknown1110: 1
+  hitPushbackX: 40
+  attackLevel: 1
+  riscPlus: 3
+  damage: 12
+  setAttachOpponent: 1
+  Unknown13: s32'lv1', 9, 2, 46, 0, 1
+  Unknown13: s32'lv2', 9, 2, 46, 0, 2
+  Unknown13: s32'lv3', 9, 2, 46, 0, 3
+  Unknown13: s32'lv4', 9, 2, 46, 0, 4
+  Unknown13: s32'lv5', 9, 2, 46, 0, 5
+  setMarker: s32'lv5'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv4'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv3'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv2'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3500
+  sprite: s32'INE0_00', 2
+  setObjectSize: 3800
+  setMarker: s32'lv1'
+  sprite: s32'INE0_00', 1
+  recoveryState: 
+  deactivateObj: (SELF)
+  endState: 
+
+beginState: s32'OnpuHige'
+  sprite: s32'null', 9
+  Unknown448: s32'ino_onpu_hatudo', 100
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown457: (PARENT)
+  createObject2: s32'Onp_Nokosi', 100
+  linkParticleEx: s32'ino_onpu_hige_Start00'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_onpu_hige_Start01'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_onpu_hige_start02'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_onpu_hige'
+  endState: 
+
+beginState: s32'OnpuHige2'
+  sprite: s32'null', 9
+  Unknown448: s32'ino_onpu_hatudo', 100
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown457: (PARENT)
+  createObject2: s32'Onp_Nokosi', 100
+  linkParticleEx: s32'ino_onpu_hige_Start00'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_onpu_hige_Start01'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_onpu_hige_start02'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_onpu_hige'
+  endState: 
+
+beginState: s32'OnpuHige3'
+  sprite: s32'null', 9
+  Unknown448: s32'ino_onpu_hatudo', 100
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  Unknown457: (PARENT)
+  createObject2: s32'Onp_Nokosi', 100
+  linkParticleEx: s32'ino_onpu_hige_Start00'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_onpu_hige_Start01'
+  sprite: s32'null', 3
+  linkParticleEx: s32'ino_onpu_hige_start02'
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_onpu_hige'
+  endState: 
+
+beginState: s32'Onp_Nokosi'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    endUpon: 
+  setMarker: s32'loop'
+  sprite: s32'null', 5
+  Unknown448: s32'ino_onpu_nokosi', 100
+  goToMarker: s32'loop'
+  endState: 
+
+beginState: s32'OnpuHaretsu'
+  sprite: s32'null', 50
+  linkObjPositionTo: (PARENT)
+  Unknown456: (PARENT)
+  linkParticleEx: s32'ino_onpu_hit'
+  endState: 
+
+beginState: s32'MadogiwaObj'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    groundHitEffect: (AIR_FACE_UP)
+    Unknown1110: 1
+    attackLevel: 2
+    Unknown1028: 2
+    damage: 50
+    if: Mem(115)
+      damage: 62
+      Unknown1177: 1
+      Unknown1179: 1
+      Unknown1086: 50
+      Unknown1165: s32'MadogiwaBurst'
+      endIf: 
+    riscPlus: 10
+    setProration: 80
+    untechableTime: 120
+    hitAirPushbackX: 17500
+    stunValue: 0
+    Unknown731: 1
+    if: Mem(126)
+      guardType: (NONE)
+      endIf: 
+    createObject2: s32'madogiwaEff', 100
+    createObject2: s32'Desparate_Hatsudo', 100
+    upon: (HIT)
+      if: Mem(115)
+        ifNot: Mem(45)
+          storeValue: Mem(45), Val(1)
+          Unknown2130: 5000
+          endIf: 
+        endIf: 
+      endUpon: 
+    endUpon: 
+  sprite: s32'INE7_00', 8
+  physicsXImpulse: 21000
+  hit: 
+  if: Mem(84)
+    Unknown2159: 5
+    endIf: 
+  else: 
+    Unknown2159: 3
+    endElse: 
+  sprite: s32'INE7_01', 3
+  Unknown111: 90
+  hit: 
+  sprite: s32'INE7_02', 3
+  Unknown111: 90
+  hit: 
+  sprite: s32'INE7_03', 3
+  Unknown111: 80
+  hit: 
+  sprite: s32'INE7_04', 3
+  Unknown111: 80
+  hit: 
+  sprite: s32'INE7_05', 3
+  Unknown111: 80
+  sprite: s32'INE7_06', 3
+  Unknown111: 80
+  sprite: s32'INE7_07', 3
+  Unknown111: 80
+  sprite: s32'INE7_08', 3
+  Unknown111: 80
+  sprite: s32'INE7_08', 20
+  endState: 
+
+beginState: s32'Desparate_Hatsudo'
+  sprite: s32'null', 60
+  Unknown456: (PARENT)
+  linkParticleEx: s32'ino_desperate_hatudo'
+  endState: 
+
+beginState: s32'GenkaiObj'
+  upon: (IMMEDIATE)
+    Unknown245: 
+    groundHitEffect: (AIR_FACE_UP)
+    attackLevel: 3
+    Unknown1028: 2
+    damage: 50
+    if: Mem(84)
+      damage: 40
+      endIf: 
+    riscPlus: 14
+    stunValue: 0
+    Unknown731: 1
+    createObject2: s32'genkaieff', 100
+    Unknown2271: 1
+    Unknown294: 1
+    endUpon: 
+  sprite: s32'INE4_44', 8
+  hitUnchecked: 
+  sprite: s32'INE4_40', 1
+  setObjectSize: 500
+  sprite: s32'INE4_40', 1
+  Unknown189: 50
+  sprite: s32'INE4_40', 1
+  Unknown189: 50
+  sprite: s32'INE4_40', 1
+  hit: 
+  Unknown189: 50
+  sprite: s32'INE4_40', 1
+  Unknown189: 50
+  sprite: s32'INE4_41', 1
+  Unknown189: 50
+  if: Mem(84)
+    hit: 
+    endIf: 
+  sprite: s32'INE4_41', 1
+  Unknown189: 50
+  sprite: s32'INE4_41', 1
+  Unknown189: 50
+  if: Mem(84)
+    hit: 
+    endIf: 
+  sprite: s32'INE4_41', 1
+  hit: 
+  Unknown189: 50
+  sprite: s32'INE4_42', 1
+  Unknown189: 50
+  sprite: s32'INE4_42', 1
+  Unknown189: 50
+  sprite: s32'INE4_42', 1
+  Unknown189: 50
+  sprite: s32'INE4_43', 1
+  Unknown189: 50
+  sprite: s32'INE4_43', 1
+  Unknown189: 50
+  sprite: s32'INE4_43', 1
+  Unknown189: 50
+  sprite: s32'INE4_44', 1
+  Unknown189: 50
+  sprite: s32'INE4_44', 1
+  Unknown189: 50
+  sprite: s32'INE4_44', 2
+  Unknown189: 50
+  sprite: s32'null', 50
+  recoveryState: 
+  endState: 
+
+beginState: s32'204guitar_bake'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_guitar_204bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'233guitar_bake'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_guitar_233bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'252gen'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_guitar_252gen'
+    Unknown466: (PARENT)
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'253guitar_bake'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_guitar_253bake'
+    endUpon: 
+  sprite: s32'null', 30
+  endState: 
+
+beginState: s32'412gen_start'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_412_start'
+    Unknown466: (PARENT)
+    endUpon: 
+  sprite: s32'null', 10
+  endState: 
+
+beginState: s32'412gen'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_412gen'
+    Unknown466: (PARENT)
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'413gen'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown457: (PARENT)
+    linkParticleEx: s32'ino_413gen'
+    Unknown466: (PARENT)
+    endUpon: 
+  sprite: s32'null', 50
+  endState: 
+
+beginState: s32'taiboku_atk'
+  upon: (IMMEDIATE)
+    addPositionX: 30000
+    linkParticleEx: s32'ino_taiboku'
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 4
+  sprite: s32'null', 1
+  Unknown456: (PARENT)
+  sprite: s32'null', 24
+  Unknown448: s32'ino_taiboku_dust', 100
+  endState: 
+
+beginState: s32'heart_atk00'
+  upon: (IMMEDIATE)
+    addPositionX: 120000
+    addPositionY: 170000
+    linkObjPositionTo: (PARENT)
+    endUpon: 
+  sprite: s32'null', 30
+  Unknown448: s32'ino_atk_kiss', 100
+  endState: 
+
+beginState: s32'guitarhiteff'
+  upon: (IMMEDIATE)
+    addPositionX: 240000
+    setObjectSize: 800
+    Unknown1769: 1
+    endUpon: 
+  sprite: s32'null', 30
+  linkParticleEx: s32'ino_guitarhit'
+  endState: 
+
+beginState: s32'Neoblitz_atk'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'ino_neoblitz'
+    endUpon: 
+  sprite: s32'null', 80
+  endState: 
+
+beginState: s32'310gen'
+  upon: (IMMEDIATE)
+    linkObjPositionTo: (PARENT)
+    Unknown456: (PARENT)
+    Unknown457: (PARENT)
+    setObjectWidth: 900
+    endUpon: 
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen'
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen_01'
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen_02'
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen_03'
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen_04'
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen_05'
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_310gen_06'
+  sprite: s32'null', 10
+  linkParticleEx: s32'ino_310gen_07'
+  sprite: s32'null', 2
+  linkParticleEx: s32'ino_310gen_08'
+  sprite: s32'null', 2
+  linkParticleEx: s32'ino_310gen_09'
+  sprite: s32'null', 5
+  linkParticleEx: s32'ino_310gen10'
+  sprite: s32'null', 5
+  linkParticleEx: s32'ino_310gen11'
+  sprite: s32'null', 5
+  linkParticleEx: s32'ino_310gen12'
+  sprite: s32'null', 5
+  linkParticleEx: s32'ino_310gen13'
+  sprite: s32'null', 5
+  linkParticleEx: s32'ino_310gen14'
+  endState: 
+
+beginState: s32'genkaieff'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    Unknown1769: 1
+    linkParticleEx: s32'ino_fortissimo'
+    addPositionY: -150000
+    endUpon: 
+  sprite: s32'null', 30
+  sprite: s32'null', 60
+  Unknown1769: 0
+  endState: 
+
+beginState: s32'madogiwaEff'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    Unknown1769: 1
+    linkParticleEx: s32'ino_desperate_atk'
+    linkObjPositionTo: (PARENT)
+    endUpon: 
+  sprite: s32'null', 15
+  sprite: s32'null', 60
+  Unknown456: (PARENT)
+  Unknown1769: 0
+  endState: 
+
+beginState: s32'madogiwa_kiss'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    addPositionY: 300000
+    addPositionX: 210000
+    endUpon: 
+  sprite: s32'null', 60
+  Unknown448: s32'ino_madogiwa_kiss', 100
+  endState: 
+
+beginState: s32'kyogen_tameEff'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    linkObjPositionTo: (PLAYER)
+    Unknown35: 23, s32'End'
+    addPositionY: 300000
+    endUpon: 
+  setMarker: s32'Loop'
+  sprite: s32'null', 15
+  Unknown448: s32'ino_kyogen_tame', 100
+  goToMarker: s32'Loop'
+  setMarker: s32'End'
+  sprite: s32'null', 1
+  endState: 
+
+beginState: s32'InoTojoEff00'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    endUpon: 
+  sprite: s32'null', 68
+  linkParticleEx: s32'ino_tojohibana00'
+  endState: 
+
+beginState: s32'InoTojoEff01'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_tojohibana01'
+  endState: 
+
+beginState: s32'InoTojoEff02'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    flipDirection: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_tojohibana02'
+  endState: 
+
+beginState: s32'InoTojoEff03'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    flipDirection: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_tojohibana03'
+  endState: 
+
+beginState: s32'InoTojoEff04'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    flipDirection: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_tojomood'
+  endState: 
+
+beginState: s32'InoTojoBake'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    flipDirection: 
+    endUpon: 
+  sprite: s32'null', 4
+  linkParticleEx: s32'ino_tojobake'
+  sprite: s32'null', 4
+  addPositionX: 10000
+  sprite: s32'null', 4
+  addPositionX: 20000
+  sprite: s32'null', 4
+  addPositionX: 30000
+  sprite: s32'null', 4
+  addPositionX: 40000
+  sprite: s32'null', 3
+  addPositionX: 50000
+  sprite: s32'null', 2
+  addPositionX: 60000
+  sprite: s32'null', 2
+  addPositionX: 80000
+  endState: 
+
+beginState: s32'WinEff_humen00'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_wineff_onp00'
+  endState: 
+
+beginState: s32'WinEff_anim00'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 43
+  linkParticleEx: s32'ino_wineff_anim00'
+  endState: 
+
+beginState: s32'WinEff_anim01'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 46
+  linkParticleEx: s32'ino_wineff_anim01'
+  endState: 
+
+beginState: s32'WinEff_anim02'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 46
+  linkParticleEx: s32'ino_wineff_anim02'
+  endState: 
+
+beginState: s32'WinEff_Fine'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_wineff_fine00'
+  endState: 
+
+beginState: s32'WinEff_spot'
+  upon: (IMMEDIATE)
+    Unknown457: (PARENT)
+    endUpon: 
+  sprite: s32'null', 2147483647
+  linkParticleEx: s32'ino_wineff_spot'
+  endState: 
+
+beginState: s32'BG_ichigeki'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    linkParticleEx: s32'ino_ichigeki_bg'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'BG_tuigeki'
+  upon: (IMMEDIATE)
+    Unknown457: (PLAYER)
+    Unknown456: (PARENT)
+    linkParticleEx: s32'ino_ichigeki_tuigeki'
+    endUpon: 
+  sprite: s32'null', 2147483647
+  endState: 
+
+beginState: s32'ACEvtINO_7A'
+  upon: (IMMEDIATE)
+    Unknown2075: 1
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2121: 0
+    addPositionX: -2000000
+    Unknown40: 
+    Unknown2107: 0x4576656E744A4B4F3037415F303100000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_HEIJI2'
+  Unknown2123: s32'BGM_Sorrow'
+  Unknown2122: 
+  sprite: s32'null', 1
+  Unknown2120: 0x4845494A4932000000000000000000000000000000000000000000000000000000000000
+  Unknown2115: 60, 0
+  sprite: s32'null', 90
+  Unknown2113: 0x4143325F494E4F5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  sprite: s32'null', 60
+  Unknown2107: 0x4576656E74494E4F3037415F303000000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303200000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037415F303100000000000000000000000000000000000000000000
+  Unknown2121: 0
+  resetVelocity: 1
+  Unknown40: 
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303300000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037415F303100000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303400000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74494E4F3037415F303100000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303500000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303600000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037415F303200000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303700000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303800000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037415F303300000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30303900000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037415F303300000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30313000000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3038425F303300000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237415F30313100000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037415F303400000000000000000000000000000000000000000000
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+beginState: s32'ACEvtINO_7B'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, 0, 30
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: 0x536F72726F77000000000000000000000000000000000000000000000000000000000000
+  Unknown2115: 40, 0
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303100000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037425F303100000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303200000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303300000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037425F303200000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303400000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037425F303100000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303500000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303600000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303700000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037425F303200000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303800000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037425F303300000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30303900000000000000000000000000000000001E000000
+  sprite: s32'null', 600
+  Unknown2106: 0x4143325F494E4F5F4237425F30313000000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7441584C3037425F303300000000000000000000000000000000000000000000
+  upon: (FRAME_STEP)
+    ifOperation: (IS_EQUAL), Mem(105), Val(460)
+      Unknown2107: 0x4576656E7441584C3037425F303200000000000000000000000000000000000000000000
+      endIf: 
+    endUpon: 
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4237425F30313100000000000000000000000000000000001E000000
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+beginState: s32'ACEvtINO_8A'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, -16777216, 1
+    Unknown2075: 1
+    Unknown2107: 0x4576656E74494E4F3038415F303100000000000000000000000000000000000000000000
+    Unknown2121: 0
+    flipDirection: 
+    Unknown40: 
+    Unknown2107: 0x4576656E74494E4F3038415F303100000000000000000000000000000000000001000000
+    Unknown2109: 0x636D6E5F6576745F61786C30303000000000000000000000000000000000000041584C00000000000000000000000000000000000000000000000000000000006400000002000000
+    Unknown2121: 2
+    addPositionX: -300000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2123: s32'BGM_Storm'
+  Unknown2123: s32'BGM_SeriousTalk'
+  Unknown2122: 
+  sprite: s32'null', 1
+  Unknown2120: 0x53746F726D00000000000000000000000000000000000000000000000000000000000000
+  Unknown2115: 40, 0
+  sprite: s32'null', 90
+  Unknown2113: 0x4143325F494E4F5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
+  sprite: s32'null', 140
+  Unknown2114: -16777216, 0, 60
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238415F30303200000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238415F30303300000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74494E4F3038415F303200000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238415F30303400000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74534F4C3038415F303700000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238415F30303500000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74494E4F3038415F303300000000000000000000000000000000000000000000
+  sprite: s32'null', 10
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+beginState: s32'ACEvtINO_8B'
+  upon: (IMMEDIATE)
+    Unknown2114: -16777216, 0, 30
+    Unknown2107: 0x4576656E744A4B4F3037425F303100000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E744245443038425F303100000000000000000000000000000000000001000000
+    Unknown2109: 0x636D6E5F6576745F61786C30303000000000000000000000000000000000000043524E53000000000000000000000000000000000000000000000000000000006400000002000000
+    Unknown2121: 2
+    addPositionX: -300000
+    Unknown40: 
+    endUpon: 
+  sprite: s32'null', 1
+  Unknown2120: 0x536572696F757354616C6B00000000000000000000000000000000000000000000000000
+  Unknown2115: 40, 0
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303100000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303200000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E744A4B4F3037425F303100000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303300000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E744A4B4F3037425F303200000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303400000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E744A4B4F3037425F303200000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303500000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74494E4F3038425F303100000000000000000000000000000000000000000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303600000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74494E4F3038425F303200000000000000000000000000000000000001000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303700000000000000000000000000000000001E000000
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303800000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E744A4B4F3037425F303100000000000000000000000000000000000000000000
+  Unknown2115: 0, 120
+  sprite: s32'null', 2147483647
+  Unknown2106: 0x4143325F494E4F5F4238425F30303900000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E74494E4F3038425F303300000000000000000000000000000000000001000000
+  sprite: s32'null', 40
+  Unknown2107: 0x4576656E7441584C3038425F303100000000000000000000000000000000000001000000
+  sprite: s32'null', 10
+  Unknown2114: 0, -16777216, 10
+  sprite: s32'null', 1
+  Unknown2108: 
+  endState: 
+
+beginState: s32'EvemtBChemiLaser'
+  sprite: s32'null', 3
+  physicsYImpulse: 14000
+  physicsXImpulse: 0
+  setGravity: 1400
+  sprite: s32'null', 2
+  physicsYImpulse: 0
+  setGravity: 0
+  sprite: s32'INE1_00', 2
+  linkParticleEx: s32'ino_chemical_yoko'
+  createObject2: s32'ChemiYoko_Nokosi', 100
+  Unknown2271: 1
+  physicsXImpulse: 10500
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE1_01', 2
+  sprite: s32'INE1_02', 2
+  sprite: s32'INE1_03', 2
+  sprite: s32'INE1_04', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_04', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  sprite: s32'INE1_05', 1
+  Unknown190: 110
+  Unknown158: 90
+  endState: 
+
+beginState: s32'FBOnpu'
+  upon: (IMMEDIATE)
+    Unknown244: 
+    attackLevel: 0
+    riscPlus: 3
+    damage: 12
+    setAttachOpponent: 1
+    Unknown731: 1
+    linkParticleEx: s32'ino_onpu_core'
+    Unknown58: 1
+    setThrowRange: 0
+    createObject2: s32'OnpuHige', 100
+    Unknown1602: 1
+    upon: (HIT_OR_GUARD)
+      Unknown14: s32'hit'
+      clearUpon: (HIT_OR_GUARD)
+      storeValue: Mem(45), Val(1)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(0)
+        storeValue: Mem(46), Val(1)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(32)
+        storeValue: Mem(46), Val(2)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(44)
+        storeValue: Mem(46), Val(3)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(56)
+        storeValue: Mem(46), Val(4)
+        endIf: 
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(68)
+        storeValue: Mem(46), Val(5)
+        endIf: 
+      Unknown32: s32'OnpuHige'
+      Unknown1603: 1
+      endUpon: 
+    endUpon: 
+  sprite: s32'null', 8
+  Unknown458: 3
+  sprite: s32'INE0_00', 3
+  Unknown458: 0
+  hit: 
+  hitPushbackX: 30
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    physicsXImpulse: 12250
+    endIf: 
+  else: 
+    physicsXImpulse: 3500
+    endElse: 
+  upon: 42
+    checkInput: (INPUT_UP_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(1)
+      endIf: 
+    checkInput: (INPUT_DOWN_TRG)
+    if: Mem(ACCUMULATOR)
+      storeValue: Mem(48), Val(2)
+      endIf: 
+    endUpon: 
+  upon: (FRAME_STEP)
+    ifNot: Mem(45)
+      checkInput: (INPUT_ANY_UP)
+      if: Mem(ACCUMULATOR)
+        ifOperation: (IS_EQUAL), Mem(115), Val(1)
+          addVelocityY: 280
+          endIf: 
+        else: 
+          addVelocityY: 350
+          endElse: 
+        endIf: 
+      checkInput: (INPUT_ANY_DOWN)
+      if: Mem(ACCUMULATOR)
+        ifOperation: (IS_EQUAL), Mem(115), Val(1)
+          addVelocityY: -280
+          endIf: 
+        else: 
+          addVelocityY: -350
+          endElse: 
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(1)
+        addVelocityY: 4480
+        endIf: 
+      ifOperation: (IS_EQUAL), Mem(48), Val(2)
+        addVelocityY: -4480
+        endIf: 
+      storeValue: Mem(48), Val(0)
+      endIf: 
+    endUpon: 
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  Unknown3: 
+  setMarker: s32'loop'
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1330
+  Unknown156: 730
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1210
+  Unknown156: 810
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1100
+  Unknown156: 900
+  addVelocityX: 1750
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1000
+  Unknown156: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 730
+  Unknown156: 1330
+  sprite: s32'INE0_00', 1
+  setObjectSize: 810
+  Unknown156: 1210
+  sprite: s32'INE0_00', 1
+  setObjectSize: 900
+  Unknown156: 1100
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    addVelocityX: 875
+    endIf: 
+  else: 
+    addVelocityX: 1750
+    endElse: 
+  Unknown3: 
+  goToMarker: s32'loop'
+  setMarker: s32'hit'
+  sprite: s32'INE0_00', 2
+  Unknown338: 0
+  createObject2: s32'OnpuHaretsu', 100
+  resetVelocity: 1
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  sprite: s32'INE0_00', 2
+  Unknown3: 
+  Unknown708: 18, 3
+  Unknown1110: 1
+  hitPushbackX: 40
+  attackLevel: 1
+  riscPlus: 3
+  damage: 12
+  setAttachOpponent: 1
+  Unknown13: s32'lv1', 9, 2, 46, 0, 1
+  Unknown13: s32'lv2', 9, 2, 46, 0, 2
+  Unknown13: s32'lv3', 9, 2, 46, 0, 3
+  Unknown13: s32'lv4', 9, 2, 46, 0, 4
+  Unknown13: s32'lv5', 9, 2, 46, 0, 5
+  setMarker: s32'lv5'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv4'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv3'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3800
+  setMarker: s32'lv2'
+  sprite: s32'INE0_00', 1
+  createObject2: s32'OnpuHaretsu', 100
+  hit: 
+  setObjectSize: 1000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1400
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 1800
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2000
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2300
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2600
+  sprite: s32'INE0_00', 1
+  setObjectSize: 2900
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3200
+  sprite: s32'INE0_00', 1
+  setObjectSize: 3500
+  sprite: s32'INE0_00', 2
+  setObjectSize: 3800
+  setMarker: s32'lv1'
+  sprite: s32'INE0_00', 1
+  recoveryState: 
+  deactivateObj: (SELF)
+  endState: 

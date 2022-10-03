@@ -1,4 +1,4 @@
-startState: s32'obj_ven_ballend_lv2'
+beginState: s32'obj_ven_ballend_lv2'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     endUpon: 
@@ -6,7 +6,7 @@ startState: s32'obj_ven_ballend_lv2'
   linkParticleEx: s32'ven_ballend_lv2'
   endState: 
 
-startState: s32'obj_ven_ballend_lv3'
+beginState: s32'obj_ven_ballend_lv3'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     endUpon: 
@@ -14,7 +14,7 @@ startState: s32'obj_ven_ballend_lv3'
   linkParticleEx: s32'ven_ballend_lv3'
   endState: 
 
-startState: s32'obj_ven_ballend_lv4'
+beginState: s32'obj_ven_ballend_lv4'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     endUpon: 
@@ -22,7 +22,7 @@ startState: s32'obj_ven_ballend_lv4'
   linkParticleEx: s32'ven_ballend_lv4'
   endState: 
 
-startState: s32'Airdust_bake'
+beginState: s32'Airdust_bake'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -32,7 +32,7 @@ startState: s32'Airdust_bake'
   linkParticleEx: s32'ven_airdust_bake'
   endState: 
 
-startState: s32'Dhm01'
+beginState: s32'Dhm01'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -42,7 +42,7 @@ startState: s32'Dhm01'
   linkParticleEx: s32'ven_cue_zanzo1'
   endState: 
 
-startState: s32'Dhm02'
+beginState: s32'Dhm02'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -52,7 +52,7 @@ startState: s32'Dhm02'
   linkParticleEx: s32'ven_cue_zanzo2'
   endState: 
 
-startState: s32'Dhm03'
+beginState: s32'Dhm03'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -62,7 +62,7 @@ startState: s32'Dhm03'
   linkParticleEx: s32'ven_cue_zanzo3'
   endState: 
 
-startState: s32'Warpmodel1'
+beginState: s32'Warpmodel1'
   upon: (IMMEDIATE)
     Unknown456: (PLAYER)
     Unknown457: (PLAYER)
@@ -71,7 +71,7 @@ startState: s32'Warpmodel1'
   linkParticleEx: s32'ven_warp01'
   endState: 
 
-startState: s32'Warpmodel2'
+beginState: s32'Warpmodel2'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -81,17 +81,17 @@ startState: s32'Warpmodel2'
   linkParticleEx: s32'ven_warp02'
   endState: 
 
-startState: s32'Debious_AttackBall'
+beginState: s32'Debious_AttackBall'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 0
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
+    ifOperation: (IS_EQUAL), Mem(115), Val(1)
       attackLevel: 1
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(115), Val(2)
       attackLevel: 2
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+    ifOperation: (IS_EQUAL), Mem(115), Val(3)
       attackLevel: 3
       endIf: 
     Unknown1028: 3
@@ -125,7 +125,7 @@ startState: s32'Debious_AttackBall'
   recoveryState: 
   endState: 
 
-startState: s32'ven_winhandball_screen'
+beginState: s32'ven_winhandball_screen'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkObjPositionTo: (PLAYER)
@@ -135,7 +135,7 @@ startState: s32'ven_winhandball_screen'
   sprite: s32'null', 1000
   endState: 
 
-startState: s32'Debious_hatudo'
+beginState: s32'Debious_hatudo'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -146,12 +146,12 @@ startState: s32'Debious_hatudo'
   endState: 
 
 startSubroutine: s32'BallReset'
-  storeValue: (VARIABLE), 52, (STATIC), 0
-  storeValue: (VARIABLE), 47, (STATIC), 0
-  storeValue: (VARIABLE), 45, (STATIC), 0
-  storeValue: (VARIABLE), 46, (STATIC), 1
-  storeValue: (VARIABLE), 50, (STATIC), 1
-  storeValue: (VARIABLE), 54, (STATIC), 0
+  storeValue: Mem(52), Val(0)
+  storeValue: Mem(47), Val(0)
+  storeValue: Mem(45), Val(0)
+  storeValue: Mem(46), Val(1)
+  storeValue: Mem(50), Val(1)
+  storeValue: Mem(54), Val(0)
   clearUpon: (HIT_OR_BLOCK)
   linkObjPositionTo: (NULL)
   callCmnEfFunc: s32'BallScaleUpdate'
@@ -161,31 +161,31 @@ startSubroutine: s32'BallReset'
 startSubroutine: s32'BallScaleUpdate'
   Unknown191: 0
   setObjectSize: 1000
-  ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 5
-    ifOperation: (IS_EQUAL), (VARIABLE), 70, (STATIC), 0
+  ifOperation: (IS_EQUAL), Mem(69), Val(5)
+    ifOperation: (IS_EQUAL), Mem(70), Val(0)
       setObjectSize: 2000
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 70, (STATIC), 1
+    ifOperation: (IS_EQUAL), Mem(70), Val(1)
       setObjectSize: 2400
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 70, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(70), Val(2)
       setObjectSize: 2800
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 70, (STATIC), 3
+    ifOperation: (IS_EQUAL), Mem(70), Val(3)
       setObjectSize: 3200
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 70, (STATIC), 4
+    ifOperation: (IS_EQUAL), Mem(70), Val(4)
       setObjectSize: 3600
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 70, (STATIC), 5
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(70), Val(5)
       setObjectSize: 4000
       endIf: 
     endIf: 
   endSubroutine: 
 
-startState: s32'Ball'
+beginState: s32'Ball'
   upon: (IMMEDIATE)
-    storeValue: (VARIABLE), 69, (STATIC), 1
+    storeValue: Mem(69), Val(1)
     Unknown244: 
     linkParticleEx: s32'ven_ball'
     attackLevel: 2
@@ -195,7 +195,7 @@ startState: s32'Ball'
     setAttachOpponent: 1
     Unknown1058: 1
     Unknown1165: s32'Ball_Normal'
-    if: (VARIABLE), 116
+    if: Mem(116)
       upon: 9
         riscPlus: 10
         clearUpon: 9
@@ -207,7 +207,7 @@ startState: s32'Ball'
       endIf: 
     callSubroutine: s32'VeBallFlagSet', 0, 2, 0, 0, 0, 0, 0, 0
     upon: (HIT_OR_GUARD)
-      if: (VARIABLE), 47
+      if: Mem(47)
         Unknown2176: 23
         endIf: 
       endUpon: 
@@ -221,155 +221,155 @@ startState: s32'Ball'
     Unknown2188: 1
     upon: (ON_DESTROY)
       deactivateObj: (SELF)
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+      ifOperation: (IS_EQUAL), Mem(69), Val(1)
         Unknown448: s32'ven_ballend', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
+      ifOperation: (IS_EQUAL), Mem(69), Val(2)
         Unknown448: s32'ven_ballend_lv2', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 3
+      ifOperation: (IS_EQUAL), Mem(69), Val(3)
         Unknown448: s32'ven_ballend_lv3', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 4
+      ifOperation: (IS_EQUAL), Mem(69), Val(4)
         Unknown448: s32'ven_ballend_lv4', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 5
+      ifOperation: (IS_EQUAL), Mem(69), Val(5)
         Unknown2242: 0, 180
         Unknown449: s32'ven_ballend_lv4', 100
         endIf: 
       endUpon: 
-    storeValue: (VARIABLE), 47, (STATIC), 480
-    storeValue: (VARIABLE), 45, (STATIC), 1
+    storeValue: Mem(47), Val(480)
+    storeValue: Mem(45), Val(1)
     upon: 25
-      storeValue: (VARIABLE), 47, (STATIC), 600
-      storeValue: (VARIABLE), 48, (STATIC), 2
+      storeValue: Mem(47), Val(600)
+      storeValue: Mem(48), Val(2)
       endUpon: 
     upon: 26
-      storeValue: (VARIABLE), 47, (STATIC), 720
-      storeValue: (VARIABLE), 48, (STATIC), 3
+      storeValue: Mem(47), Val(720)
+      storeValue: Mem(48), Val(3)
       endUpon: 
     upon: 27
-      storeValue: (VARIABLE), 47, (STATIC), 840
-      storeValue: (VARIABLE), 48, (STATIC), 4
+      storeValue: Mem(47), Val(840)
+      storeValue: Mem(48), Val(4)
       endUpon: 
     upon: 28
-      storeValue: (VARIABLE), 47, (STATIC), 960
-      storeValue: (VARIABLE), 48, (STATIC), 5
+      storeValue: Mem(47), Val(960)
+      storeValue: Mem(48), Val(5)
       endUpon: 
     upon: 29
       Unknown14: s32'Homing'
       endUpon: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
+    ifOperation: (IS_EQUAL), Mem(115), Val(1)
       callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
-      storeValue: (VARIABLE), 45, (STATIC), 0
+      storeValue: Mem(45), Val(0)
       resetVelocity: 1
-      storeValue: (VARIABLE), 52, (STATIC), 1
+      storeValue: Mem(52), Val(1)
       linkObjPositionTo: (PLAYER)
       Unknown1165: s32'Ball_StingerAim'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(115), Val(2)
       callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
-      storeValue: (VARIABLE), 45, (STATIC), 0
+      storeValue: Mem(45), Val(0)
       resetVelocity: 1
-      storeValue: (VARIABLE), 52, (STATIC), 1
+      storeValue: Mem(52), Val(1)
       Unknown1165: s32'Ball_CarcassRaidC'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 3
+    ifOperation: (IS_EQUAL), Mem(115), Val(3)
       callSubroutine: s32'VeBallFlagAdd', 0, 128, 0, 0, 0, 0, 0, 0
-      storeValue: (VARIABLE), 45, (STATIC), 0
+      storeValue: Mem(45), Val(0)
       resetVelocity: 1
-      storeValue: (VARIABLE), 52, (STATIC), 1
+      storeValue: Mem(52), Val(1)
       linkObjPositionTo: (PLAYER)
       Unknown2185: 1
       Unknown1165: s32'Ball_CarcassRaidD'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 4
-      storeValue: (VARIABLE), 45, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(115), Val(4)
+      storeValue: Mem(45), Val(0)
       resetVelocity: 1
-      storeValue: (VARIABLE), 52, (STATIC), 1
+      storeValue: Mem(52), Val(1)
       linkObjPositionTo: (PLAYER)
-      storeValue: (VARIABLE), 47, (STATIC), 600
-      storeValue: (VARIABLE), 48, (STATIC), 5
+      storeValue: Mem(47), Val(600)
+      storeValue: Mem(48), Val(5)
       Unknown2241: 0, 2000
       Unknown449: s32'ven_ball_ex_hatudo', 100
       callSubroutine: s32'VeBallFlagAdd', 0, 16384, 0, 0, 0, 0, 0, 0
       Unknown1165: s32'Ball_Gold'
       endIf: 
     upon: (AFTER_EXIT)
-      ifOperation: (IS_EQUAL), (VARIABLE), 52, (STATIC), 1
+      ifOperation: (IS_EQUAL), Mem(52), Val(1)
         linkObjPositionTo: (NULL)
-        storeValue: (VARIABLE), 52, (STATIC), 0
-        storeValue: (VARIABLE), 47, (STATIC), 5
+        storeValue: Mem(52), Val(0)
+        storeValue: Mem(47), Val(5)
         endIf: 
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: 5, (VARIABLE), 45, (VARIABLE), 51
+      ifOperation: 5, Mem(45), Mem(51)
         callSubroutine: s32'VeBallMoveToTarget', 0, 0, 0, 0, 0, 0, 0, 0
         endIf: 
-      if: (VARIABLE), 46
-        ifOperation: (IS_LESSER), (VARIABLE), 18, (STATIC), 100000
-          ifOperation: 16, (VARIABLE), 13, (STATIC), 10
+      if: Mem(46)
+        ifOperation: (IS_LESSER), Mem(18), Val(100000)
+          ifOperation: 16, Mem(13), Val(10)
             Unknown2143: 3, 123
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+        ifOperation: (IS_EQUAL), Mem(69), Val(1)
           createObject2: s32'BallZanzoh', 100
           endIf: 
         endIf: 
       callSubroutine: s32'VeBallCheckCeiling', 0, 0, 0, 0, 0, 0, 0, 0
-      if: (VARIABLE), 47
-        modifyVar: (ADD), (VARIABLE), 47, (STATIC), -1
-        ifNot: (VARIABLE), 47
+      if: Mem(47)
+        modifyVar: (ADD), Mem(47), Val(-1)
+        ifNot: Mem(47)
           Unknown2176: 23
           endIf: 
         endIf: 
-      if: (VARIABLE), 53
-        modifyVar: (ADD), (VARIABLE), 53, (STATIC), -1
+      if: Mem(53)
+        modifyVar: (ADD), Mem(53), Val(-1)
         endIf: 
-      if: (VARIABLE), 54
-        ifNot: (VARIABLE), 53
+      if: Mem(54)
+        ifNot: Mem(53)
           Unknown2176: 23
           endIf: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 2
-        ifNot: (VARIABLE), 50
+      ifOperation: (IS_EQUAL), Mem(48), Val(2)
+        ifNot: Mem(50)
           Unknown14: s32'Lv2'
-          storeValue: (VARIABLE), 48, (STATIC), 0
-          storeValue: (VARIABLE), 69, (STATIC), 2
+          storeValue: Mem(48), Val(0)
+          storeValue: Mem(69), Val(2)
           endIf: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 3
-        ifNot: (VARIABLE), 50
+      ifOperation: (IS_EQUAL), Mem(48), Val(3)
+        ifNot: Mem(50)
           Unknown14: s32'Lv3'
-          storeValue: (VARIABLE), 48, (STATIC), 0
-          storeValue: (VARIABLE), 69, (STATIC), 3
+          storeValue: Mem(48), Val(0)
+          storeValue: Mem(69), Val(3)
           endIf: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 4
-        ifNot: (VARIABLE), 50
+      ifOperation: (IS_EQUAL), Mem(48), Val(4)
+        ifNot: Mem(50)
           Unknown14: s32'Lv4'
-          storeValue: (VARIABLE), 48, (STATIC), 0
-          storeValue: (VARIABLE), 69, (STATIC), 4
+          storeValue: Mem(48), Val(0)
+          storeValue: Mem(69), Val(4)
           endIf: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 5
-        ifNot: (VARIABLE), 50
+      ifOperation: (IS_EQUAL), Mem(48), Val(5)
+        ifNot: Mem(50)
           Unknown14: s32'Lv5'
-          storeValue: (VARIABLE), 48, (STATIC), 0
-          storeValue: (VARIABLE), 69, (STATIC), 5
+          storeValue: Mem(48), Val(0)
+          storeValue: Mem(69), Val(5)
           endIf: 
         endIf: 
-      ifOperation: (IS_GREATER), (VARIABLE), 13, (STATIC), 180
+      ifOperation: (IS_GREATER), Mem(13), Val(180)
         Unknown1603: 1
         endIf: 
-      if: (VARIABLE), 49
-        Unknown60: '0x17000000640000000500000064000000'
-        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 0, (STATIC), 100000
+      if: Mem(49)
+        Unknown60: 0x17000000640000000500000064000000
+        ifOperation: (IS_LESSER_OR_EQUAL), Mem(ACCUMULATOR), Val(100000)
           Unknown178: 5
           Unknown41: 5
-          modifyVar: (ADD), (VARIABLE), 70, (STATIC), 1
+          modifyVar: (ADD), Mem(70), Val(1)
           callCmnEfFunc: s32'BallScaleUpdate'
-          modifyVar: (ADD), (VARIABLE), 53, (STATIC), 90
+          modifyVar: (ADD), Mem(53), Val(90)
           Unknown2320: s32'BishopKyusyu'
           Unknown40: 
           Unknown448: s32'ven_ball_ex_vacuum', 100
@@ -383,7 +383,7 @@ startState: s32'Ball'
     endUpon: 
   sprite: s32'vee2_00', 6
   sprite: s32'vee2_00', 2147483647
-  storeValue: (VARIABLE), 51, (STATIC), 1
+  storeValue: Mem(51), Val(1)
   Unknown3: 
   exitState: 
   setMarker: s32'Lv2'
@@ -433,27 +433,27 @@ startState: s32'Ball'
   exitState: 
   setMarker: s32'Lv5'
   callCmnEfFunc: s32'BallReset'
-  storeValue: (VARIABLE), 54, (STATIC), 1
+  storeValue: Mem(54), Val(1)
   sprite: s32'vee2_00gold', 2147483647
-  if: (VARIABLE), 152
-    storeValue: (VARIABLE), 53, (STATIC), 288
+  if: Mem(152)
+    storeValue: Mem(53), Val(288)
     endIf: 
   else: 
-    storeValue: (VARIABLE), 53, (STATIC), 240
+    storeValue: Mem(53), Val(240)
     endElse: 
   Unknown59: s32'TRP_VEN', 2, 157
-  if: (VARIABLE), 157
-    modifyVar: (ADD), (VARIABLE), 70, (VARIABLE), 157
-    modifyVar: (MUL), (VARIABLE), 157, (STATIC), 90
-    modifyVar: (ADD), (VARIABLE), 53, (VARIABLE), 157
+  if: Mem(157)
+    modifyVar: (ADD), Mem(70), Mem(157)
+    modifyVar: (MUL), Mem(157), Val(90)
+    modifyVar: (ADD), Mem(53), Mem(157)
     callCmnEfFunc: s32'BallScaleUpdate'
     endIf: 
-  storeValue: (VARIABLE), 47, (STATIC), 0
+  storeValue: Mem(47), Val(0)
   Unknown58: 0
   Unknown1602: 2
   Unknown1603: 1
   deactivateObj: (STACK_0)
-  storeValue: (VARIABLE), 46, (STATIC), 0
+  storeValue: Mem(46), Val(0)
   Unknown111: 60
   multiplyYVelocityByPercent: 60
   Unknown1883: 
@@ -461,7 +461,7 @@ startState: s32'Ball'
   callSubroutine: s32'VeBallFlagAdd', 0, 2, 0, 0, 0, 0, 0, 0
   linkParticleEx: s32'ven_ball_ex'
   resetVelocity: 1
-  storeValue: (VARIABLE), 69, (STATIC), 5
+  storeValue: Mem(69), Val(5)
   Unknown2180: 0
   Unknown2181: 0
   Unknown2182: 0
@@ -567,35 +567,35 @@ startState: s32'Ball'
   setMarker: s32'Spin'
   callCmnEfFunc: s32'BallReset'
   callSubroutine: s32'VeBallFlagAdd', 0, 8960, 0, 0, 0, 0, 0, 0
-  storeValue: (VARIABLE), 50, (STATIC), 0
+  storeValue: Mem(50), Val(0)
   Unknown1165: s32'Ball_Spin'
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 69, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(69), Val(3)
     Unknown2234: s32'vee5_01'
     setObjectSize: 1000
     linkParticleEx: s32'ven_ball_lv4'
-    storeValue: (VARIABLE), 69, (STATIC), 4
+    storeValue: Mem(69), Val(4)
     createObject2: s32'obj_ven_ballend_lv4', 100
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(69), Val(2)
     Unknown2234: s32'vee5_01'
     setObjectSize: 1000
     linkParticleEx: s32'ven_ball_lv3'
-    storeValue: (VARIABLE), 69, (STATIC), 3
+    storeValue: Mem(69), Val(3)
     createObject2: s32'obj_ven_ballend_lv3', 100
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
+  ifOperation: (IS_EQUAL), Mem(69), Val(1)
     Unknown2234: s32'vee4_11'
     setObjectSize: 1000
     linkParticleEx: s32'ven_ball_lv2'
-    storeValue: (VARIABLE), 69, (STATIC), 2
+    storeValue: Mem(69), Val(2)
     createObject2: s32'obj_ven_ballend_lv2', 100
     endIf: 
   sprite: s32'keep', 1
-  storeValue: (VARIABLE), 47, (STATIC), 360
+  storeValue: Mem(47), Val(360)
   Unknown58: 0
   Unknown1603: 1
   deactivateObj: (STACK_0)
-  storeValue: (VARIABLE), 46, (STATIC), 0
+  storeValue: Mem(46), Val(0)
   callSubroutine: s32'VeBallPerSpeed', 0, 60, 0, 0, 0, 0, 0, 0
   Unknown1883: 
   sprite: s32'keep', 1
@@ -652,14 +652,14 @@ startState: s32'Ball'
   setMarker: s32'GoldSpin'
   callCmnEfFunc: s32'BallReset'
   callSubroutine: s32'VeBallFlagAdd', 0, 8960, 0, 0, 0, 0, 0, 0
-  storeValue: (VARIABLE), 50, (STATIC), 0
-  storeValue: (VARIABLE), 54, (STATIC), 1
+  storeValue: Mem(50), Val(0)
+  storeValue: Mem(54), Val(1)
   sprite: s32'keep', 1
-  storeValue: (VARIABLE), 47, (STATIC), 0
+  storeValue: Mem(47), Val(0)
   Unknown58: 0
   Unknown1603: 1
   deactivateObj: (STACK_0)
-  storeValue: (VARIABLE), 46, (STATIC), 0
+  storeValue: Mem(46), Val(0)
   callSubroutine: s32'VeBallPerSpeed', 0, 60, 0, 0, 0, 0, 0, 0
   Unknown1883: 
   linkParticleEx: s32'ven_ball_ex_cooldown'
@@ -720,55 +720,55 @@ startState: s32'Ball'
   callCmnEfFunc: s32'BallReset'
   callSubroutine: s32'VeBallFlagDel', 0, -1, 0, 0, 0, 0, 0, 0
   sprite: s32'keep', 120
-  Unknown1997: '0x0100000005000000640000000000000000000000000000000000000000000000D00700000000000064000000'
-  storeValue: (VARIABLE), 49, (STATIC), 1
+  Unknown1997: 0x0100000005000000640000000000000000000000000000000000000000000000D00700000000000064000000
+  storeValue: Mem(49), Val(1)
   Unknown3: 
   exitState: 
   endState: 
 
-startState: s32'BallAura'
+beginState: s32'BallAura'
   sprite: s32'null', 2147483647
   linkObjPositionTo: (PARENT)
   Unknown457: (PARENT)
   linkParticleEx: s32'ven_ballaura'
   endState: 
 
-startState: s32'BallAuraLv2'
+beginState: s32'BallAuraLv2'
   sprite: s32'null', 2147483647
   linkObjPositionTo: (PARENT)
   Unknown457: (PARENT)
   linkParticleEx: s32'ven_ballaura_lv2'
   endState: 
 
-startState: s32'BallAuraLv3'
+beginState: s32'BallAuraLv3'
   sprite: s32'null', 2147483647
   linkObjPositionTo: (PARENT)
   Unknown457: (PARENT)
   linkParticleEx: s32'ven_ballaura_lv3'
   endState: 
 
-startState: s32'BallAuraLv4'
+beginState: s32'BallAuraLv4'
   sprite: s32'null', 2147483647
   linkObjPositionTo: (PARENT)
   Unknown457: (PARENT)
   linkParticleEx: s32'ven_ballaura_lv4'
   endState: 
 
-startState: s32'BallZanzoh'
+beginState: s32'BallZanzoh'
   sprite: s32'null', 5
   linkParticleEx: s32'ven_ball_zanzoh'
   Unknown369: 
   Unknown191: -34
   endState: 
 
-startState: s32'BallDelete'
+beginState: s32'BallDelete'
   sprite: s32'null', 20
   linkParticleEx: s32'ven_ballend'
   Unknown191: -50
   resetVelocity: 1
   endState: 
 
-startState: s32'ThrowBallEffect'
+beginState: s32'ThrowBallEffect'
   upon: (IMMEDIATE)
     upon: (FRAME_STEP)
       callSubroutine: s32'BallMofCheck', 0, 0, 0, 0, 0, 0, 0, 0
@@ -797,7 +797,7 @@ startState: s32'ThrowBallEffect'
   Unknown449: s32'ven_ballin_end', 100
   endState: 
 
-startState: s32'ThrowBallEffectEnd'
+beginState: s32'ThrowBallEffectEnd'
   sprite: s32'null', 30
   linkParticleEx: s32'ven_ballend'
   Unknown2267: 6000
@@ -806,7 +806,7 @@ startState: s32'ThrowBallEffectEnd'
   linkParticleEx: s32'ven_ballend'
   endState: 
 
-startState: s32'DarkAngelBallStart'
+beginState: s32'DarkAngelBallStart'
   sprite: s32'null', 64
   Unknown294: 1
   Unknown457: (PLAYER)
@@ -824,7 +824,7 @@ startState: s32'DarkAngelBallStart'
   sprite: s32'null', 160
   endState: 
 
-startState: s32'DarkAngelBall'
+beginState: s32'DarkAngelBall'
   upon: (IMMEDIATE)
     Unknown245: 
     disableHitstop: 1
@@ -834,7 +834,7 @@ startState: s32'DarkAngelBall'
     damage: 10
     stunValue: 0
     Unknown1137: 28
-    if: (VARIABLE), 115
+    if: Mem(115)
       damage: 12
       Unknown1177: 1
       Unknown1179: 1
@@ -848,7 +848,7 @@ startState: s32'DarkAngelBall'
     hitAirPushbackX: 10500
     riscMinus: 2
     Unknown1045: 4, s32'cmn_hit_sp_renzoku'
-    if: (VARIABLE), 126
+    if: Mem(126)
       guardType: (NONE)
       endIf: 
     Unknown58: 1
@@ -862,9 +862,9 @@ startState: s32'DarkAngelBall'
       Unknown111: 60
       endUpon: 
     upon: (HIT)
-      if: (VARIABLE), 115
-        ifNot: (VARIABLE), 45
-          storeValue: (VARIABLE), 45, (STATIC), 1
+      if: Mem(115)
+        ifNot: Mem(45)
+          storeValue: Mem(45), Val(1)
           Unknown2130: 5000
           endIf: 
         endIf: 
@@ -896,7 +896,7 @@ startState: s32'DarkAngelBall'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'Barrier'
+beginState: s32'Barrier'
   upon: (IMMEDIATE)
     linkParticleEx: s32'ven_barrier'
     linkObjPositionTo: (PLAYER)
@@ -922,7 +922,7 @@ startState: s32'Barrier'
   Unknown191: -50
   endState: 
 
-startState: s32'Neoblitz_atk'
+beginState: s32'Neoblitz_atk'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkObjPositionTo: (PARENT)
@@ -931,7 +931,7 @@ startState: s32'Neoblitz_atk'
   sprite: s32'null', 80
   endState: 
 
-startState: s32'BG_ichigeki'
+beginState: s32'BG_ichigeki'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkParticleEx: s32'ven_ichigeki_bg'
@@ -939,7 +939,7 @@ startState: s32'BG_ichigeki'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'IchigekiBall'
+beginState: s32'IchigekiBall'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkPawnWithAnim: s32'iball', s32'ichigeki_ball'
@@ -948,7 +948,7 @@ startState: s32'IchigekiBall'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'BG_ichigeki_hole'
+beginState: s32'BG_ichigeki_hole'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PLAYER)
     Unknown456: (PLAYER)
@@ -958,35 +958,35 @@ startState: s32'BG_ichigeki_hole'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'ACEvtVEN_7A'
+beginState: s32'ACEvtVEN_7A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_HEIJI2'
   Unknown2123: s32'BGM_Prospect'
   Unknown2122: 
   sprite: s32'null', 1
-  Unknown2120: '0x4845494A4932000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x4845494A4932000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 40, 0
   sprite: s32'null', 90
-  Unknown2113: '0x4143325F56454E5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  Unknown2113: 0x4143325F56454E5F4237415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
   sprite: s32'null', 140
   Unknown2114: -16777216, 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237415F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237415F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237415F303033000000000000000000000000000000000032000000'
+  Unknown2106: 0x4143325F56454E5F4237415F303033000000000000000000000000000000000032000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237415F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237415F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3037415F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F56454E5F4237415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3037415F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F56454E5F4237415F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3037415F303100000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F56454E5F4237415F30303600000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3037415F303100000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F56454E5F4237415F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -994,37 +994,37 @@ startState: s32'ACEvtVEN_7A'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtVEN_7B'
+beginState: s32'ACEvtVEN_7B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, 0, 30
-    Unknown2107: '0x4576656E7456454E3037425F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E7456454E3037425F303100000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
-  Unknown2120: '0x50726F737065637400000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x50726F737065637400000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3037425F303100000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F56454E5F4237425F30303100000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3037425F303100000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F56454E5F4237425F30303100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3037425F303200000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F56454E5F4237425F30303200000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3037425F303200000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F56454E5F4237425F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237425F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237425F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237425F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237425F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3037425F303300000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F56454E5F4237425F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3037425F303300000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F56454E5F4237425F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237425F30303600000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237425F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3037425F303200000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F56454E5F4237425F30303700000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3037425F303200000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F56454E5F4237425F30303700000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237425F30303800000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237425F30303800000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4237425F30303900000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4237425F30303900000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -1032,35 +1032,35 @@ startState: s32'ACEvtVEN_7B'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtVEN_8A'
+beginState: s32'ACEvtVEN_8A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E7456454E3038415F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E7456454E3038415F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_Hint'
   Unknown2123: s32'BGM_SeriousTalk'
   Unknown2122: 
   sprite: s32'null', 1
-  Unknown2120: '0x48696E740000000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x48696E740000000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 90
-  Unknown2113: '0x4143325F56454E5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000'
+  Unknown2113: 0x4143325F56454E5F4238415F3030315F3000000000000000000000000000000080020000680100003C000000B40000003C000000
   sprite: s32'null', 140
   Unknown2114: -16777216, 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4238415F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4238415F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4238415F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4238415F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4238415F30303400000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4238415F30303400000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3038415F303100000000000000000000000000000000000000000000'
-  Unknown2106: '0x4143325F56454E5F4238415F30303500000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3038415F303100000000000000000000000000000000000000000000
+  Unknown2106: 0x4143325F56454E5F4238415F30303500000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2107: '0x4576656E7456454E3038415F303200000000000000000000000000000000000001000000'
-  Unknown2106: '0x4143325F56454E5F4238415F30303600000000000000000000000000000000001E000000'
+  Unknown2107: 0x4576656E7456454E3038415F303200000000000000000000000000000000000001000000
+  Unknown2106: 0x4143325F56454E5F4238415F30303600000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10
@@ -1068,21 +1068,21 @@ startState: s32'ACEvtVEN_8A'
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtVEN_8B'
+beginState: s32'ACEvtVEN_8B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, 0, 30
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E7456454E3038425F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E7456454E3038425F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
-  Unknown2120: '0x536572696F757354616C6B00000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x536572696F757354616C6B00000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4238425F30303100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4238425F30303100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4238425F30303200000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4238425F30303200000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F56454E5F4238425F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F56454E5F4238425F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 10
   sprite: s32'null', 10
   Unknown2114: 0, -16777216, 10

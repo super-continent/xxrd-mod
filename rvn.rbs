@@ -3,10 +3,10 @@ startSubroutine: s32'PreInit'
   endSubroutine: 
 
 startSubroutine: s32'PreInit2nd'
-  storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: (VARIABLE), 61
+  storeValue: Mem(61), Val(0)
+  ifNot: Mem(61)
     Unknown2213: s32'entry_default', s32'', 0
-    storeValue: (VARIABLE), 61, (STATIC), 1
+    storeValue: Mem(61), Val(1)
     endIf: 
   endSubroutine: 
 
@@ -917,32 +917,32 @@ startSubroutine: s32'RoundInit'
   Unknown1286: 45, s32'rvn085_00'
   Unknown1286: 46, s32'rvn305_21'
   Unknown1286: 47, s32'rvn090_00'
-  if: (VARIABLE), 37
-    Unknown1679: s16'vxxx226', s16'c200', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx300', s16'r140c50', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx301', s16'r78', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx305', s16'c160', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx307', s16'c110', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx308', s16'r51c25r51', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx309', s16'r80c80r65', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(37)
+    Unknown1679: s16'vxxx226', s16'c200', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx300', s16'r140c50', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx301', s16'r78', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx305', s16'c160', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx307', s16'c110', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx308', s16'r51c25r51', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx309', s16'r80c80r65', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
-  if: (VARIABLE), 38
-    Unknown1679: s16'vxxx226', s16'c220', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx300', s16'r130c40', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx301', s16'r78', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx305', s16'c120', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx307', s16'c110', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx308', s16'r91', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx309', s16'r80', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(38)
+    Unknown1679: s16'vxxx226', s16'c220', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx300', s16'r130c40', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx301', s16'r78', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx305', s16'c120', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx307', s16'c110', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx308', s16'r91', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx309', s16'r80', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
-  if: (VARIABLE), 39
-    Unknown1679: s16'vxxx226', s16'c190', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx300', s16'r170c40', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx301', s16'r78', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx305', s16'c60', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx307', s16'c110', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx308', s16'r127', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx309', s16'r42c60r140', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(39)
+    Unknown1679: s16'vxxx226', s16'c190', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx300', s16'r170c40', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx301', s16'r78', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx305', s16'c60', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx307', s16'c110', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx308', s16'r127', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx309', s16'r42c60r140', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
   Unknown2012: s32''
   Unknown2025: s32'headonly'
@@ -956,7 +956,7 @@ startSubroutine: s32'RoundInit'
   Unknown2027: 
   Unknown2025: s32'CmnCutSceneDamage_Ichigeki'
   Unknown47: s16'zat'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'Body'
     Unknown2026: s32'Body_lower'
     Unknown2026: s32'Head_low'
@@ -965,24 +965,24 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'Zat_IKparts'
     endIf: 
   Unknown47: s16'fau'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'Body'
     Unknown2026: s32'Body_lower'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'Manpu'
     Unknown2026: s32'Body_lower'
-    if: (VARIABLE), 37
+    if: Mem(37)
       Unknown2026: s32'FauIKParts_Killer'
       endIf: 
-    if: (VARIABLE), 38
+    if: Mem(38)
       Unknown2026: s32'FauIKParts_Rose'
       endIf: 
-    if: (VARIABLE), 39
+    if: Mem(39)
       Unknown2026: s32'FauIKParts_Cute'
       endIf: 
     endIf: 
   Unknown47: s16'ven'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'VenIKBall'
     endIf: 
   Unknown2027: 
@@ -1093,18 +1093,18 @@ startSubroutine: s32'RoundInit'
   Unknown1855: 0, 0
   Unknown1862: 0, 5
   Unknown59: s32'TRP_RVN', 2, 157
-  storeValue: (VARIABLE), 25, (VARIABLE), 157
-  storeValue: (VARIABLE), 3, (VARIABLE), 157
+  storeValue: Mem(RESOURCE_AMOUNT), Mem(157)
+  storeValue: Mem(3), Mem(157)
   endSubroutine: 
 
 startSubroutine: s32'CPUEstimate'
   Unknown1999: 22, s32'NmlAtk5E'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown1581: s32'RC_HomingJumpCombo'
     endIf: 
-  if: (VARIABLE), 213
+  if: Mem(213)
     Unknown1999: 22, s32'ThrowExe'
-    if: (VARIABLE), 0
+    if: Mem(ACCUMULATOR)
       Unknown1581: s32'RC_HiroiThrowExe'
       endIf: 
     endIf: 
@@ -1125,100 +1125,100 @@ startSubroutine: s32'_ThrowGripParamAir'
   endSubroutine: 
 
 startSubroutine: s32'OnFrameStep'
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 1
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(1)
     callCmnEfFunc: s32'DamegeCheck'
-    ifNot: (VARIABLE), 56
-      modifyVar: (ADD), (VARIABLE), 55, (STATIC), 1
+    ifNot: Mem(56)
+      modifyVar: (ADD), Mem(55), Val(1)
       endIf: 
-    if: (VARIABLE), 4
-      storeValue: (VARIABLE), 55, (STATIC), 0
+    if: Mem(4)
+      storeValue: Mem(55), Val(0)
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 11
-      storeValue: (VARIABLE), 3, (STATIC), 10
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(11)
+      storeValue: Mem(3), Val(10)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 600
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(600)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 620
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(620)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 640
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(640)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 660
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(660)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 680
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(680)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 700
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(700)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 720
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(720)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 740
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(740)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 760
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(760)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 780
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(780)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 55, (STATIC), 800
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), -1
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), -1
+    ifOperation: (IS_EQUAL), Mem(55), Val(800)
+      modifyVar: (ADD), Mem(3), Val(-1)
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(-1)
       endIf: 
     endIf: 
-  ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 0
-    storeValue: (VARIABLE), 79, (STATIC), 100
+  ifOperation: (IS_LESSER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(0)
+    storeValue: Mem(79), Val(100)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 1
-    storeValue: (VARIABLE), 79, (STATIC), 103
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(1)
+    storeValue: Mem(79), Val(103)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 2
-    storeValue: (VARIABLE), 79, (STATIC), 106
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(2)
+    storeValue: Mem(79), Val(106)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 3
-    storeValue: (VARIABLE), 79, (STATIC), 109
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
+    storeValue: Mem(79), Val(109)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 4
-    storeValue: (VARIABLE), 79, (STATIC), 112
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(4)
+    storeValue: Mem(79), Val(112)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 5
-    storeValue: (VARIABLE), 79, (STATIC), 115
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(5)
+    storeValue: Mem(79), Val(115)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 6
-    storeValue: (VARIABLE), 79, (STATIC), 118
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
+    storeValue: Mem(79), Val(118)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 7
-    storeValue: (VARIABLE), 79, (STATIC), 121
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(7)
+    storeValue: Mem(79), Val(121)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 8
-    storeValue: (VARIABLE), 79, (STATIC), 124
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(8)
+    storeValue: Mem(79), Val(124)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 25, (STATIC), 9
-    storeValue: (VARIABLE), 79, (STATIC), 127
+  ifOperation: (IS_EQUAL), Mem(RESOURCE_AMOUNT), Val(9)
+    storeValue: Mem(79), Val(127)
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 10
-    storeValue: (VARIABLE), 79, (STATIC), 130
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(10)
+    storeValue: Mem(79), Val(130)
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
     Unknown1862: 0, 7
     endIf: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       Unknown1862: 0, 6
       endIf: 
     else: 
@@ -1228,15 +1228,15 @@ startSubroutine: s32'OnFrameStep'
   endSubroutine: 
 
 startSubroutine: s32'DamegeCheck'
-  if: (VARIABLE), 24
-    storeValue: (VARIABLE), 56, (STATIC), 1
+  if: Mem(24)
+    storeValue: Mem(56), Val(1)
     endIf: 
   else: 
-    storeValue: (VARIABLE), 56, (STATIC), 0
+    storeValue: Mem(56), Val(0)
     endElse: 
   endSubroutine: 
 
-startState: s32'CmnActStand'
+beginState: s32'CmnActStand'
   Unknown2041: -1, 0, 1000
   setMarker: s32'loop'
   sprite: s32'rvn000_00', 8
@@ -1252,7 +1252,7 @@ startState: s32'CmnActStand'
   Unknown3: 
   Unknown13: s32'loop', 22, 0, 50, 0, 100
   Unknown25: s32'loop', 2, 86
-  storeValue: (VARIABLE), 87, (STATIC), 960
+  storeValue: Mem(87), Val(960)
   sprite: s32'rvn001_00', 2
   playVoice: s16'vxxx306'
   sprite: s32'rvn001_01', 2
@@ -1288,14 +1288,14 @@ startState: s32'CmnActStand'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActStandTurn'
+beginState: s32'CmnActStandTurn'
   sprite: s32'rvn003_00', 3
   sprite: s32'rvn003_01', 2
   sprite: s32'rvn003_02', 2
   sprite: s32'rvn003_03', 2
   endState: 
 
-startState: s32'CmnActStand2Crouch'
+beginState: s32'CmnActStand2Crouch'
   sprite: s32'rvn010_00', 3
   sprite: s32'rvn010_01_rx', 3
   sprite: s32'rvn010_02_rx', 3
@@ -1306,7 +1306,7 @@ startState: s32'CmnActStand2Crouch'
   sprite: s32'rvn010_07_rx', 3
   endState: 
 
-startState: s32'CmnActCrouch'
+beginState: s32'CmnActCrouch'
   Unknown2041: -1, 0, 1000
   setMarker: s32'loop'
   sprite: s32'rvn010_08_rx', 6
@@ -1373,14 +1373,14 @@ startState: s32'CmnActCrouch'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActCrouchTurn'
+beginState: s32'CmnActCrouchTurn'
   sprite: s32'rvn013_00', 3
   sprite: s32'rvn013_01', 2
   sprite: s32'rvn013_02', 2
   sprite: s32'rvn013_03', 2
   endState: 
 
-startState: s32'CmnActCrouch2Stand'
+beginState: s32'CmnActCrouch2Stand'
   sprite: s32'rvn010_18', 3
   sprite: s32'rvn010_19', 3
   Unknown1677: 0
@@ -1397,11 +1397,11 @@ startState: s32'CmnActCrouch2Stand'
   sprite: s32'rvn010_30', 3
   endState: 
 
-startState: s32'CmnActJumpPre'
+beginState: s32'CmnActJumpPre'
   sprite: s32'rvn028_00', 3
   endState: 
 
-startState: s32'CmnActJump'
+beginState: s32'CmnActJump'
   setMarker: s32'_Upper'
   Unknown24: s32'UpperF', 2, 11
   Unknown24: s32'UpperB', 2, 10
@@ -1495,11 +1495,11 @@ startState: s32'CmnActJump'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActJumpLanding'
+beginState: s32'CmnActJumpLanding'
   sprite: s32'rvn027_00', 3
   endState: 
 
-startState: s32'CmnActLandingStiff'
+beginState: s32'CmnActLandingStiff'
   sprite: s32'rvn027_00', 3
   sprite: s32'rvn010_24', 2
   sprite: s32'rvn010_25', 2
@@ -1513,10 +1513,10 @@ startState: s32'CmnActLandingStiff'
   sprite: s32'rvn010_30', 3
   endState: 
 
-startState: s32'CmnActFWalk'
+beginState: s32'CmnActFWalk'
   upon: (FRAME_STEP)
-    if: (VARIABLE), 159
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 60
+    if: Mem(159)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(60)
         jumpToState: s32'CmnActFDash'
         endIf: 
       endIf: 
@@ -1563,7 +1563,7 @@ startState: s32'CmnActFWalk'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBWalk'
+beginState: s32'CmnActBWalk'
   sprite: s32'rvn031_00', 4
   setMarker: s32'loop'
   sprite: s32'rvn031_01', 4
@@ -1626,7 +1626,7 @@ startState: s32'CmnActBWalk'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActFDash'
+beginState: s32'CmnActFDash'
   sprite: s32'rvn032_00', 3
   sprite: s32'rvn032_01', 6
   sprite: s32'rvn032_02', 2
@@ -1678,7 +1678,7 @@ startState: s32'CmnActFDash'
   goToMarker: s32'loop2'
   endState: 
 
-startState: s32'CmnActFDashStop'
+beginState: s32'CmnActFDashStop'
   sprite: s32'rvn033_00', 3
   sprite: s32'rvn033_01', 6
   sprite: s32'rvn033_02', 4
@@ -1690,7 +1690,7 @@ startState: s32'CmnActFDashStop'
   sprite: s32'rvn033_08', 2
   endState: 
 
-startState: s32'CmnActBDash'
+beginState: s32'CmnActBDash'
   sprite: s32'rvn034_00', 2
   Unknown2155: 9
   sprite: s32'rvn034_01', 2
@@ -1706,7 +1706,7 @@ startState: s32'CmnActBDash'
   sprite: s32'rvn034_07', 2147483647
   endState: 
 
-startState: s32'CmnActAirFDash'
+beginState: s32'CmnActAirFDash'
   sprite: s32'rvn035_00', 3
   sprite: s32'rvn035_01', 3
   sprite: s32'rvn035_02', 3
@@ -1715,7 +1715,7 @@ startState: s32'CmnActAirFDash'
   sprite: s32'rvn035_03', 4
   endState: 
 
-startState: s32'CmnActAirBDash'
+beginState: s32'CmnActAirBDash'
   sprite: s32'rvn036_00', 3
   sprite: s32'rvn036_01', 3
   sprite: s32'rvn036_02', 3
@@ -1724,7 +1724,7 @@ startState: s32'CmnActAirBDash'
   sprite: s32'rvn036_03', 4
   endState: 
 
-startState: s32'CmnActNokezoriHighLv1'
+beginState: s32'CmnActNokezoriHighLv1'
   sprite: s32'rvn050_00', 1
   sprite: s32'rvn050_01', 3
   sprite: s32'rvn050_02', 2
@@ -1732,7 +1732,7 @@ startState: s32'CmnActNokezoriHighLv1'
   sprite: s32'rvn050_10', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv2'
+beginState: s32'CmnActNokezoriHighLv2'
   sprite: s32'rvn050_00', 1
   sprite: s32'rvn050_01', 3
   sprite: s32'rvn050_02', 2
@@ -1741,7 +1741,7 @@ startState: s32'CmnActNokezoriHighLv2'
   sprite: s32'rvn050_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv3'
+beginState: s32'CmnActNokezoriHighLv3'
   sprite: s32'rvn050_03', 1
   sprite: s32'rvn050_04', 3
   sprite: s32'rvn050_05', 2
@@ -1751,7 +1751,7 @@ startState: s32'CmnActNokezoriHighLv3'
   sprite: s32'rvn050_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv4'
+beginState: s32'CmnActNokezoriHighLv4'
   sprite: s32'rvn050_03', 2
   sprite: s32'rvn050_04', 4
   sprite: s32'rvn050_05', 3
@@ -1761,7 +1761,7 @@ startState: s32'CmnActNokezoriHighLv4'
   sprite: s32'rvn050_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv5'
+beginState: s32'CmnActNokezoriHighLv5'
   sprite: s32'rvn050_04', 2
   sprite: s32'rvn050_05', 4
   sprite: s32'rvn050_06', 3
@@ -1772,7 +1772,7 @@ startState: s32'CmnActNokezoriHighLv5'
   sprite: s32'rvn050_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv1'
+beginState: s32'CmnActNokezoriLowLv1'
   sprite: s32'rvn052_00', 1
   sprite: s32'rvn052_01', 3
   sprite: s32'rvn052_02', 2
@@ -1780,7 +1780,7 @@ startState: s32'CmnActNokezoriLowLv1'
   sprite: s32'rvn052_10', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv2'
+beginState: s32'CmnActNokezoriLowLv2'
   sprite: s32'rvn052_03', 1
   sprite: s32'rvn052_04', 3
   sprite: s32'rvn052_07', 2
@@ -1789,7 +1789,7 @@ startState: s32'CmnActNokezoriLowLv2'
   sprite: s32'rvn052_10', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv3'
+beginState: s32'CmnActNokezoriLowLv3'
   sprite: s32'rvn052_03', 2
   sprite: s32'rvn052_04', 4
   sprite: s32'rvn052_07', 2
@@ -1798,7 +1798,7 @@ startState: s32'CmnActNokezoriLowLv3'
   sprite: s32'rvn052_10', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv4'
+beginState: s32'CmnActNokezoriLowLv4'
   sprite: s32'rvn052_04', 2
   sprite: s32'rvn052_05', 4
   sprite: s32'rvn052_06', 3
@@ -1808,7 +1808,7 @@ startState: s32'CmnActNokezoriLowLv4'
   sprite: s32'rvn052_10', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv5'
+beginState: s32'CmnActNokezoriLowLv5'
   sprite: s32'rvn052_04', 2
   sprite: s32'rvn052_05', 6
   sprite: s32'rvn052_06', 3
@@ -1818,7 +1818,7 @@ startState: s32'CmnActNokezoriLowLv5'
   sprite: s32'rvn052_10', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv1'
+beginState: s32'CmnActNokezoriCrouchLv1'
   sprite: s32'rvn054_00', 1
   sprite: s32'rvn054_01', 3
   sprite: s32'rvn054_02', 2
@@ -1826,7 +1826,7 @@ startState: s32'CmnActNokezoriCrouchLv1'
   sprite: s32'rvn054_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv2'
+beginState: s32'CmnActNokezoriCrouchLv2'
   sprite: s32'rvn054_03', 2
   sprite: s32'rvn054_04', 3
   sprite: s32'rvn054_08', 2
@@ -1835,7 +1835,7 @@ startState: s32'CmnActNokezoriCrouchLv2'
   sprite: s32'rvn054_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv3'
+beginState: s32'CmnActNokezoriCrouchLv3'
   sprite: s32'rvn054_03', 2
   sprite: s32'rvn054_04', 5
   sprite: s32'rvn054_08', 2
@@ -1844,7 +1844,7 @@ startState: s32'CmnActNokezoriCrouchLv3'
   sprite: s32'rvn054_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv4'
+beginState: s32'CmnActNokezoriCrouchLv4'
   sprite: s32'rvn054_05', 2
   sprite: s32'rvn054_06', 5
   sprite: s32'rvn054_07', 3
@@ -1854,7 +1854,7 @@ startState: s32'CmnActNokezoriCrouchLv4'
   sprite: s32'rvn054_11', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv5'
+beginState: s32'CmnActNokezoriCrouchLv5'
   sprite: s32'rvn054_05', 2
   sprite: s32'rvn054_06', 6
   sprite: s32'rvn054_07', 3
@@ -1864,7 +1864,7 @@ startState: s32'CmnActNokezoriCrouchLv5'
   sprite: s32'rvn054_11', 2
   endState: 
 
-startState: s32'CmnActBDownUpper'
+beginState: s32'CmnActBDownUpper'
   sprite: s32'rvn060_00', 4
   setMarker: s32'loop'
   sprite: s32'rvn060_01', 3
@@ -1873,11 +1873,11 @@ startState: s32'CmnActBDownUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBDownUpperEnd'
+beginState: s32'CmnActBDownUpperEnd'
   sprite: s32'rvn060_01', 3
   endState: 
 
-startState: s32'CmnActBDownDown'
+beginState: s32'CmnActBDownDown'
   sprite: s32'rvn060_03', 2
   sprite: s32'rvn060_04', 2
   setMarker: s32'loop'
@@ -1887,7 +1887,7 @@ startState: s32'CmnActBDownDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBDownBound'
+beginState: s32'CmnActBDownBound'
   sprite: s32'rvn060_07', 2
   sprite: s32'rvn060_08', 2
   sprite: s32'rvn060_09', 3
@@ -1897,7 +1897,7 @@ startState: s32'CmnActBDownBound'
   sprite: s32'rvn060_13', 9
   endState: 
 
-startState: s32'CmnActBDownLoop'
+beginState: s32'CmnActBDownLoop'
   setMarker: s32'loop'
   sprite: s32'rvn060_14', 2
   sprite: s32'rvn060_15', 3
@@ -1907,7 +1907,7 @@ startState: s32'CmnActBDownLoop'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBDown2Stand'
+beginState: s32'CmnActBDown2Stand'
   sprite: s32'rvn061_00', 3
   sprite: s32'rvn061_01', 3
   sprite: s32'rvn061_02', 3
@@ -1921,7 +1921,7 @@ startState: s32'CmnActBDown2Stand'
   sprite: s32'rvn061_10', 2
   endState: 
 
-startState: s32'CmnActFDownUpper'
+beginState: s32'CmnActFDownUpper'
   sprite: s32'rvn063_00', 3
   sprite: s32'rvn063_01', 3
   setMarker: s32'loop'
@@ -1931,12 +1931,12 @@ startState: s32'CmnActFDownUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActFDownUpperEnd'
+beginState: s32'CmnActFDownUpperEnd'
   sprite: s32'rvn063_02', 4
   sprite: s32'rvn063_03', 4
   endState: 
 
-startState: s32'CmnActFDownDown'
+beginState: s32'CmnActFDownDown'
   sprite: s32'rvn063_04', 2
   sprite: s32'rvn063_05', 2
   setMarker: s32'loop'
@@ -1945,7 +1945,7 @@ startState: s32'CmnActFDownDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActFDownBound'
+beginState: s32'CmnActFDownBound'
   sprite: s32'rvn062_11', 2
   sprite: s32'rvn062_12', 2
   sprite: s32'rvn062_13', 3
@@ -1955,11 +1955,11 @@ startState: s32'CmnActFDownBound'
   sprite: s32'rvn062_17', 2
   endState: 
 
-startState: s32'CmnActFDownLoop'
+beginState: s32'CmnActFDownLoop'
   sprite: s32'rvn062_18', 2
   endState: 
 
-startState: s32'CmnActFDown2Stand'
+beginState: s32'CmnActFDown2Stand'
   sprite: s32'rvn064_00', 2
   sprite: s32'rvn064_01', 2
   sprite: s32'rvn064_02', 2
@@ -1974,19 +1974,19 @@ startState: s32'CmnActFDown2Stand'
   sprite: s32'rvn064_11', 2
   endState: 
 
-startState: s32'CmnActVDownUpper'
+beginState: s32'CmnActVDownUpper'
   sprite: s32'rvn062_00', 3
   sprite: s32'rvn062_01', 3
   endState: 
 
-startState: s32'CmnActVDownUpperEnd'
+beginState: s32'CmnActVDownUpperEnd'
   sprite: s32'rvn062_02', 3
   sprite: s32'rvn062_03', 3
   sprite: s32'rvn062_04', 3
   sprite: s32'rvn062_05', 3
   endState: 
 
-startState: s32'CmnActVDownDown'
+beginState: s32'CmnActVDownDown'
   sprite: s32'rvn062_02', 3
   sprite: s32'rvn062_03', 3
   sprite: s32'rvn062_04', 3
@@ -1999,7 +1999,7 @@ startState: s32'CmnActVDownDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActVDownBound'
+beginState: s32'CmnActVDownBound'
   sprite: s32'rvn062_09', 3
   sprite: s32'rvn062_10', 3
   sprite: s32'rvn062_11', 3
@@ -2008,7 +2008,7 @@ startState: s32'CmnActVDownBound'
   sprite: s32'rvn062_14', 3
   endState: 
 
-startState: s32'CmnActVDownLoop'
+beginState: s32'CmnActVDownLoop'
   setMarker: s32'loop'
   sprite: s32'rvn062_15', 2
   sprite: s32'rvn062_16', 2
@@ -2020,7 +2020,7 @@ startState: s32'CmnActVDownLoop'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBlowoff'
+beginState: s32'CmnActBlowoff'
   sprite: s32'rvn075_00', 3
   setMarker: s32'loop'
   sprite: s32'rvn075_01', 3
@@ -2029,7 +2029,7 @@ startState: s32'CmnActBlowoff'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActKirimomiUpper'
+beginState: s32'CmnActKirimomiUpper'
   setMarker: s32'loop'
   sprite: s32'rvn074_00', 4
   sprite: s32'rvn074_01', 4
@@ -2043,13 +2043,13 @@ startState: s32'CmnActKirimomiUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActWallBound'
+beginState: s32'CmnActWallBound'
   sprite: s32'rvn076_00', 3
   sprite: s32'rvn076_01', 3
   sprite: s32'rvn076_02', 2147483647
   endState: 
 
-startState: s32'CmnActWallBoundDown'
+beginState: s32'CmnActWallBoundDown'
   sprite: s32'rvn076_03', 3
   sprite: s32'rvn076_04', 4
   sprite: s32'rvn076_05', 4
@@ -2061,7 +2061,7 @@ startState: s32'CmnActWallBoundDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActWallHaritsuki'
+beginState: s32'CmnActWallHaritsuki'
   sprite: s32'rvn077_00', 4
   sprite: s32'rvn077_01', 2147483647
   setMarker: s32'_Drop'
@@ -2078,7 +2078,7 @@ startState: s32'CmnActWallHaritsuki'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActWallHaritsukiLand'
+beginState: s32'CmnActWallHaritsukiLand'
   sprite: s32'rvn077_05', 3
   Unknown448: s32'cmn_harituki', 114
   sprite: s32'rvn077_06', 3
@@ -2086,7 +2086,7 @@ startState: s32'CmnActWallHaritsukiLand'
   sprite: s32'rvn077_08', 2147483647
   endState: 
 
-startState: s32'CmnActWallHaritsukiGetUp'
+beginState: s32'CmnActWallHaritsukiGetUp'
   sprite: s32'rvn078_00', 3
   sprite: s32'rvn078_01', 3
   sprite: s32'rvn078_02', 3
@@ -2094,7 +2094,7 @@ startState: s32'CmnActWallHaritsukiGetUp'
   sprite: s32'rvn078_04', 3
   endState: 
 
-startState: s32'CmnActJitabataLoop'
+beginState: s32'CmnActJitabataLoop'
   setMarker: s32'loop'
   sprite: s32'rvn070_00', 2
   sprite: s32'rvn070_01', 3
@@ -2110,7 +2110,7 @@ startState: s32'CmnActJitabataLoop'
   sprite: s32'rvn070_08', 3
   endState: 
 
-startState: s32'CmnActKizetsu'
+beginState: s32'CmnActKizetsu'
   sprite: s32'rvn071_00', 3
   setMarker: s32'loop'
   sprite: s32'rvn071_01', 3
@@ -2129,7 +2129,7 @@ startState: s32'CmnActKizetsu'
   sprite: s32'rvn071_11', 3
   endState: 
 
-startState: s32'CmnActHizakuzure'
+beginState: s32'CmnActHizakuzure'
   callCmnEfFunc: s32'cmn_Hizakuzure'
   sprite: s32'rvn085_00', 4
   sprite: s32'rvn085_01', 5
@@ -2184,7 +2184,7 @@ startState: s32'CmnActHizakuzure'
   jumpToState: s32'CmnActFDownLoop'
   endState: 
 
-startState: s32'CmnActKorogari'
+beginState: s32'CmnActKorogari'
   setMarker: s32'loop'
   sprite: s32'rvn080_00', 3
   sprite: s32'rvn080_01', 3
@@ -2217,7 +2217,7 @@ startState: s32'CmnActKorogari'
   sprite: s32'rvn083_10', 4
   endState: 
 
-startState: s32'CmnActZSpin'
+beginState: s32'CmnActZSpin'
   setMarker: s32'loop'
   sprite: s32'rvn082_01', 2
   sprite: s32'rvn082_02', 2
@@ -2238,12 +2238,12 @@ startState: s32'CmnActZSpin'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActUkemi'
+beginState: s32'CmnActUkemi'
   sprite: s32'rvn113_00', 4
   sprite: s32'rvn113_01', 4
   endState: 
 
-startState: s32'CmnActMidGuardLoop'
+beginState: s32'CmnActMidGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'rvn040_00', 3
   sprite: s32'rvn040_01', 3
@@ -2269,13 +2269,13 @@ startState: s32'CmnActMidGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActMidGuardEnd'
+beginState: s32'CmnActMidGuardEnd'
   sprite: s32'rvn040_02', 3
   sprite: s32'rvn040_01', 3
   sprite: s32'rvn040_00', 3
   endState: 
 
-startState: s32'CmnActHighGuardLoop'
+beginState: s32'CmnActHighGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'rvn040_00', 3
   sprite: s32'rvn040_01', 3
@@ -2301,13 +2301,13 @@ startState: s32'CmnActHighGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActHighGuardEnd'
+beginState: s32'CmnActHighGuardEnd'
   sprite: s32'rvn040_02', 3
   sprite: s32'rvn040_01', 3
   sprite: s32'rvn040_00', 3
   endState: 
 
-startState: s32'CmnActCrouchGuardLoop'
+beginState: s32'CmnActCrouchGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'rvn043_00', 3
   sprite: s32'rvn043_01', 3
@@ -2333,13 +2333,13 @@ startState: s32'CmnActCrouchGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActCrouchGuardEnd'
+beginState: s32'CmnActCrouchGuardEnd'
   sprite: s32'rvn043_02', 3
   sprite: s32'rvn043_01', 3
   sprite: s32'rvn043_00', 3
   endState: 
 
-startState: s32'CmnActAirGuardLoop'
+beginState: s32'CmnActAirGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'rvn045_00', 2
   sprite: s32'rvn045_01', 2
@@ -2364,13 +2364,13 @@ startState: s32'CmnActAirGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActAirGuardEnd'
+beginState: s32'CmnActAirGuardEnd'
   sprite: s32'rvn045_02', 2
   sprite: s32'rvn045_01', 2
   sprite: s32'rvn045_00', 2
   endState: 
 
-startState: s32'CmnActHajikareStand'
+beginState: s32'CmnActHajikareStand'
   sprite: s32'rvn100_00', 2
   sprite: s32'rvn100_01', 6
   sprite: s32'rvn100_02', 6
@@ -2384,7 +2384,7 @@ startState: s32'CmnActHajikareStand'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActHajikareCrouch'
+beginState: s32'CmnActHajikareCrouch'
   sprite: s32'rvn101_00', 2
   sprite: s32'rvn101_01', 6
   sprite: s32'rvn101_02', 6
@@ -2398,7 +2398,7 @@ startState: s32'CmnActHajikareCrouch'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActHajikareAir'
+beginState: s32'CmnActHajikareAir'
   sprite: s32'rvn102_00', 2
   sprite: s32'rvn102_01', 6
   sprite: s32'rvn102_02', 6
@@ -2415,30 +2415,30 @@ startState: s32'CmnActHajikareAir'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActAirTurn'
+beginState: s32'CmnActAirTurn'
   sprite: s32'rvn023_00', 3
   sprite: s32'rvn023_01', 2
   sprite: s32'rvn023_02', 2
   sprite: s32'rvn023_03', 2
   endState: 
 
-startState: s32'CmnActLockWait'
+beginState: s32'CmnActLockWait'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActLockReject'
+beginState: s32'CmnActLockReject'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActAirLockWait'
+beginState: s32'CmnActAirLockWait'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActAirLockReject'
+beginState: s32'CmnActAirLockReject'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActItemUse'
+beginState: s32'CmnActItemUse'
   Unknown13: s32'_BeginB', 9, 2, 122, 0, 1
   setMarker: s32'_BeginA'
   sprite: s32'rvn210_00', 3
@@ -2449,7 +2449,7 @@ startState: s32'CmnActItemUse'
   createObject2: s32'cmn_MOM_AUTO_ITEM', 130
   setObjectToStackSlot: (STACK_FOR_CMN_ACT), (PREVIOUS)
   Unknown3: 
-  storeValue: (VARIABLE), 69, (STATIC), 1
+  storeValue: Mem(69), Val(1)
   sprite: s32'rvn210_04', 2
   sprite: s32'rvn210_05', 2
   setMarker: s32'loopA'
@@ -2494,7 +2494,7 @@ startState: s32'CmnActItemUse'
   exitState: 
   endState: 
 
-startState: s32'CmnActBurst'
+beginState: s32'CmnActBurst'
   sprite: s32'rvn330_00', 2
   sprite: s32'rvn330_01', 2
   sprite: s32'keep', 2147483647
@@ -2519,26 +2519,26 @@ startState: s32'CmnActBurst'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActRomanCancel'
+beginState: s32'CmnActRomanCancel'
   sprite: s32'rvn350_00', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'rvn351_00'
     endIf: 
   sprite: s32'rvn350_01', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'rvn351_01'
     endIf: 
   sprite: s32'rvn350_02', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'rvn351_02'
     endIf: 
   setMarker: s32'loop'
   sprite: s32'rvn350_03', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'rvn351_03'
     endIf: 
   sprite: s32'rvn350_04', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'rvn351_04'
     endIf: 
   Unknown3: 
@@ -2557,14 +2557,14 @@ startState: s32'CmnActRomanCancel'
   exitState: 
   endState: 
 
-startState: s32'CmnActEntryWait'
+beginState: s32'CmnActEntryWait'
   upon: (IMMEDIATE)
     endUpon: 
   sprite: s32'null', 2147483647
   Unknown2023: 0
   endState: 
 
-startState: s32'entry_default'
+beginState: s32'entry_default'
   upon: (IMMEDIATE)
     Unknown1638: 
     endUpon: 
@@ -2575,7 +2575,7 @@ startState: s32'entry_default'
   Unknown2013: s32'rvn700cs', 0
   Unknown2020: s32'rvn700_01', 23, 0, -1
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(105), Val(0)
       Unknown2063: 0, 0
       createObject2: s32'rvn700BG', 100
       Unknown2079: 0, 0, 0
@@ -2586,20 +2586,20 @@ startState: s32'entry_default'
       Unknown2083: 900
       playCharacterSFX: s32'RVN_Entry_01'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 209
+    ifOperation: (IS_EQUAL), Mem(105), Val(209)
       playVoice: s16'vxxx307'
       Unknown2211: s32'prev', -2147483618
-      storeValue: (VARIABLE), 45, (STATIC), 1
+      storeValue: Mem(45), Val(1)
       endIf: 
-    if: (VARIABLE), 45
-      ifNot: (VARIABLE), 95
-        storeValue: (VARIABLE), 45, (STATIC), 0
-        storeValue: (VARIABLE), 46, (STATIC), 1
+    if: Mem(45)
+      ifNot: Mem(95)
+        storeValue: Mem(45), Val(0)
+        storeValue: Mem(46), Val(1)
         Unknown2070: 
         endIf: 
       endIf: 
-    if: (VARIABLE), 46
-      if: (VARIABLE), 131
+    if: Mem(46)
+      if: Mem(131)
         Unknown2020: s32'rvn700_02', 23, 0, -1
         clearUpon: (FRAME_STEP)
         Unknown14: s32'Next'
@@ -2611,18 +2611,18 @@ startState: s32'entry_default'
 setMarker: s32'Next'
 sprite: s32'null', 2147483647
 upon: (FRAME_STEP)
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+  ifOperation: (IS_EQUAL), Mem(105), Val(0)
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 15
+  ifOperation: (IS_EQUAL), Mem(105), Val(15)
     playCharacterSFX: s32'RVN_Entry_02'
     endUpon: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 80
+  ifOperation: (IS_EQUAL), Mem(105), Val(80)
     Unknown2028: s32'MS_Entry2'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 95
+  ifOperation: (IS_EQUAL), Mem(105), Val(95)
     createObject2: s32'rvn700_feather', 100
     endUpon: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 160
+  ifOperation: (IS_EQUAL), Mem(105), Val(160)
     Unknown2079: 0, 0, 0
     Unknown2080: 255, 255, 255
     Unknown2081: 128, 128, 128
@@ -2630,7 +2630,7 @@ upon: (FRAME_STEP)
     Unknown2051: 0
     Unknown2083: 1000
     endUpon: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 170
+  ifOperation: (IS_EQUAL), Mem(105), Val(170)
     Unknown1676: 
     endIf: 
   endUpon: 
@@ -2638,15 +2638,15 @@ upon: (FRAME_STEP)
 Unknown3: 
 exitState: 
 endState: 
-startState: s32'CmnActExDamage'
+beginState: s32'CmnActExDamage'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActExDamageLand'
+beginState: s32'CmnActExDamageLand'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActRoundWin'
+beginState: s32'CmnActRoundWin'
   Unknown13: s32'TypeA', 9, 2, 153, 0, 1
   Unknown13: s32'TypeB', 9, 2, 153, 0, 2
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
@@ -2714,7 +2714,7 @@ startState: s32'CmnActRoundWin'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActMatchWin'
+beginState: s32'CmnActMatchWin'
   sprite: s32'null', 2147483647
   Unknown2013: s32'rvn800cs', 0
   Unknown2020: s32'rvn800_01', 23, 0, -1
@@ -2722,7 +2722,7 @@ startState: s32'CmnActMatchWin'
   Unknown2051: 1600
   Unknown2028: s32'high_MatchWin'
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(105), Val(0)
       Unknown2063: 0, 0
       Unknown2079: 0, 0, 10
       Unknown2080: 200, 120, 155
@@ -2734,39 +2734,39 @@ startState: s32'CmnActMatchWin'
       Unknown356: 10
       createObject2: s32'BG_win', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+    ifOperation: (IS_EQUAL), Mem(105), Val(30)
       playCharacterSFX: s32'RVN_Win'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 176
+    ifOperation: (IS_EQUAL), Mem(105), Val(176)
       Unknown344: 255
       Unknown350: 255
       Unknown356: 255
       endIf: 
-    if: (VARIABLE), 38
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 255
+    if: Mem(38)
+      ifOperation: (IS_EQUAL), Mem(105), Val(255)
         Unknown2076: s32'rvnface_mouth800cs'
         playVoice: s16'vxxx309'
         Unknown2211: s32'prev', -2147483618
-        storeValue: (VARIABLE), 45, (STATIC), 1
+        storeValue: Mem(45), Val(1)
         endIf: 
       endIf: 
     else: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 205
+      ifOperation: (IS_EQUAL), Mem(105), Val(205)
         Unknown2076: s32'rvnface_mouth800cs'
         playVoice: s16'vxxx309'
         Unknown2211: s32'prev', -2147483618
-        storeValue: (VARIABLE), 45, (STATIC), 1
+        storeValue: Mem(45), Val(1)
         endIf: 
       endElse: 
-    if: (VARIABLE), 45
-      ifNot: (VARIABLE), 95
-        storeValue: (VARIABLE), 45, (STATIC), 0
-        storeValue: (VARIABLE), 46, (STATIC), 1
+    if: Mem(45)
+      ifNot: Mem(95)
+        storeValue: Mem(45), Val(0)
+        storeValue: Mem(46), Val(1)
         Unknown2070: 
         endIf: 
       endIf: 
-    if: (VARIABLE), 46
-      if: (VARIABLE), 131
+    if: Mem(46)
+      if: Mem(131)
         Unknown2020: s32'rvn800_02', 23, 0, -1
         clearUpon: (FRAME_STEP)
         Unknown14: s32'next'
@@ -2776,16 +2776,16 @@ startState: s32'CmnActMatchWin'
   setMarker: s32'next'
   sprite: s32'null', 2147483647
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(105), Val(2)
       createObject2: s32'cs800_Craw01', 100
       createObject2: s32'cs800_Craw02', 100
       createObject2: s32'cs800_Craw03', 100
       createObject2: s32'cs800_Craw04', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 25
+    ifOperation: (IS_EQUAL), Mem(105), Val(25)
       createObject2: s32'rvn800BG', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 190
+    ifOperation: (IS_EQUAL), Mem(105), Val(190)
       Unknown2073: 60
       Unknown2072: 
       Unknown1675: 30
@@ -2795,7 +2795,7 @@ startState: s32'CmnActMatchWin'
   Unknown3: 
   endState: 
 
-startState: s32'CmnActLose'
+beginState: s32'CmnActLose'
   sprite: s32'rvn640_00', 6
   sprite: s32'rvn640_01', 6
   sprite: s32'rvn640_02', 6
@@ -2835,28 +2835,28 @@ startState: s32'CmnActLose'
   Unknown1676: 
   endState: 
 
-startState: s32'CmnActResultWin'
+beginState: s32'CmnActResultWin'
   sprite: s32'rvn650_00', 2147483647
   Unknown2062: -59000, 400000, -1709000, 0, 160000, 0
   Unknown2028: s32'MS_ResultWin'
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 0
-      if: (VARIABLE), 138
+    ifOperation: (IS_EQUAL), Mem(69), Val(0)
+      if: Mem(138)
         playVoice: s16'vxxx400'
         Unknown2211: s32'vxxx400', 10000
         Unknown2313: 1
-        storeValue: (VARIABLE), 69, (STATIC), 1
+        storeValue: Mem(69), Val(1)
         endIf: 
       endIf: 
     else: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
-        storeValue: (VARIABLE), 69, (STATIC), 2
+      ifOperation: (IS_EQUAL), Mem(69), Val(1)
+        storeValue: Mem(69), Val(2)
         endIf: 
       else: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: (VARIABLE), 143
-            storeValue: (VARIABLE), 138, (STATIC), 0
-            storeValue: (VARIABLE), 69, (STATIC), 3
+        ifOperation: (IS_EQUAL), Mem(69), Val(2)
+          ifNot: Mem(143)
+            storeValue: Mem(138), Val(0)
+            storeValue: Mem(69), Val(3)
             endIf: 
           endIf: 
         endElse: 
@@ -2864,12 +2864,12 @@ startState: s32'CmnActResultWin'
     endUpon: 
   endState: 
 
-startState: s32'CmnActResultLose'
+beginState: s32'CmnActResultLose'
   sprite: s32'rvn062_18', 2147483647
   Unknown2062: -121000, 0, -506000, 0, 0, 0
   endState: 
 
-startState: s32'Kakkuu'
+beginState: s32'Kakkuu'
   upon: (IMMEDIATE)
     Unknown1791: -1
     Unknown1789: -1
@@ -2887,19 +2887,19 @@ startState: s32'Kakkuu'
     disableAirThrow: 
     upon: (FRAME_STEP)
       Unknown2262: 12
-      storeValue: (VARIABLE), 228, (STATIC), 4
-      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 104, (STATIC), -330000
+      storeValue: Mem(228), Val(4)
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(104), Val(-330000)
         Unknown2297: 0, 31
         endIf: 
-      if: (VARIABLE), 45
-        ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 18, (STATIC), 50000
+      if: Mem(45)
+        ifOperation: (IS_LESSER_OR_EQUAL), Mem(18), Val(50000)
           Unknown98: 50000
           physicsYImpulse: 0
           endIf: 
         endIf: 
       endUpon: 
     upon: (BEFORE_EXIT)
-      ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 18, (STATIC), 80000
+      ifOperation: (IS_LESSER_OR_EQUAL), Mem(18), Val(80000)
         physicsYImpulse: 0
         setGravity: 0
         endIf: 
@@ -2909,7 +2909,7 @@ startState: s32'Kakkuu'
   playSFX: s32'GG2_018'
   resetVelocity: 1
   physicsXImpulse: 0
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   sprite: s32'rvn400_01', 3
   sprite: s32'rvn400_02', 2
   physicsXImpulse: 1000
@@ -2937,7 +2937,7 @@ startState: s32'Kakkuu'
   sprite: s32'rvn400_08', 3
   sprite: s32'rvn400_09', 3
   Unknown2217: 0
-  storeValue: (VARIABLE), 45, (STATIC), 0
+  storeValue: Mem(45), Val(0)
   clearUpon: (LANDING)
   Unknown2197: 90
   Unknown135: 
@@ -2953,7 +2953,7 @@ startState: s32'Kakkuu'
   jumpToState: s32'_NEUTRAL'
   endState: 
 
-startState: s32'NmlAtk5A'
+beginState: s32'NmlAtk5A'
   upon: (IMMEDIATE)
     attackLevel: 0
     damage: 14
@@ -2971,7 +2971,7 @@ startState: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CNear'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CFar'
@@ -3000,7 +3000,7 @@ startState: s32'NmlAtk5A'
   sprite: s32'rvn200_10', 1
   endState: 
 
-startState: s32'NmlAtk6A'
+beginState: s32'NmlAtk6A'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 26
@@ -3012,7 +3012,7 @@ startState: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk5E'
     groundCounterHitEffect: (AIR_FACE_UP)
     hitAirPushbackY: 30000
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CNear'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CFar'
@@ -3044,7 +3044,7 @@ startState: s32'NmlAtk6A'
   sprite: s32'rvn210_12', 3
   endState: 
 
-startState: s32'NmlAtk4A'
+beginState: s32'NmlAtk4A'
   upon: (IMMEDIATE)
     attackLevel: 0
     damage: 12
@@ -3071,7 +3071,7 @@ startState: s32'NmlAtk4A'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk6A'
         addMoveCondition: 99
         addMoveCondition: 129
@@ -3093,7 +3093,7 @@ startState: s32'NmlAtk4A'
   sprite: s32'rvn215_06', 2
   endState: 
 
-startState: s32'NmlAtk4AHasei'
+beginState: s32'NmlAtk4AHasei'
   upon: (IMMEDIATE)
     attackLevel: 0
     damage: 12
@@ -3120,7 +3120,7 @@ startState: s32'NmlAtk4AHasei'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2C'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk6A'
@@ -3136,7 +3136,7 @@ startState: s32'NmlAtk4AHasei'
   createObject2: s32'215bake2', 100
   hit: 
   playSFX: s32'SE_SWINGA'
-  ifOperation: 22, (STATIC), 50, (STATIC), 100
+  ifOperation: 22, Val(50), Val(100)
     playVoice: s16'vxxx227'
     endIf: 
   sprite: s32'rvn215_10', 2
@@ -3147,7 +3147,7 @@ startState: s32'NmlAtk4AHasei'
   sprite: s32'rvn215_13', 2
   endState: 
 
-startState: s32'NmlAtk2A'
+beginState: s32'NmlAtk2A'
   upon: (IMMEDIATE)
     attackLevel: 0
     enableWhiffCancel: 1
@@ -3174,7 +3174,7 @@ startState: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2B'
         addMoveCondition: 129
         endMoveRegister: 
@@ -3202,7 +3202,7 @@ startState: s32'NmlAtk2A'
   sprite: s32'rvn230_08', 2
   endState: 
 
-startState: s32'NmlAtk5B'
+beginState: s32'NmlAtk5B'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 16
@@ -3214,7 +3214,7 @@ startState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'CmnFJump'
@@ -3243,7 +3243,7 @@ startState: s32'NmlAtk5B'
   sprite: s32'rvn201_12', 2
   endState: 
 
-startState: s32'NmlAtk2B'
+beginState: s32'NmlAtk2B'
   upon: (IMMEDIATE)
     guardType: (LOW)
     attackLevel: 0
@@ -3260,7 +3260,7 @@ startState: s32'NmlAtk2B'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CNear'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CFar'
@@ -3282,7 +3282,7 @@ startState: s32'NmlAtk2B'
   sprite: s32'rvn231_07', 2
   endState: 
 
-startState: s32'NmlAtk5CNear'
+beginState: s32'NmlAtk5CNear'
   upon: (IMMEDIATE)
     attackLevel: 3
     damage: 22
@@ -3319,7 +3319,7 @@ startState: s32'NmlAtk5CNear'
   hitPushbackX: 80
   hitAirPushbackX: 10500
   playSFX: s32'SE_SWINGE'
-  if: (VARIABLE), 212
+  if: Mem(212)
     setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5D'
@@ -3333,7 +3333,7 @@ startState: s32'NmlAtk5CNear'
   sprite: s32'rvn202_11', 3
   endState: 
 
-startState: s32'NmlAtk5CFar'
+beginState: s32'NmlAtk5CFar'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 28
@@ -3344,7 +3344,7 @@ startState: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'LandSlowNeedle'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2D'
@@ -3387,7 +3387,7 @@ startState: s32'NmlAtk5CFar'
   sprite: s32'rvn203_13', 2
   endState: 
 
-startState: s32'NmlAtk2C'
+beginState: s32'NmlAtk2C'
   upon: (IMMEDIATE)
     Unknown725: 0
     Unknown1045: 2, s32'Zanhit_oku'
@@ -3397,7 +3397,7 @@ startState: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'LandSlowNeedle'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2E'
@@ -3424,7 +3424,7 @@ startState: s32'NmlAtk2C'
   sprite: s32'rvn232_10', 2
   endState: 
 
-startState: s32'NmlAtk5D'
+beginState: s32'NmlAtk5D'
   upon: (IMMEDIATE)
     attackLevel: 4
     damage: 26
@@ -3447,7 +3447,7 @@ startState: s32'NmlAtk5D'
   createObject2: s32'204bake', 100
   hit: 
   groundCounterHitEffect: (NORMAL_UPPER)
-  if: (VARIABLE), 212
+  if: Mem(212)
     setStylishCombo: s32'StylishComboSlot0', s32'LandBlowAttack'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'LandSettingTypeNeedle'
@@ -3469,7 +3469,7 @@ startState: s32'NmlAtk5D'
   sprite: s32'rvn204_14', 3
   endState: 
 
-startState: s32'NmlAtk6D'
+beginState: s32'NmlAtk6D'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 4
@@ -3484,7 +3484,7 @@ startState: s32'NmlAtk6D'
     Unknown1789: 1
     setJumpCancelable: 1
     airHitEffect: (AIR_FACE_UP)
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'AirSettingTypeNeedle'
         endMoveRegister: 
       endIf: 
@@ -3537,7 +3537,7 @@ startState: s32'NmlAtk6D'
   sprite: s32'rvn213_23', 1
   endState: 
 
-startState: s32'NmlAtk2D'
+beginState: s32'NmlAtk2D'
   upon: (IMMEDIATE)
     attackLevel: 4
     damage: 38
@@ -3545,7 +3545,7 @@ startState: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk2E'
     guardType: (LOW)
     Unknown725: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'LandBlowAttack'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2E'
@@ -3581,7 +3581,7 @@ startState: s32'NmlAtk2D'
   sprite: s32'rvn233_18', 2
   endState: 
 
-startState: s32'NmlAtk5E'
+beginState: s32'NmlAtk5E'
   upon: (IMMEDIATE)
     Unknown2161: 100, -50000, 330000
     callCmnEfFunc: s32'cmnDustInitialize'
@@ -3589,7 +3589,7 @@ startState: s32'NmlAtk5E'
     damage: 22
     riscMinus: 20
     setProration: 80
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'HomingJump'
         endMoveRegister: 
       endIf: 
@@ -3616,7 +3616,7 @@ startState: s32'NmlAtk5E'
   sprite: s32'rvn205_12', 3
   endState: 
 
-startState: s32'HomingDash2'
+beginState: s32'HomingDash2'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnHomingDash2Initialize'
     endUpon: 
@@ -3650,7 +3650,7 @@ startState: s32'HomingDash2'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'HomingJump'
+beginState: s32'HomingJump'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnHomingJumpInitialize'
     endUpon: 
@@ -3664,13 +3664,13 @@ startState: s32'HomingJump'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'NmlAtk2E'
+beginState: s32'NmlAtk2E'
   upon: (IMMEDIATE)
     guardType: (LOW)
     groundHitEffect: (AIR_FACE_DOWN)
     attackLevel: 2
     damage: 30
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'LandSettingTypeNeedle'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'LandSlowNeedle'
@@ -3704,7 +3704,7 @@ startState: s32'NmlAtk2E'
   recoveryState: 
   endState: 
 
-startState: s32'NmlAtk5F'
+beginState: s32'NmlAtk5F'
   upon: (IMMEDIATE)
     Unknown2160: 61
     Unknown2215: 
@@ -3766,7 +3766,7 @@ startState: s32'NmlAtk5F'
   sprite: s32'rvn301_09', 4
   sprite: s32'rvn301_10', 2147483647
   upon: (FRAME_STEP)
-    ifNot: (VARIABLE), 95
+    ifNot: Mem(95)
       Unknown14: s32'TypeBNext'
       clearUpon: (FRAME_STEP)
       endIf: 
@@ -3819,7 +3819,7 @@ startState: s32'NmlAtk5F'
   exitState: 
   endState: 
 
-startState: s32'NmlAtk6F'
+beginState: s32'NmlAtk6F'
   upon: (IMMEDIATE)
     Unknown2160: 17
     recoveryState: 
@@ -3915,7 +3915,7 @@ startState: s32'NmlAtk6F'
   sprite: s32'rvn306_22', 2147483647
   playVoice: s16'vxxx305'
   upon: (FRAME_STEP)
-    ifNot: (VARIABLE), 95
+    ifNot: Mem(95)
       Unknown14: s32'TypeBNext'
       clearUpon: (FRAME_STEP)
       endIf: 
@@ -3929,7 +3929,7 @@ startState: s32'NmlAtk6F'
   exitState: 
   endState: 
 
-startState: s32'NmlAtkAir5A'
+beginState: s32'NmlAtkAir5A'
   upon: (IMMEDIATE)
     attackLevel: 0
     enableWhiffCancel: 1
@@ -3942,7 +3942,7 @@ startState: s32'NmlAtkAir5A'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5B'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5A'
@@ -3966,7 +3966,7 @@ startState: s32'NmlAtkAir5A'
   sprite: s32'rvn250_07', 2
   endState: 
 
-startState: s32'NmlAtkAir5B'
+beginState: s32'NmlAtkAir5B'
   upon: (IMMEDIATE)
     attackLevel: 1
     enableWhiffCancel: 1
@@ -3977,7 +3977,7 @@ startState: s32'NmlAtkAir5B'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5A'
@@ -4002,7 +4002,7 @@ startState: s32'NmlAtkAir5B'
   sprite: s32'rvn251_09', 3
   endState: 
 
-startState: s32'NmlAtkAir2B'
+beginState: s32'NmlAtkAir2B'
   upon: (IMMEDIATE)
     Unknown1110: 1
     attackLevel: 2
@@ -4038,7 +4038,7 @@ startState: s32'NmlAtkAir2B'
   Unknown1677: 1
   endState: 
 
-startState: s32'NmlAtkAir5C'
+beginState: s32'NmlAtkAir5C'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 2
@@ -4048,7 +4048,7 @@ startState: s32'NmlAtkAir5C'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'AirBlowAttack'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtkAir5A'
@@ -4079,7 +4079,7 @@ startState: s32'NmlAtkAir5C'
   sprite: s32'rvn252_09', 2
   endState: 
 
-startState: s32'NmlAtkAir5D'
+beginState: s32'NmlAtkAir5D'
   upon: (IMMEDIATE)
     attackLevel: 3
     damage: 26
@@ -4107,7 +4107,7 @@ startState: s32'NmlAtkAir5D'
   hit: 
   playSFX: s32'SE_SWINGF'
   createObject2: s32'rvn253Eff', 100
-  if: (VARIABLE), 212
+  if: Mem(212)
     setStylishCombo: s32'StylishComboSlot0', s32'AirBlowAttack'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'AirSettingTypeNeedle'
@@ -4125,7 +4125,7 @@ startState: s32'NmlAtkAir5D'
   sprite: s32'rvn253_14', 3
   endState: 
 
-startState: s32'NmlAtkAir5E'
+beginState: s32'NmlAtkAir5E'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 20
@@ -4155,7 +4155,7 @@ startState: s32'NmlAtkAir5E'
     physicsYImpulse: 25000
     setGravity: 1800
     endUpon: 
-  if: (VARIABLE), 212
+  if: Mem(212)
     setStylishCombo: s32'StylishComboSlot0', s32'AirSettingTypeNeedle'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'AirSlowNeedleA'
@@ -4205,7 +4205,7 @@ startState: s32'NmlAtkAir5E'
   sprite: s32'rvn254_16', 2
   endState: 
 
-startState: s32'DeadAngleAttack'
+beginState: s32'DeadAngleAttack'
   upon: (IMMEDIATE)
     playSFX: s32'SE_GC'
     Unknown1115: 1
@@ -4243,7 +4243,7 @@ startState: s32'DeadAngleAttack'
   sprite: s32'rvn210_12', 2
   endState: 
 
-startState: s32'CounterGuardStand'
+beginState: s32'CounterGuardStand'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnCG_Initialize'
     upon: 33
@@ -4315,7 +4315,7 @@ startState: s32'CounterGuardStand'
   exitState: 
   endState: 
 
-startState: s32'CounterGuardCrouch'
+beginState: s32'CounterGuardCrouch'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnCG_Initialize'
     upon: 33
@@ -4390,7 +4390,7 @@ startState: s32'CounterGuardCrouch'
   exitState: 
   endState: 
 
-startState: s32'CounterGuardAir'
+beginState: s32'CounterGuardAir'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnCG_Initialize'
     upon: 33
@@ -4436,7 +4436,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'rvn045_00', 4
   endState: 
 
-startState: s32'IchigekiJunbi'
+beginState: s32'IchigekiJunbi'
   upon: (IMMEDIATE)
     callSubroutine: s32'IchigekiGoldCheck', 0, 0, 0, 0, 0, 0, 0, 0
     endUpon: 
@@ -4474,7 +4474,7 @@ startState: s32'IchigekiJunbi'
   sprite: s32'rvn450_15', 3
   endState: 
 
-startState: s32'MOMSuki'
+beginState: s32'MOMSuki'
   upon: (IMMEDIATE)
     recoveryState: 
     endUpon: 
@@ -4494,14 +4494,14 @@ startState: s32'MOMSuki'
   sprite: s32'chp001_12', 6
   endState: 
 
-startState: s32'DebugSkillEx'
+beginState: s32'DebugSkillEx'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnDS_Initialize'
     endUpon: 
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'ThrowExe'
+beginState: s32'ThrowExe'
   upon: (IMMEDIATE)
     Unknown1641: 17, 1
     attackLevel: 0
@@ -4565,7 +4565,7 @@ startState: s32'ThrowExe'
   sprite: s32'rvn310_20', 2
   endState: 
 
-startState: s32'AirThrowExe'
+beginState: s32'AirThrowExe'
   upon: (IMMEDIATE)
     Unknown1641: 17, 3
     attackLevel: 4
@@ -4588,9 +4588,9 @@ startState: s32'AirThrowExe'
   Unknown544: 13
   Unknown2161: 100, 190000, 50000
   Unknown546: 130, 100, 0
-  ifOperation: (IS_GREATER), (VARIABLE), 119, (STATIC), 0
+  ifOperation: (IS_GREATER), Mem(119), Val(0)
     playVoice: s16'vxxx116'
-    storeValue: (VARIABLE), 119, (STATIC), 0
+    storeValue: Mem(119), Val(0)
     endIf: 
   else: 
     playVoice: s16'vxxx120'
@@ -4630,7 +4630,7 @@ startState: s32'AirThrowExe'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'LandSlowNeedle'
+beginState: s32'LandSlowNeedle'
   upon: (IMMEDIATE)
     Unknown35: 2, s32'landing'
     Unknown2137: 0
@@ -4672,7 +4672,7 @@ startState: s32'LandSlowNeedle'
   sprite: s32'rvn401_17', 4
   endState: 
 
-startState: s32'AirSlowNeedleA'
+beginState: s32'AirSlowNeedleA'
   upon: (IMMEDIATE)
     yrcWindowLength: 29
     endUpon: 
@@ -4712,7 +4712,7 @@ startState: s32'AirSlowNeedleA'
   sprite: s32'rvn402_18', 2
   endState: 
 
-startState: s32'AirSlowNeedleB'
+beginState: s32'AirSlowNeedleB'
   upon: (IMMEDIATE)
     yrcWindowLength: 29
     endUpon: 
@@ -4752,7 +4752,7 @@ startState: s32'AirSlowNeedleB'
   sprite: s32'rvn402_18', 2
   endState: 
 
-startState: s32'LandSettingTypeNeedle'
+beginState: s32'LandSettingTypeNeedle'
   upon: (IMMEDIATE)
     yrcWindowLength: 33
     endUpon: 
@@ -4781,7 +4781,7 @@ startState: s32'LandSettingTypeNeedle'
   sprite: s32'rvn403_16', 2
   endState: 
 
-startState: s32'AirSettingTypeNeedle'
+beginState: s32'AirSettingTypeNeedle'
   upon: (IMMEDIATE)
     yrcWindowLength: 35
     endUpon: 
@@ -4814,7 +4814,7 @@ startState: s32'AirSettingTypeNeedle'
   sprite: s32'rvn404_15', 2
   endState: 
 
-startState: s32'AntiAirNeedle'
+beginState: s32'AntiAirNeedle'
   upon: (IMMEDIATE)
     endUpon: 
   sprite: s32'rvn450_00', 2
@@ -4843,7 +4843,7 @@ startState: s32'AntiAirNeedle'
   sprite: s32'rvn450_15', 3
   endState: 
 
-startState: s32'ArmorDance'
+beginState: s32'ArmorDance'
   upon: (IMMEDIATE)
     addWhiffCancelOption: s32'RevengeAttack'
     addWhiffCancelOption: s32'RevengeAttackBurst'
@@ -4852,27 +4852,27 @@ startState: s32'ArmorDance'
     yrcWindowLength: 41
     Unknown2384: 1
     upon: (FRAME_STEP)
-      if: (VARIABLE), 46
-        modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-        ifNot: (VARIABLE), 46
+      if: Mem(46)
+        modifyVar: (ADD), Mem(46), Val(-1)
+        ifNot: Mem(46)
           Unknown240: 
           Unknown2378: 
           physicsXImpulse: 300
           endIf: 
         endIf: 
-      if: (VARIABLE), 45
-        if: (VARIABLE), 212
+      if: Mem(45)
+        if: Mem(212)
           checkInput: (INPUT_G_HOLD)
-          ifNot: (VARIABLE), 0
+          ifNot: Mem(ACCUMULATOR)
             checkInput: (INPUT_HOLD_K)
-            ifNot: (VARIABLE), 0
-              ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
+            ifNot: Mem(ACCUMULATOR)
+              ifOperation: (IS_EQUAL), Mem(47), Val(0)
                 Unknown14: s32'End'
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 1
+              ifOperation: (IS_EQUAL), Mem(47), Val(1)
                 Unknown14: s32'End2'
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
+              ifOperation: (IS_EQUAL), Mem(47), Val(2)
                 Unknown14: s32'End3'
                 endIf: 
               clearUpon: (FRAME_STEP)
@@ -4881,109 +4881,109 @@ startState: s32'ArmorDance'
           endIf: 
         else: 
           checkInput: (INPUT_HOLD_K)
-          ifNot: (VARIABLE), 0
-            ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
+          ifNot: Mem(ACCUMULATOR)
+            ifOperation: (IS_EQUAL), Mem(47), Val(0)
               Unknown14: s32'End'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 1
+            ifOperation: (IS_EQUAL), Mem(47), Val(1)
               Unknown14: s32'End2'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
+            ifOperation: (IS_EQUAL), Mem(47), Val(2)
               Unknown14: s32'End3'
               endIf: 
             clearUpon: (FRAME_STEP)
             endIf: 
           endElse: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 48, (STATIC), 0
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+      ifOperation: (IS_EQUAL), Mem(48), Val(0)
+        ifOperation: (IS_EQUAL), Mem(105), Val(40)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 120
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(120)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(180)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 240
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(240)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(300)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 360
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(360)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 420
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(420)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 480
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(480)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 540
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(540)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 600
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(600)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
         endIf: 
@@ -4997,14 +4997,14 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_00', 4
   playVoice: s16'vxxx208'
   Unknown3: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(3)
     Unknown14: s32'Lv2'
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 6
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(6)
     Unknown14: s32'Lv3'
     endIf: 
   enableWhiffCancelOptions: 1
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   superArmorEnabled: 1
   Unknown1808: 1
   Unknown1807: 0
@@ -5014,35 +5014,35 @@ startState: s32'ArmorDance'
   Unknown1829: 1
   Unknown1818: 0
   upon: 41
-    storeValue: (VARIABLE), 49, (STATIC), 1
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
-    storeValue: (VARIABLE), 55, (STATIC), 0
+    storeValue: Mem(49), Val(1)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(3)
+    modifyVar: (ADD), Mem(3), Val(3)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 102, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
-    storeValue: (VARIABLE), 46, (STATIC), 1
-    storeValue: (VARIABLE), 48, (VARIABLE), 3
-    modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 3
-      ifOperation: 22, (STATIC), 50, (STATIC), 100
+    storeValue: Mem(46), Val(1)
+    storeValue: Mem(48), Mem(3)
+    modifyVar: (ADD), Mem(48), Val(1)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(3)
+      ifOperation: 22, Val(50), Val(100)
         playVoice: s16'vxxx209'
         endIf: 
       else: 
         playVoice: s16'vxxx210'
         endElse: 
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 6
-      ifOperation: 22, (STATIC), 50, (STATIC), 100
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(6)
+      ifOperation: 22, Val(50), Val(100)
         playVoice: s16'vxxx211'
         endIf: 
       else: 
         playVoice: s16'vxxx212'
         endElse: 
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 9
-      ifOperation: 22, (STATIC), 50, (STATIC), 100
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(9)
+      ifOperation: 22, Val(50), Val(100)
         playVoice: s16'vxxx213'
         endIf: 
       else: 
@@ -5082,7 +5082,7 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_12', 6
   setMarker: s32'Lv2'
   sprite: s32'rvn406_13', 6
-  storeValue: (VARIABLE), 47, (STATIC), 1
+  storeValue: Mem(47), Val(1)
   sprite: s32'rvn406_14', 6
   sprite: s32'rvn406_15', 6
   sprite: s32'rvn406_16', 6
@@ -5117,13 +5117,13 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_28', 3
   sprite: s32'rvn406_29', 3
   Unknown3: 
-  ifNot: (VARIABLE), 48
+  ifNot: Mem(48)
     playVoice: s16'vxxx215'
     endIf: 
   setMarker: s32'loop'
   sprite: s32'rvn406_26', 25
-  storeValue: (VARIABLE), 55, (STATIC), 0
-  storeValue: (VARIABLE), 47, (STATIC), 2
+  storeValue: Mem(55), Val(0)
+  storeValue: Mem(47), Val(2)
   sprite: s32'rvn406_27', 2
   sprite: s32'rvn406_28', 2
   sprite: s32'rvn406_29', 2
@@ -5139,9 +5139,9 @@ startState: s32'ArmorDance'
   setMarker: s32'End'
   sprite: s32'rvn406_12', 4
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-      ifNot: (VARIABLE), 46
+    if: Mem(46)
+      modifyVar: (ADD), Mem(46), Val(-1)
+      ifNot: Mem(46)
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5161,9 +5161,9 @@ startState: s32'ArmorDance'
   setMarker: s32'End2'
   sprite: s32'rvn406_23', 4
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-      ifNot: (VARIABLE), 46
+    if: Mem(46)
+      modifyVar: (ADD), Mem(46), Val(-1)
+      ifNot: Mem(46)
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5182,9 +5182,9 @@ startState: s32'ArmorDance'
   setMarker: s32'End3'
   sprite: s32'rvn406_26', 3
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-      ifNot: (VARIABLE), 46
+    if: Mem(46)
+      modifyVar: (ADD), Mem(46), Val(-1)
+      ifNot: Mem(46)
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5201,7 +5201,7 @@ startState: s32'ArmorDance'
   sprite: s32'rvn406_33', 2
   endState: 
 
-startState: s32'ArmorDance2'
+beginState: s32'ArmorDance2'
   upon: (IMMEDIATE)
     addWhiffCancelOption: s32'RevengeAttack'
     addWhiffCancelOption: s32'RevengeAttackBurst'
@@ -5209,27 +5209,27 @@ startState: s32'ArmorDance2'
     Unknown2326: 1
     Unknown2384: 1
     upon: (FRAME_STEP)
-      if: (VARIABLE), 46
-        modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-        ifNot: (VARIABLE), 46
+      if: Mem(46)
+        modifyVar: (ADD), Mem(46), Val(-1)
+        ifNot: Mem(46)
           Unknown240: 
           Unknown2378: 
           physicsXImpulse: 300
           endIf: 
         endIf: 
-      if: (VARIABLE), 45
-        if: (VARIABLE), 212
+      if: Mem(45)
+        if: Mem(212)
           checkInput: (INPUT_G_HOLD)
-          ifNot: (VARIABLE), 0
+          ifNot: Mem(ACCUMULATOR)
             checkInput: (INPUT_HOLD_K)
-            ifNot: (VARIABLE), 0
-              ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
+            ifNot: Mem(ACCUMULATOR)
+              ifOperation: (IS_EQUAL), Mem(47), Val(0)
                 Unknown14: s32'End'
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 1
+              ifOperation: (IS_EQUAL), Mem(47), Val(1)
                 Unknown14: s32'End2'
                 endIf: 
-              ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
+              ifOperation: (IS_EQUAL), Mem(47), Val(2)
                 Unknown14: s32'End3'
                 endIf: 
               clearUpon: (FRAME_STEP)
@@ -5238,100 +5238,100 @@ startState: s32'ArmorDance2'
           endIf: 
         else: 
           checkInput: (INPUT_HOLD_K)
-          ifNot: (VARIABLE), 0
-            ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 0
+          ifNot: Mem(ACCUMULATOR)
+            ifOperation: (IS_EQUAL), Mem(47), Val(0)
               Unknown14: s32'End'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 1
+            ifOperation: (IS_EQUAL), Mem(47), Val(1)
               Unknown14: s32'End2'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 2
+            ifOperation: (IS_EQUAL), Mem(47), Val(2)
               Unknown14: s32'End3'
               endIf: 
             clearUpon: (FRAME_STEP)
             endIf: 
           endElse: 
         endIf: 
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 48, (STATIC), 0
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 120
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(48), Val(0)
+        ifOperation: (IS_EQUAL), Mem(105), Val(120)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(180)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 240
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(240)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(300)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 360
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(360)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 420
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(420)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 480
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(480)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 540
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(540)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 600
-          modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-          modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-          storeValue: (VARIABLE), 55, (STATIC), 0
+        ifOperation: (IS_EQUAL), Mem(105), Val(600)
+          modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+          modifyVar: (ADD), Mem(3), Val(1)
+          storeValue: Mem(55), Val(0)
           callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
           callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-          ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+          ifOperation: (IS_LESSER), Mem(79), Val(130)
             endIf: 
           endIf: 
         endIf: 
@@ -5342,26 +5342,26 @@ startState: s32'ArmorDance2'
   romanCancelAvailability: (ALLOWED)
   physicsXImpulse: 300
   Unknown2378: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 1
+  ifOperation: (IS_EQUAL), Mem(3), Val(1)
     Unknown14: s32'Lv1'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(3), Val(2)
     Unknown14: s32'Lv1'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 3
+  ifOperation: (IS_EQUAL), Mem(3), Val(3)
     Unknown14: s32'Lv2'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 4
+  ifOperation: (IS_EQUAL), Mem(3), Val(4)
     Unknown14: s32'Lv2'
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 5
+  ifOperation: (IS_EQUAL), Mem(3), Val(5)
     Unknown14: s32'Lv2'
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 6
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(6)
     Unknown14: s32'Lv3'
     endIf: 
   enableWhiffCancelOptions: 1
-  storeValue: (VARIABLE), 45, (STATIC), 1
+  storeValue: Mem(45), Val(1)
   superArmorEnabled: 1
   Unknown1808: 1
   Unknown1807: 0
@@ -5371,35 +5371,35 @@ startState: s32'ArmorDance2'
   Unknown1829: 1
   Unknown1818: 0
   upon: 41
-    storeValue: (VARIABLE), 49, (STATIC), 1
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
+    storeValue: Mem(49), Val(1)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(3)
+    modifyVar: (ADD), Mem(3), Val(3)
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 102, 0, 0, 0, 0
-    storeValue: (VARIABLE), 55, (STATIC), 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    storeValue: Mem(55), Val(0)
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
-    storeValue: (VARIABLE), 46, (STATIC), 1
-    storeValue: (VARIABLE), 48, (VARIABLE), 3
-    modifyVar: (ADD), (VARIABLE), 48, (STATIC), 1
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 3
-      ifOperation: 22, (STATIC), 50, (STATIC), 100
+    storeValue: Mem(46), Val(1)
+    storeValue: Mem(48), Mem(3)
+    modifyVar: (ADD), Mem(48), Val(1)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(3)
+      ifOperation: 22, Val(50), Val(100)
         playVoice: s16'vxxx209'
         endIf: 
       else: 
         playVoice: s16'vxxx210'
         endElse: 
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 6
-      ifOperation: 22, (STATIC), 50, (STATIC), 100
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(6)
+      ifOperation: 22, Val(50), Val(100)
         playVoice: s16'vxxx211'
         endIf: 
       else: 
         playVoice: s16'vxxx212'
         endElse: 
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 9
-      ifOperation: 22, (STATIC), 50, (STATIC), 100
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(9)
+      ifOperation: 22, Val(50), Val(100)
         playVoice: s16'vxxx213'
         endIf: 
       else: 
@@ -5436,7 +5436,7 @@ startState: s32'ArmorDance2'
   setMarker: s32'Lv2'
   sprite: s32'rvn406_13', 6
   physicsXImpulse: 300
-  storeValue: (VARIABLE), 47, (STATIC), 1
+  storeValue: Mem(47), Val(1)
   sprite: s32'rvn406_14', 6
   sprite: s32'rvn406_15', 6
   sprite: s32'rvn406_16', 6
@@ -5471,13 +5471,13 @@ startState: s32'ArmorDance2'
   sprite: s32'rvn406_28', 3
   sprite: s32'rvn406_29', 3
   Unknown3: 
-  ifNot: (VARIABLE), 48
+  ifNot: Mem(48)
     playVoice: s16'vxxx215'
     endIf: 
   setMarker: s32'loop'
   sprite: s32'rvn406_26', 25
-  storeValue: (VARIABLE), 55, (STATIC), 0
-  storeValue: (VARIABLE), 47, (STATIC), 2
+  storeValue: Mem(55), Val(0)
+  storeValue: Mem(47), Val(2)
   sprite: s32'rvn406_27', 2
   sprite: s32'rvn406_28', 2
   sprite: s32'rvn406_29', 2
@@ -5494,9 +5494,9 @@ startState: s32'ArmorDance2'
   setMarker: s32'End'
   sprite: s32'rvn406_12', 4
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-      ifNot: (VARIABLE), 46
+    if: Mem(46)
+      modifyVar: (ADD), Mem(46), Val(-1)
+      ifNot: Mem(46)
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5517,9 +5517,9 @@ startState: s32'ArmorDance2'
   setMarker: s32'End2'
   sprite: s32'rvn406_23', 4
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-      ifNot: (VARIABLE), 46
+    if: Mem(46)
+      modifyVar: (ADD), Mem(46), Val(-1)
+      ifNot: Mem(46)
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5538,9 +5538,9 @@ startState: s32'ArmorDance2'
   setMarker: s32'End3'
   sprite: s32'rvn406_26', 3
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      modifyVar: (ADD), (VARIABLE), 46, (STATIC), -1
-      ifNot: (VARIABLE), 46
+    if: Mem(46)
+      modifyVar: (ADD), Mem(46), Val(-1)
+      ifNot: Mem(46)
         Unknown240: 
         Unknown2378: 
         endIf: 
@@ -5558,7 +5558,7 @@ startState: s32'ArmorDance2'
   jumpToState: s32'_NEUTRAL'
   endState: 
 
-startState: s32'LandBlowAttack'
+beginState: s32'LandBlowAttack'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     attackLevel: 4
@@ -5569,28 +5569,28 @@ startState: s32'LandBlowAttack'
     Unknown1112: 1
     hitAirPushbackX: 30000
     Unknown725: 1
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       counterHitTumbleDuration: 10
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       counterHitWallBounceCount: 1
       endIf: 
     isAirUnblockable: 1
     Unknown2331: 18
     upon: (HIT)
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-      storeValue: (VARIABLE), 55, (STATIC), 0
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+      modifyVar: (ADD), Mem(3), Val(1)
+      storeValue: Mem(55), Val(0)
       callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
       callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-      ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+      ifOperation: (IS_LESSER), Mem(79), Val(130)
         endIf: 
       endUpon: 
     endUpon: 
   sprite: s32'rvn407_00', 3
   tensionGain: 45
   playVoice: s16'vxxx205'
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
     Unknown2283: -1
     endIf: 
   sprite: s32'rvn407_01', 2
@@ -5600,7 +5600,7 @@ startState: s32'LandBlowAttack'
   sprite: s32'rvn407_04', 2
   playSFX: s32'SE_SWINGC'
   sprite: s32'rvn407_05', 3
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
     Unknown2283: -1
     endIf: 
   sprite: s32'rvn407_06', 2
@@ -5624,7 +5624,7 @@ startState: s32'LandBlowAttack'
   sprite: s32'rvn407_14', 3
   endState: 
 
-startState: s32'AirBlowAttack'
+beginState: s32'AirBlowAttack'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     attackLevel: 4
@@ -5637,20 +5637,20 @@ startState: s32'AirBlowAttack'
     hitAirPushbackY: 32000
     untechableTime: 44
     Unknown2331: 12
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       hitAirPushbackY: 34000
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       hitAirPushbackY: 36000
       untechableTime: 47
       endIf: 
     upon: (HIT)
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-      storeValue: (VARIABLE), 55, (STATIC), 0
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+      modifyVar: (ADD), Mem(3), Val(1)
+      storeValue: Mem(55), Val(0)
       callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
       callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-      ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+      ifOperation: (IS_LESSER), Mem(79), Val(130)
         endIf: 
       endUpon: 
     Unknown2137: 0
@@ -5660,23 +5660,23 @@ startState: s32'AirBlowAttack'
     endUpon: 
   sprite: s32'rvn408_00', 2
   playVoice: s16'vxxx205'
-  ifOperation: (IS_LESSER), (VARIABLE), 7, (STATIC), 44400
+  ifOperation: (IS_LESSER), Mem(7), Val(44400)
     resetVelocity: 1
     physicsXImpulse: -3000
     physicsYImpulse: 15000
     endIf: 
   else: 
-    storeValue: (VARIABLE), 45, (STATIC), 1
+    storeValue: Mem(45), Val(1)
     Unknown111: 20
     physicsYImpulse: 10000
     setGravity: 1200
     endElse: 
   tensionGain: 45
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
     Unknown2283: -1
     endIf: 
   sprite: s32'rvn408_01', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
     Unknown2283: -1
     endIf: 
   sprite: s32'rvn408_02', 1
@@ -5695,7 +5695,7 @@ startState: s32'AirBlowAttack'
   addPositionX: 225000
   addPositionY: 50000
   Unknown40: 
-  if: (VARIABLE), 45
+  if: Mem(45)
     Unknown2234: s32'rvn408_07_rx'
     endIf: 
   sprite: s32'rvn408_08', 5
@@ -5721,7 +5721,7 @@ startState: s32'AirBlowAttack'
   sprite: s32'rvn010_27', 2
   endState: 
 
-startState: s32'CommandThrow'
+beginState: s32'CommandThrow'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnAtkTemplNageLand'
     canGrab: 1
@@ -5767,7 +5767,7 @@ startState: s32'CommandThrow'
   exitState: 
   endState: 
 
-startState: s32'CommandThrowEx'
+beginState: s32'CommandThrowEx'
   upon: (IMMEDIATE)
     Unknown1641: 18, 1
     Unknown1018: 1
@@ -5781,9 +5781,9 @@ startState: s32'CommandThrowEx'
     Unknown818: 60
     Unknown1139: 1
     setComboPushbackLevel: 1
-    storeValue: (VARIABLE), 4, (STATIC), 1
+    storeValue: Mem(4), Val(1)
     upon: (BEFORE_EXIT)
-      storeValue: (VARIABLE), 4, (STATIC), 0
+      storeValue: Mem(4), Val(0)
       endUpon: 
     Unknown2157: 0, 5
     endUpon: 
@@ -5882,10 +5882,10 @@ startState: s32'CommandThrowEx'
   setForcedProration: 65
   Unknown1157: 1
   playSFX: s32'GG2_002'
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
     hitAirPushbackX: -5000
     hitAirPushbackY: 30000
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       hitAirPushbackX: -5000
       hitAirPushbackY: 35000
       endIf: 
@@ -5894,12 +5894,12 @@ startState: s32'CommandThrowEx'
     hitAirPushbackY: 25000
     endElse: 
   upon: (HIT)
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
-    storeValue: (VARIABLE), 55, (STATIC), 0
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(3)
+    modifyVar: (ADD), Mem(3), Val(3)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endUpon: 
   sprite: s32'rvn409_21', 3
@@ -5912,7 +5912,7 @@ startState: s32'CommandThrowEx'
   sprite: s32'rvn409_28', 3
   endState: 
 
-startState: s32'AntiAirCommandThrow'
+beginState: s32'AntiAirCommandThrow'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnAtkTemplNageDageki'
     canGrab: 1
@@ -5960,7 +5960,7 @@ startState: s32'AntiAirCommandThrow'
   exitState: 
   endState: 
 
-startState: s32'AntiAirCommandThrowEx'
+beginState: s32'AntiAirCommandThrowEx'
   upon: (IMMEDIATE)
     Unknown1641: 18, 1
     Unknown1018: 1
@@ -5975,9 +5975,9 @@ startState: s32'AntiAirCommandThrowEx'
     Unknown818: 60
     Unknown1139: 1
     Unknown2157: 0, 5
-    storeValue: (VARIABLE), 4, (STATIC), 1
+    storeValue: Mem(4), Val(1)
     upon: (BEFORE_EXIT)
-      storeValue: (VARIABLE), 4, (STATIC), 0
+      storeValue: Mem(4), Val(0)
       endUpon: 
     endUpon: 
   sprite: s32'rvn411_00', 3
@@ -6072,10 +6072,10 @@ startState: s32'AntiAirCommandThrowEx'
   groundHitEffect: (AIR_FACE_DOWN)
   hitAirPushbackX: 8000
   hitGravity: 1800
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
     hitAirPushbackX: -5000
     hitAirPushbackY: 30000
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       hitAirPushbackX: -5000
       hitAirPushbackY: 35000
       endIf: 
@@ -6090,12 +6090,12 @@ startState: s32'AntiAirCommandThrowEx'
   Unknown1157: 1
   playSFX: s32'GG2_002'
   upon: (HIT)
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 3
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 3
-    storeValue: (VARIABLE), 55, (STATIC), 0
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(3)
+    modifyVar: (ADD), Mem(3), Val(3)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 3, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endUpon: 
   sprite: s32'rvn409_21', 3
@@ -6108,7 +6108,7 @@ startState: s32'AntiAirCommandThrowEx'
   sprite: s32'rvn409_28', 3
   endState: 
 
-startState: s32'Warp'
+beginState: s32'Warp'
   upon: (IMMEDIATE)
     Unknown1058: 1
     romanCancelAvailability: (DISALLOWED)
@@ -6138,7 +6138,7 @@ startState: s32'Warp'
   sprite: s32'rvn040_00', 2
   endState: 
 
-startState: s32'LandDashAttack'
+beginState: s32'LandDashAttack'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     Unknown1939: 1
@@ -6154,10 +6154,10 @@ startState: s32'LandDashAttack'
     Unknown1051: 0
     isAirUnblockable: 1
     Unknown2159: 3
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       Unknown2159: 5
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       Unknown2159: 7
       endIf: 
     upon: (SUPERFREEZE)
@@ -6168,17 +6168,17 @@ startState: s32'LandDashAttack'
       playVoice: s16'vxxx216'
       endUpon: 
     upon: (HIT)
-      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
-      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+      modifyVar: (ADD), Mem(45), Val(1)
+      ifOperation: (IS_EQUAL), Mem(45), Val(1)
         damage: 70
         endIf: 
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 2
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(2)
         damage: 10
         endIf: 
       Unknown1734: 1
-      storeValue: (VARIABLE), 4, (STATIC), 1
+      storeValue: Mem(4), Val(1)
       upon: (BEFORE_EXIT)
-        storeValue: (VARIABLE), 4, (STATIC), 0
+        storeValue: Mem(4), Val(0)
         endUpon: 
       endUpon: 
     endUpon: 
@@ -6191,7 +6191,7 @@ startState: s32'LandDashAttack'
   Unknown2199: 1
   createObject2: s32'rvn430Eff', 100
   sprite: s32'rvn430_03', 2
-  if: (VARIABLE), 161
+  if: Mem(161)
     endIf: 
   else: 
     setStrikeInvul: 1
@@ -6202,29 +6202,29 @@ startState: s32'LandDashAttack'
   Unknown3: 
   upon: (FRAME_STEP)
     upon: 6
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 13, (STATIC), 50
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(13), Val(50)
         Unknown14: s32'End'
         clearUpon: 6
         addPositionY: -200000
         endIf: 
       clearUpon: (FRAME_STEP)
       endUpon: 
-    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 2
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 3
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(2)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(3)
         Unknown14: s32'Hit'
         clearUpon: (FRAME_STEP)
         clearUpon: 6
         endIf: 
       endIf: 
-    ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 25, (STATIC), 5
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 5
+    ifOperation: (IS_LESSER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(5)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(5)
         Unknown14: s32'Hit'
         clearUpon: (FRAME_STEP)
         clearUpon: 6
         endIf: 
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 7
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(7)
         Unknown14: s32'Hit'
         clearUpon: (FRAME_STEP)
         clearUpon: 6
@@ -6283,13 +6283,13 @@ startState: s32'LandDashAttack'
   resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_12', 2
@@ -6313,13 +6313,13 @@ startState: s32'LandDashAttack'
   resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_19', 2
@@ -6342,13 +6342,13 @@ startState: s32'LandDashAttack'
   sprite: s32'rvn430_25', 2
   resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_26', 2
@@ -6371,13 +6371,13 @@ startState: s32'LandDashAttack'
   sprite: s32'rvn430_32', 2
   resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_33', 2
@@ -6398,7 +6398,7 @@ startState: s32'LandDashAttack'
   exitState: 
   endState: 
 
-startState: s32'AirDashAttack'
+beginState: s32'AirDashAttack'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     Unknown1939: 1
@@ -6413,10 +6413,10 @@ startState: s32'AirDashAttack'
     airHitEffect: 12
     Unknown1051: 0
     Unknown2159: 3
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       Unknown2159: 5
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       Unknown2159: 7
       endIf: 
     upon: (SUPERFREEZE)
@@ -6427,17 +6427,17 @@ startState: s32'AirDashAttack'
       playVoice: s16'vxxx216'
       endUpon: 
     upon: (HIT)
-      modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
-      ifOperation: (IS_EQUAL), (VARIABLE), 45, (STATIC), 1
+      modifyVar: (ADD), Mem(45), Val(1)
+      ifOperation: (IS_EQUAL), Mem(45), Val(1)
         damage: 70
         endIf: 
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 2
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(2)
         damage: 10
         endIf: 
       Unknown1734: 1
-      storeValue: (VARIABLE), 4, (STATIC), 1
+      storeValue: Mem(4), Val(1)
       upon: (BEFORE_EXIT)
-        storeValue: (VARIABLE), 4, (STATIC), 0
+        storeValue: Mem(4), Val(0)
         endUpon: 
       endUpon: 
     Unknown2137: 0
@@ -6469,7 +6469,7 @@ startState: s32'AirDashAttack'
   Unknown3: 
   playVoice: s16'vxxx217'
   setMarker: s32'loop'
-  if: (VARIABLE), 161
+  if: Mem(161)
     endIf: 
   else: 
     setStrikeInvul: 1
@@ -6514,13 +6514,13 @@ startState: s32'AirDashAttack'
   resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_12', 2
@@ -6544,13 +6544,13 @@ startState: s32'AirDashAttack'
   resetVelocity: 1
   Unknown2161: 100, -20000, 100000
   createObject2: s32'rvn430EffRay', 130
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_19', 2
@@ -6573,13 +6573,13 @@ startState: s32'AirDashAttack'
   sprite: s32'rvn430_25', 2
   resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_26', 2
@@ -6602,13 +6602,13 @@ startState: s32'AirDashAttack'
   sprite: s32'rvn430_32', 2
   resetVelocity: 1
   createObject2: s32'rvn430EffRay', 119
-  if: (VARIABLE), 45
-    modifyVar: (ADD), (VARIABLE), 25, (STATIC), 5
-    modifyVar: (ADD), (VARIABLE), 3, (STATIC), 5
-    storeValue: (VARIABLE), 55, (STATIC), 0
+  if: Mem(45)
+    modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(5)
+    modifyVar: (ADD), Mem(3), Val(5)
+    storeValue: Mem(55), Val(0)
     callSubroutine: s32'rvn_GaugeLine', 0, 5, 0, 103, 0, 0, 0, 0
     callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-    ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+    ifOperation: (IS_LESSER), Mem(79), Val(130)
       endIf: 
     endIf: 
   sprite: s32'rvn430_33', 2
@@ -6629,7 +6629,7 @@ startState: s32'AirDashAttack'
   exitState: 
   endState: 
 
-startState: s32'RevengeAttack'
+beginState: s32'RevengeAttack'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     Unknown1939: 1
@@ -6641,40 +6641,40 @@ startState: s32'RevengeAttack'
     Unknown725: 1
     tensionGainOnConnect: 0
     isAirUnblockable: 1
-    if: (VARIABLE), 164
+    if: Mem(164)
       damage: 12
       stunValue: 12
       Unknown1177: 1
       Unknown1179: 1
-      storeValue: (VARIABLE), 53, (STATIC), 1
+      storeValue: Mem(53), Val(1)
       endIf: 
     else: 
-      storeValue: (VARIABLE), 53, (STATIC), 0
+      storeValue: Mem(53), Val(0)
       endElse: 
     upon: (HIT)
       disableHitstop: 1
-      if: (VARIABLE), 164
-        ifNot: (VARIABLE), 45
-          storeValue: (VARIABLE), 45, (STATIC), 1
+      if: Mem(164)
+        ifNot: Mem(45)
+          storeValue: Mem(45), Val(1)
           Unknown2130: 5000
           endIf: 
         endIf: 
-      storeValue: (VARIABLE), 4, (STATIC), 1
+      storeValue: Mem(4), Val(1)
       endUpon: 
     upon: (SUPERFREEZE)
       Unknown2199: 1
       Unknown2286: 1
       cameraMotion: 31077, 454202, 89872, 455, 0, 0, 54, 15, 20, 15, 1
       Unknown448: s32'cmn_kakusei_hatudo', 119
-      if: (VARIABLE), 164
+      if: Mem(164)
         Unknown2132: 0
         Unknown448: s32'cmn_bkakusei_fire', 100
-        storeValue: (VARIABLE), 120, (STATIC), 0
+        storeValue: Mem(120), Val(0)
         endIf: 
       endUpon: 
     endUpon: 
   sprite: s32'rvn432_00', 2
-  if: (VARIABLE), 161
+  if: Mem(161)
     endIf: 
   else: 
     setStrikeInvul: 1
@@ -6704,7 +6704,7 @@ startState: s32'RevengeAttack'
   sprite: s32'rvn433_08', 4
   endState: 
 
-startState: s32'RevengeAttackEx'
+beginState: s32'RevengeAttackEx'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     Unknown1641: 20, 1
@@ -6726,250 +6726,250 @@ startState: s32'RevengeAttackEx'
     tensionGain: 0
     Unknown1139: 1
     Unknown1045: 2, s32'rvn432EffHit'
-    if: (VARIABLE), 53
+    if: Mem(53)
       damage: 6
       stunValue: 6
       Unknown1086: 30
       Unknown1177: 1
       Unknown2199: 1
       endIf: 
-    storeValue: (VARIABLE), 45, (VARIABLE), 3
-    modifyVar: (MUL), (VARIABLE), 45, (STATIC), 5
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 50
-      storeValue: (VARIABLE), 45, (STATIC), 50
+    storeValue: Mem(45), Mem(3)
+    modifyVar: (MUL), Mem(45), Val(5)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(50)
+      storeValue: Mem(45), Val(50)
       endIf: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
+      ifOperation: (IS_EQUAL), Mem(105), Val(20)
         Unknown2212: 1
         createObject2: s32'rvn432Usugura', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+      ifOperation: (IS_EQUAL), Mem(105), Val(30)
         playCharacterSFX: s32'RVN_KAKUSEI'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 47
+      ifOperation: (IS_EQUAL), Mem(105), Val(47)
         createObject2: s32'rvn432Kira', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 135
+      ifOperation: (IS_EQUAL), Mem(105), Val(135)
         Unknown2212: 0
         Unknown32: s32'rvn432Usugura'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
+      ifOperation: (IS_EQUAL), Mem(105), Val(40)
         playVoice: s16'vxxx219'
         endIf: 
-      if: (VARIABLE), 37
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 1
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 162
+      if: Mem(37)
+        ifOperation: (IS_EQUAL), Mem(3), Val(1)
+          ifOperation: (IS_EQUAL), Mem(105), Val(162)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 212
+          ifOperation: (IS_EQUAL), Mem(105), Val(212)
             playVoice: s16'vxxx221'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 2
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_EQUAL), Mem(3), Val(2)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 252
+          ifOperation: (IS_EQUAL), Mem(105), Val(252)
             playVoice: s16'vxxx221'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 3
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_EQUAL), Mem(3), Val(3)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 242
+          ifOperation: (IS_EQUAL), Mem(105), Val(242)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 292
+          ifOperation: (IS_EQUAL), Mem(105), Val(292)
             playVoice: s16'vxxx222'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 4
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 182
+        ifOperation: (IS_EQUAL), Mem(3), Val(4)
+          ifOperation: (IS_EQUAL), Mem(105), Val(182)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 252
+          ifOperation: (IS_EQUAL), Mem(105), Val(252)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 307
+          ifOperation: (IS_EQUAL), Mem(105), Val(307)
             playVoice: s16'vxxx222'
             endIf: 
           endIf: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 5
-          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 3, (STATIC), 7
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(5)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(3), Val(7)
+            ifOperation: (IS_EQUAL), Mem(105), Val(177)
               playVoice: s16'vxxx220'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 242
+            ifOperation: (IS_EQUAL), Mem(105), Val(242)
               playVoice: s16'vxxx221'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 292
+            ifOperation: (IS_EQUAL), Mem(105), Val(292)
               playVoice: s16'vxxx222'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 347
+            ifOperation: (IS_EQUAL), Mem(105), Val(347)
               playVoice: s16'vxxx223'
               endIf: 
             endIf: 
           endIf: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 8
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(8)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 247
+          ifOperation: (IS_EQUAL), Mem(105), Val(247)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 302
+          ifOperation: (IS_EQUAL), Mem(105), Val(302)
             playVoice: s16'vxxx222'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 362
+          ifOperation: (IS_EQUAL), Mem(105), Val(362)
             playVoice: s16'vxxx223'
             endIf: 
           endIf: 
         endIf: 
-      if: (VARIABLE), 38
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 1
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 162
+      if: Mem(38)
+        ifOperation: (IS_EQUAL), Mem(3), Val(1)
+          ifOperation: (IS_EQUAL), Mem(105), Val(162)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 212
+          ifOperation: (IS_EQUAL), Mem(105), Val(212)
             playVoice: s16'vxxx221'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 2
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_EQUAL), Mem(3), Val(2)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 252
+          ifOperation: (IS_EQUAL), Mem(105), Val(252)
             playVoice: s16'vxxx221'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 3
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_EQUAL), Mem(3), Val(3)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 237
+          ifOperation: (IS_EQUAL), Mem(105), Val(237)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 282
+          ifOperation: (IS_EQUAL), Mem(105), Val(282)
             playVoice: s16'vxxx222'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 4
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 182
+        ifOperation: (IS_EQUAL), Mem(3), Val(4)
+          ifOperation: (IS_EQUAL), Mem(105), Val(182)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 247
+          ifOperation: (IS_EQUAL), Mem(105), Val(247)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 297
+          ifOperation: (IS_EQUAL), Mem(105), Val(297)
             playVoice: s16'vxxx222'
             endIf: 
           endIf: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 5
-          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 3, (STATIC), 7
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(5)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(3), Val(7)
+            ifOperation: (IS_EQUAL), Mem(105), Val(177)
               playVoice: s16'vxxx220'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 237
+            ifOperation: (IS_EQUAL), Mem(105), Val(237)
               playVoice: s16'vxxx221'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 282
+            ifOperation: (IS_EQUAL), Mem(105), Val(282)
               playVoice: s16'vxxx222'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 357
+            ifOperation: (IS_EQUAL), Mem(105), Val(357)
               playVoice: s16'vxxx223'
               endIf: 
             endIf: 
           endIf: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 8
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(8)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 252
+          ifOperation: (IS_EQUAL), Mem(105), Val(252)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 312
+          ifOperation: (IS_EQUAL), Mem(105), Val(312)
             playVoice: s16'vxxx222'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 402
+          ifOperation: (IS_EQUAL), Mem(105), Val(402)
             playVoice: s16'vxxx223'
             endIf: 
           endIf: 
         endIf: 
-      if: (VARIABLE), 39
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 1
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 162
+      if: Mem(39)
+        ifOperation: (IS_EQUAL), Mem(3), Val(1)
+          ifOperation: (IS_EQUAL), Mem(105), Val(162)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 212
+          ifOperation: (IS_EQUAL), Mem(105), Val(212)
             playVoice: s16'vxxx221'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 2
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_EQUAL), Mem(3), Val(2)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 252
+          ifOperation: (IS_EQUAL), Mem(105), Val(252)
             playVoice: s16'vxxx221'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 3
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_EQUAL), Mem(3), Val(3)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 232
+          ifOperation: (IS_EQUAL), Mem(105), Val(232)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 282
+          ifOperation: (IS_EQUAL), Mem(105), Val(282)
             playVoice: s16'vxxx222'
             endIf: 
           endIf: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 4
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 182
+        ifOperation: (IS_EQUAL), Mem(3), Val(4)
+          ifOperation: (IS_EQUAL), Mem(105), Val(182)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 252
+          ifOperation: (IS_EQUAL), Mem(105), Val(252)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 307
+          ifOperation: (IS_EQUAL), Mem(105), Val(307)
             playVoice: s16'vxxx222'
             endIf: 
           endIf: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 5
-          ifOperation: (IS_LESSER_OR_EQUAL), (VARIABLE), 3, (STATIC), 7
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(5)
+          ifOperation: (IS_LESSER_OR_EQUAL), Mem(3), Val(7)
+            ifOperation: (IS_EQUAL), Mem(105), Val(177)
               playVoice: s16'vxxx220'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 237
+            ifOperation: (IS_EQUAL), Mem(105), Val(237)
               playVoice: s16'vxxx221'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 287
+            ifOperation: (IS_EQUAL), Mem(105), Val(287)
               playVoice: s16'vxxx222'
               endIf: 
-            ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 347
+            ifOperation: (IS_EQUAL), Mem(105), Val(347)
               playVoice: s16'vxxx223'
               endIf: 
             endIf: 
           endIf: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 8
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 177
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(8)
+          ifOperation: (IS_EQUAL), Mem(105), Val(177)
             playVoice: s16'vxxx220'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 247
+          ifOperation: (IS_EQUAL), Mem(105), Val(247)
             playVoice: s16'vxxx221'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 302
+          ifOperation: (IS_EQUAL), Mem(105), Val(302)
             playVoice: s16'vxxx222'
             endIf: 
-          ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 367
+          ifOperation: (IS_EQUAL), Mem(105), Val(367)
             playVoice: s16'vxxx223'
             endIf: 
           endIf: 
         endIf: 
       endUpon: 
-    storeValue: (VARIABLE), 4, (STATIC), 1
+    storeValue: Mem(4), Val(1)
     upon: (BEFORE_EXIT)
-      storeValue: (VARIABLE), 4, (STATIC), 0
+      storeValue: Mem(4), Val(0)
       endUpon: 
     romanCancelAvailability: (DISALLOWED)
     endUpon: 
@@ -6990,12 +6990,12 @@ startState: s32'RevengeAttackEx'
   Unknown2051: 1500
   Unknown2028: s32'rvn432'
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   Unknown3: 
   setMarker: s32'loop'
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 8
@@ -7003,111 +7003,111 @@ startState: s32'RevengeAttackEx'
   disableHitstop: 0
   hitstop: 12
   screenShake: 1, 2
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   Unknown544: 10
   Unknown1139: 0
   Unknown1064: s32'RevengeAttackEx'
   sprite: s32'rvn432_08', 10
   sprite: s32'rvn432_09', 8
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 6
   hit: 
   hitstop: 5
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_11', 8
   disableHitstop: 1
   sprite: s32'rvn432_12', 6
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 5
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_08', 7
   sprite: s32'rvn432_09', 5
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 5
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_11', 7
   sprite: s32'rvn432_12', 5
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 4
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_08', 6
   sprite: s32'rvn432_09', 4
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 4
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_11', 6
   sprite: s32'rvn432_12', 4
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 2
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_08', 6
   sprite: s32'rvn432_09', 3
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 2
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_11', 6
   sprite: s32'rvn432_12', 3
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_07', 1
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_08', 5
   sprite: s32'rvn432_09', 2
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_10', 1
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_11', 5
   sprite: s32'rvn432_12', 2
   Unknown3: 
   createObject2: s32'rvn432EffBake', 100
   goToMarker: s32'loop2'
   setMarker: s32'loop2'
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_13', 2
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_14', 2
   sprite: s32'rvn432_15', 2
   Unknown3: 
-  modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
-  ifOperation: (IS_EQUAL), (VARIABLE), 47, (STATIC), 10
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 3, (STATIC), 6
+  modifyVar: (ADD), Mem(47), Val(1)
+  ifOperation: (IS_EQUAL), Mem(47), Val(10)
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(3), Val(6)
       goToMarker: s32'loop3'
       Unknown32: s32'rvn432EffBake'
       createObject2: s32'rvn432EffBake2', 100
@@ -7115,16 +7115,16 @@ startState: s32'RevengeAttackEx'
     endIf: 
   goToMarker: s32'loop2'
   setMarker: s32'loop3'
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   sprite: s32'rvn432_16', 1
   hit: 
-  modifyVar: (SUB), (VARIABLE), 45, (STATIC), 1
+  modifyVar: (SUB), Mem(45), Val(1)
   sprite: s32'rvn432_17', 1
   sprite: s32'rvn432_18', 1
   Unknown3: 
-  ifNot: (VARIABLE), 45
+  ifNot: Mem(45)
     goToMarker: s32'End'
     endIf: 
   goToMarker: s32'loop3'
@@ -7165,84 +7165,84 @@ startState: s32'RevengeAttackEx'
   wallBounceCount: 1
   wallBounceInCornerOnly: 1
   Unknown1165: s32'RevengeAttackLH'
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 1
+  ifOperation: (IS_EQUAL), Mem(3), Val(1)
     stunValue: 95
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(3), Val(2)
     stunValue: 360
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 3
+  ifOperation: (IS_EQUAL), Mem(3), Val(3)
     stunValue: 390
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 4
+  ifOperation: (IS_EQUAL), Mem(3), Val(4)
     stunValue: 420
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 5
+  ifOperation: (IS_EQUAL), Mem(3), Val(5)
     stunValue: 440
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 6
+  ifOperation: (IS_EQUAL), Mem(3), Val(6)
     stunValue: 455
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 7
+  ifOperation: (IS_EQUAL), Mem(3), Val(7)
     stunValue: 535
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 8
+  ifOperation: (IS_EQUAL), Mem(3), Val(8)
     stunValue: 560
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 9
+  ifOperation: (IS_EQUAL), Mem(3), Val(9)
     stunValue: 580
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 10
+  ifOperation: (IS_EQUAL), Mem(3), Val(10)
     stunValue: 610
     endIf: 
-  if: (VARIABLE), 53
+  if: Mem(53)
     damage: 125
     Unknown1086: 40
     Unknown1177: 1
     Unknown1165: s32'RevengeAttackLHBurst'
     stunValue: 125
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 1
+    ifOperation: (IS_EQUAL), Mem(3), Val(1)
       stunValue: 240
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(3), Val(2)
       stunValue: 250
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 3
+    ifOperation: (IS_EQUAL), Mem(3), Val(3)
       stunValue: 980
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 4
+    ifOperation: (IS_EQUAL), Mem(3), Val(4)
       stunValue: 1019
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 5
+    ifOperation: (IS_EQUAL), Mem(3), Val(5)
       stunValue: 1080
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 6
+    ifOperation: (IS_EQUAL), Mem(3), Val(6)
       stunValue: 1270
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 7
+    ifOperation: (IS_EQUAL), Mem(3), Val(7)
       stunValue: 1330
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 8
+    ifOperation: (IS_EQUAL), Mem(3), Val(8)
       stunValue: 1370
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 9
+    ifOperation: (IS_EQUAL), Mem(3), Val(9)
       stunValue: 1430
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 3, (STATIC), 10
+    ifOperation: (IS_EQUAL), Mem(3), Val(10)
       stunValue: 1480
       endIf: 
     endIf: 
   clearUpon: (FRAME_STEP)
   whiffCancelOptionBufferTime: s32'RomanCancelHit', 5
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(105), Val(2)
       romanCancelAvailability: (ALLOWED)
       endIf: 
     endUpon: 
   sprite: s32'rvn432_26', 3
   setNoCollision: 1
-  storeValue: (VARIABLE), 4, (STATIC), 0
-  storeValue: (VARIABLE), 55, (STATIC), 580
+  storeValue: Mem(4), Val(0)
+  storeValue: Mem(55), Val(580)
   sprite: s32'rvn432_27', 3
   sprite: s32'rvn432_28', 3
   sprite: s32'rvn432_27', 3
@@ -7259,10 +7259,10 @@ startState: s32'RevengeAttackEx'
   sprite: s32'rvn432_36', 3
   endState: 
 
-startState: s32'Ichigeki'
+beginState: s32'Ichigeki'
   upon: (IMMEDIATE)
-    storeValue: (VARIABLE), 135, (VARIABLE), 107
-    storeValue: (VARIABLE), 107, (STATIC), 3
+    storeValue: Mem(135), Mem(107)
+    storeValue: Mem(107), Val(3)
     attackLevel: 3
     damage: 0
     Unknown1059: 1
@@ -7271,7 +7271,7 @@ startState: s32'Ichigeki'
     Unknown1149: 10
     Unknown818: 100000
     Unknown1103: 0
-    ifOperation: (IS_EQUAL), (VARIABLE), 135, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(135), Val(2)
       Unknown1076: 0
       canGrabDuringHitstun: 1
       endIf: 
@@ -7293,7 +7293,7 @@ startState: s32'Ichigeki'
   sprite: s32'rvn202_01', 2
   callSubroutine: s32'IchigekiGoldFrameAdd', 0, -1, 0, 0, 0, 0, 0, 0
   sprite: s32'rvn202_01', 3
-  ifOperation: (IS_EQUAL), (VARIABLE), 135, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(135), Val(2)
     superFreeze: 0, 119, 34, 48
     endIf: 
   else: 
@@ -7344,18 +7344,18 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
+  storeFromObjToObj: (SELF), Mem(32), (ENEMY), Mem(32)
   Unknown2013: s32'xxx_rvn451cs', 0
   Unknown2028: s32'CmnCutSceneDamageHigh'
   Unknown40: 
   Unknown47: s16'jko'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown41: 22
     Unknown2028: s32'rvn_Ichigeki'
     Unknown40: 
     endIf: 
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(105), Val(0)
       Unknown2063: 0, 0
       createObject2: s32'rvn451BG', 100
       createObject2: s32'IKface', 100
@@ -7367,42 +7367,42 @@ startState: s32'Ichigeki'
       Unknown2135: 900, 200, 80
       playCharacterSFX: s32'RVN_IK'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
+    ifOperation: (IS_EQUAL), Mem(105), Val(10)
       Unknown344: 200
       Unknown350: 200
       Unknown356: 200
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
+    ifOperation: (IS_EQUAL), Mem(105), Val(20)
       createObject2: s32'rvn451Aura', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
+    ifOperation: (IS_EQUAL), Mem(105), Val(40)
       createObject2: s32'rvn451Aura2', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 52
+    ifOperation: (IS_EQUAL), Mem(105), Val(52)
       createObject2: s32'rvn451Tanka', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 60
+    ifOperation: (IS_EQUAL), Mem(105), Val(60)
       createObject2: s32'rvn451Aura3', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 80
+    ifOperation: (IS_EQUAL), Mem(105), Val(80)
       createObject2: s32'rvn451Aura4', 100
       createObject2: s32'rvn451AuraJizoku', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+    ifOperation: (IS_EQUAL), Mem(105), Val(90)
       Unknown344: 0
       Unknown350: 0
       Unknown356: 0
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 100
+    ifOperation: (IS_EQUAL), Mem(105), Val(100)
       createObject2: s32'rvn451Aura5', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 120
+    ifOperation: (IS_EQUAL), Mem(105), Val(120)
       createObject2: s32'rvn451Aura6', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 140
+    ifOperation: (IS_EQUAL), Mem(105), Val(140)
       createObject2: s32'rvn451Aura7', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 189
+    ifOperation: (IS_EQUAL), Mem(105), Val(189)
       Unknown32: s32'rvn451Aura2'
       Unknown32: s32'rvn451Aura3'
       Unknown32: s32'rvn451Aura4'
@@ -7411,10 +7411,10 @@ startState: s32'Ichigeki'
       Unknown32: s32'rvn451Aura7'
       createObject2: s32'rvn451HandAura', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 189
+    ifOperation: (IS_EQUAL), Mem(105), Val(189)
       Unknown32: s32'rvn451AuraJizoku'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 264
+    ifOperation: (IS_EQUAL), Mem(105), Val(264)
       Unknown32: s32'rvn451HandAura'
       createObject2: s32'rvn451AuraJizoku2', 100
       Unknown41: 1
@@ -7424,14 +7424,14 @@ startState: s32'Ichigeki'
       Unknown41: 22
       Unknown40: 
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 330
+    ifOperation: (IS_EQUAL), Mem(105), Val(330)
       playVoice: s16'vxxx226'
       Unknown2211: s32'prev', -2147483618
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 520
+    ifOperation: (IS_EQUAL), Mem(105), Val(520)
       createObject2: s32'rvn451Eye', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 629
+    ifOperation: (IS_EQUAL), Mem(105), Val(629)
       Unknown32: s32'rvn451Aura'
       Unknown32: s32'rvn451AuraJizoku2'
       createObject2: s32'rvn451HibasiraJizoku', 100
@@ -7440,13 +7440,13 @@ startState: s32'Ichigeki'
       Unknown2081: 0, 128, 128
       Unknown2082: 128, 128, 128
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 700
+    ifOperation: (IS_EQUAL), Mem(105), Val(700)
       Unknown1771: s32'rvn451BG', 23
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 790
+    ifOperation: (IS_EQUAL), Mem(105), Val(790)
       Unknown1771: s32'rvn451HibasiraJizoku', 23
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 800
+    ifOperation: (IS_EQUAL), Mem(105), Val(800)
       Unknown1018: 1
       hitUnchecked: 
       Unknown1059: 3
@@ -7459,7 +7459,7 @@ startState: s32'Ichigeki'
       Unknown350: 255
       Unknown356: 255
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 860
+    ifOperation: (IS_EQUAL), Mem(105), Val(860)
       createObject2: s32'rvn451hai', 100
       Unknown32: s32'rvn451HibasiraJizoku'
       Unknown1771: s32'rvn451BG', 24
@@ -7469,50 +7469,50 @@ startState: s32'Ichigeki'
       Unknown2082: 128, 128, 128
       Unknown2083: 300
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 960
+    ifOperation: (IS_EQUAL), Mem(105), Val(960)
       createObject2: s32'rvn451hai2', 100
       Unknown2079: 90, 80, 80
       Unknown2080: 150, 150, 140
       Unknown1771: s32'rvn451hai', 23
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1040
+    ifOperation: (IS_EQUAL), Mem(105), Val(1040)
       Unknown2135: 300, 1000, 30
       Unknown2079: 82, 78, 78
       Unknown2080: 140, 140, 138
       Unknown2083: 400
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1050
+    ifOperation: (IS_EQUAL), Mem(105), Val(1050)
       Unknown2083: 500
       Unknown2079: 74, 71, 71
       Unknown2080: 138, 138, 136
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1055
+    ifOperation: (IS_EQUAL), Mem(105), Val(1055)
       Unknown2083: 600
       Unknown2079: 65, 64, 64
       Unknown2080: 136, 136, 134
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1060
+    ifOperation: (IS_EQUAL), Mem(105), Val(1060)
       Unknown2083: 700
       Unknown2079: 46, 43, 43
       Unknown2080: 133, 133, 131
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1065
+    ifOperation: (IS_EQUAL), Mem(105), Val(1065)
       Unknown2083: 800
       Unknown2079: 20, 18, 18
       Unknown2080: 130, 130, 129
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1070
+    ifOperation: (IS_EQUAL), Mem(105), Val(1070)
       Unknown2083: 1000
       Unknown2079: 0, 0, 0
       Unknown2080: 128, 128, 128
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1000
+    ifOperation: (IS_EQUAL), Mem(105), Val(1000)
       Unknown1676: 
       endIf: 
     endUpon: 
   endState: 
 
-startState: s32'EventStand'
+beginState: s32'EventStand'
   Unknown2041: -1, 0, 1000
   setMarker: s32'loop'
   sprite: s32'rvn900_00', 8
@@ -7535,7 +7535,7 @@ startState: s32'EventStand'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventRVN08A_01'
+beginState: s32'EventRVN08A_01'
   Unknown2041: -1, 0, 1000
   Unknown2157: 0, 1
   Unknown1699: -300000
@@ -7560,7 +7560,7 @@ startState: s32'EventRVN08A_01'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventRVN08B_01'
+beginState: s32'EventRVN08B_01'
   sprite: s32'rvn640_00', 6
   sprite: s32'rvn640_01', 6
   sprite: s32'rvn640_02', 6
@@ -7581,7 +7581,7 @@ startState: s32'EventRVN08B_01'
   Unknown3: 
   endState: 
 
-startState: s32'EventRVN08B_02'
+beginState: s32'EventRVN08B_02'
   sprite: s32'rvn640_05', 6
   sprite: s32'rvn640_04', 6
   sprite: s32'rvn640_03', 6
@@ -7599,7 +7599,7 @@ startState: s32'EventRVN08B_02'
   Unknown3: 
   endState: 
 
-startState: s32'EventRVN08B_03'
+beginState: s32'EventRVN08B_03'
   sprite: s32'rvn306_09', 6
   sprite: s32'rvn306_03', 6
   sprite: s32'rvn306_02', 6
@@ -7613,7 +7613,7 @@ startState: s32'EventRVN08B_03'
   Unknown3: 
   endState: 
 
-startState: s32'FBScratch'
+beginState: s32'FBScratch'
   upon: (IMMEDIATE)
     addGatlingOption: s32'RedRomanCancel'
     consumeTension: 2500
@@ -7633,14 +7633,14 @@ startState: s32'FBScratch'
     isAirUnblockable: 1
     Unknown2331: 18
     upon: (HIT)
-      modifyVar: (ADD), (VARIABLE), 25, (STATIC), 1
-      modifyVar: (ADD), (VARIABLE), 3, (STATIC), 1
-      storeValue: (VARIABLE), 55, (STATIC), 0
+      modifyVar: (ADD), Mem(RESOURCE_AMOUNT), Val(1)
+      modifyVar: (ADD), Mem(3), Val(1)
+      storeValue: Mem(55), Val(0)
       callSubroutine: s32'rvn_GaugeLine', 0, 1, 0, 103, 0, 0, 0, 0
       callSubroutine: s32'rvn_RiseGaugeEffect', 0, 0, 0, 0, 0, 0, 0, 0
-      ifOperation: (IS_LESSER), (VARIABLE), 79, (STATIC), 130
+      ifOperation: (IS_LESSER), Mem(79), Val(130)
         endIf: 
-      if: (VARIABLE), 45
+      if: Mem(45)
         Unknown32: s32'SlowEffect'
         Unknown2247: 0, 1, 0, 0
         callEtcState: s32'SlowEffect', 100
@@ -7655,7 +7655,7 @@ startState: s32'FBScratch'
   sprite: s32'rvn407_00', 2
   tensionGain: 45
   playVoice: s16'vxxx205'
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
     Unknown2283: -1
     endIf: 
   sprite: s32'rvn407_01', 1
@@ -7670,7 +7670,7 @@ startState: s32'FBScratch'
   sprite: s32'rvn407_04', 2
   playSFX: s32'SE_SWINGC'
   sprite: s32'rvn407_05', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
     Unknown2283: -1
     endIf: 
   sprite: s32'rvn407_06', 2
@@ -7689,7 +7689,7 @@ startState: s32'FBScratch'
   sprite: s32'rvn407_14', 2
   endState: 
 
-startState: s32'FBTripleNeedle'
+beginState: s32'FBTripleNeedle'
   upon: (IMMEDIATE)
     consumeTension: 2500
     reduceTensionGainForTime: 240

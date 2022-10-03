@@ -3,10 +3,10 @@ startSubroutine: s32'PreInit'
   endSubroutine: 
 
 startSubroutine: s32'PreInit2nd'
-  storeValue: (VARIABLE), 61, (STATIC), 0
-  ifNot: (VARIABLE), 61
+  storeValue: Mem(61), Val(0)
+  ifNot: Mem(61)
     Unknown2213: s32'entry_default', s32'', 0
-    storeValue: (VARIABLE), 61, (STATIC), 1
+    storeValue: Mem(61), Val(1)
     endIf: 
   endSubroutine: 
 
@@ -1096,32 +1096,32 @@ startSubroutine: s32'RoundInit'
   Unknown629: s16'vxxx023', s16'voice_none'
   Unknown629: s16'vxxx027', s16'voice_none'
   Unknown629: s16'vxxx029', s16'voice_none'
-  if: (VARIABLE), 37
-    Unknown1679: s16'vxxx307', s16'r600', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx309', s16'r186', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx310', s16'r756', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(37)
+    Unknown1679: s16'vxxx307', s16'r600', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx309', s16'r186', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx310', s16'r756', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
-  if: (VARIABLE), 38
-    Unknown1679: s16'vxxx307', s16'r770', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx309', s16'r240', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx310', s16'r530', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(38)
+    Unknown1679: s16'vxxx307', s16'r770', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx309', s16'r240', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx310', s16'r530', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
-  if: (VARIABLE), 39
-    Unknown1679: s16'vxxx307', s16'r710', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx309', s16'r260', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
-    Unknown1679: s16'vxxx310', s16'r480', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(39)
+    Unknown1679: s16'vxxx307', s16'r710', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx309', s16'r260', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    Unknown1679: s16'vxxx310', s16'r480', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
   Unknown47: s16'sol'
-  if: (VARIABLE), 0
-    Unknown1679: s16'vxxx307', s16'r780', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(ACCUMULATOR)
+    Unknown1679: s16'vxxx307', s16'r780', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
   Unknown47: s16'ram'
-  if: (VARIABLE), 0
-    Unknown1679: s16'vxxx307', s16'r940', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(ACCUMULATOR)
+    Unknown1679: s16'vxxx307', s16'r940', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
   Unknown47: s16'jko'
-  if: (VARIABLE), 0
-    Unknown1679: s16'vxxx307', s16'r960', s16'', '0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000'
+  if: Mem(ACCUMULATOR)
+    Unknown1679: s16'vxxx307', s16'r960', s16'', 0x000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     endIf: 
   Unknown2012: s32''
   Unknown2025: s32'headonly'
@@ -1177,7 +1177,7 @@ startSubroutine: s32'RoundInit'
   Unknown2027: 
   Unknown2025: s32'CmnCutSceneDamage_Kakusei'
   Unknown47: s16'pot'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'wmatress'
@@ -1185,7 +1185,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'Manpu'
     endIf: 
   Unknown47: s16'fau'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'wmatress'
@@ -1197,7 +1197,7 @@ startSubroutine: s32'RoundInit'
   Unknown2027: 
   Unknown2025: s32'CmnCutSceneDamage_Ichigeki'
   Unknown47: s16'zat'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'Body'
     Unknown2026: s32'head'
     Unknown2026: s32'wmatress'
@@ -1208,7 +1208,7 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'Zat_IKparts'
     endIf: 
   Unknown47: s16'fau'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'Body'
     Unknown2026: s32'Head_High'
     Unknown2026: s32'wmatress'
@@ -1216,18 +1216,18 @@ startSubroutine: s32'RoundInit'
     Unknown2026: s32'warms'
     Unknown2026: s32'wlegs'
     Unknown2026: s32'Manpu'
-    if: (VARIABLE), 37
+    if: Mem(37)
       Unknown2026: s32'FauIKParts_Killer'
       endIf: 
-    if: (VARIABLE), 38
+    if: Mem(38)
       Unknown2026: s32'FauIKParts_Rose'
       endIf: 
-    if: (VARIABLE), 39
+    if: Mem(39)
       Unknown2026: s32'FauIKParts_Cute'
       endIf: 
     endIf: 
   Unknown47: s16'ven'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown2026: s32'VenIKBall'
     endIf: 
   Unknown2027: 
@@ -1256,28 +1256,28 @@ startSubroutine: s32'RoundInit'
   Unknown2027: 
   Unknown2036: 
   Unknown2034: 
-  storeValue: (VARIABLE), 53, (STATIC), -2147483647
-  storeValue: (VARIABLE), 54, (STATIC), -2147483647
-  storeValue: (VARIABLE), 55, (STATIC), -2147483647
-  storeValue: (VARIABLE), 56, (STATIC), -2147483647
-  storeValue: (VARIABLE), 57, (STATIC), -2147483647
-  storeValue: (VARIABLE), 58, (STATIC), -2147483647
-  storeValue: (VARIABLE), 59, (STATIC), -2147483647
-  storeValue: (VARIABLE), 60, (STATIC), -2147483647
+  storeValue: Mem(53), Val(-2147483647)
+  storeValue: Mem(54), Val(-2147483647)
+  storeValue: Mem(55), Val(-2147483647)
+  storeValue: Mem(56), Val(-2147483647)
+  storeValue: Mem(57), Val(-2147483647)
+  storeValue: Mem(58), Val(-2147483647)
+  storeValue: Mem(59), Val(-2147483647)
+  storeValue: Mem(60), Val(-2147483647)
   endSubroutine: 
 
 startSubroutine: s32'CPUEstimate'
   Unknown1999: 22, s32'NmlAtk5E'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     Unknown1581: s32'RC_HomingJumpCombo'
     endIf: 
   Unknown1582: s32'CmnFDash'
   endSubroutine: 
 
 startSubroutine: s32'OnFrameStep'
-  ifNot: (VARIABLE), 139
-    ifNot: (VARIABLE), 24
-      if: (VARIABLE), 3
+  ifNot: Mem(139)
+    ifNot: Mem(24)
+      if: Mem(3)
         Unknown2032: s32'nohead'
         Unknown2034: 
         endIf: 
@@ -1287,7 +1287,7 @@ startSubroutine: s32'OnFrameStep'
         endElse: 
       endIf: 
     endIf: 
-  if: (VARIABLE), 84
+  if: Mem(84)
     tensionGain: 2
     endIf: 
   endSubroutine: 
@@ -1295,49 +1295,49 @@ startSubroutine: s32'OnFrameStep'
 startSubroutine: s32'OnActionBegin'
   upon: 27
     Unknown2156: 1
-    ifNot: (VARIABLE), 4
+    ifNot: Mem(4)
       jumpToState: s32'BWarp'
       endIf: 
-    storeValue: (VARIABLE), 6, (STATIC), 1
+    storeValue: Mem(6), Val(1)
     endUpon: 
   upon: 28
     Unknown2156: 1
-    ifNot: (VARIABLE), 4
+    ifNot: Mem(4)
       jumpToState: s32'MerryWarp'
       endIf: 
-    storeValue: (VARIABLE), 6, (STATIC), 2
+    storeValue: Mem(6), Val(2)
     endUpon: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 6, (STATIC), 1
-    ifNot: (VARIABLE), 24
+  ifOperation: (IS_EQUAL), Mem(6), Val(1)
+    ifNot: Mem(24)
       jumpToState: s32'BWarp'
       endIf: 
     else: 
-      storeValue: (VARIABLE), 6, (STATIC), 0
+      storeValue: Mem(6), Val(0)
       endElse: 
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 6, (STATIC), 2
-    ifNot: (VARIABLE), 24
+  ifOperation: (IS_EQUAL), Mem(6), Val(2)
+    ifNot: Mem(24)
       jumpToState: s32'MerryWarp'
       endIf: 
     else: 
-      storeValue: (VARIABLE), 6, (STATIC), 0
+      storeValue: Mem(6), Val(0)
       endElse: 
     endIf: 
   upon: 29
-    storeValue: (VARIABLE), 53, (STATIC), -2147483647
-    storeValue: (VARIABLE), 54, (STATIC), -2147483647
+    storeValue: Mem(53), Val(-2147483647)
+    storeValue: Mem(54), Val(-2147483647)
     endUpon: 
   upon: 30
-    storeValue: (VARIABLE), 55, (STATIC), -2147483647
-    storeValue: (VARIABLE), 56, (STATIC), -2147483647
+    storeValue: Mem(55), Val(-2147483647)
+    storeValue: Mem(56), Val(-2147483647)
     endUpon: 
   upon: 31
-    storeValue: (VARIABLE), 57, (STATIC), -2147483647
-    storeValue: (VARIABLE), 58, (STATIC), -2147483647
+    storeValue: Mem(57), Val(-2147483647)
+    storeValue: Mem(58), Val(-2147483647)
     endUpon: 
   upon: 32
-    storeValue: (VARIABLE), 59, (STATIC), -2147483647
-    storeValue: (VARIABLE), 60, (STATIC), -2147483647
+    storeValue: Mem(59), Val(-2147483647)
+    storeValue: Mem(60), Val(-2147483647)
     endUpon: 
   endSubroutine: 
 
@@ -1355,7 +1355,7 @@ startSubroutine: s32'_ThrowGripParamAir'
   Unknown1027: -1, -1, 175000, -52500
   endSubroutine: 
 
-startState: s32'CmnActStand'
+beginState: s32'CmnActStand'
   setMarker: s32'loop'
   sprite: s32'bed000_00', 3
   sprite: s32'bed000_01', 3
@@ -1416,7 +1416,7 @@ startState: s32'CmnActStand'
   Unknown3: 
   Unknown13: s32'loop', 22, 0, 90, 0, 100
   Unknown25: s32'loop', 2, 86
-  storeValue: (VARIABLE), 87, (STATIC), 960
+  storeValue: Mem(87), Val(960)
   sprite: s32'bed001_00', 6
   sprite: s32'bed001_01', 6
   createObject2: s32'bake001', 100
@@ -1442,21 +1442,21 @@ startState: s32'CmnActStand'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActStandTurn'
+beginState: s32'CmnActStandTurn'
   sprite: s32'bed003_00', 3
   sprite: s32'bed003_01', 2
   sprite: s32'bed003_02', 2
   sprite: s32'bed003_03', 2
   endState: 
 
-startState: s32'CmnActStand2Crouch'
+beginState: s32'CmnActStand2Crouch'
   sprite: s32'bed010_00', 3
   sprite: s32'bed010_01', 3
   sprite: s32'bed010_02', 3
   sprite: s32'bed010_03', 3
   endState: 
 
-startState: s32'CmnActCrouch'
+beginState: s32'CmnActCrouch'
   Unknown2041: -1, 0, 1000
   setMarker: s32'loop'
   sprite: s32'bed010_04', 3
@@ -1538,22 +1538,22 @@ startState: s32'CmnActCrouch'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActCrouchTurn'
+beginState: s32'CmnActCrouchTurn'
   sprite: s32'bed013_00', 3
   sprite: s32'bed013_01', 2
   sprite: s32'bed013_02', 2
   sprite: s32'bed013_03', 2
   endState: 
 
-startState: s32'CmnActCrouch2Stand'
+beginState: s32'CmnActCrouch2Stand'
   sprite: s32'bed010_60', 3
   endState: 
 
-startState: s32'CmnActJumpPre'
+beginState: s32'CmnActJumpPre'
   sprite: s32'bed028_00', 3
   endState: 
 
-startState: s32'CmnActJump'
+beginState: s32'CmnActJump'
   setMarker: s32'_Upper'
   setMarker: s32'upperloop'
   whiffCancelOptionBufferTime: s32'AirStop', 8
@@ -1582,11 +1582,11 @@ startState: s32'CmnActJump'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActJumpLanding'
+beginState: s32'CmnActJumpLanding'
   sprite: s32'bed027_00', 3
   endState: 
 
-startState: s32'CmnActLandingStiff'
+beginState: s32'CmnActLandingStiff'
   sprite: s32'bed027_00', 2147483647
   Unknown3: 
   setMarker: s32'_End'
@@ -1594,7 +1594,7 @@ startState: s32'CmnActLandingStiff'
   exitState: 
   endState: 
 
-startState: s32'CmnActFWalk'
+beginState: s32'CmnActFWalk'
   sprite: s32'bed030_00', 3
   sprite: s32'bed030_01', 3
   setMarker: s32'loop'
@@ -1609,7 +1609,7 @@ startState: s32'CmnActFWalk'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBWalk'
+beginState: s32'CmnActBWalk'
   sprite: s32'bed031_00', 3
   sprite: s32'bed031_01', 3
   setMarker: s32'loop'
@@ -1624,10 +1624,10 @@ startState: s32'CmnActBWalk'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActFDash'
+beginState: s32'CmnActFDash'
   upon: (IMMEDIATE)
     callSubroutine: s32'CheckNormalDash', 0, 0, 0, 0, 0, 0, 0, 0
-    ifNot: (VARIABLE), 0
+    ifNot: Mem(ACCUMULATOR)
       Unknown276: 1
       upon: (FRAME_STEP)
         Unknown2262: 12
@@ -1723,17 +1723,17 @@ startState: s32'CmnActFDash'
   goToMarker: s32'ndLoop'
   endState: 
 
-startState: s32'CmnActFDashStop'
+beginState: s32'CmnActFDashStop'
   sprite: s32'bed030_01', 3
   sprite: s32'bed030_00', 3
   endState: 
 
-startState: s32'CmnActBDash'
+beginState: s32'CmnActBDash'
   upon: (IMMEDIATE)
     Unknown276: 1
     upon: (FRAME_STEP)
       Unknown2262: 14
-      storeValue: (VARIABLE), 113, (STATIC), 5
+      storeValue: Mem(113), Val(5)
       endUpon: 
     romanCancelAvailability: (ALLOWED)
     endUpon: 
@@ -1761,13 +1761,13 @@ startState: s32'CmnActBDash'
   jumpToState: s32'_NEUTRAL'
   endState: 
 
-startState: s32'CmnActAirFDash'
+beginState: s32'CmnActAirFDash'
   endState: 
 
-startState: s32'CmnActAirBDash'
+beginState: s32'CmnActAirBDash'
   endState: 
 
-startState: s32'CmnActNokezoriHighLv1'
+beginState: s32'CmnActNokezoriHighLv1'
   sprite: s32'bed050_04', 1
   sprite: s32'bed050_03', 3
   sprite: s32'bed050_04', 2
@@ -1775,7 +1775,7 @@ startState: s32'CmnActNokezoriHighLv1'
   sprite: s32'bed050_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv2'
+beginState: s32'CmnActNokezoriHighLv2'
   sprite: s32'bed050_03', 1
   sprite: s32'bed050_02', 3
   sprite: s32'bed050_03', 2
@@ -1784,7 +1784,7 @@ startState: s32'CmnActNokezoriHighLv2'
   sprite: s32'bed050_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv3'
+beginState: s32'CmnActNokezoriHighLv3'
   sprite: s32'bed050_03', 2
   sprite: s32'bed050_02', 4
   sprite: s32'bed050_03', 2
@@ -1793,7 +1793,7 @@ startState: s32'CmnActNokezoriHighLv3'
   sprite: s32'bed050_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv4'
+beginState: s32'CmnActNokezoriHighLv4'
   sprite: s32'bed050_00', 2
   sprite: s32'bed050_01', 4
   sprite: s32'bed050_02', 3
@@ -1803,7 +1803,7 @@ startState: s32'CmnActNokezoriHighLv4'
   sprite: s32'bed050_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriHighLv5'
+beginState: s32'CmnActNokezoriHighLv5'
   sprite: s32'bed050_00', 2
   sprite: s32'bed050_01', 6
   sprite: s32'bed050_02', 3
@@ -1813,7 +1813,7 @@ startState: s32'CmnActNokezoriHighLv5'
   sprite: s32'bed050_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv1'
+beginState: s32'CmnActNokezoriLowLv1'
   sprite: s32'bed052_04', 1
   sprite: s32'bed052_03', 3
   sprite: s32'bed052_04', 2
@@ -1821,7 +1821,7 @@ startState: s32'CmnActNokezoriLowLv1'
   sprite: s32'bed052_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv2'
+beginState: s32'CmnActNokezoriLowLv2'
   sprite: s32'bed052_03', 1
   sprite: s32'bed052_02', 3
   sprite: s32'bed052_03', 2
@@ -1830,7 +1830,7 @@ startState: s32'CmnActNokezoriLowLv2'
   sprite: s32'bed052_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv3'
+beginState: s32'CmnActNokezoriLowLv3'
   sprite: s32'bed052_03', 2
   sprite: s32'bed052_02', 4
   sprite: s32'bed052_03', 2
@@ -1839,7 +1839,7 @@ startState: s32'CmnActNokezoriLowLv3'
   sprite: s32'bed052_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv4'
+beginState: s32'CmnActNokezoriLowLv4'
   sprite: s32'bed052_00', 2
   sprite: s32'bed052_01', 4
   sprite: s32'bed052_02', 3
@@ -1849,7 +1849,7 @@ startState: s32'CmnActNokezoriLowLv4'
   sprite: s32'bed052_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriLowLv5'
+beginState: s32'CmnActNokezoriLowLv5'
   sprite: s32'bed052_00', 2
   sprite: s32'bed052_01', 6
   sprite: s32'bed052_02', 3
@@ -1859,7 +1859,7 @@ startState: s32'CmnActNokezoriLowLv5'
   sprite: s32'bed052_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv1'
+beginState: s32'CmnActNokezoriCrouchLv1'
   sprite: s32'bed054_04', 1
   sprite: s32'bed054_03', 3
   sprite: s32'bed054_04', 2
@@ -1867,7 +1867,7 @@ startState: s32'CmnActNokezoriCrouchLv1'
   sprite: s32'bed054_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv2'
+beginState: s32'CmnActNokezoriCrouchLv2'
   sprite: s32'bed054_03', 2
   sprite: s32'bed054_02', 3
   sprite: s32'bed054_03', 2
@@ -1876,7 +1876,7 @@ startState: s32'CmnActNokezoriCrouchLv2'
   sprite: s32'bed054_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv3'
+beginState: s32'CmnActNokezoriCrouchLv3'
   sprite: s32'bed054_03', 2
   sprite: s32'bed054_02', 5
   sprite: s32'bed054_03', 2
@@ -1885,7 +1885,7 @@ startState: s32'CmnActNokezoriCrouchLv3'
   sprite: s32'bed054_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv4'
+beginState: s32'CmnActNokezoriCrouchLv4'
   sprite: s32'bed054_00', 2
   sprite: s32'bed054_01', 5
   sprite: s32'bed054_02', 3
@@ -1895,7 +1895,7 @@ startState: s32'CmnActNokezoriCrouchLv4'
   sprite: s32'bed054_06', 2
   endState: 
 
-startState: s32'CmnActNokezoriCrouchLv5'
+beginState: s32'CmnActNokezoriCrouchLv5'
   sprite: s32'bed054_00', 2
   sprite: s32'bed054_01', 6
   sprite: s32'bed054_02', 3
@@ -1905,7 +1905,7 @@ startState: s32'CmnActNokezoriCrouchLv5'
   sprite: s32'bed054_06', 2
   endState: 
 
-startState: s32'CmnActBDownUpper'
+beginState: s32'CmnActBDownUpper'
   setMarker: s32'loop'
   sprite: s32'bed060_00', 4
   sprite: s32'bed060_01', 4
@@ -1913,11 +1913,11 @@ startState: s32'CmnActBDownUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBDownUpperEnd'
+beginState: s32'CmnActBDownUpperEnd'
   sprite: s32'bed060_01', 3
   endState: 
 
-startState: s32'CmnActBDownDown'
+beginState: s32'CmnActBDownDown'
   sprite: s32'bed060_02', 2
   sprite: s32'bed060_03', 2
   sprite: s32'bed060_04', 2
@@ -1928,7 +1928,7 @@ startState: s32'CmnActBDownDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActBDownBound'
+beginState: s32'CmnActBDownBound'
   sprite: s32'bed060_07', 3
   createObject2: s32'head060', 100
   sprite: s32'bed060_08', 3
@@ -1938,11 +1938,11 @@ startState: s32'CmnActBDownBound'
   sprite: s32'bed060_12', 2
   endState: 
 
-startState: s32'CmnActBDownLoop'
+beginState: s32'CmnActBDownLoop'
   sprite: s32'bed060_13', 2147483647
   endState: 
 
-startState: s32'CmnActBDown2Stand'
+beginState: s32'CmnActBDown2Stand'
   sprite: s32'bed061_00', 2
   sprite: s32'bed061_01', 2
   sprite: s32'bed061_02', 2
@@ -1958,7 +1958,7 @@ startState: s32'CmnActBDown2Stand'
   sprite: s32'bed061_11', 2
   endState: 
 
-startState: s32'CmnActFDownUpper'
+beginState: s32'CmnActFDownUpper'
   sprite: s32'bed063_00', 3
   sprite: s32'bed063_01', 3
   sprite: s32'bed063_02', 3
@@ -1969,12 +1969,12 @@ startState: s32'CmnActFDownUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActFDownUpperEnd'
+beginState: s32'CmnActFDownUpperEnd'
   sprite: s32'bed063_02', 4
   sprite: s32'bed063_03', 4
   endState: 
 
-startState: s32'CmnActFDownDown'
+beginState: s32'CmnActFDownDown'
   sprite: s32'bed063_04', 2
   sprite: s32'bed063_05', 2
   setMarker: s32'loop'
@@ -1983,7 +1983,7 @@ startState: s32'CmnActFDownDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActFDownBound'
+beginState: s32'CmnActFDownBound'
   sprite: s32'bed063_05', 3
   createObject2: s32'head063', 100
   sprite: s32'bed063_06', 3
@@ -1995,11 +1995,11 @@ startState: s32'CmnActFDownBound'
   sprite: s32'bed063_12', 4
   endState: 
 
-startState: s32'CmnActFDownLoop'
+beginState: s32'CmnActFDownLoop'
   sprite: s32'bed063_13', 2147483647
   endState: 
 
-startState: s32'CmnActFDown2Stand'
+beginState: s32'CmnActFDown2Stand'
   sprite: s32'bed064_00', 2
   sprite: s32'bed064_01', 2
   sprite: s32'bed064_02', 2
@@ -2015,7 +2015,7 @@ startState: s32'CmnActFDown2Stand'
   sprite: s32'bed064_12', 2
   endState: 
 
-startState: s32'CmnActVDownUpper'
+beginState: s32'CmnActVDownUpper'
   sprite: s32'bed062_00', 4
   setMarker: s32'loop'
   sprite: s32'bed062_01', 4
@@ -2024,13 +2024,13 @@ startState: s32'CmnActVDownUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActVDownUpperEnd'
+beginState: s32'CmnActVDownUpperEnd'
   sprite: s32'bed062_03', 4
   sprite: s32'bed062_04', 3
   sprite: s32'bed062_05', 3
   endState: 
 
-startState: s32'CmnActVDownDown'
+beginState: s32'CmnActVDownDown'
   sprite: s32'bed062_03', 2
   sprite: s32'bed062_04', 2
   sprite: s32'bed062_05', 2
@@ -2042,7 +2042,7 @@ startState: s32'CmnActVDownDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActVDownBound'
+beginState: s32'CmnActVDownBound'
   sprite: s32'bed062_09', 3
   createObject2: s32'head062', 100
   sprite: s32'bed062_10', 3
@@ -2054,11 +2054,11 @@ startState: s32'CmnActVDownBound'
   sprite: s32'bed062_16', 4
   endState: 
 
-startState: s32'CmnActVDownLoop'
+beginState: s32'CmnActVDownLoop'
   sprite: s32'bed062_17', 2147483647
   endState: 
 
-startState: s32'CmnActBlowoff'
+beginState: s32'CmnActBlowoff'
   sprite: s32'bed075_00', 3
   setMarker: s32'loop'
   sprite: s32'bed075_01', 3
@@ -2067,7 +2067,7 @@ startState: s32'CmnActBlowoff'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActKirimomiUpper'
+beginState: s32'CmnActKirimomiUpper'
   setMarker: s32'loop'
   sprite: s32'bed074_00', 3
   sprite: s32'bed074_01', 3
@@ -2081,13 +2081,13 @@ startState: s32'CmnActKirimomiUpper'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActWallBound'
+beginState: s32'CmnActWallBound'
   sprite: s32'bed076_00', 3
   sprite: s32'bed076_01', 3
   sprite: s32'bed076_02', 2147483647
   endState: 
 
-startState: s32'CmnActWallBoundDown'
+beginState: s32'CmnActWallBoundDown'
   sprite: s32'bed076_03', 4
   sprite: s32'bed076_04', 4
   sprite: s32'bed076_05', 4
@@ -2099,7 +2099,7 @@ startState: s32'CmnActWallBoundDown'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActWallHaritsuki'
+beginState: s32'CmnActWallHaritsuki'
   sprite: s32'bed077_00', 4
   sprite: s32'bed077_01', 2147483647
   setMarker: s32'_Drop'
@@ -2119,7 +2119,7 @@ startState: s32'CmnActWallHaritsuki'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActWallHaritsukiLand'
+beginState: s32'CmnActWallHaritsukiLand'
   sprite: s32'bed077_09', 3
   Unknown448: s32'cmn_harituki', 114
   sprite: s32'bed077_10', 3
@@ -2127,7 +2127,7 @@ startState: s32'CmnActWallHaritsukiLand'
   sprite: s32'bed077_12', 2147483647
   endState: 
 
-startState: s32'CmnActWallHaritsukiGetUp'
+beginState: s32'CmnActWallHaritsukiGetUp'
   sprite: s32'bed078_00', 3
   sprite: s32'bed078_01', 3
   sprite: s32'bed078_02', 3
@@ -2135,7 +2135,7 @@ startState: s32'CmnActWallHaritsukiGetUp'
   sprite: s32'bed078_04', 3
   endState: 
 
-startState: s32'CmnActJitabataLoop'
+beginState: s32'CmnActJitabataLoop'
   sprite: s32'bed070_00', 4
   setMarker: s32'loop'
   sprite: s32'bed070_01', 4
@@ -2151,7 +2151,7 @@ startState: s32'CmnActJitabataLoop'
   sprite: s32'bed070_00', 4
   endState: 
 
-startState: s32'CmnActKizetsu'
+beginState: s32'CmnActKizetsu'
   sprite: s32'bed071_00', 5
   setMarker: s32'loop'
   sprite: s32'bed071_01', 5
@@ -2168,7 +2168,7 @@ startState: s32'CmnActKizetsu'
   sprite: s32'bed071_09', 5
   endState: 
 
-startState: s32'CmnActHizakuzure'
+beginState: s32'CmnActHizakuzure'
   callCmnEfFunc: s32'cmn_Hizakuzure'
   sprite: s32'bed085_00', 9
   sprite: s32'bed085_01', 10
@@ -2217,7 +2217,7 @@ startState: s32'CmnActHizakuzure'
   jumpToState: s32'CmnActFDownLoop'
   endState: 
 
-startState: s32'CmnActKorogari'
+beginState: s32'CmnActKorogari'
   setMarker: s32'loop'
   sprite: s32'bed080_00', 4
   sprite: s32'bed080_01', 4
@@ -2250,7 +2250,7 @@ startState: s32'CmnActKorogari'
   sprite: s32'bed083_10', 4
   endState: 
 
-startState: s32'CmnActZSpin'
+beginState: s32'CmnActZSpin'
   setMarker: s32'loop'
   sprite: s32'bed080_00', 2
   sprite: s32'bed080_01', 2
@@ -2271,12 +2271,12 @@ startState: s32'CmnActZSpin'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CmnActUkemi'
+beginState: s32'CmnActUkemi'
   sprite: s32'bed113_00', 4
   sprite: s32'bed113_01', 4
   endState: 
 
-startState: s32'CmnActMidGuardLoop'
+beginState: s32'CmnActMidGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'bed040_00', 2
   sprite: s32'bed040_01', 2
@@ -2302,13 +2302,13 @@ startState: s32'CmnActMidGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActMidGuardEnd'
+beginState: s32'CmnActMidGuardEnd'
   sprite: s32'bed040_02', 2
   sprite: s32'bed040_01', 2
   sprite: s32'bed040_00', 2
   endState: 
 
-startState: s32'CmnActHighGuardLoop'
+beginState: s32'CmnActHighGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'bed040_00', 2
   sprite: s32'bed040_01', 2
@@ -2334,13 +2334,13 @@ startState: s32'CmnActHighGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActHighGuardEnd'
+beginState: s32'CmnActHighGuardEnd'
   sprite: s32'bed040_02', 2
   sprite: s32'bed040_01', 2
   sprite: s32'bed040_00', 2
   endState: 
 
-startState: s32'CmnActCrouchGuardLoop'
+beginState: s32'CmnActCrouchGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'bed043_00', 2
   sprite: s32'bed043_01', 2
@@ -2366,13 +2366,13 @@ startState: s32'CmnActCrouchGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActCrouchGuardEnd'
+beginState: s32'CmnActCrouchGuardEnd'
   sprite: s32'bed043_02', 2
   sprite: s32'bed043_01', 2
   sprite: s32'bed043_00', 2
   endState: 
 
-startState: s32'CmnActAirGuardLoop'
+beginState: s32'CmnActAirGuardLoop'
   setMarker: s32'_Pre'
   sprite: s32'bed045_00', 2
   sprite: s32'bed045_01', 2
@@ -2397,13 +2397,13 @@ startState: s32'CmnActAirGuardLoop'
   goToMarker: s32'_Top'
   endState: 
 
-startState: s32'CmnActAirGuardEnd'
+beginState: s32'CmnActAirGuardEnd'
   sprite: s32'bed045_02', 2
   sprite: s32'bed045_01', 2
   sprite: s32'bed045_00', 2
   endState: 
 
-startState: s32'CmnActHajikareStand'
+beginState: s32'CmnActHajikareStand'
   sprite: s32'bed100_00', 3
   sprite: s32'bed100_01', 4
   sprite: s32'bed100_02', 6
@@ -2416,7 +2416,7 @@ startState: s32'CmnActHajikareStand'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActHajikareCrouch'
+beginState: s32'CmnActHajikareCrouch'
   sprite: s32'bed101_00', 3
   sprite: s32'bed101_01', 4
   sprite: s32'bed101_02', 6
@@ -2429,7 +2429,7 @@ startState: s32'CmnActHajikareCrouch'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActHajikareAir'
+beginState: s32'CmnActHajikareAir'
   sprite: s32'bed102_00', 3
   sprite: s32'bed102_01', 4
   sprite: s32'bed102_02', 6
@@ -2447,30 +2447,30 @@ startState: s32'CmnActHajikareAir'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActAirTurn'
+beginState: s32'CmnActAirTurn'
   sprite: s32'bed023_00', 3
   sprite: s32'bed023_01', 2
   sprite: s32'bed023_02', 2
   sprite: s32'bed023_03', 2
   endState: 
 
-startState: s32'CmnActLockWait'
+beginState: s32'CmnActLockWait'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActLockReject'
+beginState: s32'CmnActLockReject'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActAirLockWait'
+beginState: s32'CmnActAirLockWait'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActAirLockReject'
+beginState: s32'CmnActAirLockReject'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActItemUse'
+beginState: s32'CmnActItemUse'
   Unknown13: s32'_BeginB', 9, 2, 122, 0, 1
   Unknown13: s32'_BeginC', 9, 2, 122, 0, 2
   setMarker: s32'_BeginA'
@@ -2487,7 +2487,7 @@ startState: s32'CmnActItemUse'
   Unknown3: 
   sprite: s32'bed310_12', 3
   sprite: s32'bed310_13', 3
-  storeValue: (VARIABLE), 69, (STATIC), 1
+  storeValue: Mem(69), Val(1)
   sprite: s32'keep', 2147483647
   setMarker: s32'_EndA'
   sprite: s32'bed310_14', 3
@@ -2516,7 +2516,7 @@ startState: s32'CmnActItemUse'
   exitState: 
   endState: 
 
-startState: s32'CmnActBurst'
+beginState: s32'CmnActBurst'
   sprite: s32'bed330_00', 2
   sprite: s32'bed330_01', 2
   sprite: s32'bed330_02', 5
@@ -2537,26 +2537,26 @@ startState: s32'CmnActBurst'
   goToMarker: s32'downloop'
   endState: 
 
-startState: s32'CmnActRomanCancel'
+beginState: s32'CmnActRomanCancel'
   sprite: s32'bed350_00', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'bed351_00'
     endIf: 
   sprite: s32'bed350_01', 3
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'bed351_01'
     endIf: 
   sprite: s32'bed350_02', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'bed351_02'
     endIf: 
   setMarker: s32'loop'
   sprite: s32'bed350_03', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'bed351_03'
     endIf: 
   sprite: s32'bed350_04', 4
-  if: (VARIABLE), 30
+  if: Mem(30)
     Unknown2234: s32'bed351_04'
     endIf: 
   Unknown3: 
@@ -2577,14 +2577,14 @@ startState: s32'CmnActRomanCancel'
   exitState: 
   endState: 
 
-startState: s32'CmnActEntryWait'
+beginState: s32'CmnActEntryWait'
   upon: (IMMEDIATE)
     endUpon: 
   sprite: s32'null', 2147483647
   Unknown2023: 0
   endState: 
 
-startState: s32'entry_default'
+beginState: s32'entry_default'
   upon: (IMMEDIATE)
     Unknown1638: 
     endUpon: 
@@ -2595,72 +2595,72 @@ startState: s32'entry_default'
   Unknown2051: 1900
   Unknown2028: s32'MSEntry'
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(105), Val(0)
       createObject2: s32'Tojo_spark', 100
       createObject2: s32'Tojo_scr', 100
       playCharacterSFX: s32'BED_Entry001'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 95
+    ifOperation: (IS_EQUAL), Mem(105), Val(95)
       playCharacterSFX: s32'BED_Entry002'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 131
+    ifOperation: (IS_EQUAL), Mem(105), Val(131)
       playCharacterSFX: s32'BED_Entry003'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 151
+    ifOperation: (IS_EQUAL), Mem(105), Val(151)
       playCharacterSFX: s32'BED_Entry004'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 155
+    ifOperation: (IS_EQUAL), Mem(105), Val(155)
       playCharacterSFX: s32'BED_Entry003'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 179
+    ifOperation: (IS_EQUAL), Mem(105), Val(179)
       playCharacterSFX: s32'BED_Entry003'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 180
+    ifOperation: (IS_EQUAL), Mem(105), Val(180)
       playCharacterSFX: s32'BED_Entry004'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 197
+    ifOperation: (IS_EQUAL), Mem(105), Val(197)
       playCharacterSFX: s32'BED_Entry003'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 212
+    ifOperation: (IS_EQUAL), Mem(105), Val(212)
       playCharacterSFX: s32'BED_Entry004'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 243
+    ifOperation: (IS_EQUAL), Mem(105), Val(243)
       playCharacterSFX: s32'BED_Entry003'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 256
+    ifOperation: (IS_EQUAL), Mem(105), Val(256)
       playCharacterSFX: s32'BED_Entry004'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 258
+    ifOperation: (IS_EQUAL), Mem(105), Val(258)
       playCharacterSFX: s32'BED_Entry005'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 279
+    ifOperation: (IS_EQUAL), Mem(105), Val(279)
       playCharacterSFX: s32'BED_Entry003'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
+    ifOperation: (IS_EQUAL), Mem(105), Val(300)
       playCharacterSFX: s32'BED_Entry006'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 303
+    ifOperation: (IS_EQUAL), Mem(105), Val(303)
       playCharacterSFX: s32'BED_Entry011'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 373
+    ifOperation: (IS_EQUAL), Mem(105), Val(373)
       playCharacterSFX: s32'BED_Entry007'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 414
+    ifOperation: (IS_EQUAL), Mem(105), Val(414)
       playCharacterSFX: s32'BED_Entry008'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 479
+    ifOperation: (IS_EQUAL), Mem(105), Val(479)
       playCharacterSFX: s32'BED_Entry009'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 483
+    ifOperation: (IS_EQUAL), Mem(105), Val(483)
       playCharacterSFX: s32'BED_Entry010'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 578
+    ifOperation: (IS_EQUAL), Mem(105), Val(578)
       playCharacterSFX: s32'BED_Entry013'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 583
+    ifOperation: (IS_EQUAL), Mem(105), Val(583)
       playCharacterSFX: s32'BED_Entry012'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 680
+    ifOperation: (IS_EQUAL), Mem(105), Val(680)
       Unknown1676: 
       endIf: 
     endUpon: 
@@ -2668,16 +2668,16 @@ startState: s32'entry_default'
   exitState: 
   endState: 
 
-startState: s32'CmnActExDamage'
+beginState: s32'CmnActExDamage'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActExDamageLand'
+beginState: s32'CmnActExDamageLand'
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'CmnActRoundWin'
-  if: (VARIABLE), 136
+beginState: s32'CmnActRoundWin'
+  if: Mem(136)
     Unknown14: s32'TypeA'
     endIf: 
   Unknown13: s32'TypeA', 9, 2, 153, 0, 1
@@ -2757,7 +2757,7 @@ startState: s32'CmnActRoundWin'
   Unknown1676: 
   endState: 
 
-startState: s32'CmnActMatchWin'
+beginState: s32'CmnActMatchWin'
   sprite: s32'null', 2147483647
   Unknown2013: s32'bed800cs', 0
   Unknown2020: s32'bed800', 23, 0, -1
@@ -2765,83 +2765,83 @@ startState: s32'CmnActMatchWin'
   Unknown2051: 1900
   Unknown2028: s32'MSMatchWin'
   upon: (FRAME_STEP)
-    if: (VARIABLE), 46
-      ifOperation: 16, (VARIABLE), 13, (STATIC), 30
+    if: Mem(46)
+      ifOperation: 16, Mem(13), Val(30)
         Unknown2045: s32'DustHit', 1500, 10, 10, 10
         endIf: 
-      ifOperation: 16, (VARIABLE), 13, (STATIC), 45
+      ifOperation: 16, Mem(13), Val(45)
         createObject2: s32'Winnoise', 100
         endIf: 
-      ifOperation: 16, (VARIABLE), 13, (STATIC), 46
+      ifOperation: 16, Mem(13), Val(46)
         Unknown32: s32'Winnoise'
         endIf: 
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(105), Val(0)
       createObject2: s32'WinKiri', 100
       createObject2: s32'WinBG00', 100
       Unknown2063: 0, 100
       playCharacterSFX: s32'BED_Win001'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 260
+    ifOperation: (IS_EQUAL), Mem(105), Val(260)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 266
+    ifOperation: (IS_EQUAL), Mem(105), Val(266)
       Unknown32: s32'Winnoise'
       playVoice: s16'vxxx307'
       Unknown2211: s32'prev', -2147483618
-      storeValue: (VARIABLE), 45, (STATIC), 1
+      storeValue: Mem(45), Val(1)
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 400
+    ifOperation: (IS_EQUAL), Mem(105), Val(400)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 406
+    ifOperation: (IS_EQUAL), Mem(105), Val(406)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 490
+    ifOperation: (IS_EQUAL), Mem(105), Val(490)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 494
+    ifOperation: (IS_EQUAL), Mem(105), Val(494)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 510
+    ifOperation: (IS_EQUAL), Mem(105), Val(510)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 518
+    ifOperation: (IS_EQUAL), Mem(105), Val(518)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 535
+    ifOperation: (IS_EQUAL), Mem(105), Val(535)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 537
+    ifOperation: (IS_EQUAL), Mem(105), Val(537)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 551
+    ifOperation: (IS_EQUAL), Mem(105), Val(551)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 553
+    ifOperation: (IS_EQUAL), Mem(105), Val(553)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 562
+    ifOperation: (IS_EQUAL), Mem(105), Val(562)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 565
+    ifOperation: (IS_EQUAL), Mem(105), Val(565)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 600
+    ifOperation: (IS_EQUAL), Mem(105), Val(600)
       createObject2: s32'Winnoise', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 605
+    ifOperation: (IS_EQUAL), Mem(105), Val(605)
       Unknown32: s32'Winnoise'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 630
-      storeValue: (VARIABLE), 46, (STATIC), 1
+    ifOperation: (IS_EQUAL), Mem(105), Val(630)
+      storeValue: Mem(46), Val(1)
       endIf: 
-    if: (VARIABLE), 45
-      ifNot: (VARIABLE), 95
+    if: Mem(45)
+      ifNot: Mem(95)
         Unknown1675: 30
         Unknown1676: 
-        storeValue: (VARIABLE), 45, (STATIC), 0
-        storeValue: (VARIABLE), 46, (STATIC), 0
+        storeValue: Mem(45), Val(0)
+        storeValue: Mem(46), Val(0)
         Unknown32: s32'Winnoise'
         createObject2: s32'WinEndeff', 100
         playCharacterSFX: s32'BED_Win002'
@@ -2853,7 +2853,7 @@ startState: s32'CmnActMatchWin'
   exitState: 
   endState: 
 
-startState: s32'CmnActLose'
+beginState: s32'CmnActLose'
   sprite: s32'bed640_00', 2
   sprite: s32'bed640_01', 2
   createObject2: s32'losenoise', 100
@@ -2862,27 +2862,27 @@ startState: s32'CmnActLose'
   Unknown1676: 
   endState: 
 
-startState: s32'CmnActResultWin'
+beginState: s32'CmnActResultWin'
   sprite: s32'bed650_00', 2147483647
   Unknown2062: -180000, 0, -1315000, 0, 0, 0
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 0
-      if: (VARIABLE), 138
+    ifOperation: (IS_EQUAL), Mem(69), Val(0)
+      if: Mem(138)
         playVoice: s16'vxxx400'
         Unknown2211: s32'vxxx400', 10000
         Unknown2313: 1
-        storeValue: (VARIABLE), 69, (STATIC), 1
+        storeValue: Mem(69), Val(1)
         endIf: 
       endIf: 
     else: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 1
-        storeValue: (VARIABLE), 69, (STATIC), 2
+      ifOperation: (IS_EQUAL), Mem(69), Val(1)
+        storeValue: Mem(69), Val(2)
         endIf: 
       else: 
-        ifOperation: (IS_EQUAL), (VARIABLE), 69, (STATIC), 2
-          ifNot: (VARIABLE), 143
-            storeValue: (VARIABLE), 138, (STATIC), 0
-            storeValue: (VARIABLE), 69, (STATIC), 3
+        ifOperation: (IS_EQUAL), Mem(69), Val(2)
+          ifNot: Mem(143)
+            storeValue: Mem(138), Val(0)
+            storeValue: Mem(69), Val(3)
             endIf: 
           endIf: 
         endElse: 
@@ -2890,12 +2890,12 @@ startState: s32'CmnActResultWin'
     endUpon: 
   endState: 
 
-startState: s32'CmnActResultLose'
+beginState: s32'CmnActResultLose'
   sprite: s32'bed660_00', 2147483647
   Unknown2062: 69000, -74000, -277000, 0, 356000, 355000
   endState: 
 
-startState: s32'NmlAtk5A'
+beginState: s32'NmlAtk5A'
   upon: (IMMEDIATE)
     attackLevel: 0
     damage: 12
@@ -2921,7 +2921,7 @@ startState: s32'NmlAtk5A'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -2934,7 +2934,7 @@ startState: s32'NmlAtk5A'
   sprite: s32'bed200_01', 3
   Unknown621: 0, -1
   sprite: s32'bed200_02', 2
-  ifNot: (VARIABLE), 3
+  ifNot: Mem(3)
     createObject2: s32'bake200', 100
     endIf: 
   hit: 
@@ -2947,7 +2947,7 @@ startState: s32'NmlAtk5A'
   sprite: s32'bed200_05', 3
   endState: 
 
-startState: s32'NmlAtk6A'
+beginState: s32'NmlAtk6A'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 32
@@ -2957,7 +2957,7 @@ startState: s32'NmlAtk6A'
     addGatlingOption: s32'NmlAtk1D'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk3D'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk6D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -2984,7 +2984,7 @@ startState: s32'NmlAtk6A'
   sprite: s32'bed210_12', 2
   endState: 
 
-startState: s32'NmlAtk2A'
+beginState: s32'NmlAtk2A'
   upon: (IMMEDIATE)
     attackLevel: 0
     damage: 12
@@ -3010,7 +3010,7 @@ startState: s32'NmlAtk2A'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3022,7 +3022,7 @@ startState: s32'NmlAtk2A'
   sprite: s32'bed230_01', 2
   Unknown621: 0, -1
   sprite: s32'bed230_02', 2
-  ifNot: (VARIABLE), 3
+  ifNot: Mem(3)
     createObject2: s32'bake230', 100
     endIf: 
   hit: 
@@ -3036,7 +3036,7 @@ startState: s32'NmlAtk2A'
   sprite: s32'bed230_06', 3
   endState: 
 
-startState: s32'NmlAtk5B'
+beginState: s32'NmlAtk5B'
   upon: (IMMEDIATE)
     Unknown730: 0
     attackLevel: 2
@@ -3052,7 +3052,7 @@ startState: s32'NmlAtk5B'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3078,7 +3078,7 @@ startState: s32'NmlAtk5B'
   sprite: s32'bed201_08', 3
   endState: 
 
-startState: s32'NmlAtk2B'
+beginState: s32'NmlAtk2B'
   upon: (IMMEDIATE)
     Unknown730: 1
     guardType: (LOW)
@@ -3093,7 +3093,7 @@ startState: s32'NmlAtk2B'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5CFar'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk5CNear'
@@ -3117,7 +3117,7 @@ startState: s32'NmlAtk2B'
   sprite: s32'bed231_07', 2
   endState: 
 
-startState: s32'NmlAtk5CNear'
+beginState: s32'NmlAtk5CNear'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 28
@@ -3133,7 +3133,7 @@ startState: s32'NmlAtk5CNear'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk5D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'CmnFJump'
@@ -3158,7 +3158,7 @@ startState: s32'NmlAtk5CNear'
   sprite: s32'bed202_06', 2
   endState: 
 
-startState: s32'NmlAtk5CFar'
+beginState: s32'NmlAtk5CFar'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 36
@@ -3169,7 +3169,7 @@ startState: s32'NmlAtk5CFar'
     addGatlingOption: s32'NmlAtk1D'
     addGatlingOption: s32'NmlAtk2D'
     addGatlingOption: s32'NmlAtk3D'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2C'
@@ -3207,7 +3207,7 @@ startState: s32'NmlAtk5CFar'
   sprite: s32'Bed203_15', 1
   endState: 
 
-startState: s32'NmlAtk2C'
+beginState: s32'NmlAtk2C'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 2
@@ -3219,7 +3219,7 @@ startState: s32'NmlAtk2C'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk2E'
@@ -3248,7 +3248,7 @@ startState: s32'NmlAtk2C'
   sprite: s32'bed232_09', 2
   endState: 
 
-startState: s32'NmlAtk5D'
+beginState: s32'NmlAtk5D'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 3
@@ -3259,7 +3259,7 @@ startState: s32'NmlAtk5D'
     addGatlingOption: s32'NmlAtk3D'
     addGatlingOption: s32'NmlAtk5E'
     addGatlingOption: s32'NmlAtk2E'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'FlyingBed'
@@ -3288,7 +3288,7 @@ startState: s32'NmlAtk5D'
   hit: 
   playSFX: s32'SE_SWINGC'
   setJumpCancelable: 1
-  if: (VARIABLE), 212
+  if: Mem(212)
     setStylishCombo: s32'StylishComboSlot0', s32'NmlAtk2E'
       endMoveRegister: 
     setStylishCombo: s32'StylishComboSlot1', s32'NmlAtk1D'
@@ -3313,7 +3313,7 @@ startState: s32'NmlAtk5D'
   sprite: s32'bed204_13', 2
   endState: 
 
-startState: s32'NmlAtk6D'
+beginState: s32'NmlAtk6D'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 4
@@ -3321,7 +3321,7 @@ startState: s32'NmlAtk6D'
     damage: 24
     hitPushbackX: 80
     hitAirPushbackY: 12000
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed'
@@ -3374,7 +3374,7 @@ startState: s32'NmlAtk6D'
   sprite: s32'bed213_re_21', 3
   endState: 
 
-startState: s32'NmlAtk6D_2'
+beginState: s32'NmlAtk6D_2'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 4
@@ -3383,7 +3383,7 @@ startState: s32'NmlAtk6D_2'
     hitPushbackX: 80
     hitAirPushbackY: 12000
     untechableTime: 40
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed'
@@ -3443,7 +3443,7 @@ startState: s32'NmlAtk6D_2'
   sprite: s32'bed213_re_21', 2
   endState: 
 
-startState: s32'NmlAtk1D'
+beginState: s32'NmlAtk1D'
   upon: (IMMEDIATE)
     attackLevel: 4
     damage: 45
@@ -3452,7 +3452,7 @@ startState: s32'NmlAtk1D'
     hitAirPushbackY: 35000
     yrcWindowLength: 32
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'FlyingBed'
@@ -3486,7 +3486,7 @@ startState: s32'NmlAtk1D'
   sprite: s32'bed233_14', 1
   endState: 
 
-startState: s32'NmlAtk2D'
+beginState: s32'NmlAtk2D'
   upon: (IMMEDIATE)
     attackLevel: 4
     damage: 40
@@ -3497,7 +3497,7 @@ startState: s32'NmlAtk2D'
     hitAirPushbackY: 35000
     yrcWindowLength: 34
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_A'
@@ -3530,7 +3530,7 @@ startState: s32'NmlAtk2D'
   sprite: s32'bed233_14', 1
   endState: 
 
-startState: s32'NmlAtk3D'
+beginState: s32'NmlAtk3D'
   upon: (IMMEDIATE)
     attackLevel: 4
     damage: 35
@@ -3541,7 +3541,7 @@ startState: s32'NmlAtk3D'
     hitAirPushbackY: 35000
     yrcWindowLength: 39
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'CmnFJump'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_A'
@@ -3574,7 +3574,7 @@ startState: s32'NmlAtk3D'
   sprite: s32'bed233_14', 1
   endState: 
 
-startState: s32'NmlAtk5E'
+beginState: s32'NmlAtk5E'
   upon: (IMMEDIATE)
     Unknown2161: 100, -150000, 330000
     callCmnEfFunc: s32'cmnDustInitialize'
@@ -3582,7 +3582,7 @@ startState: s32'NmlAtk5E'
     damage: 25
     riscMinus: 20
     setProration: 80
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'HomingJump'
         endMoveRegister: 
       endIf: 
@@ -3610,7 +3610,7 @@ startState: s32'NmlAtk5E'
   sprite: s32'bed205_13', 2
   endState: 
 
-startState: s32'HomingDash2'
+beginState: s32'HomingDash2'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnHomingDash2Initialize'
     endUpon: 
@@ -3640,7 +3640,7 @@ startState: s32'HomingDash2'
   sprite: s32'bed032_08', 2
   endState: 
 
-startState: s32'HomingJump'
+beginState: s32'HomingJump'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnHomingJumpInitialize'
     endUpon: 
@@ -3655,7 +3655,7 @@ startState: s32'HomingJump'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'NmlAtk2E'
+beginState: s32'NmlAtk2E'
   upon: (IMMEDIATE)
     guardType: (LOW)
     Unknown725: 1
@@ -3663,7 +3663,7 @@ startState: s32'NmlAtk2E'
     attackLevel: 2
     damage: 28
     hitAirPushbackX: 15000
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'Boomerang_A'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'Boomerang_B'
@@ -3701,13 +3701,13 @@ startState: s32'NmlAtk2E'
   sprite: s32'bed234_11', 2
   endState: 
 
-startState: s32'NmlAtk5F'
+beginState: s32'NmlAtk5F'
   upon: (IMMEDIATE)
     Unknown2160: 61
     Unknown2215: 
     recoveryState: 
     endUpon: 
-  if: (VARIABLE), 3
+  if: Mem(3)
     Unknown14: s32'TypeB'
     endIf: 
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
@@ -3815,12 +3815,12 @@ startState: s32'NmlAtk5F'
   exitState: 
   endState: 
 
-startState: s32'NmlAtk6F'
+beginState: s32'NmlAtk6F'
   upon: (IMMEDIATE)
     Unknown2160: 17
     recoveryState: 
     endUpon: 
-  if: (VARIABLE), 3
+  if: Mem(3)
     Unknown14: s32'TypeB'
     endIf: 
   Unknown13: s32'TypeB', 22, 0, 50, 0, 100
@@ -3906,7 +3906,7 @@ startState: s32'NmlAtk6F'
   exitState: 
   endState: 
 
-startState: s32'NmlAtkAir5A'
+beginState: s32'NmlAtkAir5A'
   upon: (IMMEDIATE)
     attackLevel: 0
     damage: 14
@@ -3921,7 +3921,7 @@ startState: s32'NmlAtkAir5A'
     addGatlingOption: s32'AirStopCancelOnly'
     addWhiffCancelOption: s32'NmlAtkAir5A'
     setJumpCancelable: 1
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
         endMoveRegister: 
       endIf: 
@@ -3931,7 +3931,7 @@ startState: s32'NmlAtkAir5A'
   sprite: s32'bed250_01ex', 3
   Unknown621: 0, -1
   sprite: s32'bed250_02ex', 2
-  ifNot: (VARIABLE), 3
+  ifNot: Mem(3)
     createObject2: s32'bake250', 100
     endIf: 
   hit: 
@@ -3945,7 +3945,7 @@ startState: s32'NmlAtkAir5A'
   sprite: s32'bed250_06', 3
   endState: 
 
-startState: s32'NmlAtkAir5B'
+beginState: s32'NmlAtkAir5B'
   upon: (IMMEDIATE)
     Unknown730: 1
     attackLevel: 1
@@ -3957,7 +3957,7 @@ startState: s32'NmlAtkAir5B'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     addGatlingOption: s32'AirStopCancelOnly'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5C'
         endMoveRegister: 
       endIf: 
@@ -3981,7 +3981,7 @@ startState: s32'NmlAtkAir5B'
   sprite: s32'bed251_09', 3
   endState: 
 
-startState: s32'NmlAtkAir5C'
+beginState: s32'NmlAtkAir5C'
   upon: (IMMEDIATE)
     Unknown725: 1
     attackLevel: 2
@@ -3992,7 +3992,7 @@ startState: s32'NmlAtkAir5C'
     addGatlingOption: s32'NmlAtkAir5D'
     addGatlingOption: s32'NmlAtkAir5E'
     addGatlingOption: s32'AirStopCancelOnly'
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'NmlAtkAir5D'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'SpiralBed_Air'
@@ -4023,7 +4023,7 @@ startState: s32'NmlAtkAir5C'
   sprite: s32'bed252_11', 4
   endState: 
 
-startState: s32'NmlAtkAir5D'
+beginState: s32'NmlAtkAir5D'
   upon: (IMMEDIATE)
     attackLevel: 2
     damage: 14
@@ -4049,7 +4049,7 @@ startState: s32'NmlAtkAir5D'
   hit: 
   sprite: s32'bed253_08', 2
   hit: 
-  if: (VARIABLE), 212
+  if: Mem(212)
     setStylishCombo: s32'StylishComboSlot0', s32'SpiralBed_Air'
       addMoveCondition: 117
       endMoveRegister: 
@@ -4063,7 +4063,7 @@ startState: s32'NmlAtkAir5D'
   sprite: s32'bed253_13', 4
   endState: 
 
-startState: s32'NmlAtkAir5E'
+beginState: s32'NmlAtkAir5E'
   upon: (IMMEDIATE)
     attackLevel: 4
     damage: 50
@@ -4075,11 +4075,11 @@ startState: s32'NmlAtkAir5E'
     upon: (HIT_OR_GUARD)
       physicsYImpulse: 30000
       checkInput: (INPUT_ANY_FORWARD)
-      if: (VARIABLE), 0
+      if: Mem(ACCUMULATOR)
         addVelocityX: 8000
         endIf: 
       checkInput: (INPUT_ANY_BACK)
-      if: (VARIABLE), 0
+      if: Mem(ACCUMULATOR)
         addVelocityX: -12000
         endIf: 
       Unknown14: s32'End'
@@ -4115,7 +4115,7 @@ startState: s32'NmlAtkAir5E'
   sprite: s32'bed254_16', 3
   endState: 
 
-startState: s32'DeadAngleAttack'
+beginState: s32'DeadAngleAttack'
   upon: (IMMEDIATE)
     playSFX: s32'SE_GC'
     Unknown1115: 1
@@ -4149,7 +4149,7 @@ startState: s32'DeadAngleAttack'
   sprite: s32'bed201_08', 5
   endState: 
 
-startState: s32'CounterGuardStand'
+beginState: s32'CounterGuardStand'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnCG_Initialize'
     upon: 33
@@ -4218,7 +4218,7 @@ startState: s32'CounterGuardStand'
   exitState: 
   endState: 
 
-startState: s32'CounterGuardCrouch'
+beginState: s32'CounterGuardCrouch'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnCG_Initialize'
     upon: 33
@@ -4291,7 +4291,7 @@ startState: s32'CounterGuardCrouch'
   exitState: 
   endState: 
 
-startState: s32'CounterGuardAir'
+beginState: s32'CounterGuardAir'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnCG_Initialize'
     upon: 33
@@ -4333,7 +4333,7 @@ startState: s32'CounterGuardAir'
   sprite: s32'bed045_00', 4
   endState: 
 
-startState: s32'IchigekiJunbi'
+beginState: s32'IchigekiJunbi'
   upon: (IMMEDIATE)
     callSubroutine: s32'IchigekiGoldCheck', 0, 0, 0, 0, 0, 0, 0, 0
     endUpon: 
@@ -4356,7 +4356,7 @@ startState: s32'IchigekiJunbi'
   sprite: s32'bed450_07', 2
   endState: 
 
-startState: s32'MOMSuki'
+beginState: s32'MOMSuki'
   upon: (IMMEDIATE)
     recoveryState: 
     endUpon: 
@@ -4400,14 +4400,14 @@ startState: s32'MOMSuki'
   sprite: s32'bed306_38', 3
   endState: 
 
-startState: s32'DebugSkillEx'
+beginState: s32'DebugSkillEx'
   upon: (IMMEDIATE)
     callCmnEfFunc: s32'cmnDS_Initialize'
     endUpon: 
   sprite: s32'keep', 2147483647
   endState: 
 
-startState: s32'ThrowExe'
+beginState: s32'ThrowExe'
   upon: (IMMEDIATE)
     Unknown1641: 17, 1
     attackLevel: 0
@@ -4502,7 +4502,7 @@ startState: s32'ThrowExe'
   sprite: s32'bed310_16', 4
   endState: 
 
-startState: s32'AirThrowExe'
+beginState: s32'AirThrowExe'
   upon: (IMMEDIATE)
     Unknown1641: 17, 3
     attackLevel: 4
@@ -4530,9 +4530,9 @@ startState: s32'AirThrowExe'
   Unknown546: 0, 115, 0
   physicsYImpulse: 15000
   playSFX: s32'SE_DASHD'
-  ifOperation: (IS_GREATER), (VARIABLE), 119, (STATIC), 0
+  ifOperation: (IS_GREATER), Mem(119), Val(0)
     playVoice: s16'vxxx116'
-    storeValue: (VARIABLE), 119, (STATIC), 0
+    storeValue: Mem(119), Val(0)
     endIf: 
   else: 
     playVoice: s16'vxxx120'
@@ -4579,7 +4579,7 @@ startState: s32'AirThrowExe'
   resetVelocity: 1
   endState: 
 
-startState: s32'CrouchFWalk'
+beginState: s32'CrouchFWalk'
   upon: (IMMEDIATE)
     Unknown1320: 1
     Unknown1321: 1
@@ -4593,7 +4593,7 @@ startState: s32'CrouchFWalk'
     tensionGain: 9
     upon: (FRAME_STEP)
       checkInput: (INPUT_3)
-      ifNot: (VARIABLE), 0
+      ifNot: Mem(ACCUMULATOR)
         jumpToState: s32'_NEUTRAL'
         endIf: 
       Unknown2262: 10
@@ -4619,7 +4619,7 @@ startState: s32'CrouchFWalk'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'CrouchBWalk'
+beginState: s32'CrouchBWalk'
   upon: (IMMEDIATE)
     Unknown1320: 1
     Unknown1321: 1
@@ -4632,7 +4632,7 @@ startState: s32'CrouchBWalk'
     Unknown1601: 32
     upon: (FRAME_STEP)
       checkInput: (INPUT_1)
-      ifNot: (VARIABLE), 0
+      ifNot: Mem(ACCUMULATOR)
         jumpToState: s32'_NEUTRAL'
         endIf: 
       Unknown2262: 11
@@ -4658,10 +4658,10 @@ startState: s32'CrouchBWalk'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'AirStop'
+beginState: s32'AirStop'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         endIf: 
       endUpon: 
@@ -4669,24 +4669,24 @@ startState: s32'AirStop'
     disableAirThrow: 
     upon: (FRAME_STEP)
       checkInput: (INPUT_7)
-      if: (VARIABLE), 0
-        modifyVar: (ADD), (VARIABLE), 45, (STATIC), 1
+      if: Mem(ACCUMULATOR)
+        modifyVar: (ADD), Mem(45), Val(1)
         endIf: 
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 45, (STATIC), 12
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(45), Val(12)
         addWhiffCancelOption: s32'7Move'
         endIf: 
       checkInput: (INPUT_8)
-      if: (VARIABLE), 0
-        modifyVar: (ADD), (VARIABLE), 46, (STATIC), 1
+      if: Mem(ACCUMULATOR)
+        modifyVar: (ADD), Mem(46), Val(1)
         endIf: 
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 46, (STATIC), 12
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(46), Val(12)
         addWhiffCancelOption: s32'8Move'
         endIf: 
       checkInput: (INPUT_9)
-      if: (VARIABLE), 0
-        modifyVar: (ADD), (VARIABLE), 47, (STATIC), 1
+      if: Mem(ACCUMULATOR)
+        modifyVar: (ADD), Mem(47), Val(1)
         endIf: 
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 47, (STATIC), 12
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(47), Val(12)
         addWhiffCancelOption: s32'9Move'
         endIf: 
       endUpon: 
@@ -4733,7 +4733,7 @@ startState: s32'AirStop'
   Unknown3: 
   endState: 
 
-startState: s32'AirStopCancelOnly'
+beginState: s32'AirStopCancelOnly'
   disableAirThrow: 
   upon: (IMMEDIATE)
     addWhiffCancelOption: s32'1Move'
@@ -4753,12 +4753,12 @@ startState: s32'AirStopCancelOnly'
     addWhiffCancelOption: s32'9Move'
     whiffCancelOptionBufferTime: s32'9Move', 16
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         endIf: 
       endUpon: 
     Unknown1601: 64
-    if: (VARIABLE), 212
+    if: Mem(212)
       setStylishCombo: s32'StylishComboSlot0', s32'6Move'
         endMoveRegister: 
       setStylishCombo: s32'StylishComboSlot1', s32'9Move'
@@ -4819,10 +4819,10 @@ startSubroutine: s32'Cancelmove_Chain'
   Unknown1335: 1
   endSubroutine: 
 
-startState: s32'1Move'
+beginState: s32'1Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         Unknown111: 75
         endIf: 
@@ -4851,10 +4851,10 @@ startState: s32'1Move'
   sprite: s32'bed415_07', 3
   endState: 
 
-startState: s32'2Move'
+beginState: s32'2Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         endIf: 
       endUpon: 
@@ -4882,10 +4882,10 @@ startState: s32'2Move'
   sprite: s32'bed415_07', 3
   endState: 
 
-startState: s32'3Move'
+beginState: s32'3Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         Unknown111: 75
         endIf: 
@@ -4917,10 +4917,10 @@ startState: s32'3Move'
   sprite: s32'bed415_07', 3
   endState: 
 
-startState: s32'4Move'
+beginState: s32'4Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         Unknown111: 75
         endIf: 
@@ -4948,10 +4948,10 @@ startState: s32'4Move'
   sprite: s32'bed410_06', 3
   endState: 
 
-startState: s32'6Move'
+beginState: s32'6Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         Unknown111: 75
         endIf: 
@@ -4982,10 +4982,10 @@ startState: s32'6Move'
   sprite: s32'bed409_06', 3
   endState: 
 
-startState: s32'7Move'
+beginState: s32'7Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         Unknown111: 75
         endIf: 
@@ -4996,7 +4996,7 @@ startState: s32'7Move'
   physicsXImpulse: -20000
   physicsYImpulse: 31000
   Unknown1998: s32'AirStop'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     physicsYImpulse: 26000
     endIf: 
   Unknown1616: 1
@@ -5018,10 +5018,10 @@ startState: s32'7Move'
   sprite: s32'bed411_06', 3
   endState: 
 
-startState: s32'8Move'
+beginState: s32'8Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         endIf: 
       endUpon: 
@@ -5031,7 +5031,7 @@ startState: s32'8Move'
   physicsXImpulse: 0
   physicsYImpulse: 33000
   Unknown1998: s32'AirStop'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     physicsYImpulse: 28000
     endIf: 
   Unknown1616: 1
@@ -5053,10 +5053,10 @@ startState: s32'8Move'
   sprite: s32'bed411_06', 3
   endState: 
 
-startState: s32'9Move'
+beginState: s32'9Move'
   upon: (IMMEDIATE)
     upon: (BEFORE_EXIT)
-      ifNot: (VARIABLE), 36
+      ifNot: Mem(36)
         Unknown135: 
         Unknown111: 75
         endIf: 
@@ -5070,7 +5070,7 @@ startState: s32'9Move'
   physicsXImpulse: 20000
   physicsYImpulse: 31000
   Unknown1998: s32'AirStop'
-  if: (VARIABLE), 0
+  if: Mem(ACCUMULATOR)
     physicsYImpulse: 26000
     endIf: 
   Unknown1616: 1
@@ -5092,7 +5092,7 @@ startState: s32'9Move'
   sprite: s32'bed411_06', 3
   endState: 
 
-startState: s32'Boomerang_A'
+beginState: s32'Boomerang_A'
   upon: (IMMEDIATE)
     yrcWindowLength: 24
     endUpon: 
@@ -5124,14 +5124,14 @@ startState: s32'Boomerang_A'
   Unknown32: s32'DejavIconBoomerangA'
   sprite: s32'bed417_18', 3
   createObject2: s32'DejavIconBoomerangA', 103
-  storeValue: (VARIABLE), 53, (VARIABLE), 17
-  storeValue: (VARIABLE), 54, (VARIABLE), 18
+  storeValue: Mem(53), Mem(17)
+  storeValue: Mem(54), Mem(18)
   sprite: s32'bed417_19', 3
   sprite: s32'bed417_20', 3
   sprite: s32'bed417_21', 3
   endState: 
 
-startState: s32'Boomerang_A_Air'
+beginState: s32'Boomerang_A_Air'
   upon: (IMMEDIATE)
     yrcWindowLength: 24
     endUpon: 
@@ -5167,14 +5167,14 @@ startState: s32'Boomerang_A_Air'
   Unknown32: s32'DejavIconBoomerangA'
   sprite: s32'bed418_18', 3
   createObject2: s32'DejavIconBoomerangA', 103
-  storeValue: (VARIABLE), 53, (VARIABLE), 17
-  storeValue: (VARIABLE), 54, (VARIABLE), 18
+  storeValue: Mem(53), Mem(17)
+  storeValue: Mem(54), Mem(18)
   sprite: s32'bed418_19', 3
   sprite: s32'bed418_20', 3
   sprite: s32'bed418_21', 3
   endState: 
 
-startState: s32'Boomerang_B'
+beginState: s32'Boomerang_B'
   upon: (IMMEDIATE)
     yrcWindowLength: 43
     endUpon: 
@@ -5194,8 +5194,8 @@ startState: s32'Boomerang_B'
   setObjectToStackSlot: (STACK_0), (PREVIOUS)
   playSFX: s32'SE_SWINGC'
   createObject2: s32'DejavIconBoomerangB', 103
-  storeValue: (VARIABLE), 57, (VARIABLE), 17
-  storeValue: (VARIABLE), 58, (VARIABLE), 18
+  storeValue: Mem(57), Mem(17)
+  storeValue: Mem(58), Mem(18)
   playVoice: s16'vxxx101'
   frcWindow: 5
   sprite: s32'bed417_09', 2
@@ -5213,7 +5213,7 @@ startState: s32'Boomerang_B'
   sprite: s32'bed417_21', 3
   endState: 
 
-startState: s32'Boomerang_B_Air'
+beginState: s32'Boomerang_B_Air'
   upon: (IMMEDIATE)
     yrcWindowLength: 43
     endUpon: 
@@ -5237,8 +5237,8 @@ startState: s32'Boomerang_B_Air'
   setGravity: 1000
   playSFX: s32'SE_SWINGC'
   createObject2: s32'DejavIconBoomerangB', 103
-  storeValue: (VARIABLE), 57, (VARIABLE), 17
-  storeValue: (VARIABLE), 58, (VARIABLE), 18
+  storeValue: Mem(57), Mem(17)
+  storeValue: Mem(58), Mem(18)
   playVoice: s16'vxxx101'
   frcWindow: 5
   sprite: s32'bed418_09', 2
@@ -5256,11 +5256,11 @@ startState: s32'Boomerang_B_Air'
   sprite: s32'bed418_21', 3
   endState: 
 
-startState: s32'BWarp'
+beginState: s32'BWarp'
   upon: (IMMEDIATE)
     specialCancelEnabled: 0
     superArmorEnabled: 1
-    storeValue: (VARIABLE), 6, (STATIC), 0
+    storeValue: Mem(6), Val(0)
     endUpon: 
   sprite: s32'bed000_00', 3
   resetVelocity: 1
@@ -5278,11 +5278,11 @@ startState: s32'BWarp'
   jumpToState: s32'_NEUTRAL'
   endState: 
 
-startState: s32'MerryWarp'
+beginState: s32'MerryWarp'
   upon: (IMMEDIATE)
     specialCancelEnabled: 0
     superArmorEnabled: 1
-    storeValue: (VARIABLE), 6, (STATIC), 0
+    storeValue: Mem(6), Val(0)
     endUpon: 
   sprite: s32'bed000_00', 70
   resetVelocity: 1
@@ -5301,7 +5301,7 @@ startState: s32'MerryWarp'
   jumpToState: s32'_NEUTRAL'
   endState: 
 
-startState: s32'SpiralBed'
+beginState: s32'SpiralBed'
   upon: (IMMEDIATE)
     attackLevel: 3
     damage: 14
@@ -5353,8 +5353,8 @@ startState: s32'SpiralBed'
   Unknown32: s32'DejavIconSpiralBed'
   sprite: s32'bed421_08', 1
   createObject2: s32'DejavIconSpiralBed', 103
-  storeValue: (VARIABLE), 59, (VARIABLE), 17
-  storeValue: (VARIABLE), 60, (VARIABLE), 18
+  storeValue: Mem(59), Mem(17)
+  storeValue: Mem(60), Mem(18)
   sprite: s32'bed421_08', 1
   frcWindow: 5
   sprite: s32'bed421_08', 1
@@ -5369,7 +5369,7 @@ startState: s32'SpiralBed'
   sprite: s32'bed421_16', 3
   endState: 
 
-startState: s32'SpiralBed_Air'
+beginState: s32'SpiralBed_Air'
   upon: (IMMEDIATE)
     damage: 14
     attackLevel: 3
@@ -5425,8 +5425,8 @@ startState: s32'SpiralBed_Air'
   recoveryState: 
   setGravity: 2450
   createObject2: s32'DejavIconSpiralBed', 103
-  storeValue: (VARIABLE), 59, (VARIABLE), 17
-  storeValue: (VARIABLE), 60, (VARIABLE), 18
+  storeValue: Mem(59), Mem(17)
+  storeValue: Mem(60), Mem(18)
   sprite: s32'bed421_08', 2
   sprite: s32'bed421_09', 2
   sprite: s32'bed421_10', 2
@@ -5446,7 +5446,7 @@ startState: s32'SpiralBed_Air'
   sprite: s32'bed010_00', 4
   endState: 
 
-startState: s32'FlyingBed'
+beginState: s32'FlyingBed'
   upon: (IMMEDIATE)
     groundHitEffect: (AIR_FACE_UP)
     attackLevel: 3
@@ -5518,8 +5518,8 @@ startState: s32'FlyingBed'
   Unknown32: s32'DejavIconFlyingBed'
   sprite: s32'bed423_15', 2
   createObject2: s32'DejavIconFlyingBed', 103
-  storeValue: (VARIABLE), 55, (VARIABLE), 17
-  storeValue: (VARIABLE), 56, (VARIABLE), 18
+  storeValue: Mem(55), Mem(17)
+  storeValue: Mem(56), Mem(18)
   sprite: s32'bed423_16', 4
   sprite: s32'bed423_17', 4
   sprite: s32'bed423_18', 4
@@ -5527,7 +5527,7 @@ startState: s32'FlyingBed'
   sprite: s32'bed423_20', 4
   endState: 
 
-startState: s32'FlyingBed_Air'
+beginState: s32'FlyingBed_Air'
   upon: (IMMEDIATE)
     groundHitEffect: (AIR_FACE_UP)
     attackLevel: 3
@@ -5548,8 +5548,8 @@ startState: s32'FlyingBed_Air'
   Unknown111: 50
   physicsYImpulse: 10000
   Unknown136: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 18, (STATIC), 700000
-    storeValue: (VARIABLE), 45, (STATIC), 1
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(18), Val(700000)
+    storeValue: Mem(45), Val(1)
     endIf: 
   sprite: s32'bed423_08', 4
   sprite: s32'bed423_09', 4
@@ -5557,8 +5557,8 @@ startState: s32'FlyingBed_Air'
   Unknown32: s32'DejavIconFlyingBed'
   sprite: s32'bed423_11', 1
   createObject2: s32'DejavIconFlyingBed', 103
-  storeValue: (VARIABLE), 55, (VARIABLE), 17
-  storeValue: (VARIABLE), 56, (VARIABLE), 18
+  storeValue: Mem(55), Mem(17)
+  storeValue: Mem(56), Mem(18)
   sprite: s32'bed423_12', 4
   sprite: s32'bed423_13ex', 4
   createObject2: s32'423bake02', 100
@@ -5578,7 +5578,7 @@ startState: s32'FlyingBed_Air'
   setMarker: s32'landing'
   sprite: s32'bed423_15', 4
   Unknown32: s32'423bake02'
-  if: (VARIABLE), 45
+  if: Mem(45)
     createObject2: s32'Flying_bomb2', 123
     endIf: 
   else: 
@@ -5594,12 +5594,12 @@ startState: s32'FlyingBed_Air'
   sprite: s32'bed423_20', 3
   endState: 
 
-startState: s32'Dejavu_A'
+beginState: s32'Dejavu_A'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5611,9 +5611,9 @@ startState: s32'Dejavu_A'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 53
-    storeValue: (VARIABLE), 103, (VARIABLE), 54
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
+    storeValue: Mem(102), Mem(53)
+    storeValue: Mem(103), Mem(54)
     createObject2: s32'Djavu_A_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5629,12 +5629,12 @@ startState: s32'Dejavu_A'
   sprite: s32'bed425_11', 2
   endState: 
 
-startState: s32'Dejavu_B'
+beginState: s32'Dejavu_B'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5646,9 +5646,9 @@ startState: s32'Dejavu_B'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 57
-    storeValue: (VARIABLE), 103, (VARIABLE), 58
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
+    storeValue: Mem(102), Mem(57)
+    storeValue: Mem(103), Mem(58)
     createObject2: s32'Djavu_B_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5664,12 +5664,12 @@ startState: s32'Dejavu_B'
   sprite: s32'bed425_11', 2
   endState: 
 
-startState: s32'Dejavu_C'
+beginState: s32'Dejavu_C'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5681,9 +5681,9 @@ startState: s32'Dejavu_C'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 59
-    storeValue: (VARIABLE), 103, (VARIABLE), 60
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
+    storeValue: Mem(102), Mem(59)
+    storeValue: Mem(103), Mem(60)
     createObject2: s32'Djavu_C_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5699,12 +5699,12 @@ startState: s32'Dejavu_C'
   sprite: s32'bed425_11', 2
   endState: 
 
-startState: s32'Dejavu_D'
+beginState: s32'Dejavu_D'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5716,9 +5716,9 @@ startState: s32'Dejavu_D'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 55
-    storeValue: (VARIABLE), 103, (VARIABLE), 56
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
+    storeValue: Mem(102), Mem(55)
+    storeValue: Mem(103), Mem(56)
     createObject2: s32'Djavu_D_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5734,14 +5734,14 @@ startState: s32'Dejavu_D'
   sprite: s32'bed425_11', 2
   endState: 
 
-startState: s32'Dejavu_A_Air'
+beginState: s32'Dejavu_A_Air'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     setXPushToXSpeed: 
     resetVelocity: 1
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5754,9 +5754,9 @@ startState: s32'Dejavu_A_Air'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 53
-    storeValue: (VARIABLE), 103, (VARIABLE), 54
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
+    storeValue: Mem(102), Mem(53)
+    storeValue: Mem(103), Mem(54)
     createObject2: s32'Djavu_A_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5774,14 +5774,14 @@ startState: s32'Dejavu_A_Air'
   sprite: s32'bed425_11', 5
   endState: 
 
-startState: s32'Dejavu_B_Air'
+beginState: s32'Dejavu_B_Air'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     setXPushToXSpeed: 
     resetVelocity: 1
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5794,9 +5794,9 @@ startState: s32'Dejavu_B_Air'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 57
-    storeValue: (VARIABLE), 103, (VARIABLE), 58
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
+    storeValue: Mem(102), Mem(57)
+    storeValue: Mem(103), Mem(58)
     createObject2: s32'Djavu_B_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5814,14 +5814,14 @@ startState: s32'Dejavu_B_Air'
   sprite: s32'bed425_11', 5
   endState: 
 
-startState: s32'Dejavu_C_Air'
+beginState: s32'Dejavu_C_Air'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     setXPushToXSpeed: 
     resetVelocity: 1
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5834,9 +5834,9 @@ startState: s32'Dejavu_C_Air'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 59
-    storeValue: (VARIABLE), 103, (VARIABLE), 60
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
+    storeValue: Mem(102), Mem(59)
+    storeValue: Mem(103), Mem(60)
     createObject2: s32'Djavu_C_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5854,14 +5854,14 @@ startState: s32'Dejavu_C_Air'
   sprite: s32'bed425_11', 5
   endState: 
 
-startState: s32'Dejavu_D_Air'
+beginState: s32'Dejavu_D_Air'
   upon: (IMMEDIATE)
     yrcWindowLength: 23
     setXPushToXSpeed: 
     resetVelocity: 1
     endUpon: 
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
@@ -5874,9 +5874,9 @@ startState: s32'Dejavu_D_Air'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 55
-    storeValue: (VARIABLE), 103, (VARIABLE), 56
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
+    storeValue: Mem(102), Mem(55)
+    storeValue: Mem(103), Mem(56)
     createObject2: s32'Djavu_D_Ghost', 130
     endIf: 
   sprite: s32'bed425_03', 1
@@ -5894,13 +5894,13 @@ startState: s32'Dejavu_D_Air'
   sprite: s32'bed425_11', 5
   endState: 
 
-startState: s32'Alarm'
+beginState: s32'Alarm'
   upon: (IMMEDIATE)
     Unknown1939: 1
     upon: (AFTER_EXIT)
-      storeValue: (VARIABLE), 4, (STATIC), 0
+      storeValue: Mem(4), Val(0)
       endUpon: 
-    storeValue: (VARIABLE), 4, (STATIC), 1
+    storeValue: Mem(4), Val(1)
     endUpon: 
   Unknown25: s32'tame_end', 2, 126
   sprite: s32'bed450_00', 2
@@ -5926,11 +5926,11 @@ startState: s32'Alarm'
   setMarker: s32'tame_end'
   sprite: s32'bed430_00', 5
   setStrikeInvul: 1
-  if: (VARIABLE), 164
+  if: Mem(164)
     setThrowInvul: 1
     endIf: 
   deactivateObj: (STACK_0)
-  if: (VARIABLE), 161
+  if: Mem(161)
     setStrikeInvul: 0
     Unknown2155: 0
     setThrowInvul: 0
@@ -5947,47 +5947,47 @@ startState: s32'Alarm'
     Unknown2028: s32'high'
     Unknown2051: 1900
     Unknown2212: 1
-    if: (VARIABLE), 164
+    if: Mem(164)
       Unknown2199: 1
       Unknown2132: 0
       Unknown448: s32'cmn_bkakusei_fire', 100
-      storeValue: (VARIABLE), 120, (STATIC), 0
+      storeValue: Mem(120), Val(0)
       endIf: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 1
+      ifOperation: (IS_EQUAL), Mem(105), Val(1)
         playVoice: s16'vxxx104'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
+      ifOperation: (IS_EQUAL), Mem(105), Val(10)
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
+      ifOperation: (IS_EQUAL), Mem(105), Val(40)
         playCharacterSFX: s32'BED_Kakusei001'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 45
+      ifOperation: (IS_EQUAL), Mem(105), Val(45)
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 48
+      ifOperation: (IS_EQUAL), Mem(105), Val(48)
         playCharacterSFX: s32'BED_Kakusei002'
         playVoice: s16'vxxx206'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 55
+      ifOperation: (IS_EQUAL), Mem(105), Val(55)
         createObject2: s32'Yodare430', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 61
+      ifOperation: (IS_EQUAL), Mem(105), Val(61)
         playCharacterSFX: s32'BED_Kakusei003'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 62
+      ifOperation: (IS_EQUAL), Mem(105), Val(62)
         playCharacterSFX: s32'BED_Kakusei004'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 75
+      ifOperation: (IS_EQUAL), Mem(105), Val(75)
         createObject2: s32'430BG', 100
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 113
+      ifOperation: (IS_EQUAL), Mem(105), Val(113)
         Unknown2212: 0
         Unknown2051: 0
         endIf: 
       endUpon: 
     endUpon: 
   sprite: s32'bed430_01', 2
-  if: (VARIABLE), 161
+  if: Mem(161)
     setStrikeInvul: 0
     Unknown2155: 0
     setThrowInvul: 0
@@ -6051,7 +6051,7 @@ startState: s32'Alarm'
   exitState: 
   endState: 
 
-startState: s32'Merry'
+beginState: s32'Merry'
   upon: (IMMEDIATE)
     Unknown1939: 1
     Unknown1058: 1
@@ -6063,11 +6063,11 @@ startState: s32'Merry'
       Unknown448: s32'cmn_kakusei_hatudo', 130
       endUpon: 
     upon: (AFTER_EXIT)
-      storeValue: (VARIABLE), 4, (STATIC), 0
+      storeValue: Mem(4), Val(0)
       endUpon: 
     endUpon: 
   sprite: s32'bed431_00', 4
-  storeValue: (VARIABLE), 4, (STATIC), 1
+  storeValue: Mem(4), Val(1)
   deactivateObj: (STACK_0)
   sprite: s32'bed431_01', 4
   sprite: s32'bed431_02', 4
@@ -6093,10 +6093,10 @@ startState: s32'Merry'
   sprite: s32'bed431_16', 4
   endState: 
 
-startState: s32'Ichigeki'
+beginState: s32'Ichigeki'
   upon: (IMMEDIATE)
-    storeValue: (VARIABLE), 135, (VARIABLE), 107
-    storeValue: (VARIABLE), 107, (STATIC), 3
+    storeValue: Mem(135), Mem(107)
+    storeValue: Mem(107), Val(3)
     attackLevel: 3
     damage: 0
     Unknown1059: 1
@@ -6105,7 +6105,7 @@ startState: s32'Ichigeki'
     Unknown1149: 10
     Unknown818: 100000
     Unknown1103: 0
-    ifOperation: (IS_EQUAL), (VARIABLE), 135, (STATIC), 2
+    ifOperation: (IS_EQUAL), Mem(135), Val(2)
       Unknown1076: 0
       canGrabDuringHitstun: 1
       endIf: 
@@ -6119,7 +6119,7 @@ startState: s32'Ichigeki'
       clearUpon: (HIT)
       endUpon: 
     upon: (AFTER_EXIT)
-      storeValue: (VARIABLE), 4, (STATIC), 0
+      storeValue: Mem(4), Val(0)
       endUpon: 
     callCmnEfFunc: s32'cmn_IchigekiInit'
     endUpon: 
@@ -6176,12 +6176,12 @@ startState: s32'Ichigeki'
   Unknown41: 22
   setNoCollision: 0
   Unknown178: 22
-  storeFromObjToObj: (SELF), (VARIABLE), 32, (ENEMY), (VARIABLE), 32
+  storeFromObjToObj: (SELF), Mem(32), (ENEMY), Mem(32)
   Unknown2013: s32'xxx_bed451cs', 0
   Unknown2028: s32'CmnCutSceneDamageLow'
   Unknown40: 
   upon: (FRAME_STEP)
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 0
+    ifOperation: (IS_EQUAL), Mem(105), Val(0)
       Unknown2063: 0, 0
       createObject2: s32'BG_ichigeki', 100
       Unknown2079: 0, 0, 0
@@ -6190,11 +6190,11 @@ startState: s32'Ichigeki'
       Unknown2082: 101, 74, 76
       playCharacterSFX: s32'bed_IK001'
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
+    ifOperation: (IS_EQUAL), Mem(105), Val(10)
       playVoice: s16'vxxx209'
       Unknown2211: s32'prev', 180
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 300
+    ifOperation: (IS_EQUAL), Mem(105), Val(300)
       Unknown2079: 0, 0, 0
       Unknown2080: 189, 179, 99
       Unknown2081: 255, 186, 126
@@ -6204,10 +6204,10 @@ startState: s32'Ichigeki'
       Unknown2211: s32'prev', 300
       Unknown40: 
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 370
+    ifOperation: (IS_EQUAL), Mem(105), Val(370)
       createObject2: s32'BG_ichigeki_eye', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 650
+    ifOperation: (IS_EQUAL), Mem(105), Val(650)
       Unknown1018: 1
       hitUnchecked: 
       Unknown1059: 3
@@ -6218,11 +6218,11 @@ startState: s32'Ichigeki'
       Unknown1063: 1
       Unknown1678: 
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 690
+    ifOperation: (IS_EQUAL), Mem(105), Val(690)
       Unknown448: s32'bed_ichigeki_teri', 100
       endIf: 
-    ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 762
-      if: (VARIABLE), 111
+    ifOperation: (IS_EQUAL), Mem(105), Val(762)
+      if: Mem(111)
         playVoice: s16'vxxx310'
         Unknown2211: s32'prev', -2147483618
         Unknown1890: 1
@@ -6238,7 +6238,7 @@ startState: s32'Ichigeki'
     endUpon: 
   endState: 
 
-startState: s32'EventStand'
+beginState: s32'EventStand'
   setMarker: s32'loop'
   sprite: s32'bed000_00', 3
   sprite: s32'bed000_01', 3
@@ -6300,7 +6300,7 @@ startState: s32'EventStand'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventBED07A_00'
+beginState: s32'EventBED07A_00'
   Unknown92: 1200000
   flipDirection: 
   setMarker: s32'loop'
@@ -6364,7 +6364,7 @@ startState: s32'EventBED07A_00'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventBED07A_01'
+beginState: s32'EventBED07A_01'
   sprite: s32'bed032_00', 3
   physicsYImpulse: 5000
   Unknown2198: 90
@@ -6412,7 +6412,7 @@ startState: s32'EventBED07A_01'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventBED07A_02'
+beginState: s32'EventBED07A_02'
   sprite: s32'bed032_00', 3
   physicsYImpulse: 5000
   Unknown2198: 90
@@ -6464,7 +6464,7 @@ startState: s32'EventBED07A_02'
   jumpToState: s32'EventStand'
   endState: 
 
-startState: s32'EventBED07B_01'
+beginState: s32'EventBED07B_01'
   sprite: s32'bed616_00', 3
   sprite: s32'bed616_01', 3
   sprite: s32'bed616_02', 3
@@ -6486,7 +6486,7 @@ startState: s32'EventBED07B_01'
   sprite: s32'bed616_17', 2147483647
   endState: 
 
-startState: s32'EventBED07B_02'
+beginState: s32'EventBED07B_02'
   sprite: s32'bed616_05', 3
   playSFX: s32'SE_SWINGC'
   sprite: s32'bed616_04', 3
@@ -6498,7 +6498,7 @@ startState: s32'EventBED07B_02'
   jumpToState: s32'EventStand'
   endState: 
 
-startState: s32'EventBED07B_03'
+beginState: s32'EventBED07B_03'
   sprite: s32'bed032_08', 6
   sprite: s32'bed032_07', 6
   sprite: s32'bed032_06', 6
@@ -6506,7 +6506,7 @@ startState: s32'EventBED07B_03'
   playSFX: s32'SE_SWINGH'
   endState: 
 
-startState: s32'EventBED07B_04'
+beginState: s32'EventBED07B_04'
   sprite: s32'bed032_06', 6
   sprite: s32'bed032_07', 6
   sprite: s32'bed032_08', 6
@@ -6516,7 +6516,7 @@ startState: s32'EventBED07B_04'
   sprite: s32'bed305_03', 2147483647
   endState: 
 
-startState: s32'EventBED07B_05'
+beginState: s32'EventBED07B_05'
   sprite: s32'bed305_02', 6
   sprite: s32'bed305_01', 6
   sprite: s32'bed305_00', 6
@@ -6574,12 +6574,12 @@ startState: s32'EventBED07B_05'
   sprite: s32'bed032_03', 2147483647
   endState: 
 
-startState: s32'EventBED08A_01'
+beginState: s32'EventBED08A_01'
   sprite: s32'bed000_00', 2147483647
   Unknown2023: 0
   endState: 
 
-startState: s32'EventBED08A_02'
+beginState: s32'EventBED08A_02'
   sprite: s32'keep', 30
   Unknown2023: 0
   sprite: s32'bed032_04', 3
@@ -6596,7 +6596,7 @@ startState: s32'EventBED08A_02'
   jumpToState: s32'EventStand'
   endState: 
 
-startState: s32'EventBED08B_01'
+beginState: s32'EventBED08B_01'
   sprite: s32'bed010_00', 3
   sprite: s32'bed010_01', 3
   sprite: s32'bed010_02', 3
@@ -6662,7 +6662,7 @@ startState: s32'EventBED08B_01'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventBED08B_02'
+beginState: s32'EventBED08B_02'
   sprite: s32'bed010_45', 6
   sprite: s32'bed010_44', 6
   sprite: s32'bed010_43', 6
@@ -6686,13 +6686,13 @@ startState: s32'EventBED08B_02'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventBED08B_03'
+beginState: s32'EventBED08B_03'
   sprite: s32'bed010_60', 3
   Unknown3: 
   jumpToState: s32'EventStand'
   endState: 
 
-startState: s32'EventBED08B_04'
+beginState: s32'EventBED08B_04'
   sprite: s32'bed034_00', 4
   sprite: s32'bed034_01', 2
   playSFX: s32'SE_VEN3'
@@ -6715,7 +6715,7 @@ startState: s32'EventBED08B_04'
   jumpToState: s32'EventStand'
   endState: 
 
-startState: s32'EventBED08B_05'
+beginState: s32'EventBED08B_05'
   sprite: s32'bed032_00', 3
   physicsYImpulse: 5000
   Unknown2198: 90
@@ -6734,7 +6734,7 @@ startState: s32'EventBED08B_05'
   sprite: s32'bed032_03', 2147483647
   endState: 
 
-startState: s32'EventELP08A_01'
+beginState: s32'EventELP08A_01'
   sprite: s32'bed032_00', 3
   Unknown2023: 0
   setNoCollision: 0
@@ -6774,7 +6774,7 @@ startState: s32'EventELP08A_01'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventELP08A_02'
+beginState: s32'EventELP08A_02'
   sprite: s32'bed000_08', 3
   sprite: s32'bed000_09', 3
   setMarker: s32'loop'
@@ -6796,7 +6796,7 @@ startState: s32'EventELP08A_02'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventELP08A_03'
+beginState: s32'EventELP08A_03'
   sprite: s32'bed032_00', 3
   physicsYImpulse: 5000
   Unknown2198: 90
@@ -6841,7 +6841,7 @@ startState: s32'EventELP08A_03'
   jumpToState: s32'EventStand'
   endState: 
 
-startState: s32'EventELP08B_01'
+beginState: s32'EventELP08B_01'
   sprite: s32'bed616_05', 3
   playSFX: s32'SE_SWINGC'
   sprite: s32'bed616_04', 3
@@ -6914,7 +6914,7 @@ startState: s32'EventELP08B_01'
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'EventELP08B_02'
+beginState: s32'EventELP08B_02'
   sprite: s32'bed010_60', 3
   sprite: s32'bed615_00', 2
   sprite: s32'bed615_01', 15
@@ -6936,7 +6936,7 @@ startState: s32'EventELP08B_02'
   sprite: s32'bed615_15', 2147483647
   endState: 
 
-startState: s32'FBAtkRIP'
+beginState: s32'FBAtkRIP'
   upon: (IMMEDIATE)
     reduceTensionGainForTime: 240
     Unknown725: 1
@@ -7004,30 +7004,30 @@ startState: s32'FBAtkRIP'
   sprite: s32'bed213_14', 3
   endState: 
 
-startState: s32'Dejavu_FB_Air'
+beginState: s32'Dejavu_FB_Air'
   upon: (IMMEDIATE)
     reduceTensionGainForTime: 240
     consumeTension: 2500
     setXPushToXSpeed: 
     resetVelocity: 1
     endUpon: 
-  storeValue: (VARIABLE), 300, (STATIC), 0
+  storeValue: Mem(300), Val(0)
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
       createObject2: s32'DreamCatcher', 100
       endIf: 
     endElse: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
       createObject2: s32'DreamCatcher', 100
       endIf: 
     endElse: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
       createObject2: s32'DreamCatcher', 100
       endIf: 
     endElse: 
@@ -7036,24 +7036,24 @@ startState: s32'Dejavu_FB_Air'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 53
-    storeValue: (VARIABLE), 103, (VARIABLE), 54
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
+    storeValue: Mem(102), Mem(53)
+    storeValue: Mem(103), Mem(54)
     createObject2: s32'Djavu_A_Ghost', 130
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 55
-    storeValue: (VARIABLE), 103, (VARIABLE), 56
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
+    storeValue: Mem(102), Mem(55)
+    storeValue: Mem(103), Mem(56)
     createObject2: s32'Djavu_D_Ghost', 130
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 57
-    storeValue: (VARIABLE), 103, (VARIABLE), 58
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
+    storeValue: Mem(102), Mem(57)
+    storeValue: Mem(103), Mem(58)
     createObject2: s32'Djavu_B_Ghost', 130
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 59
-    storeValue: (VARIABLE), 103, (VARIABLE), 60
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
+    storeValue: Mem(102), Mem(59)
+    storeValue: Mem(103), Mem(60)
     createObject2: s32'Djavu_C_Ghost', 130
     endIf: 
   playSFX: s32'SE_KAKUSEI'
@@ -7075,28 +7075,28 @@ startState: s32'Dejavu_FB_Air'
   sprite: s32'bed425_11', 2
   endState: 
 
-startState: s32'Dejavu_FB'
+beginState: s32'Dejavu_FB'
   upon: (IMMEDIATE)
     reduceTensionGainForTime: 240
     consumeTension: 2500
     endUpon: 
-  storeValue: (VARIABLE), 300, (STATIC), 0
+  storeValue: Mem(300), Val(0)
   sprite: s32'bed425_00', 2
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
     createObject2: s32'DreamCatcher', 100
     endIf: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
       createObject2: s32'DreamCatcher', 100
       endIf: 
     endElse: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
       createObject2: s32'DreamCatcher', 100
       endIf: 
     endElse: 
   else: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
       createObject2: s32'DreamCatcher', 100
       endIf: 
     endElse: 
@@ -7105,24 +7105,24 @@ startState: s32'Dejavu_FB'
   playCharacterSFX: s32'BED_003'
   sprite: s32'bed425_02', 1
   sprite: s32'bed425_02', 1
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 54, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 53
-    storeValue: (VARIABLE), 103, (VARIABLE), 54
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(54), Val(0)
+    storeValue: Mem(102), Mem(53)
+    storeValue: Mem(103), Mem(54)
     createObject2: s32'Djavu_A_Ghost', 130
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 56, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 55
-    storeValue: (VARIABLE), 103, (VARIABLE), 56
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(56), Val(0)
+    storeValue: Mem(102), Mem(55)
+    storeValue: Mem(103), Mem(56)
     createObject2: s32'Djavu_D_Ghost', 130
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 58, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 57
-    storeValue: (VARIABLE), 103, (VARIABLE), 58
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(58), Val(0)
+    storeValue: Mem(102), Mem(57)
+    storeValue: Mem(103), Mem(58)
     createObject2: s32'Djavu_B_Ghost', 130
     endIf: 
-  ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 60, (STATIC), 0
-    storeValue: (VARIABLE), 102, (VARIABLE), 59
-    storeValue: (VARIABLE), 103, (VARIABLE), 60
+  ifOperation: (IS_GREATER_OR_EQUAL), Mem(60), Val(0)
+    storeValue: Mem(102), Mem(59)
+    storeValue: Mem(103), Mem(60)
     createObject2: s32'Djavu_C_Ghost', 130
     endIf: 
   playSFX: s32'SE_KAKUSEI'

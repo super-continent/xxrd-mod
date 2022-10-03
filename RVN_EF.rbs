@@ -1,8 +1,8 @@
-startState: s32'dmy'
+beginState: s32'dmy'
   sprite: s32'null', 1
   endState: 
 
-startState: s32'SlowNeeldeObjLand'
+beginState: s32'SlowNeeldeObjLand'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -26,7 +26,7 @@ startState: s32'SlowNeeldeObjLand'
       Unknown2176: 23
       endUpon: 
     upon: (HIT)
-      if: (VARIABLE), 45
+      if: Mem(45)
         Unknown32: s32'SlowEffect'
         Unknown2247: 0, 1, 0, 0
         callEtcState: s32'SlowEffect', 100
@@ -38,7 +38,7 @@ startState: s32'SlowNeeldeObjLand'
         endElse: 
       endUpon: 
     upon: 66
-      storeValue: (VARIABLE), 45, (STATIC), 1
+      storeValue: Mem(45), Val(1)
       endUpon: 
     upon: (LANDING)
       Unknown2176: 23
@@ -48,17 +48,17 @@ startState: s32'SlowNeeldeObjLand'
   sprite: s32'null', 6
   setMarker: s32'Jizoku'
   sprite: s32'rvn_SlowNeedleObj', 2
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+  ifOperation: (IS_EQUAL), Mem(115), Val(0)
     physicsXImpulse: 18000
     physicsYImpulse: -36000
     Unknown164: -60000
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
     physicsXImpulse: 38000
     physicsYImpulse: -15000
     Unknown164: -21000
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(115), Val(2)
     physicsXImpulse: 38000
     endIf: 
   linkParticleEx: s32'rvn_401EffJizoku'
@@ -78,7 +78,7 @@ startState: s32'SlowNeeldeObjLand'
   linkParticleEx: s32'CN_Null'
   endState: 
 
-startState: s32'SlowNeeldeObjAir'
+beginState: s32'SlowNeeldeObjAir'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -101,7 +101,7 @@ startState: s32'SlowNeeldeObjAir'
       Unknown2176: 23
       endUpon: 
     upon: (HIT)
-      if: (VARIABLE), 45
+      if: Mem(45)
         Unknown32: s32'SlowEffect'
         Unknown2247: 0, 1, 0, 0
         callEtcState: s32'SlowEffect', 100
@@ -113,7 +113,7 @@ startState: s32'SlowNeeldeObjAir'
         endElse: 
       endUpon: 
     upon: 66
-      storeValue: (VARIABLE), 45, (STATIC), 1
+      storeValue: Mem(45), Val(1)
       endUpon: 
     upon: (LANDING)
       Unknown2176: 23
@@ -123,17 +123,17 @@ startState: s32'SlowNeeldeObjAir'
   sprite: s32'null', 6
   setMarker: s32'Jizoku'
   sprite: s32'rvn_SlowNeedleObj', 2
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+  ifOperation: (IS_EQUAL), Mem(115), Val(0)
     physicsXImpulse: 18000
     physicsYImpulse: -36000
     Unknown164: -60000
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
     physicsXImpulse: 38000
     physicsYImpulse: -15000
     Unknown164: -21000
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 2
+  ifOperation: (IS_EQUAL), Mem(115), Val(2)
     physicsXImpulse: 30000
     physicsYImpulse: -25000
     Unknown164: -38000
@@ -155,34 +155,34 @@ startState: s32'SlowNeeldeObjAir'
   linkParticleEx: s32'CN_Null'
   endState: 
 
-startState: s32'SlowEffect'
+beginState: s32'SlowEffect'
   upon: (IMMEDIATE)
     linkObjPositionTo: (ENEMY)
     upon: (BEFORE_EXIT)
       Unknown1771: s32'401EffDebuff', 23
-      ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+      ifOperation: (IS_EQUAL), Mem(115), Val(0)
         Unknown41: 22
-        storeValue: (VARIABLE), 229, (STATIC), 100
+        storeValue: Mem(229), Val(100)
         Unknown40: 
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
-        storeValue: (VARIABLE), 229, (STATIC), 100
+      ifOperation: (IS_EQUAL), Mem(115), Val(1)
+        storeValue: Mem(229), Val(100)
         endIf: 
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 150
+      ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(105), Val(150)
           deactivateObj: (SELF)
           endIf: 
         endIf: 
       else: 
-        ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 120
+        ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(105), Val(120)
             deactivateObj: (SELF)
             endIf: 
           endIf: 
         else: 
-          ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 105, (STATIC), 90
+          ifOperation: (IS_GREATER_OR_EQUAL), Mem(105), Val(90)
             deactivateObj: (SELF)
             endIf: 
           endElse: 
@@ -190,31 +190,31 @@ startState: s32'SlowEffect'
       endUpon: 
     upon: (PLAYER_DAMAGE)
       Unknown41: 22
-      storeValue: (VARIABLE), 229, (STATIC), 100
+      storeValue: Mem(229), Val(100)
       Unknown40: 
       deactivateObj: (SELF)
       endUpon: 
     endUpon: 
   sprite: s32'null', 1
   sprite: s32'null', 1
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+  ifOperation: (IS_EQUAL), Mem(115), Val(0)
     Unknown41: 22
-    storeValue: (VARIABLE), 229, (STATIC), 50
+    storeValue: Mem(229), Val(50)
     Unknown40: 
     endIf: 
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 1
-    storeValue: (VARIABLE), 229, (STATIC), 100
+  ifOperation: (IS_EQUAL), Mem(115), Val(1)
+    storeValue: Mem(229), Val(100)
     endIf: 
   setMarker: s32'loop'
   sprite: s32'null', 2
-  ifOperation: (IS_EQUAL), (VARIABLE), 115, (STATIC), 0
+  ifOperation: (IS_EQUAL), Mem(115), Val(0)
     createObject2: s32'401EffDebuff', 133
     endIf: 
   Unknown3: 
   goToMarker: s32'loop'
   endState: 
 
-startState: s32'LandSettingTypeNeedleObj'
+beginState: s32'LandSettingTypeNeedleObj'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -230,11 +230,11 @@ startState: s32'LandSettingTypeNeedleObj'
     Unknown2182: 1
     Unknown2183: 1
     Unknown58: 1
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       attackLevel: 3
       numberOfHits: 3
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       attackLevel: 4
       numberOfHits: 4
       endIf: 
@@ -243,28 +243,28 @@ startState: s32'LandSettingTypeNeedleObj'
       Unknown14: s32'koware'
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
+      ifOperation: (IS_EQUAL), Mem(105), Val(10)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
+      ifOperation: (IS_EQUAL), Mem(105), Val(20)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+      ifOperation: (IS_EQUAL), Mem(105), Val(30)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
+      ifOperation: (IS_EQUAL), Mem(105), Val(40)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 50
+      ifOperation: (IS_EQUAL), Mem(105), Val(50)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 60
+      ifOperation: (IS_EQUAL), Mem(105), Val(60)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 70
+      ifOperation: (IS_EQUAL), Mem(105), Val(70)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 115
+      ifOperation: (IS_EQUAL), Mem(105), Val(115)
         Unknown2176: 23
         endIf: 
       addVelocityX: 25
@@ -302,7 +302,7 @@ startState: s32'LandSettingTypeNeedleObj'
   deactivateObj: (SELF)
   endState: 
 
-startState: s32'AirSettingTypeNeedleObj'
+beginState: s32'AirSettingTypeNeedleObj'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 2
@@ -318,11 +318,11 @@ startState: s32'AirSettingTypeNeedleObj'
     Unknown2182: 1
     Unknown2183: 1
     Unknown58: 1
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 3
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(3)
       attackLevel: 3
       numberOfHits: 3
       endIf: 
-    ifOperation: (IS_GREATER_OR_EQUAL), (VARIABLE), 25, (STATIC), 6
+    ifOperation: (IS_GREATER_OR_EQUAL), Mem(RESOURCE_AMOUNT), Val(6)
       attackLevel: 4
       numberOfHits: 4
       endIf: 
@@ -331,28 +331,28 @@ startState: s32'AirSettingTypeNeedleObj'
       Unknown14: s32'koware'
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 10
+      ifOperation: (IS_EQUAL), Mem(105), Val(10)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 20
+      ifOperation: (IS_EQUAL), Mem(105), Val(20)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 30
+      ifOperation: (IS_EQUAL), Mem(105), Val(30)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 40
+      ifOperation: (IS_EQUAL), Mem(105), Val(40)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 50
+      ifOperation: (IS_EQUAL), Mem(105), Val(50)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 60
+      ifOperation: (IS_EQUAL), Mem(105), Val(60)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 70
+      ifOperation: (IS_EQUAL), Mem(105), Val(70)
         playCharacterSFX: s32'RVN_04_2'
         endIf: 
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 91
+      ifOperation: (IS_EQUAL), Mem(105), Val(91)
         Unknown2176: 23
         endIf: 
       endUpon: 
@@ -388,7 +388,7 @@ startState: s32'AirSettingTypeNeedleObj'
   deactivateObj: (SELF)
   endState: 
 
-startState: s32'AntiAirNeedleObj1'
+beginState: s32'AntiAirNeedleObj1'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 1
@@ -407,7 +407,7 @@ startState: s32'AntiAirNeedleObj1'
       deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+      ifOperation: (IS_EQUAL), Mem(105), Val(90)
         Unknown2176: 23
         endIf: 
       endUpon: 
@@ -422,7 +422,7 @@ startState: s32'AntiAirNeedleObj1'
   hit: 
   endState: 
 
-startState: s32'AntiAirNeedleObj2'
+beginState: s32'AntiAirNeedleObj2'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 1
@@ -441,7 +441,7 @@ startState: s32'AntiAirNeedleObj2'
       deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+      ifOperation: (IS_EQUAL), Mem(105), Val(90)
         Unknown2176: 23
         endIf: 
       endUpon: 
@@ -457,7 +457,7 @@ startState: s32'AntiAirNeedleObj2'
   hit: 
   endState: 
 
-startState: s32'AntiAirNeedleObj3'
+beginState: s32'AntiAirNeedleObj3'
   upon: (IMMEDIATE)
     Unknown244: 
     attackLevel: 1
@@ -476,7 +476,7 @@ startState: s32'AntiAirNeedleObj3'
       deactivateObj: (SELF)
       endUpon: 
     upon: (FRAME_STEP)
-      ifOperation: (IS_EQUAL), (VARIABLE), 105, (STATIC), 90
+      ifOperation: (IS_EQUAL), Mem(105), Val(90)
         Unknown2176: 23
         endIf: 
       endUpon: 
@@ -492,7 +492,7 @@ startState: s32'AntiAirNeedleObj3'
   hit: 
   endState: 
 
-startState: s32'Atk6D'
+beginState: s32'Atk6D'
   sprite: s32'atk6D_00', 7
   upon: (HIT_OR_BLOCK)
     Unknown457: (NULL)
@@ -501,7 +501,7 @@ startState: s32'Atk6D'
   Unknown457: (PLAYER)
   endState: 
 
-startState: s32'Craw_MatchWin'
+beginState: s32'Craw_MatchWin'
   upon: (IMMEDIATE)
     Unknown294: 1
     endUpon: 
@@ -512,7 +512,7 @@ startState: s32'Craw_MatchWin'
   createObject2: s32'Craw04', 100
   endState: 
 
-startState: s32'Craw01'
+beginState: s32'Craw01'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'craw', s32'rvn800cs_01'
     Unknown2021: 0
@@ -520,7 +520,7 @@ startState: s32'Craw01'
   sprite: s32'null', 1345
   endState: 
 
-startState: s32'Craw02'
+beginState: s32'Craw02'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'craw', s32'rvn800cs_02'
     Unknown2021: 0
@@ -528,7 +528,7 @@ startState: s32'Craw02'
   sprite: s32'null', 1345
   endState: 
 
-startState: s32'Craw03'
+beginState: s32'Craw03'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'craw', s32'rvn800cs_03'
     Unknown2021: 0
@@ -536,7 +536,7 @@ startState: s32'Craw03'
   sprite: s32'null', 1345
   endState: 
 
-startState: s32'Craw04'
+beginState: s32'Craw04'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'craw', s32'rvn800cs_04'
     Unknown2021: 0
@@ -544,7 +544,7 @@ startState: s32'Craw04'
   sprite: s32'null', 1345
   endState: 
 
-startState: s32'rvn032DashEff'
+beginState: s32'rvn032DashEff'
   upon: (IMMEDIATE)
     Unknown295: 1
     Unknown1769: 1
@@ -556,7 +556,7 @@ startState: s32'rvn032DashEff'
   sprite: s32'null', 120
   endState: 
 
-startState: s32'rvn032DashEff2'
+beginState: s32'rvn032DashEff2'
   upon: (IMMEDIATE)
     Unknown295: 1
     Unknown1769: 1
@@ -595,7 +595,7 @@ startState: s32'rvn032DashEff2'
   createObject2: s32'rvn032DashEffNokosi', 100
   endState: 
 
-startState: s32'rvn032DashEffNokosi'
+beginState: s32'rvn032DashEffNokosi'
   upon: (IMMEDIATE)
     Unknown295: 1
     Unknown1769: 1
@@ -605,7 +605,7 @@ startState: s32'rvn032DashEffNokosi'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'DashPushCollisionObject'
+beginState: s32'DashPushCollisionObject'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -618,7 +618,7 @@ startState: s32'DashPushCollisionObject'
   Unknown2006: 250000
   endState: 
 
-startState: s32'rvn032DashEff2Test'
+beginState: s32'rvn032DashEff2Test'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -633,7 +633,7 @@ startState: s32'rvn032DashEff2Test'
   Unknown456: (NULL)
   endState: 
 
-startState: s32'rvndashmodel2'
+beginState: s32'rvndashmodel2'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'Dash', s32''
     Unknown2021: 0
@@ -641,7 +641,7 @@ startState: s32'rvndashmodel2'
     Unknown457: (PARENT)
     Unknown456: (PARENT)
     upon: 36
-      storeFromObjToObj: (SELF), (VARIABLE), 7, (PARENT), (VARIABLE), 7
+      storeFromObjToObj: (SELF), Mem(7), (PARENT), Mem(7)
       Unknown111: -100
       endUpon: 
     addPositionX: 180000
@@ -661,7 +661,7 @@ startState: s32'rvndashmodel2'
   addPositionX: 60000
   endState: 
 
-startState: s32'rvn034Eff'
+beginState: s32'rvn034Eff'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_043Eff_00'
     Unknown295: 1
@@ -670,7 +670,7 @@ startState: s32'rvn034Eff'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'rvn253Eff'
+beginState: s32'rvn253Eff'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -680,7 +680,7 @@ startState: s32'rvn253Eff'
   sprite: s32'null', 15
   endState: 
 
-startState: s32'rvn253Eff1'
+beginState: s32'rvn253Eff1'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -690,7 +690,7 @@ startState: s32'rvn253Eff1'
   sprite: s32'null', 15
   endState: 
 
-startState: s32'rvn253Eff2'
+beginState: s32'rvn253Eff2'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -700,7 +700,7 @@ startState: s32'rvn253Eff2'
   sprite: s32'null', 15
   endState: 
 
-startState: s32'rvn401EffNokosi'
+beginState: s32'rvn401EffNokosi'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_401EffHane'
     Unknown295: 1
@@ -711,7 +711,7 @@ startState: s32'rvn401EffNokosi'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'401EffDebuff'
+beginState: s32'401EffDebuff'
   upon: (IMMEDIATE)
     linkObjPositionTo: (ENEMY)
     linkParticleEx: s32'rvn_401EffDebuff'
@@ -722,7 +722,7 @@ startState: s32'401EffDebuff'
   sprite: s32'null', 20
   endState: 
 
-startState: s32'rvn403Eff'
+beginState: s32'rvn403Eff'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -780,7 +780,7 @@ startState: s32'rvn403Eff'
   goToMarker: s32'Jizoku'
   endState: 
 
-startState: s32'rvn403EffEnd'
+beginState: s32'rvn403EffEnd'
   upon: (IMMEDIATE)
     Unknown1700: 100000
     Unknown165: 35000
@@ -790,7 +790,7 @@ startState: s32'rvn403EffEnd'
   linkParticleEx: s32'rvn_403EffEnd'
   endState: 
 
-startState: s32'rvn403EffAir'
+beginState: s32'rvn403EffAir'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -850,7 +850,7 @@ startState: s32'rvn403EffAir'
   goToMarker: s32'Jizoku'
   endState: 
 
-startState: s32'rvn407EffATK1'
+beginState: s32'rvn407EffATK1'
   upon: (IMMEDIATE)
     flipDirection: 
     Unknown457: (PARENT)
@@ -861,7 +861,7 @@ startState: s32'rvn407EffATK1'
   linkParticleEx: s32'rvn_407EffAtk01'
   endState: 
 
-startState: s32'rvn407EffATK'
+beginState: s32'rvn407EffATK'
   upon: (IMMEDIATE)
     flipDirection: 
     Unknown457: (PARENT)
@@ -872,7 +872,7 @@ startState: s32'rvn407EffATK'
   linkParticleEx: s32'rvn_407EffAtk02'
   endState: 
 
-startState: s32'rvn407EffATK2'
+beginState: s32'rvn407EffATK2'
   upon: (IMMEDIATE)
     flipDirection: 
     Unknown457: (PARENT)
@@ -889,7 +889,7 @@ startState: s32'rvn407EffATK2'
   Unknown295: 1
   endState: 
 
-startState: s32'rvn407EffATK2Air'
+beginState: s32'rvn407EffATK2Air'
   upon: (IMMEDIATE)
     flipDirection: 
     Unknown457: (PARENT)
@@ -906,7 +906,7 @@ startState: s32'rvn407EffATK2Air'
   Unknown295: 1
   endState: 
 
-startState: s32'rvn409EffGareki'
+beginState: s32'rvn409EffGareki'
   upon: (IMMEDIATE)
     Unknown178: 22
     Unknown98: 0
@@ -929,7 +929,7 @@ startState: s32'rvn409EffGareki'
   addPositionY: -25000
   endState: 
 
-startState: s32'rvn409EffGarekiSmoke'
+beginState: s32'rvn409EffGarekiSmoke'
   upon: (IMMEDIATE)
     Unknown295: 1
     linkParticleEx: s32'rvn_409Effsmok'
@@ -937,7 +937,7 @@ startState: s32'rvn409EffGarekiSmoke'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'rvn430Eff'
+beginState: s32'rvn430Eff'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -972,7 +972,7 @@ startState: s32'rvn430Eff'
   linkParticleEx: s32'rvn_430EffEnd'
   endState: 
 
-startState: s32'rvn430EffNokosi'
+beginState: s32'rvn430EffNokosi'
   upon: (IMMEDIATE)
     Unknown453: 2
     Unknown295: 1
@@ -986,7 +986,7 @@ startState: s32'rvn430EffNokosi'
   Unknown341: -26
   endState: 
 
-startState: s32'rvn430EffSmoke'
+beginState: s32'rvn430EffSmoke'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown295: 1
@@ -1004,7 +1004,7 @@ startState: s32'rvn430EffSmoke'
   Unknown341: -4
   endState: 
 
-startState: s32'rvn430EffSmoke2'
+beginState: s32'rvn430EffSmoke2'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown295: 1
@@ -1026,7 +1026,7 @@ startState: s32'rvn430EffSmoke2'
   Unknown341: -4
   endState: 
 
-startState: s32'rvn430EffRay'
+beginState: s32'rvn430EffRay'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -1042,7 +1042,7 @@ startState: s32'rvn430EffRay'
   Unknown341: -26
   endState: 
 
-startState: s32'rvn432Eff00'
+beginState: s32'rvn432Eff00'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown456: (PARENT)
@@ -1055,7 +1055,7 @@ startState: s32'rvn432Eff00'
   sprite: s32'null', 60
   endState: 
 
-startState: s32'rvn432EffLast'
+beginState: s32'rvn432EffLast'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown456: (PARENT)
@@ -1068,7 +1068,7 @@ startState: s32'rvn432EffLast'
   linkObjPositionTo: (NULL)
   endState: 
 
-startState: s32'rvn432EffBake'
+beginState: s32'rvn432EffBake'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -1085,7 +1085,7 @@ startState: s32'rvn432EffBake'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn432EffBake2'
+beginState: s32'rvn432EffBake2'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     Unknown457: (PARENT)
@@ -1102,7 +1102,7 @@ startState: s32'rvn432EffBake2'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn432EffHit'
+beginState: s32'rvn432EffHit'
   upon: (IMMEDIATE)
     Unknown1769: 1
     Unknown295: 1
@@ -1117,7 +1117,7 @@ startState: s32'rvn432EffHit'
   linkParticleEx: s32'rvn_432Eff_HitEff'
   endState: 
 
-startState: s32'rvn432EffHit2'
+beginState: s32'rvn432EffHit2'
   upon: (IMMEDIATE)
     Unknown1769: 1
     Unknown295: 1
@@ -1128,7 +1128,7 @@ startState: s32'rvn432EffHit2'
   linkParticleEx: s32'rvn_432Eff_HitEff2'
   endState: 
 
-startState: s32'rvn432Usugura'
+beginState: s32'rvn432Usugura'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     endUpon: 
@@ -1136,7 +1136,7 @@ startState: s32'rvn432Usugura'
   linkParticleEx: s32'rvn_433Usugura'
   endState: 
 
-startState: s32'rvn432Kira'
+beginState: s32'rvn432Kira'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     endUpon: 
@@ -1144,7 +1144,7 @@ startState: s32'rvn432Kira'
   linkParticleEx: s32'rvn_433ScrnAnim'
   endState: 
 
-startState: s32'IKface'
+beginState: s32'IKface'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'ikface', s32'ikface01'
     Unknown2021: 0
@@ -1152,7 +1152,7 @@ startState: s32'IKface'
   sprite: s32'null', 600
   endState: 
 
-startState: s32'rvn451AuraJizoku'
+beginState: s32'rvn451AuraJizoku'
   upon: (IMMEDIATE)
     physicsXImpulse: 1000
     Unknown338: 0
@@ -1162,7 +1162,7 @@ startState: s32'rvn451AuraJizoku'
   Unknown341: 3
   endState: 
 
-startState: s32'rvn451Aura'
+beginState: s32'rvn451Aura'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1174,7 +1174,7 @@ startState: s32'rvn451Aura'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Aura2'
+beginState: s32'rvn451Aura2'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1186,7 +1186,7 @@ startState: s32'rvn451Aura2'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Aura3'
+beginState: s32'rvn451Aura3'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1196,7 +1196,7 @@ startState: s32'rvn451Aura3'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Aura4'
+beginState: s32'rvn451Aura4'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1206,7 +1206,7 @@ startState: s32'rvn451Aura4'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Aura5'
+beginState: s32'rvn451Aura5'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1216,7 +1216,7 @@ startState: s32'rvn451Aura5'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Aura6'
+beginState: s32'rvn451Aura6'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1228,7 +1228,7 @@ startState: s32'rvn451Aura6'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Aura7'
+beginState: s32'rvn451Aura7'
   upon: (IMMEDIATE)
     endUpon: 
   setMarker: s32'Loop'
@@ -1238,14 +1238,14 @@ startState: s32'rvn451Aura7'
   goToMarker: s32'Loop'
   endState: 
 
-startState: s32'rvn451Tanka'
+beginState: s32'rvn451Tanka'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_451Eff_tanka00'
     endUpon: 
   sprite: s32'null', 60
   endState: 
 
-startState: s32'rvn451HandAura'
+beginState: s32'rvn451HandAura'
   upon: (IMMEDIATE)
     physicsXImpulse: 1000
     linkParticleEx: s32'rvn_451Eff_AuraJizoku2'
@@ -1253,7 +1253,7 @@ startState: s32'rvn451HandAura'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'rvn451AuraJizoku2'
+beginState: s32'rvn451AuraJizoku2'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_451Eff_AuraJizoku'
     setObjectSize: 900
@@ -1261,7 +1261,7 @@ startState: s32'rvn451AuraJizoku2'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'rvn451Eye'
+beginState: s32'rvn451Eye'
   upon: (IMMEDIATE)
     flipDirection: 
     linkParticleEx: s32'rvn_451Eff_eyeray'
@@ -1273,7 +1273,7 @@ startState: s32'rvn451Eye'
   Unknown341: 0
   endState: 
 
-startState: s32'rvn451HibasiraJizoku'
+beginState: s32'rvn451HibasiraJizoku'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_451Eff_HibasiraJizoku'
     setObjectSize: 3200
@@ -1294,7 +1294,7 @@ startState: s32'rvn451HibasiraJizoku'
   Unknown3: 
   endState: 
 
-startState: s32'rvn451hai'
+beginState: s32'rvn451hai'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_451Eff_hai'
     Unknown35: 23, s32'hai2'
@@ -1305,7 +1305,7 @@ startState: s32'rvn451hai'
   linkParticleEx: s32'rvn_451Eff_hai2'
   endState: 
 
-startState: s32'rvn451hai2'
+beginState: s32'rvn451hai2'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_451Eff_sandshock'
     setObjectSize: 700
@@ -1313,7 +1313,7 @@ startState: s32'rvn451hai2'
   sprite: s32'null', 300
   endState: 
 
-startState: s32'rvn451BG'
+beginState: s32'rvn451BG'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_451Eff_BG'
     Unknown35: 23, s32'Scale'
@@ -1328,7 +1328,7 @@ startState: s32'rvn451BG'
   Unknown189: -4000
   endState: 
 
-startState: s32'rvn700BG'
+beginState: s32'rvn700BG'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkParticleEx: s32'rvn_700_bg00'
@@ -1337,14 +1337,14 @@ startState: s32'rvn700BG'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'rvn700_feather'
+beginState: s32'rvn700_feather'
   upon: (IMMEDIATE)
     linkParticleEx: s32'rvn_700_feather'
     endUpon: 
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'rvn800BG'
+beginState: s32'rvn800BG'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     linkParticleEx: s32'rvn_800_hanefade'
@@ -1353,7 +1353,7 @@ startState: s32'rvn800BG'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'cs800_Craw01'
+beginState: s32'cs800_Craw01'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'Craw01', s32'rvn800cs_craw01'
     Unknown2021: 0
@@ -1361,7 +1361,7 @@ startState: s32'cs800_Craw01'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'cs800_Craw02'
+beginState: s32'cs800_Craw02'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'Craw02', s32'rvn800cs_craw02'
     Unknown2021: 0
@@ -1369,7 +1369,7 @@ startState: s32'cs800_Craw02'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'cs800_Craw03'
+beginState: s32'cs800_Craw03'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'Craw03', s32'rvn800cs_craw03'
     Unknown2021: 0
@@ -1377,7 +1377,7 @@ startState: s32'cs800_Craw03'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'cs800_Craw04'
+beginState: s32'cs800_Craw04'
   upon: (IMMEDIATE)
     linkPawnWithAnim: s32'Craw04', s32'rvn800cs_craw04'
     Unknown2021: 0
@@ -1385,7 +1385,7 @@ startState: s32'cs800_Craw04'
   sprite: s32'null', 2147483647
   endState: 
 
-startState: s32'200bake'
+beginState: s32'200bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1395,7 +1395,7 @@ startState: s32'200bake'
   linkParticleEx: s32'rvn_200Atk'
   endState: 
 
-startState: s32'202bake1'
+beginState: s32'202bake1'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1405,7 +1405,7 @@ startState: s32'202bake1'
   linkParticleEx: s32'rvn_202Atk00'
   endState: 
 
-startState: s32'202bake2'
+beginState: s32'202bake2'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1415,7 +1415,7 @@ startState: s32'202bake2'
   linkParticleEx: s32'rvn_202Atk01'
   endState: 
 
-startState: s32'203bake'
+beginState: s32'203bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1425,7 +1425,7 @@ startState: s32'203bake'
   linkParticleEx: s32'rvn_203Atk'
   endState: 
 
-startState: s32'204bake'
+beginState: s32'204bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1435,7 +1435,7 @@ startState: s32'204bake'
   linkParticleEx: s32'rvn_204Atk'
   endState: 
 
-startState: s32'205bake'
+beginState: s32'205bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1445,7 +1445,7 @@ startState: s32'205bake'
   linkParticleEx: s32'rvn_205Atk00'
   endState: 
 
-startState: s32'210bake'
+beginState: s32'210bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1463,7 +1463,7 @@ startState: s32'210bake'
   Unknown1769: 1
   endState: 
 
-startState: s32'213bake'
+beginState: s32'213bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1473,7 +1473,7 @@ startState: s32'213bake'
   linkParticleEx: s32'rvn_213Atk'
   endState: 
 
-startState: s32'213atk'
+beginState: s32'213atk'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1490,7 +1490,7 @@ startState: s32'213atk'
   Unknown1769: 1
   endState: 
 
-startState: s32'215bake1'
+beginState: s32'215bake1'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1500,7 +1500,7 @@ startState: s32'215bake1'
   linkParticleEx: s32'rvn_215Atk00'
   endState: 
 
-startState: s32'215bake2'
+beginState: s32'215bake2'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1510,7 +1510,7 @@ startState: s32'215bake2'
   linkParticleEx: s32'rvn_215Atk01'
   endState: 
 
-startState: s32'230bake'
+beginState: s32'230bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1520,7 +1520,7 @@ startState: s32'230bake'
   linkParticleEx: s32'rvn_230Atk'
   endState: 
 
-startState: s32'232bake'
+beginState: s32'232bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1530,7 +1530,7 @@ startState: s32'232bake'
   linkParticleEx: s32'rvn_232Atk'
   endState: 
 
-startState: s32'233bake'
+beginState: s32'233bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1553,7 +1553,7 @@ startState: s32'233bake'
   Unknown341: -10
   endState: 
 
-startState: s32'250bake'
+beginState: s32'250bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1563,7 +1563,7 @@ startState: s32'250bake'
   linkParticleEx: s32'rvn_250Atk'
   endState: 
 
-startState: s32'252bake'
+beginState: s32'252bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1573,7 +1573,7 @@ startState: s32'252bake'
   linkParticleEx: s32'rvn_252Atk00'
   endState: 
 
-startState: s32'254bake'
+beginState: s32'254bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1583,7 +1583,7 @@ startState: s32'254bake'
   linkParticleEx: s32'rvn_254Atk00'
   endState: 
 
-startState: s32'320Eff'
+beginState: s32'320Eff'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1594,7 +1594,7 @@ startState: s32'320Eff'
   Unknown365: 15000, 15000
   endState: 
 
-startState: s32'320Eff_hit'
+beginState: s32'320Eff_hit'
   upon: (IMMEDIATE)
     linkObjPositionTo: (PARENT)
     linkParticleEx: s32'rvn_320Eff_hit'
@@ -1603,7 +1603,7 @@ startState: s32'320Eff_hit'
   Unknown365: 20000, 20000
   endState: 
 
-startState: s32'360bake'
+beginState: s32'360bake'
   upon: (IMMEDIATE)
     Unknown457: (PARENT)
     Unknown456: (PARENT)
@@ -1613,14 +1613,14 @@ startState: s32'360bake'
   linkParticleEx: s32'rvn_neoblitz_atk'
   endState: 
 
-startState: s32'Zanhit_oku'
+beginState: s32'Zanhit_oku'
   upon: (IMMEDIATE)
     linkParticleEx: s32'cmn_slash_s_oku'
     endUpon: 
   sprite: s32'null', 55
   endState: 
 
-startState: s32'BG_win'
+beginState: s32'BG_win'
   upon: (IMMEDIATE)
     Unknown457: (PLAYER)
     linkParticleEx: s32'rvn_800_bg00'
@@ -1628,7 +1628,7 @@ startState: s32'BG_win'
   sprite: s32'null', 1000
   endState: 
 
-startState: s32'FinishCamera_RevengeAttack'
+beginState: s32'FinishCamera_RevengeAttack'
   upon: (IMMEDIATE)
     Unknown294: 1
     Unknown1769: 1
@@ -1639,11 +1639,11 @@ startState: s32'FinishCamera_RevengeAttack'
   Unknown2047: 23, -115127, 189036, 65367, 295, 5163, 89, 90, 180, 0, 20, 0, 2, 2
   endState: 
 
-startState: s32'ACEvtRVN_8A'
+beginState: s32'ACEvtRVN_8A'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E745374616E640000000000000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E7452564E3038415F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E745374616E640000000000000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E7452564E3038415F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2123: s32'BGM_HEIJI2'
@@ -1653,96 +1653,96 @@ startState: s32'ACEvtRVN_8A'
   Unknown2122: 
   sprite: s32'null', 120
   Unknown2114: -16777216, 0, 30
-  Unknown2120: '0x4845494A4932000000000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x4845494A4932000000000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303000000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303000000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303100000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303100000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303200000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303200000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303300000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303300000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303400000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303400000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303500000000000000000000000000000000005A000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303500000000000000000000000000000000005A000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303600000000000000000000000000000000003C000000'
-  Unknown2107: '0x4576656E7452564E3038415F303200000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303600000000000000000000000000000000003C000000
+  Unknown2107: 0x4576656E7452564E3038415F303200000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303700000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303700000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303800000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303800000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30303900000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30303900000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30313000000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30313000000000000000000000000000000000003C000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30313100000000000000000000000000000000001E000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30313100000000000000000000000000000000001E000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238415F30313200000000000000000000000000000000002D000000'
-  Unknown2107: '0x4576656E7452564E3038415F303300000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F52564E5F4238415F30313200000000000000000000000000000000002D000000
+  Unknown2107: 0x4576656E7452564E3038415F303300000000000000000000000000000000000001000000
   sprite: s32'null', 1
   Unknown2108: 
   endState: 
 
-startState: s32'ACEvtRVN_8B'
+beginState: s32'ACEvtRVN_8B'
   upon: (IMMEDIATE)
     Unknown2114: -16777216, -16777216, 1
-    Unknown2107: '0x4576656E7452564E3038425F303100000000000000000000000000000000000000000000'
-    Unknown2107: '0x4576656E7452564E3038425F303100000000000000000000000000000000000001000000'
+    Unknown2107: 0x4576656E7452564E3038425F303100000000000000000000000000000000000000000000
+    Unknown2107: 0x4576656E7452564E3038425F303100000000000000000000000000000000000001000000
     endUpon: 
   sprite: s32'null', 1
   Unknown2114: -16777216, 0, 30
-  Unknown2120: '0x4845494A4930303600000000000000000000000000000000000000000000000000000000'
+  Unknown2120: 0x4845494A4930303600000000000000000000000000000000000000000000000000000000
   Unknown2115: 50, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303000000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303000000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303100000000000000000000000000000000001E000000'
-  Unknown2107: '0x4576656E7452564E3038425F303200000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303100000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7452564E3038425F303200000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303200000000000000000000000000000000002D000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303200000000000000000000000000000000002D000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303300000000000000000000000000000000002D000000'
-  Unknown2107: '0x4576656E7452564E3038425F303300000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303300000000000000000000000000000000002D000000
+  Unknown2107: 0x4576656E7452564E3038425F303300000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303400000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303400000000000000000000000000000000003C000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303500000000000000000000000000000000003C000000'
-  Unknown2107: '0x4576656E7452564E3038425F303200000000000000000000000000000000000000000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303500000000000000000000000000000000003C000000
+  Unknown2107: 0x4576656E7452564E3038425F303200000000000000000000000000000000000000000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303600000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303600000000000000000000000000000000003C000000
   Unknown2115: 0, 60
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303700000000000000000000000000000000005A000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303700000000000000000000000000000000005A000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303800000000000000000000000000000000002D000000'
-  Unknown2107: '0x4576656E7452564E3038425F303400000000000000000000000000000000000001000000'
-  Unknown2120: '0x4B696E63686F320000000000000000000000000000000000000000000000000000000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303800000000000000000000000000000000002D000000
+  Unknown2107: 0x4576656E7452564E3038425F303400000000000000000000000000000000000001000000
+  Unknown2120: 0x4B696E63686F320000000000000000000000000000000000000000000000000000000000
   Unknown2115: 100, 0
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30303900000000000000000000000000000000001E000000'
-  Unknown2107: '0x4576656E7452564E3038425F303300000000000000000000000000000000000000000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30303900000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7452564E3038425F303300000000000000000000000000000000000000000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30313000000000000000000000000000000000002D000000'
-  Unknown2107: '0x4576656E7452564E3038425F303500000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30313000000000000000000000000000000000002D000000
+  Unknown2107: 0x4576656E7452564E3038425F303500000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30313100000000000000000000000000000000001E000000'
-  Unknown2107: '0x4576656E7452564E3038425F303600000000000000000000000000000000000001000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30313100000000000000000000000000000000001E000000
+  Unknown2107: 0x4576656E7452564E3038425F303600000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F303132000000000000000000000000000000000069000000'
+  Unknown2106: 0x4143325F52564E5F4238425F303132000000000000000000000000000000000069000000
   deactivateObjectFromSlot: (ENEMY), (SELF)
   Unknown2115: 0, 30
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30313400000000000000000000000000000000005A000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30313400000000000000000000000000000000005A000000
   sprite: s32'null', 30
-  Unknown2107: '0x4576656E7452564E3038425F303700000000000000000000000000000000000001000000'
+  Unknown2107: 0x4576656E7452564E3038425F303700000000000000000000000000000000000001000000
   sprite: s32'null', 2147483647
-  Unknown2106: '0x4143325F52564E5F4238425F30313600000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30313600000000000000000000000000000000003C000000
   sprite: s32'null', 120
-  Unknown2106: '0x4143325F52564E5F4238425F30313700000000000000000000000000000000003C000000'
+  Unknown2106: 0x4143325F52564E5F4238425F30313700000000000000000000000000000000003C000000
   sprite: s32'null', 1
   Unknown2108: 
   endState: 
